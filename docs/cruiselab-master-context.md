@@ -1,10 +1,10 @@
 # The Cruise Lab — Master Context
 
-Last updated: 5 July 2026 (rev 9 — In the Lab tool names finalised: Shore Thing, All Aboard Store, GetMyCruiseMap). This document is the single source of truth for The Cruise Lab initiative. All enhancements, new tools, and maintenance work should be consistent with it. Update it when the estate changes.
+Last updated: 5 July 2026 (rev 10 — merges the two 5-Jul doc forks: rev 6's Forever Voyage launch [built in a parallel session] folded into the rev 7→9 line [MSC + In the Lab tiles]; hub redeployed with the Forever Voyage card restored after the In-the-Lab deploy briefly dropped it). This document is the single source of truth for The Cruise Lab initiative. All enhancements, new tools, and maintenance work should be consistent with it. Update it when the estate changes.
 
 ## What The Cruise Lab is
 
-The Cruise Lab (thecruiselab.com) is Stuart Brodie's umbrella brand for a collection of free web tools built for the cruising community — "free web tools built by a cruiser, for cruisers." Each tool keeps its own name and identity as a member of "The Fleet"; the hub at thecruiselab.com is the landing page from which users pick a tool. New tools launch under the brand and get a card on the hub, with an "In the Lab" slot teasing what's next. All tools carry a disclaimer that they are independent and not affiliated with or endorsed by Princess Cruises or any cruise line.
+The Cruise Lab (thecruiselab.com) is Stuart Brodie's umbrella brand for a collection of free web tools built for the cruising community — "free web tools built by a cruiser, for cruisers." Each tool keeps its own name and identity as a member of "The Fleet"; the hub at thecruiselab.com is the landing page from which users pick a tool. New tools and services launch under the brand and get a card on the hub, with an "In the Lab" section teasing what's next. Most of the Fleet is free; **Forever Voyage** is the first *paid, bespoke* offering — a made-to-order keepsake website built for an individual customer's cruise. All tools carry a disclaimer that they are independent and not affiliated with or endorsed by Princess Cruises or any cruise line.
 
 ## Brand and design system
 
@@ -49,7 +49,7 @@ All web properties are Cloudflare Pages projects in Stuart's Cloudflare account 
 - Cloudflare Pages project: `thecruiselab`
 - Repo path: `~/cruiselab/hub` (single index.html)
 - Content: hero with flask mark and "The Cruise Lab" wordmark (small tracked "THE" above "CRUISE LAB"), tagline, "The Fleet" divider, one card per live tool, then an "In the Lab" divider with three named coming-soon tiles (dashed border / sea-glass chip style): **Shore Thing** (per-sailing port guides), **All Aboard Store** (curated cruise-kit shop), **GetMyCruiseMap** (keepsake route-map print). Names finalised 5 Jul 2026 (earlier working names The Kit Locker and Wake Map were replaced). The old generic "In the Lab" flask card was replaced by this section on 5 Jul 2026. Structure note: live tools sit in `<main class="fleet">`, coming-soon tiles in a following `<section class="fleet">` (only one `<main>` per page).
-- Current card links: cabins.thecruiselab.com · casinopoints.thecruiselab.com/princess/ · weather.thecruiselab.com
+- Current card links: cabins.thecruiselab.com · casinopoints.thecruiselab.com/princess/ · weather.thecruiselab.com · forevervoyage.thecruiselab.com. WARNING (lesson from 5 Jul 2026): two parallel sessions edited the hub from different bases and the In-the-Lab deploy briefly dropped the Forever Voyage card — before editing hub/index.html, always start from `~/cruiselab/hub/index.html` (or `git pull`), never from a possibly-stale copy in project knowledge.
 
 ### 2. Good Cabin Bad Cabin — cabin scoring
 - URL: https://cabins.thecruiselab.com (plus goodcabinbadcabin.pages.dev)
@@ -78,6 +78,21 @@ All web properties are Cloudflare Pages projects in Stuart's Cloudflare account 
 - Data: weather from the Open-Meteo archive API, called client-side, no API key. Google Analytics (gtag) installed. Viator affiliate links for shore excursions.
 - History: migrated from Netlify on 5 Jul 2026 (was Netlify project `cruiseweatherstuart`, deployed via Netlify Drop, team "Stuart Cruise"). The Netlify project is now redundant and can be deleted. The app had real traffic at migration time (~28 requests/hour).
 
+### 5. Forever Voyage — bespoke keepsake cruise sites (PAID SERVICE)
+- URL: https://forevervoyage.thecruiselab.com (service landing page)
+- Cloudflare Pages project: `forever-voyage` — NOTE its production branch is `production` (not `main`); deploy with `--branch=production` or the deploy silently lands as a preview.
+- Repo path: `~/cruiselab/forevervoyage` (single self-contained index.html, ~25KB)
+- What it is: The Cruise Lab's first paid offering. Stuart builds a private, bespoke "travel journal" website for a customer's own cruise — day-by-day story, scrapbook pages, downloadable photo/video bundles for the family, their own web address, hosted and kept. Same look/output as the norwaywithmum site Stuart made of his own Norway-with-mum trip on Sky Princess (the origin of the idea and the sample of the work).
+- Design: hub navy/gold system (Cinzel + Outfit, standard tokens). Own mark: a rotating gold compass rose with a sea-glass wave. Sections: hero → sample showcase (framed iframe of the sample) → what you get → how it works → multi-currency rate card → mailto CTA → FAQ → footer.
+- Rate card (indicative, editable): Standard up to 7 days $99 / £79 / €95; Standard up to 14 days $199 / £159 / €189; Bespoke POA. Currency toggle (GBP default) swaps prices client-side via data-attributes. Tiers scope the labour: 7-day ~40 photos; 14-day adds scrapbook pages + video; bespoke = custom design / own domain / unlimited.
+- CTA: gold "Start your journal" button = a `mailto:` with a pre-filled enquiry template. Contact address and sample URL are set once at the top of the `<script>` block (`CONTACT_EMAIL`, `SAMPLE_URL`). CTA currently points at stuartfbrodie@outlook.com (temporary). **TODO: create the `hello@thecruiselab.com` forward in Namecheap, then switch `CONTACT_EMAIL` to the branded address.**
+
+### 5a. The Forever Voyage sample (anonymised norwaywithmum clone)
+- URL: https://forever-voyage-sample.pages.dev — its own Pages project `forever-voyage-sample` (production branch `main`); the service page links to exactly this URL.
+- Origin: Stuart's real norwaywithmum site (project `norwaywithmum`, live at norwaywithmum.pages.dev). Built outside the monorepo; source of truth is the live Cloudflare deployment.
+- Built by a script: `~/cruiselab/build-forever-voyage-sample.py` (v4; stdlib + opencv-python). It downloads the live site, detects faces with the YuNet DNN model (cached at `~/.cache/forevervoyage/face_detection_yunet_2023mar.onnx`, frontal + flipped + upscaled passes) and pixelates them, anonymises names (Frances→Mum, Stuart→Son and phrase variants), disables family download links and video playback via injected CSS lockdown (not DOM removal, to avoid JS null-reference errors), rewrites the download-section copy, and outputs a deployable `./forever-voyage-sample/` folder (gitignored). The script flags photos where it found no face for manual eyeballing. Re-run any time the real norwaywithmum changes.
+- Ethics note used on the service page + FAQ: the sample is Stuart's own trip, shown with his mum's blessing, names changed and faces blurred; a customer's own site is never used as an example without explicit permission.
+
 ## Deployment workflow (standard for all projects)
 
 Deploys are done from Stuart's MacBook terminal with wrangler:
@@ -92,11 +107,19 @@ Standard deploys from the repo:
 npx wrangler pages deploy ~/cruiselab/hub --project-name=thecruiselab
 npx wrangler pages deploy ~/cruiselab/casinopoints --project-name=sys-points
 npx wrangler pages deploy ~/cruiselab/getmycruiseweather --project-name=getmycruiseweather
+npx wrangler pages deploy ~/cruiselab/forevervoyage --project-name=forever-voyage --branch=production
+```
+
+The Forever Voyage **sample** is deployed from its generated folder (not the repo):
+
+```bash
+cd forever-voyage-sample && npx wrangler pages deploy . --project-name=forever-voyage-sample
 ```
 
 After deploying, commit and push the change: `cd ~/cruiselab && git add -A && git commit -m "..." && git push`. Note the Pages projects are direct-upload type, not git-connected — pushing to GitHub does NOT auto-deploy; wrangler is the deploy mechanism.
 
 Notes and lessons learned:
+- **Production branches differ per project**: `thecruiselab` (hub) and `forever-voyage-sample` use `main`; `forever-voyage` uses `production`. Deploying to the wrong branch silently creates a preview deployment — the tell is an "alias URL" line in wrangler output. Verify with `curl -L` on the canonical `.pages.dev` URL after deploying.
 - A stray `~/Downloads/wrangler.toml` triggers a harmless warning on every deploy; deleting it silences this.
 - Cloudflare Pages 308-redirects `/index.html` to `/`; when curling a deployed file, always use `curl -L`.
 - Wrangler deduplicates uploads by content hash — "0 files uploaded (N already uploaded)" is normal and fine.
@@ -105,6 +128,7 @@ Notes and lessons learned:
 
 ## Backlog / ideas
 
+- Forever Voyage launched 5 Jul 2026 (service page + hub card + anonymised sample). Next: (1) create the `hello@thecruiselab.com` forward in Namecheap, then switch `CONTACT_EMAIL` in the service page back to the branded address; (2) later — Stripe payment links or a proper enquiry form instead of mailto; testimonials; real custom-domain option for the bespoke tier; consider a forevervoyage.com domain if the service takes off.
 - **Shore Thing** (announced on hub 5 Jul 2026, not built): individual downloadable guides for each upcoming sailing across the major cruise lines — one guide per sailing, no personalisation. Per-port paragraphs stored once and reused (many sailings share ports, so content is written/generated once per port, not per sailing). Guide is presented on-screen with a download link. Each port summary carries Stuart's Viator partner link, deep-linked to that destination with tours/excursions filtered to the port day's date (commission on bookings). A prior personalised prototype (built for Steven and family) is the reference for structure/tone.
 - **All Aboard Store** (formerly working name "The Kit Locker"; announced on hub 5 Jul 2026, not built): curated cruise-gear shop monetised via Amazon Associates. Categories: packing (cubes, luggage scales, compression bags), onboard cabin kit (magnetic hooks, towel clips/pegs, over-door organisers, power strips-non-surge, nightlights, lanyards), fun (cruising ducks to hide around the ship), and luggage tags/holders (line-specific e-tag holders are a classic). Catalogue to be curated before build; affiliate disclosure required on the page per Associates programme rules.
 - **GetMyCruiseMap** (formerly working name "Wake Map"; announced on hub 5 Jul 2026, not built): user supplies itinerary/ship/sail date plus a few photos; tool renders a high-quality route map of the voyage with one photo per port alongside each stop (template format TBD). Output file is pushed to a print-on-demand service (Dazzle / Redbubble / CafePress or similar) for a framed print shipped to the user, with commission on the sale. Open questions: which POD service has a proper referral/API route; print resolution/aspect requirements; photo upload handling on a static-hosting estate (may need a Worker or client-side-only compositing).
