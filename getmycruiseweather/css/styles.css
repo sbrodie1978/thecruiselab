@@ -1,0 +1,1502 @@
+
+:root{
+  --bg:#f6f8fb;
+  --ink:#0b1930;
+  --muted:#637089;
+  --card:#ffffff;
+  --border:#e6edf6;
+  --navy:#0b1f3a;
+  --navy2:#0f2b46;
+  --gold:#c9a24a;
+  --shadow:0 18px 40px rgba(10, 25, 50, .08);
+  --radius:22px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Corbel, 'Segoe UI', Candara, Calibri, 'Trebuchet MS', Arial, sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+}
+
+.page{
+  width:min(980px, calc(100% - 48px));
+  margin:0 auto;
+  padding:56px 0 72px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.brand{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  margin-top:6px;
+}
+.brand__logo{width:92px;height:auto}
+.brand__name{
+  font-size:14px;
+  letter-spacing:.24em;
+  font-weight:500;
+  color:var(--navy);
+}
+.brand__tag{
+  font-size:16px;
+  color:var(--muted);
+  font-weight:400;
+}
+.brand__rule{
+  width:180px;
+  height:1px;
+  background:linear-gradient(90deg, transparent, rgba(201,162,74,.75), transparent);
+  margin-top:6px;
+}
+
+.hero{margin:34px 0 28px; text-align:center;}
+.hero__title{
+  font-weight:300;
+  font-size:42px;
+  line-height:1.25;
+  color:#48556d;
+  letter-spacing:-.01em;
+  margin:0;
+}
+.hero--small{margin:18px 0 22px;}
+.hero__title--small{font-size:22px; line-height:1.35; color:#60708a; font-weight:300;}
+
+.card{
+  width:100%;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:28px 28px 26px;
+}
+
+.card--form{padding:34px 34px 30px; max-width:900px;}
+.formgrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:24px;
+}
+.formgrid--tight{gap:18px}
+.field{display:flex; flex-direction:column; gap:10px;}
+.label{
+  font-size:14px;
+  color:#7886a0;
+  font-weight:500;
+}
+
+.selectwrap, .datewrap{
+  position:relative;
+}
+.select, .input{
+  width:100%;
+  height:62px;
+  border-radius:12px;
+  border:1px solid #d8e2ef;
+  padding:0 18px;
+  font-size:18px;
+  color:var(--ink);
+  background:#fff;
+  outline:none;
+}
+.select:focus, .input:focus{
+  border-color:#2b6fff;
+  box-shadow:0 0 0 3px rgba(43,111,255,.12);
+}
+.select{
+  appearance:none;
+  padding-right:48px;
+}
+.chev{
+  position:absolute;
+  right:18px;
+  top:50%;
+  width:14px;
+  height:14px;
+  transform:translateY(-45%) rotate(45deg);
+  border-right:2px solid #1e2f4c;
+  border-bottom:2px solid #1e2f4c;
+  opacity:.85;
+  pointer-events:none;
+}
+.cal{
+  position:absolute;
+  right:18px;
+  top:50%;
+  width:18px; height:18px;
+  transform:translateY(-50%);
+  border:2px solid #1e2f4c;
+  border-radius:4px;
+  opacity:.35;
+  pointer-events:none;
+}
+.cal::before{
+  content:"";
+  position:absolute; left:-2px; right:-2px; top:-2px; height:6px;
+  background:#1e2f4c;
+  opacity:.2;
+  border-top-left-radius:4px;
+  border-top-right-radius:4px;
+}
+
+.btn{
+  margin-top:22px;
+  width:100%;
+  height:64px;
+  border:none;
+  border-radius:12px;
+  font-size:18px;
+  font-weight:500;
+  cursor:pointer;
+}
+.btn--primary{
+  background:var(--navy);
+  color:white;
+}
+.btn--primary:disabled{
+  background:#cfd8e5;
+  color:#ffffff;
+  cursor:not-allowed;
+}
+.page--results .card{max-width:900px}
+
+/* Secondary button + subtle helper text (for affiliate links etc.) */
+.btn--secondary{
+  width:auto;
+  height:44px;
+  padding:0 16px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  border-radius:12px;
+  border:1px solid rgba(15, 23, 42, 0.12);
+  background:rgba(255,255,255,0.9);
+  color:var(--navy);
+  text-decoration:none;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+}
+.btn--secondary:hover{ filter:brightness(0.99); }
+.subtleText{
+  color:#7b8aa5;
+  font-size:14px;
+  margin-top:8px;
+}
+
+.card--score{
+  margin-top:22px;
+  text-align:center;
+  padding:34px 28px 30px;
+}
+.kicker{
+  font-size:11px;
+  letter-spacing:.26em;
+  color:#8d9ab3;
+  font-weight:600;
+}
+.score{
+  font-size:64px;
+  font-weight:600;
+  margin-top:12px;
+  color:#0b1528;
+}
+.score__label{
+  margin-top:6px;
+  font-size:14px;
+  color:#8b97ad;
+}
+
+.sectionTitle{
+  margin:0 0 10px;
+  font-size:16px;
+  font-weight:600;
+  color:#0c1930;
+}
+
+.metric{padding:10px 0 14px;}
+.metric + .metric{border-top:1px solid #eef3fa; margin-top:6px;}
+.metric__top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+}
+.metric__name{font-size:13px; font-weight:600; color:#0c1930;}
+.metric__hint{font-size:11px; color:#9aa6bb; margin-top:2px;}
+.metric__value{font-size:13px; color:#5c6a83; font-weight:600; min-width:56px; text-align:right;}
+
+.bar{
+  margin-top:10px;
+  width:100%;
+  height:10px;
+  border-radius:999px;
+  background:#ecf1f8;
+  overflow:hidden;
+  position:relative;
+}
+.bar__fill{
+  height:100%;
+  width:0%;
+  border-radius:999px;
+  background:linear-gradient(90deg, var(--navy) 0%, #566b8d 55%, var(--gold) 100%);
+  transition:width .6s ease;
+}
+.ticks{
+  display:flex;
+  justify-content:space-between;
+  margin-top:8px;
+  font-size:10px;
+  color:#9aa6bb;
+}
+.footnote{
+  margin-top:12px;
+  font-size:11px;
+  color:#9aa6bb;
+}
+
+.tablewrap{overflow:auto; margin-top:10px;}
+.table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:12px;
+}
+.table th{
+  text-align:left;
+  font-size:11px;
+  color:#7483a0;
+  font-weight:600;
+  padding:10px 8px;
+  border-bottom:1px solid #e9eff8;
+}
+.table td{
+  padding:12px 8px;
+  border-bottom:1px solid #f0f4fb;
+  color:#0b1930;
+}
+.micro{
+  margin-top:8px;
+  font-size:10px;
+  color:#9aa6bb;
+}
+
+@media (max-width: 780px){
+  .hero__title{font-size:30px}
+  .formgrid{grid-template-columns:1fr; gap:16px;}
+  .card--form{padding:24px}
+  .page{width:min(980px, calc(100% - 28px)); padding:40px 0 60px;}
+}
+
+/* Packing recommendations */
+.recos{margin-top:6px}
+.reco__summary{
+  font-size:13px;
+  color:#5c6a83;
+  font-weight:600;
+  margin:6px 0 12px;
+}
+.reco__list{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:10px;
+}
+.reco__list li{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  padding:12px 12px;
+  border:1px solid #eef3fa;
+  border-radius:14px;
+  background:#ffffff;
+}
+.reco__dot{
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  margin-top:4px;
+  background:linear-gradient(90deg, var(--navy) 0%, var(--gold) 100%);
+  flex:0 0 auto;
+}
+.reco__text{
+  font-size:12px;
+  color:#0b1930;
+  line-height:1.35;
+}
+
+/* Historical table separators (strong horizontal rules) */
+.table th{
+  border-bottom:2px solid rgba(11,31,58,.55);
+}
+.table td{
+  border-bottom:2px solid rgba(11,31,58,.85);
+}
+.table tbody tr:last-child td{
+  border-bottom:none;
+}
+
+/* Card header row with unit toggle */
+.cardhead{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:10px;
+}
+.unitToggle{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  user-select:none;
+}
+.unitToggle__label{
+  font-size:12px;
+  color:#6c7b95;
+  font-weight:600;
+}
+.unitToggle__btn{
+  width:56px;
+  height:30px;
+  border-radius:999px;
+  border:1px solid #dce5f2;
+  background:#ffffff;
+  position:relative;
+  cursor:pointer;
+  padding:0;
+  box-shadow:0 6px 14px rgba(0,0,0,.06);
+}
+.unitToggle__knob{
+  position:absolute;
+  top:3px;
+  left:3px;
+  width:24px;
+  height:24px;
+  border-radius:999px;
+  background:linear-gradient(90deg,#0b1f3a,#c9a24a);
+  transition:left .2s ease;
+}
+.unitToggle__btn[aria-pressed="true"] .unitToggle__knob{
+  left:29px;
+}
+
+@media (max-width: 780px){
+  .cardhead{flex-direction:column; align-items:flex-start;}
+}
+
+/* Header refinement: improve visual balance */
+.brand__logo{
+  width:72px;
+  margin-bottom:14px;
+  /* Slightly soften icon contrast without changing asset */
+  filter: saturate(0.95) brightness(1.02);
+}
+.brand__name{
+  font-size:14px;
+  letter-spacing:0.22em; /* slightly reduced so title holds weight */
+  font-weight:700;
+  margin-top:0;
+}
+.brand__tag{
+  margin-top:10px;
+  font-size:16px;
+}
+.brand__divider{
+  width:120px;
+  height:2px;
+  background: rgba(201,162,74,.85);
+  border-radius:999px;
+  margin:14px auto 0;
+}
+.brand--compact .brand__logo{
+  width:64px;
+  margin-bottom:12px;
+}
+.brand--compact .brand__divider{
+  margin:12px auto 0;
+}
+
+/* Headline refinement: enforce balanced two-line layout */
+.hero__title {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.15;
+}
+.hero__title br {
+  display: block;
+}
+
+/* --- Header cleanup (v13) --- */
+.brand__logo{
+  width:110px;
+  height:auto;
+  margin-bottom:18px;
+  filter:none; /* keep crisp */
+}
+.brand{ margin-bottom:26px; }
+.brand__name{ margin-top:0; }
+.hero{ margin-bottom:26px; }
+
+/* Force headline to 2 lines */
+.hero__title{
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 44px; /* slightly smaller to avoid 3-line wrap */
+  line-height: 1.12;
+  word-break: normal;
+}
+.nowrap{ white-space: nowrap; }
+@media (max-width: 900px){
+  .hero__title{ font-size: 36px; }
+}
+@media (max-width: 520px){
+  .hero__title{ font-size: 30px; }
+}
+
+/* --- v14 Header Fix --- */
+
+/* Proper logo sizing */
+.brand__logo{
+  width:180px !important;
+  height:auto;
+  display:block;
+  margin:0 auto 22px auto;
+}
+
+/* Clean spacing */
+.brand{
+  margin-bottom:34px;
+}
+
+.hero__title{
+  font-size:48px;
+  max-width:900px;
+  margin:0 auto;
+  line-height:1.15;
+}
+
+@media (max-width:900px){
+  .brand__logo{ width:140px !important; }
+  .hero__title{ font-size:38px; }
+}
+
+@media (max-width:520px){
+  .brand__logo{ width:120px !important; }
+  .hero__title{ font-size:30px; }
+}
+
+/* --- v15: single-brand header (logo only) --- */
+.brand__logo{
+  width:240px !important;
+  max-width: 70vw;
+  height:auto;
+  margin:0 auto 18px auto;
+}
+.brand{
+  margin-bottom: 18px !important;
+}
+@media (max-width:900px){
+  .brand__logo{ width:190px !important; }
+}
+@media (max-width:520px){
+  .brand__logo{ width:150px !important; }
+}
+
+/* --- v16: Much larger hero logo --- */
+
+/* Remove any previous constraints */
+.brand__logo{
+  width:420px !important;   /* significantly larger */
+  max-width:90vw;
+  height:auto;
+  display:block;
+  margin:40px auto 30px auto;
+}
+
+/* Reduce empty vertical space above */
+.brand{
+  margin-top:20px !important;
+  margin-bottom:10px !important;
+}
+
+/* Tighten spacing before headline */
+.hero{
+  margin-top:0 !important;
+}
+
+@media (max-width:1100px){
+  .brand__logo{ width:340px !important; }
+}
+
+@media (max-width:700px){
+  .brand__logo{ width:260px !important; }
+}
+
+@media (max-width:480px){
+  .brand__logo{ width:200px !important; }
+}
+
+/* v17 remove gold divider */
+.brand__divider{
+  display:none !important;
+}
+
+/* --- v18 tighten logo-to-headline spacing --- */
+
+.brand__logo{
+  margin:20px auto 8px auto !important; /* reduce bottom gap */
+}
+
+.brand{
+  margin-bottom:0 !important;
+}
+
+.hero{
+  margin-top:0 !important;
+}
+
+.hero__title{
+  margin-top:10px !important; /* small controlled spacing */
+}
+
+/* --- v19 aggressive logo scale + ultra-tight spacing --- */
+
+.brand__logo{
+  width:520px !important;   /* much larger */
+  max-width:95vw;
+  height:auto;
+  display:block;
+  margin:10px auto 0 auto !important; /* remove almost all bottom gap */
+}
+
+.brand{
+  margin:0 !important;
+  padding:0 !important;
+}
+
+.hero{
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+
+.hero__title{
+  margin-top:5px !important; /* extremely tight */
+}
+
+@media (max-width:1100px){
+  .brand__logo{ width:420px !important; }
+}
+
+@media (max-width:700px){
+  .brand__logo{ width:300px !important; }
+}
+
+@media (max-width:480px){
+  .brand__logo{ width:230px !important; }
+}
+
+/* =========================
+   v20 Mobile-first polish
+   ========================= */
+
+/* iOS / mobile feel */
+html, body{
+  -webkit-text-size-adjust: 100%;
+}
+body{
+  padding-bottom: env(safe-area-inset-bottom);
+}
+button, input, select{
+  font: inherit;
+}
+/* Better tap targets */
+button, .btn, select, input[type="date"]{
+  min-height: 48px;
+}
+/* Prevent iOS zoom on form focus */
+@media (max-width: 520px){
+  input, select, button{
+    font-size: 16px;
+  }
+}
+
+/* Layout: container breathing room on mobile */
+.container{
+  padding-left: 18px;
+  padding-right: 18px;
+}
+@media (max-width: 520px){
+  .container{
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+/* Hero adjustments for phones */
+@media (max-width: 700px){
+  .brand__logo{
+    width: 300px !important;
+    max-width: 92vw;
+  }
+  .hero__title{
+    font-size: 34px !important;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+  }
+}
+@media (max-width: 520px){
+  .brand__logo{
+    width: 260px !important;
+    max-width: 92vw;
+    margin-top: 8px !important;
+  }
+  .hero__title{
+    font-size: 30px !important;
+    line-height: 1.10;
+  }
+}
+
+/* Cards: more compact, full-width, better shadows on mobile */
+.card{
+  border-radius: 18px;
+}
+@media (max-width: 700px){
+  .card{
+    padding: 18px;
+    border-radius: 16px;
+  }
+}
+@media (max-width: 520px){
+  .card{
+    padding: 16px;
+    border-radius: 16px;
+  }
+}
+
+/* Form grid: stack inputs on mobile */
+.formRow{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+@media (max-width: 700px){
+  .formRow{
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+/* Make CTA button full-width and sticky-feeling spacing */
+.btnPrimary, .btn{
+  width: 100%;
+}
+@media (max-width: 700px){
+  .btnPrimary, .btn{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 14px;
+  }
+}
+
+/* Result section spacing */
+.sectionTitle{
+  font-size: 18px;
+}
+@media (max-width: 520px){
+  .sectionTitle{
+    font-size: 17px;
+  }
+}
+
+/* Bars: thicker on mobile for clarity */
+@media (max-width: 520px){
+  .bar{
+    height: 10px;
+    border-radius: 999px;
+  }
+}
+
+/* Packing list: tighten and improve readability */
+.reco__list li{
+  gap: 10px;
+}
+@media (max-width: 520px){
+  .reco__text{
+    font-size: 15px;
+    line-height: 1.35;
+  }
+}
+
+/* Table: horizontal scroll on small screens + nicer separators */
+.tableWrap{
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 14px;
+}
+.table{
+  min-width: 560px; /* allows readable columns, scroll if needed */
+}
+@media (max-width: 520px){
+  .table th, .table td{
+    padding: 14px 10px;
+  }
+}
+
+/* Reduce giant vertical whitespace between hero and content on phones */
+@media (max-width: 700px){
+  .spacerLg{
+    height: 22px !important;
+  }
+}
+@media (max-width: 520px){
+  .spacerLg{
+    height: 14px !important;
+  }
+}
+
+/* Smooth font rendering */
+*{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================
+   v21 iPhone polish fixes
+   ========================= */
+
+/* Universal sizing safety */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+/* Make logo much bigger on iPhone, and hero sentence smaller */
+@media (max-width: 520px){
+  .brand__logo{
+    width: 340px !important;
+    max-width: 94vw;
+    margin-top: 6px !important;
+    margin-bottom: 10px !important;
+  }
+  .hero__title{
+    font-size: 22px !important; /* much smaller headline on iPhone */
+    line-height: 1.18;
+    max-width: 360px;
+    margin-top: 8px !important;
+  }
+}
+
+/* iOS date input overflow fix */
+.formRow > *{
+  min-width: 0; /* allow grid items to shrink */
+}
+input[type="date"], input[type="text"], select{
+  width: 100%;
+  max-width: 100%;
+}
+input[type="date"]{
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  padding-right: 44px; /* leave room for calendar icon area */
+}
+/* Keep the native calendar indicator inside the field on iOS */
+input[type="date"]::-webkit-calendar-picker-indicator{
+  opacity: 0.9;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* Ensure input wrapper is positioning context if present */
+.field, .input, .inputWrap{
+  position: relative;
+  max-width: 100%;
+}
+
+/* Prevent any child from bleeding out of cards */
+.card{
+  overflow: hidden;
+}
+
+/* =========================
+   v22 iPhone typography + date input fix
+   ========================= */
+
+.brand__tagline{
+  margin-top: 10px;
+  font-size: 18px;
+  color: #6b7a92;
+  font-weight: 500;
+}
+
+/* iPhone: larger tagline, smaller hero sentence */
+@media (max-width: 520px){
+  .brand__logo{
+    width: 360px !important;
+    max-width: 94vw;
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+  }
+  .brand__tagline{
+    font-size: 19px;
+    margin-top: 6px;
+  }
+  .hero__title{
+    font-size: 18px !important;   /* much smaller */
+    line-height: 1.22;
+    max-width: 360px;
+    margin-top: 10px !important;
+  }
+}
+
+/* Hide iOS native date icon and prevent overflow */
+input[type="date"]{
+  padding-right: 54px; /* space for our custom cal icon */
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+  opacity: 0;          /* hide native icon */
+  display: none;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button{
+  display:none;
+}
+
+/* Ensure custom calendar icon stays inside */
+.datewrap{
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+.input{
+  width: 100%;
+  max-width: 100%;
+}
+
+/* v24 ensure no secondary tagline styling remains */
+.brand__tagline + .brand__divider,
+.brand__tagline + hr {
+  display: none !important;
+}
+
+/* v25 remove tagline completely */
+.brand__tagline {
+  display: none !important;
+}
+
+/* =========================
+   v30 Re-enable iOS date picker icon
+   ========================= */
+
+/* Ensure the native calendar icon is visible/clickable again */
+input[type="date"]{
+  -webkit-appearance: auto;
+  appearance: auto;
+  position: relative;
+  padding-right: 44px; /* room for icon */
+}
+
+/* Force indicator visible & clickable (overrides any previous hide rules) */
+input[type="date"]::-webkit-calendar-picker-indicator{
+  display: block !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Keep field within card on iPhone */
+@media (max-width: 520px){
+  input[type="date"]{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* =========================
+   v31 Premium unit toggle (segmented control)
+   ========================= */
+.unitSeg{
+  display:inline-flex;
+  align-items:center;
+  gap:0;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid #e6edf6;
+  border-radius: 999px;
+  padding: 6px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.unitSeg__btn{
+  border: 0;
+  background: transparent;
+  color: #6b7a92;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .06em;
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  min-height: 40px;
+  line-height: 1;
+}
+.unitSeg__btn[aria-pressed="true"]{
+  background: #0b1930;
+  color: #ffffff;
+  box-shadow: 0 10px 18px rgba(0,0,0,.16);
+}
+.unitSeg__btn:focus{
+  outline: none;
+}
+.unitSeg__btn:focus-visible{
+  box-shadow: 0 0 0 4px rgba(11,25,48,.16), 0 10px 18px rgba(0,0,0,.16);
+}
+@media (max-width: 520px){
+  .unitSeg{
+    padding: 5px;
+  }
+  .unitSeg__btn{
+    padding: 10px 12px;
+    min-height: 38px;
+  }
+}
+
+/* =========================
+   v32 iPhone: Historical Snapshot fits screen (no horizontal scroll)
+   ========================= */
+@media (max-width: 520px){
+  .tableWrap{ overflow-x: hidden !important; }
+  .table{ width:100%; min-width:0 !important; }
+
+  .table thead{ display:none; }
+
+  .table tr{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 14px;
+    padding: 14px 0;
+    border-bottom: 2px solid rgba(11,25,48,.14);
+  }
+  .table tr:last-child{ border-bottom:0; }
+
+  .table td{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 !important;
+    border:0 !important;
+    white-space:nowrap;
+    font-size:15px;
+  }
+  .table td::before{
+    content: attr(data-label);
+    font-size:12px;
+    font-weight:600;
+    color:#7b8aa3;
+    margin-right:10px;
+  }
+  .table td[data-label="Year"]{
+    grid-column: 1 / -1;
+    justify-content:flex-start;
+    font-size:16px;
+    font-weight:800;
+  }
+  .table td[data-label="Year"]::before{
+    content:"";
+    margin-right:0;
+  }
+}
+
+/* =========================
+   v40 Mobile history: revert to horizontal scroll (ports/date unaffected)
+   ========================= */
+.tableWrap{
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Make sure the table can scroll horizontally on small screens */
+@media (max-width: 520px){
+  .tableWrap{ display:block !important; overflow-x:auto !important; }
+  .table{ min-width: 560px !important; }
+}
+
+/* =========================
+   v41 Mobile: keep Historical Snapshot table looking like desktop
+   (fit-to-screen, no horizontal scroll)
+   ========================= */
+@media (max-width: 520px){
+  /* Ensure the table is shown (desktop-style) */
+  .tableWrap{
+    display:block !important;
+    overflow-x: hidden !important; /* no sideways scroll */
+    width: 100%;
+  }
+  .table{
+    width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed; /* force columns to fit */
+    border-collapse: collapse;
+  }
+
+  /* Compact typography/padding so all 5 columns fit */
+  .table th, .table td{
+    padding: 12px 8px !important;
+    font-size: 13px !important;
+    line-height: 1.15;
+    white-space: nowrap; /* keep values like 23 km/h on one line */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Slightly stronger headers, but compact */
+  .table th{
+    font-size: 12px !important;
+    letter-spacing: .02em;
+  }
+
+  /* Give Year a bit more room; shrink the others evenly */
+  .table th:nth-child(1), .table td:nth-child(1){ width: 18%; }
+  .table th:nth-child(2), .table td:nth-child(2){ width: 18%; }
+  .table th:nth-child(3), .table td:nth-child(3){ width: 18%; }
+  .table th:nth-child(4), .table td:nth-child(4){ width: 23%; }
+  .table th:nth-child(5), .table td:nth-child(5){ width: 23%; }
+
+  /* Keep row divider style */
+  .table tr{
+    border-bottom: 3px solid rgba(11,25,48,.85);
+  }
+  .table thead tr{
+    border-bottom: 3px solid rgba(11,25,48,.5);
+  }
+
+  /* Toggle: keep it visible but a bit smaller to reduce crowding */
+  .unitSeg{
+    transform: scale(.92);
+    transform-origin: top right;
+  }
+
+  /* Footnote: compact */
+  .tableNote{
+    font-size: 12px !important;
+  }
+}
+
+/* =========================
+   v42 FIX: override any legacy mobile "stacked table" rules
+   Force real table layout + show values on mobile
+   ========================= */
+@media (max-width: 520px){
+  /* Ensure headers show */
+  .table thead{ display: table-header-group !important; }
+  .table tbody{ display: table-row-group !important; }
+
+  /* Force table semantics */
+  .table tr{ display: table-row !important; padding: 0 !important; }
+  .table th, .table td{
+    display: table-cell !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+  }
+
+  /* Kill any label pseudo-elements from earlier experiments */
+  .table td::before{ content: none !important; }
+
+  /* Make sure text is visible */
+  .table td, .table th{ color: #0b1930 !important; }
+
+  /* Allow the row dividers to work as borders */
+  .table tr{ border-bottom: none !important; }
+  .table tbody tr{ border-bottom: 3px solid rgba(11,25,48,.85) !important; }
+  .table thead tr{ border-bottom: 3px solid rgba(11,25,48,.5) !important; }
+}
+
+/* --- Viator affiliate card --- */
+.card--viator{
+  border: 1px solid rgba(15,23,42,.10);
+  background: linear-gradient(180deg, rgba(255,184,77,.10) 0%, rgba(255,255,255,1) 55%);
+  box-shadow: 0 18px 50px rgba(10,25,50,.08);
+}
+.viatorHead{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+}
+.viatorBrand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.viatorLogo{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  border-radius:12px;
+  background: #fff;
+  border: 1px solid rgba(15,23,42,.10);
+  box-shadow: 0 10px 24px rgba(2,6,23,.08);
+  flex: 0 0 auto;
+}
+.viatorLogo svg{ width:26px; height:26px; }
+.viatorKicker{
+  font-size:12px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#0b1b33;
+  opacity:.75;
+  font-weight:700;
+}
+.viatorTagline{
+  margin-top:6px;
+  font-size:16px;
+  color:#334155;
+}
+.viatorTagline strong{ color:#0b1b33; }
+.viatorCTA{
+  margin-top:14px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.btn--viator{
+  background:#0b1b33;
+  color:#fff;
+  border: 1px solid rgba(11,27,51,.25);
+  box-shadow: 0 14px 34px rgba(2,6,23,.18);
+}
+.btn--viator:hover{ filter:brightness(1.05); }
+.btn--viator:active{ transform: translateY(1px); }
+.viatorNote{
+  font-size:12px;
+  color:#64748b;
+}
+@media (max-width: 700px){
+  .viatorTagline{ font-size:15px; }
+  .btn--viator{ width:100%; text-align:center; }
+}
+
+.viatorLogo__img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display:block;
+}
+
+/* Premium table (desktop) */
+@media (min-width: 700px){
+  .tableWrap .table{
+    font-size: 14px;
+    min-width: 640px;
+  }
+  .tableWrap .table th{
+    font-size: 12px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color:#64748b;
+    padding: 14px 14px;
+    border-bottom: 1px solid #e8eef7;
+    background: rgba(255,255,255,.55);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .tableWrap .table td{
+    padding: 16px 14px;
+    border-bottom: 1px solid #eef3fb;
+    color:#0b1b33;
+    font-weight: 600;
+  }
+  .tableWrap .table tbody tr:nth-child(odd) td{
+    background: rgba(248,250,252,.65);
+  }
+  .tableWrap .table td:first-child{
+    font-weight: 800;
+  }
+  .tableWrap .table td:not(:first-child), .tableWrap .table th:not(:first-child){
+    text-align: right;
+  }
+}
+
+/* --- Viator: bigger brand presence + premium CTA --- */
+.card--viator .viatorLogo{
+  width: 92px !important;
+  height: 92px !important;
+  border-radius: 18px !important;
+}
+@media (max-width: 700px){
+  .card--viator .viatorLogo{
+    width: 82px !important;
+    height: 82px !important;
+  }
+}
+
+/* CTA layout */
+.card--viator .viatorCTA{
+  margin-top: 16px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:14px !important;
+  flex-wrap:wrap !important;
+}
+
+/* Premium pill CTA (replaces big black bar) */
+.btn--viator{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:10px !important;
+  padding: 10px 14px !important;
+  border-radius: 999px !important;
+  font-weight: 800 !important;
+  font-size: 14px !important;
+  background: #ffffff !important;
+  color: #0b1b33 !important;
+  border: 1px solid rgba(11,27,51,.18) !important;
+  box-shadow: 0 14px 34px rgba(2,6,23,.12) !important;
+  text-decoration: none !important;
+  width: auto !important;
+}
+
+.btn--viator svg{ width:16px; height:16px; opacity:.85; }
+
+.btn--viator:hover{ filter:brightness(1.02); }
+.btn--viator:active{ transform: translateY(1px); }
+
+@media (max-width: 700px){
+  .card--viator .viatorCTA{ flex-direction:column !important; align-items:stretch !important; }
+  .btn--viator{ width: 100% !important; padding: 12px 16px !important; font-size: 15px !important; }
+}
+
+/* --- Viator section redesign: bold + simple --- */
+.viatorHero{
+  padding: 22px 22px 20px;
+  border: 1px solid rgba(15,23,42,.10);
+  background: linear-gradient(180deg, rgba(255,184,77,.14) 0%, rgba(255,255,255,1) 55%);
+  box-shadow: 0 18px 50px rgba(10,25,50,.08);
+}
+.viatorHero__inner{
+  display:grid;
+  grid-template-columns: 180px 1fr;
+  gap: 22px;
+  align-items:center;
+}
+.viatorMark{
+  width: 180px;
+  height: 140px;
+  border-radius: 22px;
+  background:#fff;
+  border: 1px solid rgba(15,23,42,.10);
+  box-shadow: 0 18px 45px rgba(2,6,23,.10);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 16px;
+}
+.viatorMark__img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display:block;
+}
+
+.viatorHero__kicker{
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color:#0b1b33;
+  opacity:.70;
+  font-weight: 800;
+}
+.viatorHero__title{
+  margin: 6px 0 8px;
+  font-size: 28px;
+  line-height: 1.12;
+  color:#0b1b33;
+  font-weight: 900;
+}
+.viatorHero__tagline{
+  margin: 0;
+  font-size: 18px;
+  color:#334155;
+}
+.viatorHero__tagline strong{ color:#0b1b33; }
+
+.viatorHero__actions{
+  margin-top: 14px;
+  display:flex;
+  align-items:center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.btn--viatorPrimary{
+  background:#0b1b33;
+  color:#ffffff;
+  border: 1px solid rgba(11,27,51,.22);
+  padding: 14px 18px;
+  border-radius: 14px;
+  font-weight: 900;
+  font-size: 15px;
+  box-shadow: 0 16px 38px rgba(2,6,23,.22);
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap: 10px;
+}
+.btn--viatorPrimary:hover{ filter: brightness(1.04); }
+.btn--viatorPrimary:active{ transform: translateY(1px); }
+.viatorHero__note{
+  font-size: 12px;
+  color:#64748b;
+}
+
+/* Mobile */
+@media (max-width: 700px){
+  .viatorHero{ padding: 18px 18px 16px; }
+  .viatorHero__inner{
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .viatorMark{
+    width: 100%;
+    height: 120px;
+  }
+  .viatorHero__title{ font-size: 24px; }
+  .viatorHero__tagline{ font-size: 16px; }
+  .btn--viatorPrimary{
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+  }
+}
+
+/* --- Viator logo centering + larger fill --- */
+.viatorMark{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  padding: 10px !important; /* reduce padding so logo fills more */
+}
+
+.viatorMark__img{
+  width: 90% !important;
+  height: 90% !important;
+  object-fit: contain !important;
+  display:block !important;
+  margin: 0 auto !important;
+}
+
+/* Adjust official Viator circular logo fill */
+.viatorMark{
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.viatorMark__img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+/* --- Remove white square behind Viator logo --- */
+.viatorMark{
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.viatorMark__img{
+  background: transparent !important;
+  display:block;
+}
+
+/* --- Viator: centered copy + mobile logo sizing --- */
+.viatorHero__right{
+  text-align: center !important;
+}
+.viatorHero__actions{
+  justify-content: center !important;
+}
+/* ensure note wraps nicely when centered */
+.viatorHero__note{
+  text-align:center !important;
+  width:100%;
+}
+
+/* Desktop keeps existing logo sizing; mobile logo smaller */
+@media (max-width: 700px){
+  .viatorMark{
+    height: 96px !important;
+  }
+  .viatorMark__img{
+    width: 76% !important;
+    height: 76% !important;
+  }
+}
+
+
+/* --- Date input: iOS Safari calendar icon + clipping fix --- */
+.datewrap{ position:relative; width:100%; max-width:100%; }
+.datewrap .input[type="date"]{
+  padding-right: 56px; /* room for icon(s) */
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* Keep the native picker indicator inside the field and invisible (we draw our own) */
+.datewrap .input[type="date"]::-webkit-calendar-picker-indicator{
+  opacity: 0;
+  position: absolute;
+  right: 18px;
+  width: 18px;
+  height: 18px;
+}
+/* Remove inner spin/clear affordances that can overflow on iOS */
+.datewrap .input[type="date"]::-webkit-inner-spin-button,
+.datewrap .input[type="date"]::-webkit-clear-button{
+  display:none;
+}
+
+/* Mobile: prevent any overflow and ensure full width */
+@media (max-width: 700px){
+  .datewrap{ overflow:hidden; }
+  .input, .select{ max-width:100%; width:100%; }
+}
+
+
+/* --- Hero title layout (v70) --- */
+.hero__title{
+  max-width: 980px;
+  margin: 28px auto 34px auto;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+@media (max-width: 900px){
+  .hero__title{ font-size: 30px; max-width: 680px; }
+}
+@media (max-width: 600px){
+  .hero__title{ font-size: 24px; max-width: 92vw; }
+}

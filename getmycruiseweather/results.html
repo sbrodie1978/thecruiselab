@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Get My Cruise Weather</title>
+  
+  
+  
+  <link rel="stylesheet" href="css/styles.css" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WWSLWME6WY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WWSLWME6WY');
+</script>
+
+</head>
+<body>
+  <main class="page page--results">
+    <header class="brand brand--compact">
+      <img src="assets/logo.png" class="brand__logo" alt="Get My Cruise Weather" />
+      
+</header>
+
+    <section class="hero hero--small">
+      <h1 class="hero__title hero__title--small">Historical weather for your cruise ports<br/>on the date you’ll be there</h1>
+    </section>
+
+    <section class="card card--form" aria-label="Port and date">
+      <div class="formgrid formgrid--tight">
+        
+        <div class="field">
+          <label for="regionSelect">Region</label>
+          <select id="regionSelect" class="select">
+            <option value="">Select a region</option>
+            <option value="Europe">Europe</option>
+            <option value="Caribbean">Caribbean</option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Asia">Asia</option>
+            <option value="Oceania">Oceania</option>
+            <option value="Africa">Africa</option>
+</select>
+        </div>
+
+<div class="field" id="portField" style="display:none">
+          <label class="label" for="portSelect">Port</label>
+          <div class="selectwrap">
+            <select id="portSelect" class="select"></select>
+            <span class="chev" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="dateInput">Date of visit</label>
+          <div class="datewrap">
+            <input id="dateInput" class="input" type="date" />
+            <span class="cal" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+
+      <button id="analyseBtn" class="btn btn--primary">Analyse My Port</button>
+    </section>
+
+<section class="card" aria-label="Weather intelligence">
+      <h2 class="sectionTitle">Weather intelligence</h2>
+
+      <div class="metric">
+        <div class="metric__top">
+          <div>
+            <div class="metric__name">Warmth confidence</div>
+            <div id="warmthHint" class="metric__hint"> </div>
+          </div>
+          <div class="metric__value"><span id="warmthPct">—</span>%</div>
+        </div>
+        <div class="bar">
+          <div id="warmthBar" class="bar__fill"></div>
+        </div>
+        <div class="ticks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
+      </div>
+
+      <div class="metric">
+        <div class="metric__top">
+          <div>
+            <div class="metric__name">Rain risk</div>
+            <div id="rainHint" class="metric__hint"> </div>
+          </div>
+          <div class="metric__value"><span id="rainPct">—</span>%</div>
+        </div>
+        <div class="bar">
+          <div id="rainBar" class="bar__fill"></div>
+        </div>
+        <div class="ticks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
+      </div>
+
+      <div class="metric">
+        <div class="metric__top">
+          <div>
+            <div class="metric__name">Wind exposure</div>
+            <div id="windHint" class="metric__hint"> </div>
+          </div>
+          <div class="metric__value"><span id="windPct">—</span>%</div>
+        </div>
+        <div class="bar">
+          <div id="windBar" class="bar__fill"></div>
+        </div>
+        <div class="ticks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
+      </div>
+
+      <div class="footnote">Scores are calculated from the last 5 recorded years on this same date (port‑level).</div>
+    </section>
+
+
+    <section class="card" aria-label="Packing recommendations">
+      <h2 class="sectionTitle">Packing recommendations</h2>
+      <div class="recos">
+        <div class="reco__summary" id="packSummary">—</div>
+
+        <ul class="reco__list" id="packList">
+          <!-- populated by JS -->
+        </ul>
+</div>
+    </section>
+
+
+    
+    
+    
+    <section class="card card--viator viatorHero" aria-label="Shore excursions on Viator">
+      <div class="viatorHero__inner">
+        <div class="viatorHero__left">
+          <div class="viatorMark" aria-hidden="true">
+            <!-- Large, simple brand tile (placeholder). Replace assets/viator-logo.png with official logo if permitted. -->
+            <img src="assets/viator-logo.png" alt="Viator" class="viatorMark__img">
+          </div>
+        </div>
+
+        <div class="viatorHero__right">
+          <div class="viatorHero__kicker">Recommended shore excursions</div>
+<p class="viatorHero__tagline">
+            Top-rated tours & experiences in <strong id="viatorPortName">this port</strong>
+          </p>
+
+          <div class="viatorHero__actions">
+            <a id="viatorLink" class="btn btn--viatorPrimary" href="https://www.viator.com" target="_blank" rel="sponsored noopener noreferrer">
+              View excursions in <span id="viatorPortCta">this port</span>
+            </a>
+            <div class="viatorHero__note">Opens Viator in a new tab • Affiliate link</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+<section class="card" aria-label="Historical snapshot">
+      
+      <div class="cardhead">
+        <h2 class="sectionTitle">Historical Snapshot (Last 5 Years)</h2>
+        <div class="unitToggle" aria-label="Temperature unit toggle">
+          <span class="unitToggle__label"></span>
+          
+
+<div class="unitSeg" aria-label="Temperature unit">
+  <button type="button" class="unitSeg__btn" id="unitC" aria-pressed="true">°C</button>
+  <button type="button" class="unitSeg__btn" id="unitF" aria-pressed="false">°F</button>
+</div>
+
+
+          <span class="unitToggle__label"></span>
+        </div>
+      </div>
+    
+
+      <div class="tablewrap">
+        <div class="tableWrap"><table class="table">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>High</th>
+              <th>Low</th>
+              <th>Rain</th>
+              <th>Wind</th>
+            </tr>
+          </thead>
+          <tbody id="historyBody"></tbody>
+        </table></div>
+      </div>
+
+      <div class="micro">Wind shown as km/h (Open‑Meteo daily max windspeed).</div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script>
+    window.GMCW && window.GMCW.initResultsPage();
+  </script>
+</body>
+</html>

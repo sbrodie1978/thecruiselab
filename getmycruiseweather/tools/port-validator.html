@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ports Validator • Get My Cruise Weather</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:24px;max-width:980px}
+    h1{margin:0 0 6px}
+    p{color:#475569;margin-top:0}
+    textarea{width:100%;min-height:240px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:13px;padding:12px;border:1px solid #e2e8f0;border-radius:10px}
+    button{padding:10px 14px;border-radius:12px;border:1px solid #0b1b33;background:#0b1b33;color:#fff;font-weight:700;cursor:pointer}
+    button:disabled{opacity:.6;cursor:not-allowed}
+    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:12px 0}
+    .tag{font-size:12px;color:#0b1b33;background:#ffb84d33;border:1px solid #ffb84d66;padding:6px 10px;border-radius:999px}
+    table{width:100%;border-collapse:collapse;margin-top:14px}
+    th,td{border-bottom:1px solid #eef2f7;padding:10px;text-align:left;font-size:13px}
+    th{color:#64748b;text-transform:uppercase;letter-spacing:.08em;font-size:11px}
+    .ok{color:#166534;font-weight:700}
+    .bad{color:#b91c1c;font-weight:700}
+  </style>
+</head>
+<body>
+  <h1>Ports Validator</h1>
+  <p>Paste a JSON array of ports (with <code>name</code>, <code>lat</code>, <code>lon</code>) to verify Open‑Meteo returns data for each one.</p>
+
+  <div class="row">
+    <span class="tag">No keys needed</span>
+    <span class="tag">Checks Open‑Meteo archive endpoint</span>
+    <span class="tag">Use small batches (25–50)</span>
+  </div>
+
+  <textarea id="json" spellcheck="false">[]</textarea>
+
+  <div class="row">
+    <label>Sample date (YYYY-MM-DD): <input id="date" type="date" /></label>
+    <button id="run">Validate ports</button>
+    <span id="status"></span>
+  </div>
+
+  <table>
+    <thead><tr><th>Port</th><th>Lat</th><th>Lon</th><th>Result</th><th>Notes</th></tr></thead>
+    <tbody id="out"></tbody>
+  </table>
+
+<script>
+  const $ = (id)=>document.getElementById(id);
+  const out = $("out");
+  const statusEl = $("status");
+  const runBtn = $("run");
+  const dateEl = $("date");
+
+  const d = new Date(); d.setFullYear(d.getFullYear()-1);
+  dateEl.value = d.toISOString().slice(0,10);
+
+  async function checkPort(p, date){
+    const url = new URL("https://archive-api.open-meteo.com/v1/archive");
+    url.searchParams.set("latitude", p.lat);
+    url.searchParams.set("longitude", p.lon);
+    url.searchParams.set("start_date", date);
+    url.searchParams.set("end_date", date);
+    url.searchParams.set("hourly", "temperature_2m,precipitation,windspeed_10m");
+    url.searchParams.set("timezone", "auto");
+    const res = await fetch(url.toString());
+    if(!res.ok) return {ok:false, notes:"HTTP "+res.status};
+    const json = await res.json();
+    const t = json?.hourly?.temperature_2m;
+    const w = json?.hourly?.windspeed_10m;
+    if(Array.isArray(t) && t.length>0 && Array.isArray(w) && w.length>0) return {ok:true, notes:"Data ok"};
+    return {ok:false, notes:"No hourly arrays returned"};
+  }
+
+  runBtn.onclick = async ()=>{
+    out.innerHTML = "";
+    statusEl.textContent = "";
+    runBtn.disabled = true;
+
+    let ports;
+    try{ ports = JSON.parse($("json").value); }
+    catch(e){ statusEl.textContent = "Invalid JSON"; runBtn.disabled=false; return; }
+
+    const date = dateEl.value;
+    if(!date){ statusEl.textContent = "Pick a sample date"; runBtn.disabled=false; return; }
+
+    let ok=0, bad=0;
+    for(const p of ports){
+      const tr = document.createElement("tr");
+      tr.innerHTML = `<td>${(p.name||"")}</td><td>${p.lat}</td><td>${p.lon}</td><td>…</td><td></td>`;
+      out.appendChild(tr);
+      try{
+        const r = await checkPort(p, date);
+        tr.children[3].innerHTML = r.ok ? `<span class="ok">OK</span>` : `<span class="bad">FAIL</span>`;
+        tr.children[4].textContent = r.notes;
+        r.ok ? ok++ : bad++;
+      }catch(e){
+        tr.children[3].innerHTML = `<span class="bad">FAIL</span>`;
+        tr.children[4].textContent = "Error: "+e.message;
+        bad++;
+      }
+    }
+    statusEl.textContent = `Done: ${ok} OK, ${bad} FAIL`;
+    runBtn.disabled = false;
+  };
+</script>
+</body>
+</html>

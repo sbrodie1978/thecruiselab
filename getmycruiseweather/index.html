@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Get My Cruise Weather</title>
+  
+  
+  
+  <link rel="stylesheet" href="css/styles.css" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WWSLWME6WY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WWSLWME6WY');
+</script>
+
+</head>
+<body>
+  <main class="page">
+    <header class="brand">
+      <img src="assets/logo.png" class="brand__logo" alt="Get My Cruise Weather" />
+      
+<div class="brand__rule" aria-hidden="true"></div>
+    </header>
+
+    <section class="hero">
+      
+<h1 class="hero__title">Historical weather for your cruise ports<br>on the date you’ll be there</h1>
+
+    </section>
+
+    <section class="card card--form" aria-label="Port and date">
+      <div class="formgrid">
+        
+        <div class="field">
+          <label for="regionSelect">Region</label>
+          <select id="regionSelect" class="select">
+            <option value="">Select a region</option>
+            <option value="Europe">Europe</option>
+            <option value="Caribbean">Caribbean</option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Asia">Asia</option>
+            <option value="Oceania">Oceania</option>
+            <option value="Africa">Africa</option>
+</select>
+        </div>
+
+<div class="field" id="portField" style="display:none">
+          <label class="label" for="portSelect">Port</label>
+          <div class="selectwrap">
+            <select id="portSelect" class="select">
+              <!-- populated by JS -->
+            </select>
+            <span class="chev" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="dateInput">Date of visit</label>
+          <div class="datewrap">
+            <input id="dateInput" class="input" type="date" />
+            <span class="cal" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+
+      <button id="analyseBtn" class="btn btn--primary" type="button" disabled>Analyse My Port</button>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
