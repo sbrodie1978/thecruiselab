@@ -1,6 +1,6 @@
 # The Cruise Lab — Master Context
 
-Last updated: 5 July 2026. This document is the single source of truth for The Cruise Lab initiative. All enhancements, new tools, and maintenance work should be consistent with it. Update it when the estate changes.
+Last updated: 5 July 2026 (rev 2 — monorepo). This document is the single source of truth for The Cruise Lab initiative. All enhancements, new tools, and maintenance work should be consistent with it. Update it when the estate changes.
 
 ## What The Cruise Lab is
 
@@ -23,6 +23,23 @@ CSS tokens used across Cruise Lab properties:
 
 Fonts: Cinzel (500/600/700) for headings, Outfit (300–700) for UI/body, loaded from Google Fonts. Headline treatment: gold vertical gradient text (gold-bright → gold) via background-clip. Section dividers: thin gold gradient rules with centred uppercase letterspaced labels. Cards: panel gradient background, panel-edge border, 14px radius, lift on hover with gold border. "Coming soon" cards: dashed border, sea-glass chip. Conventions: pure HTML/CSS/JS, single self-contained file per page where practical, no build step, no frameworks.
 
+## Source of truth: the monorepo
+
+All Cruise Lab source lives in the private GitHub repo **sbrodie1978/thecruiselab**, cloned locally at `~/cruiselab` on Stuart's MacBook. Layout:
+
+```
+thecruiselab/
+├── hub/                  → Pages project "thecruiselab"      → thecruiselab.com
+├── casinopoints/         → Pages project "sys-points"        → casinopoints.thecruiselab.com
+│   ├── index.html          (cruise line chooser)
+│   └── princess/index.html (Sea You Soon calculator)
+├── getmycruiseweather/   → Pages project "getmycruiseweather" → getmycruiseweather.com / weather.thecruiselab.com
+└── docs/
+    └── cruiselab-master-context.md   (this document)
+```
+
+Exception: Good Cabin Bad Cabin keeps its own private repo, sbrodie1978/goodcabinbadcabin. Workflow for any change: edit in the repo folder, deploy with wrangler, then commit and push. `.wrangler/` is gitignored.
+
 ## The estate — every property, where it lives
 
 All web properties are Cloudflare Pages projects in Stuart's Cloudflare account (login stuartfbrodie@outlook.com, account ID 9c5f5919b1ef204bd2aacf415c814cda). Both domains are registered at Namecheap with DNS hosted on Cloudflare (nameservers anuj.ns.cloudflare.com / emerie.ns.cloudflare.com). Namecheap email-forwarding MX and SPF records were preserved on both zones.
@@ -30,7 +47,7 @@ All web properties are Cloudflare Pages projects in Stuart's Cloudflare account 
 ### 1. The hub
 - URL: https://thecruiselab.com (plus www and thecruiselab.pages.dev)
 - Cloudflare Pages project: `thecruiselab`
-- Local folder on Stuart's MacBook: `~/thecruiselab` (single index.html)
+- Repo path: `~/cruiselab/hub` (single index.html)
 - Content: hero with flask mark and "The Cruise Lab" wordmark (small tracked "THE" above "CRUISE LAB"), tagline, "The Fleet" divider, one card per tool, an "In the Lab" coming-soon card, footer with disclaimer.
 - Current card links: cabins.thecruiselab.com · casinopoints.thecruiselab.com/princess/ · weather.thecruiselab.com
 
@@ -43,14 +60,14 @@ All web properties are Cloudflare Pages projects in Stuart's Cloudflare account 
 ### 3. Casino Points (Sea You Soon) — casino comp points
 - URL: https://casinopoints.thecruiselab.com (plus sys-points.pages.dev)
 - Cloudflare Pages project: `sys-points`
-- Local folder: `~/casinopoints`
+- Repo path: `~/cruiselab/casinopoints`
 - Structure: root index.html is a cruise-line chooser (Princess live; Carnival, Royal Caribbean, Norwegian shown as coming soon). Each cruise line lives in its own subfolder: `/princess/` currently hosts the Sea You Soon calculator (Princess SYS programme: voyage-length selector, optional points-so-far input, nine-tier offer ladder with free-play values, stateroom types, Princess Plus chips; point system effective 1 Sep 2025). Future lines are added as new folders (e.g. `carnival/index.html`) plus activating the matching chooser card.
 - The Princess app is a single self-contained index.html (~15.7KB). A backup copy exists at `~/Downloads/sea-you-soon-deploy/index.html`.
 
 ### 4. GetMyCruiseWeather — port-by-port cruise weather
 - URLs: https://getmycruiseweather.com (primary, its own consumer brand) and https://weather.thecruiselab.com (Cruise Lab alias) — both plus www and getmycruiseweather.pages.dev
 - Cloudflare Pages project: `getmycruiseweather`
-- Local folder: `~/Downloads/getmycruiseweather` (worth moving to `~/getmycruiseweather`)
+- Repo path: `~/cruiselab/getmycruiseweather`
 - Structure: multi-file static site — index.html (port picker), results.html, js/app.js, css/styles.css, data/ports.json (ports database), assets (logos + Viator affiliate logos), tools/port-validator.html, ports_readme.md.
 - Data: weather from the Open-Meteo archive API, called client-side, no API key. Google Analytics (gtag) installed. Viator affiliate links for shore excursions.
 - History: migrated from Netlify on 5 Jul 2026 (was Netlify project `cruiseweatherstuart`, deployed via Netlify Drop, team "Stuart Cruise"). The Netlify project is now redundant and can be deleted. The app had real traffic at migration time (~28 requests/hour).
@@ -63,7 +80,15 @@ Deploys are done from Stuart's MacBook terminal with wrangler:
 npx wrangler pages deploy <folder> --project-name=<project>
 ```
 
-e.g. `npx wrangler pages deploy ~/thecruiselab --project-name=thecruiselab`
+Standard deploys from the repo:
+
+```bash
+npx wrangler pages deploy ~/cruiselab/hub --project-name=thecruiselab
+npx wrangler pages deploy ~/cruiselab/casinopoints --project-name=sys-points
+npx wrangler pages deploy ~/cruiselab/getmycruiseweather --project-name=getmycruiseweather
+```
+
+After deploying, commit and push the change: `cd ~/cruiselab && git add -A && git commit -m "..." && git push`. Note the Pages projects are direct-upload type, not git-connected — pushing to GitHub does NOT auto-deploy; wrangler is the deploy mechanism.
 
 Notes and lessons learned:
 - A stray `~/Downloads/wrangler.toml` triggers a harmless warning on every deploy; deleting it silences this.
