@@ -34,7 +34,7 @@ needs touching. Four feed kinds:
 
 | kind         | id needed                  | use for |
 |--------------|----------------------------|---------|
-| `yt-live`    | YouTube **channel** id     | A channel's current live stream. Most durable — follows whatever the channel streams, survives stream-ID rotation. Prefer this for port cams. |
+| `yt-video`   | YouTube **video** id       | One video or live stream. For live cams this is the only option — YouTube retired the old `live_stream?channel=` embed (confirmed dead 12 Jul 2026). When a cam's stream rotates, get the new id from `youtube.com/channel/<UC id>/streams`. |
 | `yt-uploads` | channel id with `UC` → `UU`| A channel's all-uploads playlist — plays their latest videos. No stale video IDs to maintain. |
 | `archive`    | archive.org identifier     | An Internet Archive film — the id from its `archive.org/details/<id>` URL. |
 | `link`       | none (uses `srcUrl`)       | Anything that can't or shouldn't be embedded; card opens the source in a new tab. |
@@ -48,14 +48,23 @@ the `TRACKER_PRESETS` array.
 `?debug=1` on the URL renders every embed inline on one page for a quick
 eyeball sweep — use after any feed change and after each deploy.
 
-Verified at build (12 Jul 2026): Solent Ships channel id, PTZtv channel id,
-Emma Cruises and Tips For Travellers channel ids, all three archive.org film
-ids, the VesselFinder embed pattern, and the PTZtv link-out URLs.
+Verified live in production (12 Jul 2026 sweep via Claude-in-Chrome): both
+creator uploads embeds, all three archive.org films, the VesselFinder
+tracker, and the Southampton Cruise Cam video id. Solent Ships and PTZtv
+run several simultaneous streams — pick the right one from their /streams
+page, not the /live redirect (PTZtv's /live goes to their airport cam).
 
-**Not yet click-checked** (a wrong path just lands somewhere on the right
-site, but tidy up when convenient): the four cruise-line ship-cam URLs
-(Princess / AIDA / Viking / TUI) and the four creator `@handle` link-outs
-(Harr Travel, La Lido Loca, Ben & David, CruiseTipsTV).
+All link-outs click-checked 12 Jul 2026. Corrections made in that sweep:
+Princess bridgecams moved to `/ships-and-experience/ships/bridgecams`
+(old `/cruise-ships/bridge-cams/` 404s); AIDA has no all-fleet page, so
+the card targets the flagship's official bugcam
+(`aida.de/schiffe/aidacosma/bugcam` — per-ship pattern); Viking's own
+PANOMAX pages (`viking.panomax.com/<ship>`) were down entirely, and TUI's
+`meinschiff.com/webcams` silently redirects to the homepage, so both cards
+target Cruising Earth's per-line indexes; and "Ben & David" is **Cruise
+With Ben and David** at `youtube.com/@Cruisewith` — the obvious-looking
+`@BenandDavid` is an unrelated comedy channel. Creator handles verified:
+@HarrTravel, @LaLidoLoca, @Cruisewith, @CruiseTipsTV.
 
 ## Known behaviours
 

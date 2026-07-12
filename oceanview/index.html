@@ -325,8 +325,12 @@ footer .credits{max-width:640px;margin:8px auto 0;opacity:.85}
      name  : card title
      loc   : small uppercase location line
      desc  : card description
-     kind  : 'yt-live'    → live stream by CHANNEL id (durable; follows
-                            whatever that channel is streaming now)
+     kind  : 'yt-video'   → one YouTube video/live stream by VIDEO id.
+                            NOTE: the old live_stream?channel= embed is
+                            DEAD (YouTube retired it — verified 12 Jul
+                            2026), so live cams need the current video id.
+                            When a stream rotates, get the new id from
+                            youtube.com/channel/<UC id>/streams
              'yt-uploads' → a channel's uploads playlist (its UC… channel
                             id with UC swapped to UU) — plays latest videos
              'archive'    → archive.org film (id = the item identifier)
@@ -342,17 +346,20 @@ footer .credits{max-width:640px;margin:8px auto 0;opacity:.85}
 const FEEDS = [
 
   /* ---------------- LIVE · PORT CAMS ---------------- */
-  { sec:'port', kind:'yt-live', id:'UCAupQASEG4kt6oXHe0Xwd9Q',
+  /* Solent Ships channel: UCAupQASEG4kt6oXHe0Xwd9Q — if this stream dies,
+     grab the new id from youtube.com/channel/UCAupQASEG4kt6oXHe0Xwd9Q/streams
+     (the "Cruise Cam - Southampton" 24/7 stream) */
+  { sec:'port', kind:'yt-video', id:'WxdeHH9T7Yk',
     name:'Southampton', loc:'England, UK',
-    desc:'The UK\u2019s cruise capital, live. Sailaway evenings here can mean five ships leaving in convoy.',
-    src:'Solent Ships (YouTube)', srcUrl:'https://www.youtube.com/channel/UCAupQASEG4kt6oXHe0Xwd9Q',
+    desc:'The UK\u2019s cruise capital, live from Ocean Terminal. Sailaway evenings here can mean five ships leaving in convoy.',
+    src:'Solent Ships (YouTube)', srcUrl:'https://www.youtube.com/watch?v=WxdeHH9T7Yk',
     chips:['live'] },
 
-  { sec:'port', kind:'yt-live', id:'UCG8-xn6zUbEqmqlnsvrD33Q',
-    name:'PTZtv Live Rotation', loc:'USA & Caribbean',
-    desc:'PTZtv\u2019s rolling preview across their HD port cams — Everglades, Canaveral, Miami, Nassau and more.',
-    src:'PTZtv (YouTube)', srcUrl:'https://www.youtube.com/channel/UCG8-xn6zUbEqmqlnsvrD33Q',
-    chips:['live'] },
+  { sec:'port', kind:'link',
+    name:'PTZtv Portfolio', loc:'USA & Caribbean',
+    desc:'PTZtv\u2019s launcher for all their HD cams — ports, harbours and beaches across Florida, the Bahamas and beyond.',
+    src:'PTZtv', srcUrl:'https://www.ptztv.live/',
+    chips:['live','ext'] },
 
   { sec:'port', kind:'link',
     name:'Port Canaveral', loc:'Florida, USA',
@@ -396,25 +403,25 @@ const FEEDS = [
   { sec:'ship', kind:'link',
     name:'Princess Bridgecams', loc:'Whole fleet',
     desc:'A camera on every Princess ship, all on one page. Satellite images refreshed every few minutes.',
-    src:'Princess Cruises', srcUrl:'https://www.princess.com/ships-and-experience/cruise-ships/bridge-cams/',
+    src:'Princess Cruises', srcUrl:'https://www.princess.com/ships-and-experience/ships/bridgecams',
     chips:['still','ext'] },
 
   { sec:'ship', kind:'link',
-    name:'AIDA Webcams', loc:'Whole fleet',
-    desc:'Around 36 cameras across the AIDA fleet, including three angles on AIDAcosma.',
-    src:'AIDA Cruises', srcUrl:'https://www.aida.de/webcams',
+    name:'AIDA Bugcams', loc:'Whole fleet',
+    desc:'Bow cams across the AIDA fleet \u2014 flagship AIDAcosma\u2019s here, with every sister ship one click away.',
+    src:'AIDA Cruises', srcUrl:'https://aida.de/schiffe/aidacosma/bugcam',
     chips:['ext'] },
 
   { sec:'ship', kind:'link',
     name:'Viking Ocean Cams', loc:'Ocean fleet',
-    desc:'Live views from Viking\u2019s ocean ships with current position and itinerary.',
-    src:'Viking', srcUrl:'https://www.vikingcruises.com/webcams.html',
+    desc:'360\u00b0 panoramic cams on Viking\u2019s ocean and expedition ships, indexed ship by ship.',
+    src:'via Cruising Earth', srcUrl:'https://www.cruisingearth.com/ship-webcams/viking-cruises/',
     chips:['ext'] },
 
   { sec:'ship', kind:'link',
     name:'Mein Schiff Cams', loc:'TUI Cruises fleet',
-    desc:'Live cameras across the Mein Schiff fleet, sailing mostly from German ports.',
-    src:'TUI Cruises', srcUrl:'https://www.meinschiff.com/webcams',
+    desc:'Bow cams across the Mein Schiff fleet, sailing mostly from German ports \u2014 indexed ship by ship.',
+    src:'via Cruising Earth', srcUrl:'https://www.cruisingearth.com/ship-webcams/tui-cruises/',
     chips:['ext'] },
 
   { sec:'ship', kind:'link',
@@ -449,9 +456,9 @@ const FEEDS = [
     chips:['ext'] },
 
   { sec:'creator', kind:'link',
-    name:'Ben & David', loc:'Ship tours',
+    name:'Cruise With Ben and David', loc:'Ship tours',
     desc:'Full ship tours and food reviews from the UK duo — a gentle, thorough look around each ship.',
-    src:'Ben & David (YouTube)', srcUrl:'https://www.youtube.com/@BenandDavid',
+    src:'Cruise With Ben and David (YouTube)', srcUrl:'https://www.youtube.com/@Cruisewith',
     chips:['ext'] },
 
   { sec:'creator', kind:'link',
@@ -513,7 +520,7 @@ const TRACKER_PRESETS = [
 
 /* ---------------- Embed URL builder ---------------- */
 function embedUrl(f){
-  if (f.kind === 'yt-live')    return 'https://www.youtube.com/embed/live_stream?channel=' + f.id + '&autoplay=1';
+  if (f.kind === 'yt-video')   return 'https://www.youtube.com/embed/' + f.id + '?autoplay=1';
   if (f.kind === 'yt-uploads') return 'https://www.youtube.com/embed/videoseries?list=' + f.id;
   if (f.kind === 'archive')    return 'https://archive.org/embed/' + f.id;
   return null;
