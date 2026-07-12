@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ocean View · The Cruise Lab — live port cams, ship cams &amp; cruise video</title>
+<meta name="description" content="Ocean View by The Cruise Lab — live cruise port webcams, ship cams, a live ship tracker and the best free cruise video, curated in one player.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ocean-deep:#081830;
+  --ocean:#0d2445;
+  --panel:#122c52;
+  --panel-edge:#1d3d6b;
+  --gold:#d9b45c;
+  --gold-bright:#f0d087;
+  --gold-dim:rgba(217,180,92,.35);
+  --foam:#f3efe4;
+  --mist:#8fa2bd;
+  --seaglass:#46c3a8;
+  --seaglass-dim:rgba(70,195,168,.18);
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:'Outfit',sans-serif;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #16335e 0%, transparent 60%),
+    var(--ocean-deep);
+  color:var(--foam);
+  min-height:100vh;
+  padding:0 16px calc(48px + env(safe-area-inset-bottom));
+  line-height:1.5;
+}
+.wrap{max-width:980px;margin:0 auto}
+
+/* ---------- Header ---------- */
+header{text-align:center;padding:48px 8px 8px}
+.eyebrow{
+  font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;text-decoration:none;display:inline-block;
+}
+.eyebrow:hover{color:var(--gold-bright)}
+h1{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:clamp(2.2rem,8.5vw,3.3rem);
+  letter-spacing:.05em;margin:.3rem 0 .45rem;
+  background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:var(--gold);
+}
+.tagline{
+  color:var(--mist);font-weight:300;
+  font-size:clamp(.98rem,3.2vw,1.12rem);
+  max-width:560px;margin:0 auto;
+}
+.tagline strong{color:var(--foam);font-weight:500}
+
+/* ---------- Porthole mark ---------- */
+.porthole{
+  width:86px;height:auto;margin:8px auto 12px;display:block;
+  filter:drop-shadow(0 6px 24px rgba(217,180,92,.18));
+}
+.porthole .wave{animation:lap 5s ease-in-out infinite alternate}
+@keyframes lap{from{transform:translateX(0)}to{transform:translateX(-12px)}}
+@media (prefers-reduced-motion:reduce){.porthole .wave{animation:none}}
+
+/* ---------- Section pills ---------- */
+.nav{display:flex;justify-content:center;gap:10px;padding:24px 0 6px;flex-wrap:wrap}
+.nav button{
+  font-family:'Cinzel',serif;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  font-size:.88rem;color:var(--gold);
+  background:transparent;border:1px solid var(--gold-dim);border-radius:999px;
+  padding:11px 30px;cursor:pointer;
+  transition:background .18s ease,color .18s ease,border-color .18s ease;
+}
+.nav button:hover{border-color:var(--gold)}
+.nav button.on{background:var(--gold);color:var(--ocean-deep);border-color:var(--gold)}
+.nav button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+.subnav{display:flex;justify-content:center;gap:8px;padding:10px 0 4px;flex-wrap:wrap}
+.subnav button{
+  font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  font-size:.68rem;color:var(--mist);
+  background:rgba(13,36,69,.45);border:1px solid var(--panel-edge);border-radius:999px;
+  padding:8px 16px;cursor:pointer;
+  transition:color .18s ease,border-color .18s ease;
+}
+.subnav button:hover{color:var(--foam);border-color:var(--gold-dim)}
+.subnav button.on{color:var(--seaglass);border-color:var(--seaglass);background:var(--seaglass-dim)}
+.subnav button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* ---------- Divider ---------- */
+.rule{
+  display:flex;align-items:center;gap:14px;
+  max-width:420px;margin:22px auto 0;
+  color:var(--gold);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600;
+}
+.rule::before,.rule::after{
+  content:"";flex:1;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold-dim));
+}
+.rule::after{background:linear-gradient(90deg,var(--gold-dim),transparent)}
+
+.blurb{
+  text-align:center;color:var(--mist);font-weight:300;font-size:.9rem;
+  max-width:600px;margin:12px auto 0;
+}
+
+/* ---------- Card grid ---------- */
+.grid{
+  display:grid;gap:16px;
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  padding:22px 0 8px;
+}
+.card{
+  display:flex;flex-direction:column;text-align:left;text-decoration:none;
+  background:linear-gradient(180deg,var(--panel),var(--ocean));
+  border:1px solid var(--panel-edge);
+  border-radius:var(--radius);
+  padding:20px 20px 18px;
+  color:var(--foam);cursor:pointer;font-family:'Outfit',sans-serif;font-size:1rem;
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+}
+.card:hover,.card:focus-visible{
+  transform:translateY(-3px);
+  border-color:var(--gold-dim);
+  box-shadow:0 14px 34px rgba(4,10,24,.5);
+}
+.card:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:12px}
+.card-icon{width:34px;height:34px;color:var(--gold);flex:none}
+.chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.chip{
+  font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;
+  border-radius:999px;padding:4px 10px;white-space:nowrap;
+}
+.chip.live{color:var(--seaglass);background:var(--seaglass-dim)}
+.chip.live::before{
+  content:"";display:inline-block;width:6px;height:6px;border-radius:50%;
+  background:var(--seaglass);margin-right:6px;vertical-align:1px;
+  animation:pulse 1.6s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.chip.live::before{animation:none}}
+.chip.still{color:var(--mist);background:rgba(143,162,189,.14)}
+.chip.ext{color:var(--gold);background:rgba(217,180,92,.12)}
+.card h3{
+  font-family:'Cinzel',serif;font-weight:600;font-size:1.02rem;letter-spacing:.02em;
+  color:var(--gold-bright);margin-bottom:2px;
+}
+.card .loc{color:var(--seaglass);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:8px}
+.card p{color:var(--mist);font-size:.88rem;font-weight:300;flex:1}
+.card .src{color:var(--mist);font-size:.7rem;font-weight:400;margin-top:12px;opacity:.75}
+
+/* ---------- Tracker ---------- */
+.tracker{padding:22px 0 8px;display:none}
+.tracker.on{display:block}
+.presets{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.presets button{
+  font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  font-size:.68rem;color:var(--gold);
+  background:transparent;border:1px solid var(--gold-dim);border-radius:999px;
+  padding:8px 16px;cursor:pointer;transition:background .18s,color .18s;
+}
+.presets button:hover{border-color:var(--gold)}
+.presets button.on{background:var(--gold);color:var(--ocean-deep);border-color:var(--gold)}
+.presets button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.map-frame{
+  border:1px solid var(--panel-edge);border-radius:var(--radius);overflow:hidden;
+  background:var(--ocean);min-width:0;
+}
+.map-frame iframe{display:block;width:100%;height:520px;border:0}
+@media (max-width:640px){.map-frame iframe{height:420px}}
+
+/* ---------- Player modal ---------- */
+.modal{
+  position:fixed;inset:0;z-index:50;display:none;
+  background:rgba(4,10,24,.82);backdrop-filter:blur(4px);
+  padding:20px;overflow-y:auto;
+}
+.modal.on{display:flex;align-items:center;justify-content:center}
+.player{
+  width:min(920px,100%);
+  background:linear-gradient(180deg,var(--panel),var(--ocean));
+  border:1px solid var(--gold-dim);border-radius:var(--radius);
+  padding:18px;position:relative;
+}
+.player-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px;padding-right:40px;flex-wrap:wrap}
+.player h2{font-family:'Cinzel',serif;font-weight:600;font-size:1.15rem;color:var(--gold-bright)}
+.player .ploc{color:var(--seaglass);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;white-space:nowrap}
+.screen{
+  position:relative;width:100%;aspect-ratio:16/9;
+  background:#050d1d;border-radius:10px;overflow:hidden;border:1px solid var(--panel-edge);
+}
+.screen iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.offline{
+  position:absolute;inset:0;display:flex;flex-direction:column;gap:8px;
+  align-items:center;justify-content:center;text-align:center;color:var(--mist);
+  font-size:.9rem;font-weight:300;padding:20px;
+}
+.offline strong{color:var(--foam);font-weight:500;font-family:'Cinzel',serif;letter-spacing:.05em}
+.player-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;flex-wrap:wrap}
+.player-foot .credit{color:var(--mist);font-size:.75rem;font-weight:300}
+.srcbtn{
+  font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;
+  color:var(--gold);text-decoration:none;
+  border:1px solid var(--gold-dim);border-radius:999px;padding:8px 16px;
+  transition:background .18s,color .18s;white-space:nowrap;
+}
+.srcbtn:hover{background:var(--gold);color:var(--ocean-deep);border-color:var(--gold)}
+.close{
+  position:absolute;top:12px;right:12px;width:34px;height:34px;
+  background:transparent;border:1px solid var(--gold-dim);border-radius:50%;
+  color:var(--gold);font-size:1.05rem;line-height:1;cursor:pointer;
+  transition:background .18s,color .18s;
+}
+.close:hover{background:var(--gold);color:var(--ocean-deep)}
+.close:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* ---------- Debug ---------- */
+.debug .screen{margin-bottom:20px}
+.debug h3{font-family:'Cinzel',serif;color:var(--gold-bright);margin:14px 0 8px}
+
+/* ---------- Footer ---------- */
+footer{
+  text-align:center;color:var(--mist);
+  font-size:.78rem;font-weight:300;
+  padding:44px 12px 0;
+}
+footer .foot-mark{font-family:'Cinzel',serif;letter-spacing:.14em;font-size:.8rem;margin-bottom:6px}
+footer .foot-mark a{color:var(--gold);text-decoration:none}
+footer .foot-mark a:hover{color:var(--gold-bright)}
+footer p+p{margin-top:4px}
+footer .credits{max-width:640px;margin:8px auto 0;opacity:.85}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <a class="eyebrow" href="https://thecruiselab.com">Part of The Cruise Lab</a>
+
+    <!-- Porthole mark: gold porthole with the sea inside -->
+    <svg class="porthole" viewBox="0 0 100 100" aria-hidden="true">
+      <defs>
+        <clipPath id="portClip"><circle cx="50" cy="50" r="33"/></clipPath>
+        <linearGradient id="goldStroke" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f0d087"/>
+          <stop offset="1" stop-color="#d9b45c"/>
+        </linearGradient>
+      </defs>
+      <g clip-path="url(#portClip)">
+        <rect x="0" y="17" width="100" height="66" fill="#0d2445"/>
+        <path class="wave" fill="#1d3d6b"
+          d="M-12 52 q6 -5 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 v40 h-112 z"/>
+        <path class="wave" fill="#46c3a8" opacity=".35" style="animation-duration:7s"
+          d="M-12 57 q6 -4 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 v36 h-112 z"/>
+        <circle cx="63" cy="36" r="4" fill="#f0d087" opacity=".9"/>
+      </g>
+      <circle cx="50" cy="50" r="33" fill="none" stroke="url(#goldStroke)" stroke-width="3.4"/>
+      <circle cx="50" cy="50" r="41" fill="none" stroke="url(#goldStroke)" stroke-width="2.2"/>
+      <g fill="#d9b45c">
+        <circle cx="50" cy="13" r="2.1"/><circle cx="50" cy="87" r="2.1"/>
+        <circle cx="13" cy="50" r="2.1"/><circle cx="87" cy="50" r="2.1"/>
+        <circle cx="24" cy="24" r="2.1"/><circle cx="76" cy="24" r="2.1"/>
+        <circle cx="24" cy="76" r="2.1"/><circle cx="76" cy="76" r="2.1"/>
+      </g>
+    </svg>
+
+    <h1>Ocean View</h1>
+    <p class="tagline">The sea, on demand. <strong>Live port cams, ships underway and the best free cruise video</strong> — curated in one player.</p>
+  </header>
+
+  <nav class="nav" aria-label="Sections">
+    <button data-sec="live" class="on">Live</button>
+    <button data-sec="watch">Watch</button>
+  </nav>
+
+  <div class="subnav" id="subnav" aria-label="Categories"></div>
+
+  <p class="rule" id="secRule">Port Cams</p>
+  <p class="blurb" id="secBlurb"></p>
+
+  <main class="grid" id="grid"></main>
+
+  <section class="tracker" id="tracker" aria-label="Live ship tracker">
+    <div class="presets" id="presets"></div>
+    <div class="map-frame"><iframe id="mapFrame" title="Live ship positions map (VesselFinder)" loading="lazy" allow="fullscreen"></iframe></div>
+  </section>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="playerTitle">
+    <div class="player">
+      <button class="close" id="closeBtn" aria-label="Close player">✕</button>
+      <div class="player-head">
+        <h2 id="playerTitle"></h2>
+        <span class="ploc" id="playerLoc"></span>
+      </div>
+      <div class="screen" id="screen"></div>
+      <div class="player-foot">
+        <span class="credit" id="playerCredit"></span>
+        <a class="srcbtn" id="playerSrc" href="#" target="_blank" rel="noopener">Open at source ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="foot-mark"><a href="https://thecruiselab.com">THE CRUISE LAB</a></p>
+    <p>Independent tools made by a cruiser. Not affiliated with or endorsed by any cruise line, port or channel featured.</p>
+    <p class="credits">All video is embedded from — and remains the property of — its owners, including Solent Ships, PTZtv, the featured creators, the Internet Archive and VesselFinder. Live feeds can go offline without notice.</p>
+    <p>&copy; 2026 The Cruise Lab</p>
+  </footer>
+
+</div>
+
+<script>
+"use strict";
+/* =====================================================================
+   FEEDS — the whole tool is driven from this one array.
+   To add/remove/swap a feed, edit here only. Field guide:
+     sec   : 'port' | 'ship' | 'creator' | 'golden'
+     name  : card title
+     loc   : small uppercase location line
+     desc  : card description
+     kind  : 'yt-live'    → live stream by CHANNEL id (durable; follows
+                            whatever that channel is streaming now)
+             'yt-uploads' → a channel's uploads playlist (its UC… channel
+                            id with UC swapped to UU) — plays latest videos
+             'archive'    → archive.org film (id = the item identifier)
+             'link'       → no embed; card opens srcUrl in a new tab
+     id    : YouTube channel id / uploads playlist id / archive id
+     srcUrl: where "Open at source" points (and where 'link' cards go)
+     src   : credit line shown on the card and under the player
+     chips : ['live'] pulsing live dot · ['still'] refreshing still image
+             · ['ext'] opens external site
+   Finding a YouTube channel id: open the channel page → View Source →
+   search for "channelId". IDs are case-sensitive — copy exactly.
+   ===================================================================== */
+const FEEDS = [
+
+  /* ---------------- LIVE · PORT CAMS ---------------- */
+  { sec:'port', kind:'yt-live', id:'UCAupQASEG4kt6oXHe0Xwd9Q',
+    name:'Southampton', loc:'England, UK',
+    desc:'The UK\u2019s cruise capital, live. Sailaway evenings here can mean five ships leaving in convoy.',
+    src:'Solent Ships (YouTube)', srcUrl:'https://www.youtube.com/channel/UCAupQASEG4kt6oXHe0Xwd9Q',
+    chips:['live'] },
+
+  { sec:'port', kind:'yt-live', id:'UCG8-xn6zUbEqmqlnsvrD33Q',
+    name:'PTZtv Live Rotation', loc:'USA & Caribbean',
+    desc:'PTZtv\u2019s rolling preview across their HD port cams — Everglades, Canaveral, Miami, Nassau and more.',
+    src:'PTZtv (YouTube)', srcUrl:'https://www.youtube.com/channel/UCG8-xn6zUbEqmqlnsvrD33Q',
+    chips:['live'] },
+
+  { sec:'port', kind:'link',
+    name:'Port Canaveral', loc:'Florida, USA',
+    desc:'24/7 HD from Fishlips Waterfront, with sail-away follow shows. Rocket launches as a bonus.',
+    src:'PTZtv', srcUrl:'https://www.ptztv.live/port-canaveral-webcam/',
+    chips:['live','ext'] },
+
+  { sec:'port', kind:'link',
+    name:'Port Everglades', loc:'Fort Lauderdale, USA',
+    desc:'One of the world\u2019s busiest cruise ports, with live audio and VHF marine radio.',
+    src:'PTZtv', srcUrl:'https://portevergladeswebcam.com',
+    chips:['live','ext'] },
+
+  { sec:'port', kind:'link',
+    name:'Port Miami', loc:'Florida, USA',
+    desc:'The self-styled Cruise Capital of the World — megaships turning in the basin and heading out Government Cut.',
+    src:'PTZtv', srcUrl:'https://portmiamiwebcam.com',
+    chips:['live','ext'] },
+
+  { sec:'port', kind:'link',
+    name:'Nassau', loc:'Bahamas',
+    desc:'Up to six ships a day alongside in the Caribbean\u2019s busiest port of call.',
+    src:'PTZtv', srcUrl:'https://portnassauwebcam.com',
+    chips:['live','ext'] },
+
+  { sec:'port', kind:'link',
+    name:'Paradise Island', loc:'Nassau, Bahamas',
+    desc:'Sweeping panorama across Nassau harbour to Paradise Island — the postcard angle.',
+    src:'PTZtv', srcUrl:'https://www.ptztv.live/paradise-island-cam/',
+    chips:['live','ext'] },
+
+  { sec:'port', kind:'link',
+    name:'Key West', loc:'Florida, USA',
+    desc:'Harbour views from the southernmost city, with live audio and marine radio.',
+    src:'PTZtv', srcUrl:'https://keywestharborwebcam.com',
+    chips:['live','ext'] },
+
+  /* ---------------- LIVE · SHIP CAMS ----------------
+     Cruise-line cams live on the lines' own pages (several are stills
+     refreshed every few minutes, not video) — these cards link out.   */
+  { sec:'ship', kind:'link',
+    name:'Princess Bridgecams', loc:'Whole fleet',
+    desc:'A camera on every Princess ship, all on one page. Satellite images refreshed every few minutes.',
+    src:'Princess Cruises', srcUrl:'https://www.princess.com/ships-and-experience/cruise-ships/bridge-cams/',
+    chips:['still','ext'] },
+
+  { sec:'ship', kind:'link',
+    name:'AIDA Webcams', loc:'Whole fleet',
+    desc:'Around 36 cameras across the AIDA fleet, including three angles on AIDAcosma.',
+    src:'AIDA Cruises', srcUrl:'https://www.aida.de/webcams',
+    chips:['ext'] },
+
+  { sec:'ship', kind:'link',
+    name:'Viking Ocean Cams', loc:'Ocean fleet',
+    desc:'Live views from Viking\u2019s ocean ships with current position and itinerary.',
+    src:'Viking', srcUrl:'https://www.vikingcruises.com/webcams.html',
+    chips:['ext'] },
+
+  { sec:'ship', kind:'link',
+    name:'Mein Schiff Cams', loc:'TUI Cruises fleet',
+    desc:'Live cameras across the Mein Schiff fleet, sailing mostly from German ports.',
+    src:'TUI Cruises', srcUrl:'https://www.meinschiff.com/webcams',
+    chips:['ext'] },
+
+  { sec:'ship', kind:'link',
+    name:'The Full Directory', loc:'Every line with cams',
+    desc:'Cruising Earth\u2019s index of every line still running onboard cameras — the deepest directory there is.',
+    src:'Cruising Earth', srcUrl:'https://www.cruisingearth.com/ship-webcams/',
+    chips:['ext'] },
+
+  /* ---------------- WATCH · REVIEWS & TIPS ---------------- */
+  { sec:'creator', kind:'yt-uploads', id:'UU_qE-Obs2ocdmPXY0TIU-cw',
+    name:'Tips For Travellers', loc:'Reviews & advice',
+    desc:'Gary Bembridge — the most-subscribed cruise channel on YouTube. 800+ videos of line reviews and hard-won advice.',
+    src:'Tips For Travellers (YouTube)', srcUrl:'https://www.youtube.com/@tipsfortravellers',
+    chips:[] },
+
+  { sec:'creator', kind:'yt-uploads', id:'UUu4C8c3h9SKdkxnOwIAiHeA',
+    name:'Emma Cruises', loc:'Reviews & advice',
+    desc:'Emma tries the cruises so you don\u2019t have to — honest UK-based reviews across every budget.',
+    src:'Emma Cruises (YouTube)', srcUrl:'https://www.youtube.com/@emmacruises',
+    chips:[] },
+
+  { sec:'creator', kind:'link',
+    name:'Harr Travel', loc:'Cabin tours',
+    desc:'The cabin-tour library. Hundreds of full stateroom walkthroughs — check your exact cabin before you book.',
+    src:'Harr Travel (YouTube)', srcUrl:'https://www.youtube.com/@HarrTravel',
+    chips:['ext'] },
+
+  { sec:'creator', kind:'link',
+    name:'La Lido Loca', loc:'News & reviews',
+    desc:'Tony\u2019s daily cruise news, reviews and value-for-money takes, with a big live community.',
+    src:'La Lido Loca (YouTube)', srcUrl:'https://www.youtube.com/@LaLidoLoca',
+    chips:['ext'] },
+
+  { sec:'creator', kind:'link',
+    name:'Ben & David', loc:'Ship tours',
+    desc:'Full ship tours and food reviews from the UK duo — a gentle, thorough look around each ship.',
+    src:'Ben & David (YouTube)', srcUrl:'https://www.youtube.com/@BenandDavid',
+    chips:['ext'] },
+
+  { sec:'creator', kind:'link',
+    name:'CruiseTipsTV', loc:'First-timer guides',
+    desc:'Calm, practical guides — packing, etiquette and first-cruise questions answered.',
+    src:'CruiseTipsTV (YouTube)', srcUrl:'https://www.youtube.com/@CruiseTipsTV',
+    chips:['ext'] },
+
+  /* ---------------- WATCH · GOLDEN AGE ---------------- */
+  { sec:'golden', kind:'archive', id:'64924aTheStoryOfTheQueenMaryMosVwr',
+    name:'Launching RMS Queen Mary', loc:'Clydebank · 1930s',
+    desc:'Silent newsreel of the Queen Mary\u2019s build and launch at John Brown\u2019s shipyard on the Clyde.',
+    src:'Internet Archive · Cine-Kodak newsreel', srcUrl:'https://archive.org/details/64924aTheStoryOfTheQueenMaryMosVwr',
+    chips:[] },
+
+  { sec:'golden', kind:'archive', id:'xd-12464a-atlantic-queen-vwr',
+    name:'Atlantic Queen: QE2', loc:'Clydebank · 1967',
+    desc:'The launch of QE2, named by Queen Elizabeth II with the same gold scissors used for the first two Queens.',
+    src:'Internet Archive · PeriscopeFilm', srcUrl:'https://archive.org/details/xd-12464a-atlantic-queen-vwr',
+    chips:[] },
+
+  { sec:'golden', kind:'archive', id:'34734queensoftheseas',
+    name:'Queens of the Seas', loc:'Cunard · 1940s',
+    desc:'A 1940s film history of RMS Queen Mary and Queen Elizabeth in Cunard service.',
+    src:'Internet Archive', srcUrl:'https://archive.org/details/34734queensoftheseas',
+    chips:[] }
+];
+
+/* ---------------- Sections & categories ---------------- */
+const SECTIONS = {
+  live: {
+    cats: [
+      { key:'port',    label:'Port Cams',    rule:'Port Cams',
+        blurb:'Genuine 24/7 live video of the world\u2019s cruise ports. Click a port to watch ships arrive, turn and sail away.' },
+      { key:'ship',    label:'Ship Cams',    rule:'Ship Cams',
+        blurb:'Cameras aboard ships at sea, on the cruise lines\u2019 own pages. Some are true video, some are stills refreshed every few minutes — marked where known.' },
+      { key:'tracker', label:'Ship Tracker', rule:'Ship Tracker',
+        blurb:'Every ship on the map, right now, via VesselFinder. Pick a cruising region below.' }
+    ]
+  },
+  watch: {
+    cats: [
+      { key:'creator', label:'Reviews & Tips', rule:'Reviews & Tips',
+        blurb:'The cruise creators worth your evenings — reviews, cabin tours, ship tours and first-timer guides, embedded from their own channels.' },
+      { key:'golden',  label:'Golden Age',     rule:'The Golden Age',
+        blurb:'Free films from the archive: launches, maiden voyages and the liners that started it all.' }
+    ]
+  }
+};
+
+const TRACKER_PRESETS = [
+  { label:'Southampton',      lat:50.90, lon:-1.40,   zoom:11 },
+  { label:'South Florida',    lat:26.05, lon:-80.10,  zoom:9  },
+  { label:'Caribbean',        lat:18.50, lon:-66.50,  zoom:6  },
+  { label:'Mediterranean',    lat:39.50, lon:10.00,   zoom:5  },
+  { label:'Norwegian Fjords', lat:61.50, lon:5.50,    zoom:6  },
+  { label:'Alaska',           lat:57.60, lon:-134.00, zoom:5  }
+];
+
+/* ---------------- Embed URL builder ---------------- */
+function embedUrl(f){
+  if (f.kind === 'yt-live')    return 'https://www.youtube.com/embed/live_stream?channel=' + f.id + '&autoplay=1';
+  if (f.kind === 'yt-uploads') return 'https://www.youtube.com/embed/videoseries?list=' + f.id;
+  if (f.kind === 'archive')    return 'https://archive.org/embed/' + f.id;
+  return null;
+}
+
+/* ---------------- Icons ---------------- */
+const ICONS = {
+  port: '<svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 30 h32 l-4 8 H12 z"/><path d="M14 30 v-8 h20 v8"/><path d="M20 22 v-6 h8 v6"/><path d="M6 42 q4 -4 8 0 t8 0 t8 0 t8 0"/></svg>',
+  ship: '<svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="14" width="20" height="10" rx="2"/><path d="M8 24 h32 l-5 10 H13 z"/><circle cx="20" cy="19" r="1.4" fill="currentColor"/><circle cx="28" cy="19" r="1.4" fill="currentColor"/><path d="M6 40 q4 -4 8 0 t8 0 t8 0 t8 0"/></svg>',
+  creator: '<svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="10" width="34" height="24" rx="4"/><polygon points="20,17 30,22 20,27" fill="currentColor" stroke="none"/><path d="M16 40 h16"/></svg>',
+  golden: '<svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="12" width="34" height="24" rx="3"/><path d="M7 18 h34 M7 30 h34"/><path d="M12 12 v6 M20 12 v6 M28 12 v6 M36 12 v6 M12 30 v6 M20 30 v6 M28 30 v6 M36 30 v6"/></svg>'
+};
+
+/* ---------------- State & rendering ---------------- */
+let curSec = 'live';
+let curCat = 'port';
+
+const $grid    = document.getElementById('grid');
+const $subnav  = document.getElementById('subnav');
+const $rule    = document.getElementById('secRule');
+const $blurb   = document.getElementById('secBlurb');
+const $tracker = document.getElementById('tracker');
+const $presets = document.getElementById('presets');
+const $map     = document.getElementById('mapFrame');
+
+function renderSubnav(){
+  $subnav.innerHTML = '';
+  SECTIONS[curSec].cats.forEach(c => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.textContent = c.label;
+    if (c.key === curCat) b.classList.add('on');
+    b.addEventListener('click', () => { curCat = c.key; render(); });
+    $subnav.appendChild(b);
+  });
+}
+
+function renderCards(){
+  $grid.innerHTML = '';
+  FEEDS.filter(f => f.sec === curCat).forEach(f => {
+    const card = document.createElement(f.kind === 'link' ? 'a' : 'button');
+    card.className = 'card';
+    if (f.kind === 'link'){
+      card.href = f.srcUrl; card.target = '_blank'; card.rel = 'noopener';
+    } else {
+      card.type = 'button';
+      card.addEventListener('click', () => openPlayer(f));
+    }
+    const chips = (f.chips || []).map(ch => {
+      if (ch === 'live')  return '<span class="chip live">Live</span>';
+      if (ch === 'still') return '<span class="chip still">Still · ~5 min</span>';
+      if (ch === 'ext')   return '<span class="chip ext">Opens site ↗</span>';
+      return '';
+    }).join('');
+    card.innerHTML =
+      '<div class="card-top">' + ICONS[f.sec] + '<div class="chips">' + chips + '</div></div>' +
+      '<h3>' + f.name + '</h3>' +
+      '<span class="loc">' + f.loc + '</span>' +
+      '<p>' + f.desc + '</p>' +
+      '<span class="src">' + f.src + '</span>';
+    $grid.appendChild(card);
+  });
+}
+
+function renderTracker(){
+  if ($presets.childElementCount === 0){
+    TRACKER_PRESETS.forEach((p, i) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = p.label;
+      if (i === 0) b.classList.add('on');
+      b.addEventListener('click', () => {
+        $presets.querySelectorAll('button').forEach(x => x.classList.remove('on'));
+        b.classList.add('on');
+        setMap(p);
+      });
+      $presets.appendChild(b);
+    });
+  }
+  if (!$map.getAttribute('src')) setMap(TRACKER_PRESETS[0]);
+}
+
+function setMap(p){
+  $map.src = 'https://www.vesselfinder.com/aismap?zoom=' + p.zoom +
+             '&lat=' + p.lat + '&lon=' + p.lon + '&names=true';
+}
+
+function render(){
+  renderSubnav();
+  const cat = SECTIONS[curSec].cats.find(c => c.key === curCat);
+  $rule.textContent = cat.rule;
+  $blurb.textContent = cat.blurb;
+  if (curCat === 'tracker'){
+    $grid.style.display = 'none';
+    $tracker.classList.add('on');
+    renderTracker();
+  } else {
+    $tracker.classList.remove('on');
+    $grid.style.display = 'grid';
+    renderCards();
+  }
+}
+
+document.querySelectorAll('.nav button').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.nav button').forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    curSec = b.dataset.sec;
+    curCat = SECTIONS[curSec].cats[0].key;
+    render();
+  });
+});
+
+/* ---------------- Player modal ---------------- */
+const $modal  = document.getElementById('modal');
+const $screen = document.getElementById('screen');
+const $title  = document.getElementById('playerTitle');
+const $loc    = document.getElementById('playerLoc');
+const $credit = document.getElementById('playerCredit');
+const $srcBtn = document.getElementById('playerSrc');
+let lastFocus = null;
+
+function openPlayer(f){
+  lastFocus = document.activeElement;
+  $title.textContent  = f.name;
+  $loc.textContent    = f.loc;
+  $credit.textContent = 'Source: ' + f.src;
+  $srcBtn.href        = f.srcUrl;
+  $screen.innerHTML =
+    '<div class="offline"><strong>Loading\u2026</strong>' +
+    '<span>If nothing appears, this feed may be offline right now \u2014 try \u201cOpen at source\u201d.</span></div>' +
+    '<iframe src="' + embedUrl(f) + '" title="' + f.name.replace(/"/g,'&quot;') + '" ' +
+    'allow="fullscreen; autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>';
+  $modal.classList.add('on');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('closeBtn').focus();
+}
+
+function closePlayer(){
+  $modal.classList.remove('on');
+  $screen.innerHTML = '';           /* stops playback */
+  document.body.style.overflow = '';
+  if (lastFocus && lastFocus.focus) lastFocus.focus();
+}
+
+document.getElementById('closeBtn').addEventListener('click', closePlayer);
+$modal.addEventListener('click', e => { if (e.target === $modal) closePlayer(); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && $modal.classList.contains('on')) closePlayer();
+});
+
+/* ---------------- Debug mode: ?debug=1 renders every embed inline ---------------- */
+if (new URLSearchParams(location.search).get('debug') === '1'){
+  const dbg = document.createElement('section');
+  dbg.className = 'debug';
+  FEEDS.filter(f => f.kind !== 'link').forEach(f => {
+    const h = document.createElement('h3'); h.textContent = f.name + ' \u00b7 ' + f.kind;
+    const s = document.createElement('div'); s.className = 'screen';
+    s.innerHTML = '<iframe src="' + embedUrl(f) + '" title="' + f.name.replace(/"/g,'&quot;') + '" allow="fullscreen" loading="lazy"></iframe>';
+    dbg.appendChild(h); dbg.appendChild(s);
+  });
+  const h = document.createElement('h3'); h.textContent = 'VesselFinder tracker';
+  const s = document.createElement('div'); s.className = 'screen';
+  s.innerHTML = '<iframe src="https://www.vesselfinder.com/aismap?zoom=11&lat=50.9&lon=-1.4&names=true" title="tracker"></iframe>';
+  dbg.appendChild(h); dbg.appendChild(s);
+  document.querySelector('footer').before(dbg);
+}
+
+render();
+</script>
+</body>
+</html>
