@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>GetMyBarTab · Know your cruise bar bill before you sail</title>
+<meta name="description" content="GetMyBarTab — predict what you'll spend on drinks on your cruise, per person, sea days and port days. Then see whether a drinks package is actually worth it. Part of The Cruise Lab.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&family=Azeret+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ocean-deep:#081830;
+  --ocean:#0d2445;
+  --panel:#122c52;
+  --panel-edge:#1d3d6b;
+  --gold:#d9b45c;
+  --gold-bright:#f0d087;
+  --gold-dim:rgba(217,180,92,.35);
+  --foam:#f3efe4;
+  --mist:#8fa2bd;
+  --seaglass:#46c3a8;
+  --seaglass-dim:rgba(70,195,168,.18);
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:'Outfit',sans-serif;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #16335e 0%, transparent 60%),
+    var(--ocean-deep);
+  color:var(--foam);
+  min-height:100vh;
+  padding:0 16px calc(48px + env(safe-area-inset-bottom));
+  line-height:1.5;
+}
+.wrap{max-width:720px;margin:0 auto}
+
+/* ---------- Header ---------- */
+header{text-align:center;padding:48px 8px 8px}
+.eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h1{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:clamp(2rem,7.5vw,2.9rem);
+  letter-spacing:.02em;margin:.3rem 0 .45rem;
+  background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:var(--gold);
+}
+.tagline{color:var(--mist);font-weight:300;font-size:clamp(.98rem,3.2vw,1.12rem);max-width:520px;margin:0 auto}
+.tagline strong{color:var(--foam);font-weight:500}
+
+/* glass mark */
+.mark{width:64px;height:auto;margin:2px auto 12px;display:block;filter:drop-shadow(0 6px 20px rgba(217,180,92,.18))}
+.mark .wave{animation:lap 5s ease-in-out infinite alternate}
+@keyframes lap{from{transform:translateX(0)}to{transform:translateX(-10px)}}
+@media (prefers-reduced-motion:reduce){.mark .wave{animation:none}}
+
+/* ---------- Divider ---------- */
+.rule{display:flex;align-items:center;gap:14px;margin:34px auto 20px;color:var(--gold);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim))}
+.rule::after{background:linear-gradient(90deg,var(--gold-dim),transparent)}
+
+/* ---------- Panels ---------- */
+.card{
+  background:linear-gradient(180deg,var(--panel),var(--ocean));
+  border:1px solid var(--panel-edge);
+  border-radius:var(--radius);
+  padding:20px 18px;
+  margin-bottom:16px;
+}
+.card h2{font-family:'Cinzel',serif;font-weight:600;font-size:1.05rem;letter-spacing:.02em;color:var(--gold-bright);margin-bottom:4px}
+.card .hint{color:var(--mist);font-size:.85rem;font-weight:300;margin-bottom:14px}
+label.field{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0 0 8px}
+
+/* selects */
+select{
+  width:100%;font-family:'Outfit',sans-serif;font-size:1rem;color:var(--foam);
+  background:var(--ocean-deep);border:1px solid var(--panel-edge);border-radius:10px;
+  padding:12px 14px;-webkit-appearance:none;appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23d9b45c' stroke-width='3'><path d='M6 9l6 6 6-6'/></svg>");
+  background-repeat:no-repeat;background-position:right 14px center;
+}
+select:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+/* segmented button rows */
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{
+  flex:1 1 auto;min-width:72px;
+  font-family:'Outfit',sans-serif;font-size:.9rem;font-weight:500;
+  color:var(--mist);background:var(--ocean-deep);
+  border:1px solid var(--panel-edge);border-radius:999px;
+  padding:10px 12px;cursor:pointer;transition:all .15s ease;
+}
+.seg button:hover{border-color:var(--gold-dim);color:var(--foam)}
+.seg button[aria-pressed="true"]{background:var(--gold);color:var(--ocean-deep);border-color:var(--gold);font-weight:600}
+.seg button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.seg.small button{font-size:.82rem;padding:8px 10px;min-width:60px}
+
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.row .col{flex:1 1 140px}
+
+/* steppers */
+.stepper{display:flex;align-items:center;gap:0;background:var(--ocean-deep);border:1px solid var(--panel-edge);border-radius:10px;overflow:hidden}
+.stepper button{
+  width:42px;height:44px;flex:none;font-size:1.3rem;font-weight:600;line-height:1;
+  color:var(--gold);background:transparent;border:none;cursor:pointer;
+}
+.stepper button:hover{background:rgba(217,180,92,.12)}
+.stepper button:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+.stepper .val{flex:1;text-align:center;font-family:'Azeret Mono',monospace;font-size:1rem;color:var(--foam);font-weight:500}
+
+.subhead{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:16px 0 8px}
+
+/* person card */
+.person{border:1px solid var(--panel-edge);border-radius:12px;padding:14px;margin-top:12px;background:rgba(8,24,48,.4)}
+.person h3{font-family:'Cinzel',serif;font-weight:600;font-size:.98rem;color:var(--foam);margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.person h3 .same{font-family:'Outfit',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.04em;text-transform:none;color:var(--mist)}
+
+.refine-toggle{background:none;border:none;color:var(--seaglass);font-family:'Outfit',sans-serif;font-size:.82rem;font-weight:500;cursor:pointer;padding:8px 0 2px;letter-spacing:.02em}
+.refine-toggle:hover{color:var(--gold-bright)}
+.refine-toggle:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.refine{margin-top:10px;display:none;grid-template-columns:1fr 1fr;gap:8px}
+.refine.open{display:grid}
+.refine .g{display:flex;flex-direction:column;gap:5px}
+.refine .g span{font-size:.74rem;color:var(--mist)}
+
+/* CTA */
+.cta{
+  display:block;width:100%;text-align:center;cursor:pointer;
+  font-family:'Outfit',sans-serif;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;
+  color:var(--ocean-deep);background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+  border:none;border-radius:999px;padding:16px;margin:6px 0 8px;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.cta:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(217,180,92,.24)}
+.cta:focus-visible{outline:2px solid var(--gold-bright);outline-offset:3px}
+
+/* ---------- Results: the tab ---------- */
+#results{display:none}
+#results.show{display:block}
+.tab{
+  background:var(--foam);color:#1a2438;border-radius:12px;padding:22px 20px;margin-bottom:16px;
+  box-shadow:0 18px 40px rgba(4,10,24,.45);
+  font-family:'Azeret Mono',monospace;
+}
+.tab .tab-head{text-align:center;border-bottom:2px dashed #b9c0cc;padding-bottom:14px;margin-bottom:14px}
+.tab .tab-head .brand{font-family:'Cinzel',serif;font-weight:700;letter-spacing:.06em;font-size:1.05rem;color:#0d2445}
+.tab .tab-head .sub{font-size:.72rem;color:#5a6577;margin-top:4px;letter-spacing:.02em}
+.tab .line{display:flex;justify-content:space-between;gap:10px;font-size:.86rem;padding:4px 0}
+.tab .line .q{color:#5a6577}
+.tab .line .amt{font-weight:500;white-space:nowrap}
+.tab .sep{border-top:1px dashed #b9c0cc;margin:10px 0}
+.tab .sub-line{display:flex;justify-content:space-between;font-size:.82rem;color:#5a6577;padding:2px 0}
+.tab .total{display:flex;justify-content:space-between;align-items:baseline;border-top:2px solid #1a2438;margin-top:10px;padding-top:12px}
+.tab .total .lbl{font-family:'Cinzel',serif;font-weight:600;font-size:.95rem}
+.tab .total .big{font-family:'Cinzel',serif;font-weight:700;font-size:1.7rem;color:#0d2445}
+.tab .foot{text-align:center;font-size:.7rem;color:#5a6577;margin-top:14px;border-top:2px dashed #b9c0cc;padding-top:12px;letter-spacing:.02em}
+
+.insight{border:1px solid var(--panel-edge);border-radius:12px;padding:16px 16px;margin-bottom:14px;background:rgba(8,24,48,.4)}
+.insight h3{font-family:'Cinzel',serif;font-weight:600;font-size:.92rem;color:var(--gold-bright);margin-bottom:10px;letter-spacing:.02em}
+.split-bar{display:flex;height:34px;border-radius:8px;overflow:hidden;border:1px solid var(--panel-edge);margin-bottom:8px}
+.split-bar .seaseg{background:linear-gradient(180deg,#1d5f8f,#12496f);display:flex;align-items:center;justify-content:center}
+.split-bar .portseg{background:linear-gradient(180deg,#2a7d6a,#1d5f52);display:flex;align-items:center;justify-content:center}
+.split-bar span{font-family:'Azeret Mono',monospace;font-size:.74rem;color:var(--foam);padding:0 6px;white-space:nowrap}
+.split-legend{display:flex;gap:16px;font-size:.78rem;color:var(--mist)}
+.split-legend b{color:var(--foam);font-weight:600}
+
+.genre-row{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:.82rem}
+.genre-row .gname{width:96px;flex:none;color:var(--mist)}
+.genre-row .gbar{flex:1;height:10px;background:var(--ocean-deep);border-radius:6px;overflow:hidden}
+.genre-row .gbar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-bright));border-radius:6px}
+.genre-row .gval{width:74px;flex:none;text-align:right;font-family:'Azeret Mono',monospace;color:var(--foam)}
+
+.perperson{display:flex;justify-content:space-between;font-size:.86rem;padding:6px 0;border-bottom:1px solid rgba(29,61,107,.5)}
+.perperson:last-child{border-bottom:none}
+.perperson .amt{font-family:'Azeret Mono',monospace;color:var(--gold-bright);font-weight:500}
+
+.verdict{border-left:3px solid var(--gold);padding:2px 0 2px 14px;margin:4px 0 2px;font-size:.92rem}
+.verdict.skip{border-color:var(--seaglass)}
+.verdict.maybe{border-color:var(--gold)}
+.verdict strong{color:var(--gold-bright)}
+.note{color:var(--mist);font-size:.82rem;font-weight:300;margin-top:10px}
+
+.linkbtn{display:inline-block;margin-top:12px;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--gold);border:1px solid var(--gold-dim);border-radius:999px;padding:9px 16px;text-decoration:none;transition:all .15s ease}
+.linkbtn:hover{background:var(--gold);color:var(--ocean-deep);border-color:var(--gold)}
+
+details.pkg{border:1px dashed var(--panel-edge);border-radius:12px;padding:0;margin-bottom:14px;background:rgba(13,36,69,.35)}
+details.pkg summary{cursor:pointer;list-style:none;padding:15px 16px;font-family:'Cinzel',serif;font-weight:600;font-size:.92rem;color:var(--foam)}
+details.pkg summary::-webkit-details-marker{display:none}
+details.pkg summary::after{content:"+";float:right;color:var(--seaglass);font-weight:700}
+details.pkg[open] summary::after{content:"–"}
+details.pkg .body{padding:0 16px 16px}
+.chk{display:flex;align-items:center;gap:10px;font-size:.86rem;color:var(--foam);margin:12px 0}
+.chk input{width:20px;height:20px;accent-color:var(--gold)}
+
+footer{text-align:center;color:var(--mist);font-size:.76rem;font-weight:300;padding:34px 12px 0}
+footer .foot-mark{font-family:'Cinzel',serif;color:var(--gold);letter-spacing:.14em;font-size:.8rem;margin-bottom:6px}
+footer a{color:var(--gold)}
+footer p+p{margin-top:4px}
+.stamp{color:var(--mist);font-size:.72rem;text-align:center;margin-top:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <!-- Coupe glass with the sea inside -->
+    <svg class="mark" viewBox="0 0 100 110" aria-hidden="true">
+      <defs>
+        <clipPath id="cupClip"><path d="M22 20 h56 l-24 34 v30 h14 v6 h-36 v-6 h14 v-30 z"/></clipPath>
+        <linearGradient id="gs" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f0d087"/><stop offset="1" stop-color="#d9b45c"/>
+        </linearGradient>
+      </defs>
+      <g clip-path="url(#cupClip)">
+        <rect x="0" y="34" width="100" height="30" fill="#0d2445"/>
+        <path class="wave" fill="#1d3d6b" d="M-14 37 q7 -5 14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0 v30 h-126 z"/>
+        <path class="wave" fill="#46c3a8" opacity=".35" style="animation-duration:7s" d="M-14 41 q7 -4 14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0 v26 h-126 z"/>
+      </g>
+      <path d="M22 20 h56 l-24 34 v30 h14 v6 h-36 v-6 h14 v-30 z" fill="none" stroke="url(#gs)" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="50" cy="30" r="3.4" fill="#f0d087" opacity=".9"/>
+    </svg>
+
+    <p class="eyebrow">Part of The Cruise Lab</p>
+    <h1>GetMyBarTab</h1>
+    <p class="tagline">Find out what you'll <strong>really</strong> spend on drinks at sea — per person, sea days and port days — then see whether a drinks package is actually worth it.</p>
+  </header>
+
+  <!-- ============ INPUTS ============ -->
+  <p class="rule">Your voyage</p>
+
+  <div class="card">
+    <label class="field" for="line">Cruise line</label>
+    <select id="line" aria-label="Cruise line"></select>
+    <p class="hint" id="line-note" style="margin:10px 0 0"></p>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="col">
+        <label class="field">Nights</label>
+        <div class="stepper" data-step="nights"><button type="button" aria-label="fewer nights">−</button><span class="val" id="nights-val">7</span><button type="button" aria-label="more nights">+</button></div>
+      </div>
+      <div class="col">
+        <label class="field">Of those, port days</label>
+        <div class="stepper" data-step="ports"><button type="button" aria-label="fewer port days">−</button><span class="val" id="ports-val">3</span><button type="button" aria-label="more port days">+</button></div>
+      </div>
+    </div>
+    <p class="hint" id="daysplit-note" style="margin:12px 0 0"></p>
+  </div>
+
+  <div class="card">
+    <label class="field">How many adults in the cabin?</label>
+    <div class="seg" id="cabin-seg" role="group" aria-label="Adults in cabin">
+      <button type="button" data-n="1" aria-pressed="false">1</button>
+      <button type="button" data-n="2" aria-pressed="true">2</button>
+      <button type="button" data-n="3" aria-pressed="false">3</button>
+      <button type="button" data-n="4" aria-pressed="false">4</button>
+    </div>
+    <p class="hint" style="margin:12px 0 0">Give each person a quick profile. Most people drink differently — that's exactly the bit worth getting right.</p>
+    <div id="people"></div>
+  </div>
+
+  <button class="cta" id="calc">See my bar tab</button>
+
+  <!-- ============ RESULTS ============ -->
+  <div id="results">
+    <p class="rule">The tab</p>
+
+    <div class="tab" id="tab"></div>
+
+    <div class="insight" id="split-insight">
+      <h3>Where it goes: sea days vs port days</h3>
+      <div class="split-bar" id="split-bar"></div>
+      <div class="split-legend" id="split-legend"></div>
+      <p class="note" id="split-note"></p>
+    </div>
+
+    <div class="insight" id="genre-insight">
+      <h3>Where it goes: by drink</h3>
+      <div id="genre-list"></div>
+    </div>
+
+    <div class="insight" id="person-insight">
+      <h3>Per person</h3>
+      <div id="person-list"></div>
+      <p class="note" id="perday-note"></p>
+    </div>
+
+    <p class="rule">Is a package worth it?</p>
+
+    <div class="insight" id="verdict-insight">
+      <div id="verdict-body"></div>
+      <a class="linkbtn" id="pkg-link" href="#" target="_blank" rel="noopener">Check today's package price ↗</a>
+    </div>
+
+    <details class="pkg">
+      <summary>Got a price already? Check it properly</summary>
+      <div class="body">
+        <p class="hint">Package prices change constantly and everyone gets a different deal after discounts — so we don't guess yours. Paste the <strong>per person, per day</strong> price you were quoted and we'll do a fair, like-for-like comparison.</p>
+        <div class="row">
+          <div class="col">
+            <label class="field">Package price (pp / day)</label>
+            <div class="stepper" data-step="pkgprice"><button type="button">−</button><span class="val" id="pkgprice-val">65</span><button type="button">+</button></div>
+          </div>
+        </div>
+        <label class="chk"><input type="checkbox" id="alladults" checked> All adults in the cabin must buy it (true on most big lines)</label>
+        <p class="subhead">Does the package bundle things you'd have paid for anyway? Add them so it's a fair fight.</p>
+        <div class="row">
+          <div class="col">
+            <label class="field">Tips / grats (pp / day)</label>
+            <div class="stepper" data-step="addtips"><button type="button">−</button><span class="val" id="addtips-val">0</span><button type="button">+</button></div>
+          </div>
+          <div class="col">
+            <label class="field">Wi-Fi (pp / day)</label>
+            <div class="stepper" data-step="addwifi"><button type="button">−</button><span class="val" id="addwifi-val">0</span><button type="button">+</button></div>
+          </div>
+        </div>
+        <p class="hint" style="margin-top:6px">Only add these if you'd genuinely have bought them without the package. Leave at 0 if not.</p>
+        <div id="pkg-verdict" style="margin-top:16px"></div>
+      </div>
+    </details>
+  </div>
+
+  <p class="stamp" id="stamp"></p>
+
+  <footer>
+    <p class="foot-mark">THE CRUISE LAB</p>
+    <p>Estimates only, for guidance — always check live prices with your cruise line. Onboard drinks are usually billed in US dollars; other currencies here are approximate.</p>
+    <p>Independent tools made by a cruiser. Not affiliated with or endorsed by any cruise line.</p>
+    <p><a href="https://thecruiselab.com">← Back to The Cruise Lab</a></p>
+  </footer>
+
+</div>
+
+<script>
+/* =========================================================================
+   GetMyBarTab — data & logic
+   Prices are à la carte per-drink, in USD, curated from public bar menus.
+   PRICES AS OF: July 2026. Slow-moving; refresh occasionally.
+   We deliberately store NO package prices or per-line package rules — those
+   move constantly and differ per person after discounts. The user brings
+   that number; we only ever model the person + rough drink prices.
+   ========================================================================= */
+
+const PRICE_STAMP = "Drink prices curated July 2026";
+
+const GENRES = [
+  {key:"water",     label:"Bottled water"},
+  {key:"soft",      label:"Soft drink / soda"},
+  {key:"coffee",    label:"Specialty coffee"},
+  {key:"beer",      label:"Beer / cider / lager"},
+  {key:"wine",      label:"Wine (glass)"},
+  {key:"cocktail",  label:"Cocktail / spirit"},
+  {key:"prosecco",  label:"Prosecco (glass)"},
+  {key:"champagne", label:"Champagne (glass)"}
+];
+
+// USD à la carte prices, before the onboard service charge.
+const GENERIC_PRICES = {water:4.0, soft:4.0, coffee:5.0, beer:9.0, wine:12.0, cocktail:14.0, prosecco:11.0, champagne:15.0};
+
+// Lines. Only Princess is individually curated for now; the rest share the
+// generic set so the tool gives a real answer for everyone on day one.
+const LINES = {
+  princess:  {name:"Princess Cruises", sc:0.18, prices:{water:3.0, soft:3.5, coffee:4.5, beer:8.0, wine:11.0, cocktail:13.0, prosecco:10.0, champagne:14.0},
+              pkgUrl:"https://www.princess.com/cruise-deals-promotions/plus-premier-cruise-packages", curated:true, pkgSeed:65},
+  royal:     {name:"Royal Caribbean", sc:0.18, curated:false},
+  carnival:  {name:"Carnival", sc:0.18, curated:false},
+  celebrity: {name:"Celebrity Cruises", sc:0.20, curated:false},
+  ncl:       {name:"Norwegian (NCL)", sc:0.20, curated:false},
+  msc:       {name:"MSC Cruises", sc:0.18, curated:false},
+  po:        {name:"P&O Cruises", sc:0.00, curated:false},
+  cunard:    {name:"Cunard", sc:0.00, curated:false},
+  hal:       {name:"Holland America", sc:0.18, curated:false},
+  other:     {name:"Another line", sc:0.18, curated:false}
+};
+
+// Currency: prices held in USD, converted for display. Approximate, dated.
+const CURR = {
+  GBP:{sym:"£", rate:0.79},
+  USD:{sym:"$", rate:1.0},
+  EUR:{sym:"€", rate:0.92}
+};
+
+const VOL = {light:2, medium:5, heavy:9};
+const VOL_LABEL = {light:"Light", medium:"Medium", heavy:"Heavy"};
+const STYLE_LABEL = {beerwine:"Beer & wine", cocktails:"Cocktails", bubbles:"Bubbles", nonalc:"No alcohol", mix:"A mix"};
+const PORT_MULT = {same:1.0, less:0.6, much:0.25};
+const PORT_LABEL = {same:"About the same", less:"A bit less", much:"Much less"};
+
+const STYLE_WEIGHTS = {
+  beerwine:  {beer:0.55, wine:0.45},
+  cocktails: {cocktail:0.75, wine:0.15, beer:0.10},
+  bubbles:   {prosecco:0.50, champagne:0.25, wine:0.25},
+  nonalc:    {soft:0.60, coffee:0.40},
+  mix:       {cocktail:0.30, beer:0.25, wine:0.25, prosecco:0.10, soft:0.10}
+};
+
+function distribute(total, weights){
+  const out = {}; let sum = 0; let maxKey = null; let maxW = -1;
+  for(const k in weights){ const v = Math.round(total*weights[k]); out[k]=v; sum+=v; if(weights[k]>maxW){maxW=weights[k];maxKey=k;} }
+  const diff = total - sum; if(maxKey!==null) out[maxKey] = Math.max(0, out[maxKey]+diff);
+  return out;
+}
+
+// Build a daily per-genre pattern from volume + style archetype.
+function buildPattern(volume, style){
+  const V = VOL[volume];
+  const p = {water:0, soft:0, coffee:0, beer:0, wine:0, cocktail:0, prosecco:0, champagne:0};
+  const dist = distribute(V, STYLE_WEIGHTS[style]);
+  for(const k in dist) p[k] += dist[k];
+  if(style === "nonalc"){ p.water = 2; }
+  else { p.water = 1; p.coffee += 1; }   // sensible non-alcoholic baseline for drinkers
+  return p;
+}
+
+/* ---------------- state ---------------- */
+const state = {
+  line:"princess",
+  currency:"GBP",
+  nights:7,
+  ports:3,
+  cabin:2,
+  people:[],          // {volume,style,port,refined,counts,sameAsP1}
+  pkgprice:65, alladults:true, addtips:0, addwifi:0,
+  shown:false
+};
+
+function newPerson(sameAsP1){
+  return {volume:"medium", style:"beerwine", port:"less", refined:false,
+          counts:buildPattern("medium","beerwine"), sameAsP1: !!sameAsP1};
+}
+
+function ensurePeople(){
+  while(state.people.length < state.cabin){ state.people.push(newPerson(state.people.length>0)); }
+  state.people.length = state.cabin;
+}
+
+function effCounts(idx){
+  const pp = state.people[idx];
+  const src = (idx>0 && pp.sameAsP1) ? state.people[0] : pp;
+  return src.refined ? src.counts : buildPattern(src.volume, src.style);
+}
+function effPort(idx){
+  const pp = state.people[idx];
+  const src = (idx>0 && pp.sameAsP1) ? state.people[0] : pp;
+  return src.port;
+}
+
+/* ---------------- currency ---------------- */
+function conv(usd){ return usd * CURR[state.currency].rate; }
+function money(usd){
+  const v = conv(usd);
+  return CURR[state.currency].sym + v.toLocaleString(undefined,{minimumFractionDigits:0, maximumFractionDigits:0});
+}
+function money2(usd){
+  const v = conv(usd);
+  return CURR[state.currency].sym + v.toLocaleString(undefined,{minimumFractionDigits:2, maximumFractionDigits:2});
+}
+
+/* ---------------- compute ---------------- */
+function prices(){ const L = LINES[state.line]; return L.curated ? L.prices : GENERIC_PRICES; }
+function sc(){ return LINES[state.line].sc; }
+
+function computePerson(idx){
+  const counts = effCounts(idx);
+  const pm = PORT_MULT[effPort(idx)];
+  const seaDays = Math.max(0, state.nights - state.ports);
+  const portDays = state.ports;
+  const P = prices(); const s = sc();
+  const genre = {}; let net=0, seaNet=0, portNet=0;
+  for(const g of GENRES){
+    const c = counts[g.key]||0;
+    const units = c*seaDays + c*pm*portDays;
+    const gnet = units * P[g.key];
+    genre[g.key] = gnet*(1+s);
+    net += gnet;
+    seaNet += c*seaDays*P[g.key];
+    portNet += c*pm*portDays*P[g.key];
+  }
+  const total = net*(1+s);
+  return {genre, total, service: total-net, sea: seaNet*(1+s), port: portNet*(1+s), perDay: state.nights?total/state.nights:0};
+}
+
+function computeAll(){
+  const people = state.people.map((_,i)=>computePerson(i));
+  const cabin = {total:0, service:0, sea:0, port:0, genre:{}};
+  for(const g of GENRES) cabin.genre[g.key]=0;
+  for(const r of people){ cabin.total+=r.total; cabin.service+=r.service; cabin.sea+=r.sea; cabin.port+=r.port; for(const g of GENRES) cabin.genre[g.key]+=r.genre[g.key]; }
+  return {people, cabin};
+}
+
+/* ---------------- render inputs ---------------- */
+function renderLineSelect(){
+  const sel = document.getElementById("line");
+  sel.innerHTML = Object.keys(LINES).map(k=>`<option value="${k}" ${k===state.line?"selected":""}>${LINES[k].name}</option>`).join("");
+}
+function renderLineNote(){
+  const L = LINES[state.line];
+  const note = document.getElementById("line-note");
+  if(L.curated){ note.innerHTML = `Using <strong>${L.name}</strong> bar prices. ${PRICE_STAMP}.`; }
+  else { note.innerHTML = `We're using <strong>typical cruise bar prices</strong> for now — ${L.name}-specific prices are coming. Your answer is still a solid estimate.`; }
+}
+function renderDaySplit(){
+  const sea = Math.max(0, state.nights - state.ports);
+  document.getElementById("daysplit-note").innerHTML =
+    `That's <strong>${sea}</strong> day${sea===1?"":"s"} on the ship and <strong>${state.ports}</strong> in port. Embarkation counts as a ship day — the bar's open the moment you board.`;
+}
+
+function seg(pressedVal, opts, cb){
+  // returns HTML for a segmented control; opts = [[val,label],...]
+  return `<div class="seg small" role="group">` +
+    opts.map(([v,l])=>`<button type="button" data-v="${v}" aria-pressed="${v===pressedVal}">${l}</button>`).join("") + `</div>`;
+}
+
+function renderPeople(){
+  ensurePeople();
+  const host = document.getElementById("people");
+  host.innerHTML = "";
+  state.people.forEach((pp,i)=>{
+    const div = document.createElement("div");
+    div.className="person";
+    const isP2plus = i>0;
+    const collapsed = isP2plus && pp.sameAsP1;
+    let inner = `<h3>Person ${i+1}${i===0?" (you)":""}`;
+    if(isP2plus){ inner += `<label class="same"><input type="checkbox" data-same="${i}" ${pp.sameAsP1?"checked":""} style="accent-color:var(--gold);margin-right:6px;vertical-align:-2px">Same as you</label>`; }
+    inner += `</h3>`;
+
+    if(!collapsed){
+      inner += `<div class="subhead" style="margin-top:2px">How much they drink</div>`;
+      inner += seg(pp.volume, [["light","Light"],["medium","Medium"],["heavy","Heavy"]]).replace('class="seg small"',`class="seg small" data-role="volume" data-i="${i}"`);
+      inner += `<div class="subhead">Mostly what?</div>`;
+      inner += seg(pp.style, [["beerwine","Beer & wine"],["cocktails","Cocktails"],["bubbles","Bubbles"],["nonalc","No alcohol"],["mix","A mix"]]).replace('class="seg small"',`class="seg small" data-role="style" data-i="${i}"`);
+      inner += `<div class="subhead">In port they drink</div>`;
+      inner += seg(pp.port, [["same","About the same"],["less","A bit less"],["much","Much less"]]).replace('class="seg small"',`class="seg small" data-role="port" data-i="${i}"`);
+      inner += `<button type="button" class="refine-toggle" data-refine="${i}">${pp.refined?"✓ Fine-tuned — edit drinks":"Fine-tune exact drinks per day ›"}</button>`;
+      const counts = pp.refined ? pp.counts : buildPattern(pp.volume, pp.style);
+      inner += `<div class="refine ${pp.refined?"open":""}" data-refinepanel="${i}">`;
+      for(const g of GENRES){
+        inner += `<div class="g"><span>${g.label}</span>
+          <div class="stepper" data-refinestep="${i}:${g.key}"><button type="button">−</button><span class="val">${counts[g.key]||0}</span><button type="button">+</button></div></div>`;
+      }
+      inner += `</div>`;
+    }
+    div.innerHTML = inner;
+    host.appendChild(div);
+  });
+}
+
+function renderCabinSeg(){
+  document.querySelectorAll('#cabin-seg button').forEach(b=>{
+    b.setAttribute("aria-pressed", String(Number(b.dataset.n)===state.cabin));
+  });
+}
+
+/* ---------------- render results ---------------- */
+function verdictLean(minPerDay){
+  // Rough guidance based on the deciding (lowest) drinker's daily spend vs a
+  // typical package price band. Line-blind on purpose.
+  const d = conv(minPerDay);
+  const sym = CURR[state.currency].sym;
+  return {d, sym};
+}
+
+function renderResults(){
+  const {people, cabin} = computeAll();
+  const L = LINES[state.line];
+
+  /* --- the tab --- */
+  const tab = document.getElementById("tab");
+  let rows = "";
+  for(const g of GENRES){
+    if(cabin.genre[g.key] > 0.005){
+      rows += `<div class="line"><span class="q">${g.label}</span><span class="amt">${money2(cabin.genre[g.key])}</span></div>`;
+    }
+  }
+  const net = cabin.total - cabin.service;
+  tab.innerHTML = `
+    <div class="tab-head">
+      <div class="brand">THE CRUISE LAB · BAR</div>
+      <div class="sub">${L.name} · ${state.nights} nights · ${state.cabin} guest${state.cabin>1?"s":""} · pay as you go</div>
+    </div>
+    ${rows || '<div class="line"><span class="q">No drinks — a very cheap cruise!</span><span class="amt"></span></div>'}
+    <div class="sep"></div>
+    <div class="sub-line"><span>Drinks subtotal</span><span>${money2(net)}</span></div>
+    <div class="sub-line"><span>Service charge (${Math.round(sc()*100)}%)</span><span>${money2(cabin.service)}</span></div>
+    <div class="total"><span class="lbl">TAB TOTAL</span><span class="big">${money(cabin.total)}</span></div>
+    <div class="foot">Estimated. ${PRICE_STAMP}.<br>Keep this in mind next time a package price flashes up.</div>
+  `;
+
+  /* --- sea vs port --- */
+  const seaPct = cabin.total>0 ? Math.round(cabin.sea/cabin.total*100) : 0;
+  const portPct = 100 - seaPct;
+  const bar = document.getElementById("split-bar");
+  bar.innerHTML = `
+    <div class="seaseg" style="width:${Math.max(seaPct,0)}%">${seaPct>=14?`<span>${money(cabin.sea)}</span>`:""}</div>
+    <div class="portseg" style="width:${Math.max(portPct,0)}%">${portPct>=14?`<span>${money(cabin.port)}</span>`:""}</div>`;
+  document.getElementById("split-legend").innerHTML =
+    `<div>◼ Sea days <b>${money(cabin.sea)}</b></div><div>◼ Port days <b>${money(cabin.port)}</b></div>`;
+  const seaDays = Math.max(0,state.nights-state.ports);
+  let splitMsg;
+  if(state.ports===0){ splitMsg = "Every night's a sea night — you'll be on the ship the whole time, so a package has its best shot here."; }
+  else if(seaPct>=70){ splitMsg = `Most of your spend lands on your ${seaDays} sea day${seaDays===1?"":"s"}. Port days barely move the needle — the package is paying for days you're ashore.`; }
+  else { splitMsg = `A real chunk of your trip is spent in port, where you'll drink much less — but a package still charges you full price for those ${state.ports} day${state.ports===1?"":"s"}.`; }
+  document.getElementById("split-note").textContent = splitMsg;
+
+  /* --- by drink --- */
+  let maxG = 0; for(const g of GENRES) maxG = Math.max(maxG, cabin.genre[g.key]);
+  const gl = document.getElementById("genre-list");
+  gl.innerHTML = GENRES.filter(g=>cabin.genre[g.key]>0.005)
+    .sort((a,b)=>cabin.genre[b.key]-cabin.genre[a.key])
+    .map(g=>{
+      const w = maxG>0 ? Math.round(cabin.genre[g.key]/maxG*100) : 0;
+      return `<div class="genre-row"><span class="gname">${g.label}</span><span class="gbar"><i style="width:${w}%"></i></span><span class="gval">${money(cabin.genre[g.key])}</span></div>`;
+    }).join("") || `<p class="note">Nothing to itemise.</p>`;
+
+  /* --- per person --- */
+  const pl = document.getElementById("person-list");
+  pl.innerHTML = people.map((r,i)=>
+    `<div class="perperson"><span>Person ${i+1}${i===0?" (you)":""} — ${money(r.perDay)}/day</span><span class="amt">${money(r.total)}</span></div>`
+  ).join("");
+  document.getElementById("perday-note").textContent =
+    "That per-day figure is the number to remember: any package priced above it is losing you money.";
+
+  /* --- verdict --- */
+  const perDays = people.map(r=>r.perDay);
+  const minPerDay = Math.min(...perDays);
+  const maxPerDay = Math.max(...perDays);
+  const vb = document.getElementById("verdict-body");
+  let html = "";
+  if(state.cabin===1){
+    html += `<p class="verdict"><strong>Your number is ${money2(perDays[0])} a day.</strong> A package only wins if it's cheaper than that once you strip out anything you'd pay for anyway (tips, Wi-Fi). Above it, pay as you go.</p>`;
+  } else {
+    html += `<p class="verdict"><strong>Your numbers, per day:</strong> ${perDays.map((d,i)=>`P${i+1} ${money2(d)}`).join(" · ")}.</p>`;
+    html += `<p class="note">Most big lines make <strong>every adult</strong> in the cabin buy the same package. That means the <strong>lightest drinker's number (${money2(minPerDay)}/day)</strong> is usually what decides it — a package has to beat <em>that</em> to make sense for the whole cabin, and few are that cheap.</p>`;
+    if(maxPerDay - minPerDay > 8){
+      html += `<p class="note">Your drinkers are mismatched. Some lines let each guest hold a different package (or none) — worth asking, so the light drinker isn't forced to overpay.</p>`;
+    }
+  }
+  vb.innerHTML = html;
+
+  // package link
+  const link = document.getElementById("pkg-link");
+  if(L.pkgUrl){ link.href = L.pkgUrl; link.style.display="inline-block"; link.textContent = `See ${L.name} packages ↗`; }
+  else { link.href = "#"; link.style.display="none"; }
+  if(!L.pkgUrl){
+    vb.innerHTML += `<p class="note">Check your line's app or cruise planner for today's package price — that's the only figure that's ever accurate for your sailing.</p>`;
+  }
+
+  // seed the package comparison price sensibly
+  if(!state._pkgTouched && L.pkgSeed){ state.pkgprice = L.pkgSeed; document.getElementById("pkgprice-val").textContent = state.pkgprice; }
+
+  renderPkgVerdict(people);
+  document.getElementById("stamp").textContent = PRICE_STAMP + " · estimates only, always verify live prices";
+}
+
+function renderPkgVerdict(people){
+  if(!people){ people = computeAll().people; }
+  const box = document.getElementById("pkg-verdict");
+  const pkgUSD = state.pkgprice / CURR[state.currency].rate;      // entered in display currency → back to USD
+  const addUSD = (state.addtips + state.addwifi) / CURR[state.currency].rate;
+
+  // Per person: fair comparison = drinks/day + stuff you'd have bought anyway
+  const rows = people.map((r,i)=>{
+    const mine = r.perDay + addUSD;               // your pay-as-you-go equivalent per day
+    const diff = mine - pkgUSD;                    // positive => package saves you money
+    return {i, mine, diff};
+  });
+
+  let html = "";
+  if(state.alladults && state.cabin>1){
+    const cabinMine = rows.reduce((s,r)=>s+r.mine,0);
+    const cabinPkg = pkgUSD * state.cabin;
+    const cabinDiff = cabinMine - cabinPkg;
+    const worth = cabinDiff > 0;
+    html += `<p class="verdict ${worth?"maybe":"skip"}">`;
+    html += worth
+      ? `<strong>Package likely wins.</strong> Across the cabin you'd spend about ${money(cabinMine*state.nights)} pay-as-you-go vs ${money(cabinPkg*state.nights)} for the package — roughly <strong>${money(cabinDiff*state.nights)} saved</strong>.`
+      : `<strong>Likely skip it.</strong> The cabin would pay about ${money(cabinPkg*state.nights)} for the package but only spend ${money(cabinMine*state.nights)} pay-as-you-go — you'd <strong>lose about ${money(-cabinDiff*state.nights)}</strong>.`;
+    html += `</p>`;
+    // who's dragging it
+    const losers = rows.filter(r=>r.diff<0);
+    if(losers.length && rows.some(r=>r.diff>0)){
+      html += `<p class="note">` + losers.map(r=>`Person ${r.i+1} alone would lose ${money(-r.diff*state.nights)}`).join("; ") + ` — they're only "worth it" because the cabin is forced to buy together.</p>`;
+    }
+  } else {
+    html += rows.map(r=>{
+      const worth = r.diff>0;
+      return `<p class="verdict ${worth?"maybe":"skip"}"><strong>Person ${r.i+1}: ${worth?"package wins":"skip it"}.</strong> ${worth
+        ? `Saves about ${money(r.diff*state.nights)} over the trip.`
+        : `You'd lose about ${money(-r.diff*state.nights)} — pay as you go.`}</p>`;
+    }).join("");
+  }
+  html += `<p class="note">Compared like-for-like: your drinks${(state.addtips||state.addwifi)?" plus the tips/Wi-Fi you'd have bought anyway":""}, against the package price you entered.</p>`;
+  box.innerHTML = html;
+}
+
+/* ---------------- wiring ---------------- */
+function refreshInputs(){ renderLineNote(); renderDaySplit(); renderCabinSeg(); renderPeople(); }
+function refreshAll(){ if(state.shown) renderResults(); }
+
+document.getElementById("line").addEventListener("change", e=>{ state.line=e.target.value; state._pkgTouched=false; renderLineNote(); refreshAll(); });
+
+// steppers (top-level + package)
+const STEP_CFG = {
+  nights:{min:1,max:60,get:()=>state.nights,set:v=>{state.nights=v; if(state.ports>v)state.ports=v;},after:()=>{renderDaySplit();document.getElementById("ports-val").textContent=state.ports;}},
+  ports:{min:0,max:60,get:()=>state.ports,set:v=>{state.ports=Math.min(v,state.nights);},after:renderDaySplit},
+  pkgprice:{min:0,max:400,get:()=>state.pkgprice,set:v=>{state.pkgprice=v;state._pkgTouched=true;},after:()=>renderPkgVerdict()},
+  addtips:{min:0,max:100,get:()=>state.addtips,set:v=>state.addtips=v,after:()=>renderPkgVerdict()},
+  addwifi:{min:0,max:100,get:()=>state.addwifi,set:v=>state.addwifi=v,after:()=>renderPkgVerdict()}
+};
+document.querySelectorAll('.stepper[data-step]').forEach(st=>{
+  const key = st.dataset.step; const cfg = STEP_CFG[key];
+  const btns = st.querySelectorAll('button'); const val = st.querySelector('.val');
+  btns[0].addEventListener('click',()=>{ let v=Math.max(cfg.min,cfg.get()-1); cfg.set(v); val.textContent=cfg.get(); cfg.after&&cfg.after(); refreshAll(); });
+  btns[1].addEventListener('click',()=>{ let v=Math.min(cfg.max,cfg.get()+1); cfg.set(v); val.textContent=cfg.get(); cfg.after&&cfg.after(); refreshAll(); });
+});
+
+// cabin size
+document.getElementById("cabin-seg").addEventListener("click", e=>{
+  const b = e.target.closest("button"); if(!b) return;
+  state.cabin = Number(b.dataset.n); renderCabinSeg(); renderPeople(); refreshAll();
+});
+
+// delegated: person segmented controls, same-as, refine toggle, refine steppers
+document.getElementById("people").addEventListener("click", e=>{
+  const segBtn = e.target.closest('.seg button');
+  if(segBtn){
+    const parent = segBtn.closest('.seg'); const role = parent.dataset.role; const i = Number(parent.dataset.i);
+    const v = segBtn.dataset.v; const pp = state.people[i];
+    if(role==="volume"){ pp.volume=v; pp.refined=false; }
+    if(role==="style"){ pp.style=v; pp.refined=false; }
+    if(role==="port"){ pp.port=v; }
+    renderPeople(); refreshAll(); return;
+  }
+  const rt = e.target.closest('[data-refine]');
+  if(rt){ const i=Number(rt.dataset.refine); const pp=state.people[i];
+    if(!pp.refined){ pp.refined=true; pp.counts = buildPattern(pp.volume,pp.style); }
+    renderPeople(); refreshAll(); return;
+  }
+  const rs = e.target.closest('[data-refinestep] button');
+  if(rs){ const st=rs.closest('[data-refinestep]'); const [i,gk]=st.dataset.refinestep.split(':'); const pp=state.people[Number(i)];
+    if(!pp.refined){ pp.refined=true; pp.counts=buildPattern(pp.volume,pp.style); }
+    const delta = rs===st.querySelectorAll('button')[0] ? -1 : 1;
+    pp.counts[gk] = Math.max(0, (pp.counts[gk]||0)+delta);
+    st.querySelector('.val').textContent = pp.counts[gk];
+    refreshAll(); return;
+  }
+});
+document.getElementById("people").addEventListener("change", e=>{
+  const same = e.target.closest('[data-same]');
+  if(same){ const i=Number(same.dataset.same); state.people[i].sameAsP1 = same.checked; renderPeople(); refreshAll(); }
+});
+
+// currency + alladults live on results
+document.getElementById("alladults").addEventListener("change", e=>{ state.alladults=e.target.checked; renderPkgVerdict(); });
+
+// CTA
+document.getElementById("calc").addEventListener("click", ()=>{
+  state.shown = true;
+  document.getElementById("results").classList.add("show");
+  renderResults();
+  document.getElementById("results").scrollIntoView({behavior:"smooth", block:"start"});
+});
+
+/* ---------------- currency toggle (added to header area) ---------------- */
+(function addCurrencyToggle(){
+  const header = document.querySelector('header');
+  const wrap = document.createElement('div');
+  wrap.style.cssText = "margin-top:14px";
+  wrap.innerHTML = `<div class="seg small" id="curr-seg" role="group" aria-label="Currency" style="max-width:260px;margin:0 auto">
+    ${Object.keys(CURR).map(c=>`<button type="button" data-c="${c}" aria-pressed="${c===state.currency}">${CURR[c].sym} ${c}</button>`).join("")}
+  </div>`;
+  header.appendChild(wrap);
+  wrap.addEventListener('click', e=>{
+    const b=e.target.closest('button'); if(!b) return;
+    state.currency=b.dataset.c;
+    wrap.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed', String(x.dataset.c===state.currency)));
+    // keep entered package price roughly consistent when switching currency display
+    document.getElementById("pkgprice-val").textContent = state.pkgprice;
+    refreshAll();
+  });
+})();
+
+/* ---------------- init ---------------- */
+renderLineSelect();
+refreshInputs();
+document.getElementById("stamp").textContent = PRICE_STAMP;
+</script>
+</body>
+</html>

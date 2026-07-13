@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>GetMyCruiseConnection · Cruise WiFi, roaming &amp; eSIMs made simple</title>
+<meta name="description" content="Stay connected at sea without the bill shock. Get a personalised plan for cruise WiFi, mobile data, roaming, eSIMs and VPNs — plus a calculator for how much data to buy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ocean-deep:#081830;
+  --ocean:#0d2445;
+  --panel:#122c52;
+  --panel-edge:#1d3d6b;
+  --gold:#d9b45c;
+  --gold-bright:#f0d087;
+  --gold-dim:rgba(217,180,92,.35);
+  --foam:#f3efe4;
+  --mist:#8fa2bd;
+  --seaglass:#46c3a8;
+  --seaglass-dim:rgba(70,195,168,.18);
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:'Outfit',sans-serif;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #16335e 0%, transparent 60%),
+    var(--ocean-deep);
+  color:var(--foam);
+  min-height:100vh;
+  padding:0 16px calc(56px + env(safe-area-inset-bottom));
+  line-height:1.55;
+}
+.wrap{max-width:820px;margin:0 auto}
+a{color:var(--gold-bright)}
+
+/* ---------- Header ---------- */
+header{text-align:center;padding:52px 8px 8px}
+.eyebrow{
+  font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;
+}
+.eyebrow a{color:var(--gold);text-decoration:none}
+.eyebrow a:hover{text-decoration:underline}
+h1{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:clamp(1.9rem,7vw,2.9rem);
+  letter-spacing:.02em;margin:.4rem 0 .5rem;line-height:1.1;
+  background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:var(--gold);
+}
+.tagline{
+  color:var(--mist);font-weight:300;
+  font-size:clamp(1rem,3.4vw,1.15rem);
+  max-width:560px;margin:0 auto;
+}
+.tagline strong{color:var(--foam);font-weight:500}
+
+/* ---------- Signal mark ---------- */
+.mark{
+  width:78px;height:auto;margin:4px auto 12px;display:block;
+  filter:drop-shadow(0 6px 24px rgba(217,180,92,.18));
+}
+.mark .arc{opacity:0;transform-origin:50px 74px;animation:ping 4.2s ease-out infinite}
+.mark .arc.a2{animation-delay:.6s}
+.mark .arc.a3{animation-delay:1.2s}
+@keyframes ping{
+  0%{opacity:0;transform:scale(.5)}
+  25%{opacity:.9}
+  70%{opacity:0;transform:scale(1)}
+  100%{opacity:0;transform:scale(1)}
+}
+.mark .wave{animation:lap 6s ease-in-out infinite alternate}
+@keyframes lap{from{transform:translateX(0)}to{transform:translateX(-10px)}}
+@media (prefers-reduced-motion:reduce){
+  .mark .arc{animation:none;opacity:.55}
+  .mark .wave{animation:none}
+}
+
+/* ---------- Dividers ---------- */
+.rule{
+  display:flex;align-items:center;gap:14px;
+  max-width:520px;margin:40px auto 0;
+  color:var(--gold);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600;
+}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim))}
+.rule::after{background:linear-gradient(90deg,var(--gold-dim),transparent)}
+
+/* ---------- Cards: wizard + calculator ---------- */
+.builder{
+  background:linear-gradient(180deg,var(--panel),var(--ocean));
+  border:1px solid var(--panel-edge);
+  border-radius:var(--radius);
+  padding:26px 22px;
+  margin-top:26px;
+}
+.builder h2{
+  font-family:'Cinzel',serif;font-weight:600;font-size:1.2rem;
+  color:var(--gold-bright);letter-spacing:.02em;margin-bottom:4px;
+}
+.builder .sub{color:var(--mist);font-size:.9rem;font-weight:300;margin-bottom:22px}
+.field{margin-bottom:18px}
+.field label{
+  display:block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;margin-bottom:8px;
+}
+.field select,.field input[type=text],.field input[type=number]{
+  width:100%;
+  background:var(--ocean-deep);
+  color:var(--foam);
+  border:1px solid var(--panel-edge);
+  border-radius:10px;
+  padding:13px 14px;
+  font-family:'Outfit',sans-serif;font-size:1rem;
+  appearance:none;-webkit-appearance:none;
+}
+.field select{
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23d9b45c' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat:no-repeat;background-position:right 14px center;padding-right:40px;
+}
+.field select:focus,.field input:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
+.field .hint{color:var(--mist);font-size:.78rem;font-weight:300;margin-top:6px}
+.go{
+  width:100%;margin-top:6px;
+  font-family:'Outfit',sans-serif;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;
+  color:var(--ocean-deep);
+  background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+  border:none;border-radius:999px;padding:15px 18px;cursor:pointer;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.go:hover,.go:focus-visible{transform:translateY(-2px);box-shadow:0 12px 28px rgba(4,10,24,.5);outline:none}
+
+/* ---------- Calculator result ---------- */
+.calc-result{margin-top:22px;text-align:center;border-top:1px solid var(--panel-edge);padding-top:22px}
+.calc-result[hidden]{display:none}
+.calc-gb{font-family:'Cinzel',serif;font-size:2.6rem;color:var(--gold-bright);line-height:1}
+.calc-gb span{font-size:1rem;color:var(--mist);font-family:'Outfit',sans-serif;letter-spacing:.05em}
+.calc-rec{color:var(--foam);font-weight:300;margin-top:14px}
+.calc-rec strong{color:var(--foam);font-weight:600}
+.calc-note{color:var(--mist);font-size:.82rem;font-weight:300;margin-top:12px;max-width:560px;margin-left:auto;margin-right:auto}
+
+/* ---------- Plan output ---------- */
+#plan{margin-top:26px;scroll-margin-top:18px}
+#plan[hidden]{display:none}
+.plan-head{text-align:center;margin-bottom:4px}
+.plan-head h2{font-family:'Cinzel',serif;font-weight:600;font-size:1.25rem;color:var(--gold-bright);letter-spacing:.02em}
+.plan-summary{color:var(--mist);font-weight:300;text-align:center;max-width:600px;margin:8px auto 24px}
+.plan-summary strong{color:var(--foam);font-weight:500}
+.block{
+  background:linear-gradient(180deg,var(--panel),var(--ocean));
+  border:1px solid var(--panel-edge);
+  border-radius:var(--radius);
+  padding:22px 20px;margin-bottom:16px;
+}
+.block.sea{border-left:3px solid var(--gold)}
+.block.port{border-left:3px solid var(--seaglass)}
+.block h3{
+  font-family:'Cinzel',serif;font-weight:600;font-size:1.05rem;color:var(--gold-bright);
+  letter-spacing:.02em;margin-bottom:4px;
+}
+.block .kicker{
+  font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--gold);
+  display:block;margin-bottom:10px;
+}
+.block.port .kicker{color:var(--seaglass)}
+.block p{color:var(--foam);font-weight:300;font-size:.95rem;margin-bottom:10px}
+.block p:last-child{margin-bottom:0}
+.block p strong{font-weight:600;color:var(--foam)}
+.opt{
+  border:1px solid var(--panel-edge);border-radius:11px;
+  padding:14px 15px;margin-top:12px;background:rgba(8,24,48,.5);
+}
+.opt .name{font-weight:600;color:var(--gold-bright);font-size:.95rem;margin-bottom:3px}
+.block.port .opt .name{color:var(--seaglass)}
+.opt p{font-size:.9rem;margin-bottom:8px}
+.block ul{list-style:none;margin:4px 0 0}
+.block li{color:var(--foam);font-weight:300;font-size:.95rem;padding-left:22px;position:relative;margin-bottom:9px}
+.block li::before{content:"";position:absolute;left:2px;top:.55em;width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.block.port li::before{background:var(--seaglass)}
+.affbtn{
+  display:inline-block;margin-top:4px;
+  font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+  color:var(--ocean-deep);background:var(--seaglass);
+  border-radius:999px;padding:9px 16px;text-decoration:none;
+  transition:transform .15s ease;
+}
+.affbtn.gold{background:var(--gold)}
+.affbtn:hover{transform:translateY(-2px)}
+.disclose{color:var(--mist);font-size:.76rem;font-weight:300;font-style:italic;margin-top:14px}
+
+/* ---------- Compare table ---------- */
+.table-wrap{
+  background:linear-gradient(180deg,var(--panel),var(--ocean));
+  border:1px solid var(--panel-edge);border-radius:var(--radius);
+  padding:6px 8px;margin-top:26px;overflow-x:auto;-webkit-overflow-scrolling:touch;
+}
+table.cmp{width:100%;border-collapse:collapse;min-width:430px}
+table.cmp th,table.cmp td{
+  text-align:left;padding:13px 14px;vertical-align:top;
+  border-bottom:1px solid var(--panel-edge);font-weight:300;font-size:.9rem;color:var(--foam);
+}
+table.cmp thead th{
+  font-family:'Cinzel',serif;font-weight:600;color:var(--gold-bright);font-size:.98rem;
+  border-bottom:1px solid var(--gold-dim);
+}
+table.cmp thead th .net{
+  display:block;font-family:'Outfit',sans-serif;font-weight:300;font-size:.72rem;
+  color:var(--mist);letter-spacing:.02em;margin-top:2px;
+}
+table.cmp tbody th{
+  font-family:'Outfit',sans-serif;font-weight:600;color:var(--gold);font-size:.7rem;
+  letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;width:1%;
+}
+table.cmp tr:last-child th,table.cmp tr:last-child td{border-bottom:none}
+.cmp-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.cmp-ctas a{flex:1;text-align:center;min-width:150px}
+.cmp-note{color:var(--mist);font-size:.82rem;font-weight:300;margin-top:14px}
+
+/* ---------- Explainers ---------- */
+.explainers{margin-top:8px}
+details.faq{
+  background:rgba(13,36,69,.5);
+  border:1px solid var(--panel-edge);
+  border-radius:12px;
+  padding:2px 20px;margin-bottom:12px;
+}
+details.faq summary{
+  cursor:pointer;list-style:none;padding:18px 0;
+  font-family:'Cinzel',serif;font-weight:600;font-size:1rem;color:var(--gold-bright);
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";color:var(--gold);font-family:'Outfit',sans-serif;font-weight:400;font-size:1.5rem;line-height:1;transition:transform .2s ease;
+}
+details.faq[open] summary::after{transform:rotate(45deg)}
+details.faq .body{padding:0 0 20px;color:var(--foam);font-weight:300;font-size:.95rem}
+details.faq .body p{margin-bottom:12px}
+details.faq .body p:last-child{margin-bottom:0}
+details.faq .body strong{font-weight:600;color:var(--foam)}
+.warn{color:var(--seaglass);font-weight:500}
+
+/* ---------- Footer ---------- */
+footer{text-align:center;color:var(--mist);font-size:.78rem;font-weight:300;padding:44px 12px 0}
+footer .foot-mark{font-family:'Cinzel',serif;color:var(--gold);letter-spacing:.14em;font-size:.8rem;margin-bottom:6px}
+footer p+p{margin-top:6px}
+footer a{color:var(--mist)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow"><a href="https://thecruiselab.com">Part of The Cruise Lab</a></p>
+
+    <!-- Signal mark: signal arcs rising over the sea -->
+    <svg class="mark" viewBox="0 0 100 96" aria-hidden="true">
+      <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f0d087"/><stop offset="1" stop-color="#d9b45c"/>
+        </linearGradient>
+      </defs>
+      <path class="arc a3" d="M22 62 a40 40 0 0 1 56 0" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
+      <path class="arc a2" d="M31 64 a28 28 0 0 1 38 0" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
+      <path class="arc a1" d="M40 66 a15 15 0 0 1 20 0" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="50" cy="70" r="3.4" fill="#f0d087"/>
+      <path class="wave" fill="#1d3d6b" d="M-12 80 q9 -5 18 0 t18 0 t18 0 t18 0 t18 0 t18 0 v18 h-126 z"/>
+      <path class="wave" fill="#46c3a8" opacity=".35" style="animation-duration:8s" d="M-12 84 q9 -4 18 0 t18 0 t18 0 t18 0 t18 0 t18 0 v14 h-126 z"/>
+    </svg>
+
+    <h1>GetMyCruiseConnection</h1>
+    <p class="tagline">Cruise WiFi, mobile data and roaming, <strong>made simple</strong>. Tell us your cruise and your phone, and we'll build a plan to keep you connected at sea — without the bill shock.</p>
+  </header>
+
+  <main>
+    <!-- ---------- Wizard ---------- -->
+    <section class="builder" aria-labelledby="builder-h">
+      <h2 id="builder-h">Build your connection plan</h2>
+      <p class="sub">Four quick questions. No sign-up, nothing stored.</p>
+
+      <div class="field">
+        <label for="region">Where are you cruising?</label>
+        <select id="region">
+          <option value="">Choose a region…</option>
+          <option value="caribbean">Caribbean &amp; Bahamas</option>
+          <option value="med">Mediterranean</option>
+          <option value="neurope">Northern Europe &amp; Baltic</option>
+          <option value="norway">Norway, Iceland &amp; the fjords</option>
+          <option value="alaska">Alaska</option>
+          <option value="transatlantic">Transatlantic crossing</option>
+          <option value="asia">Asia</option>
+          <option value="oceania">Australia, NZ &amp; South Pacific</option>
+          <option value="world">Somewhere else / world cruise</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="line">Cruise line</label>
+        <select id="line">
+          <option value="">Choose a line…</option>
+          <option value="princess">Princess</option>
+          <option value="royal">Royal Caribbean</option>
+          <option value="celebrity">Celebrity</option>
+          <option value="carnival">Carnival</option>
+          <option value="ncl">Norwegian (NCL)</option>
+          <option value="msc">MSC</option>
+          <option value="virgin">Virgin Voyages</option>
+          <option value="disney">Disney</option>
+          <option value="hal">Holland America</option>
+          <option value="po">P&amp;O Cruises</option>
+          <option value="cunard">Cunard</option>
+          <option value="marella">Marella (TUI)</option>
+          <option value="other">Another line</option>
+        </select>
+        <input type="text" id="ship" placeholder="Ship name (optional)" style="margin-top:10px">
+        <p class="hint">We use the line to gauge whether your ship is likely to have Starlink. Two ships on the same line can differ, so check yours if you can.</p>
+      </div>
+
+      <div class="field">
+        <label for="phone">Where's your phone (and mobile plan) from?</label>
+        <select id="phone">
+          <option value="">Choose…</option>
+          <option value="uk">United Kingdom</option>
+          <option value="us">United States</option>
+          <option value="eu">EU / EEA country</option>
+          <option value="other">Somewhere else</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="use">How will you use your phone on board?</label>
+        <select id="use">
+          <option value="">Choose…</option>
+          <option value="reachable">Just stay reachable (calls, texts, WhatsApp)</option>
+          <option value="social">Social media, messaging &amp; light browsing</option>
+          <option value="streaming">Streaming &amp; video calls</option>
+          <option value="working">Working remotely</option>
+        </select>
+      </div>
+
+      <button class="go" id="go" type="button">Build my plan</button>
+    </section>
+
+    <!-- ---------- Plan output ---------- -->
+    <section id="plan" hidden aria-live="polite"></section>
+  </main>
+
+  <!-- ---------- Data calculator ---------- -->
+  <p class="rule">How Much Data?</p>
+  <section class="builder" aria-labelledby="calc-h">
+    <h2 id="calc-h">How much data should I buy?</h2>
+    <p class="sub">Estimate what you'll get through, so you buy the right eSIM bundle.</p>
+
+    <div class="field">
+      <label for="c-days">Days you'll want data</label>
+      <input type="number" id="c-days" min="1" max="60" value="7" inputmode="numeric">
+    </div>
+    <div class="field">
+      <label for="c-msg">Messaging &amp; WhatsApp</label>
+      <select id="c-msg">
+        <option value="20">Just texts</option>
+        <option value="60" selected>Texts + photos</option>
+        <option value="150">Lots, incl. voice notes &amp; calls</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="c-social">Social media (scrolling, posting)</label>
+      <select id="c-social">
+        <option value="0">None</option>
+        <option value="100">A little — ~30 min/day</option>
+        <option value="250" selected>Moderate — ~1 hr/day</option>
+        <option value="550">A lot — 2 hr+/day</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="c-web">Browsing &amp; email</label>
+      <select id="c-web">
+        <option value="0">None</option>
+        <option value="60" selected>Light</option>
+        <option value="150">Moderate</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="c-video">Video calls home</label>
+      <select id="c-video">
+        <option value="0" selected>None</option>
+        <option value="90">~15 min/day</option>
+        <option value="180">~30 min/day</option>
+        <option value="360">~1 hr/day</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="c-stream">Streaming (video &amp; music)</label>
+      <select id="c-stream">
+        <option value="0" selected>None — I'll download before I sail</option>
+        <option value="120">Music only</option>
+        <option value="900">Some video</option>
+      </select>
+      <p class="hint">Video streaming is by far the biggest drain. On an at-sea eSIM it's rarely worth it — download shows and playlists before you go and use ship WiFi for the rest.</p>
+    </div>
+
+    <button class="go" id="c-go" type="button">Estimate my data</button>
+
+    <div id="c-out" class="calc-result" hidden aria-live="polite"></div>
+  </section>
+
+  <!-- ---------- At-sea eSIM comparison ---------- -->
+  <p class="rule">At-Sea eSIMs Compared</p>
+  <div class="table-wrap">
+    <table class="cmp">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">GigSky<span class="net">WMS · Cellular at Sea</span></th>
+          <th scope="col">RedBull Mobile<span class="net">Telenor Maritime</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Rough price</th>
+          <td>~$20–$123 for 512MB–10GB</td>
+          <td>~€15 per GB (+ free 1GB land)</td>
+        </tr>
+        <tr>
+          <th scope="row">Land data</th>
+          <td>Included — auto-switches to local 4G/5G in port</td>
+          <td>Free 1GB land bonus; separate land plans too</td>
+        </tr>
+        <tr>
+          <th scope="row">Ship coverage</th>
+          <td>200+ ships across the major lines</td>
+          <td>Marella, many P&amp;O, Cunard, Costa, Viking Ocean, Ambassador</td>
+        </tr>
+        <tr>
+          <th scope="row">Best for</th>
+          <td>Widest compatibility &amp; an all-in-one sea + land plan</td>
+          <td>Cheaper light use, and UK-favourite lines</td>
+        </tr>
+        <tr>
+          <th scope="row">Setup</th>
+          <td>App-based — check your ship in the app</td>
+          <td>App-based — check your ship in the app</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cmp-ctas">
+    <a id="cmp-gigsky" class="affbtn gold" target="_blank" rel="noopener sponsored">Check GigSky &rarr;</a>
+    <a id="cmp-redbull" class="affbtn gold" target="_blank" rel="noopener sponsored">Check RedBull Mobile &rarr;</a>
+  </div>
+  <p class="cmp-note">They run on <strong style="color:var(--foam);font-weight:500">different maritime networks</strong>, so which one works depends on your ship — always check compatibility in the provider's app before buying. At-sea speeds are modest (roughly 1–4 Mbps): great for messaging, social and maps, not all-day streaming. <em>Partner links — we may earn a small commission, at no cost to you.</em></p>
+
+  <!-- ---------- Explainers ---------- -->
+  <p class="rule">The Essentials</p>
+  <section class="explainers">
+
+    <details class="faq">
+      <summary>Airplane mode: when on, when off</summary>
+      <div class="body">
+        <p><strong>On as you leave port; off only when you're in port and want local data.</strong> The moment your ship sails clear of land, your phone loses the local towers and starts hunting for the ship's satellite network — where the expensive charges live. Airplane mode stops that.</p>
+        <p>Turn <strong>Data Roaming off too</strong>, in your settings, as a backstop. Airplane mode can quietly switch itself back on as the ship moves between networks, and roaming-off is a second lock on the door.</p>
+        <p>Airplane mode doesn't cut you off — you can turn WiFi and Bluetooth back on with it engaged, so you still get the ship's WiFi, your camera, downloaded music and offline maps.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Data roaming &amp; "Cellular at Sea" — the trap</summary>
+      <div class="body">
+        <p>Once you're in international waters, your phone can latch onto the ship's own satellite cell network. It shows up as <strong>"Cellular at Sea", "Maritime" or "901"</strong> — and almost no home plan, "unlimited" ones included, covers it. Your carrier bills it as premium roaming at cruise-ship rates.</p>
+        <p><span class="warn">Background activity is the silent killer.</span> You don't have to touch the phone — photo backup, app refresh and auto-updates rack up charges on their own. One family came home to a five-figure bill after a teenager streamed video on a Norway cruise. There's no such thing as a "quick check" at sea.</p>
+        <p>The fix is boring and total: airplane mode on, data roaming off, and stay online through ship WiFi or an eSIM built for sea instead.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Ship WiFi &amp; Starlink — what changed</summary>
+      <div class="body">
+        <p>Cruise WiFi used to be the punchline of every sea-day complaint. Starlink changed that. Its low-orbit satellites cut latency from seconds to milliseconds, and by 2026 most major lines have it fleet-wide — so on a Starlink ship the WiFi genuinely handles streaming and video calls.</p>
+        <p>Two things to know. First, lines used the upgrade to split their packages: the cheap tier is now a social-and-email floor, and the streaming/video-call/VPN capability sits behind a premium tier priced roughly 50–100% higher. Second, <strong>buy your package before you sail</strong> — pre-cruise pricing is usually 20–30% cheaper than buying it on board.</p>
+        <p>Pair a WiFi package with <strong>WiFi Calling</strong> (a toggle in your phone settings) and apps like WhatsApp or FaceTime, and you can call and text home over the internet with airplane mode still on.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>eSIMs at sea: what works, what doesn't</summary>
+      <div class="body">
+        <p>Most travel eSIMs — Airalo, Holafly, Nomad and the like — connect to <strong>land networks</strong>. They're brilliant <strong>in port</strong> and near the coast, and stop the moment the ship heads out to open sea. So a normal eSIM is a <strong>port-day tool</strong>, not a whole-cruise fix.</p>
+        <p>The exceptions are two eSIMs built for ships, which connect straight to the ship's onboard cellular network:</p>
+        <p><strong>GigSky (Cruise + Land)</strong> rides the WMS "Cellular at Sea" network used across 200+ ships and the major lines, and switches to local data in port. Broadest coverage and includes land — but pricier.</p>
+        <p><strong>RedBull Mobile Maritime</strong> uses the Telenor Maritime network — around €15 per GB with a free 1GB land bonus, often cheaper, and strong on Marella, P&amp;O, Cunard, Costa and Viking Ocean.</p>
+        <p><span class="warn">They run on different maritime networks</span>, so which one works comes down to your ship — check compatibility in each provider's app before buying. Speeds at sea are modest (roughly 1–4 Mbps): fine for messaging, social, maps and the odd video call, not all-day streaming.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>What's a VPN, and do you need one?</summary>
+      <div class="body">
+        <p>A <strong>VPN</strong> (virtual private network) encrypts your internet traffic and routes it through a server somewhere of your choosing. Two reasons it's worth having on a cruise:</p>
+        <p><strong>1. Security on shared WiFi.</strong> Ship WiFi and port café networks are shared by strangers. A VPN scrambles your traffic so banking, logins and email stay private.</p>
+        <p><strong>2. Your home content, abroad.</strong> Streaming services show you a different catalogue by location, and some block you entirely overseas. Set your VPN to your home country and you can watch your own services as if you were sitting at home — for UK cruisers, that means BBC iPlayer and ITVX while you're away.</p>
+        <p><span class="warn">The honest caveats:</span> a VPN adds overhead, so on a slow or throttled connection it can make things worse — and some basic ship-WiFi tiers block or throttle VPNs, so it may only work reliably on the premium tier. Test yours before you sail.</p>
+      </div>
+    </details>
+
+  </section>
+
+  <footer>
+    <p class="foot-mark">THE CRUISE LAB</p>
+    <p>General guidance only — connectivity, packages and roaming rates change, so always confirm cruise-ship roaming charges with your own carrier, and ship compatibility with your eSIM provider, before you sail.</p>
+    <p id="aff-note">Some links are partner links: if you buy through them we may earn a small commission, at no extra cost to you. We only suggest options we'd recommend anyway.</p>
+    <p>Independent tools made by a cruiser. Not affiliated with or endorsed by any cruise line, mobile carrier or eSIM provider.</p>
+    <p>&copy; 2026 The Cruise Lab</p>
+  </footer>
+
+</div>
+
+<script>
+/* ============================================================
+   GetMyCruiseConnection — config
+   Swap TOOL_NAME (also update the <h1> and <title>) and drop
+   your real affiliate tracking links into LINKS once approved.
+   ============================================================ */
+const TOOL_NAME = "GetMyCruiseConnection";
+const LINKS = {
+  airalo:  "https://www.airalo.com",   // TODO: Airalo affiliate link (via Impact) — best in port
+  holafly: "https://esim.holafly.com", // TODO: Holafly affiliate link / coupon — best in port (unlimited)
+  gigsky:  "https://www.gigsky.com/data-cruises", // TODO: GigSky referral link — works AT SEA (WMS / Cellular at Sea)
+  redbull: "https://www.redbullmobile.com",       // TODO: RedBull Mobile referral link — works AT SEA (Telenor Maritime)
+  vpn:     "https://nordvpn.com"       // TODO: VPN affiliate link (Nord / Express / Surfshark)
+};
+
+/* ---- Line → Starlink likelihood ---- */
+const LINES = {
+  princess: {name:"Princess",        sl:"yes"},
+  royal:    {name:"Royal Caribbean", sl:"yes"},
+  celebrity:{name:"Celebrity",       sl:"most"},
+  carnival: {name:"Carnival",        sl:"yes"},
+  ncl:      {name:"Norwegian",       sl:"yes"},
+  msc:      {name:"MSC",             sl:"most"},
+  virgin:   {name:"Virgin Voyages",  sl:"yes"},
+  disney:   {name:"Disney",          sl:"some"},
+  hal:      {name:"Holland America", sl:"most"},
+  po:       {name:"P&O Cruises",     sl:"most"},
+  cunard:   {name:"Cunard",          sl:"most"},
+  marella:  {name:"Marella",         sl:"some"},
+  other:    {name:"your cruise line",sl:"unknown"}
+};
+const SL_TEXT = {
+  yes:  n => `${n} has completed its fleet-wide Starlink rollout, so your ship almost certainly has fast, low-latency internet. The ship's WiFi package is a strong option for sea days.`,
+  most: n => `${n} has Starlink on most of its fleet (newest ships first). There's a good chance yours is fast — but check your specific ship, as two ships on the same line can differ sharply.`,
+  some: n => `${n} is still rolling Starlink out — its newest ships have it, older ones may still be on slower, pricier satellite. Check your specific ship before you rely on the WiFi.`,
+  unknown: () => `Check whether your specific ship has Starlink. If it does, the WiFi will be genuinely usable; if not, expect slower and more expensive satellite internet on sea days.`
+};
+
+/* ---- Region → port-day eSIM guidance ---- */
+const REGIONS = {
+  caribbean:{ label:"the Caribbean & Bahamas", prov:"airalo", plan:"a Caribbean regional eSIM",
+    note:"Island coverage varies a lot, so a regional plan won't cover every stop equally well. In US territories like Puerto Rico and the US Virgin Islands a US plan works as normal; some smaller islands may only have patchy data." },
+  med:{ label:"the Mediterranean", prov:"holafly", plan:"a Europe eSIM with unlimited data",
+    note:"One Europe plan covers most Med ports — Spain, Italy, Greece, France and more — activating automatically at each stop. Unlimited data suits a port-heavy Med itinerary." },
+  neurope:{ label:"Northern Europe & the Baltic", prov:"holafly", plan:"a Europe eSIM",
+    note:"A single Europe plan covers the Baltic capitals and Northern European ports. Double-check any non-EU stop is included before you rely on it." },
+  norway:{ label:"Norway, Iceland & the fjords", prov:"holafly", plan:"a Europe eSIM",
+    note:"Norway and Iceland are covered by most Europe plans. Signal drops in deep fjords and remote stretches even in port, so don't count on it for time-critical calls ashore." },
+  alaska:{ label:"Alaska", prov:"airalo", plan:"a North America (US + Canada) eSIM",
+    note:"Most Alaska ports are US soil, so a US phone roams there for free on its normal plan. You mainly need coverage for the Canadian stops (Vancouver, Victoria) — a North America plan handles both." },
+  transatlantic:{ label:"your transatlantic crossing", prov:"airalo", plan:"a global eSIM (or separate Europe + North America plans)",
+    note:"A crossing is mostly sea days with few ports, so an at-sea option matters more than usual — a land eSIM only earns its keep at the ports on each end." },
+  asia:{ label:"Asia", prov:"airalo", plan:"an Asia regional eSIM",
+    note:"A regional Asia plan covers multiple countries on one itinerary. Check each specific port country is on the plan's list — Asia coverage is less uniform than Europe." },
+  oceania:{ label:"Australia, NZ & the South Pacific", prov:"airalo", plan:"an Oceania eSIM",
+    note:"Australia and New Zealand are well covered; remote South Pacific islands often aren't, so treat those stops as offline." },
+  world:{ label:"your voyage", prov:"airalo", plan:"a global eSIM",
+    note:"For a multi-region or world cruise, a global eSIM saves juggling plans — though a region-specific plan is usually cheaper per GB where your itinerary stays in one area." }
+};
+
+/* ---- Phone origin → roaming / carrier note ---- */
+const PHONE = {
+  us: `<strong>US plan:</strong> Verizon's Cruise Daily Pass and AT&T's International Day Pass are both around $20 per line per day, charged only on days you actually use them — handy for light use with your own number. T-Mobile doesn't sell data at sea, so T-Mobile users should lean on ship WiFi or an at-sea eSIM. In US and Caribbean ports your normal plan may cover you; confirm before you sail.`,
+  uk: `<strong>UK plan:</strong> since Brexit, EU roaming is no longer automatic — check whether your network (EE, O2, Vodafone or Three) still includes the countries you're visiting, and watch for daily roaming fees. At sea, no UK plan covers you affordably, so it's airplane mode plus ship WiFi or an at-sea eSIM. A port eSIM is often better value than roaming add-ons.`,
+  eu: `<strong>EU / EEA plan:</strong> "Roam like at home" covers EU and EEA ports (including Norway and Iceland) at no extra cost — but <em>not</em> at sea, as Cellular at Sea is excluded. Ports outside the EU/EEA (the UK, Turkey, the Caribbean and so on) fall outside it, so use an eSIM there.`,
+  other: `<strong>Your plan:</strong> check your carrier's maritime and cruise roaming rates before you sail, and assume they're high. Lean on ship WiFi at sea and a local eSIM in port.`
+};
+
+/* ---- Usage → sea-day strategy + streaming/VPN emphasis ---- */
+const USE = {
+  reachable:{
+    sea:"You don't need much. The cheapest messaging/social WiFi tier — or just WiFi Calling and WhatsApp over any package — keeps you reachable. A small at-sea eSIM bundle or a carrier cruise day pass works just as well for the odd check-in.",
+    vpn:"low", stream:false },
+  social:{
+    sea:"A basic-to-mid WiFi package covers social, messaging and light browsing. Buy it pre-cruise to save around 20–30%, or use a modest at-sea eSIM bundle if you'd rather not pay by the day.",
+    vpn:"med", stream:false },
+  streaming:{
+    sea:"You'll want the premium/streaming WiFi tier — and it's only really worth it on a Starlink ship. At-sea eSIMs aren't built for heavy streaming, so download shows, music and maps before you sail, and run big uploads after midnight ship time.",
+    vpn:"med", stream:true },
+  working:{
+    sea:"Get the premium WiFi tier (a Starlink ship is strongly recommended) and a VPN for secure access — but check the package allows VPN, as some basic tiers block it. An at-sea eSIM is a solid backup if the WiFi congests. Schedule large uploads for off-peak or overnight.",
+    vpn:"high", stream:true }
+};
+
+const $ = id => document.getElementById(id);
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ================= Plan builder ================= */
+$("go").addEventListener("click", () => {
+  const region = $("region").value;
+  const line   = $("line").value;
+  const ship   = $("ship").value.trim();
+  const phone  = $("phone").value;
+  const use    = $("use").value;
+
+  if(!region || !line || !phone || !use){
+    alert("Pick an option for all four questions and we'll build your plan.");
+    return;
+  }
+
+  const R = REGIONS[region], L = LINES[line], U = USE[use];
+  const shipLabel = ship ? `${esc(ship)} (${L.name})` : L.name;
+  const prov = R.prov;
+  const provName = prov === "holafly" ? "Holafly" : "Airalo";
+  const useLabels = {reachable:"stay reachable", social:"use social media and browse", streaming:"stream and video-call", working:"work remotely"};
+  const carrierPass = phone === "us" ? " Or a carrier cruise day pass (Verizon or AT&T, ~$20/day) — see below." : "";
+
+  let html = `
+    <div class="plan-head"><h2>Your connection plan</h2></div>
+    <p class="plan-summary">For <strong>${shipLabel}</strong> in <strong>${R.label}</strong>, wanting to <strong>${useLabels[use]}</strong>. Two jobs to solve — online at sea, and online in port — plus where the money traps are.</p>
+
+    <div class="block sea">
+      <span class="kicker">At sea · onboard</span>
+      <h3>Staying online while sailing</h3>
+      <p>${SL_TEXT[L.sl](L.name)}</p>
+      <p>${U.sea}</p>
+      <p>Whatever you choose, keep <strong>airplane mode on and data roaming off</strong> at sea so your phone never touches the pay-per-use maritime network, and turn on <strong>WiFi Calling</strong> so calls and texts still reach you. Your two routes to data at sea:</p>
+
+      <div class="opt">
+        <div class="name">1 · Ship WiFi package</div>
+        <p>Simple and unlimited-ish, best for heavy use and streaming on a Starlink ship. Buy it <strong>before you sail</strong> to save ~20–30%.</p>
+      </div>
+
+      <div class="opt">
+        <div class="name">2 · An eSIM built for sea</div>
+        <p>Cheaper for light-to-medium use, no daily fees, and you can hotspot. Two specialists — on <strong>different maritime networks</strong>, so check your ship in each app first:</p>
+        <p><strong>GigSky (Cruise + Land)</strong> — the WMS "Cellular at Sea" network, 200+ ships and the major lines, switches to local data in port. Broadest, includes land, pricier.</p>
+        <a class="affbtn gold" href="${LINKS.gigsky}" target="_blank" rel="noopener sponsored">Check GigSky →</a>
+        <p style="margin-top:12px"><strong>RedBull Mobile Maritime</strong> — the Telenor Maritime network, around €15/GB with a free 1GB land bonus. Often cheaper; strong on Marella, P&amp;O, Cunard, Costa and Viking Ocean.</p>
+        <a class="affbtn gold" href="${LINKS.redbull}" target="_blank" rel="noopener sponsored">Check RedBull Mobile →</a>
+      </div>
+      <p class="disclose">Partner links — we may earn a small commission, at no cost to you.${carrierPass}</p>
+    </div>
+
+    <div class="block port">
+      <span class="kicker">In port · ashore</span>
+      <h3>Cheaper data the moment you dock</h3>
+      <p>A standard travel eSIM connects to <strong>land networks</strong>, so it's the cheapest way to get data ashore — but only ashore, not out at open sea. For ${R.label}, get <strong>${R.plan}</strong> and it'll activate automatically at each stop, with no roaming bill.</p>
+      <p>${R.note}</p>
+      <a class="affbtn" href="${LINKS[prov]}" target="_blank" rel="noopener sponsored">Browse ${provName} eSIMs →</a>
+      <p style="margin-top:12px">If you picked a GigSky or RedBull plan above, it already switches to local data in port — so you may not need a separate land eSIM at all.</p>
+      <p class="disclose">Partner link — we may earn a small commission, at no cost to you.</p>
+    </div>
+
+    <div class="block">
+      <span class="kicker">Your carrier</span>
+      <h3>Roaming, decoded</h3>
+      <p>${PHONE[phone]}</p>
+    </div>`;
+
+  let vpnLead;
+  if(U.vpn === "high") vpnLead = "Working over ship or port WiFi, a VPN isn't optional — it keeps logins, email and files private on a shared network.";
+  else if(U.vpn === "med") vpnLead = "Worth having: a VPN keeps your traffic private on shared ship and port WiFi.";
+  else vpnLead = "Nice to have: a VPN keeps banking and logins private on shared WiFi, even for light use.";
+  const ukTelly = phone === "uk" ? " As a UK cruiser, it also lets you watch BBC iPlayer and ITVX from home while you're away." : "";
+  const vpnCaveat = U.stream ? " One caveat: a VPN adds overhead and some basic WiFi tiers block it, so use it on the premium tier and test it before you sail." : "";
+
+  html += `
+    <div class="block">
+      <span class="kicker">Security &amp; streaming</span>
+      <h3>A VPN, if you want one</h3>
+      <p>${vpnLead}${ukTelly}${vpnCaveat}</p>
+      <a class="affbtn gold" href="${LINKS.vpn}" target="_blank" rel="noopener sponsored">See VPN options →</a>
+      <p class="disclose">Partner link — we may earn a small commission, at no cost to you.</p>
+    </div>
+
+    <div class="block">
+      <span class="kicker">Before you sail</span>
+      <h3>Your pre-departure checklist</h3>
+      <ul>
+        <li>Turn on <strong>Airplane Mode</strong> as you leave port, and switch <strong>Data Roaming off</strong> as a backstop.</li>
+        <li>Turn off <strong>background app refresh, auto-updates and photo/cloud backup</strong> — the silent data-drainers.</li>
+        <li>Turn on <strong>WiFi Calling</strong> so calls and texts work over WiFi.</li>
+        <li>Download your <strong>cruise line's app</strong> — most include free onboard messaging without a WiFi package.</li>
+        <li>Download offline first: <strong>maps, music, playlists, shows and boarding passes</strong>.</li>
+        <li>Buy your <strong>ship WiFi package before you sail</strong>, or install an at-sea eSIM — and <strong>check your ship is compatible</strong> in the provider's app.</li>
+        <li>Install any <strong>port eSIM before you leave home</strong>, but don't activate it until your first port.</li>
+        ${U.stream ? '<li>Install and <strong>test your VPN</strong> before departure.</li>' : ''}
+      </ul>
+    </div>`;
+
+  const plan = $("plan");
+  plan.innerHTML = html;
+  plan.hidden = false;
+  plan.scrollIntoView({behavior:"smooth", block:"start"});
+});
+
+/* ================= Data calculator ================= */
+const cv = id => parseFloat($(id).value) || 0;
+$("c-go").addEventListener("click", () => {
+  const days = Math.max(1, Math.min(60, parseInt($("c-days").value) || 1));
+  const perDay = cv("c-msg") + cv("c-social") + cv("c-web") + cv("c-video") + cv("c-stream");
+  const gb = (perDay * days) / 1024;
+  const bundles = [1, 2, 3, 5, 10, 20];
+  const rec = bundles.find(b => b >= gb * 1.15) || Math.ceil(gb);
+  const gbShown = gb < 1 ? gb.toFixed(1) : (gb < 10 ? gb.toFixed(1) : Math.round(gb));
+
+  let msg;
+  if(gb < 1) msg = `That's light — under a gigabyte over ${days} day${days>1?'s':''}. A <strong>1&nbsp;GB</strong> at-sea bundle covers it with room to spare.`;
+  else msg = `Over ${days} day${days>1?'s':''} that's about <strong>${gbShown}&nbsp;GB</strong>. Buy a <strong>${rec}&nbsp;GB</strong> bundle to leave a little headroom.`;
+
+  $("c-out").innerHTML = `
+    <div class="calc-gb">~${gbShown}<span> GB total</span></div>
+    <p class="calc-rec">${msg}</p>
+    <p class="calc-note">A rough guide, not a guarantee — background data adds up fast, so keep app refresh and auto-updates off. For reference, 1&nbsp;GB at sea is roughly 3–4 hours of social scrolling, ~30 minutes of video calls, or 20+ hours of WhatsApp voice calls. If you'll mostly use ship WiFi, buy that by voyage length rather than by the gigabyte.</p>`;
+  $("c-out").hidden = false;
+  $("c-out").scrollIntoView({behavior:"smooth", block:"nearest"});
+});
+
+/* ===== wire comparison-table CTAs to LINKS ===== */
+$("cmp-gigsky").href = LINKS.gigsky;
+$("cmp-redbull").href = LINKS.redbull;
+</script>
+</body>
+</html>
