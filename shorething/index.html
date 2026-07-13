@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Shore Thing · Port guides for your exact sailing · The Cruise Lab</title>
+<meta name="description" content="Shore Thing — build a port-by-port guide for your exact cruise itinerary. Notes, quick facts and tours for every day ashore. Free, from The Cruise Lab.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ocean-deep:#081830;
+  --ocean:#0d2445;
+  --panel:#122c52;
+  --panel-edge:#1d3d6b;
+  --gold:#d9b45c;
+  --gold-bright:#f0d087;
+  --gold-dim:rgba(217,180,92,.35);
+  --foam:#f3efe4;
+  --mist:#8fa2bd;
+  --seaglass:#46c3a8;
+  --seaglass-dim:rgba(70,195,168,.18);
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:'Outfit',sans-serif;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #16335e 0%, transparent 60%),
+    var(--ocean-deep);
+  color:var(--foam);
+  min-height:100vh;
+  padding:0 16px calc(48px + env(safe-area-inset-bottom));
+  line-height:1.5;
+}
+.wrap{max-width:760px;margin:0 auto}
+
+/* ---------- Header ---------- */
+header{text-align:center;padding:48px 8px 8px}
+.eyebrow{
+  font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;
+}
+.eyebrow a{color:inherit;text-decoration:none}
+h1{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:clamp(2.2rem,8.5vw,3.2rem);
+  letter-spacing:.04em;margin:.3rem 0 .5rem;
+  background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:var(--gold);
+}
+.tagline{
+  color:var(--mist);font-weight:300;
+  font-size:clamp(1rem,3.4vw,1.12rem);
+  max-width:520px;margin:0 auto;
+}
+.tagline strong{color:var(--foam);font-weight:500}
+
+/* Guidebook mark */
+.mark{width:64px;height:auto;margin:4px auto 12px;display:block;
+  filter:drop-shadow(0 6px 24px rgba(217,180,92,.18));}
+
+/* ---------- Divider rule ---------- */
+.rule{
+  display:flex;align-items:center;gap:14px;
+  max-width:420px;margin:30px auto 0;
+  color:var(--gold);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600;
+}
+.rule::before,.rule::after{content:"";flex:1;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold-dim));}
+.rule::after{background:linear-gradient(90deg,var(--gold-dim),transparent)}
+
+/* ---------- Panels ---------- */
+.panel{
+  background:linear-gradient(180deg,var(--panel),var(--ocean));
+  border:1px solid var(--panel-edge);
+  border-radius:var(--radius);
+  padding:24px 22px;margin-top:22px;
+}
+label{display:block;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--mist);font-weight:600;margin-bottom:6px}
+input[type=text],input[type=date]{
+  width:100%;padding:11px 13px;border-radius:10px;
+  border:1px solid var(--panel-edge);background:rgba(8,24,48,.6);
+  color:var(--foam);font-family:'Outfit',sans-serif;font-size:1rem;font-weight:400;
+  outline:none;transition:border-color .15s ease;
+}
+input[type=text]:focus,input[type=date]:focus{border-color:var(--gold-dim)}
+input[type=date]{color-scheme:dark}
+.meta-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:520px){.meta-row{grid-template-columns:1fr}}
+.field{margin-bottom:14px}
+
+/* Port search */
+.search-wrap{position:relative}
+.suggest{
+  position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:20;
+  background:var(--ocean);border:1px solid var(--panel-edge);
+  border-radius:10px;max-height:260px;overflow:auto;
+  box-shadow:0 14px 34px rgba(4,10,24,.6);display:none;
+}
+.suggest.open{display:block}
+.suggest button{
+  display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+  width:100%;text-align:left;padding:10px 13px;
+  background:none;border:none;color:var(--foam);
+  font-family:'Outfit',sans-serif;font-size:.95rem;cursor:pointer;
+}
+.suggest button:hover,.suggest button.active{background:var(--panel)}
+.suggest .rg{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mist);flex-shrink:0}
+
+/* Stops list */
+.stops{list-style:none;margin-top:16px}
+.stop{
+  display:grid;grid-template-columns:26px 1fr 150px auto;gap:10px;align-items:center;
+  padding:10px 0;border-bottom:1px solid rgba(29,61,107,.5);
+}
+.stop:last-child{border-bottom:none}
+.stop .n{
+  width:26px;height:26px;border-radius:50%;
+  border:1px solid var(--gold-dim);color:var(--gold);
+  font-size:.75rem;font-weight:600;display:flex;align-items:center;justify-content:center;
+}
+.stop .pname{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.stop input[type=date]{padding:8px 10px;font-size:.9rem}
+.stop .ctl{display:flex;gap:4px}
+.stop .ctl button{
+  width:30px;height:30px;border-radius:8px;border:1px solid var(--panel-edge);
+  background:none;color:var(--mist);cursor:pointer;font-size:.85rem;
+  transition:color .15s ease,border-color .15s ease;
+}
+.stop .ctl button:hover{color:var(--gold);border-color:var(--gold-dim)}
+@media(max-width:560px){
+  .stop{grid-template-columns:26px 1fr auto;grid-template-rows:auto auto}
+  .stop input[type=date]{grid-column:2/3}
+  .stop .ctl{grid-column:3/4;grid-row:1/3;flex-direction:column}
+}
+.empty-note{color:var(--mist);font-weight:300;font-size:.92rem;text-align:center;padding:14px 0 4px}
+
+/* Buttons */
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.btn{
+  font-family:'Outfit',sans-serif;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;
+  border-radius:999px;padding:12px 26px;cursor:pointer;text-decoration:none;display:inline-block;
+  transition:background .18s ease,color .18s ease,border-color .18s ease;
+}
+.btn-gold{background:var(--gold);color:var(--ocean-deep);border:1px solid var(--gold)}
+.btn-gold:hover{background:var(--gold-bright);border-color:var(--gold-bright)}
+.btn-ghost{background:none;color:var(--gold);border:1px solid var(--gold-dim)}
+.btn-ghost:hover{background:var(--gold);color:var(--ocean-deep);border-color:var(--gold)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+
+/* ---------- Guide ---------- */
+#guide{display:none}
+#guide.built{display:block}
+.cover{text-align:center;padding:34px 8px 6px}
+.cover h2{
+  font-family:'Cinzel',serif;font-weight:600;letter-spacing:.05em;
+  font-size:clamp(1.5rem,6vw,2.1rem);color:var(--gold-bright);margin:.35rem 0 .3rem;
+}
+.cover .sub{color:var(--mist);font-weight:300}
+
+/* The route ribbon */
+.ribbon{position:relative;margin-top:26px;padding-left:34px}
+.ribbon::before{
+  content:"";position:absolute;left:12px;top:8px;bottom:8px;width:0;
+  border-left:2px dotted var(--gold-dim);
+}
+.day{position:relative;margin-bottom:20px}
+.day::before{
+  content:"";position:absolute;left:-28px;top:26px;width:12px;height:12px;border-radius:50%;
+  background:var(--gold);box-shadow:0 0 0 4px rgba(217,180,92,.15);
+}
+.daycard{
+  background:linear-gradient(180deg,var(--panel),var(--ocean));
+  border:1px solid var(--panel-edge);border-radius:var(--radius);
+  padding:22px 22px 20px;
+}
+.day .d-eyebrow{font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.day h3{
+  font-family:'Cinzel',serif;font-weight:600;letter-spacing:.03em;
+  font-size:clamp(1.2rem,4.6vw,1.5rem);color:var(--foam);margin:.25rem 0 .6rem;
+}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.chip{
+  font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;
+  color:var(--mist);border:1px solid var(--panel-edge);border-radius:999px;padding:5px 12px;
+}
+.chip.hl{color:var(--seaglass);border-color:transparent;background:var(--seaglass-dim)}
+.day p.blurb{color:var(--foam);font-weight:300;font-size:.95rem;margin-bottom:10px}
+.day p.pending{color:var(--mist);font-weight:300;font-size:.9rem;font-style:italic;margin-bottom:10px}
+.miss{margin:4px 0 12px}
+.miss .miss-label{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:4px}
+.miss ul{list-style:none}
+.miss li{color:var(--foam);font-weight:300;font-size:.93rem;padding-left:16px;position:relative}
+.miss li::before{content:"·";color:var(--gold);position:absolute;left:2px;font-weight:700}
+.labnote{
+  border-left:2px solid var(--gold-dim);padding:2px 0 2px 12px;margin:0 0 14px;
+  color:var(--mist);font-weight:300;font-size:.9rem;
+}
+.labnote strong{color:var(--gold);font-weight:600;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;display:block;margin-bottom:2px}
+.day .actions{display:flex;gap:10px;flex-wrap:wrap}
+.day .actions .btn{padding:10px 20px;font-size:.72rem}
+
+/* Sea day interstitial */
+.sea{position:relative;margin:0 0 20px;padding:6px 0 6px 0}
+.sea::before{
+  content:"";position:absolute;left:-28px;top:50%;margin-top:-5px;width:10px;height:10px;border-radius:50%;
+  background:var(--ocean);border:2px solid var(--mist);
+}
+.sea .sea-line{
+  color:var(--mist);font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;font-weight:600;
+}
+.sea .sea-sub{color:var(--mist);font-weight:300;font-size:.85rem;opacity:.8}
+
+/* Guide footer actions */
+.guide-actions{margin-top:8px}
+
+/* ---------- Footer ---------- */
+footer{text-align:center;color:var(--mist);font-size:.78rem;font-weight:300;padding:44px 12px 0}
+footer .foot-mark{font-family:'Cinzel',serif;letter-spacing:.14em;font-size:.8rem;margin-bottom:6px}
+footer .foot-mark a{color:var(--gold);text-decoration:none}
+footer p+p{margin-top:4px}
+
+/* ---------- Print: paper mode ---------- */
+@media print{
+  body{background:#fff;color:#12253f;padding:0}
+  header .tagline,header .rule,#builder,.guide-actions,footer .no-print,.day .actions{display:none!important}
+  header{padding:10px 0 0}
+  h1{-webkit-text-fill-color:#9a7b32;color:#9a7b32;background:none}
+  .eyebrow{color:#9a7b32}
+  .cover .sub{color:#5c6f8a}
+  .cover h2{color:#12253f}
+  .ribbon::before{border-left-color:#c9b06a}
+  .day::before{background:#b98f2e;box-shadow:none}
+  .sea::before{background:#fff;border-color:#8fa2bd}
+  .daycard{background:#fff;border:1px solid #d8dee8;break-inside:avoid}
+  .day h3{color:#12253f}
+  .day p.blurb,.miss li{color:#26364d}
+  .chip{color:#5c6f8a;border-color:#d8dee8}
+  .chip.hl{color:#1f8a71;background:#e5f4f0}
+  .labnote{border-left-color:#c9b06a;color:#5c6f8a}
+  .miss .miss-label,.day .d-eyebrow{color:#9a7b32}
+  .sea .sea-line,.sea .sea-sub{color:#5c6f8a}
+  footer{color:#5c6f8a}
+  footer .foot-mark a{color:#9a7b32}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow"><a href="https://thecruiselab.com">Part of The Cruise Lab</a></p>
+
+    <!-- Guidebook mark: open guide with route dot -->
+    <svg class="mark" viewBox="0 0 48 48" fill="none" stroke="#d9b45c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M24 12 q-7 -5 -16 -3 v27 q9 -2 16 3 q7 -5 16 -3 V9 q-9 -2 -16 3 z"/>
+      <path d="M24 12 v27"/>
+      <path d="M13 18 q4 -1 7 0 M13 24 q4 -1 7 0 M28 18 q4 -1 7 0"/>
+      <circle cx="31.5" cy="26" r="2.4" fill="#46c3a8" stroke="none"/>
+    </svg>
+
+    <h1>Shore Thing</h1>
+    <p class="tagline">Your days ashore, sorted. Build a port-by-port guide for <strong>your exact sailing</strong> — read it here, print it, or take a copy with you.</p>
+    <p class="rule">Build your sailing</p>
+  </header>
+
+  <!-- ================= Builder ================= -->
+  <section class="panel" id="builder" aria-label="Build your sailing">
+    <div class="meta-row">
+      <div class="field">
+        <label for="shipName">Ship (optional)</label>
+        <input type="text" id="shipName" placeholder="e.g. Sky Princess" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="cruiseName">Cruise (optional)</label>
+        <input type="text" id="cruiseName" placeholder="e.g. Norwegian Fjords, July 2026" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="field search-wrap">
+      <label for="portSearch">Add your ports, in order</label>
+      <input type="text" id="portSearch" placeholder="Start typing a port — e.g. Cozumel, Bergen, Juneau…" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="suggestList">
+      <div class="suggest" id="suggestList" role="listbox"></div>
+    </div>
+
+    <ol class="stops" id="stopsList"></ol>
+    <p class="empty-note" id="emptyNote">No ports yet — search above and add each stop with the date you’ll be there.</p>
+
+    <div class="btn-row">
+      <button class="btn btn-gold" id="buildBtn">Build my guide</button>
+      <button class="btn btn-ghost" id="resetBtn">Start again</button>
+    </div>
+  </section>
+
+  <!-- ================= Guide ================= -->
+  <section id="guide" aria-label="Your port guide">
+    <div class="cover">
+      <p class="eyebrow">Your days ashore</p>
+      <h2 id="coverTitle">My Cruise</h2>
+      <p class="sub" id="coverSub"></p>
+    </div>
+    <div class="ribbon" id="ribbon"></div>
+    <div class="btn-row guide-actions">
+      <button class="btn btn-gold" id="printBtn">Print / save as PDF</button>
+      <button class="btn btn-ghost" id="downloadBtn">Download guide (HTML)</button>
+    </div>
+  </section>
+
+  <footer>
+    <p class="foot-mark"><a href="https://thecruiselab.com">THE CRUISE LAB</a></p>
+    <p class="no-print">Tours &amp; excursions links go to Viator; The Cruise Lab may earn a commission on bookings, at no cost to you.</p>
+    <p>Independent tools made by a cruiser. Not affiliated with or endorsed by any cruise line.</p>
+    <p>&copy; 2026 The Cruise Lab</p>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------------- Data ---------------- */
+let PORTS = [];        // [{id,name,lat,lon,region,gw}]
+let CONTENT = {};      // {id:{dock,walk,cur,lang,blurb,miss[],tip}}
+const byId = {};
+
+Promise.all([
+  fetch("data/ports.json").then(r=>r.json()),
+  fetch("data/guide-content.json").then(r=>r.ok?r.json():{}).catch(()=>({}))
+]).then(([ports,content])=>{
+  PORTS = ports; CONTENT = content;
+  ports.forEach(p=>byId[p.id]=p);
+  restore();
+});
+
+/* ---------------- State ---------------- */
+let stops = [];  // [{id,date}]
+const LS_KEY = "shorething-sailing-v1";
+
+function persist(){
+  try{ localStorage.setItem(LS_KEY, JSON.stringify({
+    ship: shipName.value, cruise: cruiseName.value, stops
+  })); }catch(e){}
+}
+function restore(){
+  try{
+    const s = JSON.parse(localStorage.getItem(LS_KEY)||"null");
+    if(!s) return;
+    shipName.value = s.ship||""; cruiseName.value = s.cruise||"";
+    stops = (s.stops||[]).filter(x=>byId[x.id]);
+    renderStops();
+  }catch(e){}
+}
+
+/* ---------------- Elements ---------------- */
+const $ = id => document.getElementById(id);
+const shipName=$("shipName"), cruiseName=$("cruiseName"),
+      portSearch=$("portSearch"), suggestList=$("suggestList"),
+      stopsList=$("stopsList"), emptyNote=$("emptyNote"),
+      buildBtn=$("buildBtn"), resetBtn=$("resetBtn"),
+      guide=$("guide"), ribbon=$("ribbon"),
+      coverTitle=$("coverTitle"), coverSub=$("coverSub");
+
+shipName.addEventListener("input",persist);
+cruiseName.addEventListener("input",persist);
+
+/* ---------------- Port search ---------------- */
+let activeIdx=-1, matches=[];
+portSearch.addEventListener("input", ()=>{
+  const q = portSearch.value.trim().toLowerCase();
+  activeIdx=-1;
+  if(q.length<2){ closeSuggest(); return; }
+  matches = PORTS.filter(p=>p.name.toLowerCase().includes(q)).slice(0,9);
+  if(!matches.length){ closeSuggest(); return; }
+  suggestList.innerHTML = matches.map((p,i)=>
+    `<button type="button" data-i="${i}" role="option"><span>${esc(p.name)}</span><span class="rg">${esc(p.region)}</span></button>`
+  ).join("");
+  suggestList.classList.add("open");
+  portSearch.setAttribute("aria-expanded","true");
+});
+suggestList.addEventListener("click", e=>{
+  const b = e.target.closest("button"); if(!b) return;
+  addStop(matches[+b.dataset.i].id);
+});
+portSearch.addEventListener("keydown", e=>{
+  if(!suggestList.classList.contains("open")) return;
+  const btns = suggestList.querySelectorAll("button");
+  if(e.key==="ArrowDown"){ e.preventDefault(); activeIdx=Math.min(activeIdx+1,btns.length-1); mark(btns); }
+  else if(e.key==="ArrowUp"){ e.preventDefault(); activeIdx=Math.max(activeIdx-1,0); mark(btns); }
+  else if(e.key==="Enter"){ e.preventDefault(); addStop(matches[Math.max(activeIdx,0)].id); }
+  else if(e.key==="Escape"){ closeSuggest(); }
+});
+function mark(btns){ btns.forEach((b,i)=>b.classList.toggle("active",i===activeIdx)); }
+function closeSuggest(){ suggestList.classList.remove("open"); portSearch.setAttribute("aria-expanded","false"); }
+document.addEventListener("click", e=>{ if(!e.target.closest(".search-wrap")) closeSuggest(); });
+
+function addStop(id){
+  const last = stops[stops.length-1];
+  let date="";
+  if(last && last.date){
+    const d = new Date(last.date+"T12:00:00"); d.setDate(d.getDate()+1);
+    date = d.toISOString().slice(0,10);
+  }
+  stops.push({id,date});
+  portSearch.value=""; closeSuggest(); renderStops(); persist();
+}
+
+/* ---------------- Stops list ---------------- */
+function renderStops(){
+  emptyNote.style.display = stops.length ? "none" : "block";
+  stopsList.innerHTML = stops.map((s,i)=>`
+    <li class="stop">
+      <span class="n">${i+1}</span>
+      <span class="pname">${esc(byId[s.id].name)}</span>
+      <input type="date" value="${s.date}" data-i="${i}" aria-label="Date at ${esc(byId[s.id].name)}">
+      <span class="ctl">
+        <button type="button" data-act="up" data-i="${i}" aria-label="Move up">&#9650;</button>
+        <button type="button" data-act="down" data-i="${i}" aria-label="Move down">&#9660;</button>
+        <button type="button" data-act="del" data-i="${i}" aria-label="Remove">&#10005;</button>
+      </span>
+    </li>`).join("");
+}
+stopsList.addEventListener("change", e=>{
+  if(e.target.matches("input[type=date]")){ stops[+e.target.dataset.i].date = e.target.value; persist(); }
+});
+stopsList.addEventListener("click", e=>{
+  const b = e.target.closest("button"); if(!b) return;
+  const i = +b.dataset.i, act = b.dataset.act;
+  if(act==="del") stops.splice(i,1);
+  if(act==="up" && i>0) [stops[i-1],stops[i]]=[stops[i],stops[i-1]];
+  if(act==="down" && i<stops.length-1) [stops[i+1],stops[i]]=[stops[i],stops[i+1]];
+  renderStops(); persist();
+});
+
+resetBtn.addEventListener("click", ()=>{
+  stops=[]; shipName.value=""; cruiseName.value="";
+  renderStops(); persist();
+  guide.classList.remove("built");
+});
+
+/* ---------------- Guide build ---------------- */
+buildBtn.addEventListener("click", ()=>{
+  const dated = stops.filter(s=>s.date);
+  if(!dated.length){ portSearch.focus(); portSearch.placeholder="Add at least one port with a date first…"; return; }
+  buildGuide(dated.slice().sort((a,b)=>a.date<b.date?-1:1));
+  guide.classList.add("built");
+  guide.scrollIntoView({behavior:"smooth"});
+});
+
+const DFMT = new Intl.DateTimeFormat("en-GB",{weekday:"short",day:"numeric",month:"short"});
+function fdate(iso){ return DFMT.format(new Date(iso+"T12:00:00")); }
+function dayNum(iso, first){ return Math.round((new Date(iso)-new Date(first))/864e5)+1; }
+
+function viatorUrl(name, iso){
+  const qs = new URLSearchParams();
+  qs.set("text", name.split("(")[0].split(",")[0].trim());
+  qs.set("pid","P00290711"); qs.set("mcid","42383"); qs.set("medium","link");
+  if(iso){ qs.set("startDate", iso); qs.set("endDate", iso); }
+  return "https://www.viator.com/searchResults/all?"+qs.toString();
+}
+function weatherUrl(id, iso){
+  return "https://getmycruiseweather.com/results.html?port="+encodeURIComponent(id)+"&date="+encodeURIComponent(iso);
+}
+
+function buildGuide(sorted){
+  const first = sorted[0].date, lastD = sorted[sorted.length-1].date;
+  const title = shipName.value.trim() ? "Aboard "+shipName.value.trim()
+              : (cruiseName.value.trim() || "My Cruise");
+  coverTitle.textContent = title;
+  const range = fdate(first) + (lastD!==first ? " – "+fdate(lastD) : "");
+  const sub = [range, sorted.length+" port day"+(sorted.length>1?"s":"")];
+  if(cruiseName.value.trim() && shipName.value.trim()) sub.unshift(cruiseName.value.trim());
+  coverSub.textContent = sub.join(" · ");
+
+  let html = "";
+  sorted.forEach((s,idx)=>{
+    if(idx>0){
+      const gap = Math.round((new Date(s.date)-new Date(sorted[idx-1].date))/864e5)-1;
+      if(gap>0){
+        html += `<div class="sea">
+          <p class="sea-line">${gap>1 ? gap+" days at sea" : "At sea"}</p>
+          <p class="sea-sub">Enjoy the ship.</p>
+        </div>`;
+      }
+    }
+    html += dayCard(s, first);
+  });
+  ribbon.innerHTML = html;
+}
+
+function dayCard(s, first){
+  const p = byId[s.id], c = CONTENT[s.id];
+  let chips="", body="";
+  if(c){
+    chips = `<div class="chips">`+
+      (c.dock?`<span class="chip hl">${esc(c.dock)}</span>`:``)+
+      (c.walk?`<span class="chip">${esc(c.walk)}</span>`:``)+
+      (c.cur?`<span class="chip">${esc(c.cur)}</span>`:``)+
+      (c.lang?`<span class="chip">${esc(c.lang)}</span>`:``)+
+    `</div>`;
+    body = `<p class="blurb">${esc(c.blurb)}</p>`+
+      (c.miss&&c.miss.length?`<div class="miss"><p class="miss-label">Don’t miss</p><ul>${c.miss.map(m=>`<li>${esc(m)}</li>`).join("")}</ul></div>`:``)+
+      (c.tip?`<div class="labnote"><strong>Lab note</strong>${esc(c.tip)}</div>`:``);
+  }else{
+    body = `<p class="pending">Port notes for ${esc(p.name)} are coming to the Lab — your tours and weather links below work today.</p>`;
+  }
+  const noviator = c && c.noviator;
+  const actions = `<div class="actions">`+
+      (noviator?``:`<a class="btn btn-gold" href="${viatorUrl(p.name, s.date)}" target="_blank" rel="noopener sponsored">Tours &amp; excursions</a>`)+
+      (p.gw?`<a class="btn btn-ghost" href="${weatherUrl(s.id, s.date)}" target="_blank" rel="noopener">Weather that day</a>`:``)+
+    `</div>`;
+  return `<div class="day">
+    <div class="daycard">
+      <p class="d-eyebrow">Day ${dayNum(s.date, first)} · ${fdate(s.date)}</p>
+      <h3>${esc(p.name)}</h3>
+      ${chips}${body}${actions}
+    </div>
+  </div>`;
+}
+
+/* ---------------- Print & download ---------------- */
+$("printBtn").addEventListener("click", ()=>window.print());
+
+$("downloadBtn").addEventListener("click", ()=>{
+  const doc = standaloneHtml();
+  const blob = new Blob([doc],{type:"text/html"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  const stamp = new Date().toISOString().slice(0,10).replace(/-/g,"");
+  a.download = "shore-thing-guide-"+stamp+".html";
+  document.body.appendChild(a); a.click();
+  setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },0);
+});
+
+function standaloneHtml(){
+  // Paper-mode standalone document: cover + ribbon markup, self-contained CSS.
+  return `<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${esc(coverTitle.textContent)} · Shore Thing guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Outfit',Georgia,sans-serif;background:#f7f4ec;color:#12253f;line-height:1.5;padding:32px 16px;margin:0}
+.wrap{max-width:720px;margin:0 auto}
+.eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:#9a7b32;font-weight:600;text-align:center}
+h1{font-family:'Cinzel',Georgia,serif;font-weight:600;text-align:center;color:#12253f;letter-spacing:.05em;font-size:2rem;margin:.3rem 0}
+.sub{text-align:center;color:#5c6f8a;font-weight:300;margin-bottom:28px}
+.ribbon{position:relative;padding-left:34px}
+.ribbon::before{content:"";position:absolute;left:12px;top:8px;bottom:8px;border-left:2px dotted #c9b06a}
+.day{position:relative;margin-bottom:18px}
+.day::before{content:"";position:absolute;left:-28px;top:24px;width:11px;height:11px;border-radius:50%;background:#b98f2e}
+.daycard{background:#fff;border:1px solid #ddd6c4;border-radius:12px;padding:20px 20px 16px;break-inside:avoid}
+.d-eyebrow{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:#9a7b32;font-weight:600;margin:0}
+h3{font-family:'Cinzel',Georgia,serif;font-weight:600;color:#12253f;font-size:1.3rem;margin:.25rem 0 .55rem}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:11px}
+.chip{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#5c6f8a;border:1px solid #ddd6c4;border-radius:999px;padding:4px 11px}
+.chip.hl{color:#1f8a71;background:#e5f4f0;border-color:transparent}
+p.blurb{color:#26364d;font-weight:300;font-size:.95rem;margin:0 0 10px}
+p.pending{color:#5c6f8a;font-style:italic;font-weight:300;font-size:.9rem;margin:0 0 10px}
+.miss{margin:2px 0 11px}
+.miss-label{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:#9a7b32;font-weight:600;margin:0 0 3px}
+.miss ul{list-style:none;margin:0;padding:0}
+.miss li{color:#26364d;font-weight:300;font-size:.92rem;padding-left:14px;position:relative}
+.miss li::before{content:"·";color:#9a7b32;position:absolute;left:1px;font-weight:700}
+.labnote{border-left:2px solid #c9b06a;padding:2px 0 2px 11px;margin:0 0 12px;color:#5c6f8a;font-weight:300;font-size:.9rem}
+.labnote strong{color:#9a7b32;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;display:block;margin-bottom:2px}
+.actions{display:flex;gap:9px;flex-wrap:wrap}
+.actions a{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;text-decoration:none;border-radius:999px;padding:9px 18px}
+.actions a.gold{background:#b98f2e;color:#fff}
+.actions a.ghost{color:#9a7b32;border:1px solid #c9b06a}
+.sea{position:relative;margin:0 0 18px;padding:4px 0}
+.sea::before{content:"";position:absolute;left:-28px;top:50%;margin-top:-5px;width:9px;height:9px;border-radius:50%;background:#f7f4ec;border:2px solid #8fa2bd}
+.sea-line{color:#5c6f8a;font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;font-weight:600;margin:0}
+.sea-sub{color:#8fa2bd;font-weight:300;font-size:.84rem;margin:0}
+footer{text-align:center;color:#5c6f8a;font-size:.76rem;font-weight:300;margin-top:36px}
+footer .fm{font-family:'Cinzel',Georgia,serif;color:#9a7b32;letter-spacing:.14em;font-size:.8rem;margin-bottom:4px}
+@media print{body{background:#fff;padding:0}}
+</style></head><body><div class="wrap">
+<p class="eyebrow">Shore Thing · A Cruise Lab guide</p>
+<h1>${esc(coverTitle.textContent)}</h1>
+<p class="sub">${esc(coverSub.textContent)}</p>
+<div class="ribbon">${ribbon.innerHTML
+    .replace(/class="btn btn-gold"/g,'class="gold"')
+    .replace(/class="btn btn-ghost"/g,'class="ghost"')}</div>
+<footer>
+<p class="fm">THE CRUISE LAB</p>
+<p>Built with Shore Thing · thecruiselab.com</p>
+<p>Independent, made by a cruiser. Not affiliated with or endorsed by any cruise line.</p>
+</footer>
+</div></body></html>`;
+}
+
+/* ---------------- Utils ---------------- */
+function esc(s){ return String(s).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+
+})();
+</script>
+</body>
+</html>

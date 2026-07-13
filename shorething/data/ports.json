@@ -1,0 +1,2082 @@
+[
+ {
+  "id": "abu-dhabi",
+  "name": "Abu Dhabi",
+  "lat": 24.4539,
+  "lon": 54.3773,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "agadir_morocco",
+  "name": "Agadir, Morocco",
+  "lat": 30.4278,
+  "lon": -9.5981,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "ajaccio_corsica",
+  "name": "Ajaccio, Corsica",
+  "lat": 41.9192,
+  "lon": 8.7386,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "akureyri_iceland",
+  "name": "Akureyri, Iceland",
+  "lat": 65.6885,
+  "lon": -18.1262,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "alesund_norway",
+  "name": "Alesund, Norway",
+  "lat": 62.4722,
+  "lon": 6.1495,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "alicante_spain",
+  "name": "Alicante, Spain",
+  "lat": 38.3452,
+  "lon": -0.481,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "amber_cove",
+  "name": "Amber Cove, Dominican Republic",
+  "lat": 19.833,
+  "lon": -70.719,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "amsterdam_netherlands",
+  "name": "Amsterdam, Netherlands",
+  "lat": 52.3676,
+  "lon": 4.9041,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "antwerp",
+  "name": "Antwerp",
+  "lat": 51.2194,
+  "lon": 4.4025,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "aqaba",
+  "name": "Aqaba",
+  "lat": 29.532,
+  "lon": 35.0063,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "ashdod",
+  "name": "Ashdod",
+  "lat": 31.8014,
+  "lon": 34.6435,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "athens_piraeus_greece",
+  "name": "Athens (Piraeus), Greece",
+  "lat": 37.9429,
+  "lon": 23.6465,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "auckland",
+  "name": "Auckland",
+  "lat": -36.8485,
+  "lon": 174.7633,
+  "region": "Oceania",
+  "gw": true
+ },
+ {
+  "id": "bali-benoa",
+  "name": "Bali (Benoa)",
+  "lat": -8.741,
+  "lon": 115.2167,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "baltimore",
+  "name": "Baltimore",
+  "lat": 39.2904,
+  "lon": -76.6122,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "bangkok-laem-chabang",
+  "name": "Bangkok (Laem Chabang)",
+  "lat": 13.0847,
+  "lon": 100.8839,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "barcelona_spain",
+  "name": "Barcelona, Spain",
+  "lat": 41.3851,
+  "lon": 2.1734,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "bari",
+  "name": "Bari",
+  "lat": 41.1171,
+  "lon": 16.8719,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "st_kitts",
+  "name": "Basseterre, St Kitts",
+  "lat": 17.295,
+  "lon": -62.724,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "beijing-tianjin",
+  "name": "Beijing (Tianjin)",
+  "lat": 39.004,
+  "lon": 117.713,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "belfast_northern_ireland",
+  "name": "Belfast, Northern Ireland",
+  "lat": 54.5973,
+  "lon": -5.9301,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "belize_city_belize",
+  "name": "Belize City, Belize",
+  "lat": 17.5046,
+  "lon": -88.1962,
+  "region": "Caribbean",
+  "gw": true
+ },
+ {
+  "id": "bergen_norway",
+  "name": "Bergen, Norway",
+  "lat": 60.3913,
+  "lon": 5.3221,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "berlin_warnemunde_germany",
+  "name": "Berlin (Warnemunde), Germany",
+  "lat": 54.1767,
+  "lon": 12.1004,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "bilbao_spain",
+  "name": "Bilbao, Spain",
+  "lat": 43.263,
+  "lon": -2.935,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "bimini_bahamas",
+  "name": "Bimini, Bahamas",
+  "lat": 25.727,
+  "lon": -79.297,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "bodrum_turkey",
+  "name": "Bodrum, Turkey",
+  "lat": 37.0344,
+  "lon": 27.4305,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "boracay-caticlan",
+  "name": "Boracay (Caticlan)",
+  "lat": 11.9245,
+  "lon": 121.953,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "bordeaux",
+  "name": "Bordeaux",
+  "lat": 44.8378,
+  "lon": -0.5792,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "boston_massachusetts_usa",
+  "name": "Boston, Massachusetts, USA",
+  "lat": 42.3601,
+  "lon": -71.0589,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "barbados",
+  "name": "Bridgetown, Barbados",
+  "lat": 13.098,
+  "lon": -59.616,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "brisbane",
+  "name": "Brisbane",
+  "lat": -27.4698,
+  "lon": 153.0251,
+  "region": "Oceania",
+  "gw": true
+ },
+ {
+  "id": "bruges_zeebrugge_belgium",
+  "name": "Bruges (Zeebrugge), Belgium",
+  "lat": 51.329,
+  "lon": 3.2047,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "brunei-muara",
+  "name": "Brunei (Muara)",
+  "lat": 5.017,
+  "lon": 115.0733,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "busan",
+  "name": "Busan",
+  "lat": 35.095,
+  "lon": 129.0403,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "cabo_san_lucas_mexico",
+  "name": "Cabo San Lucas, Mexico",
+  "lat": 22.89,
+  "lon": -109.912,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "cadiz_spain",
+  "name": "Cadiz, Spain",
+  "lat": 36.5271,
+  "lon": -6.2886,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "cagliari_sardinia",
+  "name": "Cagliari, Sardinia",
+  "lat": 39.2238,
+  "lon": 9.1217,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "cairns",
+  "name": "Cairns",
+  "lat": -16.9186,
+  "lon": 145.7781,
+  "region": "Oceania",
+  "gw": true
+ },
+ {
+  "id": "cam-ranh",
+  "name": "Cam Ranh",
+  "lat": 11.91,
+  "lon": 109.217,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "cannes_france",
+  "name": "Cannes, France",
+  "lat": 43.5528,
+  "lon": 7.0174,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "cartagena-spain",
+  "name": "Cartagena (Spain)",
+  "lat": 37.6257,
+  "lon": -0.9966,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "cartagena_colombia",
+  "name": "Cartagena, Colombia",
+  "lat": 10.397,
+  "lon": -75.529,
+  "region": "South America",
+  "gw": false
+ },
+ {
+  "id": "casablanca_morocco",
+  "name": "Casablanca, Morocco",
+  "lat": 33.5731,
+  "lon": -7.5898,
+  "region": "Africa",
+  "gw": true
+ },
+ {
+  "id": "castaway_cay",
+  "name": "Castaway Cay, Bahamas",
+  "lat": 26.087,
+  "lon": -77.541,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "st_lucia",
+  "name": "Castries, St Lucia",
+  "lat": 14.01,
+  "lon": -60.99,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "celebration_key",
+  "name": "Celebration Key, Grand Bahama",
+  "lat": 26.533,
+  "lon": -78.4,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "charleston_south_carolina_usa",
+  "name": "Charleston, South Carolina, USA",
+  "lat": 32.7765,
+  "lon": -79.9311,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "st_thomas_usvi",
+  "name": "Charlotte Amalie, St Thomas",
+  "lat": 18.342,
+  "lon": -64.93,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "chennai",
+  "name": "Chennai",
+  "lat": 13.0827,
+  "lon": 80.2707,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "cherbourg_france",
+  "name": "Cherbourg, France",
+  "lat": 49.6337,
+  "lon": -1.6221,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "chiang-mai",
+  "name": "Chiang Mai",
+  "lat": 18.7883,
+  "lon": 98.9853,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "cobh_cork_ireland",
+  "name": "Cobh (Cork), Ireland",
+  "lat": 51.8519,
+  "lon": -8.2941,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "cochin-kochi",
+  "name": "Cochin (Kochi)",
+  "lat": 9.9312,
+  "lon": 76.2673,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "colombo",
+  "name": "Colombo",
+  "lat": 6.9271,
+  "lon": 79.8612,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "colon_panama",
+  "name": "Colon, Panama",
+  "lat": 9.359,
+  "lon": -79.9,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "copenhagen_denmark",
+  "name": "Copenhagen, Denmark",
+  "lat": 55.6761,
+  "lon": 12.5683,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "corfu_greece",
+  "name": "Corfu, Greece",
+  "lat": 39.6243,
+  "lon": 19.9217,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "costa_maya_mahahual_mexico",
+  "name": "Costa Maya (Mahahual), Mexico",
+  "lat": 18.715,
+  "lon": -87.708,
+  "region": "Caribbean",
+  "gw": true
+ },
+ {
+  "id": "cozumel_mexico",
+  "name": "Cozumel, Mexico",
+  "lat": 20.423,
+  "lon": -86.9223,
+  "region": "Caribbean",
+  "gw": true
+ },
+ {
+  "id": "da-nang",
+  "name": "Da Nang",
+  "lat": 16.0544,
+  "lon": 108.2022,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "dakar",
+  "name": "Dakar",
+  "lat": 14.7167,
+  "lon": -17.4677,
+  "region": "Africa",
+  "gw": true
+ },
+ {
+  "id": "dalat-nha-trang",
+  "name": "Dalat (Nha Trang)",
+  "lat": 12.2388,
+  "lon": 109.1967,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "dalian",
+  "name": "Dalian",
+  "lat": 38.914,
+  "lon": 121.6147,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "doha",
+  "name": "Doha",
+  "lat": 25.2854,
+  "lon": 51.531,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "dover_uk",
+  "name": "Dover, UK",
+  "lat": 51.129,
+  "lon": 1.308,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "dubai",
+  "name": "Dubai",
+  "lat": 25.2048,
+  "lon": 55.2708,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "dublin_ireland",
+  "name": "Dublin, Ireland",
+  "lat": 53.3498,
+  "lon": -6.2603,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "dubrovnik_croatia",
+  "name": "Dubrovnik, Croatia",
+  "lat": 42.6507,
+  "lon": 18.0944,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "edinburgh-leith",
+  "name": "Edinburgh (Leith)",
+  "lat": 55.973,
+  "lon": -3.175,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "edinburgh_south_queensferry_scotland",
+  "name": "Edinburgh (South Queensferry), Scotland",
+  "lat": 55.9869,
+  "lon": -3.3986,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "ensenada_mexico",
+  "name": "Ensenada, Mexico",
+  "lat": 31.858,
+  "lon": -116.622,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "falmouth",
+  "name": "Falmouth",
+  "lat": 50.1544,
+  "lon": -5.0711,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "falmouth_jamaica",
+  "name": "Falmouth, Jamaica",
+  "lat": 18.493,
+  "lon": -77.656,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "flam_norway",
+  "name": "Flam, Norway",
+  "lat": 60.8626,
+  "lon": 7.1143,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "florence_livorno_italy",
+  "name": "Florence (Livorno), Italy",
+  "lat": 43.551,
+  "lon": 10.305,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "freeport_bahamas",
+  "name": "Freeport, Bahamas",
+  "lat": 26.5333,
+  "lon": -78.7,
+  "region": "Caribbean",
+  "gw": true
+ },
+ {
+  "id": "fukuoka",
+  "name": "Fukuoka",
+  "lat": 33.5904,
+  "lon": 130.4017,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "funchal_madeira_portugal",
+  "name": "Funchal (Madeira), Portugal",
+  "lat": 32.6669,
+  "lon": -16.9241,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "galveston_texas_usa",
+  "name": "Galveston, Texas, USA",
+  "lat": 29.301,
+  "lon": -94.797,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "gdansk_gdynia_poland",
+  "name": "Gdansk (Gdynia), Poland",
+  "lat": 54.5189,
+  "lon": 18.5305,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "geiranger_norway",
+  "name": "Geiranger, Norway",
+  "lat": 62.1015,
+  "lon": 7.2053,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "genoa_italy",
+  "name": "Genoa, Italy",
+  "lat": 44.4056,
+  "lon": 8.9463,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "grand_cayman",
+  "name": "George Town, Grand Cayman",
+  "lat": 19.286,
+  "lon": -81.367,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "gibraltar",
+  "name": "Gibraltar",
+  "lat": 36.1408,
+  "lon": -5.3536,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "glasgow-greenock",
+  "name": "Glasgow (Greenock)",
+  "lat": 55.9487,
+  "lon": -4.7619,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "goa",
+  "name": "Goa",
+  "lat": 15.4909,
+  "lon": 73.8278,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "gothenburg",
+  "name": "Gothenburg",
+  "lat": 57.7089,
+  "lon": 11.9746,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "grand_turk",
+  "name": "Grand Turk, Turks & Caicos",
+  "lat": 21.467,
+  "lon": -71.136,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "great_stirrup_cay",
+  "name": "Great Stirrup Cay, Bahamas",
+  "lat": 25.827,
+  "lon": -77.902,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "hai-phong",
+  "name": "Hai Phong",
+  "lat": 20.8449,
+  "lon": 106.6881,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "haifa",
+  "name": "Haifa",
+  "lat": 32.794,
+  "lon": 34.9896,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "half_moon_cay",
+  "name": "Half Moon Cay, Bahamas",
+  "lat": 24.573,
+  "lon": -75.951,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "halifax_nova_scotia_canada",
+  "name": "Halifax, Nova Scotia, Canada",
+  "lat": 44.6488,
+  "lon": -63.5752,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "halong-bay",
+  "name": "Halong Bay",
+  "lat": 20.9101,
+  "lon": 107.1839,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "hamburg",
+  "name": "Hamburg",
+  "lat": 53.5511,
+  "lon": 9.9937,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "hanoi-halong-bay",
+  "name": "Hanoi (Halong Bay)",
+  "lat": 20.951,
+  "lon": 107.08,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "helsinki_finland",
+  "name": "Helsinki, Finland",
+  "lat": 60.1699,
+  "lon": 24.9384,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "heraklion_crete_greece",
+  "name": "Heraklion (Crete), Greece",
+  "lat": 35.3387,
+  "lon": 25.1442,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "ho-chi-minh-city",
+  "name": "Ho Chi Minh City",
+  "lat": 10.8231,
+  "lon": 106.6297,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "hobart",
+  "name": "Hobart",
+  "lat": -42.8821,
+  "lon": 147.3272,
+  "region": "Oceania",
+  "gw": true
+ },
+ {
+  "id": "hong-kong",
+  "name": "Hong Kong",
+  "lat": 22.3193,
+  "lon": 114.1694,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "honolulu",
+  "name": "Honolulu",
+  "lat": 21.3069,
+  "lon": -157.8583,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "hua-hin",
+  "name": "Hua Hin",
+  "lat": 12.5707,
+  "lon": 99.9576,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "hue-chan-may",
+  "name": "Hue (Chan May)",
+  "lat": 16.453,
+  "lon": 107.58,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "icy_strait_point_alaska",
+  "name": "Icy Strait Point, Alaska",
+  "lat": 58.113,
+  "lon": -135.446,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "incheon-seoul",
+  "name": "Incheon (Seoul)",
+  "lat": 37.4519,
+  "lon": 126.6167,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "invergordon_scotland",
+  "name": "Invergordon, Scotland",
+  "lat": 57.6894,
+  "lon": -4.1687,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "isafjordur_iceland",
+  "name": "Isafjordur, Iceland",
+  "lat": 66.0749,
+  "lon": -23.135,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "istanbul_turkey",
+  "name": "Istanbul, Turkey",
+  "lat": 41.0082,
+  "lon": 28.9784,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "izmir",
+  "name": "Izmir",
+  "lat": 38.4237,
+  "lon": 27.1428,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "jakarta",
+  "name": "Jakarta",
+  "lat": -6.2088,
+  "lon": 106.8456,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "jeju",
+  "name": "Jeju",
+  "lat": 33.4996,
+  "lon": 126.5312,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "juneau_alaska",
+  "name": "Juneau, Alaska",
+  "lat": 58.301,
+  "lon": -134.42,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "kaohsiung",
+  "name": "Kaohsiung",
+  "lat": 22.6163,
+  "lon": 120.3,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "keelung-taipei",
+  "name": "Keelung (Taipei)",
+  "lat": 25.1276,
+  "lon": 121.7392,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "ketchikan_alaska",
+  "name": "Ketchikan, Alaska",
+  "lat": 55.342,
+  "lon": -131.646,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "key_west_florida_usa",
+  "name": "Key West, Florida, USA",
+  "lat": 24.5551,
+  "lon": -81.78,
+  "region": "Caribbean",
+  "gw": true
+ },
+ {
+  "id": "khao-lak",
+  "name": "Khao Lak",
+  "lat": 8.62,
+  "lon": 98.24,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "kiel",
+  "name": "Kiel",
+  "lat": 54.3233,
+  "lon": 10.1228,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "kings_wharf_bermuda",
+  "name": "King\u2019s Wharf, Bermuda",
+  "lat": 32.324,
+  "lon": -64.836,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "kirkwall_orkney_scotland",
+  "name": "Kirkwall (Orkney), Scotland",
+  "lat": 58.9847,
+  "lon": -2.9587,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "klaipeda_lithuania",
+  "name": "Klaipeda, Lithuania",
+  "lat": 55.7033,
+  "lon": 21.1443,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "kobe",
+  "name": "Kobe",
+  "lat": 34.6901,
+  "lon": 135.1955,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "koh-lanta",
+  "name": "Koh Lanta",
+  "lat": 7.624,
+  "lon": 99.079,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "koh-phi-phi",
+  "name": "Koh Phi Phi",
+  "lat": 7.7407,
+  "lon": 98.7784,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "koh-samui",
+  "name": "Koh Samui",
+  "lat": 9.512,
+  "lon": 100.013,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "koh-tao",
+  "name": "Koh Tao",
+  "lat": 10.099,
+  "lon": 99.838,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "kotor_montenegro",
+  "name": "Kotor, Montenegro",
+  "lat": 42.4247,
+  "lon": 18.7712,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "krabi",
+  "name": "Krabi",
+  "lat": 8.0863,
+  "lon": 98.9063,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "bonaire",
+  "name": "Kralendijk, Bonaire",
+  "lat": 12.15,
+  "lon": -68.276,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "kuala-terengganu",
+  "name": "Kuala Terengganu",
+  "lat": 5.3302,
+  "lon": 103.1408,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "kusadasi_ephesus_turkey",
+  "name": "Kusadasi (Ephesus), Turkey",
+  "lat": 37.8601,
+  "lon": 27.257,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "la_coruna_spain",
+  "name": "La Coruna, Spain",
+  "lat": 43.3623,
+  "lon": -8.4115,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "la-rochelle",
+  "name": "La Rochelle",
+  "lat": 46.1603,
+  "lon": -1.1511,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "la_spezia_italy",
+  "name": "La Spezia, Italy",
+  "lat": 44.1025,
+  "lon": 9.8241,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "labadee_haiti",
+  "name": "Labadee, Haiti",
+  "lat": 19.789,
+  "lon": -72.418,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "langkawi",
+  "name": "Langkawi",
+  "lat": 6.35,
+  "lon": 99.8,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "lanzarote_arrecife_spain",
+  "name": "Lanzarote (Arrecife), Spain",
+  "lat": 28.963,
+  "lon": -13.5477,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "las_palmas_gran_canaria",
+  "name": "Las Palmas, Gran Canaria",
+  "lat": 28.1235,
+  "lon": -15.4363,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "le_havre_paris_france",
+  "name": "Le Havre (Paris), France",
+  "lat": 49.4944,
+  "lon": 0.1079,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "limassol",
+  "name": "Limassol",
+  "lat": 34.7071,
+  "lon": 33.0226,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "lisbon_portugal",
+  "name": "Lisbon, Portugal",
+  "lat": 38.7223,
+  "lon": -9.1393,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "liverpool_uk",
+  "name": "Liverpool, UK",
+  "lat": 53.4084,
+  "lon": -2.9916,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "livorno-florence-pisa",
+  "name": "Livorno (Florence/Pisa)",
+  "lat": 43.5485,
+  "lon": 10.3106,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "ljubljana-koper",
+  "name": "Ljubljana (Koper)",
+  "lat": 45.5481,
+  "lon": 13.7302,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "los-angeles",
+  "name": "Los Angeles",
+  "lat": 34.0522,
+  "lon": -118.2437,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "lyon",
+  "name": "Lyon",
+  "lat": 45.764,
+  "lon": 4.8357,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "malaga_spain",
+  "name": "Malaga, Spain",
+  "lat": 36.7213,
+  "lon": -4.4214,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "male",
+  "name": "Male",
+  "lat": 4.1755,
+  "lon": 73.5093,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "manila",
+  "name": "Manila",
+  "lat": 14.5995,
+  "lon": 120.9842,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "marseille_france",
+  "name": "Marseille, France",
+  "lat": 43.2965,
+  "lon": 5.3698,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "mazatlan_mexico",
+  "name": "Mazatlan, Mexico",
+  "lat": 23.249,
+  "lon": -106.411,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "melbourne",
+  "name": "Melbourne",
+  "lat": -37.8136,
+  "lon": 144.9631,
+  "region": "Oceania",
+  "gw": true
+ },
+ {
+  "id": "messina_sicily",
+  "name": "Messina, Sicily",
+  "lat": 38.1938,
+  "lon": 15.554,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "miami_florida_usa",
+  "name": "Miami, Florida, USA",
+  "lat": 25.7617,
+  "lon": -80.1918,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "monaco_monte_carlo_monaco",
+  "name": "Monaco (Monte Carlo), Monaco",
+  "lat": 43.7384,
+  "lon": 7.4246,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "montego_bay_jamaica",
+  "name": "Montego Bay, Jamaica",
+  "lat": 18.476,
+  "lon": -77.892,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "montreal_canada",
+  "name": "Montreal, Canada",
+  "lat": 45.5019,
+  "lon": -73.5674,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "mumbai",
+  "name": "Mumbai",
+  "lat": 18.9388,
+  "lon": 72.8354,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "muscat",
+  "name": "Muscat",
+  "lat": 23.588,
+  "lon": 58.3829,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "mykonos_greece",
+  "name": "Mykonos, Greece",
+  "lat": 37.4467,
+  "lon": 25.3289,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "nagasaki",
+  "name": "Nagasaki",
+  "lat": 32.7448,
+  "lon": 129.8737,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "naples_italy",
+  "name": "Naples, Italy",
+  "lat": 40.8518,
+  "lon": 14.2681,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "nassau_bahamas",
+  "name": "Nassau, Bahamas",
+  "lat": 25.0479,
+  "lon": -77.3554,
+  "region": "Caribbean",
+  "gw": true
+ },
+ {
+  "id": "new-orleans",
+  "name": "New Orleans",
+  "lat": 29.9511,
+  "lon": -90.0715,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "new_york_new_york_usa",
+  "name": "New York, New York, USA",
+  "lat": 40.7128,
+  "lon": -74.006,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "nice_villefranche_france",
+  "name": "Nice (Villefranche), France",
+  "lat": 43.7034,
+  "lon": 7.265,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "nuuk_greenland",
+  "name": "Nuuk, Greenland",
+  "lat": 64.1814,
+  "lon": -51.6941,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "ocean_cay_msc",
+  "name": "Ocean Cay MSC Marine Reserve, Bahamas",
+  "lat": 25.417,
+  "lon": -79.217,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "ocho_rios_jamaica",
+  "name": "Ocho Rios, Jamaica",
+  "lat": 18.407,
+  "lon": -77.103,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "olbia_sardinia",
+  "name": "Olbia, Sardinia",
+  "lat": 40.9236,
+  "lon": 9.4964,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "olden_norway",
+  "name": "Olden, Norway",
+  "lat": 61.836,
+  "lon": 6.807,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "aruba",
+  "name": "Oranjestad, Aruba",
+  "lat": 12.519,
+  "lon": -70.037,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "oslo_norway",
+  "name": "Oslo, Norway",
+  "lat": 59.9139,
+  "lon": 10.7522,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "palermo_sicily",
+  "name": "Palermo, Sicily",
+  "lat": 38.1157,
+  "lon": 13.3615,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "palma_de_mallorca_spain",
+  "name": "Palma de Mallorca, Spain",
+  "lat": 39.5696,
+  "lon": 2.6502,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "panama-city",
+  "name": "Panama City",
+  "lat": 8.9824,
+  "lon": -79.5199,
+  "region": "South America",
+  "gw": true
+ },
+ {
+  "id": "penang",
+  "name": "Penang",
+  "lat": 5.4164,
+  "lon": 100.3327,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "coco_cay",
+  "name": "Perfect Day at CocoCay, Bahamas",
+  "lat": 25.817,
+  "lon": -77.94,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "perth-fremantle",
+  "name": "Perth (Fremantle)",
+  "lat": -32.0569,
+  "lon": 115.7439,
+  "region": "Oceania",
+  "gw": true
+ },
+ {
+  "id": "philadelphia",
+  "name": "Philadelphia",
+  "lat": 39.9526,
+  "lon": -75.1652,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "st_maarten",
+  "name": "Philipsburg, St Maarten",
+  "lat": 18.026,
+  "lon": -63.045,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "phnom-penh",
+  "name": "Phnom Penh",
+  "lat": 11.5564,
+  "lon": 104.9282,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "phu-quoc",
+  "name": "Phu Quoc",
+  "lat": 10.229,
+  "lon": 103.956,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "phuket",
+  "name": "Phuket",
+  "lat": 7.8804,
+  "lon": 98.3923,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "port_canaveral_florida_usa",
+  "name": "Port Canaveral, Florida, USA",
+  "lat": 28.408,
+  "lon": -80.626,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "port_everglades_fort_lauderdale_florida_usa",
+  "name": "Port Everglades (Fort Lauderdale), Florida, USA",
+  "lat": 26.091,
+  "lon": -80.112,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "port-klang-kuala-lumpur",
+  "name": "Port Klang (Kuala Lumpur)",
+  "lat": 3.003,
+  "lon": 101.39,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "portland-maine",
+  "name": "Portland (Maine)",
+  "lat": 43.6591,
+  "lon": -70.2568,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "porto",
+  "name": "Porto",
+  "lat": 41.1579,
+  "lon": -8.6291,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "porto_leixoes_portugal",
+  "name": "Porto (Leixoes), Portugal",
+  "lat": 41.183,
+  "lon": -8.701,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "portsmouth",
+  "name": "Portsmouth",
+  "lat": 50.8198,
+  "lon": -1.088,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "princess_cays",
+  "name": "Princess Cays, Bahamas",
+  "lat": 24.598,
+  "lon": -76.146,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "puerto_vallarta_mexico",
+  "name": "Puerto Vallarta, Mexico",
+  "lat": 20.653,
+  "lon": -105.225,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "puntarenas_costa_rica",
+  "name": "Puntarenas, Costa Rica",
+  "lat": 9.976,
+  "lon": -84.838,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "quebec_city_canada",
+  "name": "Quebec City, Canada",
+  "lat": 46.8139,
+  "lon": -71.208,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "qui-nhon",
+  "name": "Qui Nhon",
+  "lat": 13.7829,
+  "lon": 109.219,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "reykjavik_iceland",
+  "name": "Reykjavik, Iceland",
+  "lat": 64.1466,
+  "lon": -21.9426,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "rhodes_greece",
+  "name": "Rhodes, Greece",
+  "lat": 36.434,
+  "lon": 28.2176,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "riga_latvia",
+  "name": "Riga, Latvia",
+  "lat": 56.9496,
+  "lon": 24.1052,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "rio-de-janeiro",
+  "name": "Rio de Janeiro",
+  "lat": -22.9068,
+  "lon": -43.1729,
+  "region": "South America",
+  "gw": true
+ },
+ {
+  "id": "tortola_bvi",
+  "name": "Road Town, Tortola",
+  "lat": 18.427,
+  "lon": -64.618,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "roatan_honduras",
+  "name": "Roatan, Honduras",
+  "lat": 16.329,
+  "lon": -86.523,
+  "region": "Caribbean",
+  "gw": true
+ },
+ {
+  "id": "rome_civitavecchia_italy",
+  "name": "Rome (Civitavecchia), Italy",
+  "lat": 42.093,
+  "lon": 11.796,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "dominica",
+  "name": "Roseau, Dominica",
+  "lat": 15.301,
+  "lon": -61.388,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "rotterdam",
+  "name": "Rotterdam",
+  "lat": 51.9244,
+  "lon": 4.4777,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "saint-john-nb",
+  "name": "Saint John (NB)",
+  "lat": 45.2733,
+  "lon": -66.0633,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "san-diego",
+  "name": "San Diego",
+  "lat": 32.7157,
+  "lon": -117.1611,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "san-francisco",
+  "name": "San Francisco",
+  "lat": 37.7749,
+  "lon": -122.4194,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "san-juan",
+  "name": "San Juan",
+  "lat": 18.4655,
+  "lon": -66.1057,
+  "region": "Caribbean",
+  "gw": true
+ },
+ {
+  "id": "santa_cruz_de_tenerife_spain",
+  "name": "Santa Cruz de Tenerife, Spain",
+  "lat": 28.4636,
+  "lon": -16.2518,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "santorini_greece",
+  "name": "Santorini, Greece",
+  "lat": 36.3932,
+  "lon": 25.4615,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "santos-sao-paulo",
+  "name": "Santos (Sao Paulo)",
+  "lat": -23.9608,
+  "lon": -46.3336,
+  "region": "South America",
+  "gw": true
+ },
+ {
+  "id": "sapporo-otaru",
+  "name": "Sapporo (Otaru)",
+  "lat": 43.1907,
+  "lon": 141.0025,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "savona_italy",
+  "name": "Savona, Italy",
+  "lat": 44.3091,
+  "lon": 8.4772,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "seattle",
+  "name": "Seattle",
+  "lat": 47.6062,
+  "lon": -122.3321,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "seville-cadiz",
+  "name": "Seville (Cadiz)",
+  "lat": 37.3891,
+  "lon": -5.9845,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "seward_alaska",
+  "name": "Seward, Alaska",
+  "lat": 60.104,
+  "lon": -149.442,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "shanghai",
+  "name": "Shanghai",
+  "lat": 31.2304,
+  "lon": 121.4737,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "shenzhen",
+  "name": "Shenzhen",
+  "lat": 22.5431,
+  "lon": 114.0579,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "sihanoukville",
+  "name": "Sihanoukville",
+  "lat": 10.627,
+  "lon": 103.522,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "singapore",
+  "name": "Singapore",
+  "lat": 1.3521,
+  "lon": 103.8198,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "sitka_alaska",
+  "name": "Sitka, Alaska",
+  "lat": 57.053,
+  "lon": -135.335,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "skagway_alaska",
+  "name": "Skagway, Alaska",
+  "lat": 59.455,
+  "lon": -135.315,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "southampton_uk",
+  "name": "Southampton, UK",
+  "lat": 50.9097,
+  "lon": -1.4044,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "split_croatia",
+  "name": "Split, Croatia",
+  "lat": 43.5081,
+  "lon": 16.4402,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "grenada",
+  "name": "St George\u2019s, Grenada",
+  "lat": 12.052,
+  "lon": -61.752,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "antigua",
+  "name": "St John\u2019s, Antigua",
+  "lat": 17.121,
+  "lon": -61.844,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "stavanger_norway",
+  "name": "Stavanger, Norway",
+  "lat": 58.969,
+  "lon": 5.7331,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "stockholm_sweden",
+  "name": "Stockholm, Sweden",
+  "lat": 59.3293,
+  "lon": 18.0686,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "stornoway_scotland",
+  "name": "Stornoway, Scotland",
+  "lat": 58.2093,
+  "lon": -6.386,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "surabaya",
+  "name": "Surabaya",
+  "lat": -7.2575,
+  "lon": 112.7521,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "sydney",
+  "name": "Sydney",
+  "lat": -33.8688,
+  "lon": 151.2093,
+  "region": "Oceania",
+  "gw": true
+ },
+ {
+  "id": "sydney_nova_scotia_canada",
+  "name": "Sydney, Nova Scotia, Canada",
+  "lat": 46.1368,
+  "lon": -60.1942,
+  "region": "Oceania",
+  "gw": true
+ },
+ {
+  "id": "tallinn_estonia",
+  "name": "Tallinn, Estonia",
+  "lat": 59.437,
+  "lon": 24.7536,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "tampa_florida_usa",
+  "name": "Tampa, Florida, USA",
+  "lat": 27.943,
+  "lon": -82.446,
+  "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "tangier_morocco",
+  "name": "Tangier, Morocco",
+  "lat": 35.7595,
+  "lon": -5.834,
+  "region": "Africa",
+  "gw": true
+ },
+ {
+  "id": "tokyo",
+  "name": "Tokyo",
+  "lat": 35.657,
+  "lon": 139.7967,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "toulon_france",
+  "name": "Toulon, France",
+  "lat": 43.1242,
+  "lon": 5.928,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "trat-koh-chang",
+  "name": "Trat (Koh Chang)",
+  "lat": 12.242,
+  "lon": 102.515,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "trieste",
+  "name": "Trieste",
+  "lat": 45.6495,
+  "lon": 13.7768,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "valencia_spain",
+  "name": "Valencia, Spain",
+  "lat": 39.4699,
+  "lon": -0.3763,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "valletta_malta",
+  "name": "Valletta, Malta",
+  "lat": 35.8989,
+  "lon": 14.5146,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "vancouver",
+  "name": "Vancouver",
+  "lat": 49.2827,
+  "lon": -123.1207,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "venice_italy",
+  "name": "Venice, Italy",
+  "lat": 45.4408,
+  "lon": 12.3155,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "verona",
+  "name": "Verona",
+  "lat": 45.4384,
+  "lon": 10.9916,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "victoria-bc",
+  "name": "Victoria (BC)",
+  "lat": 48.4284,
+  "lon": -123.3656,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "vienna",
+  "name": "Vienna",
+  "lat": 48.2082,
+  "lon": 16.3738,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "vigo_spain",
+  "name": "Vigo, Spain",
+  "lat": 42.2406,
+  "lon": -8.7207,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "visakhapatnam",
+  "name": "Visakhapatnam",
+  "lat": 17.6868,
+  "lon": 83.2185,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "vung-tau",
+  "name": "Vung Tau",
+  "lat": 10.346,
+  "lon": 107.084,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "wellington",
+  "name": "Wellington",
+  "lat": -41.2865,
+  "lon": 174.7762,
+  "region": "Oceania",
+  "gw": true
+ },
+ {
+  "id": "whittier",
+  "name": "Whittier",
+  "lat": 60.7746,
+  "lon": -148.6847,
+  "region": "North America",
+  "gw": true
+ },
+ {
+  "id": "curacao",
+  "name": "Willemstad, Curacao",
+  "lat": 12.109,
+  "lon": -68.935,
+  "region": "Caribbean",
+  "gw": false
+ },
+ {
+  "id": "xiamen",
+  "name": "Xiamen",
+  "lat": 24.4798,
+  "lon": 118.0894,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "yangon",
+  "name": "Yangon",
+  "lat": 16.8409,
+  "lon": 96.1735,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "yokohama",
+  "name": "Yokohama",
+  "lat": 35.4437,
+  "lon": 139.638,
+  "region": "Asia",
+  "gw": true
+ },
+ {
+  "id": "zadar",
+  "name": "Zadar",
+  "lat": 44.1194,
+  "lon": 15.2314,
+  "region": "Europe",
+  "gw": true
+ },
+ {
+  "id": "zanzibar",
+  "name": "Zanzibar",
+  "lat": -6.1659,
+  "lon": 39.2026,
+  "region": "Africa",
+  "gw": true
+ }
+]
