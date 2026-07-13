@@ -1,6 +1,6 @@
 # The Cruise Lab — Master Context
 
-Last updated: 12 July 2026 (rev 12). This document is the single source of truth for The Cruise Lab initiative — every property, where it lives, how it is built and deployed. All enhancements, new tools, and maintenance work should be consistent with it; update it whenever the estate changes. Changes in rev 12: **Ocean View** (live cruise cams & free cruise video) launched at watch.thecruiselab.com with a hub card; GetMyBarTab and GetMyCruiseConnection recorded accurately as *built but never deployed* (v1 files exist only as 5 Jul chat attachments); Stuart moved to a new MacBook (fresh clones, fresh Chrome extension permissions); several hard-won lessons added (dead YouTube live embed endpoint, global pages.dev namespace, concurrent-session sandbox collisions).
+Last updated: 12 July 2026 (rev 13). This document is the single source of truth for The Cruise Lab initiative — every property, where it lives, how it is built and deployed. All enhancements, new tools, and maintenance work should be consistent with it; update it whenever the estate changes. Changes in rev 13: **GetMyBarTab** (bartab.thecruiselab.com) and **GetMyCruiseConnection** (connection.thecruiselab.com) recovered from the 5–6 Jul chat attachments and fully launched — repo folders, Pages projects, custom subdomains and hub cards; the hub now lists **seven live tools**; new lessons on silent dashboard Activate failures, BSD grep on macOS, and stale fetch caches.
 
 ## What The Cruise Lab is
 
@@ -34,6 +34,8 @@ thecruiselab/
 │   ├── index.html          (cruise line chooser)
 │   └── princess/index.html (Sea You Soon calculator)
 ├── getmycruiseweather/   → Pages project "getmycruiseweather" → getmycruiseweather.com / weather.thecruiselab.com
+├── getmybartab/          → Pages project "getmybartab"         → bartab.thecruiselab.com
+├── getmycruiseconnection/→ Pages project "getmycruiseconnection" → connection.thecruiselab.com
 ├── oceanview/            → Pages project "oceanview"          → watch.thecruiselab.com
 ├── forevervoyage/        → Pages project "forever-voyage"     → forevervoyage.thecruiselab.com
 └── docs/
@@ -51,7 +53,7 @@ All web properties are Cloudflare Pages projects in Stuart's Cloudflare account 
 - Cloudflare Pages project: `thecruiselab`
 - Repo path: `~/cruiselab/hub` (single index.html)
 - Content: hero with flask mark and "The Cruise Lab" wordmark (small tracked "THE" above "CRUISE LAB"), tagline, "The Fleet" divider, one card per live tool, then an "In the Lab" divider with three named coming-soon tiles (dashed border / sea-glass chip style): **Shore Thing** (per-sailing port guides), **All Aboard Store** (curated cruise-kit shop), **GetMyCruiseMap** (keepsake route-map print). Names finalised 5 Jul 2026 (earlier working names The Kit Locker and Wake Map were replaced). Structure note: live tools sit in `<main class="fleet">`, coming-soon tiles in a following `<section class="fleet">` (only one `<main>` per page).
-- Current card links (5 live tools as of 12 Jul 2026): cabins.thecruiselab.com · casinopoints.thecruiselab.com/princess/ · weather.thecruiselab.com · forevervoyage.thecruiselab.com · watch.thecruiselab.com. Ocean View's card uses a porthole icon (echoing the tool's own mark).
+- Current card links (7 live tools as of 12 Jul 2026): cabins.thecruiselab.com · casinopoints.thecruiselab.com/princess/ · weather.thecruiselab.com · forevervoyage.thecruiselab.com · watch.thecruiselab.com · bartab.thecruiselab.com · connection.thecruiselab.com. Icons echo each tool's own mark: Ocean View a porthole, GetMyBarTab a cocktail glass, GetMyCruiseConnection wifi arcs over a wave.
 - WARNING (lesson from 5 Jul 2026, reinforced 12 Jul): parallel sessions editing the hub from different bases have twice caused silent overwrites/wrong deploys — before editing hub/index.html, always start from the live repo (`git pull` first), never from a possibly-stale copy in project knowledge.
 
 ### 2. Good Cabin Bad Cabin — cabin scoring
@@ -107,12 +109,24 @@ All web properties are Cloudflare Pages projects in Stuart's Cloudflare account 
 - Content at launch: Southampton live cam (Solent Ships' 24/7 Ocean Terminal stream, pinned video id `WxdeHH9T7Yk` — if the stream rotates, get the new id from the channel's /streams page); PTZtv portfolio + six PTZtv port link cards (Canaveral, Everglades, Miami, Nassau, Paradise Island, Key West); five ship-cam link cards (Princess Bridgecams with a "Still · ~5 min" honesty chip, AIDA flagship bugcam, Viking + TUI via Cruising Earth's per-line indexes, Cruising Earth full directory); VesselFinder tracker with six region presets (Southampton default → South Florida, Caribbean, Med, Fjords, Alaska); Tips For Travellers + Emma Cruises uploads embeds; Harr Travel / La Lido Loca / Cruise With Ben and David / CruiseTipsTV link cards; three archive.org Golden Age films (Queen Mary launch at Clydebank, QE2 launch 1967, Queens of the Seas).
 - Deploy: `npx wrangler pages deploy ~/cruiselab/oceanview --project-name=oceanview` then verify with `curl -sL https://oceanview-17z.pages.dev`.
 
-### 7. Built but NOT deployed: GetMyBarTab and GetMyCruiseConnection
-Both tools reached delivered v1 builds on 5 Jul 2026 but the trail then went cold: **no Pages projects exist for either** (confirmed via `wrangler pages project list` 12 Jul 2026), nothing was committed to the repo, and no hub cards were added. After the MacBook swap, the v1 files most likely exist only as attachments in the 5 Jul conversations — recover them from those chats' downloads (or rebuild) before anything else.
+### 7. GetMyBarTab — cruise drinks spend predictor (LAUNCHED 12 Jul 2026)
+- URL: https://bartab.thecruiselab.com (plus getmybartab.pages.dev — plain name, no suffix)
+- Cloudflare Pages project: `getmybartab` (production branch `main`)
+- Repo path: `~/cruiselab/getmybartab` (single self-contained index.html ~41.5KB + README)
+- What it is: predicts what a cruiser will really spend on drinks — per person, split by sea days and port days — then compares against a package price the user supplies. Spend prediction (a literal itemised bar tab) is the hero output, not break-even comparison. Volume archetypes (light/medium/heavy) + style profiles keep input simple, with a fine-tune path for power users.
+- **Core design principle: line-blind on package prices.** Package prices change constantly and everyone's quote differs, so the tool never stores or guesses them — the user pastes their quoted per-person-per-day price. What IS curated: slow-moving à la carte per-drink prices (`GENERIC_PRICES` fallback + per-line overrides in `LINES`; **only Princess individually curated in v1**, with the only real package-page link). `PRICE_STAMP` ("July 2026") shows in the UI — update it when prices are refreshed. Currency conversion is approximate/fixed (stated in the UI; onboard billing is USD-first).
+- History: v1 built 5 Jul 2026 (`getmybartab-v1-20260705.html`), then lost in the MacBook swap; recovered from the 5 Jul chat attachments and launched 12 Jul.
+- Deploy: `npx wrangler pages deploy ~/cruiselab/getmybartab --project-name=getmybartab`
 
-- **GetMyBarTab** — drinks spend predictor / bar tab tool. v1 delivered as `getmybartab-v1-20260705.html`; single-file, Cruise Lab design system. Design principle: line-blind on package prices (user brings their own quoted price); curated slowly-drifting à la carte prices per line (only Princess curated in v1); spend prediction is the hero output, not break-even comparison. Known v1 limitations: approximate fixed currency conversion; only Princess has a real package page link.
-- **GetMyCruiseConnection** — WiFi/mobile/eSIM/VPN guide. v1 delivered; affiliate link infrastructure in a `LINKS` object at the top of the script (Airalo via Impact, Holafly coupon, GigSky, RedBull Mobile, VPN). Key content facts: standard travel eSIMs (Airalo, Holafly) work only on land networks (port days); GigSky (WMS Cellular at Sea) and RedBull Mobile Maritime (Telenor Maritime) are the two eSIMs that work at open sea — ship compatibility must be checked in each provider's app before purchase.
-- **Path to launch for each:** recover v1 file → repo folder (`~/cruiselab/getmybartab/`, `~/cruiselab/getmycruiseconnection/`) with a README per the repo-discipline rule → create Pages project → deploy → custom subdomain (suggest bartab.thecruiselab.com / connection.thecruiselab.com — confirm names with Stuart) → hub cards → commit/push → rev 13 of this doc.
+### 8. GetMyCruiseConnection — cruise WiFi, roaming & eSIM guide (LAUNCHED 12 Jul 2026)
+- URL: https://connection.thecruiselab.com (plus getmycruiseconnection.pages.dev — plain name, no suffix)
+- Cloudflare Pages project: `getmycruiseconnection` (production branch `main`)
+- Repo path: `~/cruiselab/getmycruiseconnection` (single self-contained index.html ~42KB + README)
+- What it is: a "build your connection plan" guide — four quick questions (region, line, ship, phone) → a plan mixing ship WiFi, roaming and eSIMs, with affiliate-linked recommendations.
+- **Affiliate layer:** all partner URLs in one `LINKS` object at the top of the script (Airalo via Impact, Holafly coupon, GigSky, RedBull Mobile, VPN). `rel="sponsored"` is added in the JS card templates (not the static HTML), and "partner links / small commission" disclosure copy appears beside every recommendation block and in the footer — keep the disclosures through any copy rework.
+- **Key content facts (the differentiator most competitor guides get wrong):** standard travel eSIMs (Airalo, Holafly) work only on land networks — port-day tools, useless at open sea. Only two consumer eSIMs work at sea: **GigSky** (WMS Cellular at Sea) and **RedBull Mobile Maritime** (Telenor Maritime) — different maritime networks, so ship compatibility must be checked in each provider's app before purchase. Starlink is fleet-wide across most major lines by 2026, making ship WiFi the primary sea-day recommendation.
+- History: v1 built 5 Jul 2026, iterated to **v3 on 6 Jul** (`getmycruiseconnection-v3-20260706.html` = the deployed version), lost in the MacBook swap, recovered from the chat attachments and launched 12 Jul.
+- Deploy: `npx wrangler pages deploy ~/cruiselab/getmycruiseconnection --project-name=getmycruiseconnection`
 
 ## Deployment workflow (standard for all projects)
 
@@ -128,6 +142,8 @@ Standard deploys from the repo:
 npx wrangler pages deploy ~/cruiselab/hub --project-name=thecruiselab
 npx wrangler pages deploy ~/cruiselab/casinopoints --project-name=sys-points
 npx wrangler pages deploy ~/cruiselab/getmycruiseweather --project-name=getmycruiseweather
+npx wrangler pages deploy ~/cruiselab/getmybartab --project-name=getmybartab
+npx wrangler pages deploy ~/cruiselab/getmycruiseconnection --project-name=getmycruiseconnection
 npx wrangler pages deploy ~/cruiselab/oceanview --project-name=oceanview
 npx wrangler pages deploy ~/cruiselab/forevervoyage --project-name=forever-voyage --branch=production
 ```
@@ -151,11 +167,14 @@ Notes and lessons learned:
 - Wrangler deduplicates uploads by content hash — "0 files uploaded (N already uploaded)" is normal and fine.
 - Old deployments remain accessible at their unique `<hash>.<project>.pages.dev` URLs (useful for recovering previous content).
 - Custom domains attach to Pages projects via dashboard → project → Custom domains; DNS records are created automatically because both zones are on Cloudflare. The "up to 48 hours" banner is pessimistic — same-zone domains typically go live in a minute or two.
+- **A dashboard "Activate domain" click can SILENTLY FAIL during dashboard wobbles** (12 Jul 2026, cost ~40 min): the CNAME gets created but the project↔domain binding doesn't register, leaving a 522 (Cloudflare answers, "Host Error"). The ONLY proof of attachment is the domain appearing in the project's Custom domains list — always screenshot/eyeball that list after activating. On the redo, the confirm screen shows BOTH "Existing record" and "New record" tables (the half-created CNAME), making the page taller — the Activate button moves below the fold.
+- **macOS grep is BSD grep**: `\|` alternation in a plain `grep` pattern silently matches nothing — use `grep -cE "a|b"`. A zero from a verification grep may be the pattern, not the site.
+- **Anthropic-side fetch caches can serve stale pages** minutes-to-hours old: a web fetch of a just-redeployed page may show the previous version even when the live edge is correct. Verify fresh deploys in a real browser with a cache-busting query string (e.g. `?v=anything`), or via the raw GitHub file for repo state.
 - iOS Safari caches deployed sites hard — fully close and reopen the tab after each deploy.
 
 ## Backlog / ideas
 
-- **GetMyBarTab + GetMyCruiseConnection: recover v1 files from the 5 Jul chats, then deploy** (repo folders + READMEs + Pages projects + subdomains + hub cards) — see estate section 7. Follow-ups after launch: BarTab à la carte prices for more lines, better currency conversion, real package links per line.
+- GetMyBarTab + GetMyCruiseConnection **launched 12 Jul 2026** (estate sections 7–8). Follow-ups: BarTab à la carte prices for more lines, better currency conversion, real package links per line; Connection — periodic re-verification of the LINKS affiliate URLs and the GigSky/RedBull maritime facts.
 - **Ocean View v2 ideas** (parked in its README): "Sail-away now" (surface ports with an imminent departure); favourites via localStorage; weather chip per port cam (GetMyCruiseWeather / Open-Meteo tie-in); more port cams (Galveston, Kiel, Vancouver, Funchal, Juneau — harvest their YouTube channel/video ids); more Golden Age films from archive.org; auto-detect dead embeds.
 - Forever Voyage launched 5 Jul 2026 (service page + hub card + anonymised sample). Next: (1) create the `hello@thecruiselab.com` forward in Namecheap, then switch `CONTACT_EMAIL` in the service page back to the branded address; (2) later — Stripe payment links or a proper enquiry form instead of mailto; testimonials; real custom-domain option for the bespoke tier; consider a forevervoyage.com domain if the service takes off.
 - **Shore Thing** (announced on hub 5 Jul 2026, not built): individual downloadable guides for each upcoming sailing across the major cruise lines — one guide per sailing, no personalisation. Per-port paragraphs stored once and reused (many sailings share ports, so content is written/generated once per port, not per sailing). Guide is presented on-screen with a download link. Each port summary carries Stuart's Viator partner link, deep-linked to that destination with tours/excursions filtered to the port day's date (commission on bookings). A prior personalised prototype (built for Steven and family) is the reference for structure/tone.
