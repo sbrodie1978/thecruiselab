@@ -3,345 +3,222 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Ocean View · The Cruise Lab — live port cams, ship cams &amp; cruise video</title>
-<meta name="description" content="Ocean View by The Cruise Lab — live cruise port webcams, ship cams, a live ship tracker and the best free cruise video, curated in one player.">
+<title>Ocean View · The Cruise Lab — live cruise cams, ship reviews & cruise video</title>
+<meta name="description" content="Ocean View by The Cruise Lab — live port webcams, a live ship tracker, the top ship reviews for every major cruise ship, and the best free cruise video. No sign-up, nothing autoplays.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ocean-deep:#081830;
-  --ocean:#0d2445;
-  --panel:#122c52;
-  --panel-edge:#1d3d6b;
-  --gold:#d9b45c;
-  --gold-bright:#f0d087;
-  --gold-dim:rgba(217,180,92,.35);
-  --foam:#f3efe4;
-  --mist:#8fa2bd;
-  --seaglass:#46c3a8;
-  --seaglass-dim:rgba(70,195,168,.18);
-  --radius:14px;
+  --ocean-deep:#081830; --ocean:#0d2445; --panel:#122c52; --panel-edge:#1d3d6b;
+  --gold:#d9b45c; --gold-bright:#f0d087; --gold-dim:rgba(217,180,92,.35);
+  --foam:#f3efe4; --mist:#8fa2bd; --seaglass:#46c3a8; --seaglass-dim:rgba(70,195,168,.18);
+  --night:#5b6c8f; --radius:14px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{
-  font-family:'Outfit',sans-serif;
-  background:
-    radial-gradient(1200px 600px at 50% -10%, #16335e 0%, transparent 60%),
-    var(--ocean-deep);
-  color:var(--foam);
-  min-height:100vh;
+  font-family:'Outfit',sans-serif;color:var(--foam);min-height:100vh;line-height:1.5;
+  background:radial-gradient(1200px 600px at 50% -10%, #16335e 0%, transparent 60%),var(--ocean-deep);
   padding:0 16px calc(48px + env(safe-area-inset-bottom));
-  line-height:1.5;
 }
-.wrap{max-width:980px;margin:0 auto}
+.wrap{max-width:1080px;margin:0 auto}
+a{color:inherit}
 
-/* ---------- Header ---------- */
-header{text-align:center;padding:48px 8px 8px}
-.eyebrow{
-  font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;
-  color:var(--gold);font-weight:600;text-decoration:none;display:inline-block;
-}
-.eyebrow:hover{color:var(--gold-bright)}
-h1{
-  font-family:'Cinzel',serif;font-weight:700;
-  font-size:clamp(2.2rem,8.5vw,3.3rem);
-  letter-spacing:.05em;margin:.3rem 0 .45rem;
+/* ---------- header ---------- */
+header{text-align:center;padding:34px 8px 6px;position:relative}
+.crumb{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:600;text-decoration:none}
+.mark{width:58px;height:58px;margin:10px auto 6px;display:block;filter:drop-shadow(0 6px 20px rgba(217,180,92,.16))}
+.mark .sea{animation:lap 6s ease-in-out infinite alternate}
+@keyframes lap{from{transform:translateX(0)}to{transform:translateX(-8px)}}
+@media (prefers-reduced-motion:reduce){.mark .sea{animation:none}}
+h1{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(1.9rem,6.5vw,2.6rem);letter-spacing:.05em;
   background:linear-gradient(180deg,var(--gold-bright),var(--gold));
-  -webkit-background-clip:text;background-clip:text;
-  -webkit-text-fill-color:transparent;color:var(--gold);
-}
-.tagline{
-  color:var(--mist);font-weight:300;
-  font-size:clamp(.98rem,3.2vw,1.12rem);
-  max-width:560px;margin:0 auto;
-}
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--gold)}
+.tagline{color:var(--mist);font-weight:300;font-size:clamp(.92rem,2.8vw,1.02rem);max-width:560px;margin:2px auto 0}
 .tagline strong{color:var(--foam);font-weight:500}
 
-/* ---------- Porthole mark ---------- */
-.porthole{
-  width:86px;height:auto;margin:8px auto 12px;display:block;
-  filter:drop-shadow(0 6px 24px rgba(217,180,92,.18));
-}
-.porthole .wave{animation:lap 5s ease-in-out infinite alternate}
-@keyframes lap{from{transform:translateX(0)}to{transform:translateX(-12px)}}
-@media (prefers-reduced-motion:reduce){.porthole .wave{animation:none}}
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:40;background:linear-gradient(180deg,var(--ocean-deep) 82%,transparent);padding:12px 0 10px}
+.navrow{display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap}
+.pill{font-family:'Cinzel',serif;font-weight:600;font-size:.86rem;letter-spacing:.08em;
+  color:var(--gold);background:transparent;border:1px solid var(--gold-dim);border-radius:999px;
+  padding:9px 20px;cursor:pointer;transition:background .15s,color .15s}
+.pill[aria-selected="true"]{background:var(--gold);color:var(--ocean-deep);border-color:var(--gold)}
+.pill:hover{border-color:var(--gold)}
+.searchbtn{margin-left:6px;display:inline-flex;align-items:center;gap:8px;
+  font-family:'Outfit',sans-serif;font-size:.8rem;letter-spacing:.04em;color:var(--mist);
+  background:rgba(13,36,69,.6);border:1px solid var(--panel-edge);border-radius:999px;padding:9px 14px;cursor:pointer}
+.searchbtn kbd{font-family:inherit;font-size:.72rem;color:var(--gold);border:1px solid var(--gold-dim);border-radius:5px;padding:0 6px}
+.subrow{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:10px 0 0}
+.chip{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--mist);
+  background:rgba(13,36,69,.6);border:1px solid var(--panel-edge);border-radius:999px;padding:7px 15px;cursor:pointer}
+.chip[aria-selected="true"]{color:var(--ocean-deep);background:var(--seaglass);border-color:var(--seaglass)}
 
-/* ---------- Section pills ---------- */
-.nav{display:flex;justify-content:center;gap:10px;padding:24px 0 6px;flex-wrap:wrap}
-.nav button{
-  font-family:'Cinzel',serif;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
-  font-size:.88rem;color:var(--gold);
-  background:transparent;border:1px solid var(--gold-dim);border-radius:999px;
-  padding:11px 30px;cursor:pointer;
-  transition:background .18s ease,color .18s ease,border-color .18s ease;
-}
-.nav button:hover{border-color:var(--gold)}
-.nav button.on{background:var(--gold);color:var(--ocean-deep);border-color:var(--gold)}
-.nav button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-
-.subnav{display:flex;justify-content:center;gap:8px;padding:10px 0 4px;flex-wrap:wrap}
-.subnav button{
-  font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
-  font-size:.68rem;color:var(--mist);
-  background:rgba(13,36,69,.45);border:1px solid var(--panel-edge);border-radius:999px;
-  padding:8px 16px;cursor:pointer;
-  transition:color .18s ease,border-color .18s ease;
-}
-.subnav button:hover{color:var(--foam);border-color:var(--gold-dim)}
-.subnav button.on{color:var(--seaglass);border-color:var(--seaglass);background:var(--seaglass-dim)}
-.subnav button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-
-/* ---------- Divider ---------- */
-.rule{
-  display:flex;align-items:center;gap:14px;
-  max-width:420px;margin:22px auto 0;
-  color:var(--gold);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600;
-}
-.rule::before,.rule::after{
-  content:"";flex:1;height:1px;
-  background:linear-gradient(90deg,transparent,var(--gold-dim));
-}
+/* ---------- section furniture ---------- */
+.rule{display:flex;align-items:center;gap:14px;max-width:520px;margin:26px auto 14px;
+  color:var(--gold);font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600;text-align:center}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim))}
 .rule::after{background:linear-gradient(90deg,var(--gold-dim),transparent)}
+.blurb{text-align:center;color:var(--mist);font-weight:300;font-size:.9rem;max-width:600px;margin:-6px auto 16px}
 
-.blurb{
-  text-align:center;color:var(--mist);font-weight:300;font-size:.9rem;
-  max-width:600px;margin:12px auto 0;
-}
+/* ---------- rails & grids ---------- */
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:262px;gap:14px;overflow-x:auto;
+  padding:4px 2px 14px;scroll-snap-type:x proximity;scrollbar-width:thin}
+.rail>*{scroll-snap-align:start}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));padding:4px 0 8px}
 
-/* ---------- Card grid ---------- */
-.grid{
-  display:grid;gap:16px;
-  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
-  padding:22px 0 8px;
-}
-.card{
-  display:flex;flex-direction:column;text-align:left;text-decoration:none;
-  background:linear-gradient(180deg,var(--panel),var(--ocean));
-  border:1px solid var(--panel-edge);
-  border-radius:var(--radius);
-  padding:20px 20px 18px;
-  color:var(--foam);cursor:pointer;font-family:'Outfit',sans-serif;font-size:1rem;
-  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
-}
-.card:hover,.card:focus-visible{
-  transform:translateY(-3px);
-  border-color:var(--gold-dim);
-  box-shadow:0 14px 34px rgba(4,10,24,.5);
-}
-.card:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-.card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:12px}
-.card-icon{width:34px;height:34px;color:var(--gold);flex:none}
-.chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
-.chip{
-  font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;
-  border-radius:999px;padding:4px 10px;white-space:nowrap;
-}
-.chip.live{color:var(--seaglass);background:var(--seaglass-dim)}
-.chip.live::before{
-  content:"";display:inline-block;width:6px;height:6px;border-radius:50%;
-  background:var(--seaglass);margin-right:6px;vertical-align:1px;
-  animation:pulse 1.6s ease-in-out infinite;
-}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
-@media (prefers-reduced-motion:reduce){.chip.live::before{animation:none}}
-.chip.still{color:var(--mist);background:rgba(143,162,189,.14)}
-.chip.ext{color:var(--gold);background:rgba(217,180,92,.12)}
-.card h3{
-  font-family:'Cinzel',serif;font-weight:600;font-size:1.02rem;letter-spacing:.02em;
-  color:var(--gold-bright);margin-bottom:2px;
-}
-.card .loc{color:var(--seaglass);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:8px}
-.card p{color:var(--mist);font-size:.88rem;font-weight:300;flex:1}
-.card .src{color:var(--mist);font-size:.7rem;font-weight:400;margin-top:12px;opacity:.75}
+/* ---------- cards ---------- */
+.card{position:relative;display:flex;flex-direction:column;text-align:left;
+  background:linear-gradient(180deg,var(--panel),var(--ocean));border:1px solid var(--panel-edge);
+  border-radius:var(--radius);padding:16px 16px 14px;color:var(--foam);cursor:pointer;
+  transition:transform .15s,border-color .15s;font:inherit}
+.card:hover,.card:focus-within{transform:translateY(-2px);border-color:var(--gold-dim)}
+.card:focus-within{outline:2px solid var(--gold);outline-offset:3px}
+.cover{position:absolute;inset:0;z-index:1;background:none;border:0;cursor:pointer;border-radius:var(--radius)}
+.heart{z-index:2}
+.card h3{font-family:'Cinzel',serif;font-weight:600;font-size:1rem;color:var(--gold-bright);
+  letter-spacing:.02em;margin:2px 34px 2px 0}
+.card .loc{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--seaglass);font-weight:600}
+.card p{color:var(--mist);font-size:.85rem;font-weight:300;flex:1;margin:6px 0 10px}
+.card .src{font-size:.72rem;color:var(--mist);opacity:.8}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.tag{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;border-radius:999px;padding:4px 10px}
+.tag.live{color:var(--seaglass);background:var(--seaglass-dim)}
+.tag.live::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--seaglass);margin-right:6px;vertical-align:1px}
+.tag.ext{color:var(--gold);background:rgba(217,180,92,.12)}
+.tag.time{color:var(--foam);background:rgba(143,162,189,.14)}
+.tag.night{color:var(--night);background:rgba(91,108,143,.16)}
+.thumb{width:calc(100% + 32px);margin:-16px -16px 12px;border-radius:var(--radius) var(--radius) 0 0;
+  aspect-ratio:16/9;object-fit:cover;background:#0a1c38;display:block}
+.meta{display:flex;gap:10px;flex-wrap:wrap;font-size:.72rem;color:var(--mist)}
+.meta b{color:var(--gold);font-weight:600}
 
-/* ---------- Tracker ---------- */
-.tracker{padding:22px 0 8px;display:none}
-.tracker.on{display:block}
-.presets{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:14px}
-.presets button{
-  font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
-  font-size:.68rem;color:var(--gold);
-  background:transparent;border:1px solid var(--gold-dim);border-radius:999px;
-  padding:8px 16px;cursor:pointer;transition:background .18s,color .18s;
-}
-.presets button:hover{border-color:var(--gold)}
-.presets button.on{background:var(--gold);color:var(--ocean-deep);border-color:var(--gold)}
-.presets button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-.map-frame{
-  border:1px solid var(--panel-edge);border-radius:var(--radius);overflow:hidden;
-  background:var(--ocean);min-width:0;
-}
-.map-frame iframe{display:block;width:100%;height:520px;border:0}
-@media (max-width:640px){.map-frame iframe{height:420px}}
+/* heart */
+.heart{position:absolute;top:12px;right:12px;z-index:2;width:30px;height:30px;border-radius:50%;
+  border:1px solid var(--panel-edge);background:rgba(8,24,48,.55);color:var(--mist);
+  font-size:.95rem;line-height:1;cursor:pointer;transition:color .15s,border-color .15s}
+.heart:hover{border-color:var(--gold-dim)}
+.heart[aria-pressed="true"]{color:var(--gold);border-color:var(--gold-dim)}
+.card:has(.thumb) .heart{background:rgba(8,24,48,.72)}
 
-/* ---------- Player modal ---------- */
-.modal{
-  position:fixed;inset:0;z-index:50;display:none;
-  background:rgba(4,10,24,.82);backdrop-filter:blur(4px);
-  padding:20px;overflow-y:auto;
-}
-.modal.on{display:flex;align-items:center;justify-content:center}
-.player{
-  width:min(920px,100%);
-  background:linear-gradient(180deg,var(--panel),var(--ocean));
-  border:1px solid var(--gold-dim);border-radius:var(--radius);
-  padding:18px;position:relative;
-}
-.player-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px;padding-right:40px;flex-wrap:wrap}
-.player h2{font-family:'Cinzel',serif;font-weight:600;font-size:1.15rem;color:var(--gold-bright)}
-.player .ploc{color:var(--seaglass);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;white-space:nowrap}
-.screen{
-  position:relative;width:100%;aspect-ratio:16/9;
-  background:#050d1d;border-radius:10px;overflow:hidden;border:1px solid var(--panel-edge);
-}
-.screen iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.offline{
-  position:absolute;inset:0;display:flex;flex-direction:column;gap:8px;
-  align-items:center;justify-content:center;text-align:center;color:var(--mist);
-  font-size:.9rem;font-weight:300;padding:20px;
-}
-.offline strong{color:var(--foam);font-weight:500;font-family:'Cinzel',serif;letter-spacing:.05em}
-.player-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;flex-wrap:wrap}
-.player-foot .credit{color:var(--mist);font-size:.75rem;font-weight:300}
-.srcbtn{
-  font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;
-  color:var(--gold);text-decoration:none;
-  border:1px solid var(--gold-dim);border-radius:999px;padding:8px 16px;
-  transition:background .18s,color .18s;white-space:nowrap;
-}
-.srcbtn:hover{background:var(--gold);color:var(--ocean-deep);border-color:var(--gold)}
-.close{
-  position:absolute;top:12px;right:12px;width:34px;height:34px;
-  background:transparent;border:1px solid var(--gold-dim);border-radius:50%;
-  color:var(--gold);font-size:1.05rem;line-height:1;cursor:pointer;
-  transition:background .18s,color .18s;
-}
-.close:hover{background:var(--gold);color:var(--ocean-deep)}
-.close:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+/* ---------- ships view ---------- */
+.linechips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:2px 0 16px}
+.shipcard .thumb{filter:saturate(.92)}
+.empty{border:1px dashed var(--panel-edge);border-radius:var(--radius);color:var(--mist);
+  text-align:center;padding:30px 20px;font-weight:300;font-size:.9rem}
 
-/* ---------- Debug ---------- */
-.debug .screen{margin-bottom:20px}
-.debug h3{font-family:'Cinzel',serif;color:var(--gold-bright);margin:14px 0 8px}
+/* ---------- tracker ---------- */
+.trackerbox{border:1px solid var(--panel-edge);border-radius:var(--radius);overflow:hidden;background:var(--ocean)}
+.trackerbox iframe{width:100%;height:min(62vh,560px);border:0;display:block}
 
-/* ---------- Footer ---------- */
-footer{
-  text-align:center;color:var(--mist);
-  font-size:.78rem;font-weight:300;
-  padding:44px 12px 0;
-}
-footer .foot-mark{font-family:'Cinzel',serif;letter-spacing:.14em;font-size:.8rem;margin-bottom:6px}
-footer .foot-mark a{color:var(--gold);text-decoration:none}
-footer .foot-mark a:hover{color:var(--gold-bright)}
+/* ---------- modal ---------- */
+.scrim{position:fixed;inset:0;background:rgba(4,10,24,.86);z-index:60;display:none;
+  align-items:center;justify-content:center;padding:18px}
+.scrim.open{display:flex}
+.sheet{width:min(960px,100%);max-height:92vh;overflow:auto;background:linear-gradient(180deg,var(--panel),var(--ocean));
+  border:1px solid var(--panel-edge);border-radius:var(--radius);padding:18px}
+.sheet .bar{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:12px}
+.sheet h2{font-family:'Cinzel',serif;font-weight:600;font-size:1.15rem;color:var(--gold-bright)}
+.sheet .sub{color:var(--mist);font-size:.8rem;font-weight:300}
+.x{background:none;border:1px solid var(--panel-edge);border-radius:999px;color:var(--mist);
+  width:34px;height:34px;font-size:1rem;cursor:pointer;flex:none}
+.x:hover{border-color:var(--gold-dim);color:var(--gold)}
+.player{aspect-ratio:16/9;background:#050d1d;border-radius:10px;overflow:hidden}
+.player iframe{width:100%;height:100%;border:0;display:block}
+.rows{display:flex;flex-direction:column;gap:10px}
+.row{display:flex;gap:12px;align-items:center;background:rgba(8,24,48,.5);border:1px solid var(--panel-edge);
+  border-radius:10px;padding:10px;cursor:pointer;text-align:left;color:var(--foam);font:inherit}
+.row:hover{border-color:var(--gold-dim)}
+.row img{width:132px;aspect-ratio:16/9;object-fit:cover;border-radius:7px;flex:none;background:#0a1c38}
+.row .t{font-weight:500;font-size:.9rem;line-height:1.35}
+.row .m{font-size:.72rem;color:var(--mist);margin-top:3px}
+.row .m b{color:var(--gold);font-weight:600}
+.credit{margin-top:10px;font-size:.74rem;color:var(--mist);font-weight:300}
+.credit a{color:var(--gold);text-decoration:none}
+
+/* ---------- search overlay ---------- */
+.searchwrap{position:fixed;inset:0;background:rgba(4,10,24,.9);z-index:70;display:none;padding:8vh 18px 18px}
+.searchwrap.open{display:block}
+.searchbox{max-width:680px;margin:0 auto}
+#q{width:100%;font:inherit;font-size:1.05rem;color:var(--foam);background:var(--ocean);
+  border:1px solid var(--gold-dim);border-radius:12px;padding:14px 18px;outline:none}
+#q::placeholder{color:var(--mist)}
+.results{max-width:680px;margin:14px auto 0;max-height:64vh;overflow:auto;display:flex;flex-direction:column;gap:8px}
+.rgroup{font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:10px 2px 2px}
+.rhit{display:flex;justify-content:space-between;gap:12px;align-items:center;background:rgba(13,36,69,.7);
+  border:1px solid var(--panel-edge);border-radius:10px;padding:11px 14px;cursor:pointer;color:var(--foam);font:inherit;text-align:left;width:100%}
+.rhit:hover,.rhit:focus-visible{border-color:var(--gold-dim)}
+.rhit .k{font-size:.7rem;color:var(--mist);flex:none}
+
+/* ---------- footer ---------- */
+footer{text-align:center;color:var(--mist);font-size:.76rem;font-weight:300;padding:44px 12px 0}
+footer .foot-mark{font-family:'Cinzel',serif;color:var(--gold);letter-spacing:.14em;font-size:.8rem;margin-bottom:6px}
 footer p+p{margin-top:4px}
-footer .credits{max-width:640px;margin:8px auto 0;opacity:.85}
+footer a{color:var(--gold);text-decoration:none}
+
+[hidden]{display:none !important}
+@media (max-width:560px){
+  .rail{grid-auto-columns:82vw}
+  .sheet{padding:14px}
+  .row img{width:104px}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <header>
-    <a class="eyebrow" href="https://thecruiselab.com">Part of The Cruise Lab</a>
+<header>
+  <a class="crumb" href="https://thecruiselab.com">Part of The Cruise Lab</a>
+  <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+    <defs>
+      <clipPath id="port"><circle cx="50" cy="50" r="34"/></clipPath>
+      <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#f0d087"/><stop offset="1" stop-color="#d9b45c"/>
+      </linearGradient>
+    </defs>
+    <g clip-path="url(#port)">
+      <rect x="10" y="16" width="80" height="40" fill="#0d2445"/>
+      <rect x="10" y="52" width="80" height="34" fill="#122c52"/>
+      <path class="sea" fill="#1d3d6b" d="M2 54 q8 -6 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 v34 h-96 z"/>
+      <path class="sea" fill="#46c3a8" opacity=".33" style="animation-duration:8s" d="M2 60 q8 -5 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 v28 h-96 z"/>
+      <circle cx="63" cy="34" r="5" fill="#f0d087" opacity=".9"/>
+    </g>
+    <circle cx="50" cy="50" r="34" fill="none" stroke="url(#gold)" stroke-width="5"/>
+    <g fill="#d9b45c"><circle cx="50" cy="12" r="2.6"/><circle cx="50" cy="88" r="2.6"/><circle cx="12" cy="50" r="2.6"/><circle cx="88" cy="50" r="2.6"/>
+    <circle cx="23" cy="23" r="2.6"/><circle cx="77" cy="23" r="2.6"/><circle cx="23" cy="77" r="2.6"/><circle cx="77" cy="77" r="2.6"/></g>
+  </svg>
+  <h1>Ocean View</h1>
+  <p class="tagline">The sea, on demand. <strong>Live cams, ship reviews and the best free cruise video</strong> — nothing autoplays, nothing costs, no sign-up.</p>
+</header>
 
-    <!-- Porthole mark: gold porthole with the sea inside -->
-    <svg class="porthole" viewBox="0 0 100 100" aria-hidden="true">
-      <defs>
-        <clipPath id="portClip"><circle cx="50" cy="50" r="33"/></clipPath>
-        <linearGradient id="goldStroke" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#f0d087"/>
-          <stop offset="1" stop-color="#d9b45c"/>
-        </linearGradient>
-      </defs>
-      <g clip-path="url(#portClip)">
-        <rect x="0" y="17" width="100" height="66" fill="#0d2445"/>
-        <path class="wave" fill="#1d3d6b"
-          d="M-12 52 q6 -5 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 v40 h-112 z"/>
-        <path class="wave" fill="#46c3a8" opacity=".35" style="animation-duration:7s"
-          d="M-12 57 q6 -4 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 v36 h-112 z"/>
-        <circle cx="63" cy="36" r="4" fill="#f0d087" opacity=".9"/>
-      </g>
-      <circle cx="50" cy="50" r="33" fill="none" stroke="url(#goldStroke)" stroke-width="3.4"/>
-      <circle cx="50" cy="50" r="41" fill="none" stroke="url(#goldStroke)" stroke-width="2.2"/>
-      <g fill="#d9b45c">
-        <circle cx="50" cy="13" r="2.1"/><circle cx="50" cy="87" r="2.1"/>
-        <circle cx="13" cy="50" r="2.1"/><circle cx="87" cy="50" r="2.1"/>
-        <circle cx="24" cy="24" r="2.1"/><circle cx="76" cy="24" r="2.1"/>
-        <circle cx="24" cy="76" r="2.1"/><circle cx="76" cy="76" r="2.1"/>
-      </g>
-    </svg>
-
-    <h1>Ocean View</h1>
-    <p class="tagline">The sea, on demand. <strong>Live port cams, ships underway and the best free cruise video</strong> — curated in one player.</p>
-  </header>
-
-  <nav class="nav" aria-label="Sections">
-    <button data-sec="live" class="on">Live</button>
-    <button data-sec="watch">Watch</button>
-  </nav>
-
-  <div class="subnav" id="subnav" aria-label="Categories"></div>
-
-  <p class="rule" id="secRule">Port Cams</p>
-  <p class="blurb" id="secBlurb"></p>
-
-  <main class="grid" id="grid"></main>
-
-  <section class="tracker" id="tracker" aria-label="Live ship tracker">
-    <div class="presets" id="presets"></div>
-    <div class="map-frame"><iframe id="mapFrame" title="Live ship positions map (VesselFinder)" loading="lazy" allow="fullscreen"></iframe></div>
-  </section>
-
-  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="playerTitle">
-    <div class="player">
-      <button class="close" id="closeBtn" aria-label="Close player">✕</button>
-      <div class="player-head">
-        <h2 id="playerTitle"></h2>
-        <span class="ploc" id="playerLoc"></span>
-      </div>
-      <div class="screen" id="screen"></div>
-      <div class="player-foot">
-        <span class="credit" id="playerCredit"></span>
-        <a class="srcbtn" id="playerSrc" href="#" target="_blank" rel="noopener">Open at source ↗</a>
-      </div>
-    </div>
+<nav aria-label="Sections">
+  <div class="navrow" id="mainnav" role="tablist">
+    <button class="pill" data-view="harbour" role="tab" aria-selected="true">Harbour</button>
+    <button class="pill" data-view="live" role="tab" aria-selected="false">Live</button>
+    <button class="pill" data-view="ships" role="tab" aria-selected="false">Ships</button>
+    <button class="pill" data-view="watch" role="tab" aria-selected="false">Watch</button>
+    <button class="searchbtn" id="opensearch" aria-label="Search everything">Search <kbd>/</kbd></button>
   </div>
+  <div class="subrow" id="subnav"></div>
+</nav>
 
-  <footer>
-    <p class="foot-mark"><a href="https://thecruiselab.com">THE CRUISE LAB</a></p>
-    <p>Independent tools made by a cruiser. Not affiliated with or endorsed by any cruise line, port or channel featured.</p>
-    <p class="credits">All video is embedded from — and remains the property of — its owners, including Solent Ships, PTZtv, the featured creators, the Internet Archive and VesselFinder. Live feeds can go offline without notice.</p>
-    <p>&copy; 2026 The Cruise Lab</p>
-  </footer>
+<main id="views"></main>
+
+<footer>
+  <p class="foot-mark">THE CRUISE LAB</p>
+  <p>Independent tools made by a cruiser. Not affiliated with or endorsed by any cruise line, port, channel or creator featured.</p>
+  <p>All video is embedded from — and remains the property of — its owners, including Solent Ships, PTZtv, the featured creators, the Internet Archive and VesselFinder. Ship-review picks are the most-viewed relevant tours on YouTube; view counts and dates come from YouTube. Live feeds can go offline without notice.</p>
+  <p>&copy; 2026 The Cruise Lab · <a href="https://thecruiselab.com">More tools</a></p>
+</footer>
 
 </div>
-
+<div class="scrim" id="modal" role="dialog" aria-modal="true"></div>
+<div class="searchwrap" id="search"><div class="searchbox"><input id="q" placeholder="Ships, ports, creators, films… (Esc to close)" autocomplete="off"></div><div class="results" id="results"></div></div>
 <script>
-"use strict";
 /* =====================================================================
-   FEEDS — the whole tool is driven from this one array.
-   To add/remove/swap a feed, edit here only. Field guide:
-     sec   : 'port' | 'ship' | 'creator' | 'golden'
-     name  : card title
-     loc   : small uppercase location line
-     desc  : card description
-     kind  : 'yt-video'   → one YouTube video/live stream by VIDEO id.
-                            NOTE: the old live_stream?channel= embed is
-                            DEAD (YouTube retired it — verified 12 Jul
-                            2026), so live cams need the current video id.
-                            When a stream rotates, get the new id from
-                            youtube.com/channel/<UC id>/streams
-             'yt-uploads' → a channel's uploads playlist (its UC… channel
-                            id with UC swapped to UU) — plays latest videos
-             'archive'    → archive.org film (id = the item identifier)
-             'link'       → no embed; card opens srcUrl in a new tab
-     id    : YouTube channel id / uploads playlist id / archive id
-     srcUrl: where "Open at source" points (and where 'link' cards go)
-     src   : credit line shown on the card and under the player
-     chips : ['live'] pulsing live dot · ['still'] refreshing still image
-             · ['ext'] opens external site
-   Finding a YouTube channel id: open the channel page → View Source →
-   search for "channelId". IDs are case-sensitive — copy exactly.
+   Ocean View v2 — The Cruise Lab
+   One FEEDS array + data/reviews.json drive everything.
    ===================================================================== */
 const FEEDS = [
 
@@ -350,7 +227,7 @@ const FEEDS = [
      grab the new id from youtube.com/channel/UCAupQASEG4kt6oXHe0Xwd9Q/streams
      (the "Cruise Cam - Southampton" 24/7 stream) */
   { sec:'port', kind:'yt-video', id:'WxdeHH9T7Yk',
-    name:'Southampton', loc:'England, UK',
+    name:'Southampton', lat:50.897, lon:-1.394, tz:'Europe/London', loc:'England, UK',
     desc:'The UK\u2019s cruise capital, live from Ocean Terminal. Sailaway evenings here can mean five ships leaving in convoy.',
     src:'Solent Ships (YouTube)', srcUrl:'https://www.youtube.com/watch?v=WxdeHH9T7Yk',
     chips:['live'] },
@@ -362,37 +239,37 @@ const FEEDS = [
     chips:['live','ext'] },
 
   { sec:'port', kind:'link',
-    name:'Port Canaveral', loc:'Florida, USA',
+    name:'Port Canaveral', lat:28.41, lon:-80.605, tz:'America/New_York', loc:'Florida, USA',
     desc:'24/7 HD from Fishlips Waterfront, with sail-away follow shows. Rocket launches as a bonus.',
     src:'PTZtv', srcUrl:'https://www.ptztv.live/port-canaveral-webcam/',
     chips:['live','ext'] },
 
   { sec:'port', kind:'link',
-    name:'Port Everglades', loc:'Fort Lauderdale, USA',
+    name:'Port Everglades', lat:26.093, lon:-80.124, tz:'America/New_York', loc:'Fort Lauderdale, USA',
     desc:'One of the world\u2019s busiest cruise ports, with live audio and VHF marine radio.',
     src:'PTZtv', srcUrl:'https://portevergladeswebcam.com',
     chips:['live','ext'] },
 
   { sec:'port', kind:'link',
-    name:'Port Miami', loc:'Florida, USA',
+    name:'Port Miami', lat:25.774, lon:-80.170, tz:'America/New_York', loc:'Florida, USA',
     desc:'The self-styled Cruise Capital of the World — megaships turning in the basin and heading out Government Cut.',
     src:'PTZtv', srcUrl:'https://portmiamiwebcam.com',
     chips:['live','ext'] },
 
   { sec:'port', kind:'link',
-    name:'Nassau', loc:'Bahamas',
+    name:'Nassau', lat:25.078, lon:-77.339, tz:'America/New_York', loc:'Bahamas',
     desc:'Up to six ships a day alongside in the Caribbean\u2019s busiest port of call.',
     src:'PTZtv', srcUrl:'https://portnassauwebcam.com',
     chips:['live','ext'] },
 
   { sec:'port', kind:'link',
-    name:'Paradise Island', loc:'Nassau, Bahamas',
+    name:'Paradise Island', lat:25.083, lon:-77.32, tz:'America/New_York', loc:'Nassau, Bahamas',
     desc:'Sweeping panorama across Nassau harbour to Paradise Island — the postcard angle.',
     src:'PTZtv', srcUrl:'https://www.ptztv.live/paradise-island-cam/',
     chips:['live','ext'] },
 
   { sec:'port', kind:'link',
-    name:'Key West', loc:'Florida, USA',
+    name:'Key West', lat:24.551, lon:-81.78, tz:'America/New_York', loc:'Florida, USA',
     desc:'Harbour views from the southernmost city, with live audio and marine radio.',
     src:'PTZtv', srcUrl:'https://keywestharborwebcam.com',
     chips:['live','ext'] },
@@ -487,209 +364,298 @@ const FEEDS = [
     chips:[] }
 ];
 
-/* ---------------- Sections & categories ---------------- */
-const SECTIONS = {
-  live: {
-    cats: [
-      { key:'port',    label:'Port Cams',    rule:'Port Cams',
-        blurb:'Genuine 24/7 live video of the world\u2019s cruise ports. Click a port to watch ships arrive, turn and sail away.' },
-      { key:'ship',    label:'Ship Cams',    rule:'Ship Cams',
-        blurb:'Cameras aboard ships at sea, on the cruise lines\u2019 own pages. Some are true video, some are stills refreshed every few minutes — marked where known.' },
-      { key:'tracker', label:'Ship Tracker', rule:'Ship Tracker',
-        blurb:'Every ship on the map, right now, via VesselFinder. Pick a cruising region below.' }
-    ]
-  },
-  watch: {
-    cats: [
-      { key:'creator', label:'Reviews & Tips', rule:'Reviews & Tips',
-        blurb:'The cruise creators worth your evenings — reviews, cabin tours, ship tours and first-timer guides, embedded from their own channels.' },
-      { key:'golden',  label:'Golden Age',     rule:'The Golden Age',
-        blurb:'Free films from the archive: launches, maiden voyages and the liners that started it all.' }
-    ]
-  }
-};
+/* ---------- state ---------- */
+const $  = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const DECK_KEY = 'ov-deck';
+let deck = new Set(JSON.parse(localStorage.getItem(DECK_KEY) || '[]'));
+let REVIEWS = null;          // {lines:{line:{ship:{reviews:[...]}}}}
+let SHIPS = [];              // flat [{line,ship,reviews,top}]
+let view = 'harbour', sub = {live:'port', watch:'creator'}, curLine = null;
 
-const TRACKER_PRESETS = [
-  { label:'Southampton',      lat:50.90, lon:-1.40,   zoom:11 },
-  { label:'South Florida',    lat:26.05, lon:-80.10,  zoom:9  },
-  { label:'Caribbean',        lat:18.50, lon:-66.50,  zoom:6  },
-  { label:'Mediterranean',    lat:39.50, lon:10.00,   zoom:5  },
-  { label:'Norwegian Fjords', lat:61.50, lon:5.50,    zoom:6  },
-  { label:'Alaska',           lat:57.60, lon:-134.00, zoom:5  }
-];
+const saveDeck = () => localStorage.setItem(DECK_KEY, JSON.stringify([...deck]));
+const inDeck   = id => deck.has(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmtViews = n => n >= 1e6 ? (n/1e6).toFixed(n>=1e7?0:1)+'M' : n >= 1e3 ? Math.round(n/1e3)+'K' : String(n);
+const thumbUrl = vid => `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
 
-/* ---------------- Embed URL builder ---------------- */
+/* ---------- sun: rough solar elevation for day/night dot ---------- */
+function isDaylight(lat, lon, when = new Date()){
+  const rad = Math.PI/180, d = (Date.UTC(when.getUTCFullYear(),when.getUTCMonth(),when.getUTCDate()) - Date.UTC(when.getUTCFullYear(),0,0))/864e5;
+  const decl = -23.44*rad*Math.cos(2*Math.PI/365*(d+10));
+  const hUTC = when.getUTCHours() + when.getUTCMinutes()/60;
+  const ha = (hUTC*15 + lon - 180)*rad;      // hour angle approx (solar noon at lon)
+  const el = Math.asin(Math.sin(lat*rad)*Math.sin(decl) + Math.cos(lat*rad)*Math.cos(decl)*Math.cos(ha));
+  return el > -0.014;                        // ~civil horizon
+}
+const localTime = tz => { try { return new Intl.DateTimeFormat('en-GB',{timeZone:tz,hour:'2-digit',minute:'2-digit'}).format(new Date()); } catch(e){ return ''; } };
+
+/* ---------- embeds (v2 rule: embed-first; link out only where required) ---------- */
 function embedUrl(f){
+  /* YouTube's embed/live_stream?channel= endpoint is DEAD (v1 lesson) —
+     pin video ids or use uploads playlists (UC->UU). */
   if (f.kind === 'yt-video')   return 'https://www.youtube.com/embed/' + f.id + '?autoplay=1';
   if (f.kind === 'yt-uploads') return 'https://www.youtube.com/embed/videoseries?list=' + f.id;
   if (f.kind === 'archive')    return 'https://archive.org/embed/' + f.id;
   return null;
 }
+const TRACKER_REGIONS = [
+  ['Southampton', 50.90, -1.40, 11], ['South Florida', 26.05, -80.11, 9],
+  ['Caribbean', 18.5, -66.5, 6], ['Med', 39.5, 8.5, 5],
+  ['Fjords', 60.9, 6.5, 6], ['Alaska', 58.3, -134.4, 6],
+];
+const trackerUrl = (lat,lon,z) => `https://www.vesselfinder.com/aismap?zoom=${z}&lat=${lat}&lon=${lon}&names=true`;
 
-/* ---------------- Icons ---------------- */
-const ICONS = {
-  port: '<svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 30 h32 l-4 8 H12 z"/><path d="M14 30 v-8 h20 v8"/><path d="M20 22 v-6 h8 v6"/><path d="M6 42 q4 -4 8 0 t8 0 t8 0 t8 0"/></svg>',
-  ship: '<svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="14" width="20" height="10" rx="2"/><path d="M8 24 h32 l-5 10 H13 z"/><circle cx="20" cy="19" r="1.4" fill="currentColor"/><circle cx="28" cy="19" r="1.4" fill="currentColor"/><path d="M6 40 q4 -4 8 0 t8 0 t8 0 t8 0"/></svg>',
-  creator: '<svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="10" width="34" height="24" rx="4"/><polygon points="20,17 30,22 20,27" fill="currentColor" stroke="none"/><path d="M16 40 h16"/></svg>',
-  golden: '<svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="12" width="34" height="24" rx="3"/><path d="M7 18 h34 M7 30 h34"/><path d="M12 12 v6 M20 12 v6 M28 12 v6 M36 12 v6 M12 30 v6 M20 30 v6 M28 30 v6 M36 30 v6"/></svg>'
-};
+/* ---------- data ---------- */
+const dataReady = (window.__REVIEWS__
+  ? Promise.resolve(window.__REVIEWS__)
+  : fetch('data/reviews.json').then(r => r.ok ? r.json() : null).catch(() => null)
+).then(d => {
+  REVIEWS = d;
+  if (d && d.lines) for (const [line, ships] of Object.entries(d.lines))
+    for (const [ship, v] of Object.entries(ships))
+      SHIPS.push({line, ship, reviews:(v.reviews||[]), top:(v.reviews||[])[0]||null});
+  render();
+});
 
-/* ---------------- State & rendering ---------------- */
-let curSec = 'live';
-let curCat = 'port';
+/* ---------- hearts ---------- */
+function heartBtn(id, label){
+  return `<button class="heart" data-deck="${esc(id)}" aria-pressed="${inDeck(id)}" aria-label="${inDeck(id)?'Remove from':'Add to'} My Deck: ${esc(label)}">${inDeck(id)?'\u2665':'\u2661'}</button>`;
+}
+document.addEventListener('click', e => {
+  const h = e.target.closest('[data-deck]');
+  if (!h) return;
+  e.stopPropagation();
+  const id = h.dataset.deck;
+  deck.has(id) ? deck.delete(id) : deck.add(id);
+  saveDeck(); render();
+});
 
-const $grid    = document.getElementById('grid');
-const $subnav  = document.getElementById('subnav');
-const $rule    = document.getElementById('secRule');
-const $blurb   = document.getElementById('secBlurb');
-const $tracker = document.getElementById('tracker');
-const $presets = document.getElementById('presets');
-const $map     = document.getElementById('mapFrame');
-
-function renderSubnav(){
-  $subnav.innerHTML = '';
-  SECTIONS[curSec].cats.forEach(c => {
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.textContent = c.label;
-    if (c.key === curCat) b.classList.add('on');
-    b.addEventListener('click', () => { curCat = c.key; render(); });
-    $subnav.appendChild(b);
-  });
+/* ---------- card builders ---------- */
+function feedCard(f, opts={}){
+  const id = 'feed:' + f.name;
+  const chips = [];
+  if (f.chips?.includes('live')) chips.push('<span class="tag live">Live</span>');
+  if (f.kind === 'link') chips.push('<span class="tag ext">Opens site \u2197</span>');
+  if (f.chips?.includes('still')) chips.push('<span class="tag time">Still \u00b7 ~5 min</span>');
+  if (opts.clock && f.tz){
+    const day = isDaylight(f.lat, f.lon);
+    chips.push(`<span class="tag time">${localTime(f.tz)} local</span>`);
+    chips.push(day ? '<span class="tag" style="color:var(--gold);background:rgba(217,180,92,.12)">\u2600 Day</span>'
+                   : '<span class="tag night">\u263e Night</span>');
+  }
+  const cover = f.kind==='link'
+    ? `<a class="cover" data-feed="${esc(f.name)}" href="${esc(f.srcUrl)}" target="_blank" rel="noopener" aria-label="${esc(f.name)} (opens site)"></a>`
+    : `<button class="cover" data-feed="${esc(f.name)}" aria-label="Play ${esc(f.name)}"></button>`;
+  return `<div class="card">${cover}${heartBtn(id, f.name)}
+    <div class="chips">${chips.join('')}</div>
+    <h3>${esc(f.name)}</h3><span class="loc">${esc(f.loc||'')}</span>
+    <p>${f.desc||''}</p><span class="src">${esc(f.src||'')}</span>
+  </div>`;
+}
+function shipCard(s){
+  const id = `ship:${s.line}|${s.ship}`;
+  const t = s.top;
+  return `<div class="card shipcard">
+    <button class="cover" data-ship="${esc(s.line)}|${esc(s.ship)}" aria-label="${esc(s.ship)} reviews"></button>
+    ${t ? `<img class="thumb" loading="lazy" src="${thumbUrl(t.videoId)}" alt="">` : ''}
+    ${heartBtn(id, s.ship)}
+    <h3>${esc(s.ship)}</h3><span class="loc">${esc(s.line)}</span>
+    ${t ? `<div class="meta"><span><b>${s.reviews.length}</b> review${s.reviews.length===1?'':'s'}</span><span>top <b>${fmtViews(t.views)}</b> views</span></div>`
+        : `<p style="margin:6px 0 0">Reviews are being gathered for this ship \u2014 check back soon.</p>`}
+  </div>`;
+}
+function reviewRow(r){
+  return `<button class="row" data-video="${esc(r.videoId)}">
+    <img loading="lazy" src="${thumbUrl(r.videoId)}" alt="">
+    <span><span class="t">${esc(r.title)}</span>
+    <span class="m">${esc(r.channel)} \u00b7 <b>${fmtViews(r.views)}</b> views \u00b7 ${r.minutes} min \u00b7 ${esc(r.published)}</span></span>
+  </button>`;
 }
 
-function renderCards(){
-  $grid.innerHTML = '';
-  FEEDS.filter(f => f.sec === curCat).forEach(f => {
-    const card = document.createElement(f.kind === 'link' ? 'a' : 'button');
-    card.className = 'card';
-    if (f.kind === 'link'){
-      card.href = f.srcUrl; card.target = '_blank'; card.rel = 'noopener';
-    } else {
-      card.type = 'button';
-      card.addEventListener('click', () => openPlayer(f));
+/* ---------- views ---------- */
+function railOrEmpty(items, emptyMsg){
+  return items.length ? `<div class="rail">${items.join('')}</div>`
+                      : `<div class="empty">${emptyMsg}</div>`;
+}
+function viewHarbour(){
+  const deckCards = [];
+  for (const id of deck){
+    if (id.startsWith('feed:')){
+      const f = FEEDS.find(x => 'feed:'+x.name === id); if (f) deckCards.push(feedCard(f,{clock:!!f.tz}));
+    } else if (id.startsWith('ship:')){
+      const [line, ship] = id.slice(5).split('|');
+      const s = SHIPS.find(x => x.line===line && x.ship===ship); if (s) deckCards.push(shipCard(s));
     }
-    const chips = (f.chips || []).map(ch => {
-      if (ch === 'live')  return '<span class="chip live">Live</span>';
-      if (ch === 'still') return '<span class="chip still">Still · ~5 min</span>';
-      if (ch === 'ext')   return '<span class="chip ext">Opens site ↗</span>';
-      return '';
-    }).join('');
-    card.innerHTML =
-      '<div class="card-top">' + ICONS[f.sec] + '<div class="chips">' + chips + '</div></div>' +
-      '<h3>' + f.name + '</h3>' +
-      '<span class="loc">' + f.loc + '</span>' +
-      '<p>' + f.desc + '</p>' +
-      '<span class="src">' + f.src + '</span>';
-    $grid.appendChild(card);
-  });
-}
-
-function renderTracker(){
-  if ($presets.childElementCount === 0){
-    TRACKER_PRESETS.forEach((p, i) => {
-      const b = document.createElement('button');
-      b.type = 'button';
-      b.textContent = p.label;
-      if (i === 0) b.classList.add('on');
-      b.addEventListener('click', () => {
-        $presets.querySelectorAll('button').forEach(x => x.classList.remove('on'));
-        b.classList.add('on');
-        setMap(p);
-      });
-      $presets.appendChild(b);
-    });
   }
-  if (!$map.getAttribute('src')) setMap(TRACKER_PRESETS[0]);
+  const liveNow = FEEDS.filter(f => f.sec==='port').map(f => feedCard(f,{clock:true}));
+  const fresh = SHIPS.filter(s=>s.top).flatMap(s=>s.reviews.map(r=>({s,r})))
+    .sort((a,b)=> (b.r.published||'').localeCompare(a.r.published||'')).slice(0,8)
+    .map(({s,r}) => `<div class="card">
+      <button class="cover" data-video="${esc(r.videoId)}" aria-label="Play: ${esc(r.title)}"></button>
+      <img class="thumb" loading="lazy" src="${thumbUrl(r.videoId)}" alt="">
+      ${heartBtn('ship:'+s.line+'|'+s.ship, s.ship)}
+      <h3>${esc(s.ship)}</h3><span class="loc">${esc(s.line)}</span>
+      <div class="meta"><span>${esc(r.channel)}</span><span><b>${fmtViews(r.views)}</b> views</span><span>${esc(r.published)}</span></div></div>`);
+  const films = FEEDS.filter(f=>f.sec==='golden').map(f=>feedCard(f));
+  return `
+    ${deck.size ? `<p class="rule">My Deck</p>${railOrEmpty(deckCards,'')}` : ''}
+    <p class="rule">Live now</p>
+    <p class="blurb">Genuine live video of the world\u2019s cruise ports \u2014 with the local time, and whether the sun\u2019s up.</p>
+    ${railOrEmpty(liveNow,'')}
+    <p class="rule">Fresh reviews</p>
+    <p class="blurb">The newest of the top-viewed ship tours in the catalogue.</p>
+    ${railOrEmpty(fresh, REVIEWS ? 'Reviews are being gathered \u2014 the fleet fills in over the next day or two.' : 'Reviews are being gathered \u2014 check back soon.')}
+    <p class="rule">From the archive</p>
+    ${railOrEmpty(films,'')}`;
 }
-
-function setMap(p){
-  $map.src = 'https://www.vesselfinder.com/aismap?zoom=' + p.zoom +
-             '&lat=' + p.lat + '&lon=' + p.lon + '&names=true';
+function viewLive(){
+  const s = sub.live;
+  const chips = `<div class="subrow" style="padding-bottom:14px">
+    ${[['port','Port Cams'],['ship','Ship Cams'],['tracker','Ship Tracker']].map(([k,l]) =>
+      `<button class="chip" data-sub="live:${k}" aria-selected="${s===k}">${l}</button>`).join('')}</div>`;
+  if (s === 'tracker'){
+    const regions = TRACKER_REGIONS.map(([n,la,lo,z],i)=>`<button class="chip" data-region="${i}" aria-selected="${i===trackerIdx}">${n}</button>`).join('');
+    const [,la,lo,z] = TRACKER_REGIONS[trackerIdx];
+    return `${chips}<p class="blurb">Every ship at sea, live \u2014 VesselFinder\u2019s official map. Pick a cruising region.</p>
+      <div class="subrow" style="padding-bottom:14px">${regions}</div>
+      <div class="trackerbox"><iframe src="${trackerUrl(la,lo,z)}" title="VesselFinder live ship map"></iframe></div>
+      <p class="credit">Live AIS map by <a href="https://www.vesselfinder.com" target="_blank" rel="noopener">VesselFinder</a>.</p>`;
+  }
+  const grid = FEEDS.filter(f=>f.sec===s).map(f=>feedCard(f,{clock:s==='port'})).join('');
+  return `${chips}<div class="grid">${grid}</div>`;
 }
-
+function viewShips(){
+  if (!SHIPS.length) return `<div class="empty">Ship reviews are being gathered \u2014 the catalogue fills in over the next day or two.</div>`;
+  const lines = [...new Set(SHIPS.map(s=>s.line))];
+  if (!curLine || !lines.includes(curLine)) curLine = lines[0];
+  const chips = lines.map(l=>`<button class="chip" data-line="${esc(l)}" aria-selected="${l===curLine}">${esc(l)}</button>`).join('');
+  const withR = SHIPS.filter(s=>s.line===curLine && s.top).sort((a,b)=>b.top.views-a.top.views);
+  const noR   = SHIPS.filter(s=>s.line===curLine && !s.top);
+  return `<p class="blurb">The top three most-viewed tours and reviews for every ship \u2014 straight from the creators, played right here.</p>
+    <div class="linechips">${chips}</div>
+    <div class="grid">${[...withR, ...noR].map(shipCard).join('')}</div>`;
+}
+function viewWatch(){
+  const s = sub.watch;
+  const chips = `<div class="subrow" style="padding-bottom:14px">
+    ${[['creator','Reviews & Tips'],['golden','Golden Age']].map(([k,l]) =>
+      `<button class="chip" data-sub="watch:${k}" aria-selected="${s===k}">${l}</button>`).join('')}</div>`;
+  const blurb = s==='creator'
+    ? '<p class="blurb">The cruise creators worth your time \u2014 latest uploads play right here.</p>'
+    : '<p class="blurb">Ocean liners in their pomp \u2014 films from the Internet Archive.</p>';
+  return `${chips}${blurb}<div class="grid">${FEEDS.filter(f=>f.sec===s).map(f=>feedCard(f)).join('')}</div>`;
+}
+let trackerIdx = 0;
 function render(){
-  renderSubnav();
-  const cat = SECTIONS[curSec].cats.find(c => c.key === curCat);
-  $rule.textContent = cat.rule;
-  $blurb.textContent = cat.blurb;
-  if (curCat === 'tracker'){
-    $grid.style.display = 'none';
-    $tracker.classList.add('on');
-    renderTracker();
-  } else {
-    $tracker.classList.remove('on');
-    $grid.style.display = 'grid';
-    renderCards();
+  $$('#mainnav .pill').forEach(p => p.setAttribute('aria-selected', p.dataset.view===view));
+  $('#views').innerHTML = {harbour:viewHarbour, live:viewLive, ships:viewShips, watch:viewWatch}[view]();
+}
+
+/* ---------- modal player ---------- */
+function openModal(html){ const m=$('#modal'); m.innerHTML=`<div class="sheet">${html}</div>`; m.classList.add('open'); }
+function closeModal(){ const m=$('#modal'); m.classList.remove('open'); m.innerHTML=''; }
+function playVideo(vid, title, credit){
+  openModal(`<div class="bar"><div><h2>${esc(title||'Now playing')}</h2>
+    ${credit?`<div class="sub">${esc(credit)}</div>`:''}</div>
+    <button class="x" data-close aria-label="Close">\u2715</button></div>
+    <div class="player"><iframe src="https://www.youtube.com/embed/${esc(vid)}?autoplay=1"
+      title="${esc(title||'Video')}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+    <p class="credit">Played with YouTube\u2019s official embedded player \u2014 views and revenue go to the creator.</p>`);
+}
+function openFeed(f){
+  const url = embedUrl(f);
+  if (!url) { window.open(f.srcUrl, '_blank', 'noopener'); return; }
+  openModal(`<div class="bar"><div><h2>${esc(f.name)}</h2><div class="sub">${esc(f.loc||'')} \u00b7 ${esc(f.src||'')}</div></div>
+    <button class="x" data-close aria-label="Close">\u2715</button></div>
+    <div class="player"><iframe src="${url}" title="${esc(f.name)}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+    <p class="credit">Embedded from <a href="${esc(f.srcUrl)}" target="_blank" rel="noopener">${esc(f.src)}</a>.</p>`);
+}
+function openShip(line, ship){
+  const s = SHIPS.find(x=>x.line===line && x.ship===ship); if (!s) return;
+  const rows = s.reviews.length ? `<div class="rows">${s.reviews.map(reviewRow).join('')}</div>`
+    : `<div class="empty">Reviews are being gathered for ${esc(ship)} \u2014 check back soon.</div>`;
+  openModal(`<div class="bar"><div><h2>${esc(ship)}</h2><div class="sub">${esc(line)} \u00b7 top tours &amp; reviews by views</div></div>
+    <button class="x" data-close aria-label="Close">\u2715</button></div>${rows}
+    <p class="credit">Independent creators\u2019 work, played with YouTube\u2019s official embedded player. View counts and dates from YouTube.</p>`);
+}
+
+/* ---------- search ---------- */
+function buildIndex(){
+  const ix = [];
+  for (const f of FEEDS) ix.push({g: f.sec==='port'||f.sec==='ship' ? 'Cams & Tracker' : f.sec==='golden' ? 'Films' : 'Creators',
+    label: f.name, extra: f.loc||'', act: () => f.kind==='link' ? window.open(f.srcUrl,'_blank','noopener') : openFeed(f),
+    hay: (f.name+' '+(f.loc||'')+' '+(f.desc||'')).toLowerCase()});
+  ix.push({g:'Cams & Tracker', label:'Ship Tracker', extra:'live map', act: () => {view='live'; sub.live='tracker'; render();}, hay:'ship tracker vesselfinder live map ais'});
+  for (const s of SHIPS) ix.push({g:'Ships', label:s.ship, extra:s.line,
+    act: () => openShip(s.line, s.ship), hay:(s.ship+' '+s.line).toLowerCase()});
+  return ix;
+}
+function doSearch(q){
+  q = q.trim().toLowerCase();
+  const out = $('#results'); out.innerHTML = '';
+  if (q.length < 2) return;
+  const hits = buildIndex().map(item => {
+    let score = -1;
+    if (item.hay.includes(q)) score = item.label.toLowerCase().startsWith(q) ? 0 : item.label.toLowerCase().includes(q) ? 1 : 2;
+    return {item, score};
+  }).filter(h => h.score >= 0).sort((a,b) => a.score-b.score).slice(0, 24);
+  let lastG = null, html = '';
+  for (const {item} of hits){
+    if (item.g !== lastG){ html += `<div class="rgroup">${item.g}</div>`; lastG = item.g; }
+    html += `<button class="rhit" data-hit><span>${esc(item.label)}</span><span class="k">${esc(item.extra)}</span></button>`;
   }
+  out.innerHTML = html || '<div class="empty">Nothing matches \u2014 try a ship, port or creator name.</div>';
+  out._hits = hits.map(h => h.item);
+  $$('#results [data-hit]').forEach((el, i) => el.addEventListener('click', () => { closeSearch(); out._hits[i].act(); }));
 }
+function openSearch(){ $('#search').classList.add('open'); $('#q').value=''; $('#results').innerHTML=''; $('#q').focus(); }
+function closeSearch(){ $('#search').classList.remove('open'); }
 
-document.querySelectorAll('.nav button').forEach(b => {
-  b.addEventListener('click', () => {
-    document.querySelectorAll('.nav button').forEach(x => x.classList.remove('on'));
-    b.classList.add('on');
-    curSec = b.dataset.sec;
-    curCat = SECTIONS[curSec].cats[0].key;
-    render();
-  });
+/* ---------- events ---------- */
+document.addEventListener('click', e => {
+  const nav = e.target.closest('#mainnav .pill'); if (nav){ view = nav.dataset.view; render(); return; }
+  const sc  = e.target.closest('[data-sub]');     if (sc){ const [v,k]=sc.dataset.sub.split(':'); sub[v]=k; render(); return; }
+  const lc  = e.target.closest('[data-line]');    if (lc){ curLine = lc.dataset.line; render(); return; }
+  const rc  = e.target.closest('[data-region]');  if (rc){ trackerIdx = +rc.dataset.region; render(); return; }
+  const fc  = e.target.closest('button[data-feed]'); if (fc){ const f=FEEDS.find(x=>x.name===fc.dataset.feed); if(f) openFeed(f); return; }
+  const shc = e.target.closest('[data-ship]');    if (shc){ const [l,s]=shc.dataset.ship.split('|'); openShip(l,s); return; }
+  const vc  = e.target.closest('[data-video]');   if (vc){
+    const r = SHIPS.flatMap(s=>s.reviews.map(x=>({s,x}))).find(o=>o.x.videoId===vc.dataset.video);
+    playVideo(vc.dataset.video, r?`${r.s.ship} \u2014 ${r.x.title}`:'Ship review', r?`${r.x.channel} \u00b7 ${fmtViews(r.x.views)} views \u00b7 ${r.x.published}`:''); return; }
+  if (e.target.closest('[data-close]') || e.target === $('#modal')) closeModal();
+  if (e.target === $('#search')) closeSearch();
+  if (e.target.closest('#opensearch')) openSearch();
 });
-
-/* ---------------- Player modal ---------------- */
-const $modal  = document.getElementById('modal');
-const $screen = document.getElementById('screen');
-const $title  = document.getElementById('playerTitle');
-const $loc    = document.getElementById('playerLoc');
-const $credit = document.getElementById('playerCredit');
-const $srcBtn = document.getElementById('playerSrc');
-let lastFocus = null;
-
-function openPlayer(f){
-  lastFocus = document.activeElement;
-  $title.textContent  = f.name;
-  $loc.textContent    = f.loc;
-  $credit.textContent = 'Source: ' + f.src;
-  $srcBtn.href        = f.srcUrl;
-  $screen.innerHTML =
-    '<div class="offline"><strong>Loading\u2026</strong>' +
-    '<span>If nothing appears, this feed may be offline right now \u2014 try \u201cOpen at source\u201d.</span></div>' +
-    '<iframe src="' + embedUrl(f) + '" title="' + f.name.replace(/"/g,'&quot;') + '" ' +
-    'allow="fullscreen; autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>';
-  $modal.classList.add('on');
-  document.body.style.overflow = 'hidden';
-  document.getElementById('closeBtn').focus();
-}
-
-function closePlayer(){
-  $modal.classList.remove('on');
-  $screen.innerHTML = '';           /* stops playback */
-  document.body.style.overflow = '';
-  if (lastFocus && lastFocus.focus) lastFocus.focus();
-}
-
-document.getElementById('closeBtn').addEventListener('click', closePlayer);
-$modal.addEventListener('click', e => { if (e.target === $modal) closePlayer(); });
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && $modal.classList.contains('on')) closePlayer();
+  if (e.key === 'Escape'){ closeModal(); closeSearch(); }
+  if (e.key === '/' && !$('#search').classList.contains('open') && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)){
+    e.preventDefault(); openSearch();
+  }
 });
+$('#q').addEventListener('input', e => doSearch(e.target.value));
 
-/* ---------------- Debug mode: ?debug=1 renders every embed inline ---------------- */
-if (new URLSearchParams(location.search).get('debug') === '1'){
+/* ---------- debug sweep (?debug=1): render every embed + tracker inline ---------- */
+function debugSweep(){
   const dbg = document.createElement('section');
-  dbg.className = 'debug';
-  FEEDS.filter(f => f.kind !== 'link').forEach(f => {
-    const h = document.createElement('h3'); h.textContent = f.name + ' \u00b7 ' + f.kind;
-    const s = document.createElement('div'); s.className = 'screen';
-    s.innerHTML = '<iframe src="' + embedUrl(f) + '" title="' + f.name.replace(/"/g,'&quot;') + '" allow="fullscreen" loading="lazy"></iframe>';
-    dbg.appendChild(h); dbg.appendChild(s);
-  });
-  const h = document.createElement('h3'); h.textContent = 'VesselFinder tracker';
-  const s = document.createElement('div'); s.className = 'screen';
-  s.innerHTML = '<iframe src="https://www.vesselfinder.com/aismap?zoom=11&lat=50.9&lon=-1.4&names=true" title="tracker"></iframe>';
-  dbg.appendChild(h); dbg.appendChild(s);
+  dbg.innerHTML = '<p class="rule">Debug \u00b7 every embed</p>';
+  for (const f of FEEDS){
+    const url = embedUrl(f); if (!url) continue;
+    dbg.insertAdjacentHTML('beforeend',
+      `<h3 style="font-family:Cinzel,serif;color:var(--gold);margin:14px 0 6px">${esc(f.name)} \u00b7 ${f.kind}</h3>
+       <div class="player" style="margin-bottom:10px"><iframe src="${url.replace('?autoplay=1','')}" title="${esc(f.name)}"></iframe></div>`);
+  }
+  const [,la,lo,z] = TRACKER_REGIONS[0];
+  dbg.insertAdjacentHTML('beforeend',
+    `<h3 style="font-family:Cinzel,serif;color:var(--gold);margin:14px 0 6px">VesselFinder tracker</h3>
+     <div class="trackerbox"><iframe src="${trackerUrl(la,lo,z)}" title="tracker"></iframe></div>`);
   document.querySelector('footer').before(dbg);
 }
 
+/* ---------- boot ---------- */
+window.FEEDS = FEEDS;   // exposed for tests & console tinkering
 render();
+if (new URLSearchParams(location.search).get('debug') === '1') debugSweep();
 </script>
 </body>
 </html>

@@ -7,7 +7,8 @@
   --border:#e6edf6;
   --navy:#0b1f3a;
   --navy2:#0f2b46;
-  --gold:#c9a24a;
+  --gold:#d9b45c;
+  --gold-bright:#f0d087;
   --shadow:0 18px 40px rgba(10, 25, 50, .08);
   --radius:22px;
 }
@@ -16,7 +17,7 @@
 html,body{height:100%}
 body{
   margin:0;
-  font-family: Corbel, 'Segoe UI', Candara, Calibri, 'Trebuchet MS', Arial, sans-serif;
+  font-family:'Outfit', 'Segoe UI', Candara, Calibri, 'Trebuchet MS', Arial, sans-serif;
   background:var(--bg);
   color:var(--ink);
 }
@@ -380,7 +381,7 @@ body{
   width:24px;
   height:24px;
   border-radius:999px;
-  background:linear-gradient(90deg,#0b1f3a,#c9a24a);
+  background:linear-gradient(90deg,#0b1f3a,#d9b45c);
   transition:left .2s ease;
 }
 .unitToggle__btn[aria-pressed="true"] .unitToggle__knob{
@@ -1499,4 +1500,60 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 @media (max-width: 600px){
   .hero__title{ font-size: 24px; max-width: 92vw; }
+}
+
+
+/* =========================
+   Cruise Lab family footer (rebrand)
+   ========================= */
+.clab-footer{
+  width:100%;
+  max-width:900px;
+  margin:44px auto 0;
+  padding:26px 20px 4px;
+  border-top:1px solid var(--border);
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+.clab-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  font-family:'Cinzel', Georgia, 'Times New Roman', serif;
+  font-weight:600;
+  font-size:13px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--navy);
+  padding:9px 18px;
+  border:1px solid rgba(217,180,92,.5);
+  border-radius:999px;
+  background:linear-gradient(180deg, rgba(217,180,92,.10), rgba(255,255,255,0));
+  transition:border-color .18s ease, background .18s ease;
+}
+.clab-badge:hover{
+  border-color:var(--gold);
+  background:linear-gradient(180deg, rgba(217,180,92,.18), rgba(255,255,255,0));
+}
+.clab-badge__flask{ width:18px; height:auto; flex:0 0 auto; }
+.clab-badge__text b{ color:var(--gold); font-weight:600; }
+.clab-foot-note{
+  font-size:12px;
+  color:var(--muted);
+  font-weight:300;
+}
+.clab-foot-note a{ color:var(--muted); text-decoration:underline; text-underline-offset:2px; }
+.clab-foot-note a:hover{ color:var(--navy); }
+
+/* Cinzel display headings to echo the hub (rebrand) */
+.sectionTitle{
+  font-family:'Cinzel', Georgia, serif;
+  letter-spacing:.01em;
+}
+.brand__name{
+  font-family:'Cinzel', Georgia, serif;
 }

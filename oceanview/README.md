@@ -1,4 +1,4 @@
-# Ocean View — live cruise cams & free cruise video
+# Ocean View (v2) — live cruise cams & free cruise video
 
 Part of **The Cruise Lab** (thecruiselab.com). A curated player for freely
 available cruise video: live port webcams, cruise-line ship cams, a live ship
@@ -42,6 +42,32 @@ needs touching. Four feed kinds:
 Finding a YouTube channel id: open the channel page → View Source → search
 `channelId`. IDs are **case-sensitive** — copy exactly. Tracker regions are
 the `TRACKER_PRESETS` array.
+
+
+## v2 (13 Jul 2026) — the app re-imagined
+
+Four views behind the nav pills: **Harbour** (the "EPG" re-imagined — My Deck,
+Live now with local time + day/night per port, Fresh reviews, archive rail),
+**Live** (Port Cams / Ship Cams / VesselFinder tracker with region presets),
+**Ships** (top-3 most-viewed reviews for ~175 ships across 12 lines, from
+`data/reviews.json` — see `pipeline/README.md` for the harvest), and **Watch**
+(creators + Golden Age films). Product promises: nothing autoplays, everything
+visible is free and watchable, no accounts.
+
+- **My Deck**: heart anything; persisted in `localStorage` key `ov-deck`. No
+  accounts by design.
+- **Search**: press `/` anywhere. Client-side over FEEDS + the ship catalogue,
+  grouped results, every hit playable.
+- **Embed-first rule**: all reviews/creators/films play in the in-page modal
+  via official embeds (URL never leaves watch.thecruiselab.com); link-out cards
+  remain only where the owner requires on-site viewing (PTZtv, cruise-line cams).
+- **Data**: `data/reviews.json` is fetched at runtime — deploy the folder and
+  the app picks up each day's harvest automatically. Ships with no reviews yet
+  render a graceful "being gathered" state. `window.__REVIEWS__` overrides the
+  fetch (used by the jsdom test suite).
+- **Cards**: hearts sit on a stretched invisible `.cover` action layer —
+  never nest interactive elements (the HTML parser ejects them; this bit us).
+- `?debug=1` still renders every embed + the tracker for post-deploy sweeps.
 
 ## Verification
 
