@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>The Cruise Lab · All free tools</title>
+<meta name="description" content="The Cruise Lab — free web tools built by a cruiser, for cruisers. Cabin scores, casino points, cruise weather, bar tabs, connectivity and port guides, all in one place.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="The Cruise Lab · All free tools">
+<meta property="og:description" content="Free web tools built by a cruiser, for cruisers. Pick a tool below.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://links.thecruiselab.com">
+<meta name="theme-color" content="#081830">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ocean-deep:#081830;
+  --ocean:#0d2445;
+  --panel:#122c52;
+  --panel-edge:#1d3d6b;
+  --gold:#d9b45c;
+  --gold-bright:#f0d087;
+  --gold-dim:rgba(217,180,92,.35);
+  --foam:#f3efe4;
+  --mist:#8fa2bd;
+  --seaglass:#46c3a8;
+  --seaglass-dim:rgba(70,195,168,.18);
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:'Outfit',sans-serif;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #16335e 0%, transparent 60%),
+    var(--ocean-deep);
+  color:var(--foam);
+  min-height:100vh;
+  padding:0 18px calc(40px + env(safe-area-inset-bottom));
+  line-height:1.5;
+}
+.wrap{max-width:520px;margin:0 auto}
+
+/* ---------- Header ---------- */
+header{text-align:center;padding:48px 8px 8px}
+.flask{
+  width:64px;height:auto;margin:0 auto 12px;display:block;
+  filter:drop-shadow(0 6px 24px rgba(217,180,92,.18));
+}
+.flask .wave{animation:lap 5s ease-in-out infinite alternate}
+@keyframes lap{
+  from{transform:translateX(0)}
+  to{transform:translateX(-14px)}
+}
+@media (prefers-reduced-motion:reduce){.flask .wave{animation:none}}
+
+h1{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:clamp(1.5rem,7vw,1.9rem);
+  letter-spacing:.5px;line-height:1.1;
+  background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:var(--gold);
+}
+h1 .the{
+  display:block;font-size:.42em;letter-spacing:.34em;
+  font-weight:600;margin-bottom:.15em;
+  -webkit-text-fill-color:var(--gold);color:var(--gold);
+}
+.tagline{
+  color:var(--mist);font-weight:300;
+  font-size:.98rem;max-width:360px;margin:10px auto 0;
+}
+.tagline strong{color:var(--foam);font-weight:500}
+
+/* ---------- Divider ---------- */
+.rule{
+  display:flex;align-items:center;gap:14px;
+  color:var(--gold);font-size:.68rem;letter-spacing:.28em;
+  text-transform:uppercase;font-weight:600;
+  margin:30px 4px 16px;
+}
+.rule::before,.rule::after{
+  content:"";height:1px;flex:1;
+  background:linear-gradient(90deg,transparent,var(--gold-dim),transparent);
+}
+
+/* ---------- Link rows ---------- */
+.links{display:flex;flex-direction:column;gap:12px}
+.link{
+  display:flex;align-items:center;gap:16px;
+  padding:16px 18px;
+  background:linear-gradient(160deg,var(--panel),var(--ocean));
+  border:1px solid var(--panel-edge);
+  border-radius:var(--radius);
+  text-decoration:none;color:var(--foam);
+  transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease;
+}
+.link:hover,.link:focus-visible{
+  transform:translateY(-2px);
+  border-color:var(--gold);
+  box-shadow:0 8px 28px rgba(0,0,0,.28);
+  outline:none;
+}
+.link:focus-visible{box-shadow:0 0 0 2px var(--gold-bright),0 8px 28px rgba(0,0,0,.28)}
+.ico{
+  flex:0 0 auto;width:34px;height:34px;
+  color:var(--gold);display:grid;place-items:center;
+}
+.ico svg{width:34px;height:34px}
+.txt{display:flex;flex-direction:column;flex:1;min-width:0}
+.name{
+  font-family:'Cinzel',serif;font-weight:600;
+  font-size:1.02rem;letter-spacing:.3px;color:var(--foam);
+}
+.tag{font-size:.82rem;color:var(--mist);font-weight:300}
+.arrow{
+  flex:0 0 auto;font-size:1.6rem;line-height:1;color:var(--gold-dim);
+  transition:color .16s ease,transform .16s ease;
+}
+.link:hover .arrow,.link:focus-visible .arrow{color:var(--gold);transform:translateX(3px)}
+
+/* Forever Voyage — the paid offering, set apart */
+.link.fv{
+  background:linear-gradient(160deg,rgba(217,180,92,.10),var(--ocean));
+  border-color:var(--gold-dim);
+}
+.link.fv .ico{color:var(--gold-bright)}
+.fv-label{
+  display:inline-block;font-size:.6rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--gold);font-weight:600;
+  margin-top:3px;
+}
+
+/* ---------- Footer ---------- */
+footer{text-align:center;margin-top:28px}
+footer a{color:var(--gold);text-decoration:none;font-weight:500}
+footer a:hover{text-decoration:underline}
+.foot-line{color:var(--mist);font-size:.8rem;font-weight:300}
+.disclaimer{
+  color:var(--mist);opacity:.7;font-size:.68rem;font-weight:300;
+  max-width:400px;margin:14px auto 0;line-height:1.45;
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <svg class="flask" viewBox="0 0 100 110" aria-hidden="true">
+        <defs>
+          <clipPath id="flaskClip">
+            <path d="M42 12 h16 v26 l24 46 c4 8 -2 18 -11 18 H29 c-9 0 -15 -10 -11 -18 l24 -46 z"/>
+          </clipPath>
+          <linearGradient id="goldStroke" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f0d087"/>
+            <stop offset="1" stop-color="#d9b45c"/>
+          </linearGradient>
+        </defs>
+        <g clip-path="url(#flaskClip)">
+          <rect x="0" y="66" width="100" height="44" fill="#0d2445"/>
+          <path class="wave" fill="#1d3d6b"
+            d="M-14 68 q7 -5 14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0 v44 h-126 z"/>
+          <path class="wave" fill="#46c3a8" opacity=".35" style="animation-duration:7s"
+            d="M-14 72 q7 -4 14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0 v40 h-126 z"/>
+        </g>
+        <path d="M42 12 h16 v26 l24 46 c4 8 -2 18 -11 18 H29 c-9 0 -15 -10 -11 -18 l24 -46 z"
+          fill="none" stroke="url(#goldStroke)" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M38 12 h24" stroke="url(#goldStroke)" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="50" cy="52" r="4" fill="#f0d087" opacity=".9"/>
+      </svg>
+      <h1><span class="the">The</span> Cruise Lab</h1>
+      <p class="tagline">Free web tools built <strong>by a cruiser, for cruisers</strong>.</p>
+    </header>
+
+    <p class="rule">The Fleet</p>
+    <nav class="links">
+      <a class="link" href="https://cabins.thecruiselab.com">
+        <span class="ico"><svg class="tool-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="24" cy="24" r="17"/>
+        <circle cx="24" cy="24" r="11"/>
+        <path d="M17 27 q3.5 -3 7 0 t7 0" />
+        <circle cx="24" cy="7" r="1.4" fill="currentColor"/>
+        <circle cx="24" cy="41" r="1.4" fill="currentColor"/>
+        <circle cx="7" cy="24" r="1.4" fill="currentColor"/>
+        <circle cx="41" cy="24" r="1.4" fill="currentColor"/>
+      </svg></span>
+        <span class="txt"><span class="name">Good Cabin Bad Cabin</span><span class="tag">Score any cabin before you book</span></span>
+        <span class="arrow" aria-hidden="true">&rsaquo;</span>
+      </a>
+      <a class="link" href="https://casinopoints.thecruiselab.com/princess/">
+        <span class="ico"><svg class="tool-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="8" y="8" width="32" height="32" rx="6"/>
+        <circle cx="17" cy="17" r="1.8" fill="currentColor"/>
+        <circle cx="31" cy="17" r="1.8" fill="currentColor"/>
+        <circle cx="24" cy="24" r="1.8" fill="currentColor"/>
+        <circle cx="17" cy="31" r="1.8" fill="currentColor"/>
+        <circle cx="31" cy="31" r="1.8" fill="currentColor"/>
+      </svg></span>
+        <span class="txt"><span class="name">Sea You Soon</span><span class="tag">The casino comp points you need</span></span>
+        <span class="arrow" aria-hidden="true">&rsaquo;</span>
+      </a>
+      <a class="link" href="https://weather.thecruiselab.com">
+        <span class="ico"><svg class="tool-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="18" cy="16" r="6"/>
+        <path d="M18 4 v3 M18 25 v3 M6 16 h3 M27 16 h3 M9.5 7.5 l2.1 2.1 M24.4 22.4 l2.1 2.1 M26.5 7.5 l-2.1 2.1"/>
+        <path d="M16 36 q4 -4 8 0 t8 0 t8 0" />
+        <path d="M12 42 q4 -4 8 0 t8 0" />
+      </svg></span>
+        <span class="txt"><span class="name">GetMyCruiseWeather</span><span class="tag">Port-by-port forecasts for your sailing</span></span>
+        <span class="arrow" aria-hidden="true">&rsaquo;</span>
+      </a>
+      <a class="link" href="https://watch.thecruiselab.com">
+        <span class="ico"><svg class="tool-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        
+        <circle cx="24" cy="24" r="17"/>
+        <circle cx="24" cy="24" r="12"/>
+        <path d="M15 26 q3 -2.5 6 0 t6 0 t6 0" />
+        <circle cx="29" cy="19" r="1.6" fill="currentColor"/>
+        <circle cx="24" cy="7" r="1.4" fill="currentColor"/>
+        <circle cx="24" cy="41" r="1.4" fill="currentColor"/>
+        <circle cx="7" cy="24" r="1.4" fill="currentColor"/>
+        <circle cx="41" cy="24" r="1.4" fill="currentColor"/>
+        <circle cx="12" cy="12" r="1.4" fill="currentColor"/>
+        <circle cx="36" cy="12" r="1.4" fill="currentColor"/>
+        <circle cx="12" cy="36" r="1.4" fill="currentColor"/>
+        <circle cx="36" cy="36" r="1.4" fill="currentColor"/>
+      </svg></span>
+        <span class="txt"><span class="name">Ocean View</span><span class="tag">Live cruise cams &amp; free cruise video</span></span>
+        <span class="arrow" aria-hidden="true">&rsaquo;</span>
+      </a>
+      <a class="link" href="https://bartab.thecruiselab.com">
+        <span class="ico"><svg class="tool-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <!-- cocktail glass -->
+        <path d="M10 10 h28 l-14 15 z"/>
+        <path d="M24 25 v13"/>
+        <path d="M16 42 h16"/>
+        <circle cx="30" cy="13" r="1.8" fill="currentColor"/>
+        <path d="M14 14 q5 -2 10 0"/>
+      </svg></span>
+        <span class="txt"><span class="name">GetMyBarTab</span><span class="tag">What you'll really spend on drinks</span></span>
+        <span class="arrow" aria-hidden="true">&rsaquo;</span>
+      </a>
+      <a class="link" href="https://connection.thecruiselab.com">
+        <span class="ico"><svg class="tool-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <!-- wifi over the sea -->
+        <path d="M10 22 q14 -12 28 0"/>
+        <path d="M15 27 q9 -8 18 0"/>
+        <path d="M20 32 q4 -3.5 8 0"/>
+        <circle cx="24" cy="36" r="1.8" fill="currentColor"/>
+        <path d="M8 43 q4 -4 8 0 t8 0 t8 0 t8 0"/>
+      </svg></span>
+        <span class="txt"><span class="name">GetMyCruiseConnection</span><span class="tag">WiFi, roaming &amp; eSIMs, decoded</span></span>
+        <span class="arrow" aria-hidden="true">&rsaquo;</span>
+      </a>
+      <a class="link" href="https://shorething.thecruiselab.com">
+        <span class="ico"><svg class="tool-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <!-- open guide book with a route dot -->
+        <path d="M24 12 q-7 -5 -16 -3 v27 q9 -2 16 3 q7 -5 16 -3 V9 q-9 -2 -16 3 z"/>
+        <path d="M24 12 v27"/>
+        <path d="M13 18 q4 -1 7 0 M13 24 q4 -1 7 0 M28 18 q4 -1 7 0"/>
+        <circle cx="31.5" cy="26" r="2" fill="currentColor"/>
+      </svg></span>
+        <span class="txt"><span class="name">Shore Thing</span><span class="tag">A port guide for your exact sailing</span></span>
+        <span class="arrow" aria-hidden="true">&rsaquo;</span>
+      </a>
+    </nav>
+
+    <p class="rule">Made to order</p>
+    <nav class="links">
+      <a class="link fv" href="https://forevervoyage.thecruiselab.com">
+        <span class="ico"><svg class="tool-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="24" cy="24" r="17"/>
+        <polygon points="24,7 27,24 24,21 21,24"/>
+        <polygon points="24,41 21,24 24,27 27,24"/>
+        <polygon points="41,24 24,21 27,24 24,27"/>
+        <polygon points="7,24 24,27 21,24 24,21"/>
+        <circle cx="24" cy="24" r="2" fill="currentColor"/>
+      </svg></span>
+        <span class="txt"><span class="name">Forever Voyage</span><span class="tag">A bespoke keepsake site for your own cruise</span></span>
+        <span class="arrow" aria-hidden="true">&rsaquo;</span>
+      </a>
+    </nav>
+
+    <footer>
+      <p class="foot-line">Everything at <a href="https://thecruiselab.com">thecruiselab.com</a></p>
+      <p class="disclaimer">The Cruise Lab is independent and not affiliated with or endorsed by Princess Cruises, MSC Cruises or any cruise line. Some tools use partner links; we may earn a small commission.</p>
+    </footer>
+  </div>
+</body>
+</html>
