@@ -1,0 +1,56 @@
+{
+  "_schema": {
+    "_comment": "Fleet roster for Shore Thing's sailing picker. Lines in display order; each ship has a stable id (slug), display name, and optional class. Designed to map cleanly onto Widgety's operator+ship model for a future feed swap: Widgety 'operator' -> line, Widgety 'ship' -> ship. When licensing Widgety later, map their operator_id/ship_id into the 'widgetyId' fields (left null for now).",
+    "line": {
+      "id": "slug, stable, lowercase-hyphenated — used as key everywhere",
+      "name": "display name shown in picker",
+      "widgetyId": "null for now; Widgety operator id when feed is licensed",
+      "ships": "array of ship objects"
+    },
+    "ship": {
+      "id": "slug, stable, unique WITHIN its line",
+      "name": "display name",
+      "shipClass": "optional — ship class/series for grouping",
+      "widgetyId": "null for now; Widgety ship id when feed is licensed"
+    }
+  },
+  "_status": {
+    "seeded": ["princess"],
+    "awaiting_research": ["royal-caribbean","carnival","norwegian","msc","celebrity","holland-america","costa","disney","virgin-voyages"],
+    "note": "Only Princess is populated as the build seed. The other 9 Tier-1 lines are stubbed with empty ship arrays so the picker renders them (and routes to manual entry until ships are added). Fill ship arrays from the Research roster — no code changes needed."
+  },
+  "lines": [
+    {
+      "id": "princess",
+      "name": "Princess Cruises",
+      "widgetyId": null,
+      "ships": [
+        {"id": "sky-princess", "name": "Sky Princess", "shipClass": "Royal", "widgetyId": null},
+        {"id": "enchanted-princess", "name": "Enchanted Princess", "shipClass": "Royal", "widgetyId": null},
+        {"id": "discovery-princess", "name": "Discovery Princess", "shipClass": "Royal", "widgetyId": null},
+        {"id": "regal-princess", "name": "Regal Princess", "shipClass": "Royal", "widgetyId": null},
+        {"id": "royal-princess", "name": "Royal Princess", "shipClass": "Royal", "widgetyId": null},
+        {"id": "majestic-princess", "name": "Majestic Princess", "shipClass": "Royal", "widgetyId": null},
+        {"id": "sun-princess", "name": "Sun Princess", "shipClass": "Sphere", "widgetyId": null},
+        {"id": "star-princess", "name": "Star Princess", "shipClass": "Sphere", "widgetyId": null},
+        {"id": "caribbean-princess", "name": "Caribbean Princess", "shipClass": "Grand", "widgetyId": null},
+        {"id": "crown-princess", "name": "Crown Princess", "shipClass": "Grand", "widgetyId": null},
+        {"id": "emerald-princess", "name": "Emerald Princess", "shipClass": "Grand", "widgetyId": null},
+        {"id": "ruby-princess", "name": "Ruby Princess", "shipClass": "Grand", "widgetyId": null},
+        {"id": "diamond-princess", "name": "Diamond Princess", "shipClass": "Diamond", "widgetyId": null},
+        {"id": "sapphire-princess", "name": "Sapphire Princess", "shipClass": "Diamond", "widgetyId": null},
+        {"id": "coral-princess", "name": "Coral Princess", "shipClass": "Coral", "widgetyId": null},
+        {"id": "island-princess", "name": "Island Princess", "shipClass": "Coral", "widgetyId": null}
+      ]
+    },
+    {"id": "royal-caribbean", "name": "Royal Caribbean International", "widgetyId": null, "ships": []},
+    {"id": "carnival", "name": "Carnival Cruise Line", "widgetyId": null, "ships": []},
+    {"id": "norwegian", "name": "Norwegian Cruise Line", "widgetyId": null, "ships": []},
+    {"id": "msc", "name": "MSC Cruises", "widgetyId": null, "ships": []},
+    {"id": "celebrity", "name": "Celebrity Cruises", "widgetyId": null, "ships": []},
+    {"id": "holland-america", "name": "Holland America Line", "widgetyId": null, "ships": []},
+    {"id": "costa", "name": "Costa Cruises", "widgetyId": null, "ships": []},
+    {"id": "disney", "name": "Disney Cruise Line", "widgetyId": null, "ships": []},
+    {"id": "virgin-voyages", "name": "Virgin Voyages", "widgetyId": null, "ships": []}
+  ]
+}

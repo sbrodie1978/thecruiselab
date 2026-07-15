@@ -30,6 +30,53 @@ Then curl the canonical `shorething.pages.dev` URL to confirm the deploy landed
 on production (an `alias URL: <branch>.shorething.pages.dev` line in the
 wrangler output means it went to a preview branch instead).
 
+## Sailing picker (v2) — line → ship → date
+
+The primary way to build a guide is now a three-step picker: **cruise line →
+ship → sailing date**, which resolves to a known itinerary and builds the guide
+automatically. The manual port-by-port builder is still there as a secondary
+option ("Don't see your sailing? Build it by hand"), unchanged.
+
+### Data layer (designed for a clean Widgety swap later)
+
+Three files under `data/` plus a build script:
+
+- **`fleet.json`** — the roster: cruise lines and their ships (ids + display
+  names). Populated for Princess; the other 9 Tier-1 lines are stubbed with
+  empty ship arrays so they still appear in the picker (and route to manual
+  entry until ships are added). Fill the ship arrays from the fleet roster.
+- **`itinerary-templates.json`** — AUTHORING layer, hand-maintained. Each
+  template is one repeating itinerary (ordered day-by-day port sequence +
+  `nights`) plus the list of embarkation `dates` it runs on. One template
+  covers dozens of sailings. Port ids must exist in `ports.json`; use
+  `{"type":"sea"}` for sea days.
+- **`sailings.json`** — GENERATED, do not edit. `build_sailings.py` expands each
+  template's date list into individual dated sailing records. Its shape mirrors
+  a Widgety cruise feed (operator + ship + sail date + duration + ordered port
+  visits) on purpose.
+- **`build_sailings.py`** — run after editing templates: `python3 build_sailings.py`.
+  Validates every line/ship/port id against fleet.json and ports.json, refuses
+  to write on error, and reports coverage.
+
+### The swap point
+
+The app talks to sailing data ONLY through the `SailingSource` adapter object in
+`index.html` (`lines()`, `shipsForLine()`, `sailingsFor()`, `sailingById()`).
+Today those read the generated `sailings.json`. To swap in a licensed live feed
+(e.g. **Widgety** — the main cruise-itinerary data aggregator, API at
+widgety.org, ~60+ lines, itineraries updated up to 12×/day) replace only the
+adapter's internals to call the API; the rest of the app is untouched. The
+`widgetyId` fields in fleet.json / templates are placeholders for mapping
+Widgety operator/ship/cruise references when that happens.
+
+### Adding itinerary coverage
+
+1. Add the line's ships to `fleet.json` (if not already there).
+2. Add itinerary templates to `itinerary-templates.json` (port sequence + dates).
+3. Run `python3 build_sailings.py`.
+4. Deploy. A ship with no templates still appears in the picker and routes the
+   user to manual entry — no dead ends.
+
 ## How it's built
 
 - Single self-contained `index.html` (no build step, no dependencies) in the

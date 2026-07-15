@@ -1,0 +1,1709 @@
+{
+ "_generated": "built by build_sailings.py from itinerary-templates.json",
+ "_comment": "GENERATED FILE — do not edit by hand. Edit itinerary-templates.json and re-run build_sailings.py. Shape mirrors a Widgety cruise feed for a clean future swap.",
+ "count": 37,
+ "sailings": [
+  {
+   "id": "discovery-princess-7n-alaska-glacier__2026-05-16",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "discovery-princess",
+   "shipName": "Discovery Princess",
+   "name": "7-Night Alaska Inside Passage (Glacier Bay)",
+   "nights": 7,
+   "embarkDate": "2026-05-16",
+   "days": [
+    {
+     "day": 1,
+     "portId": "seattle"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "juneau_alaska"
+    },
+    {
+     "day": 4,
+     "portId": "skagway_alaska"
+    },
+    {
+     "day": 5,
+     "type": "sea"
+    },
+    {
+     "day": 6,
+     "portId": "ketchikan_alaska"
+    },
+    {
+     "day": 7,
+     "portId": "victoria-bc"
+    },
+    {
+     "day": 8,
+     "portId": "seattle"
+    }
+   ],
+   "templateId": "discovery-princess-7n-alaska-glacier",
+   "widgetyId": null
+  },
+  {
+   "id": "discovery-princess-7n-alaska-glacier__2026-05-23",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "discovery-princess",
+   "shipName": "Discovery Princess",
+   "name": "7-Night Alaska Inside Passage (Glacier Bay)",
+   "nights": 7,
+   "embarkDate": "2026-05-23",
+   "days": [
+    {
+     "day": 1,
+     "portId": "seattle"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "juneau_alaska"
+    },
+    {
+     "day": 4,
+     "portId": "skagway_alaska"
+    },
+    {
+     "day": 5,
+     "type": "sea"
+    },
+    {
+     "day": 6,
+     "portId": "ketchikan_alaska"
+    },
+    {
+     "day": 7,
+     "portId": "victoria-bc"
+    },
+    {
+     "day": 8,
+     "portId": "seattle"
+    }
+   ],
+   "templateId": "discovery-princess-7n-alaska-glacier",
+   "widgetyId": null
+  },
+  {
+   "id": "discovery-princess-7n-alaska-glacier__2026-05-30",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "discovery-princess",
+   "shipName": "Discovery Princess",
+   "name": "7-Night Alaska Inside Passage (Glacier Bay)",
+   "nights": 7,
+   "embarkDate": "2026-05-30",
+   "days": [
+    {
+     "day": 1,
+     "portId": "seattle"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "juneau_alaska"
+    },
+    {
+     "day": 4,
+     "portId": "skagway_alaska"
+    },
+    {
+     "day": 5,
+     "type": "sea"
+    },
+    {
+     "day": 6,
+     "portId": "ketchikan_alaska"
+    },
+    {
+     "day": 7,
+     "portId": "victoria-bc"
+    },
+    {
+     "day": 8,
+     "portId": "seattle"
+    }
+   ],
+   "templateId": "discovery-princess-7n-alaska-glacier",
+   "widgetyId": null
+  },
+  {
+   "id": "discovery-princess-7n-alaska-glacier__2026-06-06",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "discovery-princess",
+   "shipName": "Discovery Princess",
+   "name": "7-Night Alaska Inside Passage (Glacier Bay)",
+   "nights": 7,
+   "embarkDate": "2026-06-06",
+   "days": [
+    {
+     "day": 1,
+     "portId": "seattle"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "juneau_alaska"
+    },
+    {
+     "day": 4,
+     "portId": "skagway_alaska"
+    },
+    {
+     "day": 5,
+     "type": "sea"
+    },
+    {
+     "day": 6,
+     "portId": "ketchikan_alaska"
+    },
+    {
+     "day": 7,
+     "portId": "victoria-bc"
+    },
+    {
+     "day": 8,
+     "portId": "seattle"
+    }
+   ],
+   "templateId": "discovery-princess-7n-alaska-glacier",
+   "widgetyId": null
+  },
+  {
+   "id": "discovery-princess-7n-alaska-glacier__2026-06-13",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "discovery-princess",
+   "shipName": "Discovery Princess",
+   "name": "7-Night Alaska Inside Passage (Glacier Bay)",
+   "nights": 7,
+   "embarkDate": "2026-06-13",
+   "days": [
+    {
+     "day": 1,
+     "portId": "seattle"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "juneau_alaska"
+    },
+    {
+     "day": 4,
+     "portId": "skagway_alaska"
+    },
+    {
+     "day": 5,
+     "type": "sea"
+    },
+    {
+     "day": 6,
+     "portId": "ketchikan_alaska"
+    },
+    {
+     "day": 7,
+     "portId": "victoria-bc"
+    },
+    {
+     "day": 8,
+     "portId": "seattle"
+    }
+   ],
+   "templateId": "discovery-princess-7n-alaska-glacier",
+   "widgetyId": null
+  },
+  {
+   "id": "discovery-princess-7n-alaska-glacier__2026-06-20",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "discovery-princess",
+   "shipName": "Discovery Princess",
+   "name": "7-Night Alaska Inside Passage (Glacier Bay)",
+   "nights": 7,
+   "embarkDate": "2026-06-20",
+   "days": [
+    {
+     "day": 1,
+     "portId": "seattle"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "juneau_alaska"
+    },
+    {
+     "day": 4,
+     "portId": "skagway_alaska"
+    },
+    {
+     "day": 5,
+     "type": "sea"
+    },
+    {
+     "day": 6,
+     "portId": "ketchikan_alaska"
+    },
+    {
+     "day": 7,
+     "portId": "victoria-bc"
+    },
+    {
+     "day": 8,
+     "portId": "seattle"
+    }
+   ],
+   "templateId": "discovery-princess-7n-alaska-glacier",
+   "widgetyId": null
+  },
+  {
+   "id": "discovery-princess-7n-alaska-glacier__2026-06-27",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "discovery-princess",
+   "shipName": "Discovery Princess",
+   "name": "7-Night Alaska Inside Passage (Glacier Bay)",
+   "nights": 7,
+   "embarkDate": "2026-06-27",
+   "days": [
+    {
+     "day": 1,
+     "portId": "seattle"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "juneau_alaska"
+    },
+    {
+     "day": 4,
+     "portId": "skagway_alaska"
+    },
+    {
+     "day": 5,
+     "type": "sea"
+    },
+    {
+     "day": 6,
+     "portId": "ketchikan_alaska"
+    },
+    {
+     "day": 7,
+     "portId": "victoria-bc"
+    },
+    {
+     "day": 8,
+     "portId": "seattle"
+    }
+   ],
+   "templateId": "discovery-princess-7n-alaska-glacier",
+   "widgetyId": null
+  },
+  {
+   "id": "discovery-princess-7n-alaska-glacier__2026-07-04",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "discovery-princess",
+   "shipName": "Discovery Princess",
+   "name": "7-Night Alaska Inside Passage (Glacier Bay)",
+   "nights": 7,
+   "embarkDate": "2026-07-04",
+   "days": [
+    {
+     "day": 1,
+     "portId": "seattle"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "juneau_alaska"
+    },
+    {
+     "day": 4,
+     "portId": "skagway_alaska"
+    },
+    {
+     "day": 5,
+     "type": "sea"
+    },
+    {
+     "day": 6,
+     "portId": "ketchikan_alaska"
+    },
+    {
+     "day": 7,
+     "portId": "victoria-bc"
+    },
+    {
+     "day": 8,
+     "portId": "seattle"
+    }
+   ],
+   "templateId": "discovery-princess-7n-alaska-glacier",
+   "widgetyId": null
+  },
+  {
+   "id": "discovery-princess-7n-alaska-glacier__2026-07-11",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "discovery-princess",
+   "shipName": "Discovery Princess",
+   "name": "7-Night Alaska Inside Passage (Glacier Bay)",
+   "nights": 7,
+   "embarkDate": "2026-07-11",
+   "days": [
+    {
+     "day": 1,
+     "portId": "seattle"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "juneau_alaska"
+    },
+    {
+     "day": 4,
+     "portId": "skagway_alaska"
+    },
+    {
+     "day": 5,
+     "type": "sea"
+    },
+    {
+     "day": 6,
+     "portId": "ketchikan_alaska"
+    },
+    {
+     "day": 7,
+     "portId": "victoria-bc"
+    },
+    {
+     "day": 8,
+     "portId": "seattle"
+    }
+   ],
+   "templateId": "discovery-princess-7n-alaska-glacier",
+   "widgetyId": null
+  },
+  {
+   "id": "discovery-princess-7n-alaska-glacier__2026-07-18",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "discovery-princess",
+   "shipName": "Discovery Princess",
+   "name": "7-Night Alaska Inside Passage (Glacier Bay)",
+   "nights": 7,
+   "embarkDate": "2026-07-18",
+   "days": [
+    {
+     "day": 1,
+     "portId": "seattle"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "juneau_alaska"
+    },
+    {
+     "day": 4,
+     "portId": "skagway_alaska"
+    },
+    {
+     "day": 5,
+     "type": "sea"
+    },
+    {
+     "day": 6,
+     "portId": "ketchikan_alaska"
+    },
+    {
+     "day": 7,
+     "portId": "victoria-bc"
+    },
+    {
+     "day": 8,
+     "portId": "seattle"
+    }
+   ],
+   "templateId": "discovery-princess-7n-alaska-glacier",
+   "widgetyId": null
+  },
+  {
+   "id": "regal-princess-7n-adriatic__2026-05-10",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "regal-princess",
+   "shipName": "Regal Princess",
+   "name": "7-Night Adriatic & Eastern Mediterranean",
+   "nights": 7,
+   "embarkDate": "2026-05-10",
+   "days": [
+    {
+     "day": 1,
+     "portId": "venice_italy"
+    },
+    {
+     "day": 2,
+     "portId": "dubrovnik_croatia"
+    },
+    {
+     "day": 3,
+     "portId": "kotor_montenegro"
+    },
+    {
+     "day": 4,
+     "type": "sea"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "messina_sicily"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "venice_italy"
+    }
+   ],
+   "templateId": "regal-princess-7n-adriatic",
+   "widgetyId": null
+  },
+  {
+   "id": "regal-princess-7n-adriatic__2026-05-24",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "regal-princess",
+   "shipName": "Regal Princess",
+   "name": "7-Night Adriatic & Eastern Mediterranean",
+   "nights": 7,
+   "embarkDate": "2026-05-24",
+   "days": [
+    {
+     "day": 1,
+     "portId": "venice_italy"
+    },
+    {
+     "day": 2,
+     "portId": "dubrovnik_croatia"
+    },
+    {
+     "day": 3,
+     "portId": "kotor_montenegro"
+    },
+    {
+     "day": 4,
+     "type": "sea"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "messina_sicily"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "venice_italy"
+    }
+   ],
+   "templateId": "regal-princess-7n-adriatic",
+   "widgetyId": null
+  },
+  {
+   "id": "regal-princess-7n-adriatic__2026-06-07",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "regal-princess",
+   "shipName": "Regal Princess",
+   "name": "7-Night Adriatic & Eastern Mediterranean",
+   "nights": 7,
+   "embarkDate": "2026-06-07",
+   "days": [
+    {
+     "day": 1,
+     "portId": "venice_italy"
+    },
+    {
+     "day": 2,
+     "portId": "dubrovnik_croatia"
+    },
+    {
+     "day": 3,
+     "portId": "kotor_montenegro"
+    },
+    {
+     "day": 4,
+     "type": "sea"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "messina_sicily"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "venice_italy"
+    }
+   ],
+   "templateId": "regal-princess-7n-adriatic",
+   "widgetyId": null
+  },
+  {
+   "id": "regal-princess-7n-adriatic__2026-06-21",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "regal-princess",
+   "shipName": "Regal Princess",
+   "name": "7-Night Adriatic & Eastern Mediterranean",
+   "nights": 7,
+   "embarkDate": "2026-06-21",
+   "days": [
+    {
+     "day": 1,
+     "portId": "venice_italy"
+    },
+    {
+     "day": 2,
+     "portId": "dubrovnik_croatia"
+    },
+    {
+     "day": 3,
+     "portId": "kotor_montenegro"
+    },
+    {
+     "day": 4,
+     "type": "sea"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "messina_sicily"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "venice_italy"
+    }
+   ],
+   "templateId": "regal-princess-7n-adriatic",
+   "widgetyId": null
+  },
+  {
+   "id": "regal-princess-7n-adriatic__2026-07-05",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "regal-princess",
+   "shipName": "Regal Princess",
+   "name": "7-Night Adriatic & Eastern Mediterranean",
+   "nights": 7,
+   "embarkDate": "2026-07-05",
+   "days": [
+    {
+     "day": 1,
+     "portId": "venice_italy"
+    },
+    {
+     "day": 2,
+     "portId": "dubrovnik_croatia"
+    },
+    {
+     "day": 3,
+     "portId": "kotor_montenegro"
+    },
+    {
+     "day": 4,
+     "type": "sea"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "messina_sicily"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "venice_italy"
+    }
+   ],
+   "templateId": "regal-princess-7n-adriatic",
+   "widgetyId": null
+  },
+  {
+   "id": "regal-princess-7n-adriatic__2026-07-19",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "regal-princess",
+   "shipName": "Regal Princess",
+   "name": "7-Night Adriatic & Eastern Mediterranean",
+   "nights": 7,
+   "embarkDate": "2026-07-19",
+   "days": [
+    {
+     "day": 1,
+     "portId": "venice_italy"
+    },
+    {
+     "day": 2,
+     "portId": "dubrovnik_croatia"
+    },
+    {
+     "day": 3,
+     "portId": "kotor_montenegro"
+    },
+    {
+     "day": 4,
+     "type": "sea"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "messina_sicily"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "venice_italy"
+    }
+   ],
+   "templateId": "regal-princess-7n-adriatic",
+   "widgetyId": null
+  },
+  {
+   "id": "regal-princess-7n-adriatic__2026-08-02",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "regal-princess",
+   "shipName": "Regal Princess",
+   "name": "7-Night Adriatic & Eastern Mediterranean",
+   "nights": 7,
+   "embarkDate": "2026-08-02",
+   "days": [
+    {
+     "day": 1,
+     "portId": "venice_italy"
+    },
+    {
+     "day": 2,
+     "portId": "dubrovnik_croatia"
+    },
+    {
+     "day": 3,
+     "portId": "kotor_montenegro"
+    },
+    {
+     "day": 4,
+     "type": "sea"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "messina_sicily"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "venice_italy"
+    }
+   ],
+   "templateId": "regal-princess-7n-adriatic",
+   "widgetyId": null
+  },
+  {
+   "id": "sky-princess-7n-western-caribbean__2026-01-04",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "sky-princess",
+   "shipName": "Sky Princess",
+   "name": "7-Night Western Caribbean",
+   "nights": 7,
+   "embarkDate": "2026-01-04",
+   "days": [
+    {
+     "day": 1,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "grand_cayman"
+    },
+    {
+     "day": 4,
+     "portId": "roatan_honduras"
+    },
+    {
+     "day": 5,
+     "portId": "belize_city_belize"
+    },
+    {
+     "day": 6,
+     "portId": "costa_maya_mahahual_mexico"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    }
+   ],
+   "templateId": "sky-princess-7n-western-caribbean",
+   "widgetyId": null
+  },
+  {
+   "id": "sky-princess-7n-eastern-caribbean__2026-01-11",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "sky-princess",
+   "shipName": "Sky Princess",
+   "name": "7-Night Eastern Caribbean",
+   "nights": 7,
+   "embarkDate": "2026-01-11",
+   "days": [
+    {
+     "day": 1,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "grand_turk"
+    },
+    {
+     "day": 4,
+     "portId": "st_thomas_usvi"
+    },
+    {
+     "day": 5,
+     "portId": "st_maarten"
+    },
+    {
+     "day": 6,
+     "type": "sea"
+    },
+    {
+     "day": 7,
+     "portId": "princess_cays"
+    },
+    {
+     "day": 8,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    }
+   ],
+   "templateId": "sky-princess-7n-eastern-caribbean",
+   "widgetyId": null
+  },
+  {
+   "id": "sky-princess-7n-western-caribbean__2026-01-18",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "sky-princess",
+   "shipName": "Sky Princess",
+   "name": "7-Night Western Caribbean",
+   "nights": 7,
+   "embarkDate": "2026-01-18",
+   "days": [
+    {
+     "day": 1,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "grand_cayman"
+    },
+    {
+     "day": 4,
+     "portId": "roatan_honduras"
+    },
+    {
+     "day": 5,
+     "portId": "belize_city_belize"
+    },
+    {
+     "day": 6,
+     "portId": "costa_maya_mahahual_mexico"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    }
+   ],
+   "templateId": "sky-princess-7n-western-caribbean",
+   "widgetyId": null
+  },
+  {
+   "id": "sky-princess-7n-eastern-caribbean__2026-01-25",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "sky-princess",
+   "shipName": "Sky Princess",
+   "name": "7-Night Eastern Caribbean",
+   "nights": 7,
+   "embarkDate": "2026-01-25",
+   "days": [
+    {
+     "day": 1,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "grand_turk"
+    },
+    {
+     "day": 4,
+     "portId": "st_thomas_usvi"
+    },
+    {
+     "day": 5,
+     "portId": "st_maarten"
+    },
+    {
+     "day": 6,
+     "type": "sea"
+    },
+    {
+     "day": 7,
+     "portId": "princess_cays"
+    },
+    {
+     "day": 8,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    }
+   ],
+   "templateId": "sky-princess-7n-eastern-caribbean",
+   "widgetyId": null
+  },
+  {
+   "id": "sky-princess-7n-western-caribbean__2026-02-01",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "sky-princess",
+   "shipName": "Sky Princess",
+   "name": "7-Night Western Caribbean",
+   "nights": 7,
+   "embarkDate": "2026-02-01",
+   "days": [
+    {
+     "day": 1,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "grand_cayman"
+    },
+    {
+     "day": 4,
+     "portId": "roatan_honduras"
+    },
+    {
+     "day": 5,
+     "portId": "belize_city_belize"
+    },
+    {
+     "day": 6,
+     "portId": "costa_maya_mahahual_mexico"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    }
+   ],
+   "templateId": "sky-princess-7n-western-caribbean",
+   "widgetyId": null
+  },
+  {
+   "id": "sky-princess-7n-eastern-caribbean__2026-02-08",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "sky-princess",
+   "shipName": "Sky Princess",
+   "name": "7-Night Eastern Caribbean",
+   "nights": 7,
+   "embarkDate": "2026-02-08",
+   "days": [
+    {
+     "day": 1,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "grand_turk"
+    },
+    {
+     "day": 4,
+     "portId": "st_thomas_usvi"
+    },
+    {
+     "day": 5,
+     "portId": "st_maarten"
+    },
+    {
+     "day": 6,
+     "type": "sea"
+    },
+    {
+     "day": 7,
+     "portId": "princess_cays"
+    },
+    {
+     "day": 8,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    }
+   ],
+   "templateId": "sky-princess-7n-eastern-caribbean",
+   "widgetyId": null
+  },
+  {
+   "id": "sky-princess-7n-western-caribbean__2026-02-15",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "sky-princess",
+   "shipName": "Sky Princess",
+   "name": "7-Night Western Caribbean",
+   "nights": 7,
+   "embarkDate": "2026-02-15",
+   "days": [
+    {
+     "day": 1,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "grand_cayman"
+    },
+    {
+     "day": 4,
+     "portId": "roatan_honduras"
+    },
+    {
+     "day": 5,
+     "portId": "belize_city_belize"
+    },
+    {
+     "day": 6,
+     "portId": "costa_maya_mahahual_mexico"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    }
+   ],
+   "templateId": "sky-princess-7n-western-caribbean",
+   "widgetyId": null
+  },
+  {
+   "id": "sky-princess-7n-eastern-caribbean__2026-02-22",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "sky-princess",
+   "shipName": "Sky Princess",
+   "name": "7-Night Eastern Caribbean",
+   "nights": 7,
+   "embarkDate": "2026-02-22",
+   "days": [
+    {
+     "day": 1,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "grand_turk"
+    },
+    {
+     "day": 4,
+     "portId": "st_thomas_usvi"
+    },
+    {
+     "day": 5,
+     "portId": "st_maarten"
+    },
+    {
+     "day": 6,
+     "type": "sea"
+    },
+    {
+     "day": 7,
+     "portId": "princess_cays"
+    },
+    {
+     "day": 8,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    }
+   ],
+   "templateId": "sky-princess-7n-eastern-caribbean",
+   "widgetyId": null
+  },
+  {
+   "id": "sky-princess-7n-western-caribbean__2026-03-01",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "sky-princess",
+   "shipName": "Sky Princess",
+   "name": "7-Night Western Caribbean",
+   "nights": 7,
+   "embarkDate": "2026-03-01",
+   "days": [
+    {
+     "day": 1,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "grand_cayman"
+    },
+    {
+     "day": 4,
+     "portId": "roatan_honduras"
+    },
+    {
+     "day": 5,
+     "portId": "belize_city_belize"
+    },
+    {
+     "day": 6,
+     "portId": "costa_maya_mahahual_mexico"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    }
+   ],
+   "templateId": "sky-princess-7n-western-caribbean",
+   "widgetyId": null
+  },
+  {
+   "id": "sky-princess-7n-eastern-caribbean__2026-03-08",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "sky-princess",
+   "shipName": "Sky Princess",
+   "name": "7-Night Eastern Caribbean",
+   "nights": 7,
+   "embarkDate": "2026-03-08",
+   "days": [
+    {
+     "day": 1,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "grand_turk"
+    },
+    {
+     "day": 4,
+     "portId": "st_thomas_usvi"
+    },
+    {
+     "day": 5,
+     "portId": "st_maarten"
+    },
+    {
+     "day": 6,
+     "type": "sea"
+    },
+    {
+     "day": 7,
+     "portId": "princess_cays"
+    },
+    {
+     "day": 8,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    }
+   ],
+   "templateId": "sky-princess-7n-eastern-caribbean",
+   "widgetyId": null
+  },
+  {
+   "id": "sky-princess-7n-western-caribbean__2026-03-15",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "sky-princess",
+   "shipName": "Sky Princess",
+   "name": "7-Night Western Caribbean",
+   "nights": 7,
+   "embarkDate": "2026-03-15",
+   "days": [
+    {
+     "day": 1,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "grand_cayman"
+    },
+    {
+     "day": 4,
+     "portId": "roatan_honduras"
+    },
+    {
+     "day": 5,
+     "portId": "belize_city_belize"
+    },
+    {
+     "day": 6,
+     "portId": "costa_maya_mahahual_mexico"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    }
+   ],
+   "templateId": "sky-princess-7n-western-caribbean",
+   "widgetyId": null
+  },
+  {
+   "id": "sky-princess-7n-eastern-caribbean__2026-03-22",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "sky-princess",
+   "shipName": "Sky Princess",
+   "name": "7-Night Eastern Caribbean",
+   "nights": 7,
+   "embarkDate": "2026-03-22",
+   "days": [
+    {
+     "day": 1,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    },
+    {
+     "day": 2,
+     "type": "sea"
+    },
+    {
+     "day": 3,
+     "portId": "grand_turk"
+    },
+    {
+     "day": 4,
+     "portId": "st_thomas_usvi"
+    },
+    {
+     "day": 5,
+     "portId": "st_maarten"
+    },
+    {
+     "day": 6,
+     "type": "sea"
+    },
+    {
+     "day": 7,
+     "portId": "princess_cays"
+    },
+    {
+     "day": 8,
+     "portId": "port_everglades_fort_lauderdale_florida_usa"
+    }
+   ],
+   "templateId": "sky-princess-7n-eastern-caribbean",
+   "widgetyId": null
+  },
+  {
+   "id": "star-princess-7n-med-greek-isles__2026-05-03",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "star-princess",
+   "shipName": "Star Princess",
+   "name": "7-Night Mediterranean & Greek Isles",
+   "nights": 7,
+   "embarkDate": "2026-05-03",
+   "days": [
+    {
+     "day": 1,
+     "portId": "barcelona_spain"
+    },
+    {
+     "day": 2,
+     "portId": "marseille_france"
+    },
+    {
+     "day": 3,
+     "type": "sea"
+    },
+    {
+     "day": 4,
+     "portId": "naples_italy"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "santorini_greece"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "barcelona_spain"
+    }
+   ],
+   "templateId": "star-princess-7n-med-greek-isles",
+   "widgetyId": null
+  },
+  {
+   "id": "star-princess-7n-med-greek-isles__2026-05-17",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "star-princess",
+   "shipName": "Star Princess",
+   "name": "7-Night Mediterranean & Greek Isles",
+   "nights": 7,
+   "embarkDate": "2026-05-17",
+   "days": [
+    {
+     "day": 1,
+     "portId": "barcelona_spain"
+    },
+    {
+     "day": 2,
+     "portId": "marseille_france"
+    },
+    {
+     "day": 3,
+     "type": "sea"
+    },
+    {
+     "day": 4,
+     "portId": "naples_italy"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "santorini_greece"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "barcelona_spain"
+    }
+   ],
+   "templateId": "star-princess-7n-med-greek-isles",
+   "widgetyId": null
+  },
+  {
+   "id": "star-princess-7n-med-greek-isles__2026-05-31",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "star-princess",
+   "shipName": "Star Princess",
+   "name": "7-Night Mediterranean & Greek Isles",
+   "nights": 7,
+   "embarkDate": "2026-05-31",
+   "days": [
+    {
+     "day": 1,
+     "portId": "barcelona_spain"
+    },
+    {
+     "day": 2,
+     "portId": "marseille_france"
+    },
+    {
+     "day": 3,
+     "type": "sea"
+    },
+    {
+     "day": 4,
+     "portId": "naples_italy"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "santorini_greece"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "barcelona_spain"
+    }
+   ],
+   "templateId": "star-princess-7n-med-greek-isles",
+   "widgetyId": null
+  },
+  {
+   "id": "star-princess-7n-med-greek-isles__2026-06-14",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "star-princess",
+   "shipName": "Star Princess",
+   "name": "7-Night Mediterranean & Greek Isles",
+   "nights": 7,
+   "embarkDate": "2026-06-14",
+   "days": [
+    {
+     "day": 1,
+     "portId": "barcelona_spain"
+    },
+    {
+     "day": 2,
+     "portId": "marseille_france"
+    },
+    {
+     "day": 3,
+     "type": "sea"
+    },
+    {
+     "day": 4,
+     "portId": "naples_italy"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "santorini_greece"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "barcelona_spain"
+    }
+   ],
+   "templateId": "star-princess-7n-med-greek-isles",
+   "widgetyId": null
+  },
+  {
+   "id": "star-princess-7n-med-greek-isles__2026-06-28",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "star-princess",
+   "shipName": "Star Princess",
+   "name": "7-Night Mediterranean & Greek Isles",
+   "nights": 7,
+   "embarkDate": "2026-06-28",
+   "days": [
+    {
+     "day": 1,
+     "portId": "barcelona_spain"
+    },
+    {
+     "day": 2,
+     "portId": "marseille_france"
+    },
+    {
+     "day": 3,
+     "type": "sea"
+    },
+    {
+     "day": 4,
+     "portId": "naples_italy"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "santorini_greece"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "barcelona_spain"
+    }
+   ],
+   "templateId": "star-princess-7n-med-greek-isles",
+   "widgetyId": null
+  },
+  {
+   "id": "star-princess-7n-med-greek-isles__2026-07-12",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "star-princess",
+   "shipName": "Star Princess",
+   "name": "7-Night Mediterranean & Greek Isles",
+   "nights": 7,
+   "embarkDate": "2026-07-12",
+   "days": [
+    {
+     "day": 1,
+     "portId": "barcelona_spain"
+    },
+    {
+     "day": 2,
+     "portId": "marseille_france"
+    },
+    {
+     "day": 3,
+     "type": "sea"
+    },
+    {
+     "day": 4,
+     "portId": "naples_italy"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "santorini_greece"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "barcelona_spain"
+    }
+   ],
+   "templateId": "star-princess-7n-med-greek-isles",
+   "widgetyId": null
+  },
+  {
+   "id": "star-princess-7n-med-greek-isles__2026-07-26",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "star-princess",
+   "shipName": "Star Princess",
+   "name": "7-Night Mediterranean & Greek Isles",
+   "nights": 7,
+   "embarkDate": "2026-07-26",
+   "days": [
+    {
+     "day": 1,
+     "portId": "barcelona_spain"
+    },
+    {
+     "day": 2,
+     "portId": "marseille_france"
+    },
+    {
+     "day": 3,
+     "type": "sea"
+    },
+    {
+     "day": 4,
+     "portId": "naples_italy"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "santorini_greece"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "barcelona_spain"
+    }
+   ],
+   "templateId": "star-princess-7n-med-greek-isles",
+   "widgetyId": null
+  },
+  {
+   "id": "star-princess-7n-med-greek-isles__2026-08-09",
+   "line": "princess",
+   "lineName": "Princess Cruises",
+   "ship": "star-princess",
+   "shipName": "Star Princess",
+   "name": "7-Night Mediterranean & Greek Isles",
+   "nights": 7,
+   "embarkDate": "2026-08-09",
+   "days": [
+    {
+     "day": 1,
+     "portId": "barcelona_spain"
+    },
+    {
+     "day": 2,
+     "portId": "marseille_france"
+    },
+    {
+     "day": 3,
+     "type": "sea"
+    },
+    {
+     "day": 4,
+     "portId": "naples_italy"
+    },
+    {
+     "day": 5,
+     "portId": "athens_piraeus_greece"
+    },
+    {
+     "day": 6,
+     "portId": "santorini_greece"
+    },
+    {
+     "day": 7,
+     "type": "sea"
+    },
+    {
+     "day": 8,
+     "portId": "barcelona_spain"
+    }
+   ],
+   "templateId": "star-princess-7n-med-greek-isles",
+   "widgetyId": null
+  }
+ ]
+}

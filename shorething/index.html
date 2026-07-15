@@ -154,6 +154,44 @@ input[type=date]{color-scheme:dark}
 .btn-ghost:hover{background:var(--gold);color:var(--ocean-deep);border-color:var(--gold)}
 .btn:disabled{opacity:.45;cursor:not-allowed}
 
+/* ---------- Sailing picker ---------- */
+.picker-steps{display:grid;gap:14px}
+.pstep{opacity:.5;transition:opacity .2s ease;pointer-events:none}
+.pstep.active{opacity:1;pointer-events:auto}
+.pstep.done{opacity:1}
+select.sel{
+  width:100%;padding:12px 13px;border-radius:10px;
+  border:1px solid var(--panel-edge);background:rgba(8,24,48,.6);
+  color:var(--foam);font-family:'Outfit',sans-serif;font-size:1rem;font-weight:400;
+  outline:none;transition:border-color .15s ease;color-scheme:dark;
+  appearance:none;-webkit-appearance:none;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none' stroke='%23d9b45c' stroke-width='2'%3E%3Cpath d='M3 5l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;
+}
+select.sel:focus{border-color:var(--gold-dim)}
+select.sel:disabled{opacity:.5;cursor:not-allowed}
+select.sel option{background:var(--ocean);color:var(--foam)}
+
+/* sailing result cards (when a ship+date resolves) */
+.sailing-preview{
+  margin-top:4px;border:1px solid var(--gold-dim);border-radius:var(--radius);
+  background:var(--seaglass-dim);padding:16px 18px;
+}
+.sailing-preview .sp-name{font-family:'Cinzel',serif;color:var(--gold-bright);font-size:1.1rem;font-weight:600;margin-bottom:2px}
+.sailing-preview .sp-meta{color:var(--mist);font-size:.85rem;font-weight:300}
+.sailing-preview .sp-route{color:var(--foam);font-size:.9rem;font-weight:300;margin-top:8px}
+
+/* mode switch between picker and manual */
+.mode-switch{text-align:center;margin-top:18px}
+.mode-switch button{
+  background:none;border:none;color:var(--gold);cursor:pointer;
+  font-family:'Outfit',sans-serif;font-size:.82rem;font-weight:500;
+  text-decoration:underline;text-underline-offset:3px;padding:6px;
+}
+.mode-switch button:hover{color:var(--gold-bright)}
+.hint{color:var(--mist);font-size:.85rem;font-weight:300;text-align:center;margin-top:10px}
+[hidden]{display:none!important}
+
 /* ---------- Guide ---------- */
 #guide{display:none}
 #guide.built{display:block}
@@ -267,11 +305,52 @@ footer p+p{margin-top:4px}
 
     <h1>Shore Thing</h1>
     <p class="tagline">Your days ashore, sorted. Build a port-by-port guide for <strong>your exact sailing</strong> — read it here, print it, or take a copy with you.</p>
-    <p class="rule">Build your sailing</p>
+    <p class="rule">Find your sailing</p>
   </header>
 
-  <!-- ================= Builder ================= -->
-  <section class="panel" id="builder" aria-label="Build your sailing">
+  <!-- ================= Sailing picker (primary) ================= -->
+  <section class="panel" id="picker" aria-label="Find your sailing">
+    <div class="picker-steps">
+      <div class="pstep active" id="pstep-line">
+        <label for="selLine">Cruise line</label>
+        <select class="sel" id="selLine" aria-label="Cruise line">
+          <option value="">Select your cruise line…</option>
+        </select>
+      </div>
+      <div class="pstep" id="pstep-ship">
+        <label for="selShip">Ship</label>
+        <select class="sel" id="selShip" aria-label="Ship" disabled>
+          <option value="">Select your ship…</option>
+        </select>
+      </div>
+      <div class="pstep" id="pstep-date">
+        <label for="selDate">Sailing date</label>
+        <select class="sel" id="selDate" aria-label="Sailing date" disabled>
+          <option value="">Select your sailing date…</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="sailing-preview" id="sailingPreview" hidden>
+      <p class="sp-name" id="spName"></p>
+      <p class="sp-meta" id="spMeta"></p>
+      <p class="sp-route" id="spRoute"></p>
+    </div>
+
+    <p class="hint" id="pickerHint" hidden></p>
+
+    <div class="btn-row" id="pickerActions" hidden>
+      <button class="btn btn-gold" id="pickerBuildBtn">Build my guide</button>
+      <button class="btn btn-ghost" id="pickerResetBtn">Start again</button>
+    </div>
+
+    <div class="mode-switch">
+      <button type="button" id="toManual">Don’t see your sailing? Build it by hand →</button>
+    </div>
+  </section>
+
+  <!-- ================= Manual builder (secondary) ================= -->
+  <section class="panel" id="builder" aria-label="Build your sailing by hand" hidden>
     <div class="meta-row">
       <div class="field">
         <label for="shipName">Ship (optional)</label>
@@ -295,6 +374,10 @@ footer p+p{margin-top:4px}
     <div class="btn-row">
       <button class="btn btn-gold" id="buildBtn">Build my guide</button>
       <button class="btn btn-ghost" id="resetBtn">Start again</button>
+    </div>
+
+    <div class="mode-switch">
+      <button type="button" id="toPicker">← Back to picking my cruise line and ship</button>
     </div>
   </section>
 
@@ -330,12 +413,44 @@ let PORTS = [];        // [{id,name,lat,lon,region,gw}]
 let CONTENT = {};      // {id:{dock,walk,cur,lang,blurb,miss[],tip}}
 const byId = {};
 
+/* ---------------- Data-source adapter ----------------
+   The picker talks ONLY to this object. Today it reads the generated
+   sailings.json (built from itinerary-templates.json). To swap in a live
+   licensed feed (e.g. Widgety) later, replace the three methods' innards to
+   call the API — the rest of the app never changes. Sailing shape:
+   {id, line, lineName, ship, shipName, name, nights, embarkDate, days[]}   */
+const SailingSource = {
+  _fleet: {lines:[]},
+  _sailings: [],
+  async load(){
+    const [fleet, sail] = await Promise.all([
+      fetch("data/fleet.json").then(r=>r.ok?r.json():{lines:[]}).catch(()=>({lines:[]})),
+      fetch("data/sailings.json").then(r=>r.ok?r.json():{sailings:[]}).catch(()=>({sailings:[]}))
+    ]);
+    this._fleet = fleet;
+    this._sailings = sail.sailings || [];
+  },
+  lines(){ return (this._fleet.lines||[]).filter(l=>l.id && l.name); },
+  shipsForLine(lineId){
+    const l = this.lines().find(x=>x.id===lineId);
+    return l ? (l.ships||[]) : [];
+  },
+  sailingsFor(lineId, shipId){
+    return this._sailings
+      .filter(s=>s.line===lineId && s.ship===shipId)
+      .sort((a,b)=>a.embarkDate<b.embarkDate?-1:1);
+  },
+  sailingById(id){ return this._sailings.find(s=>s.id===id); }
+};
+
 Promise.all([
   fetch("data/ports.json").then(r=>r.json()),
-  fetch("data/guide-content.json").then(r=>r.ok?r.json():{}).catch(()=>({}))
+  fetch("data/guide-content.json").then(r=>r.ok?r.json():{}).catch(()=>({})),
+  SailingSource.load()
 ]).then(([ports,content])=>{
   PORTS = ports; CONTENT = content;
   ports.forEach(p=>byId[p.id]=p);
+  initPicker();
   restore();
 });
 
@@ -451,6 +566,128 @@ buildBtn.addEventListener("click", ()=>{
   buildGuide(dated.slice().sort((a,b)=>a.date<b.date?-1:1));
   guide.classList.add("built");
   guide.scrollIntoView({behavior:"smooth"});
+});
+
+/* ---------------- Sailing picker ---------------- */
+const selLine=$("selLine"), selShip=$("selShip"), selDate=$("selDate"),
+      pstepShip=$("pstep-ship"), pstepDate=$("pstep-date"),
+      sailingPreview=$("sailingPreview"), spName=$("spName"), spMeta=$("spMeta"), spRoute=$("spRoute"),
+      pickerHint=$("pickerHint"), pickerActions=$("pickerActions"),
+      pickerBuildBtn=$("pickerBuildBtn"), pickerResetBtn=$("pickerResetBtn"),
+      pickerEl=$("picker"), builderEl=$("builder");
+let currentSailing=null;
+
+function initPicker(){
+  const lines = SailingSource.lines();
+  selLine.innerHTML = '<option value="">Select your cruise line…</option>' +
+    lines.map(l=>`<option value="${esc(l.id)}">${esc(l.name)}</option>`).join("");
+}
+
+selLine.addEventListener("change", ()=>{
+  const lineId = selLine.value;
+  resetFrom("ship");
+  if(!lineId) return;
+  const ships = SailingSource.shipsForLine(lineId);
+  if(!ships.length){
+    // line exists but no ships loaded yet — route to manual
+    showHint("We haven’t added this line’s ships yet — you can build your sailing by hand instead.", true);
+    return;
+  }
+  selShip.innerHTML = '<option value="">Select your ship…</option>' +
+    ships.map(s=>`<option value="${esc(s.id)}">${esc(s.name)}</option>`).join("");
+  selShip.disabled = false;
+  pstepShip.classList.add("active");
+  pstepLineDone();
+});
+
+selShip.addEventListener("change", ()=>{
+  const lineId=selLine.value, shipId=selShip.value;
+  resetFrom("date");
+  if(!shipId) return;
+  const sailings = SailingSource.sailingsFor(lineId, shipId);
+  if(!sailings.length){
+    showHint("We don’t have this ship’s sailings pre-loaded yet — build yours by hand and we’ll still make your guide.", true);
+    return;
+  }
+  selDate.innerHTML = '<option value="">Select your sailing date…</option>' +
+    sailings.map(s=>`<option value="${esc(s.id)}">${fdatelong(s.embarkDate)} · ${esc(s.name)}</option>`).join("");
+  selDate.disabled = false;
+  pstepDate.classList.add("active");
+});
+
+selDate.addEventListener("change", ()=>{
+  const id=selDate.value;
+  currentSailing=null; sailingPreview.hidden=true; pickerActions.hidden=true;
+  if(!id) return;
+  const s = SailingSource.sailingById(id);
+  if(!s) return;
+  currentSailing=s;
+  // preview
+  spName.textContent = s.name;
+  spMeta.textContent = `${s.shipName} · ${s.nights} nights · departs ${fdatelong(s.embarkDate)}`;
+  const portNames = s.days.filter(d=>d.type!=="sea").map(d=> (byId[d.portId]?byId[d.portId].name.split("(")[0].split(",")[0].trim():d.portId));
+  spRoute.textContent = portNames.join(" → ");
+  sailingPreview.hidden=false;
+  pickerActions.hidden=false;
+  pickerHint.hidden=true;
+});
+
+pickerBuildBtn.addEventListener("click", ()=>{
+  if(!currentSailing) return;
+  const stopsFromSailing = sailingToStops(currentSailing);
+  // set names so the cover reads nicely
+  shipName.value = currentSailing.shipName;
+  cruiseName.value = currentSailing.name;
+  buildGuide(stopsFromSailing);
+  guide.classList.add("built");
+  guide.scrollIntoView({behavior:"smooth"});
+});
+
+pickerResetBtn.addEventListener("click", ()=>{
+  selLine.value=""; resetFrom("ship");
+  guide.classList.remove("built");
+});
+
+/* Convert a sailing's day sequence into buildGuide's [{id,date}] shape.
+   Only port-call days become stops; sea days are re-derived by buildGuide
+   from the date gaps, exactly as in manual mode. */
+function sailingToStops(s){
+  const embark = new Date(s.embarkDate+"T12:00:00");
+  const stops=[];
+  s.days.forEach(d=>{
+    if(d.type==="sea" || !d.portId) return;
+    const dt = new Date(embark); dt.setDate(dt.getDate()+(d.day-1));
+    stops.push({id:d.portId, date:dt.toISOString().slice(0,10)});
+  });
+  return stops.sort((a,b)=>a.date<b.date?-1:1);
+}
+
+function resetFrom(level){
+  // level: "ship" resets ship+date; "date" resets date only
+  currentSailing=null; sailingPreview.hidden=true; pickerActions.hidden=true; pickerHint.hidden=true;
+  if(level==="ship"){
+    selShip.innerHTML='<option value="">Select your ship…</option>';
+    selShip.disabled=true; pstepShip.classList.remove("active","done");
+  }
+  selDate.innerHTML='<option value="">Select your sailing date…</option>';
+  selDate.disabled=true; pstepDate.classList.remove("active","done");
+}
+function pstepLineDone(){ $("pstep-line").classList.add("done"); }
+function showHint(msg, offerManual){
+  pickerHint.textContent = msg;
+  pickerHint.hidden=false;
+}
+const DFMT_LONG = new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"long",year:"numeric"});
+function fdatelong(iso){ return DFMT_LONG.format(new Date(iso+"T12:00:00")); }
+
+/* ---------------- Mode switching ---------------- */
+$("toManual").addEventListener("click", ()=>{
+  pickerEl.hidden=true; builderEl.hidden=false;
+  builderEl.scrollIntoView({behavior:"smooth"});
+});
+$("toPicker").addEventListener("click", ()=>{
+  builderEl.hidden=true; pickerEl.hidden=false;
+  pickerEl.scrollIntoView({behavior:"smooth"});
 });
 
 const DFMT = new Intl.DateTimeFormat("en-GB",{weekday:"short",day:"numeric",month:"short"});
