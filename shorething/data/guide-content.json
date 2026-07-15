@@ -2333,5 +2333,1604 @@
    "The beach promenade and camel rides"
   ],
   "tip": "Agadir is more resort than deep-Morocco; for atmosphere, the walled town of Taroudant or the Paradise Valley oasis inland make richer excursions than the beach strip."
+ },
+ "kahului_maui_hawaii": {
+  "dock": "Docked",
+  "walk": "Car/tour needed",
+  "cur": "USD",
+  "lang": "English",
+  "blurb": "Kahului is the gateway to Maui, the Valley Isle — the switchbacking Road to Hana, the dormant Haleakalā volcano crater, and the old whaling town of Lahaina (still recovering from the 2023 fire). The port itself is industrial; Maui's beauty is spread out.",
+  "miss": [
+   "The sunrise or summit view from Haleakalā crater",
+   "The Road to Hana's waterfalls and coast",
+   "Snorkelling at Molokini crater by boat"
+  ],
+  "tip": "Maui's highlights are far apart and a hire car or tour is essential — pick one big thing (Haleakalā OR Hana, not both) as each easily fills a port day."
+ },
+ "kona_hawaii": {
+  "dock": "Tender",
+  "walk": "Walkable town centre",
+  "cur": "USD",
+  "lang": "English",
+  "blurb": "Kona, on the Big Island's sunny Kona coast, is where the world's only US-grown coffee is farmed and where manta rays glide at night. The tenders land in walkable Kailua-Kona; volcanoes and coffee country lie beyond.",
+  "miss": [
+   "A Kona coffee farm tour on the upland slopes",
+   "Snorkelling at Kealakekua Bay (Captain Cook monument)",
+   "Hawaii Volcanoes National Park, a longer drive"
+  ],
+  "tip": "It's a tender port and the town is compact and walkable — good for coffee and snorkelling close by. Volcanoes National Park is doable but a committed 2-hour-each-way drive."
+ },
+ "hilo_hawaii": {
+  "dock": "Docked",
+  "walk": "Shuttle to town",
+  "cur": "USD",
+  "lang": "English",
+  "blurb": "Hilo is the Big Island's lush, rainy eastern town — waterfalls, tropical gardens and the closest port to Hawaii Volcanoes National Park, where you can walk among steaming craters and hardened lava fields.",
+  "miss": [
+   "Hawaii Volcanoes National Park's craters and lava tubes",
+   "Rainbow Falls just outside town",
+   "Akaka Falls' 400-foot plunge through rainforest"
+  ],
+  "tip": "Volcanoes National Park is only about 45 minutes from Hilo — closer than from Kona — so this is the port to prioritise it. Bring a light rain layer; Hilo earns its green."
+ },
+ "nawiliwili_kauai_hawaii": {
+  "dock": "Docked",
+  "walk": "Car/tour needed",
+  "cur": "USD",
+  "lang": "English",
+  "blurb": "Nawiliwili is the port for Kauai, the Garden Isle — the oldest and most dramatically green of the main Hawaiian islands. Waimea Canyon, the sea cliffs of the Nā Pali Coast and Wailua's waterfalls are the draws.",
+  "miss": [
+   "Waimea Canyon, the 'Grand Canyon of the Pacific'",
+   "The Nā Pali Coast by boat or helicopter",
+   "Fern Grotto and Wailua Falls"
+  ],
+  "tip": "Kauai's scenery is its whole point and needs transport — a boat trip along the roadless Nā Pali Coast is the single most spectacular way to spend the day here."
+ },
+ "philadelphia": {
+  "dock": "Docked",
+  "walk": "Shuttle/taxi to centre",
+  "cur": "USD",
+  "lang": "English",
+  "blurb": "Philadelphia is where the United States was founded — Independence Hall and the Liberty Bell sit in a walkable historic core, alongside cobbled colonial streets and the art-museum steps Rocky made famous.",
+  "miss": [
+   "Independence Hall and the Liberty Bell",
+   "The 'Rocky Steps' at the Philadelphia Museum of Art",
+   "Reading Terminal Market and a real cheesesteak"
+  ],
+  "tip": "Independence Hall entry is by timed ticket (free but limited) — reserve online ahead of a port call. The historic sites cluster tightly, so once there it's all on foot."
+ },
+ "sydney_nova_scotia_canada": {
+  "dock": "Docked",
+  "walk": "Walkable waterfront",
+  "cur": "CAD",
+  "lang": "English",
+  "blurb": "Sydney, on Cape Breton Island, greets ships with the world's largest fiddle on its boardwalk — a nod to the island's Celtic music heritage. It's the gateway to the spectacular Cabot Trail and the Fortress of Louisbourg.",
+  "miss": [
+   "The Cabot Trail's coastal mountain drive",
+   "The reconstructed Fortress of Louisbourg",
+   "The giant fiddle and waterfront boardwalk"
+  ],
+  "tip": "The Cabot Trail is Cape Breton's glory but a long loop — for a shorter day, the Fortress of Louisbourg's costumed 18th-century world is closer and superb, especially in fall colour."
+ },
+ "buenos_aires_argentina": {
+  "dock": "Docked",
+  "walk": "Taxi to districts",
+  "cur": "ARS / USD",
+  "lang": "Spanish",
+  "blurb": "Buenos Aires is the passionate, European-flavoured capital of Argentina — the birthplace of tango, the colourful houses of La Boca, the pink presidential palace on Plaza de Mayo, and steak and Malbec by the plateful.",
+  "miss": [
+   "The colourful Caminito street in La Boca",
+   "Recoleta Cemetery, where Evita rests",
+   "A tango show, and an asado steak dinner"
+  ],
+  "tip": "Many cruises overnight here — if yours does, an evening tango show is the essential Buenos Aires experience. The districts are spread out, so use taxis or apps between them."
+ },
+ "montevideo_uruguay": {
+  "dock": "Docked",
+  "walk": "Walkable old town",
+  "cur": "UYU / USD",
+  "lang": "Spanish",
+  "blurb": "Montevideo, Uruguay's low-key capital, pairs a walkable colonial Ciudad Vieja with a long riverside rambla promenade. The Mercado del Puerto's grills and the leafy Plaza Independencia are easy pleasures near the port.",
+  "miss": [
+   "The Mercado del Puerto's parrilla grills",
+   "Ciudad Vieja's old town and Plaza Independencia",
+   "The rambla waterfront promenade"
+  ],
+  "tip": "The old town and the Mercado del Puerto (go hungry — it's a hall of wood-fired grills) are a short walk from the pier, making Montevideo an easy, low-stress port on foot."
+ },
+ "punta_del_este_uruguay": {
+  "dock": "Tender",
+  "walk": "Walkable resort town",
+  "cur": "UYU / USD",
+  "lang": "Spanish",
+  "blurb": "Punta del Este is South America's glamorous beach resort — a peninsula of marinas and high-rises where the River Plate meets the Atlantic, best known for the giant sculpted fingers (La Mano) rising from the sand.",
+  "miss": [
+   "La Mano — the giant hand emerging from the beach",
+   "The yacht harbour and Brava/Mansa beaches",
+   "Casapueblo, the artist Vilaró's white cliff villa"
+  ],
+  "tip": "It's a tender port and a compact, walkable resort — La Mano and the beaches are close. Casapueblo, along the coast, is a striking side-trip if you have time and a taxi."
+ },
+ "puerto_madryn_argentina": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "ARS / USD",
+  "lang": "Spanish",
+  "blurb": "Puerto Madryn is the gateway to Patagonia's wildlife — the Valdés Peninsula, where southern right whales, elephant seals, sea lions and Magellanic penguins gather depending on the season. A Welsh-settled heritage adds a curious twist.",
+  "miss": [
+   "Whale watching off Península Valdés (season permitting)",
+   "The Punta Tombo penguin colony",
+   "Welsh tea houses in nearby Gaiman"
+  ],
+  "tip": "Wildlife here is highly seasonal — whales roughly June–Dec, penguins Sep–Mar. Check what's around for your date and book the matching excursion, as the sites are far from town."
+ },
+ "ushuaia_argentina": {
+  "dock": "Docked",
+  "walk": "Walkable centre",
+  "cur": "ARS / USD",
+  "lang": "Spanish",
+  "blurb": "Ushuaia bills itself as the End of the World — the southernmost city on earth, ringed by snow-topped peaks where the Andes meet the sea. It's the launch point for Antarctica and for the Tierra del Fuego National Park.",
+  "miss": [
+   "Tierra del Fuego National Park's trails",
+   "A catamaran on the Beagle Channel to the lighthouse",
+   "The End of the World train and prison museum"
+  ],
+  "tip": "The Beagle Channel boat trip past sea-lion islands to Les Éclaireurs lighthouse is the classic Ushuaia excursion — and being this far south, weather turns fast, so layer up whatever the forecast says."
+ },
+ "punta_arenas_chile": {
+  "dock": "Docked",
+  "walk": "Walkable centre",
+  "cur": "CLP / USD",
+  "lang": "Spanish",
+  "blurb": "Punta Arenas sits on the Strait of Magellan, a windswept Patagonian city of grand wool-boom mansions and penguin colonies offshore. It's a gateway to Torres del Paine's peaks, though those are a long haul inland.",
+  "miss": [
+   "The Magdalena Island penguin colony by boat",
+   "Plaza Muñoz Gamero's mansions and Magellan statue",
+   "The Nao Victoria museum's replica ships"
+  ],
+  "tip": "Magdalena Island's thousands of Magellanic penguins are the standout (Nov–Mar) but weather-dependent — the strait is notoriously windy, so sailings cancel; have a town plan as backup."
+ },
+ "puerto_montt_chile": {
+  "dock": "Tender",
+  "walk": "Shuttle to town",
+  "cur": "CLP / USD",
+  "lang": "Spanish",
+  "blurb": "Puerto Montt is the gateway to Chile's Lake District — snow-capped volcanoes mirrored in deep blue lakes, the German-settled town of Puerto Varas, and the emerald Petrohué falls beneath Osorno volcano.",
+  "miss": [
+   "Puerto Varas and Lake Llanquihue's volcano views",
+   "The Petrohué waterfalls below Osorno volcano",
+   "The Angelmó fishing market and its seafood"
+  ],
+  "tip": "The Lake District scenery around Puerto Varas is the reason to be here — a short drive from the port and far prettier than Puerto Montt itself, which is a working town."
+ },
+ "valparaiso_chile": {
+  "dock": "Docked",
+  "walk": "Walkable/funicular hills",
+  "cur": "CLP / USD",
+  "lang": "Spanish",
+  "blurb": "Valparaíso is Chile's bohemian port city, a UNESCO tangle of steep hills laced with Victorian funiculars and covered in vivid street art. Poet Pablo Neruda's quirky house looks out over the bay. Santiago lies inland.",
+  "miss": [
+   "The hillside funiculars (ascensores) and street murals",
+   "Pablo Neruda's house, La Sebastiana",
+   "The Chilean wine valleys en route to Santiago"
+  ],
+  "tip": "Valparaíso is best simply wandered — ride a creaking funicular up Cerro Concepción and follow the murals. Many cruises use it as the port for Santiago (90 min) or wine-country tours."
+ },
+ "san_antonio_chile": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "CLP / USD",
+  "lang": "Spanish",
+  "blurb": "San Antonio is Chile's busiest commercial port and an alternative gateway to Santiago and the Casablanca wine valley. The port town is workaday; the vineyards and the capital inland are where cruisers head.",
+  "miss": [
+   "A Casablanca Valley winery tour",
+   "Santiago's old town and Sky Costanera view",
+   "Isla Negra, another Neruda house, up the coast"
+  ],
+  "tip": "There's little to detain you in San Antonio itself — book a winery tour or the Santiago transfer, as the day's value is entirely inland."
+ },
+ "callao_lima_peru": {
+  "dock": "Docked",
+  "walk": "Taxi/coach to Lima",
+  "cur": "PEN / USD",
+  "lang": "Spanish",
+  "blurb": "Callao is the port for Lima, Peru's sprawling capital — a UNESCO colonial centre of balconied mansions and catacombs, the clifftop Miraflores district above the Pacific, and a celebrated food scene that's among the world's best.",
+  "miss": [
+   "Lima's colonial Plaza Mayor and San Francisco catacombs",
+   "The clifftop parks of Miraflores",
+   "Ceviche and a pisco sour in the culinary capital"
+  ],
+  "tip": "Lima's traffic is heavy and Callao's immediate surrounds aren't for wandering — arrange transport to Miraflores or the historic centre, and don't leave Peru without proper ceviche."
+ },
+ "manta_ecuador": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "USD",
+  "lang": "Spanish",
+  "blurb": "Manta is Ecuador's tuna-fishing hub and the gateway to Panama-hat country — the hats are actually made here, not in Panama — plus cloud-forest coffee and the beach town of Montañita along the coast.",
+  "miss": [
+   "A Panama-hat (Montecristi) weaving workshop",
+   "The beaches at nearby San Lorenzo",
+   "Coffee and cacao farm tours inland"
+  ],
+  "tip": "The 'Panama' hat is genuinely Ecuadorian and Montecristi nearby makes the finest — a hat-weaving visit is the characterful choice over the modest port town."
+ },
+ "stanley_falklands": {
+  "dock": "Tender",
+  "walk": "Walkable tiny town",
+  "cur": "FKP / GBP",
+  "lang": "English",
+  "blurb": "Stanley is the tiny, defiantly British capital of the Falklands — red phone boxes, a whalebone arch and a green-roofed cathedral at the far end of the South Atlantic. Penguin colonies on the outlying beaches are the real draw.",
+  "miss": [
+   "King penguins at Volunteer Point (rough drive)",
+   "Gypsy Cove's Magellanic penguins, closer to town",
+   "Christ Church Cathedral and the whalebone arch"
+  ],
+  "tip": "This is a weather-and-swell-dependent tender port that's often missed entirely — if you get ashore, the penguins are the priority, but book early as 4x4 capacity to the colonies is very limited."
+ },
+ "tokyo": {
+  "dock": "Docked",
+  "walk": "Train/transit city",
+  "cur": "JPY",
+  "lang": "Japanese",
+  "blurb": "Tokyo is a metropolis of dazzling contrasts — ancient Senso-ji temple and neon Shibuya, imperial gardens and robot-served cafés. Ships dock at various terminals; the city's superb trains connect everything for those willing to dive in.",
+  "miss": [
+   "Senso-ji temple and Nakamise market in Asakusa",
+   "The Shibuya Crossing scramble",
+   "Meiji Shrine's forested calm and the imperial gardens"
+  ],
+  "tip": "Depending on your ship you'll dock at Yokohama, Tokyo (Harumi/Aomi) or elsewhere — check which, as the commute into central Tokyo varies from 20 minutes to over an hour. Get a prepaid Suica card for the trains."
+ },
+ "yokohama": {
+  "dock": "Docked",
+  "walk": "Walkable/transit centre",
+  "cur": "JPY",
+  "lang": "Japanese",
+  "blurb": "Yokohama is Tokyo's cosmopolitan port neighbour, with the striking Minato Mirai waterfront, Japan's largest Chinatown, and the atmospheric Sankeien garden. It's also a common berth for cruises 'to Tokyo', 30 minutes up the line.",
+  "miss": [
+   "The Minato Mirai waterfront and Cup Noodles Museum",
+   "Yokohama Chinatown, Japan's biggest",
+   "Sankeien traditional garden"
+  ],
+  "tip": "You can have a full day in Yokohama itself without the Tokyo trek — the waterfront, Chinatown and garden are close together and less frantic than the capital."
+ },
+ "kobe": {
+  "dock": "Docked",
+  "walk": "Walkable/transit centre",
+  "cur": "JPY",
+  "lang": "Japanese",
+  "blurb": "Kobe is a stylish port city famous worldwide for its marbled beef, framed by mountains and bay. It's also the gateway to the ancient capitals of Kyoto and Nara, each under an hour away by fast train.",
+  "miss": [
+   "Kyoto's temples and geisha district (an hour away)",
+   "Nara's bowing deer and Great Buddha",
+   "Kobe beef, and the Nunobiki herb-garden ropeway"
+  ],
+  "tip": "Kyoto tempts everyone from Kobe, but it's a full day and you'll only scratch it — pick two or three Kyoto sights, or stay local for Kobe beef and the harbour, which is lovely in its own right."
+ },
+ "nagasaki": {
+  "dock": "Docked",
+  "walk": "Tram to sights",
+  "cur": "JPY",
+  "lang": "Japanese",
+  "blurb": "Nagasaki is a hilly, harbour-wrapped city with a unique history — Japan's window to the West for centuries, and the second atomic-bomb target. The moving Peace Park and the Dutch-era Dejima trading post tell its story.",
+  "miss": [
+   "The Atomic Bomb Museum and Peace Park",
+   "Dejima, the reconstructed Dutch trading island",
+   "The Glover Garden and harbour night view"
+  ],
+  "tip": "The Peace Park and museum are essential and sobering — allow real time and headspace for them. The city's efficient trams reach every major site cheaply."
+ },
+ "fukuoka": {
+  "dock": "Docked",
+  "walk": "Shuttle/transit centre",
+  "cur": "JPY",
+  "lang": "Japanese",
+  "blurb": "Fukuoka is Kyushu's laid-back largest city, famous for its tonkotsu ramen and its riverside yatai food stalls at night. Ancient Dazaifu shrine and a ruined castle's cherry-blossom park give it depth beyond the food.",
+  "miss": [
+   "Dazaifu Tenmangu shrine and its plum trees",
+   "The yatai street-food stalls (if you overnight)",
+   "Ohori Park and the castle ruins"
+  ],
+  "tip": "Fukuoka is Japan's ramen capital — a bowl of Hakata tonkotsu is the local rite. Dazaifu shrine is a short train ride and the best half-day out."
+ },
+ "sapporo-otaru": {
+  "dock": "Docked at Otaru",
+  "walk": "Walkable Otaru; train to Sapporo",
+  "cur": "JPY",
+  "lang": "Japanese",
+  "blurb": "Otaru is a charming canal town of restored stone warehouses and glassworks, and the port for Sapporo, Hokkaido's beer-brewing capital 40 minutes inland. Northern Japan's seafood and dairy are exceptional here.",
+  "miss": [
+   "Otaru's historic canal and glass workshops",
+   "Sapporo's beer museum and Odori Park",
+   "The freshest sushi and uni (sea urchin) in Japan"
+  ],
+  "tip": "Otaru itself is a lovely walkable half-day of canal and craft shops — pair it with the train to Sapporo, or just feast on Hokkaido seafood without going anywhere."
+ },
+ "busan": {
+  "dock": "Docked",
+  "walk": "Shuttle/metro centre",
+  "cur": "KRW",
+  "lang": "Korean",
+  "blurb": "Busan is South Korea's beach-and-seafood second city — the tumbling pastel houses of Gamcheon Culture Village, the vast Jagalchi fish market, and a hilltop temple perched right over the sea.",
+  "miss": [
+   "Gamcheon Culture Village's rainbow hillside",
+   "Haedong Yonggungsa, the seaside temple",
+   "Jagalchi fish market and Haeundae Beach"
+  ],
+  "tip": "Gamcheon is Busan's photo-star but gets busy — go early. The metro is easy and English-signed, making independent exploring straightforward here."
+ },
+ "incheon-seoul": {
+  "dock": "Docked at Incheon",
+  "walk": "Coach/train to Seoul",
+  "cur": "KRW",
+  "lang": "Korean",
+  "blurb": "Incheon is the port for Seoul, South Korea's vast, hyper-modern capital an hour inland — grand royal palaces beside K-pop and skyscrapers, buzzing markets and the DMZ border with the North within reach.",
+  "miss": [
+   "Gyeongbokgung Palace and its guard-changing",
+   "Bukchon Hanok village's traditional houses",
+   "A DMZ tour to the Korean border"
+  ],
+  "tip": "Seoul is a long hour from Incheon and huge — pick a focused area (the palace-and-hanok historic core is best) rather than trying to criss-cross the city on a port day."
+ },
+ "jeju": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "KRW",
+  "lang": "Korean",
+  "blurb": "Jeju is South Korea's volcanic holiday island — a UNESCO landscape of a sunrise-crater peak, lava-tube caves, waterfalls and the famous haenyeo women free-divers who harvest the sea by hand.",
+  "miss": [
+   "Seongsan Ilchulbong, the sunrise crater peak",
+   "Manjanggul lava tube cave",
+   "A haenyeo diving demonstration"
+  ],
+  "tip": "Jeju's sights ring the island and need transport — the sunrise peak and a lava tube make a natural pairing on the east side, close enough to combine in one day."
+ },
+ "shanghai": {
+  "dock": "Docked",
+  "walk": "Shuttle/metro city",
+  "cur": "CNY",
+  "lang": "Mandarin",
+  "blurb": "Shanghai is China's dazzling showcase — the colonial Bund facing the space-age Pudong skyline across the river, the classical Yu Garden, and a metro that makes the megacity navigable. Note: ships often dock far from the centre.",
+  "miss": [
+   "The Bund waterfront and Pudong skyline",
+   "Yu Garden and the old city bazaar",
+   "A fast Maglev train ride from the airport"
+  ],
+  "tip": "China requires visas, though many cruise passengers use a visa-free group-tour arrangement — check your line's rules carefully before the call. The cruise terminal at Baoshan is a long way out; factor in the transfer."
+ },
+ "beijing-tianjin": {
+  "dock": "Docked at Tianjin",
+  "walk": "Coach; long transfer to Beijing",
+  "cur": "CNY",
+  "lang": "Mandarin",
+  "blurb": "Tianjin is the port for Beijing — but the capital and its Great Wall are a demanding 2.5–3 hours inland. This is very much a book-the-excursion call, delivering the Forbidden City, Tiananmen Square and the Wall itself.",
+  "miss": [
+   "The Great Wall at Mutianyu or Badaling",
+   "The Forbidden City and Tiananmen Square",
+   "The Temple of Heaven's park"
+  ],
+  "tip": "Beijing is a long haul and usually needs an overnight to do properly — on a single port day, a ship excursion is strongly advised given the distance, visa logistics and traffic. Tianjin itself has a pleasant European-style riverfront if you stay."
+ },
+ "dalian": {
+  "dock": "Docked",
+  "walk": "Shuttle to centre",
+  "cur": "CNY",
+  "lang": "Mandarin",
+  "blurb": "Dalian is a breezy northern Chinese port with a Russian and Japanese colonial past, leafy squares, tram lines and a dramatic coastal drive. It's more relaxed and walkable than China's mega-cities.",
+  "miss": [
+   "Zhongshan Square's colonial architecture",
+   "The coastal Binhai Road drive",
+   "Xinghai Square, one of the world's largest"
+  ],
+  "tip": "Dalian is one of China's more pleasant, low-key ports — the old trams and seafront squares are easy to enjoy, though China visa rules still apply, so check before independent exploring."
+ },
+ "xiamen": {
+  "dock": "Docked",
+  "walk": "Ferry to Gulangyu",
+  "cur": "CNY",
+  "lang": "Mandarin",
+  "blurb": "Xiamen is a subtropical southern-Chinese city whose jewel is Gulangyu — a car-free UNESCO island of colonial villas and piano music, a short ferry from the port. Tea culture and temples round out the call.",
+  "miss": [
+   "Gulangyu island's colonial mansions (car-free)",
+   "Nanputuo Temple below Wulao peak",
+   "Xiamen's café-lined old streets"
+  ],
+  "tip": "Gulangyu is the highlight and ferry-access only, with visitor caps — a ship tour handles the ticketing, which can otherwise be fiddly independently. China visa rules apply."
+ },
+ "shenzhen": {
+  "dock": "Docked",
+  "walk": "Shuttle/metro city",
+  "cur": "CNY",
+  "lang": "Mandarin",
+  "blurb": "Shenzhen rose from a fishing village to a tech megacity in a generation, sitting right on the Hong Kong border. It's modern China at full throttle — vast malls, theme parks and the electronics markets of Huaqiangbei.",
+  "miss": [
+   "The Huaqiangbei electronics markets",
+   "Window of the World's global-landmark park",
+   "The OCT-LOFT arts district"
+  ],
+  "tip": "Shenzhen is more a working megacity than a classic sightseeing port — its border with Hong Kong makes it a useful gateway, but check visa arrangements, which differ from the rest of China here."
+ },
+ "hong-kong": {
+  "dock": "Docked",
+  "walk": "Walkable/transit city",
+  "cur": "HKD",
+  "lang": "Cantonese / English",
+  "blurb": "Hong Kong is one of the world's great harbour cities — the Peak tram to a skyline panorama, the Star Ferry across Victoria Harbour, dim sum, temples and neon markets, all knitted by a superb transit system.",
+  "miss": [
+   "The Peak Tram and the skyline view",
+   "The Star Ferry across Victoria Harbour",
+   "Dim sum, and the Big Buddha on Lantau"
+  ],
+  "tip": "Hong Kong is wonderfully easy and English-friendly — get an Octopus card and explore independently. The Symphony of Lights harbour show at 8pm is worth staying aboard-late for if timings allow."
+ },
+ "keelung-taipei": {
+  "dock": "Docked at Keelung",
+  "walk": "Walkable Keelung; train to Taipei",
+  "cur": "TWD",
+  "lang": "Mandarin",
+  "blurb": "Keelung is the rainy northern port for Taipei, Taiwan's vibrant capital 40 minutes away — the soaring Taipei 101 tower, the treasure-filled National Palace Museum, and the mountain teahouses of Jiufen nearby.",
+  "miss": [
+   "Taipei 101's observation deck",
+   "The National Palace Museum's Chinese treasures",
+   "Jiufen's lantern-lit mountain lanes"
+  ],
+  "tip": "Jiufen (the town said to inspire Spirited Away) is closer to Keelung than central Taipei and utterly atmospheric — a great alternative to the city rush, especially in the late afternoon."
+ },
+ "kaohsiung": {
+  "dock": "Docked",
+  "walk": "Walkable/metro centre",
+  "cur": "TWD",
+  "lang": "Mandarin",
+  "blurb": "Kaohsiung is Taiwan's sunny southern harbour city — the ornate Dragon and Tiger Pagodas on Lotus Lake, a lively night-market scene, and the arts-district warehouses of Pier-2 right by the port.",
+  "miss": [
+   "The Dragon and Tiger Pagodas at Lotus Pond",
+   "The Pier-2 Art Center by the harbour",
+   "Liuhe or Ruifeng night market"
+  ],
+  "tip": "Kaohsiung is flatter, sunnier and more relaxed than Taipei, with an easy metro — the Pier-2 arts area is walkable from the terminal for a low-effort start."
+ },
+ "ho-chi-minh-city": {
+  "dock": "Docked at Phu My",
+  "walk": "Long coach to city",
+  "cur": "VND",
+  "lang": "Vietnamese",
+  "blurb": "Ships dock at Phu My, about two hours from Ho Chi Minh City (Saigon) — a city of French-colonial landmarks, the sobering War Remnants Museum, the frantic Ben Thanh market and the Cu Chi tunnels outside town.",
+  "miss": [
+   "The War Remnants Museum and Reunification Palace",
+   "The Cu Chi tunnels network",
+   "Ben Thanh market and Notre-Dame Saigon"
+  ],
+  "tip": "The 2-hour transfer each way makes this an all-day excursion, not an independent wander — a ship or private tour is the practical choice given the distance from Phu My."
+ },
+ "vung-tau": {
+  "dock": "Docked",
+  "walk": "Walkable seafront",
+  "cur": "VND",
+  "lang": "Vietnamese",
+  "blurb": "Vung Tau is a Vietnamese beach town on a headland, once a French colonial resort, now watched over by a giant Christ statue with arms outstretched over the sea — climbable for a sweeping coastal view. It's also an alternative gateway to Saigon.",
+  "miss": [
+   "The Christ of Vung Tau statue climb (811 steps)",
+   "The Lighthouse and Back Beach seafront",
+   "The White Palace colonial villa"
+  ],
+  "tip": "Vung Tau is far closer to its seafront sights than Phu My is to Saigon — if your ship calls here, a relaxed local day of statue, beach and seafood beats the long city haul."
+ },
+ "da-nang": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "VND",
+  "lang": "Vietnamese",
+  "blurb": "Da Nang is central Vietnam's beach city and gateway to two wonders — the ancient lantern-lit town of Hoi An, and the mountain-top Golden Bridge held aloft by giant stone hands at the Ba Na Hills.",
+  "miss": [
+   "Hoi An's UNESCO old town and lanterns",
+   "The Golden Bridge and Ba Na Hills",
+   "The Marble Mountains' caves and shrines"
+  ],
+  "tip": "Hoi An (about 45 minutes) is the standout and glorious after dark when the lanterns glow — if your call runs late, save it for then; otherwise go early before the heat and crowds."
+ },
+ "hue-chan-may": {
+  "dock": "Docked at Chan May",
+  "walk": "Coach to Hue or Hoi An",
+  "cur": "VND",
+  "lang": "Vietnamese",
+  "blurb": "Chan May is the port serving both the old imperial capital of Hue — its walled Citadel and riverside royal tombs — and, in the other direction, Hoi An and Da Nang. A crossroads call with two very different day options.",
+  "miss": [
+   "Hue's Imperial Citadel and Forbidden City",
+   "The Thien Mu Pagoda on the Perfume River",
+   "Or south to Hoi An's lantern-lit old town"
+  ],
+  "tip": "Decide in advance: north to imperial Hue (about 90 min) or south to Hoi An (about 90 min) — they're opposite directions, so you realistically get one, not both."
+ },
+ "cam-ranh": {
+  "dock": "Docked",
+  "walk": "Coach to Nha Trang",
+  "cur": "VND",
+  "lang": "Vietnamese",
+  "blurb": "Cam Ranh is the deep-water port for Nha Trang, Vietnam's premier beach resort — a long golden bay, Cham-era Hindu towers, and island-hopping boat trips in clear water. Mud baths are a local specialty.",
+  "miss": [
+   "Nha Trang's beach and Po Nagar Cham towers",
+   "An island-hopping snorkel boat trip",
+   "A therapeutic mineral mud bath"
+  ],
+  "tip": "Nha Trang is about 45 minutes from the port — an easy beach-and-culture day. The Cham towers plus a beach afternoon is the classic, relaxed pairing here."
+ },
+ "dalat-nha-trang": {
+  "dock": "Docked",
+  "walk": "Coach to Nha Trang / Dalat",
+  "cur": "VND",
+  "lang": "Vietnamese",
+  "blurb": "This call serves both the coastal resort of Nha Trang and, for the adventurous, the cool highland town of Dalat — a French hill-station of flower gardens, waterfalls and pine forest high above the coast.",
+  "miss": [
+   "Nha Trang's beaches and Cham towers",
+   "Dalat's French-era villas and flower gardens (long drive)",
+   "The Ponagar towers and a mud-bath spa"
+  ],
+  "tip": "Dalat is a spectacular but long mountain drive (3+ hours) — for a port day, Nha Trang's coast is far more realistic; leave Dalat for a longer stay."
+ },
+ "qui-nhon": {
+  "dock": "Docked",
+  "walk": "Walkable seafront",
+  "cur": "VND",
+  "lang": "Vietnamese",
+  "blurb": "Qui Nhon is an up-and-coming central-Vietnam beach city, still refreshingly untouristed — a sweeping crescent bay, ancient Cham towers on the hills, and the Thap Doi twin towers right in town.",
+  "miss": [
+   "The Banh It and Thap Doi Cham towers",
+   "Ky Co beach and Eo Gio's rugged cliffs",
+   "The quiet city beachfront promenade"
+  ],
+  "tip": "Qui Nhon rewards a relaxed approach — it lacks a single blockbuster sight, so enjoy the beaches and Cham ruins at an easy pace rather than rushing."
+ },
+ "phu-quoc": {
+  "dock": "Tender",
+  "walk": "Excursion base",
+  "cur": "VND",
+  "lang": "Vietnamese",
+  "blurb": "Phu Quoc is Vietnam's tropical island escape in the Gulf of Thailand — white-sand beaches, a fish-sauce heritage, pepper farms, and the world's longest over-sea cable car to the An Thoi islands.",
+  "miss": [
+   "The Hon Thom cable car over the sea",
+   "Sao Beach's powder-white sand",
+   "A fish-sauce or pepper-farm visit"
+  ],
+  "tip": "It's a tender port and an island of beaches — the record-breaking cable car is the signature experience, but a simple beach day is a perfectly good use of Phu Quoc."
+ },
+ "hai-phong": {
+  "dock": "Docked",
+  "walk": "Coach to Halong Bay",
+  "cur": "VND",
+  "lang": "Vietnamese",
+  "blurb": "Hai Phong is northern Vietnam's port city — a gateway to the limestone wonder of Halong Bay and, further off, to Hanoi. The city itself has faded French-colonial grandeur and flame-tree-lined boulevards.",
+  "miss": [
+   "A cruise among Halong Bay's limestone karsts",
+   "Cat Ba Island's national park",
+   "Hai Phong's colonial opera house and old quarter"
+  ],
+  "tip": "Halong Bay is the reason most ships call here — a junk-boat cruise among the karsts is unmissable, but it's a fair drive, so book the excursion rather than improvising."
+ },
+ "halong-bay": {
+  "dock": "Tender",
+  "walk": "Boat excursion base",
+  "cur": "VND",
+  "lang": "Vietnamese",
+  "blurb": "Halong Bay is the show itself — thousands of jungle-topped limestone islands rising from emerald water, a UNESCO seascape best seen from a traditional junk gliding between the karsts and into hidden caves.",
+  "miss": [
+   "A junk cruise among the limestone islands",
+   "Sung Sot (Surprise) Cave's vast chambers",
+   "A kayak into a quiet lagoon"
+  ],
+  "tip": "The bay is all about getting on the water — a boat trip among the karsts is the entire point, so prioritise that over anything on land."
+ },
+ "hanoi-halong-bay": {
+  "dock": "Docked",
+  "walk": "Long coach to Hanoi",
+  "cur": "VND",
+  "lang": "Vietnamese",
+  "blurb": "This call pairs Halong Bay with Vietnam's capital Hanoi — a city of a chaotic Old Quarter, the serene Hoan Kiem Lake, Ho Chi Minh's mausoleum and the Temple of Literature. Hanoi is a long haul from the coast, though.",
+  "miss": [
+   "Hanoi's Old Quarter and Hoan Kiem Lake",
+   "The Temple of Literature",
+   "Or a Halong Bay junk cruise instead"
+  ],
+  "tip": "Hanoi is 2.5+ hours from the Halong coast — you realistically choose the city OR the bay for a port day, not both. The bay is the easier, closer, more relaxing option."
+ },
+ "phnom-penh": {
+  "dock": "Docked riverside",
+  "walk": "Walkable centre",
+  "cur": "KHR / USD",
+  "lang": "Khmer",
+  "blurb": "Some river-capable ships reach Phnom Penh itself, Cambodia's riverside capital — the golden Royal Palace and Silver Pagoda, bustling markets, and the deeply moving sites of the Khmer Rouge era.",
+  "miss": [
+   "The Royal Palace and Silver Pagoda",
+   "The National Museum's Khmer sculpture",
+   "The Tuol Sleng and Killing Fields memorials"
+  ],
+  "tip": "The genocide memorial sites are harrowing but important — approach them with time and respect. The riverfront and palace offer a gentler counterbalance for the rest of the day."
+ },
+ "sihanoukville": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "KHR / USD",
+  "lang": "Khmer",
+  "blurb": "Sihanoukville is Cambodia's coastal gateway — once a sleepy beach town, now rapidly developed, but still the jumping-off point for tropical islands, fishing villages and the Ream National Park's mangroves and wildlife.",
+  "miss": [
+   "A boat trip to Koh Rong's beaches",
+   "Ream National Park's mangroves",
+   "The hilltop Wat Leu pagoda and its views"
+  ],
+  "tip": "The town has changed fast and unevenly — the offshore islands and the national park are the appealing escapes, so head for the water rather than staying in the port."
+ },
+ "bangkok-laem-chabang": {
+  "dock": "Docked at Laem Chabang",
+  "walk": "Long coach to Bangkok",
+  "cur": "THB",
+  "lang": "Thai",
+  "blurb": "Laem Chabang is the port for Bangkok — a glittering, chaotic capital of golden temples, the Grand Palace, floating markets and street food, about two hours inland. Pattaya's beaches lie much closer to the pier.",
+  "miss": [
+   "The Grand Palace and Wat Pho's reclining Buddha",
+   "A longtail boat through the canals (khlongs)",
+   "Or nearer Pattaya's beaches and Sanctuary of Truth"
+  ],
+  "tip": "Bangkok is a committed 2-hour transfer each way — thrilling but a long day. If temples-and-traffic feels much, Pattaya is 30 minutes away for an easier beach-and-culture call."
+ },
+ "hua-hin": {
+  "dock": "Tender",
+  "walk": "Walkable resort town",
+  "cur": "THB",
+  "lang": "Thai",
+  "blurb": "Hua Hin is Thailand's original royal beach resort, more refined and relaxed than Pattaya — a long sandy beach, a quirky railway station, night markets, and the summer palace of the Thai kings.",
+  "miss": [
+   "The historic Hua Hin railway station",
+   "The night market's seafood and stalls",
+   "Cicada weekend arts market, if timing suits"
+  ],
+  "tip": "Hua Hin is a genuinely pleasant, low-key resort — walkable and unhurried, with the beach and night market the easy pleasures. No blockbuster sights, just a relaxed Thai day."
+ },
+ "koh-samui": {
+  "dock": "Tender",
+  "walk": "Excursion base",
+  "cur": "THB",
+  "lang": "Thai",
+  "blurb": "Koh Samui is Thailand's palm-fringed Gulf island — the Big Buddha on its islet, coconut groves, waterfalls, and the powdery sands of Chaweng and Lamai. A laid-back tropical day awaits ashore.",
+  "miss": [
+   "The Big Buddha temple (Wat Phra Yai)",
+   "Chaweng or Lamai beach",
+   "Na Muang waterfalls in the jungle interior"
+  ],
+  "tip": "It's a tender port and an island of beaches and temples — the Big Buddha plus a beach afternoon is the classic combination, all within an easy taxi ride."
+ },
+ "koh-tao": {
+  "dock": "Tender",
+  "walk": "Excursion base",
+  "cur": "THB",
+  "lang": "Thai",
+  "blurb": "Koh Tao — 'Turtle Island' — is a tiny Gulf-of-Thailand gem renowned as one of the world's best and cheapest places to snorkel and dive, with clear water, coral gardens and, true to its name, sea turtles.",
+  "miss": [
+   "Snorkelling or diving at Shark Bay or Mango Bay",
+   "The viewpoint over Koh Nang Yuan's sandbar",
+   "A longtail boat around the coves"
+  ],
+  "tip": "The underwater life is the whole point here — bring or rent a snorkel and get in the water. The Koh Nang Yuan viewpoint over the triple-island sandbar is the iconic photo."
+ },
+ "koh-phi-phi": {
+  "dock": "Tender",
+  "walk": "Excursion base",
+  "cur": "THB",
+  "lang": "Thai",
+  "blurb": "Koh Phi Phi is the Andaman Sea's postcard — sheer limestone cliffs, turquoise bays and the famous Maya Bay of 'The Beach'. Stunning but popular; boat trips reveal its lagoons and snorkelling spots.",
+  "miss": [
+   "Maya Bay (now with visitor limits)",
+   "Snorkelling at Pileh Lagoon",
+   "The Phi Phi viewpoint hike"
+  ],
+  "tip": "Maya Bay has strict caps and sometimes closes to protect the reef — check status, and expect company; going by boat early beats the midday flotilla."
+ },
+ "phuket": {
+  "dock": "Tender",
+  "walk": "Excursion base",
+  "cur": "THB",
+  "lang": "Thai",
+  "blurb": "Phuket is Thailand's largest island and Andaman hub — Patong's buzzing beach and nightlife, the giant hilltop Big Buddha, the old Sino-Portuguese town, and boat trips to the karst-studded Phang Nga Bay.",
+  "miss": [
+   "Phang Nga Bay and James Bond Island by boat",
+   "The Big Buddha viewpoint",
+   "Phuket Old Town's colourful shophouses"
+  ],
+  "tip": "Phang Nga Bay's limestone scenery is the standout excursion. Phuket Old Town is an underrated, walkable alternative to the beaches if you'd rather culture than sand."
+ },
+ "krabi": {
+  "dock": "Tender",
+  "walk": "Excursion base",
+  "cur": "THB",
+  "lang": "Thai",
+  "blurb": "Krabi is the mainland gateway to the Andaman's most dramatic scenery — the towering limestone cliffs of Railay, the Emerald Pool and hot springs in the jungle, and boat trips to the Hong Islands' hidden lagoons.",
+  "miss": [
+   "Railay's cliff-backed beaches by longtail",
+   "The Emerald Pool and jungle hot springs",
+   "A Hong Islands island-hopping trip"
+  ],
+  "tip": "Railay is only reachable by boat and worth it for the cliff scenery — a longtail from the pier is part of the fun. The Emerald Pool is the pick for an inland, jungle-cooled day."
+ },
+ "khao-lak": {
+  "dock": "Tender",
+  "walk": "Excursion base",
+  "cur": "THB",
+  "lang": "Thai",
+  "blurb": "Khao Lak is a quieter stretch of Andaman coast north of Phuket, backed by rainforest national parks — a launch point for the pristine Similan Islands' diving and for elephant sanctuaries inland.",
+  "miss": [
+   "The Similan Islands' reefs (seasonal)",
+   "An ethical elephant sanctuary visit",
+   "Khao Lak's long, calm beaches"
+  ],
+  "tip": "The Similan Islands are among the world's top dive/snorkel sites but only open roughly Oct–May — check the season. Choose reputable, hands-off elephant sanctuaries over riding camps."
+ },
+ "koh-lanta": {
+  "dock": "Tender",
+  "walk": "Excursion base",
+  "cur": "THB",
+  "lang": "Thai",
+  "blurb": "Koh Lanta is a mellow, long-beached Andaman island that has kept its low-key charm — old-town stilt houses, mangrove kayaking, and a national park with a lighthouse at the island's quiet southern tip.",
+  "miss": [
+   "Lanta Old Town's wooden stilt shophouses",
+   "Mu Ko Lanta National Park and lighthouse",
+   "A mangrove or four-islands boat trip"
+  ],
+  "tip": "Koh Lanta is about slowing down — it has no must-see monuments, so lean into the beaches, the old town and the mangroves at island pace."
+ },
+ "trat-koh-chang": {
+  "dock": "Tender",
+  "walk": "Excursion base",
+  "cur": "THB",
+  "lang": "Thai",
+  "blurb": "Trat is the mainland province serving Koh Chang and its archipelago near the Cambodian border — a region of jungle-covered islands, quiet beaches and mangrove estuaries in Thailand's far southeast.",
+  "miss": [
+   "A boat to Koh Chang's beaches and waterfalls",
+   "Mangrove kayaking in the estuaries",
+   "The old teak-shophouse Trat town market"
+  ],
+  "tip": "This is off the mainstream trail — the appeal is quiet islands and mangroves, so take to the water rather than expecting big-name sights."
+ },
+ "chiang-mai": {
+  "dock": "Excursion (inland)",
+  "walk": "n/a from coast",
+  "cur": "THB",
+  "lang": "Thai",
+  "blurb": "Chiang Mai is northern Thailand's cultural capital — moated old city temples, mountain-top Doi Suthep, night bazaars and ethical elephant sanctuaries. It sits deep inland, so it features as an overland tour or fly-in, not a walk-off port.",
+  "miss": [
+   "Wat Phra That Doi Suthep on its mountain",
+   "The old city's ancient temples",
+   "An ethical elephant sanctuary in the hills"
+  ],
+  "tip": "Chiang Mai is far from any coast — if it appears on your itinerary it'll be a multi-day overland or fly-in add-on, not a typical port day. Plan it as a tour, not an independent visit."
+ },
+ "singapore": {
+  "dock": "Docked",
+  "walk": "Excellent transit city",
+  "cur": "SGD",
+  "lang": "English / Malay / Mandarin / Tamil",
+  "blurb": "Singapore is a gleaming, green, hyper-efficient city-state — the Marina Bay Sands skyline, the futuristic Gardens by the Bay Supertrees, hawker-centre feasts and colonial and ethnic quarters, all linked by a flawless metro.",
+  "miss": [
+   "Gardens by the Bay and the Supertree Grove",
+   "Marina Bay and the Merlion",
+   "A hawker-centre meal (Michelin street food)"
+  ],
+  "tip": "Singapore is the easiest port in Asia to do independently — impeccable English, superb MRT metro, total safety. It's also a common turnaround port, so allow an extra day if you can; there's plenty to fill it."
+ },
+ "port-klang-kuala-lumpur": {
+  "dock": "Docked at Port Klang",
+  "walk": "Coach/train to KL",
+  "cur": "MYR",
+  "lang": "Malay / English",
+  "blurb": "Port Klang is the gateway to Kuala Lumpur, an hour inland — the soaring Petronas Twin Towers, the cave temples of Batu with their giant golden statue, colonial Merdeka Square and a superb street-food scene.",
+  "miss": [
+   "The Petronas Twin Towers and skybridge",
+   "The Batu Caves' 272 rainbow steps",
+   "Merdeka Square and the food of Jalan Alor"
+  ],
+  "tip": "KL is about an hour from Port Klang — reachable by a cheap commuter train (KTM) as well as tours. The Batu Caves sit on the KL fringe and pair naturally with the city."
+ },
+ "penang": {
+  "dock": "Docked",
+  "walk": "Walkable George Town",
+  "cur": "MYR",
+  "lang": "Malay / English",
+  "blurb": "Penang's George Town is a UNESCO feast — Chinese clan houses, colonial mansions, celebrated street art and some of Asia's best street food, all in a walkable old core right by the port. A genuine highlight.",
+  "miss": [
+   "George Town's street art and clan jetties",
+   "Kek Lok Si, Malaysia's largest temple",
+   "Penang Hill's funicular and the food of Gurney Drive"
+  ],
+  "tip": "George Town is made for wandering on foot straight off the ship — hunt the murals, duck into clan houses, and eat everything. It's one of Southeast Asia's most rewarding walk-off ports."
+ },
+ "langkawi": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "MYR",
+  "lang": "Malay / English",
+  "blurb": "Langkawi is Malaysia's duty-free tropical island — rainforest and mangroves, a vertiginous SkyCab cable car to a curved sky bridge, eagles wheeling over the sea, and quiet beaches. Nature and duty-free shopping in one.",
+  "miss": [
+   "The SkyCab cable car and Sky Bridge",
+   "A mangrove-and-eagle-watching boat tour",
+   "Cenang Beach and duty-free shopping"
+  ],
+  "tip": "The SkyCab up Gunung Mat Cincang is the star — go early before cloud builds over the summit. The mangrove tours are the other great option for wildlife."
+ },
+ "kuala-terengganu": {
+  "dock": "Tender",
+  "walk": "Walkable centre",
+  "cur": "MYR",
+  "lang": "Malay",
+  "blurb": "Kuala Terengganu, on Malaysia's traditional east coast, offers a more authentically Malay experience — the striking Crystal Mosque, a Chinatown of murals, songket weaving and boat trips to nearby islands.",
+  "miss": [
+   "The Crystal Mosque at Islamic Heritage Park",
+   "Chinatown's street art and shophouses",
+   "The Central Market's crafts and songket"
+  ],
+  "tip": "This is a conservative, traditional region — dress modestly, especially near mosques. It's a quieter, more local port than Malaysia's big cities, best taken at an easy pace."
+ },
+ "jakarta": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "IDR",
+  "lang": "Indonesian",
+  "blurb": "Jakarta is Indonesia's vast, traffic-snarled capital — the old Dutch Batavia quarter around Fatahillah Square, the giant National Monument, and the enormous Istiqlal Mosque facing a cathedral in a study of tolerance.",
+  "miss": [
+   "Old Batavia (Kota Tua) and Fatahillah Square",
+   "The National Monument (Monas)",
+   "Istiqlal Mosque and the old harbour"
+  ],
+  "tip": "Jakarta's traffic is legendary — keep plans compact and near the old town rather than criss-crossing the city, and build in generous time back to the ship."
+ },
+ "surabaya": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "IDR",
+  "lang": "Indonesian",
+  "blurb": "Surabaya is Indonesia's gritty second city, a place of independence-war history, a colourful Arab and Chinese quarter, and — for the ambitious — a distant gateway to the volcanic moonscape of Mount Bromo.",
+  "miss": [
+   "The House of Sampoerna colonial tobacco museum",
+   "The Arab Quarter and Ampel Mosque",
+   "Submarine monument and the old town"
+  ],
+  "tip": "Mount Bromo is spectacular but a pre-dawn, multi-hour expedition unsuited to a normal port day — for the call itself, the colonial and Arab quarters make the better focus."
+ },
+ "bali-benoa": {
+  "dock": "Docked at Benoa",
+  "walk": "Excursion base",
+  "cur": "IDR",
+  "lang": "Indonesian / Balinese",
+  "blurb": "Benoa is Bali's cruise port — gateway to the Island of the Gods, with its clifftop sea temples, emerald rice terraces, monkey forests and Hindu culture. Ubud's arts scene and Uluwatu's temple are the classic day-trips.",
+  "miss": [
+   "The clifftop Uluwatu sea temple and kecak dance",
+   "Ubud's rice terraces and monkey forest",
+   "Tanah Lot temple on its offshore rock"
+  ],
+  "tip": "Bali's traffic is heavy and sights are spread out — pick one region (the Uluwatu/south cliffs, or Ubud's culture inland) rather than both. Dress respectfully for temple visits (a sarong is often required)."
+ },
+ "boracay-caticlan": {
+  "dock": "Tender",
+  "walk": "Excursion base",
+  "cur": "PHP",
+  "lang": "Filipino / English",
+  "blurb": "Caticlan is the jump-off for Boracay, the Philippine island regularly voted among the world's best beaches — the powder-white four-kilometre sweep of White Beach, turquoise water and legendary sunsets.",
+  "miss": [
+   "White Beach's powder sand and sunset",
+   "Island-hopping to Puka Shell Beach",
+   "Snorkelling the offshore reefs"
+  ],
+  "tip": "Boracay reaches it via a short boat from Caticlan — it's all about the beach, so keep it simple: sand, swim, and a sunset if your timing allows."
+ },
+ "manila": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "PHP",
+  "lang": "Filipino / English",
+  "blurb": "Manila is the Philippines' dense, energetic capital — the walled Spanish colonial core of Intramuros with Fort Santiago and the old cathedral, the seaside Rizal Park, and a warm, English-speaking welcome.",
+  "miss": [
+   "Intramuros' walls, Fort Santiago and San Agustin church",
+   "Rizal Park and the old Manila Bay sunset",
+   "A calesa (horse carriage) ride through the old city"
+  ],
+  "tip": "Intramuros is the walkable historic heart and best explored by bamboo bike or calesa — Manila's traffic is intense, so stay concentrated there rather than ranging across the city."
+ },
+ "brunei-muara": {
+  "dock": "Docked at Muara",
+  "walk": "Coach to BSB",
+  "cur": "BND",
+  "lang": "Malay",
+  "blurb": "Muara serves Bandar Seri Begawan, the capital of oil-rich Brunei — gold-domed mosques, the sprawling stilt-village of Kampong Ayer on the river, and a sultan's ceremonial splendour, all in a quiet, devout Islamic sultanate.",
+  "miss": [
+   "The Sultan Omar Ali Saifuddien Mosque",
+   "Kampong Ayer, the water village, by boat",
+   "The Royal Regalia Museum's opulence"
+  ],
+  "tip": "Brunei is conservative — dress modestly and note alcohol is banned. The stilt-village boat trip (with luck, a proboscis-monkey sighting) is the memorable local experience."
+ },
+ "yangon": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "MMK",
+  "lang": "Burmese",
+  "blurb": "Yangon is Myanmar's largest city, where the colossal golden Shwedagon Pagoda dominates the skyline — one of Buddhism's most sacred sites. Faded British-colonial architecture and bustling markets fill the streets below.",
+  "miss": [
+   "The Shwedagon Pagoda, especially at dusk",
+   "The Sule Pagoda and colonial downtown",
+   "Bogyoke Aung San (Scott) Market"
+  ],
+  "tip": "Shwedagon is extraordinary at sunset when the gold glows — if your call runs late, save it for then. Remove shoes and socks before entering, and dress modestly (shoulders and knees covered)."
+ },
+ "mumbai": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "INR",
+  "lang": "Hindi / Marathi / English",
+  "blurb": "Mumbai is India's pulsing commercial capital — the Gateway of India arch on the waterfront, Victorian-Gothic and Art Deco landmarks, the vast Dhobi Ghat laundry, and Bollywood glamour amid teeming energy.",
+  "miss": [
+   "The Gateway of India and Taj Mahal Palace hotel",
+   "The UNESCO Victorian and Art Deco ensemble",
+   "Elephanta Island's cave temples by ferry"
+  ],
+  "tip": "Mumbai is intense and sprawling — the colonial core around the Gateway is walkable and best for a port day. Elephanta's cave temples are a worthwhile ferry ride if the harbour's calm."
+ },
+ "goa": {
+  "dock": "Docked at Mormugao",
+  "walk": "Excursion base",
+  "cur": "INR",
+  "lang": "Konkani / English",
+  "blurb": "Goa blends Indian and Portuguese worlds — palm-fringed beaches, the baroque churches of Old Goa (where St Francis Xavier lies), spice plantations, and a relaxed coastal pace unlike anywhere else in India.",
+  "miss": [
+   "Old Goa's Basilica of Bom Jesus and cathedral",
+   "A spice-plantation tour and Goan lunch",
+   "The beaches of the north or south coast"
+  ],
+  "tip": "Goa splits between beach and heritage — Old Goa's churches are a compact, fascinating morning, leaving the afternoon for a beach or spice farm. The Portuguese-Indian cuisine is a highlight in itself."
+ },
+ "cochin-kochi": {
+  "dock": "Docked",
+  "walk": "Walkable Fort Kochi",
+  "cur": "INR",
+  "lang": "Malayalam / English",
+  "blurb": "Kochi is the relaxed jewel of India's Kerala coast — the Chinese fishing nets of Fort Kochi, a 16th-century synagogue in Jew Town, spice markets, and backwater cruises through palm-lined lagoons.",
+  "miss": [
+   "The cantilevered Chinese fishing nets at sunset",
+   "Mattancherry Palace and the Paradesi Synagogue",
+   "A Kerala backwater houseboat cruise"
+  ],
+  "tip": "Fort Kochi is walkable and atmospheric, with the fishing nets, synagogue and spice lanes close together. A backwater cruise is the other classic — quintessentially Keralan and wonderfully calm."
+ },
+ "chennai": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "INR",
+  "lang": "Tamil / English",
+  "blurb": "Chennai, capital of Tamil Nadu, is a gateway to South India's Dravidian temple culture — the shore temples of Mahabalipuram down the coast, a long city beach, British Fort St George, and a rich classical-arts heritage.",
+  "miss": [
+   "Mahabalipuram's UNESCO shore temples",
+   "Marina Beach, one of the world's longest",
+   "Kapaleeshwarar Temple and Fort St George"
+  ],
+  "tip": "Mahabalipuram (about 90 minutes south) is the highlight — its carved monuments by the sea outshine the city's own sights, so it's worth the drive if temples interest you."
+ },
+ "visakhapatnam": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "INR",
+  "lang": "Telugu / English",
+  "blurb": "Visakhapatnam ('Vizag') is a scenic port on India's east coast, ringed by the Eastern Ghats hills — beaches, a submarine museum on the sand, ancient Buddhist ruins nearby, and a hill-station viewpoint above the bay.",
+  "miss": [
+   "The INS Kursura submarine museum on the beach",
+   "Kailasagiri hilltop park and its views",
+   "The Buddhist ruins at Thotlakonda"
+  ],
+  "tip": "Vizag is a less-touristed Indian port with an appealing coast — the submarine museum and the hilltop park are easy, and the Buddhist sites reward those after something quieter."
+ },
+ "colombo": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "LKR",
+  "lang": "Sinhala / Tamil / English",
+  "blurb": "Colombo, Sri Lanka's seaside capital, mixes colonial-era landmarks, a red-and-white striped mosque, buzzing Pettah bazaars and the breezy Galle Face Green — with the option of heading to elephants or ancient temples inland.",
+  "miss": [
+   "The Gangaramaya Temple and Pettah markets",
+   "The colonial Fort district and Galle Face Green",
+   "The Jami Ul-Alfar (red) Mosque"
+  ],
+  "tip": "Colombo itself makes an easy walkable-by-tuk-tuk day. Longer trips to elephant orphanages or the hill country are possible but eat the whole day — decide based on your call length."
+ },
+ "male": {
+  "dock": "Tender",
+  "walk": "Walkable tiny capital",
+  "cur": "MVR / USD",
+  "lang": "Dhivehi",
+  "blurb": "Malé is the compact, densely packed capital of the Maldives — a colourful island city of a coral-stone mosque, a fish market and tightly gridded streets — and the gateway to the turquoise lagoons and resort islands beyond.",
+  "miss": [
+   "The Old Friday Mosque's carved coral stone",
+   "The fish and produce markets",
+   "A boat to a nearby sandbank or reef for snorkelling"
+  ],
+  "tip": "Malé itself is a quick walkable circuit; the Maldives' magic is the water, so a snorkelling or sandbank boat trip is the way to spend the day. Dress modestly in the conservative capital."
+ },
+ "muscat": {
+  "dock": "Docked",
+  "walk": "Walkable Mutrah corniche",
+  "cur": "OMR",
+  "lang": "Arabic",
+  "blurb": "Muscat is Oman's refined, low-rise capital, wrapped by dramatic bare mountains — the vast Sultan Qaboos Grand Mosque, the lively Mutrah souq along the corniche, and forts guarding the old harbour. Arabia at its most elegant.",
+  "miss": [
+   "The Sultan Qaboos Grand Mosque (morning entry)",
+   "The Mutrah Souq and corniche",
+   "The Royal Opera House and old-town forts"
+  ],
+  "tip": "The Grand Mosque only admits non-Muslim visitors in the morning (roughly 8–11am) and requires modest dress — women need to cover hair, arms and legs — so go early and prepared."
+ },
+ "dubai": {
+  "dock": "Docked",
+  "walk": "Taxi/metro city",
+  "cur": "AED",
+  "lang": "Arabic / English",
+  "blurb": "Dubai is superlatives made concrete — the world's tallest building the Burj Khalifa, the sail-shaped Burj Al Arab, vast malls with indoor ski slopes, and the old-world contrast of the Creek's spice and gold souks.",
+  "miss": [
+   "The Burj Khalifa observation deck (pre-book)",
+   "The old Creek, abras and the gold and spice souks",
+   "A desert safari with dunes and dinner"
+  ],
+  "tip": "Many cruises overnight in Dubai — if yours does, a desert safari is the essential add-on. Burj Khalifa tickets are far cheaper and less queued when booked online in advance."
+ },
+ "abu-dhabi": {
+  "dock": "Docked",
+  "walk": "Taxi city",
+  "cur": "AED",
+  "lang": "Arabic / English",
+  "blurb": "Abu Dhabi, the UAE capital, pairs the breathtaking white-marble Sheikh Zayed Grand Mosque with the Louvre Abu Dhabi's domed museum and the Ferrari World theme park — a calmer, more spacious counterpart to Dubai.",
+  "miss": [
+   "The Sheikh Zayed Grand Mosque",
+   "Louvre Abu Dhabi under its floating dome",
+   "The Corniche, or Ferrari World for thrill-seekers"
+  ],
+  "tip": "The Grand Mosque is the unmissable sight and free to enter, but enforces strict modest dress (abayas can be borrowed) — go early to beat both heat and crowds."
+ },
+ "doha": {
+  "dock": "Docked",
+  "walk": "Taxi; walkable corniche",
+  "cur": "QAR",
+  "lang": "Arabic / English",
+  "blurb": "Doha, Qatar's fast-rising capital, balances tradition and spectacle — the restored Souq Waqif's alleys, the sail-inspired Museum of Islamic Art, the striking National Museum, and a futuristic skyline across the bay.",
+  "miss": [
+   "Souq Waqif's restored alleys and falcon market",
+   "The Museum of Islamic Art and its park",
+   "The dune-and-sea 'inland sea' desert excursion"
+  ],
+  "tip": "Souq Waqif is best in the cooler evening when it comes alive — if your call runs late, save it for then. The Museum of Islamic Art is a superb, air-conditioned midday refuge."
+ },
+ "aqaba": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "JOD",
+  "lang": "Arabic",
+  "blurb": "Aqaba is Jordan's Red Sea port and the gateway to two wonders — the rose-red rock city of Petra, and the Martian desert of Wadi Rum. The town itself offers Red Sea snorkelling and a relaxed corniche.",
+  "miss": [
+   "Petra, the rock-carved Nabataean city",
+   "Wadi Rum's desert landscapes by 4x4",
+   "Red Sea snorkelling on Aqaba's reefs"
+  ],
+  "tip": "Petra is about two hours each way and a lot of walking — an unforgettable but full day, best booked as an organised excursion given the distance and the site's scale. Wear proper shoes."
+ },
+ "haifa": {
+  "dock": "Docked",
+  "walk": "Walkable/excursion base",
+  "cur": "ILS",
+  "lang": "Hebrew / Arabic",
+  "blurb": "Haifa cascades down Mount Carmel to the sea, crowned by the golden-domed Bahá'í Shrine and its immaculate terraced gardens. It's also the gateway to Nazareth, Acre's crusader city, and the Galilee.",
+  "miss": [
+   "The Bahá'í Gardens' terraced hanging gardens",
+   "Crusader Acre (Akko) up the coast",
+   "Nazareth or the Sea of Galilee inland"
+  ],
+  "tip": "The Bahá'í Gardens are Haifa's signature and partly free to view, though the full terrace tour needs booking. Acre's atmospheric old city is the best nearby half-day."
+ },
+ "ashdod": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "ILS",
+  "lang": "Hebrew",
+  "blurb": "Ashdod is the port for Jerusalem and Bethlehem, about 90 minutes inland — among the most significant destinations in the world, holy to three faiths, with the Western Wall, the Church of the Holy Sepulchre and the Dome of the Rock.",
+  "miss": [
+   "Jerusalem's Old City and the Western Wall",
+   "The Church of the Holy Sepulchre",
+   "Bethlehem's Church of the Nativity, or Tel Aviv's beaches"
+  ],
+  "tip": "Jerusalem is the obvious draw but a long, full and emotionally weighty day — an organised tour handles the distance and the complex logistics best. Dress modestly for the religious sites."
+ },
+ "sydney": {
+  "dock": "Docked",
+  "walk": "Walkable/ferry city",
+  "cur": "AUD",
+  "lang": "English",
+  "blurb": "Sydney needs little introduction — ships glide past the Opera House's white sails and the Harbour Bridge to berth at Circular Quay or White Bay. The harbour, the Rocks' colonial lanes, and Bondi Beach define the day.",
+  "miss": [
+   "The Opera House and a Harbour Bridge climb or walk",
+   "The Rocks' historic lanes and markets",
+   "A ferry to Manly or Taronga Zoo across the harbour"
+  ],
+  "tip": "If you dock at Circular Quay you're in the heart of it all; White Bay needs a transfer. Either way, a harbour ferry is the best-value 'cruise' in Sydney — ride one to Manly and back."
+ },
+ "melbourne": {
+  "dock": "Docked",
+  "walk": "Tram/transit city",
+  "cur": "AUD",
+  "lang": "English",
+  "blurb": "Melbourne is Australia's culture-and-coffee capital — hidden laneways of street art and espresso bars, grand Victorian arcades, sports temples like the MCG, and the wildlife-rich Great Ocean Road beyond the city.",
+  "miss": [
+   "The laneways' street art and coffee culture",
+   "Queen Victoria Market",
+   "The Great Ocean Road's Twelve Apostles (long day)"
+  ],
+  "tip": "The free City Circle tram loops the centre's highlights. The Great Ocean Road is spectacular but a very long day-trip — only attempt it on a late departure, or stay in town for the laneways."
+ },
+ "brisbane": {
+  "dock": "Docked",
+  "walk": "Shuttle/ferry centre",
+  "cur": "AUD",
+  "lang": "English",
+  "blurb": "Brisbane is Queensland's sunny, relaxed capital on a looping river — the South Bank parklands with their city-beach lagoon, a koala sanctuary upriver, and the gateway to the Gold Coast and Moreton Bay.",
+  "miss": [
+   "Lone Pine Koala Sanctuary (cuddle a koala)",
+   "South Bank's riverside beach and gardens",
+   "A CityCat ferry along the Brisbane River"
+  ],
+  "tip": "The new Brisbane International Cruise Terminal is a fair way from the centre — check transfer options. Lone Pine is the quintessential Brissie experience if you want hands-on wildlife."
+ },
+ "cairns": {
+  "dock": "Docked",
+  "walk": "Walkable centre",
+  "cur": "AUD",
+  "lang": "English",
+  "blurb": "Cairns is the gateway to two UNESCO wonders side by side — the Great Barrier Reef offshore and the ancient Daintree Rainforest inland. The town's lagoon-lined esplanade is the launch point for reef boats.",
+  "miss": [
+   "A Great Barrier Reef snorkel or dive trip",
+   "The Skyrail and scenic railway to Kuranda",
+   "The Daintree Rainforest and Cape Tribulation"
+  ],
+  "tip": "The reef is the reason to be here — book a well-reviewed outer-reef trip, as the outer sites are far healthier than the inner ones. Reef boats leave early, so an early call is ideal."
+ },
+ "airlie_beach_whitsundays": {
+  "dock": "Tender",
+  "walk": "Excursion base",
+  "cur": "AUD",
+  "lang": "English",
+  "blurb": "Airlie Beach is the gateway to the Whitsundays — 74 island jewels in the Great Barrier Reef, crowned by Whitehaven Beach's blindingly white silica sand and the swirling turquoise of Hill Inlet.",
+  "miss": [
+   "Whitehaven Beach and Hill Inlet lookout",
+   "Snorkelling the fringing reefs by boat",
+   "A scenic flight over the Heart Reef"
+  ],
+  "tip": "Whitehaven is consistently rated among the world's best beaches and reachable only by boat — a Whitsundays cruise is the essential excursion. A scenic flight over Heart Reef is the splurge."
+ },
+ "hobart": {
+  "dock": "Docked",
+  "walk": "Walkable waterfront",
+  "cur": "AUD",
+  "lang": "English",
+  "blurb": "Hobart, Tasmania's harbour capital, pairs colonial sandstone with the wild — the Saturday Salamanca Market, the provocative MONA art museum reached by ferry, and Mount Wellington towering over the town.",
+  "miss": [
+   "MONA (Museum of Old and New Art) by ferry",
+   "Salamanca Place's markets and warehouses",
+   "The summit drive up Mount Wellington"
+  ],
+  "tip": "MONA is one of the world's most talked-about museums and the catamaran ride there is half the fun. Salamanca Market only runs Saturdays — a bonus if your call lands right."
+ },
+ "adelaide_australia": {
+  "dock": "Docked at Outer Harbor",
+  "walk": "Train to city",
+  "cur": "AUD",
+  "lang": "English",
+  "blurb": "Adelaide is South Australia's elegant, easy-going capital of parks and churches — but the real draw is the wine, with the world-famous Barossa Valley and the wildlife of Kangaroo Island within reach.",
+  "miss": [
+   "A Barossa or McLaren Vale winery day",
+   "Adelaide Central Market's produce",
+   "The Adelaide Oval and riverbank precinct"
+  ],
+  "tip": "A train runs from Outer Harbor into the city in about 30 minutes. Wine country is Adelaide's signature — the Barossa or McLaren Vale make the best day out for anyone who enjoys a drop."
+ },
+ "perth-fremantle": {
+  "dock": "Docked at Fremantle",
+  "walk": "Walkable Fremantle; train to Perth",
+  "cur": "AUD",
+  "lang": "English",
+  "blurb": "Fremantle is a wonderfully preserved gold-rush port town — a weekend market in a Victorian hall, the sobering convict-era prison, and craft breweries — and the gateway to Perth and the quokkas of Rottnest Island.",
+  "miss": [
+   "Fremantle Prison's convict history",
+   "Rottnest Island's quokkas and beaches by ferry",
+   "The Fremantle Markets and cappuccino strip"
+  ],
+  "tip": "'Freo' is walkable and characterful in its own right — you needn't rush to Perth. Rottnest Island, with its smiling quokkas, is the standout excursion straight from the harbour."
+ },
+ "darwin_australia": {
+  "dock": "Docked",
+  "walk": "Walkable centre",
+  "cur": "AUD",
+  "lang": "English",
+  "blurb": "Darwin is Australia's tropical Top End capital — a WWII frontline, a gateway to Kakadu and Litchfield national parks, sunset markets on the beach, and a frontier feel closer to Asia than to Sydney.",
+  "miss": [
+   "Litchfield National Park's waterfalls and pools",
+   "The Mindil Beach sunset market (dry season)",
+   "The WWII oil-storage tunnels and museums"
+  ],
+  "tip": "Kakadu is a huge full-day-plus trip; Litchfield is closer and delivers swimmable waterfalls in a shorter day. Note the wet season (Nov–Apr) closes many swimming spots — check conditions."
+ },
+ "auckland": {
+  "dock": "Docked",
+  "walk": "Walkable waterfront",
+  "cur": "NZD",
+  "lang": "English / Maori",
+  "blurb": "Auckland, the 'City of Sails', spreads across a volcanic isthmus between two harbours — the Sky Tower over the centre, the vineyards and beaches of Waiheke Island a ferry away, and green volcanic cones dotting the suburbs.",
+  "miss": [
+   "A ferry to Waiheke Island's wineries and beaches",
+   "The Sky Tower observation deck (or SkyJump)",
+   "The view from a volcanic cone like Mount Eden"
+  ],
+  "tip": "The ship docks right in the city centre. Waiheke Island is the best day out — a 40-minute ferry to vineyards, olive groves and beaches — but book wine tours ahead on busy days."
+ },
+ "bay_of_islands_nz": {
+  "dock": "Tender",
+  "walk": "Walkable small towns",
+  "cur": "NZD",
+  "lang": "English / Maori",
+  "blurb": "The Bay of Islands is a subtropical maritime playground of 144 islands in New Zealand's far north — dolphin cruises, the 'Hole in the Rock', and Waitangi, the birthplace of the nation's founding treaty.",
+  "miss": [
+   "A boat cruise to the Hole in the Rock",
+   "The Waitangi Treaty Grounds",
+   "Dolphin watching, or historic Russell by ferry"
+  ],
+  "tip": "It's a tender port and the bay is best seen from the water — a boat cruise to the Hole in the Rock, with likely dolphins, is the classic. Historic Russell is a short passenger ferry away."
+ },
+ "tauranga_nz": {
+  "dock": "Docked",
+  "walk": "Walkable Mount Maunganui",
+  "cur": "NZD",
+  "lang": "English / Maori",
+  "blurb": "Tauranga is the port for the Bay of Plenty and, most famously, for Rotorua's geothermal wonderland and Maori culture inland. At the port itself, Mount Maunganui's beach and climbable cone are right there.",
+  "miss": [
+   "Rotorua's geysers, mud pools and Maori culture",
+   "The climb up Mauao (Mount Maunganui)",
+   "Hobbiton movie set, or a kiwifruit tour"
+  ],
+  "tip": "Rotorua (about 60–90 min) is the big draw for geothermal and Maori experiences. If you'd rather stay local, Mount Maunganui's beach and summit walk are excellent and right by the ship."
+ },
+ "napier_nz": {
+  "dock": "Docked",
+  "walk": "Walkable centre",
+  "cur": "NZD",
+  "lang": "English / Maori",
+  "blurb": "Napier is the world's most complete Art Deco town, rebuilt in 1930s style after an earthquake — pastel geometric facades, a palm-lined marine parade, and the vineyards of Hawke's Bay all around.",
+  "miss": [
+   "The Art Deco centre's 1930s architecture",
+   "A Hawke's Bay winery tour",
+   "The Marine Parade and National Aquarium"
+  ],
+  "tip": "The Art Deco heart is walkable straight from the port — pick up a self-guided walk map. Hawke's Bay is one of NZ's top wine regions, making a winery tour the natural excursion."
+ },
+ "picton_nz": {
+  "dock": "Docked",
+  "walk": "Walkable small town",
+  "cur": "NZD",
+  "lang": "English / Maori",
+  "blurb": "Picton sits at the head of the Marlborough Sounds' drowned valleys — a gateway to the world-famous Marlborough wine region (think Sauvignon Blanc) and to boat trips and walks among the forested waterways.",
+  "miss": [
+   "A Marlborough wine tour (Sauvignon Blanc country)",
+   "A Marlborough Sounds cruise or the Queen Charlotte Track",
+   "The Edwin Fox, one of the world's oldest ships"
+  ],
+  "tip": "Marlborough is New Zealand's wine powerhouse — a cellar-door tour is the obvious highlight. For scenery over sipping, a Sounds boat cruise or a stretch of the Queen Charlotte Track delivers."
+ },
+ "akaroa_nz": {
+  "dock": "Tender",
+  "walk": "Walkable village",
+  "cur": "NZD",
+  "lang": "English / French / Maori",
+  "blurb": "Akaroa is a charming French-founded village on a drowned volcanic crater harbour, a tender ride on the Banks Peninsula — home to the rare, tiny Hector's dolphins and a gateway to Christchurch over the hills.",
+  "miss": [
+   "A harbour cruise to see Hector's dolphins",
+   "The French-flavoured village streets and cafés",
+   "Christchurch, about 90 minutes away"
+  ],
+  "tip": "Akaroa is a tender port and often used as the gateway to Christchurch — but the village and its dolphin cruises are lovely in their own right if you'd rather not make the long transfer."
+ },
+ "lyttelton_christchurch_nz": {
+  "dock": "Docked",
+  "walk": "Shuttle to Christchurch",
+  "cur": "NZD",
+  "lang": "English / Maori",
+  "blurb": "Lyttelton is the port for Christchurch, the South Island's largest city — rebuilding creatively since its 2011 earthquake with a cardboard cathedral and street art, punting on the Avon, and the gateway to the Southern Alps.",
+  "miss": [
+   "Christchurch's Botanic Gardens and punting on the Avon",
+   "The Transitional 'Cardboard' Cathedral",
+   "The TranzAlpine railway or Arthur's Pass (longer trips)"
+  ],
+  "tip": "Christchurch is about 20 minutes over (or through) the hills from Lyttelton. The city's earthquake-recovery story — cardboard cathedral, street art, memorials — makes for a moving, walkable day."
+ },
+ "port_chalmers_dunedin_nz": {
+  "dock": "Docked",
+  "walk": "Shuttle to Dunedin",
+  "cur": "NZD",
+  "lang": "English / Maori",
+  "blurb": "Port Chalmers serves Dunedin, New Zealand's Scottish-heritage city — Victorian and Edwardian architecture, the world's steepest street, and the wildlife-rich Otago Peninsula with albatrosses, penguins and sea lions.",
+  "miss": [
+   "The Otago Peninsula's albatross colony and penguins",
+   "Larnach Castle, NZ's only castle",
+   "Dunedin's railway station and Baldwin Street"
+  ],
+  "tip": "The Otago Peninsula's wildlife — royal albatross, yellow-eyed and little penguins, fur seals — is the standout, and unique to this corner of NZ. Book the albatross centre ahead for guaranteed viewing."
+ },
+ "wellington": {
+  "dock": "Docked",
+  "walk": "Shuttle to centre",
+  "cur": "NZD",
+  "lang": "English / Maori",
+  "blurb": "Wellington, New Zealand's compact capital, packs in the superb (and free) Te Papa national museum, a cable car to hilltop gardens, a vibrant café and craft-beer scene, and Weta Workshop's film-effects wizardry.",
+  "miss": [
+   "Te Papa, the brilliant national museum (free)",
+   "The cable car to the Botanic Garden",
+   "Weta Workshop's film-effects tour"
+  ],
+  "tip": "Te Papa is world-class and free — an easy highlight near the waterfront. Wellington is famously windy and walkable; the cable car up and garden stroll down is a lovely low-effort loop."
+ },
+ "noumea_new_caledonia": {
+  "dock": "Docked",
+  "walk": "Shuttle to centre",
+  "cur": "XPF",
+  "lang": "French",
+  "blurb": "Nouméa is a slice of France in the South Pacific — baguettes and boules alongside Melanesian Kanak culture, a huge turquoise lagoon (UNESCO-listed), the striking Tjibaou Cultural Centre, and easy beaches.",
+  "miss": [
+   "The Tjibaou Cultural Centre's Kanak architecture",
+   "Anse Vata and Baie des Citrons beaches",
+   "A glass-bottom boat or snorkel in the lagoon"
+  ],
+  "tip": "The lagoon is the world's largest and a UNESCO site — snorkelling or a boat trip shows it best. Nouméa mixes French café culture with Pacific island life; the beaches are an easy walk-or-shuttle."
+ },
+ "port_vila_vanuatu": {
+  "dock": "Docked",
+  "walk": "Walkable centre",
+  "cur": "VUV",
+  "lang": "Bislama / English / French",
+  "blurb": "Port Vila is Vanuatu's laid-back capital on a pretty harbour — a lively market, offshore snorkelling islets, blue holes of astonishing clarity in the jungle, and cascading waterfalls a short drive away.",
+  "miss": [
+   "The Mele Cascades waterfall",
+   "A blue hole swim in crystal spring water",
+   "Hideaway Island's underwater post office by snorkel"
+  ],
+  "tip": "The blue holes and Mele Cascades are the natural stars — impossibly clear water for swimming. The underwater post office off Hideaway Island is a quirky snorkel novelty."
+ },
+ "mystery_island_vanuatu": {
+  "dock": "Tender",
+  "walk": "All on foot",
+  "cur": "AUD / VUV",
+  "lang": "Bislama",
+  "blurb": "Mystery Island (Inyeug) is an uninhabited speck off southern Vanuatu — a classic castaway day of white sand, snorkelling straight off the beach, and islanders who come over from neighbouring Aneityum to set up market stalls for the day.",
+  "miss": [
+   "Snorkelling the reef right off the beach",
+   "Walking the whole tiny island (about 20 minutes)",
+   "The island market's crafts and fresh fruit"
+  ],
+  "tip": "There's no infrastructure — bring your own snorkel gear, water, sun protection and cash for the stalls. It's a pure beach day, so set expectations to 'blissfully simple'."
+ },
+ "suva_fiji": {
+  "dock": "Docked",
+  "walk": "Walkable centre",
+  "cur": "FJD",
+  "lang": "Fijian / English / Hindi",
+  "blurb": "Suva is Fiji's lively, multicultural capital on the wetter side of the main island — colonial buildings, the excellent Fiji Museum, a bustling municipal market, and rainforest parks with waterfalls nearby.",
+  "miss": [
+   "The Fiji Museum's canoes and cannibal-era relics",
+   "The colourful municipal market",
+   "Colo-i-Suva rainforest park's pools and trails"
+  ],
+  "tip": "Suva is more workaday capital than beach idyll — the museum and market give real local texture, and the nearby rainforest park offers a cool green escape with swimmable pools."
+ },
+ "lautoka_fiji": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "FJD",
+  "lang": "Fijian / English / Hindi",
+  "blurb": "Lautoka, Fiji's 'Sugar City' on the drier western coast, is the gateway to the postcard Mamanuca and Yasawa islands, to firewalking Beqa culture, and to the sun-soaked Coral Coast beaches. This is the Fiji of the brochures.",
+  "miss": [
+   "An island-hopping day to the Mamanucas",
+   "A traditional Fijian village and kava ceremony",
+   "The Garden of the Sleeping Giant orchid gardens"
+  ],
+  "tip": "The western side is Fiji's sunny beach heartland — an island transfer to the Mamanucas gives you the classic turquoise-lagoon day. A village visit with a kava ceremony is the cultural counterpart."
+ },
+ "papeete_tahiti": {
+  "dock": "Docked",
+  "walk": "Walkable centre",
+  "cur": "XPF",
+  "lang": "French / Tahitian",
+  "blurb": "Papeete, on Tahiti, is the capital of French Polynesia — a bustling market of black pearls and tiare flowers, a waterfront of roulottes (food trucks), and a launch point for the lush interior's waterfalls and the neighbouring islands.",
+  "miss": [
+   "The Papeete Market for black pearls and crafts",
+   "The roulotte food trucks on the waterfront",
+   "The Fautaua Valley waterfalls or a lagoon tour"
+  ],
+  "tip": "Tahiti is the gateway rather than the postcard island itself — Moorea and Bora Bora are prettier. In Papeete, the market and the evening roulottes are the authentic local experiences."
+ },
+ "moorea_french_polynesia": {
+  "dock": "Tender",
+  "walk": "Excursion base",
+  "cur": "XPF",
+  "lang": "French / Tahitian",
+  "blurb": "Moorea is the heart-shaped island of jagged green peaks and turquoise lagoons just across from Tahiti — snorkelling with rays and reef sharks, a pineapple-planted interior, and the jaw-dropping Belvedere viewpoint over two bays.",
+  "miss": [
+   "Snorkelling with stingrays in the lagoon",
+   "The Belvedere Lookout over Cook's and Opunohu bays",
+   "A 4x4 tour through the pineapple plantations"
+  ],
+  "tip": "The lagoon snorkelling — hand-feeding rays in waist-deep water — is Moorea's signature and utterly memorable. It's a tender port, so book water excursions early."
+ },
+ "bora_bora_french_polynesia": {
+  "dock": "Tender",
+  "walk": "Excursion base",
+  "cur": "XPF",
+  "lang": "French / Tahitian",
+  "blurb": "Bora Bora is the South Pacific dream — a jade volcanic peak (Mount Otemanu) ringed by a luminous turquoise lagoon and a necklace of palm-fringed motus. Overwater bungalows and world-class lagoon snorkelling define it.",
+  "miss": [
+   "A lagoon tour snorkelling with rays and sharks",
+   "The motu picnic and coral gardens",
+   "The view of Mount Otemanu from the water"
+  ],
+  "tip": "The lagoon is everything here — a boat-and-snorkel tour is the essential (and only real) way to experience Bora Bora. It's a tender port and excursions sell out, so book well ahead."
+ },
+ "pago_pago_american_samoa": {
+  "dock": "Docked",
+  "walk": "Walkable harbour",
+  "cur": "USD",
+  "lang": "Samoan / English",
+  "blurb": "Pago Pago sits in a spectacular volcanic harbour — one of the deepest natural ports in the South Pacific — on American Samoa. Rainforest-clad peaks plunge to the sea, and the National Park of American Samoa protects reef and jungle alike.",
+  "miss": [
+   "The National Park of American Samoa's trails",
+   "The dramatic harbour and Rainmaker Mountain",
+   "A traditional Samoan village and fiafia culture"
+  ],
+  "tip": "The setting — sheer green peaks around a deep harbour — is the star. Samoa is devoutly Christian and traditional; dress modestly, and note Sundays are very quiet."
+ },
+ "casablanca_morocco": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "MAD",
+  "lang": "Arabic / French",
+  "blurb": "Casablanca is Morocco's modern economic heart, home to the colossal Hassan II Mosque rising over the Atlantic — one of the largest in the world, with a minaret to match. It's also the gateway to imperial Rabat and Marrakech.",
+  "miss": [
+   "The Hassan II Mosque (guided tours for non-Muslims)",
+   "The Habous quarter and central market",
+   "Rabat's kasbah, an hour up the coast"
+  ],
+  "tip": "The Hassan II Mosque is one of the few in Morocco open to non-Muslims, by guided tour — book a slot. Marrakech is too far for a comfortable port day; Rabat is the better nearby imperial city."
+ },
+ "tangier_morocco": {
+  "dock": "Docked",
+  "walk": "Walkable medina",
+  "cur": "MAD",
+  "lang": "Arabic / French",
+  "blurb": "Tangier guards the Strait of Gibraltar where the Mediterranean meets the Atlantic — a labyrinthine medina and kasbah, a storied bohemian past, and the dramatic Caves of Hercules and Cap Spartel just outside town.",
+  "miss": [
+   "The medina and kasbah's maze of lanes",
+   "The Caves of Hercules at Cap Spartel",
+   "The Grand Socco and a mint-tea stop"
+  ],
+  "tip": "A local guide is genuinely useful in Tangier's medina — both to navigate and to ease the persistent attention from touts. Agree terms first. The caves and cape make a scenic short drive out."
+ },
+ "dakar": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "XOF",
+  "lang": "French / Wolof",
+  "blurb": "Dakar, Senegal's vibrant capital on Africa's westernmost point, pulses with music and colour — but its most powerful site is Gorée Island offshore, a moving memorial to the transatlantic slave trade, reached by ferry.",
+  "miss": [
+   "Gorée Island and the House of Slaves",
+   "The soaring African Renaissance Monument",
+   "The Soumbédioune fish market and craft village"
+  ],
+  "tip": "Gorée Island is the essential and deeply affecting visit — a short ferry from the city. Dakar is lively but can feel chaotic; a guide or organised tour smooths a port day considerably."
+ },
+ "cape_town_south_africa": {
+  "dock": "Docked",
+  "walk": "Walkable V&A Waterfront",
+  "cur": "ZAR",
+  "lang": "English / Afrikaans / Xhosa",
+  "blurb": "Cape Town is one of the world's most beautiful cities — Table Mountain rising sheer above the bay, the penguins of Boulders Beach, the Cape of Good Hope, and the winelands of Stellenbosch, all wrapped around a lively waterfront.",
+  "miss": [
+   "The Table Mountain cableway (weather permitting)",
+   "Boulders Beach's African penguins",
+   "The Cape of Good Hope, or a Stellenbosch wine tour"
+  ],
+  "tip": "Table Mountain is the must, but the cableway closes in high wind — do it the moment the weather's clear rather than saving it. Many ships overnight here; if so, add the winelands or the Cape peninsula."
+ },
+ "port_elizabeth_south_africa": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "ZAR",
+  "lang": "English / Afrikaans / Xhosa",
+  "blurb": "Port Elizabeth (now Gqeberha) is the gateway to malaria-free Big Five safaris — Addo Elephant National Park is close enough for a genuine game drive on a port day, alongside beaches and a colonial-era historic mile.",
+  "miss": [
+   "A game drive in Addo Elephant National Park",
+   "The beaches along Algoa Bay",
+   "The Donkin Reserve and historic city walk"
+  ],
+  "tip": "Addo is the standout — one of the few places you can do a real Big Five game drive within a port-day's reach, and it's malaria-free. Book the safari excursion; it's why most ships call here."
+ },
+ "durban_south_africa": {
+  "dock": "Docked",
+  "walk": "Walkable beachfront",
+  "cur": "ZAR",
+  "lang": "English / Zulu",
+  "blurb": "Durban is South Africa's warm-water playground on the Indian Ocean — the Golden Mile beachfront, the largest Indian community outside India (and superb curry), Zulu culture, and game reserves in the KwaZulu-Natal interior.",
+  "miss": [
+   "The Golden Mile beach promenade",
+   "A bunny chow (curry in a bread loaf) — a Durban invention",
+   "uShaka Marine World, or a township/Zulu cultural tour"
+  ],
+  "tip": "Durban's subtropical beachfront is walkable and made for a relaxed day. The Indian-South-African food is a genuine highlight — a bunny chow is the local rite of passage."
+ },
+ "walvis_bay_namibia": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "NAD / ZAR",
+  "lang": "English / Afrikaans",
+  "blurb": "Walvis Bay is where the Namib Desert's giant dunes meet the cold Atlantic — flamingo-filled lagoons, a kayak-with-the-seals boat trip at Pelican Point, and the towering apricot dunes around Sandwich Harbour and Sossusvlei.",
+  "miss": [
+   "A Sandwich Harbour 4x4 dune-and-sea drive",
+   "A catamaran cruise with seals, dolphins and pelicans",
+   "The flamingo lagoon, and nearby Swakopmund"
+  ],
+  "tip": "The dunes-meet-ocean scenery is extraordinary and unique — a Sandwich Harbour 4x4 trip or a lagoon catamaran are the standout excursions. Colonial Swakopmund nearby is a charming add-on."
+ },
+ "port_louis_mauritius": {
+  "dock": "Docked",
+  "walk": "Walkable waterfront",
+  "cur": "MUR",
+  "lang": "English / French / Creole",
+  "blurb": "Port Louis is the capital of Mauritius, a Creole-flavoured harbour city — a lively central market, the Caudan waterfront, botanical gardens with giant water lilies, and the island's volcanic peaks and beaches beyond.",
+  "miss": [
+   "The Central Market's spices and street food",
+   "Pamplemousses Botanical Garden's giant lilies",
+   "The Caudan Waterfront, or a beach at Grand Baie"
+  ],
+  "tip": "Port Louis' market and waterfront make an easy walkable morning. Mauritius' famous beaches need a drive — Grand Baie in the north or the south-west coast are the pick for sand and lagoon."
+ },
+ "victoria_seychelles": {
+  "dock": "Docked",
+  "walk": "Walkable tiny capital",
+  "cur": "SCR",
+  "lang": "Creole / English / French",
+  "blurb": "Victoria, on Mahé, is one of the world's smallest capitals — a colourful market, a miniature replica of London's Big Ben, and Hindu and colonial landmarks — set on an island of granite peaks and some of the planet's finest beaches.",
+  "miss": [
+   "Beau Vallon or Anse Intendance beaches",
+   "The Sir Selwyn Selwyn-Clarke Market",
+   "The Morne Seychellois national park viewpoints"
+  ],
+  "tip": "The Seychelles is all about the beaches — Mahé's Anse Intendance and Beau Vallon are stunning. Victoria itself takes barely an hour to see, so head for the sand or a nearby-island snorkel trip."
+ },
+ "mombasa_kenya": {
+  "dock": "Docked",
+  "walk": "Excursion base",
+  "cur": "KES",
+  "lang": "Swahili / English",
+  "blurb": "Mombasa is Kenya's coastal gateway — a Swahili old town of carved doors and spice markets, the Portuguese Fort Jesus guarding the harbour, white-sand beaches, and, for the ambitious, safari in Tsavo National Park.",
+  "miss": [
+   "Fort Jesus, the UNESCO Portuguese fortress",
+   "The Old Town's Swahili lanes and markets",
+   "A Tsavo safari, or Haller Park's wildlife"
+  ],
+  "tip": "A full Tsavo safari is a long, early day — Haller Park (a rehabilitated quarry now full of giraffe and hippo) is a much closer wildlife fix. Fort Jesus and the old town are an easy cultural half-day."
+ },
+ "zanzibar": {
+  "dock": "Docked",
+  "walk": "Walkable Stone Town",
+  "cur": "TZS",
+  "lang": "Swahili / English",
+  "blurb": "Zanzibar's Stone Town is a UNESCO maze of Swahili, Arab and Indian heritage — carved doors, a former slave market, spice-trade history and the birthplace of Freddie Mercury — fringed by turquoise water and spice plantations.",
+  "miss": [
+   "Stone Town's labyrinth and the former slave market",
+   "A spice-plantation tour (cloves, nutmeg, vanilla)",
+   "Prison Island's giant tortoises by boat"
+  ],
+  "tip": "Stone Town is walkable but genuinely maze-like — getting a little lost is part of it, though a guide helps with the history. A spice tour is the classic Zanzibar excursion. Dress modestly; the island is largely Muslim."
  }
 }
