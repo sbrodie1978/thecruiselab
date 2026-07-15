@@ -8,6 +8,14 @@
   "gw": true
  },
  {
+  "id": "adelaide_australia",
+  "name": "Adelaide, Australia",
+  "lat": -34.847,
+  "lon": 138.503,
+  "region": "Oceania",
+  "gw": false
+ },
+ {
   "id": "agadir_morocco",
   "name": "Agadir, Morocco",
   "lat": 30.4278,
@@ -16,12 +24,28 @@
   "gw": true
  },
  {
+  "id": "airlie_beach_whitsundays",
+  "name": "Airlie Beach (Whitsundays), Australia",
+  "lat": -20.267,
+  "lon": 148.717,
+  "region": "Oceania",
+  "gw": false
+ },
+ {
   "id": "ajaccio_corsica",
   "name": "Ajaccio, Corsica",
   "lat": 41.9192,
   "lon": 8.7386,
   "region": "Europe",
   "gw": true
+ },
+ {
+  "id": "akaroa_nz",
+  "name": "Akaroa, New Zealand",
+  "lat": -43.804,
+  "lon": 172.968,
+  "region": "Oceania",
+  "gw": false
  },
  {
   "id": "akureyri_iceland",
@@ -152,6 +176,14 @@
   "gw": false
  },
  {
+  "id": "bay_of_islands_nz",
+  "name": "Bay of Islands, New Zealand",
+  "lat": -35.282,
+  "lon": 174.091,
+  "region": "Oceania",
+  "gw": false
+ },
+ {
   "id": "beijing-tianjin",
   "name": "Beijing (Tianjin)",
   "lat": 39.004,
@@ -216,6 +248,14 @@
   "gw": true
  },
  {
+  "id": "bora_bora_french_polynesia",
+  "name": "Bora Bora, French Polynesia",
+  "lat": -16.5,
+  "lon": -151.741,
+  "region": "Oceania",
+  "gw": false
+ },
+ {
   "id": "boracay-caticlan",
   "name": "Boracay (Caticlan)",
   "lat": 11.9245,
@@ -272,6 +312,14 @@
   "gw": true
  },
  {
+  "id": "buenos_aires_argentina",
+  "name": "Buenos Aires, Argentina",
+  "lat": -34.58,
+  "lon": -58.37,
+  "region": "South America",
+  "gw": false
+ },
+ {
   "id": "busan",
   "name": "Busan",
   "lat": 35.095,
@@ -312,6 +360,14 @@
   "gw": true
  },
  {
+  "id": "callao_lima_peru",
+  "name": "Callao (Lima), Peru",
+  "lat": -12.052,
+  "lon": -77.144,
+  "region": "South America",
+  "gw": false
+ },
+ {
   "id": "cam-ranh",
   "name": "Cam Ranh",
   "lat": 11.91,
@@ -326,6 +382,14 @@
   "lon": 7.0174,
   "region": "Europe",
   "gw": true
+ },
+ {
+  "id": "cape_town_south_africa",
+  "name": "Cape Town, South Africa",
+  "lat": -33.906,
+  "lon": 18.435,
+  "region": "Africa",
+  "gw": false
  },
  {
   "id": "cartagena-spain",
@@ -512,6 +576,14 @@
   "gw": true
  },
  {
+  "id": "darwin_australia",
+  "name": "Darwin, Australia",
+  "lat": -12.462,
+  "lon": 130.844,
+  "region": "Oceania",
+  "gw": false
+ },
+ {
   "id": "doha",
   "name": "Doha",
   "lat": 25.2854,
@@ -550,6 +622,14 @@
   "lon": 18.0944,
   "region": "Europe",
   "gw": true
+ },
+ {
+  "id": "durban_south_africa",
+  "name": "Durban, South Africa",
+  "lat": -29.868,
+  "lon": 31.045,
+  "region": "Africa",
+  "gw": false
  },
  {
   "id": "edinburgh-leith",
@@ -792,6 +872,14 @@
   "gw": true
  },
  {
+  "id": "hilo_hawaii",
+  "name": "Hilo, Hawaii",
+  "lat": 19.73,
+  "lon": -155.067,
+  "region": "North America",
+  "gw": false
+ },
+ {
   "id": "ho-chi-minh-city",
   "name": "Ho Chi Minh City",
   "lat": 10.8231,
@@ -912,6 +1000,14 @@
   "gw": false
  },
  {
+  "id": "kahului_maui_hawaii",
+  "name": "Kahului, Maui, Hawaii",
+  "lat": 20.895,
+  "lon": -156.47,
+  "region": "North America",
+  "gw": false
+ },
+ {
   "id": "kaohsiung",
   "name": "Kaohsiung",
   "lat": 22.6163,
@@ -1024,6 +1120,14 @@
   "gw": true
  },
  {
+  "id": "kona_hawaii",
+  "name": "Kona, Hawaii",
+  "lat": 19.639,
+  "lon": -155.997,
+  "region": "North America",
+  "gw": false
+ },
+ {
   "id": "kotor_montenegro",
   "name": "Kotor, Montenegro",
   "lat": 42.4247,
@@ -1120,6 +1224,14 @@
   "gw": true
  },
  {
+  "id": "lautoka_fiji",
+  "name": "Lautoka, Fiji",
+  "lat": -17.607,
+  "lon": 177.45,
+  "region": "Oceania",
+  "gw": false
+ },
+ {
   "id": "le_havre_paris_france",
   "name": "Le Havre (Paris), France",
   "lat": 49.4944,
@@ -1184,6 +1296,14 @@
   "gw": true
  },
  {
+  "id": "lyttelton_christchurch_nz",
+  "name": "Lyttelton (Christchurch), New Zealand",
+  "lat": -43.603,
+  "lon": 172.717,
+  "region": "Oceania",
+  "gw": false
+ },
+ {
   "id": "malaga_spain",
   "name": "Malaga, Spain",
   "lat": 36.7213,
@@ -1206,6 +1326,14 @@
   "lon": 120.9842,
   "region": "Asia",
   "gw": true
+ },
+ {
+  "id": "manta_ecuador",
+  "name": "Manta, Ecuador",
+  "lat": -0.947,
+  "lon": -80.732,
+  "region": "South America",
+  "gw": false
  },
  {
   "id": "marseille_france",
@@ -1248,6 +1376,14 @@
   "gw": true
  },
  {
+  "id": "mombasa_kenya",
+  "name": "Mombasa, Kenya",
+  "lat": -4.067,
+  "lon": 39.667,
+  "region": "Africa",
+  "gw": false
+ },
+ {
   "id": "monaco_monte_carlo_monaco",
   "name": "Monaco (Monte Carlo), Monaco",
   "lat": 43.7384,
@@ -1264,12 +1400,28 @@
   "gw": false
  },
  {
+  "id": "montevideo_uruguay",
+  "name": "Montevideo, Uruguay",
+  "lat": -34.906,
+  "lon": -56.212,
+  "region": "South America",
+  "gw": false
+ },
+ {
   "id": "montreal_canada",
   "name": "Montreal, Canada",
   "lat": 45.5019,
   "lon": -73.5674,
   "region": "North America",
   "gw": true
+ },
+ {
+  "id": "moorea_french_polynesia",
+  "name": "Moorea, French Polynesia",
+  "lat": -17.49,
+  "lon": -149.85,
+  "region": "Oceania",
+  "gw": false
  },
  {
   "id": "mumbai",
@@ -1296,12 +1448,28 @@
   "gw": true
  },
  {
+  "id": "mystery_island_vanuatu",
+  "name": "Mystery Island, Vanuatu",
+  "lat": -20.242,
+  "lon": 169.777,
+  "region": "Oceania",
+  "gw": false
+ },
+ {
   "id": "nagasaki",
   "name": "Nagasaki",
   "lat": 32.7448,
   "lon": 129.8737,
   "region": "Asia",
   "gw": true
+ },
+ {
+  "id": "napier_nz",
+  "name": "Napier, New Zealand",
+  "lat": -39.476,
+  "lon": 176.917,
+  "region": "Oceania",
+  "gw": false
  },
  {
   "id": "naples_italy",
@@ -1318,6 +1486,14 @@
   "lon": -77.3554,
   "region": "Caribbean",
   "gw": true
+ },
+ {
+  "id": "nawiliwili_kauai_hawaii",
+  "name": "Nawiliwili, Kauai, Hawaii",
+  "lat": 21.954,
+  "lon": -159.353,
+  "region": "North America",
+  "gw": false
  },
  {
   "id": "new-orleans",
@@ -1342,6 +1518,14 @@
   "lon": 7.265,
   "region": "Europe",
   "gw": true
+ },
+ {
+  "id": "noumea_new_caledonia",
+  "name": "Noumea, New Caledonia",
+  "lat": -22.271,
+  "lon": 166.438,
+  "region": "Oceania",
+  "gw": false
  },
  {
   "id": "nuuk_greenland",
@@ -1400,6 +1584,14 @@
   "gw": true
  },
  {
+  "id": "pago_pago_american_samoa",
+  "name": "Pago Pago, American Samoa",
+  "lat": -14.274,
+  "lon": -170.702,
+  "region": "Oceania",
+  "gw": false
+ },
+ {
   "id": "palermo_sicily",
   "name": "Palermo, Sicily",
   "lat": 38.1157,
@@ -1422,6 +1614,14 @@
   "lon": -79.5199,
   "region": "South America",
   "gw": true
+ },
+ {
+  "id": "papeete_tahiti",
+  "name": "Papeete, Tahiti",
+  "lat": -17.535,
+  "lon": -149.57,
+  "region": "Oceania",
+  "gw": false
  },
  {
   "id": "penang",
@@ -1488,11 +1688,35 @@
   "gw": true
  },
  {
+  "id": "picton_nz",
+  "name": "Picton, New Zealand",
+  "lat": -41.29,
+  "lon": 174.001,
+  "region": "Oceania",
+  "gw": false
+ },
+ {
   "id": "port_canaveral_florida_usa",
   "name": "Port Canaveral, Florida, USA",
   "lat": 28.408,
   "lon": -80.626,
   "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "port_chalmers_dunedin_nz",
+  "name": "Port Chalmers (Dunedin), New Zealand",
+  "lat": -45.816,
+  "lon": 170.621,
+  "region": "Oceania",
+  "gw": false
+ },
+ {
+  "id": "port_elizabeth_south_africa",
+  "name": "Port Elizabeth (Gqeberha), South Africa",
+  "lat": -33.962,
+  "lon": 25.632,
+  "region": "Africa",
   "gw": false
  },
  {
@@ -1510,6 +1734,22 @@
   "lon": 101.39,
   "region": "Asia",
   "gw": true
+ },
+ {
+  "id": "port_louis_mauritius",
+  "name": "Port Louis, Mauritius",
+  "lat": -20.159,
+  "lon": 57.499,
+  "region": "Africa",
+  "gw": false
+ },
+ {
+  "id": "port_vila_vanuatu",
+  "name": "Port Vila, Vanuatu",
+  "lat": -17.741,
+  "lon": 168.312,
+  "region": "Oceania",
+  "gw": false
  },
  {
   "id": "portland-maine",
@@ -1552,11 +1792,43 @@
   "gw": false
  },
  {
+  "id": "puerto_madryn_argentina",
+  "name": "Puerto Madryn, Argentina",
+  "lat": -42.765,
+  "lon": -65.03,
+  "region": "South America",
+  "gw": false
+ },
+ {
+  "id": "puerto_montt_chile",
+  "name": "Puerto Montt, Chile",
+  "lat": -41.469,
+  "lon": -72.943,
+  "region": "South America",
+  "gw": false
+ },
+ {
   "id": "puerto_vallarta_mexico",
   "name": "Puerto Vallarta, Mexico",
   "lat": 20.653,
   "lon": -105.225,
   "region": "North America",
+  "gw": false
+ },
+ {
+  "id": "punta_arenas_chile",
+  "name": "Punta Arenas, Chile",
+  "lat": -53.162,
+  "lon": -70.907,
+  "region": "South America",
+  "gw": false
+ },
+ {
+  "id": "punta_del_este_uruguay",
+  "name": "Punta del Este, Uruguay",
+  "lat": -34.967,
+  "lon": -54.95,
+  "region": "South America",
   "gw": false
  },
  {
@@ -1662,6 +1934,14 @@
   "lon": -66.0633,
   "region": "North America",
   "gw": true
+ },
+ {
+  "id": "san_antonio_chile",
+  "name": "San Antonio, Chile",
+  "lat": -33.593,
+  "lon": -71.612,
+  "region": "South America",
+  "gw": false
  },
  {
   "id": "san-diego",
@@ -1832,6 +2112,14 @@
   "gw": false
  },
  {
+  "id": "stanley_falklands",
+  "name": "Stanley, Falkland Islands",
+  "lat": -51.694,
+  "lon": -57.852,
+  "region": "South America",
+  "gw": false
+ },
+ {
   "id": "stavanger_norway",
   "name": "Stavanger, Norway",
   "lat": 58.969,
@@ -1864,6 +2152,14 @@
   "gw": true
  },
  {
+  "id": "suva_fiji",
+  "name": "Suva, Fiji",
+  "lat": -18.141,
+  "lon": 178.442,
+  "region": "Oceania",
+  "gw": false
+ },
+ {
   "id": "sydney",
   "name": "Sydney",
   "lat": -33.8688,
@@ -1876,7 +2172,7 @@
   "name": "Sydney, Nova Scotia, Canada",
   "lat": 46.1368,
   "lon": -60.1942,
-  "region": "Oceania",
+  "region": "North America",
   "gw": true
  },
  {
@@ -1902,6 +2198,14 @@
   "lon": -5.834,
   "region": "Africa",
   "gw": true
+ },
+ {
+  "id": "tauranga_nz",
+  "name": "Tauranga, New Zealand",
+  "lat": -37.655,
+  "lon": 176.181,
+  "region": "Oceania",
+  "gw": false
  },
  {
   "id": "tokyo",
@@ -1936,6 +2240,14 @@
   "gw": true
  },
  {
+  "id": "ushuaia_argentina",
+  "name": "Ushuaia, Argentina",
+  "lat": -54.807,
+  "lon": -68.307,
+  "region": "South America",
+  "gw": false
+ },
+ {
   "id": "valencia_spain",
   "name": "Valencia, Spain",
   "lat": 39.4699,
@@ -1950,6 +2262,14 @@
   "lon": 14.5146,
   "region": "Europe",
   "gw": true
+ },
+ {
+  "id": "valparaiso_chile",
+  "name": "Valparaiso, Chile",
+  "lat": -33.036,
+  "lon": -71.62,
+  "region": "South America",
+  "gw": false
  },
  {
   "id": "vancouver",
@@ -1984,6 +2304,14 @@
   "gw": true
  },
  {
+  "id": "victoria_seychelles",
+  "name": "Victoria, Seychelles",
+  "lat": -4.62,
+  "lon": 55.455,
+  "region": "Africa",
+  "gw": false
+ },
+ {
   "id": "vienna",
   "name": "Vienna",
   "lat": 48.2082,
@@ -2014,6 +2342,14 @@
   "lon": 107.084,
   "region": "Asia",
   "gw": true
+ },
+ {
+  "id": "walvis_bay_namibia",
+  "name": "Walvis Bay, Namibia",
+  "lat": -22.955,
+  "lon": 14.505,
+  "region": "Africa",
+  "gw": false
  },
  {
   "id": "wellington",
