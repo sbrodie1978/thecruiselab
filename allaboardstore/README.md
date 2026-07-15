@@ -9,13 +9,22 @@ Part of the Fleet at https://thecruiselab.com.
 
 ## What it is
 
-A single-page, Cruise Lab-styled catalogue of lab-vetted cruise gear in six categories
-(Power & Tech · Cabin Comfort · Packing & Organisation · Port Days · Formal Night ·
-First-Timer Essentials), each product card linking out to Amazon with the Associates
-tag attached, plus a "Leave at Home" section listing items banned on board (surge
-protectors, irons/steamers, candles, etc.). No prices and no Amazon product imagery
-are shown — both are restricted under the Associates Operating Agreement outside
-Amazon's own tooling; cards use the estate's icon-chip style instead.
+A single-page, Cruise Lab-styled store. **Landing shows a grid of category
+tiles** (icon, name, short description, product count) — all visible at once,
+no horizontal scrolling. Selecting a tile drills into that category's catalogue
+(hash-routed, e.g. `#port`), with a "← All categories" back control. The
+signature **"Leave at Home"** anti-catalogue (items banned on board) sits on the
+landing below the category grid. Each product card is a whole-card link to Amazon
+with the Associates tag; a minimal "Amazon ↗" marker signals the outbound link.
+No prices and no Amazon product imagery (both restricted under the Associates
+Operating Agreement outside Amazon's own tooling); cards use the estate's
+icon-chip style instead.
+
+### Navigation model
+- **Home view** (`#` / no hash): category grid + Leave at Home.
+- **Category view** (`#<cat-id>`): back link, category title + blurb, product grid.
+- Hash-routed via `hashchange` → browser back button works; category links are
+  shareable/deep-linkable. Unknown hashes fall back to the landing grid.
 
 ## How the affiliate links work
 
@@ -79,5 +88,5 @@ cd ~/cruiselab && git add -A && git commit -m "All Aboard Store v1" && git push
 - Swap the tag: one field, `AFFILIATE.tag`.
 - Everything renders from data at load — no markup edits needed for catalogue changes.
 
-Built 15 July 2026 (v1); v2 same day — whole-card click target, minimal "Amazon" marker replacing the pill CTA. Single file, pure HTML/CSS/JS, Cruise Lab design system
+Built 15 July 2026 (v1); v2 whole-card click target + minimal marker; v3 slim header + disclosure-to-footer; v4 same day — category-first UX: landing grid of category tiles (all visible, no horizontal scroll), hash-routed drill-down to per-category catalogue with back link. Single file, pure HTML/CSS/JS, Cruise Lab design system
 (navy/gold, Cinzel + Outfit, standard tokens).
