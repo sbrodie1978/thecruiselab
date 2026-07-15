@@ -87,13 +87,14 @@ main{max-width:1060px;margin:0 auto;padding:8px 20px 30px}
 /* ---------- product cards ---------- */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
 .card{
-  position:relative;
+  position:relative;cursor:pointer;text-decoration:none;color:inherit;
   background:linear-gradient(160deg,var(--panel),var(--ocean));
   border:1px solid var(--panel-edge);border-radius:var(--radius);
   padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;
-  transition:transform .18s,border-color .18s;
+  transition:transform .18s,border-color .18s,box-shadow .18s;
 }
-.card:hover{transform:translateY(-3px);border-color:var(--gold-dim)}
+.card:hover{transform:translateY(-3px);border-color:var(--gold-dim);box-shadow:0 14px 34px rgba(4,10,24,.5)}
+.card:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .card .icon{
   width:44px;height:44px;border-radius:12px;flex:0 0 auto;
   display:flex;align-items:center;justify-content:center;font-size:1.35rem;
@@ -110,13 +111,13 @@ main{max-width:1060px;margin:0 auto;padding:8px 20px 30px}
   color:var(--seaglass);font-weight:600;font-size:.68rem;letter-spacing:.14em;
   text-transform:uppercase;display:block;margin-bottom:2px;
 }
-.card .cta{
-  margin-top:auto;align-self:flex-start;
-  text-decoration:none;font-weight:600;font-size:.85rem;letter-spacing:.03em;
-  color:var(--ocean-deep);background:linear-gradient(180deg,var(--gold-bright),var(--gold));
-  border-radius:9px;padding:9px 16px;
+.card .go{
+  margin-top:auto;align-self:flex-end;display:flex;align-items:center;gap:5px;
+  font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--mist);transition:color .18s,gap .18s;
 }
-.card .cta:hover{filter:brightness(1.06)}
+.card .go svg{width:13px;height:13px;stroke:currentColor;stroke-width:2.2;fill:none}
+.card:hover .go,.card:focus-visible .go{color:var(--gold-bright);gap:9px}
 
 /* ---------- leave at home ---------- */
 .contraband{
@@ -182,7 +183,7 @@ footer p+p{margin-top:8px}
    ===================================================================== */
 const AFFILIATE = {
   tag:    "thecruiselabh-21",          // UK tracking ID
-  tagUS:  "thecruiselabh-20",                          // US tracking ID (pending — used via OneLink mapping)
+  tagUS:  "",                          // US tracking ID (pending — used via OneLink mapping)
   market: "https://www.amazon.co.uk"
 };
 
@@ -358,13 +359,17 @@ CATEGORIES.forEach(c=>{
   const grid=document.createElement("div");
   grid.className="grid";
   PRODUCTS.filter(p=>p.cat===c.id).forEach(p=>{
-    const card=document.createElement("article");
+    const card=document.createElement("a");
     card.className="card";
+    card.href=productUrl(p);
+    card.target="_blank";
+    card.rel="sponsored nofollow noopener";
+    card.setAttribute("aria-label",`View ${p.name} on Amazon (opens in a new tab)`);
     card.innerHTML=`
       <div class="head"><div class="icon">${p.icon}</div><h3>${p.name}</h3></div>
       <p>${p.blurb}</p>
       ${p.note?`<div class="labnote"><b>Lab note</b>${p.note}</div>`:""}
-      <a class="cta" href="${productUrl(p)}" target="_blank" rel="sponsored nofollow noopener">View on Amazon ↗</a>`;
+      <span class="go">Amazon <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8"/></svg></span>`;
     grid.appendChild(card);
   });
   main.appendChild(grid);

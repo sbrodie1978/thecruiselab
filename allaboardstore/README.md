@@ -79,5 +79,5 @@ cd ~/cruiselab && git add -A && git commit -m "All Aboard Store v1" && git push
 - Swap the tag: one field, `AFFILIATE.tag`.
 - Everything renders from data at load — no markup edits needed for catalogue changes.
 
-Built 15 July 2026 (v1). Single file, pure HTML/CSS/JS, Cruise Lab design system
+Built 15 July 2026 (v1); v2 same day — whole-card click target, minimal "Amazon" marker replacing the pill CTA. Single file, pure HTML/CSS/JS, Cruise Lab design system
 (navy/gold, Cinzel + Outfit, standard tokens).
