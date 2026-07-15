@@ -32,11 +32,16 @@ quota exhaustion; run it again the next day and it resumes automatically.
 Full fleet = 2 days. `--only "MSC"` limits to one line; `--dry-run` prints
 the remaining plan without spending quota.
 
-## Selection rule (12 Jul 2026 design decision)
+## Selection rule (v2, 13 Jul 2026 — after the v1 postmortem)
 
-Embeddable only (uploaders can disable embedding — those fall out), no
-Shorts, no live streams, minimum 8 minutes, ship name must appear in the
-title, then top 3 by view count. Ships with fewer than 3 passing videos are
+The search is **relevance-ordered** and the top 3 **by view count** are
+picked from the relevant survivors. v1 ordered the search itself by view
+count and the candidate pool filled with viral Shorts and accident clips —
+60 of 119 ships returned zero, and Symphony of the Seas' "review" was a
+kids-channel room tour with 68M views. Filters: embeddable only, no Shorts,
+no live streams, minimum 8 minutes, ship name in the title, and a blocklist
+(BLOCK_WORDS) that removes disaster-bait ("accident", "terror", "storm"…)
+and room-only tours. Ships with fewer than 3 passing videos are
 flagged in the run log (`<-- only N passed filters, eyeball this one`) —
 usually brand-new or tiny ships; hand-pick via the FEEDS-style one-line edit
 in reviews.json if needed.

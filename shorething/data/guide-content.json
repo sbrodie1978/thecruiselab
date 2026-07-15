@@ -1,78 +1,2337 @@
 {
-"nassau_bahamas": {"dock":"Docked","walk":"Walkable downtown","cur":"BSD / USD","lang":"English","blurb":"Nassau is the Caribbean's busiest cruise port, and the rebuilt harbourfront makes it an easy self-guided day. Downtown, the Queen's Staircase and Fort Fincastle are a short walk from the ship, with Junkanoo Beach ten minutes the other way.","miss":["The Queen's Staircase — 66 steps hand-carved through limestone","Junkanoo Beach, the free walk-to beach west of the port","John Watling's Distillery for a shaded rum stop"],"tip":"Skip the pushy taxi rank quotes — everything listed above is walkable, and Paradise Island water taxis are cheaper than cabs."},
-"freeport_bahamas": {"dock":"Docked","walk":"Taxi to beaches","cur":"BSD / USD","lang":"English","blurb":"Freeport is an industrial harbour, so the day is about where you go from it rather than the port itself. Most ships run shuttles to Port Lucaya Marketplace; the real prizes are the beaches and Lucayan National Park's caves.","miss":["Gold Rock Beach at low tide — huge ribbed sandbars","Lucayan National Park's underwater cave system","Port Lucaya Marketplace for a low-effort browse"],"tip":"There's nothing to see on foot at the pier — decide between beach and park before you disembark and share a taxi to cut the fare."},
-"bimini_bahamas": {"dock":"Docked","walk":"Tram to beach","cur":"BSD / USD","lang":"English","blurb":"Tiny Bimini was Hemingway's fishing hideout and still feels like a sandbar with a marina attached. Ships dock at the north end; free trams shuttle to Radio Beach and the Resorts World complex with its pool and beach clubs.","miss":["Radio Beach's shallow, glass-clear swimming","The Dolphin House mosaic museum in Alice Town","A conch salad shack — watch it made to order"],"tip":"The whole island is about seven miles long — a golf-cart rental covers all of it in an afternoon if the beach isn't enough."},
-"coco_cay": {"dock":"Docked","walk":"All on foot","cur":"Ship account","lang":"English","noviator":true,"blurb":"Perfect Day at CocoCay is Royal Caribbean's private island, and everything runs on your cruise card. The free side is genuinely good — Chill Island's beaches, the pool, and included lunch — while the waterpark and Coco Beach Club are paid extras.","miss":["Oasis Lagoon, the Caribbean's largest freshwater pool","Chill Island's included loungers and calm swimming","The Up, Up and Away balloon view if it's flying"],"tip":"Book waterpark passes before the cruise if you want them — onboard prices climb, and on sold-out days they vanish entirely."},
-"castaway_cay": {"dock":"Docked","walk":"All on foot, tram assist","cur":"Ship account","lang":"English","noviator":true,"blurb":"Disney's Castaway Cay is the slickest private island operation afloat — the ship docks right at the pier and trams run the length of the beach. Family beaches, the adults-only Serenity Bay, and included barbecue lunch make it a zero-effort day.","miss":["Serenity Bay if you're travelling without kids","Snorkelling the lagoon's sunken 'hidden Mickey' props","The 5K fun run before the beach fills up"],"tip":"Bikes and floats sell out at the rental hut — reserve online pre-cruise, and walk one tram stop further for quieter sand."},
-"half_moon_cay": {"dock":"Tender","walk":"All on foot","cur":"Ship account","lang":"English","noviator":true,"blurb":"Half Moon Cay is Holland America and Carnival's shared private island, and its crescent beach is regularly rated the best in the Bahamas — two miles of powder with no buildings behind it. It's a tender port, so the day rewards an early start.","miss":["The first stretch of the crescent for calm, shallow water","Horseback riding that ends with a swim in the sea","The walk to the quiet far end past the cabanas"],"tip":"Tender queues stack up after breakfast — be on an early one and you'll have an hour of near-empty beach before the crowd lands."},
-"princess_cays": {"dock":"Tender","walk":"All on foot","cur":"Ship account","lang":"English","noviator":true,"blurb":"Princess Cays sits on the southern tip of Eleuthera, a straightforward beach-and-barbecue day split into two halves — the busier main beach by the tender pier and a quieter stretch beyond the water-sports hut. Everything charges to your cruise card.","miss":["The quieter beach south of the pier","Snorkelling the rocky points at either end","The included beach barbecue — go early or late"],"tip":"Shade is the scarce resource here, not sand — grab a spot under the trees or book a clamshell as soon as you land."},
-"great_stirrup_cay": {"dock":"Docked","walk":"All on foot","cur":"Ship account","lang":"English","noviator":true,"blurb":"Norwegian's Great Stirrup Cay finally has a pier, ending decades of tender lotteries. The island is a classic Bahamas beach day — included barbecue, clear snorkelling around the rocks, and paid upgrades from cabanas to the Silver Cove lagoon area.","miss":["Snorkelling around Bertha's Beach rocks","The lighthouse-end walk away from the crowds","The underwater sculpture garden just offshore"],"tip":"With the new pier, port days here run longer and fuller than they used to — claim loungers early, the island fills fast now."},
-"ocean_cay_msc": {"dock":"Docked","walk":"All on foot","cur":"Ship account","lang":"English","noviator":true,"blurb":"Ocean Cay is MSC's converted industrial sand-mining island, now a marine reserve — and it shows in the water clarity. The ship stays docked late into the evening on most calls, with the lighthouse show after dark as the signature moment.","miss":["The lighthouse light show after sunset","North Beach for the calmest, clearest swimming","The evening on-island time most other private islands don't offer"],"tip":"This is the rare private island where ships stay until late — plan a shore dinner-and-lightshow evening rather than cramming it all in by 4pm."},
-"celebration_key": {"dock":"Docked","walk":"All on foot, trams","cur":"Ship account","lang":"English","noviator":true,"blurb":"Celebration Key is Carnival's purpose-built Grand Bahama port, opened in 2025 and designed around five 'portals' — from the free Paradise Plaza lagoon to adults-only and family zones. It's less castaway island, more polished beach resort at scale.","miss":["The huge freshwater lagoons — included, unlike much here","Starfish Lagoon's calmer family end","The suspended bridge view over Paradise Plaza"],"tip":"It's big — pick your portal before you walk off and use the trams, because trudging the full length in midday heat gets old fast."},
-"grand_cayman": {"dock":"Tender","walk":"Tender lands downtown","cur":"KYD / USD","lang":"English","blurb":"George Town is one of the Caribbean's last big tender ports, but the tenders land you straight in the walkable duty-free centre. The island's headline acts — Seven Mile Beach and the Stingray City sandbar — are both short, cheap rides away.","miss":["Stingray City — waist-deep water, wild southern stingrays","Seven Mile Beach's public access at Governor's Beach","Cayman Spirits distillery tour near the pier"],"tip":"Public buses to Seven Mile run constantly from downtown for a couple of dollars — no need for the taxi rank or a ship excursion just to reach the sand."},
-"ocho_rios_jamaica": {"dock":"Docked","walk":"Walkable to centre","cur":"JMD / USD","lang":"English","blurb":"Ocho Rios is Jamaica's original cruise town, with Dunn's River Falls — the island's most famous excursion — just five minutes from the pier. The town itself is walkable, but the day really belongs to the falls, gardens and river adventures around it.","miss":["Climbing Dunn's River Falls (water shoes essential)","Mystic Mountain's rainforest bobsled ride","Konoko Falls for a quieter falls alternative"],"tip":"Dunn's River is heaving when the ships are in — book the earliest slot you can or flip the day and go after 1pm when the tour groups thin out."},
-"falmouth_jamaica": {"dock":"Docked","walk":"Walkable historic town","cur":"JMD / USD","lang":"English","blurb":"Falmouth's purpose-built port opens straight into one of the Caribbean's best-preserved Georgian towns. It's a base for the same excursions as Ocho Rios and Montego Bay, but the town's history walk is a genuinely good free hour.","miss":["The Falmouth Heritage Walk's Georgian architecture","Glistening Waters' bioluminescent lagoon (evening calls)","Martha Brae river rafting, thirty minutes away"],"tip":"The craft market inside the port gates charges port prices — walk two streets into the real town for the same items and friendlier haggling."},
-"montego_bay_jamaica": {"dock":"Docked","walk":"Taxi to beaches","cur":"JMD / USD","lang":"English","blurb":"Montego Bay is Jamaica's second city, and the cruise terminal sits in the industrial freeport — so plan on transport. Doctor's Cave Beach and the Hip Strip are ten minutes away, with rafting, great houses and luminous lagoon trips further out.","miss":["Doctor's Cave Beach's famously clear water","Rose Hall Great House and its ghost story","Rafting the Martha Brae on a bamboo raft"],"tip":"Agree taxi fares before getting in — rates to Doctor's Cave are posted at the terminal, and returning drivers will find you at the beach gate at pickup time."},
-"grand_turk": {"dock":"Docked","walk":"Beach at the pier","cur":"USD","lang":"English","blurb":"Grand Turk is the rare port where the beach starts literally at the end of the pier — white sand, calm water and the cruise centre's pool all within barefoot distance. Beyond it lies a sleepy island of wild donkeys and one of the world's best walls for diving.","miss":["The pier-side beach — no transport needed at all","Gibbs Cay stingray sandbar trip","Cockburn Town's weathered colonial waterfront"],"tip":"You genuinely don't need an excursion here for a great day — the free beach by the ship rivals anything you'd pay to reach."},
-"amber_cove": {"dock":"Docked","walk":"Resort-style port","cur":"DOP / USD","lang":"Spanish","blurb":"Amber Cove is Carnival's purpose-built gateway to the Dominican Republic's north coast, with a big pool complex and zip line inside the port itself. Outside the gates, Puerto Plata's cable car, waterfalls and rum heritage make the case for venturing out.","miss":["The Teleférico cable car up Mount Isabel de Torres","The 27 Waterfalls of Damajagua canyoning trip","Puerto Plata's Victorian old town and amber museum"],"tip":"The port pool is free and genuinely good — if you've done the DR before, a zero-spend pool day here is a legitimate choice."},
-"labadee_haiti": {"dock":"Docked","walk":"All on foot, trams","cur":"Ship account / USD","lang":"English spoken","noviator":true,"blurb":"Labadee is Royal Caribbean's fenced private peninsula on Haiti's north coast — a mountainous, dramatic setting unlike the flat Bahamas islands. Beaches, the huge Dragon's Breath zip line and an included barbecue fill the day.","miss":["Dragon's Breath — 2,600ft of zip line over the sea","Columbus Cove's calm, shaded swimming","The artisan market for Haitian metalwork (haggle kindly)"],"tip":"Nellie's Beach and Columbus Cove are calmer and prettier than the main Adrenaline Beach — turn right off the pier, not left."},
-"st_thomas_usvi": {"dock":"Docked","walk":"Short taxi to town","cur":"USD","lang":"English","blurb":"Charlotte Amalie combines duty-free shopping (US visitors get a raised allowance here) with one of the Caribbean's prettiest harbours. Magens Bay's postcard beach and the Skyride viewpoint are the classic half-days; St John's national park beaches are the upgrade.","miss":["Magens Bay — the beach on all the posters","The Skyride to Paradise Point above the harbour","A ferry side-trip to Trunk Bay on St John"],"tip":"Open-air safari taxis run fixed per-person rates to Magens Bay — cheaper than tours, and the 99 Steps in town fill the gap if you split the day."},
-"st_maarten": {"dock":"Docked","walk":"Water taxi to town","cur":"USD everywhere","lang":"Dutch / English / French","blurb":"Philipsburg gives you two countries in one port day — the Dutch side's beaches and shopping, and the French side's food and style over the open border. The famous jet-blast beach at Maho sits under the airport approach twenty minutes away.","miss":["Maho Beach's landing jets, close enough to touch","The water taxi across Great Bay to Front Street","Lunch in Grand Case on the French side"],"tip":"Check the arrivals board before committing to Maho — the show is only as good as the flight schedule, and the big jets cluster around midday."},
-"san-juan": {"dock":"Docked","walk":"Old town at the pier","cur":"USD","lang":"Spanish / English","blurb":"Old San Juan is one of cruising's great walk-off ports — five hundred years of blue cobblestones, pastel facades and two vast Spanish fortresses, all starting a few steps from the gangway. No transport, no plan needed; just walk uphill and get lost.","miss":["El Morro fortress and its kite-flying lawn","Calle Fortaleza's colour and the old city gates","A barrachina piña colada at its claimed birthplace"],"tip":"Do the forts early — the walls give no shade and the trade wind on El Morro's lawn is the town's best free air conditioning."},
-"tortola_bvi": {"dock":"Docked","walk":"Walkable Road Town","cur":"USD","lang":"English","blurb":"Road Town is the low-key capital of the British Virgin Islands, and the port is really a springboard — to Cane Garden Bay over the mountain, to the Baths' giant boulders on Virgin Gorda, or just to a beach bar with a painkiller cocktail.","miss":["The Baths on Virgin Gorda — worth the ferry","Cane Garden Bay's beach-bar crescent","The mountain-road viewpoints en route to either"],"tip":"If the Baths are the goal, book a tour or early ferry immediately on landing — independent ferry slots on ship days are the island's scarcest commodity."},
-"antigua": {"dock":"Docked","walk":"Walkable St John's","cur":"XCD / USD","lang":"English","blurb":"Antigua claims a beach for every day of the year, and the ships dock right in St John's among the shops and rum bars. Nelson's Dockyard — the world's only continuously working Georgian dockyard — anchors the far side of the island.","miss":["Nelson's Dockyard and Shirley Heights' harbour view","Valley Church or Darkwood Beach on the calm west coast","Fig Tree Drive through the rainforest interior"],"tip":"Shirley Heights is famous for Sunday sunset parties, but the view is free and empty at midday — pair it with the Dockyard in one taxi loop."},
-"st_kitts": {"dock":"Docked","walk":"Walkable Basseterre","cur":"XCD / USD","lang":"English","blurb":"St Kitts packs a lot into a small island — a UNESCO fortress on Brimstone Hill, the scenic railway built for the sugar crop, and green vervet monkeys that outnumber people. Port Zante lands you straight into compact, walkable Basseterre.","miss":["Brimstone Hill Fortress, the 'Gibraltar of the West Indies'","The St Kitts Scenic Railway's coastal loop","Timothy Hill's two-ocean viewpoint"],"tip":"Timothy Hill's photo stop looks over Atlantic and Caribbean at once — every island taxi tour includes it, so a shared cab beats a formal excursion on price."},
-"st_lucia": {"dock":"Docked","walk":"Walkable Castries","cur":"XCD / USD","lang":"English / Creole","blurb":"St Lucia is the drama queen of the eastern Caribbean — the twin Piton peaks, a drive-in volcano and rainforest all crowd the south while ships dock in workaday Castries. It's a big island; the best of it needs a committed excursion day.","miss":["The Pitons from Soufrière — by boat beats by road","Sulphur Springs' drive-in volcano and mud baths","Marigot Bay for a shorter, prettier half-day"],"tip":"Soufrière is 90 winding minutes each way by road — take a catamaran down the coast instead and you get the Pitons from the water plus the drive back skipped."},
-"dominica": {"dock":"Docked","walk":"Walkable Roseau","cur":"XCD / USD","lang":"English / Creole","blurb":"Dominica calls itself the Nature Island and means it — no big resorts, just rainforest, 365 rivers, boiling volcanic springs and the Caribbean's best whale watching. Ships dock in the middle of Roseau's charmingly weathered waterfront.","miss":["Trafalgar Falls' twin cascades and hot pools","Titou Gorge's swim-through canyon","Champagne Reef, snorkelling over volcanic bubbles"],"tip":"This is the port to spend your excursion budget on — the interior is the entire point of Dominica and it doesn't reveal itself from the pier."},
-"grenada": {"dock":"Docked","walk":"Walkable St George's","cur":"XCD / USD","lang":"English","blurb":"St George's horseshoe harbour is arguably the prettiest port town in the Caribbean, and the whole island smells faintly of its nutmeg crop. Grand Anse beach is ten minutes away; waterfalls and spice estates fill the interior.","miss":["Grand Anse's two miles of calm, resort-free beach","The Underwater Sculpture Park by snorkel or boat","Fort George's harbour panorama at the top of town"],"tip":"Water taxis shuttle from the port straight across the bay to Grand Anse for a few dollars — quicker and far more scenic than the road."},
-"barbados": {"dock":"Docked","walk":"Shuttle through port","cur":"BBD / USD","lang":"English","blurb":"Bridgetown is the polished pro of southern Caribbean cruising — a UNESCO-listed capital, swimmable west-coast water, and the birthplace of rum with the distillery tours to prove it. The port is a working harbour; a shuttle covers the gate run.","miss":["Swimming with turtles in Carlisle Bay","Mount Gay's rum distillery tour","Harrison's Cave in the island's limestone core"],"tip":"Carlisle Bay's beach and turtle-swim boats are barely ten minutes from the ship — an independent taxi-and-beach day here is as easy as the Caribbean gets."},
-"aruba": {"dock":"Docked","walk":"Walkable Oranjestad","cur":"AWG / USD","lang":"Dutch / Papiamento / English","blurb":"Aruba sits outside the hurricane belt with a near-guaranteed forecast: sunny, 28 degrees, windy. Oranjestad's Dutch-colonial pastels start at the pier, Eagle and Palm beaches run up the west coast, and the cactus-strewn national park fills the wild east.","miss":["Eagle Beach and its famous fofoti trees","The free tram loop through Oranjestad","Arikok National Park's natural pool by jeep"],"tip":"The constant trade wind makes the heat deceptive — you'll burn faster than you feel. The bus to Eagle Beach costs a fraction of the taxi rank."},
-"curacao": {"dock":"Docked","walk":"Walkable Willemstad","cur":"XCG / USD","lang":"Dutch / Papiamento / English","blurb":"Willemstad's rainbow-coloured Handelskade waterfront is the Caribbean's most photographed street, and the floating Queen Emma pontoon bridge swings open for ships right beside it. Beyond town lie thirty-plus cove beaches tucked into the coast.","miss":["The Queen Emma bridge swinging open","Punda and Otrobanda's UNESCO streets either side of it","Playa Kenepa's cliff-backed double cove (worth the drive)"],"tip":"When the pontoon bridge opens for traffic, free ferries shuttle across instead — riding one is the best two-minute harbour tour in the Caribbean."},
-"bonaire": {"dock":"Docked","walk":"Walkable Kralendijk","cur":"USD","lang":"Dutch / Papiamento / English","blurb":"Bonaire is a marine park with an island attached — the entire coast is protected, and the shore diving and snorkelling are the best you can reach on foot in the Caribbean. Kralendijk is tiny, tidy and starts at the gangway.","miss":["Snorkelling straight off Te Amo or Bachelor's Beach","Klein Bonaire's reef by water taxi","The pink salt flats and flamingos of the south loop"],"tip":"Rent snorkel gear in town and the shore entry points do the rest — this is the one port where the DIY option genuinely beats the boat tours."},
-"kings_wharf_bermuda": {"dock":"Docked","walk":"Dockyard at the pier","cur":"BMD / USD","lang":"English","blurb":"Bermuda's Royal Naval Dockyard is both the cruise terminal and an attraction in its own right — a Victorian fortress complex of museums, craft markets and the National Museum. Pink-sand Horseshoe Bay and the ferry to Hamilton complete the trio.","miss":["Horseshoe Bay's pink sand (bus or minibus shuttle)","The National Museum inside the Keep's ramparts","The fast ferry across the Great Sound to Hamilton"],"tip":"Buy a transport pass at the Dockyard ferry terminal — it covers buses and ferries island-wide and pays for itself in one Hamilton round trip."},
-"cozumel_mexico": {"dock":"Docked","walk":"Walkable or short taxi","cur":"MXN / USD","lang":"Spanish","blurb":"Cozumel is the western Caribbean's heavyweight — often three or four ships at once — thanks to the reef diving that made Jacques Cousteau famous here and its ferry link to the Mayan mainland. San Miguel town is walkable from the downtown pier.","miss":["Snorkelling or diving Palancar and Columbia reefs","Punta Sur eco park at the island's wild tip","El Cielo's starfish sandbar by boat"],"tip":"Check which pier you're on — Punta Langosta walks straight into town, while Puerta Maya and the International pier need a short fixed-rate taxi."},
-"costa_maya_mahahual_mexico": {"dock":"Docked","walk":"Port village at pier","cur":"MXN / USD","lang":"Spanish","blurb":"Costa Maya is a purpose-built port on a once-remote stretch of coast, with a pool-and-shops village at the pier and the fishing town of Mahahual a short ride south. Its trump card is proximity to the seldom-crowded Chacchoben Mayan ruins.","miss":["Chacchoben's jungle-wrapped pyramids","Mahahual's malecón beach clubs","The Bacalar seven-colour lagoon if you have a long day"],"tip":"Mahahual's beach clubs will collect you free from the port if you commit to a lunch minimum — a cheaper, calmer day than the pier-side pool crush."},
-"belize_city_belize": {"dock":"Tender","walk":"Excursion base","cur":"BZD / USD","lang":"English","blurb":"Belize City is a long tender ride and not the destination itself — the country behind it is. This is the jumping-off point for cave tubing through jungle river caves, Mayan ruins at Altun Ha and Lamanai, and the world's second-largest barrier reef.","miss":["Cave tubing the Nohoch Che'en caves","Lamanai's ruins reached by river safari","Snorkelling the barrier reef off Caye Caulker"],"tip":"Tenders here eat 30–45 minutes each way — book something substantial and organised rather than planning to wander, because there's little to wander to."},
-"roatan_honduras": {"dock":"Docked","walk":"Beach shuttles","cur":"HNL / USD","lang":"Spanish / English","blurb":"Roatán sits on the Mesoamerican reef and delivers the best-value snorkelling and diving in the western Caribbean. Ships dock at Mahogany Bay or Coxen Hole; West Bay's white-sand beach with reef swimming straight off it is the classic day.","miss":["West Bay Beach — reef snorkelling from the sand","Little French Key's island day resort","The sloth and monkey sanctuaries (with expectations set)"],"tip":"Mahogany Bay's chairlift to its private beach is fine, but West Bay is the beach the island is famous for — share a taxi and agree the return time."},
-"cartagena_colombia": {"dock":"Docked","walk":"Taxi to old town","cur":"COP","lang":"Spanish","blurb":"Cartagena's walled old town is one of the great colonial cities of the Americas — flower-draped balconies, plazas and 400-year-old ramparts, all UNESCO-listed. The port itself hides a surprise: a free aviary-and-monkey garden inside the terminal.","miss":["The walled city's streets around Plaza Santo Domingo","San Felipe fortress, the largest Spanish fort in the Americas","The port terminal's own flamingos and toucans"],"tip":"It's seriously hot and humid by mid-morning — do the walls first, retreat to a shaded café by noon, and keep small peso notes for street vendors."},
-"colon_panama": {"dock":"Docked","walk":"Excursion base","cur":"USD","lang":"Spanish","blurb":"Colón exists on cruise itineraries for one reason: the Panama Canal is up the road. Partial transits, the Agua Clara visitor centre overlooking the new locks, and rainforest boat safaris on Gatún Lake are the day's currency — the city itself isn't for wandering.","miss":["Agua Clara locks viewing platform","Gatún Lake boat safari among monkey islands","The Panama Canal Railway's ocean-to-ocean run"],"tip":"This is a book-something port — independent wandering isn't rewarding or advisable here, but the canal excursions genuinely live up to the billing."},
-"puntarenas_costa_rica": {"dock":"Docked","walk":"Excursion base","cur":"CRC / USD","lang":"Spanish","blurb":"Puntarenas is Costa Rica's Pacific cruise door, a long sandspit town that serves as launchpad to the country's real riches — cloud forests, zip lines, volcanoes and wildlife-thick rivers. Pura vida starts about thirty minutes inland.","miss":["Ziplining or hanging bridges in the rainforest canopy","A Tárcoles River crocodile safari","Sarchí's painted oxcarts and coffee country"],"tip":"Distances deceive here — Monteverde and Arenal are too far for a port day, so aim for Tárcoles, Carara National Park or canopy tours within an hour."},
-"panama-city": {"dock":"Docked","walk":"Excursion base","cur":"USD","lang":"Spanish","blurb":"Panama City calls (usually at Fuerte Amador) pair the canal's Miraflores locks with a skyline the rest of Central America can't match, plus the colonial Casco Viejo quarter. It's often a partial-transit bookend, so check your ship's timings.","miss":["Miraflores locks visitor centre","Casco Viejo's plazas and rooftop bars","The Amador Causeway's skyline view"],"tip":"Traffic in Panama City is genuinely bad — build slack into any independent plan and treat all-aboard time with more respect than usual."},
-"key_west_florida_usa": {"dock":"Docked","walk":"Everything on foot","cur":"USD","lang":"English","blurb":"Key West is a perfect walking port — Duval Street, Hemingway's six-toed cats, the Southernmost Point buoy and Mallory Square are all within a flat mile of the pier. It's the Caribbean's atmosphere on American convenience.","miss":["The Hemingway Home and its 60-odd cats","Duval Street end to end, bar by bar","Key lime pie — the frozen chocolate-dipped kind on a stick"],"tip":"The Southernmost Point buoy queue is pure photo theatre — go before 10am or accept the wait. The Conch Train covers the same ground your feet can."},
-"miami_florida_usa": {"dock":"Docked","walk":"Taxi / rideshare city","cur":"USD","lang":"English / Spanish","blurb":"PortMiami is the world's busiest cruise port, and if you're staying pre- or post-cruise the city rewards it — South Beach's Art Deco district, Little Havana's cafecito windows, and Wynwood's street-art blocks are each a short ride apart.","miss":["The Art Deco district along Ocean Drive","Little Havana's Calle Ocho and a proper Cuban sandwich","Wynwood Walls' warehouse-district murals"],"tip":"If you're flying in for a cruise, come a day early — Miami traffic and flight delays are the classic embarkation-day heartbreakers."},
-"port_everglades_fort_lauderdale_florida_usa": {"dock":"Docked","walk":"Taxi / rideshare city","cur":"USD","lang":"English","blurb":"Port Everglades in Fort Lauderdale is one of cruising's big three Florida homeports, fifteen minutes from its own airport. The city's canals earn the 'Venice of America' tag, and the beach promenade is a fine pre-cruise wind-down.","miss":["A water taxi loop through the canal mansions","Las Olas Boulevard's restaurant row","Fort Lauderdale Beach's wave-wall promenade"],"tip":"FLL airport is so close you can be ship-to-terminal in 15 minutes — but morning-of flights before 11am are still gambling with disembarkation queues."},
-"port_canaveral_florida_usa": {"dock":"Docked","walk":"Taxi / car needed","cur":"USD","lang":"English","blurb":"Port Canaveral is the cruise gateway to Orlando's parks — but its own neighbour is the better story: Kennedy Space Center is twenty minutes away, and rocket launches are now frequent enough that one might share your sail-away.","miss":["Kennedy Space Center and the Atlantis shuttle","Cocoa Beach and its famous pier","A launch, if the schedule gods smile"],"tip":"Check the launch schedule for your embarkation or return date — watching a rocket climb out over the Atlantic from a ship's deck is a genuine bucket-list freebie."},
-"tampa_florida_usa": {"dock":"Docked","walk":"Walkable downtown","cur":"USD","lang":"English","blurb":"Tampa's cruise terminals sit right in the downtown Channel District, an easy walk or streetcar ride from the aquarium, Sparkman Wharf and the Riverwalk. Historic Ybor City — the cigar quarter with free-roaming chickens — is a streetcar away.","miss":["Ybor City's cigar-era streets by free streetcar","The Florida Aquarium beside the terminals","The Riverwalk to Armature Works food hall"],"tip":"The TECO streetcar from the port to Ybor City is free — Tampa is the rare homeport where a car-free pre-cruise day works perfectly."},
-"galveston_texas_usa": {"dock":"Docked","walk":"Walkable Strand district","cur":"USD","lang":"English","blurb":"Galveston is the Gulf's boom cruise port, and its Victorian Strand district — a legacy of the days it rivalled New Orleans — starts blocks from the terminals. The seawall beaches and Moody Gardens' pyramids fill out a pre-cruise day.","miss":["The Strand's iron-front Victorian blocks","The 1877 tall ship Elissa at the seaport museum","Moody Gardens' rainforest pyramid"],"tip":"Houston's airports are 45–90 minutes away depending on traffic — book transfers with margin, because the causeway is the only road onto the island."},
-"new-orleans": {"dock":"Docked","walk":"French Quarter walkable","cur":"USD","lang":"English","blurb":"Cruising from New Orleans means the French Quarter is essentially part of the port — the terminal sits at the foot of the CBD, a streetcar or short walk from beignets, brass bands and the Mississippi's crescent. Come early, stay late.","miss":["Café du Monde beignets in Jackson Square's shadow","Frenchmen Street for the locals' live music","A St Charles streetcar ride under the oaks"],"tip":"The ship sails down 100 miles of Mississippi River after departure — sail-away here is a slow, fascinating half-day cruise in itself. Stay on deck."},
-"charleston_south_carolina_usa": {"dock":"Docked","walk":"Historic district walkable","cur":"USD","lang":"English","blurb":"Charleston's terminal opens onto one of America's best-preserved historic cities — antebellum mansions, Rainbow Row's pastels and the palmetto-lined Battery are all on foot. It's a homeport worth arriving early for.","miss":["Rainbow Row and the Battery promenade","The City Market's sweetgrass basket weavers","A carriage tour's gossip-rich history loop"],"tip":"She-crab soup and shrimp-and-grits are the local orders — book dinner ahead, because Charleston's restaurant scene fills up even midweek."},
-"baltimore": {"dock":"Docked","walk":"Taxi to Inner Harbor","cur":"USD","lang":"English","blurb":"Baltimore's cruise terminal is an industrial locale a short ride from the Inner Harbor, where the National Aquarium, historic warships and crab houses cluster around the water. Fort McHenry — birthplace of the US anthem — guards the approach.","miss":["The National Aquarium's blacktip reef","Fort McHenry, of Star-Spangled Banner fame","Fell's Point's cobbled pub streets"],"tip":"Your sail-away passes directly under the Key Bridge site and past Fort McHenry — the harbour exit is Baltimore's best viewpoint, so linger on deck."},
-"new_york_new_york_usa": {"dock":"Docked","walk":"Subway city","cur":"USD","lang":"English","blurb":"Sailing from New York — Manhattan's west side or Brooklyn's Red Hook — comes with the greatest sail-away in cruising: down the Hudson, past the Statue of Liberty and under the Verrazzano. The city itself needs no introduction, just extra days.","miss":["The Statue of Liberty from your own deck at sail-away","The High Line to Hudson Yards near the Manhattan terminal","Times Square once, then never again"],"tip":"Book the port side of the ship (or just stand there) leaving Manhattan — Lady Liberty passes close on the left and the skyline does the rest."},
-"boston_massachusetts_usa": {"dock":"Docked","walk":"Walkable via short taxi","cur":"USD","lang":"English","blurb":"Boston's Flynn cruise terminal sits in the Seaport, ten minutes from the Freedom Trail's red brick line through 250 years of revolution — Faneuil Hall, Paul Revere's house and the USS Constitution. Compact, historic and very walkable once you're in town.","miss":["The Freedom Trail from Boston Common to the North End","The USS Constitution — 'Old Ironsides' — afloat since 1797","Cannoli in the North End (join the longer queue)"],"tip":"New England fall foliage cruises book Boston hotels solid in late September — reserve pre-cruise nights months out, not weeks."},
-"portland-maine": {"dock":"Docked","walk":"Old Port at the pier","cur":"USD","lang":"English","blurb":"Portland lands you straight into the Old Port's cobbled lanes of fish shacks, breweries and boutiques — the best small-city walk-off on the New England circuit. Lighthouses, lobster boats and Casco Bay islands fill anything longer.","miss":["Portland Head Light, Maine's postcard lighthouse","A lobster roll — decide your butter-vs-mayo allegiance","The Old Port's boutiques and micro-breweries"],"tip":"Portland Head Light is a short taxi away in Cape Elizabeth and beats every in-town view — go there first, eat lobster after."},
-"saint-john-nb": {"dock":"Docked","walk":"Walkable uptown","cur":"CAD","lang":"English","blurb":"Saint John, New Brunswick sits on the Bay of Fundy, home of the world's highest tides — the Reversing Falls rapids literally flow backwards twice a day. The Victorian uptown and the covered City Market start right at the terminal.","miss":["Reversing Falls Rapids at the right tide time","The 1876 City Market's dulse and maple stalls","Hopewell Rocks' flowerpot formations on longer calls"],"tip":"Check the tide table first — the Reversing Falls only 'perform' around the turn of the tide, and cruise mornings don't always line up."},
-"halifax_nova_scotia_canada": {"dock":"Docked","walk":"Boardwalk at the pier","cur":"CAD","lang":"English","blurb":"Halifax pairs one of the world's great natural harbours with an easy waterfront boardwalk that starts at the terminal. The Citadel crowns the town, Peggy's Cove's lighthouse sits an hour away, and the Titanic story runs deep here.","miss":["Peggy's Cove's granite-perched lighthouse","The Citadel's noon gun and kilted sentries","The Maritime Museum's Titanic gallery"],"tip":"The Fairview Lawn Cemetery's Titanic graves are moving and rarely crowded — a short, inexpensive taxi detour most tours skip or rush."},
-"quebec_city_canada": {"dock":"Docked","walk":"Old town at the pier","cur":"CAD","lang":"French / English","blurb":"Québec City is the closest thing North America has to a walled European town, and ships dock directly beneath it. The funicular links the Petit-Champlain's stone lanes to the Château Frontenac's boardwalk above; Montmorency Falls waits just outside town.","miss":["Terrasse Dufferin's boardwalk beside the Château","Petit-Champlain — the continent's oldest shopping street","Montmorency Falls, higher than Niagara"],"tip":"The funicular queue is worth skipping if you can manage the Breakneck Stairs — and October calls come with peak fall colour on the Laurentians."},
-"montreal_canada": {"dock":"Docked","walk":"Old Montreal at the pier","cur":"CAD","lang":"French / English","blurb":"Montréal bookends the Canada–New England run, with the Old Port's terminal steps from Old Montreal's cobbles, the Notre-Dame Basilica's blue-lit interior and a food scene that argues loudly with the rest of the continent.","miss":["Notre-Dame Basilica's aurora light show","Bagels vs smoked meat — settle it at St-Viateur and Schwartz's","Mount Royal's lookout over the city"],"tip":"If your cruise starts or ends here, add a night — Montréal is a stay-and-eat city, and the Jean-Talon market alone justifies the extra day."},
-"nuuk_greenland": {"dock":"Docked · some calls tender","walk":"Walkable centre","cur":"DKK","lang":"Greenlandic / Danish","blurb":"Nuuk is the world's smallest capital with a skyline — colourful blocks against raw mountains at the mouth of a vast fjord system. The National Museum's Qilakitsoq mummies and the old colonial harbour anchor a compact, strollable visit.","miss":["The Greenland National Museum's 500-year-old mummies","The old Colonial Harbour and Hans Egede's church","A boat trip into the Nuuk fjord if time allows"],"tip":"Weather rules everything in Greenland — have a flexible plan and treat any sunny hour as the moment to do the outdoor thing immediately."},
-"seattle": {"dock":"Docked","walk":"Walkable downtown","cur":"USD","lang":"English","blurb":"Seattle is the Alaska cruise gateway, and both terminals sit within reach of the essentials — Pike Place Market's fish throwers, the original Starbucks queue you can skip, and the Space Needle. Add a day for the full coffee-and-mountains effect.","miss":["Pike Place Market early, before the crowds","The Chihuly Garden and Glass beside the Space Needle","The Great Wheel and waterfront oyster bars"],"tip":"Pier 91 (most big ships) is a ride from downtown while Pier 66 is walkable — check which one you're on before planning embarkation morning."},
-"vancouver": {"dock":"Docked","walk":"Canada Place downtown","cur":"CAD","lang":"English","blurb":"Vancouver's Canada Place terminal is the prettiest embarkation in North America — downtown on one side, seaplanes and mountains on the other, and Stanley Park's seawall starting a short stroll away. Alaska sailings begin with the Lions Gate Bridge overhead.","miss":["Stanley Park's seawall by bike or foot","Granville Island's public market by mini-ferry","Gastown's steam clock and brunch scene"],"tip":"Sail-away under the Lions Gate Bridge is the trip's first highlight — be on deck, because the ship clears it by what looks like inches."},
-"victoria-bc": {"dock":"Docked","walk":"Shuttle or 25-min walk","cur":"CAD","lang":"English","blurb":"Victoria is the classic evening call on Alaska round-trips — a few hours of British-flavoured charm around the Inner Harbour, the illuminated Parliament, and the Empress Hotel's ivy. Butchart Gardens is the excursion if your hours allow.","miss":["The Inner Harbour and Parliament lights after dusk","Butchart Gardens (check timing against your call)","Fisherman's Wharf's float homes and fish and chips"],"tip":"Most calls here are short and in the evening — decide in advance between Butchart's gardens and the harbour stroll, because doing both is a squeeze."},
-"whittier": {"dock":"Docked","walk":"Tiny — rail/coach out","cur":"USD","lang":"English","blurb":"Whittier is a working port in a spectacular dead-end fjord, reached through a one-lane shared rail-road tunnel — and almost everyone who lives here shares one building. It exists on itineraries as the rail gateway to Anchorage, Denali and the interior.","miss":["The 26 Glacier Cruise from the small-boat harbour","Portage Glacier en route to Anchorage","Begich Towers — the town that lives in one building"],"tip":"If you're ending your cruise here, the scenic rail to Anchorage beats the coach — same tunnel, better windows, and glaciers to the door."},
-"seward_alaska": {"dock":"Docked","walk":"Shuttle to small town","cur":"USD","lang":"English","blurb":"Seward sits at the head of Resurrection Bay with Kenai Fjords National Park on its doorstep — the tidewater-glacier and whale-watching boat trips from here are among Alaska's best. The Alaska SeaLife Center anchors the compact town.","miss":["A Kenai Fjords cruise to Aialik or Holgate glacier","The Alaska SeaLife Center's rescued puffins and sea lions","Exit Glacier's walkable viewing trails"],"tip":"Turnaround days here are tight for the big boat tours — if Kenai Fjords is the dream, consider staying a night rather than squeezing it into embarkation day."},
-"juneau_alaska": {"dock":"Docked","walk":"Walkable downtown","cur":"USD","lang":"English","blurb":"Alaska's capital has no roads in — only sea and sky — and its cruise dock lands you in a walkable downtown with the Mount Roberts Tramway rising straight from the pier. Mendenhall Glacier and humpback whale watching are the twin headline acts.","miss":["Mendenhall Glacier and Nugget Falls","Whale watching on Auke Bay — humpbacks near-guaranteed in season","The Mount Roberts Tramway from the dock"],"tip":"The city 'blue bus' shuttles to Mendenhall for far less than a tour — glacier first, then spend the saving on crab legs at Tracy's shack by the dock."},
-"skagway_alaska": {"dock":"Docked","walk":"Walkable gold-rush town","cur":"USD","lang":"English","blurb":"Skagway is the gold rush preserved — false-front streets run straight from the dock, and the White Pass & Yukon Route railway climbs 3,000 feet through the mountains the stampeders crossed on foot. Book the train; it's the point of the port.","miss":["The White Pass & Yukon Route railroad","The Klondike Gold Rush historical park's free walking tour","The Red Onion Saloon's brothel-museum cheek"],"tip":"White Pass trains sell out weeks ahead in summer — book before the cruise, and sit on the left going up for the drop-away canyon views."},
-"ketchikan_alaska": {"dock":"Docked","walk":"Walkable from dock","cur":"USD","lang":"English","blurb":"Ketchikan calls itself the Salmon Capital of the World and greets you with Creek Street — a boardwalk of former brothels on stilts over a salmon stream. It also holds the world's largest collection of standing totem poles, minutes from town.","miss":["Creek Street's stilted boardwalk (salmon run in late summer)","Totem Bight or Saxman Village's totem parks","Misty Fjords by floatplane if the budget stretches"],"tip":"Rain is the local weather — locals don't use umbrellas and neither should you; a hood and quick-dry layers make the day comfortable regardless."},
-"sitka_alaska": {"dock":"Docked · shuttle to town","walk":"Shuttle, then walkable","cur":"USD","lang":"English","blurb":"Sitka was Russian America's capital, and it remains the most atmospheric town on the Alaska circuit — onion-domed St Michael's Cathedral, totem-lined rainforest trails and a raptor rescue centre, all against a volcano-backed sound.","miss":["Sitka National Historical Park's totem trail","The Alaska Raptor Center's rehabilitating eagles","St Michael's Russian Orthodox cathedral"],"tip":"Most ships dock at Old Sitka Dock with free shuttles the five miles to town — factor the shuttle queue into your all-aboard arithmetic."},
-"icy_strait_point_alaska": {"dock":"Docked","walk":"All on foot / gondolas","cur":"USD","lang":"English","blurb":"Icy Strait Point is a cruise port owned by the Native Huna Tlingit village of Hoonah, built around a restored salmon cannery — with the world's largest zipline dropping 1,300 feet off the mountain above. The whale watching here is the best in Alaska.","miss":["Whale watching in Icy Strait — humpbacks all season","The ZipRider's 90-second mountain drop","The cannery museum and Tlingit cultural performances"],"tip":"Whales are so reliable here that operators guarantee sightings — if you're only doing one whale trip on the whole cruise, spend it at this port."},
-"honolulu": {"dock":"Docked","walk":"Taxi to Waikiki","cur":"USD","lang":"English","blurb":"Honolulu calls balance the unmissable weight of Pearl Harbor against Waikiki's surf and Diamond Head's crater rim walk. The Aloha Tower terminal sits between the two — downtown history one way, the beach the other.","miss":["The USS Arizona Memorial at Pearl Harbor","Diamond Head's summit trail at first light","Waikiki Beach and a first surf lesson"],"tip":"Arizona Memorial tickets are released online in advance and go fast — reserve the moment your window opens rather than chancing standby."},
-"cabo_san_lucas_mexico": {"dock":"Tender","walk":"Tender lands in marina","cur":"MXN / USD","lang":"Spanish","blurb":"Cabo is the Mexican Riviera's showpiece — the granite Arch at Land's End, sea lions, and Lover's Beach are all a short water-taxi hop from where the tenders land in the marina. It's a tender port, so the marina bustle starts immediately.","miss":["The Arch (El Arco) by glass-bottom boat","Lover's Beach between two seas","Medano Beach's swimmable, bar-lined sand"],"tip":"Water taxis to the Arch are cheap and constant from the marina — haggle politely, agree the price and photo stops before boarding, and you don't need a tour."},
-"puerto_vallarta_mexico": {"dock":"Docked","walk":"Taxi / bus to centre","cur":"MXN","lang":"Spanish","blurb":"Puerto Vallarta pairs a golden-sand bay with a genuinely charming old town — the Malecón's sculptures, the crowned church of Our Lady of Guadalupe and the Rio Cuale island market. The Zona Romántica's cobbles are the town at its best.","miss":["The Malecón boardwalk's sculpture parade","The Zona Romántica and Playa Los Muertos pier","A panga boat to Yelapa or the southern coves"],"tip":"Local buses marked 'Centro' run from outside the port for pennies — the old town is fifteen minutes and a world away from the terminal malls."},
-"mazatlan_mexico": {"dock":"Docked","walk":"Shuttle, then walkable centro","cur":"MXN","lang":"Spanish","blurb":"Mazatlán's restored Centro Histórico is the Mexican Riviera's cultural sleeper — the Plazuela Machado's cafés, the Angela Peralta theatre and a 13-mile malecón patrolled by open-air pulmonía taxis. Cliff divers perform where the seawall bends.","miss":["Plazuela Machado and the old town's restored streets","The cliff divers at El Clavadista","A pulmonía (open golf-cart taxi) ride along the malecón"],"tip":"Ride a pulmonía at least once — agree the fare first — and time the cliff divers for when tour groups gather, as they perform when the tips assemble."},
-"ensenada_mexico": {"dock":"Docked","walk":"Shuttle to walkable centre","cur":"MXN / USD","lang":"Spanish","blurb":"Ensenada is Baja's port of call for short West Coast cruises — fish tacos allegedly born here, La Bufadora's blowhole thundering down the coast, and the Valle de Guadalupe wine country rising behind town.","miss":["La Bufadora, one of the world's biggest blowholes","Fish tacos at the harbourside stands that invented them","A Valle de Guadalupe winery tasting"],"tip":"Hussong's Cantina claims the margarita's invention and looks every year of its age — one there for history, then follow the locals to the taco carts."},
-"san-diego": {"dock":"Docked","walk":"Walkable Embarcadero","cur":"USD","lang":"English","blurb":"San Diego's terminal sits on the downtown Embarcadero beside the USS Midway's flight deck — the Gaslamp Quarter, Little Italy and ferry to Coronado are all walkable. It's the easiest big-city homeport on the West Coast.","miss":["The USS Midway museum next to the pier","Coronado's beach and grand old hotel by ferry","Balboa Park's museums and gardens"],"tip":"The Midway is literally beside the cruise terminal — even a two-hour pre-boarding visit works if you check bags at the port first."},
-"los-angeles": {"dock":"Docked","walk":"Car / rideshare needed","cur":"USD","lang":"English","blurb":"The World Cruise Center at San Pedro is LA's cruise door, with the battleship Iowa moored alongside and the rebuilt West Harbor waterfront growing next door. Hollywood and Santa Monica are a committed ride away — plan LA days around traffic, not distance.","miss":["The Battleship USS Iowa beside the terminal","The Korean Bell and Point Fermin's clifftop views nearby","Santa Monica Pier if you have a full pre-cruise day"],"tip":"On embarkation day, stay near the port, not in Hollywood — the 110 freeway at the wrong hour has sunk more boarding schedules than weather ever has."},
-"san-francisco": {"dock":"Docked","walk":"Walkable waterfront","cur":"USD","lang":"English","blurb":"San Francisco's ships berth along the Embarcadero near Fisherman's Wharf, with the sea lions of Pier 39, cable cars climbing from the turnaround and Alcatraz out in the bay. Sailing under the Golden Gate is the harbour's mic-drop.","miss":["Alcatraz — book weeks ahead, it sells out","A cable car over the hills to Union Square","The Ferry Building's food hall"],"tip":"Sail-away under the Golden Gate Bridge is the single best deck moment in US cruising — it's usually cold and windy up there, so take a layer, not just a phone."},
-"rio-de-janeiro": {"dock":"Docked","walk":"Taxi city","cur":"BRL","lang":"Portuguese","blurb":"Rio needs no sales pitch — Christ the Redeemer, Sugarloaf's cable car and Copacabana's mosaic promenade deliver exactly what the postcards promise. The Pier Mauá terminal sits by the revitalised port district and its striking Museum of Tomorrow.","miss":["Christ the Redeemer by cog train","Sugarloaf's two-stage cable car at golden hour","Copacabana and Ipanema's beach promenade"],"tip":"Do Corcovado early — clouds swallow the statue by many afternoons — and use official taxis or apps rather than street hails, keeping valuables minimal."},
-"santos-sao-paulo": {"dock":"Docked","walk":"Taxi to beach district","cur":"BRL","lang":"Portuguese","blurb":"Santos is São Paulo's seaside and the busiest port in Latin America — but for visitors it means beach gardens that hold a world record, a coffee-boom heritage and Pelé's own museum in the club where he played.","miss":["The beachfront gardens — the world's longest","The Coffee Exchange's stained-glass trading hall","The Pelé Museum near Santos FC's ground"],"tip":"São Paulo city is 80km and heavy traffic away — unless you have a late departure, Santos itself is the better-value day."}
+  "agadir_morocco": {
+    "blurb": "Agadir is Morocco's modern beach resort, rebuilt after a 1960 earthquake, with a long sandy bay and a hilltop kasbah ruin overlooking the port. It's also a gateway to the souks and argan-oil country of the Souss valley.",
+    "cur": "MAD",
+    "dock": "Docked",
+    "lang": "Arabic / French",
+    "miss": [
+      "The sweeping beach promenade",
+      "The hilltop Agadir Oufella kasbah ruins",
+      "The Souk El Had, one of Morocco's largest markets"
+    ],
+    "tip": "Agadir is more resort than old-Morocco atmosphere — for authentic souks and medinas, Taroudant inland is the better excursion if you want the real thing.",
+    "walk": "Shuttle then walkable"
+  },
+  "ajaccio_corsica": {
+    "blurb": "Ajaccio is Corsica's sunny capital and Napoleon's birthplace, with a palm-lined seafront and citadel a short walk from the pier. The island's granite mountains and coves are the draw for anyone hiring a car or taking a tour.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "French",
+    "miss": [
+      "Maison Bonaparte, Napoleon's childhood home",
+      "The morning market on Place Foch",
+      "Iles Sanguinaires sunset headland by boat or road"
+    ],
+    "tip": "The old town and market are all on foot from the ship — save any car hire for the dramatic coast road out to the Sanguinaires.",
+    "walk": "Walkable"
+  },
+  "akureyri_iceland": {
+    "blurb": "Akureyri is Iceland's northern capital, tucked at the head of the country's longest fjord with surprising botanical gardens for its latitude. It's the gateway to the thundering Godafoss waterfall and the volcanic wonders of Lake Myvatn.",
+    "cur": "ISK",
+    "dock": "Docked",
+    "lang": "Icelandic",
+    "miss": [
+      "Godafoss, the 'waterfall of the gods'",
+      "The geothermal fields and craters of Lake Myvatn",
+      "Whale watching from nearby Husavik"
+    ],
+    "tip": "Myvatn's nature baths are a quieter, cheaper alternative to the Blue Lagoon in the south — and combine perfectly with the Godafoss and crater sights nearby.",
+    "walk": "Walkable"
+  },
+  "alesund_norway": {
+    "blurb": "Alesund is Norway's Art Nouveau jewel, rebuilt in swirling stone after a 1904 fire and set across islands between fjord and open sea. A climb up Mount Aksla gives one of the most beautiful town panoramas in the country.",
+    "cur": "NOK",
+    "dock": "Docked",
+    "lang": "Norwegian",
+    "miss": [
+      "The 418 steps up Mount Aksla for the view",
+      "The Art Nouveau centre and Jugendstil museum",
+      "The Atlantic Sea-Park aquarium"
+    ],
+    "tip": "The Aksla viewpoint can also be reached by road if the steps daunt you — but the climb from the town park is direct and takes only 15-20 minutes.",
+    "walk": "Walkable"
+  },
+  "alicante_spain": {
+    "blurb": "Alicante drops you right beside the old town on the Costa Blanca, with the Explanada palm promenade and Santa Barbara castle looming over a genuinely walkable centre. The city beach, Postiguet, is a five-minute stroll from the ship.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "Castillo de Santa Barbara by lift from Postiguet beach",
+      "The marble-waved Explanada de Espana promenade",
+      "Tapas in the El Barrio old quarter"
+    ],
+    "tip": "The castle lift entrance is tucked in a tunnel across the road from the beach — far easier than the switchback climb, and cheap.",
+    "walk": "Walkable"
+  },
+  "amber_cove": {
+    "blurb": "Amber Cove is Carnival's purpose-built gateway to the Dominican Republic's north coast, with a big pool complex and zip line inside the port itself. Outside the gates, Puerto Plata's cable car, waterfalls and rum heritage make the case for venturing out.",
+    "cur": "DOP / USD",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "The Teleférico cable car up Mount Isabel de Torres",
+      "The 27 Waterfalls of Damajagua canyoning trip",
+      "Puerto Plata's Victorian old town and amber museum"
+    ],
+    "tip": "The port pool is free and genuinely good — if you've done the DR before, a zero-spend pool day here is a legitimate choice.",
+    "walk": "Resort-style port"
+  },
+  "amsterdam_netherlands": {
+    "blurb": "Amsterdam's cruise terminal sits right on the IJ waterfront, a walk or short tram from the canal ring, the great museums and the buzz of the centre. Few capitals put you so directly into the heart of things.",
+    "cur": "EUR",
+    "dock": "Docked in city",
+    "lang": "Dutch",
+    "miss": [
+      "A canal-ring cruise past the gabled houses",
+      "The Rijksmuseum and Van Gogh Museum",
+      "The Anne Frank House (book well ahead)"
+    ],
+    "tip": "The Anne Frank House sells out weeks in advance with timed online tickets only — if it's on your list, book the moment your itinerary is confirmed.",
+    "walk": "Walkable"
+  },
+  "antigua": {
+    "blurb": "Antigua claims a beach for every day of the year, and the ships dock right in St John's among the shops and rum bars. Nelson's Dockyard — the world's only continuously working Georgian dockyard — anchors the far side of the island.",
+    "cur": "XCD / USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Nelson's Dockyard and Shirley Heights' harbour view",
+      "Valley Church or Darkwood Beach on the calm west coast",
+      "Fig Tree Drive through the rainforest interior"
+    ],
+    "tip": "Shirley Heights is famous for Sunday sunset parties, but the view is free and empty at midday — pair it with the Dockyard in one taxi loop.",
+    "walk": "Walkable St John's"
+  },
+  "antwerp": {
+    "blurb": "Antwerp is Belgium's diamond capital and Rubens's home city, with a grand Gothic cathedral and a cutting-edge fashion scene. The cruise berth is on the Scheldt right by the medieval centre, so it's a walk-off port.",
+    "cur": "EUR",
+    "dock": "Docked in city",
+    "lang": "Dutch",
+    "miss": [
+      "Rubens masterpieces in the Cathedral of Our Lady",
+      "The Grote Markt and its guildhalls",
+      "The MAS museum's rooftop city view"
+    ],
+    "tip": "Antwerp station is one of the world's most beautiful — a cathedral of glass and iron. Even if you're not travelling on, it's worth the short walk to see it.",
+    "walk": "Walkable"
+  },
+  "aruba": {
+    "blurb": "Aruba sits outside the hurricane belt with a near-guaranteed forecast: sunny, 28 degrees, windy. Oranjestad's Dutch-colonial pastels start at the pier, Eagle and Palm beaches run up the west coast, and the cactus-strewn national park fills the wild east.",
+    "cur": "AWG / USD",
+    "dock": "Docked",
+    "lang": "Dutch / Papiamento / English",
+    "miss": [
+      "Eagle Beach and its famous fofoti trees",
+      "The free tram loop through Oranjestad",
+      "Arikok National Park's natural pool by jeep"
+    ],
+    "tip": "The constant trade wind makes the heat deceptive — you'll burn faster than you feel. The bus to Eagle Beach costs a fraction of the taxi rank.",
+    "walk": "Walkable Oranjestad"
+  },
+  "athens_piraeus_greece": {
+    "blurb": "Piraeus is Athens's ancient port, a busy transport hub about 30 minutes from the Acropolis. The classical capital is the obvious draw — the Parthenon, the Plaka's tavernas and one of the world's great museums.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Greek",
+    "miss": [
+      "The Acropolis and Parthenon",
+      "The Acropolis Museum's sculptures",
+      "Wandering the Plaka beneath the citadel"
+    ],
+    "tip": "Go straight to the Acropolis on arrival before it bakes and fills — buy the combined ticket online, and enter from the quieter southeast gate if you can.",
+    "walk": "Transfer to Athens"
+  },
+  "baltimore": {
+    "blurb": "Baltimore's cruise terminal is an industrial locale a short ride from the Inner Harbor, where the National Aquarium, historic warships and crab houses cluster around the water. Fort McHenry — birthplace of the US anthem — guards the approach.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The National Aquarium's blacktip reef",
+      "Fort McHenry, of Star-Spangled Banner fame",
+      "Fell's Point's cobbled pub streets"
+    ],
+    "tip": "Your sail-away passes directly under the Key Bridge site and past Fort McHenry — the harbour exit is Baltimore's best viewpoint, so linger on deck.",
+    "walk": "Taxi to Inner Harbor"
+  },
+  "barbados": {
+    "blurb": "Bridgetown is the polished pro of southern Caribbean cruising — a UNESCO-listed capital, swimmable west-coast water, and the birthplace of rum with the distillery tours to prove it. The port is a working harbour; a shuttle covers the gate run.",
+    "cur": "BBD / USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Swimming with turtles in Carlisle Bay",
+      "Mount Gay's rum distillery tour",
+      "Harrison's Cave in the island's limestone core"
+    ],
+    "tip": "Carlisle Bay's beach and turtle-swim boats are barely ten minutes from the ship — an independent taxi-and-beach day here is as easy as the Caribbean gets.",
+    "walk": "Shuttle through port"
+  },
+  "barcelona_spain": {
+    "blurb": "Barcelona is the Mediterranean's busiest cruise port and one of its greatest cities — Gaudi, Gothic lanes and Las Ramblas all within reach of the terminals on Montjuic. The catch is the piers are a fair way from the action, so plan the hop into town.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Spanish / Catalan",
+    "miss": [
+      "Sagrada Familia (book a timed slot well ahead)",
+      "The Gothic Quarter and Barcelona Cathedral",
+      "Park Guell's mosaic terraces"
+    ],
+    "tip": "Most ships use the Adossat piers — too far to walk. Take the Blue port shuttle to the Columbus Column, then everything old is on foot from there.",
+    "walk": "Shuttle then walkable"
+  },
+  "bari": {
+    "blurb": "Bari is the capital of Puglia in Italy's heel, its atmospheric old town a warren where grandmothers make orecchiette pasta on the doorstep. It's also the gateway to the fairy-tale trulli houses of Alberobello inland.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Italian",
+    "miss": [
+      "Bari Vecchia's pasta-making lanes",
+      "The Basilica di San Nicola (Santa Claus's relics)",
+      "The conical trulli houses of Alberobello"
+    ],
+    "tip": "Wander Bari Vecchia in the morning to catch the pasta ladies at work along Strada delle Orecchiette — a genuine, unstaged bit of local life.",
+    "walk": "Walkable"
+  },
+  "belfast_northern_ireland": {
+    "blurb": "Belfast built the Titanic, and the striking Titanic Belfast museum stands on the very slipways where she was launched. The revived city centre, the political murals and the Giant's Causeway up the coast round out a rich day.",
+    "cur": "GBP",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Titanic Belfast on the historic slipways",
+      "A black-cab tour of the political murals",
+      "The Giant's Causeway on the Antrim coast"
+    ],
+    "tip": "The Giant's Causeway is a stunning but full-day coach trip. If you'd rather stay in the city, Titanic Belfast plus a cab mural tour is a powerful half-and-half.",
+    "walk": "Shuttle then walkable"
+  },
+  "belize_city_belize": {
+    "blurb": "Belize City is a long tender ride and not the destination itself — the country behind it is. This is the jumping-off point for cave tubing through jungle river caves, Mayan ruins at Altun Ha and Lamanai, and the world's second-largest barrier reef.",
+    "cur": "BZD / USD",
+    "dock": "Tender",
+    "lang": "English",
+    "miss": [
+      "Cave tubing the Nohoch Che'en caves",
+      "Lamanai's ruins reached by river safari",
+      "Snorkelling the barrier reef off Caye Caulker"
+    ],
+    "tip": "Tenders here eat 30–45 minutes each way — book something substantial and organised rather than planning to wander, because there's little to wander to.",
+    "walk": "Excursion base"
+  },
+  "bergen_norway": {
+    "blurb": "Bergen is the gateway to the fjords, its UNESCO Bryggen wharf a row of leaning wooden Hanseatic warehouses right by the harbour. A funicular climbs Mount Floyen for the classic view over the seven surrounding hills.",
+    "cur": "NOK",
+    "dock": "Docked",
+    "lang": "Norwegian",
+    "miss": [
+      "The colourful Bryggen Hanseatic wharf",
+      "The Floibanen funicular up Mount Floyen",
+      "The bustling fish market on the quay"
+    ],
+    "tip": "Bergen is famously rainy — the funicular is worth doing whatever the weather, as low cloud over the fjords can be as atmospheric as sunshine.",
+    "walk": "Walkable"
+  },
+  "berlin_warnemunde_germany": {
+    "blurb": "Warnemunde is a pretty Baltic beach resort in its own right, but it's sold as the port for Berlin — which is a hefty three hours away by train or coach. The choice is a very long capital day, or a relaxed one in Rostock and on the beach.",
+    "cur": "EUR",
+    "dock": "Docked at Warnemunde",
+    "lang": "German",
+    "miss": [
+      "Berlin's Brandenburg Gate and Reichstag (long day)",
+      "The lighthouse and beach at Warnemunde",
+      "The Hanseatic old town of Rostock nearby"
+    ],
+    "tip": "Berlin is 3 hours each way — realistically 6 hours travelling for a few hours in the city. Unless Berlin is a bucket-list must, Warnemunde and Rostock make a far gentler day.",
+    "walk": "Resort walkable; Berlin far"
+  },
+  "bilbao_spain": {
+    "blurb": "Bilbao's ships berth at Getxo, out at the mouth of the estuary, with the Guggenheim and the revived old town a train or transfer ride upriver. The Basque city rewards the journey in — this is one of Spain's best food scenes.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Spanish / Basque",
+    "miss": [
+      "Frank Gehry's titanium Guggenheim Museum",
+      "Pintxos crawl through Casco Viejo",
+      "The Vizcaya transporter bridge at Getxo"
+    ],
+    "tip": "The Metro from Areeta (near the port) runs straight to Moyua for the Guggenheim in about 20 minutes — simpler and cheaper than a taxi across town.",
+    "walk": "Shuttle or transfer"
+  },
+  "bimini_bahamas": {
+    "blurb": "Tiny Bimini was Hemingway's fishing hideout and still feels like a sandbar with a marina attached. Ships dock at the north end; free trams shuttle to Radio Beach and the Resorts World complex with its pool and beach clubs.",
+    "cur": "BSD / USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Radio Beach's shallow, glass-clear swimming",
+      "The Dolphin House mosaic museum in Alice Town",
+      "A conch salad shack — watch it made to order"
+    ],
+    "tip": "The whole island is about seven miles long — a golf-cart rental covers all of it in an afternoon if the beach isn't enough.",
+    "walk": "Tram to beach"
+  },
+  "bodrum_turkey": {
+    "blurb": "Bodrum is Turkey's stylish Aegean resort, built around a Crusader castle that houses a superb museum of underwater archaeology. It stands on the site of Halicarnassus, whose Mausoleum was one of the Seven Wonders.",
+    "cur": "TRY",
+    "dock": "Docked or tender",
+    "lang": "Turkish",
+    "miss": [
+      "The Castle of St Peter and its shipwreck museum",
+      "The scant remains of the Mausoleum",
+      "The whitewashed bazaar and marina"
+    ],
+    "tip": "The castle museum's Bronze Age shipwreck finds are world-class and often overlooked — allow more time inside than the modest exterior suggests.",
+    "walk": "Walkable"
+  },
+  "bonaire": {
+    "blurb": "Bonaire is a marine park with an island attached — the entire coast is protected, and the shore diving and snorkelling are the best you can reach on foot in the Caribbean. Kralendijk is tiny, tidy and starts at the gangway.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "Dutch / Papiamento / English",
+    "miss": [
+      "Snorkelling straight off Te Amo or Bachelor's Beach",
+      "Klein Bonaire's reef by water taxi",
+      "The pink salt flats and flamingos of the south loop"
+    ],
+    "tip": "Rent snorkel gear in town and the shore entry points do the rest — this is the one port where the DIY option genuinely beats the boat tours.",
+    "walk": "Walkable Kralendijk"
+  },
+  "bordeaux": {
+    "blurb": "Bordeaux is a rare treat — ships sail up the Garonne and berth right in the elegant 18th-century city centre, no shuttle needed. The world's most famous wine region sits on the doorstep, but the golden-stone city rewards staying put too.",
+    "cur": "EUR",
+    "dock": "Docked in city",
+    "lang": "French",
+    "miss": [
+      "The Place de la Bourse and its water mirror",
+      "La Cite du Vin wine museum",
+      "A Medoc or Saint-Emilion vineyard tour"
+    ],
+    "tip": "Because the berth is central, you can wander the UNESCO core entirely on foot — save the excursion budget for a half-day vineyard trip if wine's your thing.",
+    "walk": "Walkable"
+  },
+  "boston_massachusetts_usa": {
+    "blurb": "Boston's Flynn cruise terminal sits in the Seaport, ten minutes from the Freedom Trail's red brick line through 250 years of revolution — Faneuil Hall, Paul Revere's house and the USS Constitution. Compact, historic and very walkable once you're in town.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The Freedom Trail from Boston Common to the North End",
+      "The USS Constitution — 'Old Ironsides' — afloat since 1797",
+      "Cannoli in the North End (join the longer queue)"
+    ],
+    "tip": "New England fall foliage cruises book Boston hotels solid in late September — reserve pre-cruise nights months out, not weeks.",
+    "walk": "Walkable via short taxi"
+  },
+  "bruges_zeebrugge_belgium": {
+    "blurb": "Ships berth at the industrial port of Zeebrugge, a shuttle-and-train from the impossibly picturesque medieval Bruges. With its canals, belfry and chocolate shops, Bruges is one of Europe's best-preserved old towns.",
+    "cur": "EUR",
+    "dock": "Docked at Zeebrugge",
+    "lang": "Dutch",
+    "miss": [
+      "Climbing the medieval Belfry for the view",
+      "A canal boat through the old town",
+      "Belgian chocolate, waffles and beer"
+    ],
+    "tip": "Zeebrugge to Bruges takes a shuttle bus to the station then a short train — or an all-in cruise transfer. Ghent, equally lovely and less crowded, is a similar distance.",
+    "walk": "Transfer to Bruges"
+  },
+  "cabo_san_lucas_mexico": {
+    "blurb": "Cabo is the Mexican Riviera's showpiece — the granite Arch at Land's End, sea lions, and Lover's Beach are all a short water-taxi hop from where the tenders land in the marina. It's a tender port, so the marina bustle starts immediately.",
+    "cur": "MXN / USD",
+    "dock": "Tender",
+    "lang": "Spanish",
+    "miss": [
+      "The Arch (El Arco) by glass-bottom boat",
+      "Lover's Beach between two seas",
+      "Medano Beach's swimmable, bar-lined sand"
+    ],
+    "tip": "Water taxis to the Arch are cheap and constant from the marina — haggle politely, agree the price and photo stops before boarding, and you don't need a tour.",
+    "walk": "Tender lands in marina"
+  },
+  "cadiz_spain": {
+    "blurb": "Cadiz claims to be the oldest city in Western Europe, and its salt-white old town sits right at the pier — a maze of squares and sea walls you can explore entirely on foot. It's also the classic gateway to Seville and Jerez inland.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "The golden dome and tower of Cadiz Cathedral",
+      "Torre Tavira camera obscura over the rooftops",
+      "Playa de la Caleta between two castles"
+    ],
+    "tip": "Seville is doable by fast train (about 1h40 each way from the station beside the port) but it's a long day — the old town of Cadiz alone easily fills a port call.",
+    "walk": "Walkable"
+  },
+  "cagliari_sardinia": {
+    "blurb": "Cagliari is Sardinia's capital, its honey-coloured Castello district rising in ramparts above a port you can walk straight out of. A long city beach, Poetto, stretches east, and the island's coves are a short drive away.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Italian",
+    "miss": [
+      "The walled Castello quarter and its bastion terrace",
+      "Poetto beach along the eastern shore",
+      "Roman amphitheatre carved into the hillside"
+    ],
+    "tip": "The Bastione di Saint Remy terrace gives the best rooftop panorama, and it's a free climb up through the old town straight from the port.",
+    "walk": "Walkable"
+  },
+  "cannes_france": {
+    "blurb": "Cannes is Riviera glamour distilled — the Croisette promenade, the film-festival Palais and designer windows, with the old Le Suquet quarter climbing above the harbour. Ships usually tender into the heart of it all.",
+    "cur": "EUR",
+    "dock": "Tender",
+    "lang": "French",
+    "miss": [
+      "The Boulevard de la Croisette and its beaches",
+      "Le Suquet old town and its viewpoint",
+      "A ferry to the monastery island of Saint-Honorat"
+    ],
+    "tip": "Cannes is the classic gateway to Antibes, Grasse and even Monaco by train — the station is a short walk from the tender pier if you fancy hopping along the coast.",
+    "walk": "Walkable"
+  },
+  "cartagena-spain": {
+    "blurb": "Cartagena's natural harbour has been a naval prize since the Carthaginians, and the ship ties up steps from a compact centre stacked with Roman ruins. The restored Roman Theatre is the star, hidden behind the old cathedral.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "The 1st-century Roman Theatre and its museum",
+      "Panoramic lift up Concepcion castle hill",
+      "Modernist architecture along Calle Mayor"
+    ],
+    "tip": "Don't confuse it with Cartagena in Colombia — this one is small and all on foot; you won't need a taxi at all.",
+    "walk": "Walkable"
+  },
+  "cartagena_colombia": {
+    "blurb": "Cartagena's walled old town is one of the great colonial cities of the Americas — flower-draped balconies, plazas and 400-year-old ramparts, all UNESCO-listed. The port itself hides a surprise: a free aviary-and-monkey garden inside the terminal.",
+    "cur": "COP",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "The walled city's streets around Plaza Santo Domingo",
+      "San Felipe fortress, the largest Spanish fort in the Americas",
+      "The port terminal's own flamingos and toucans"
+    ],
+    "tip": "It's seriously hot and humid by mid-morning — do the walls first, retreat to a shaded café by noon, and keep small peso notes for street vendors.",
+    "walk": "Taxi to old town"
+  },
+  "castaway_cay": {
+    "blurb": "Disney's Castaway Cay is the slickest private island operation afloat — the ship docks right at the pier and trams run the length of the beach. Family beaches, the adults-only Serenity Bay, and included barbecue lunch make it a zero-effort day.",
+    "cur": "Ship account",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Serenity Bay if you're travelling without kids",
+      "Snorkelling the lagoon's sunken 'hidden Mickey' props",
+      "The 5K fun run before the beach fills up"
+    ],
+    "noviator": true,
+    "tip": "Bikes and floats sell out at the rental hut — reserve online pre-cruise, and walk one tram stop further for quieter sand.",
+    "walk": "All on foot, tram assist"
+  },
+  "celebration_key": {
+    "blurb": "Celebration Key is Carnival's purpose-built Grand Bahama port, opened in 2025 and designed around five 'portals' — from the free Paradise Plaza lagoon to adults-only and family zones. It's less castaway island, more polished beach resort at scale.",
+    "cur": "Ship account",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The huge freshwater lagoons — included, unlike much here",
+      "Starfish Lagoon's calmer family end",
+      "The suspended bridge view over Paradise Plaza"
+    ],
+    "noviator": true,
+    "tip": "It's big — pick your portal before you walk off and use the trams, because trudging the full length in midday heat gets old fast.",
+    "walk": "All on foot, trams"
+  },
+  "charleston_south_carolina_usa": {
+    "blurb": "Charleston's terminal opens onto one of America's best-preserved historic cities — antebellum mansions, Rainbow Row's pastels and the palmetto-lined Battery are all on foot. It's a homeport worth arriving early for.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Rainbow Row and the Battery promenade",
+      "The City Market's sweetgrass basket weavers",
+      "A carriage tour's gossip-rich history loop"
+    ],
+    "tip": "She-crab soup and shrimp-and-grits are the local orders — book dinner ahead, because Charleston's restaurant scene fills up even midweek.",
+    "walk": "Historic district walkable"
+  },
+  "cherbourg_france": {
+    "blurb": "Cherbourg sits at the tip of the Cotentin peninsula in Normandy, its huge harbour once the last European call for the Titanic. The Cite de la Mer maritime museum, in the old transatlantic terminal, is the standout right by the ship.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "French",
+    "miss": [
+      "Cite de la Mer and its deep-sea submarine",
+      "The Titanic-era Art Deco ferry terminal",
+      "D-Day beaches and Utah Beach museum by tour"
+    ],
+    "tip": "Cherbourg is a genuine gateway to the western D-Day sites — closer than from Le Havre — so it's the better call if the landing beaches are your priority.",
+    "walk": "Walkable"
+  },
+  "cobh_cork_ireland": {
+    "blurb": "Cobh was the Titanic's final port of call and the departure point for millions of Irish emigrants, a story its harbourside heritage centre tells movingly. The colourful town, crowned by its cathedral, is walkable straight off the ship.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "English / Irish",
+    "miss": [
+      "The Titanic Experience in the old ticket office",
+      "St Colman's Cathedral above the harbour",
+      "Cork city or Blarney Castle inland"
+    ],
+    "tip": "Blarney Castle and its famous stone are a short drive or train-and-bus away, but Cobh's own emigrant history is right at the pier and deeply worth an hour.",
+    "walk": "Walkable"
+  },
+  "coco_cay": {
+    "blurb": "Perfect Day at CocoCay is Royal Caribbean's private island, and everything runs on your cruise card. The free side is genuinely good — Chill Island's beaches, the pool, and included lunch — while the waterpark and Coco Beach Club are paid extras.",
+    "cur": "Ship account",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Oasis Lagoon, the Caribbean's largest freshwater pool",
+      "Chill Island's included loungers and calm swimming",
+      "The Up, Up and Away balloon view if it's flying"
+    ],
+    "noviator": true,
+    "tip": "Book waterpark passes before the cruise if you want them — onboard prices climb, and on sold-out days they vanish entirely.",
+    "walk": "All on foot"
+  },
+  "colon_panama": {
+    "blurb": "Colón exists on cruise itineraries for one reason: the Panama Canal is up the road. Partial transits, the Agua Clara visitor centre overlooking the new locks, and rainforest boat safaris on Gatún Lake are the day's currency — the city itself isn't for wandering.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "Agua Clara locks viewing platform",
+      "Gatún Lake boat safari among monkey islands",
+      "The Panama Canal Railway's ocean-to-ocean run"
+    ],
+    "tip": "This is a book-something port — independent wandering isn't rewarding or advisable here, but the canal excursions genuinely live up to the billing.",
+    "walk": "Excursion base"
+  },
+  "copenhagen_denmark": {
+    "blurb": "Copenhagen is the coolest of the Nordic capitals — the Nyhavn canal's painted houses, the Tivoli pleasure gardens and a bike-borne, design-led way of life. Most berths are a shuttle or metro ride from the compact centre.",
+    "cur": "DKK",
+    "dock": "Docked",
+    "lang": "Danish",
+    "miss": [
+      "The colourful Nyhavn harbour canal",
+      "Tivoli Gardens amusement park",
+      "The Little Mermaid statue and Amalienborg Palace"
+    ],
+    "tip": "Copenhagen's metro is driverless, cheap and fast — from the Nordhavn/Langelinie berths it beats waiting for a shuttle to reach the city sights.",
+    "walk": "Shuttle then walkable"
+  },
+  "corfu_greece": {
+    "blurb": "Corfu is the greenest of the Ionian islands, its Venetian old town a UNESCO maze of shuttered lanes and arcaded streets beneath two fortresses. The port is a short ride from the centre and the island's famous coves.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Greek",
+    "miss": [
+      "The Venetian Old Fortress and Liston arcade",
+      "Achilleion palace of Empress Sisi",
+      "Paleokastritsa's turquoise bays"
+    ],
+    "tip": "The old town is compact and shady — a good bet on a hot day — while the west-coast beaches need a bus or tour and a bit more planning.",
+    "walk": "Shuttle then walkable"
+  },
+  "costa_maya_mahahual_mexico": {
+    "blurb": "Costa Maya is a purpose-built port on a once-remote stretch of coast, with a pool-and-shops village at the pier and the fishing town of Mahahual a short ride south. Its trump card is proximity to the seldom-crowded Chacchoben Mayan ruins.",
+    "cur": "MXN / USD",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "Chacchoben's jungle-wrapped pyramids",
+      "Mahahual's malecón beach clubs",
+      "The Bacalar seven-colour lagoon if you have a long day"
+    ],
+    "tip": "Mahahual's beach clubs will collect you free from the port if you commit to a lunch minimum — a cheaper, calmer day than the pier-side pool crush.",
+    "walk": "Port village at pier"
+  },
+  "cozumel_mexico": {
+    "blurb": "Cozumel is the western Caribbean's heavyweight — often three or four ships at once — thanks to the reef diving that made Jacques Cousteau famous here and its ferry link to the Mayan mainland. San Miguel town is walkable from the downtown pier.",
+    "cur": "MXN / USD",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "Snorkelling or diving Palancar and Columbia reefs",
+      "Punta Sur eco park at the island's wild tip",
+      "El Cielo's starfish sandbar by boat"
+    ],
+    "tip": "Check which pier you're on — Punta Langosta walks straight into town, while Puerta Maya and the International pier need a short fixed-rate taxi.",
+    "walk": "Walkable or short taxi"
+  },
+  "curacao": {
+    "blurb": "Willemstad's rainbow-coloured Handelskade waterfront is the Caribbean's most photographed street, and the floating Queen Emma pontoon bridge swings open for ships right beside it. Beyond town lie thirty-plus cove beaches tucked into the coast.",
+    "cur": "XCG / USD",
+    "dock": "Docked",
+    "lang": "Dutch / Papiamento / English",
+    "miss": [
+      "The Queen Emma bridge swinging open",
+      "Punda and Otrobanda's UNESCO streets either side of it",
+      "Playa Kenepa's cliff-backed double cove (worth the drive)"
+    ],
+    "tip": "When the pontoon bridge opens for traffic, free ferries shuttle across instead — riding one is the best two-minute harbour tour in the Caribbean.",
+    "walk": "Walkable Willemstad"
+  },
+  "dominica": {
+    "blurb": "Dominica calls itself the Nature Island and means it — no big resorts, just rainforest, 365 rivers, boiling volcanic springs and the Caribbean's best whale watching. Ships dock in the middle of Roseau's charmingly weathered waterfront.",
+    "cur": "XCD / USD",
+    "dock": "Docked",
+    "lang": "English / Creole",
+    "miss": [
+      "Trafalgar Falls' twin cascades and hot pools",
+      "Titou Gorge's swim-through canyon",
+      "Champagne Reef, snorkelling over volcanic bubbles"
+    ],
+    "tip": "This is the port to spend your excursion budget on — the interior is the entire point of Dominica and it doesn't reveal itself from the pier.",
+    "walk": "Walkable Roseau"
+  },
+  "dover_uk": {
+    "blurb": "Dover is guarded by its white chalk cliffs and a mighty medieval castle above the ferry and cruise port. It's also a gateway to Canterbury's cathedral and, for the ambitious, a long day trip to London.",
+    "cur": "GBP",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Dover Castle and its wartime tunnels",
+      "The White Cliffs coastal walk",
+      "Canterbury Cathedral inland"
+    ],
+    "tip": "London is possible by fast train (about an hour to St Pancras) but it's a squeeze — Canterbury is far closer and gives you a relaxed cathedral city instead.",
+    "walk": "Shuttle then walkable"
+  },
+  "dublin_ireland": {
+    "blurb": "Dublin's port is a few kilometres from the Georgian centre, an easy shuttle from Trinity College, the Guinness Storehouse and Temple Bar. Ireland's capital is compact, literary and famously convivial.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "English / Irish",
+    "miss": [
+      "The Book of Kells at Trinity College",
+      "The Guinness Storehouse gravity bar",
+      "Kilmainham Gaol's history of rebellion"
+    ],
+    "tip": "Book the Book of Kells and Guinness Storehouse online to skip queues — both are ticket-timed and can sell out on busy cruise days.",
+    "walk": "Shuttle to centre"
+  },
+  "dubrovnik_croatia": {
+    "blurb": "Dubrovnik's honey-stone old town is a walled masterpiece jutting into the Adriatic — the 'Pearl of the Adriatic' and, more recently, King's Landing. Ships berth at Gruz, a short ride from the Pile Gate and the famous walls.",
+    "cur": "EUR",
+    "dock": "Docked or tender",
+    "lang": "Croatian",
+    "miss": [
+      "Walking the full circuit of the city walls",
+      "The marble-paved Stradun main street",
+      "A cable car up Mount Srd for the panorama"
+    ],
+    "tip": "Walk the walls first thing or late afternoon — midday sun on the exposed circuit is punishing, and the cruise crowds thin at the edges of the day.",
+    "walk": "Shuttle then walkable"
+  },
+  "edinburgh-leith": {
+    "blurb": "Leith is Edinburgh's historic port, now a foodie district in its own right and home to the former Royal Yacht Britannia. The castle and Royal Mile are a short bus or tram ride up into the city centre.",
+    "cur": "GBP",
+    "dock": "Docked at Leith",
+    "lang": "English",
+    "miss": [
+      "The Royal Yacht Britannia at Ocean Terminal",
+      "Edinburgh Castle and the Royal Mile",
+      "Leith's own waterfront restaurants and bars"
+    ],
+    "tip": "The tram from Leith runs straight into the city centre — a smooth, cheap alternative to a taxi, and it drops you near Princes Street for the castle.",
+    "walk": "Transfer to centre"
+  },
+  "edinburgh_south_queensferry_scotland": {
+    "blurb": "Ships anchor off South Queensferry beneath the three great Forth bridges, with Scotland's magnificent capital about half an hour inland. Edinburgh's castle, Royal Mile and Georgian New Town make for a superb day.",
+    "cur": "GBP",
+    "dock": "Tender",
+    "lang": "English",
+    "miss": [
+      "Edinburgh Castle on its volcanic crag",
+      "The Royal Mile down to Holyrood Palace",
+      "The view of the Forth bridges from the water"
+    ],
+    "tip": "The three Forth bridges side by side — Victorian, 1960s and modern — are a sight in themselves; grab a photo from the tender before you head for the city.",
+    "walk": "Shuttle to Edinburgh"
+  },
+  "ensenada_mexico": {
+    "blurb": "Ensenada is Baja's port of call for short West Coast cruises — fish tacos allegedly born here, La Bufadora's blowhole thundering down the coast, and the Valle de Guadalupe wine country rising behind town.",
+    "cur": "MXN / USD",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "La Bufadora, one of the world's biggest blowholes",
+      "Fish tacos at the harbourside stands that invented them",
+      "A Valle de Guadalupe winery tasting"
+    ],
+    "tip": "Hussong's Cantina claims the margarita's invention and looks every year of its age — one there for history, then follow the locals to the taco carts.",
+    "walk": "Shuttle to walkable centre"
+  },
+  "falmouth": {
+    "blurb": "Falmouth in Cornwall guards one of the world's largest natural harbours, with a maritime history the National Maritime Museum tells well. The town's independent shops and the sub-tropical gardens of the far southwest are the draw.",
+    "cur": "GBP",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "National Maritime Museum Cornwall on the quay",
+      "Pendennis Castle guarding the harbour mouth",
+      "Sub-tropical gardens like Trebah and Glendurgan"
+    ],
+    "tip": "Don't confuse it with Falmouth in Jamaica — this is Cornwall. St Ives and the Eden Project are tempting but a fair drive; the town and castle make an easy walk.",
+    "walk": "Walkable"
+  },
+  "falmouth_jamaica": {
+    "blurb": "Falmouth's purpose-built port opens straight into one of the Caribbean's best-preserved Georgian towns. It's a base for the same excursions as Ocho Rios and Montego Bay, but the town's history walk is a genuinely good free hour.",
+    "cur": "JMD / USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The Falmouth Heritage Walk's Georgian architecture",
+      "Glistening Waters' bioluminescent lagoon (evening calls)",
+      "Martha Brae river rafting, thirty minutes away"
+    ],
+    "tip": "The craft market inside the port gates charges port prices — walk two streets into the real town for the same items and friendlier haggling.",
+    "walk": "Walkable historic town"
+  },
+  "flam_norway": {
+    "blurb": "Flam sits at the head of the Aurlandsfjord, an arm of the vast Sognefjord, and exists largely for one thing: the Flam Railway, one of the world's most scenic train journeys, climbing past waterfalls to the mountain plateau.",
+    "cur": "NOK",
+    "dock": "Docked",
+    "lang": "Norwegian",
+    "miss": [
+      "The Flam Railway mountain journey",
+      "A fjord safari by RIB boat",
+      "The Stegastein viewpoint above the fjord"
+    ],
+    "tip": "Book the Flam Railway ahead on cruise days — it sells out. Sit on the left going up for the best waterfall views, and it makes its famous photo stop at Kjosfossen.",
+    "walk": "Walkable"
+  },
+  "florence_livorno_italy": {
+    "blurb": "Ships berth at the working port of Livorno, gateway to Florence and Pisa in Tuscany. Florence's Renaissance treasures are about 90 minutes away; Pisa's leaning tower is closer — most people pick one rather than both.",
+    "cur": "EUR",
+    "dock": "Docked at Livorno",
+    "lang": "Italian",
+    "miss": [
+      "Florence's Duomo and Michelangelo's David",
+      "The Uffizi Gallery (book ahead)",
+      "Pisa's Leaning Tower and Field of Miracles"
+    ],
+    "tip": "Florence and Pisa in one day is a rush. If art is the priority go straight to Florence; if you just want the photo, Pisa leaves time for a Tuscan lunch.",
+    "walk": "Transfer to Florence"
+  },
+  "freeport_bahamas": {
+    "blurb": "Freeport is an industrial harbour, so the day is about where you go from it rather than the port itself. Most ships run shuttles to Port Lucaya Marketplace; the real prizes are the beaches and Lucayan National Park's caves.",
+    "cur": "BSD / USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Gold Rock Beach at low tide — huge ribbed sandbars",
+      "Lucayan National Park's underwater cave system",
+      "Port Lucaya Marketplace for a low-effort browse"
+    ],
+    "tip": "There's nothing to see on foot at the pier — decide between beach and park before you disembark and share a taxi to cut the fare.",
+    "walk": "Taxi to beaches"
+  },
+  "funchal_madeira_portugal": {
+    "blurb": "Funchal clings to the green slopes of Madeira, a garden island in the Atlantic famous for its fortified wine and flowers. The seafront promenade is an easy walk; the real fun is the cable car up and the wicker toboggan down.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Portuguese",
+    "miss": [
+      "Cable car to Monte and its tropical gardens",
+      "The Monte toboggan wicker-sled run",
+      "Madeira wine tasting in the old town"
+    ],
+    "tip": "Do it in the right order: cable car up to Monte first, then the toboggan run down — grown men in straw hats steer you at surprising speed.",
+    "walk": "Walkable"
+  },
+  "galveston_texas_usa": {
+    "blurb": "Galveston is the Gulf's boom cruise port, and its Victorian Strand district — a legacy of the days it rivalled New Orleans — starts blocks from the terminals. The seawall beaches and Moody Gardens' pyramids fill out a pre-cruise day.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The Strand's iron-front Victorian blocks",
+      "The 1877 tall ship Elissa at the seaport museum",
+      "Moody Gardens' rainforest pyramid"
+    ],
+    "tip": "Houston's airports are 45–90 minutes away depending on traffic — book transfers with margin, because the causeway is the only road onto the island.",
+    "walk": "Walkable Strand district"
+  },
+  "gdansk_gdynia_poland": {
+    "blurb": "Ships berth at Gdynia, a short ride from the beautifully rebuilt Hanseatic city of Gdansk, where the Second World War began and Solidarity later ended communism. Its long market street of ornate merchant houses is a showstopper.",
+    "cur": "PLN",
+    "dock": "Docked at Gdynia",
+    "lang": "Polish",
+    "miss": [
+      "Gdansk's Long Market and Neptune Fountain",
+      "The Museum of the Second World War",
+      "The European Solidarity Centre at the shipyard"
+    ],
+    "tip": "The fast SKM train links Gdynia and Gdansk cheaply in about 35 minutes — an easy independent alternative to a coach transfer if you'd rather go solo.",
+    "walk": "Transfer to Gdansk"
+  },
+  "geiranger_norway": {
+    "blurb": "Geiranger is the fjord that launches a thousand brochures — a narrow, twisting UNESCO waterway walled by cliffs and waterfalls like the Seven Sisters. The tiny village tenders you into some of the most dramatic scenery in Europe.",
+    "cur": "NOK",
+    "dock": "Tender",
+    "lang": "Norwegian",
+    "miss": [
+      "The Seven Sisters waterfall from the water",
+      "The Dalsnibba or Flydalsjuvet viewpoints",
+      "The Norwegian Fjord Centre"
+    ],
+    "tip": "The sail-in and sail-out are the main event — be on deck for both. For land, the Flydalsjuvet viewpoint is a short, cheap shuttle for that iconic photo.",
+    "walk": "Walkable"
+  },
+  "genoa_italy": {
+    "blurb": "Genoa is a proud, dense maritime republic of a city, its old town one of Europe's largest medieval quarters, tumbling down to a harbour reworked by architect Renzo Piano. Columbus was born here, and the aquarium is Italy's best.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Italian",
+    "miss": [
+      "The Acquario di Genova, Italy's largest aquarium",
+      "Palazzi dei Rolli grand palaces on Via Garibaldi",
+      "The caruggi — the old town's dark medieval lanes"
+    ],
+    "tip": "The caruggi are atmospheric but a genuine maze — pin the ship on your phone map before you dive in, as GPS struggles between the tall buildings.",
+    "walk": "Walkable"
+  },
+  "gibraltar": {
+    "blurb": "Gibraltar is a slice of Britain on the tip of Spain, dominated by its limestone Rock and its famous apes. The town is walkable from the port; the Rock's nature reserve, caves and tunnels are reached by cable car or minibus tour.",
+    "cur": "GBP",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The cable car up the Rock",
+      "The Barbary macaques at the ape's den",
+      "St Michael's Cave and the Great Siege Tunnels"
+    ],
+    "tip": "Don't feed or touch the apes — they bite and steal bags. And carry your passport: nipping into Spain at La Linea means a border crossing.",
+    "walk": "Walkable"
+  },
+  "glasgow-greenock": {
+    "blurb": "Ships berth at Greenock on the Clyde, with Glasgow's galleries, architecture and legendary music scene about 45 minutes upriver. Loch Lomond and the start of the Highlands are just as close in the other direction.",
+    "cur": "GBP",
+    "dock": "Docked at Greenock",
+    "lang": "English",
+    "miss": [
+      "Glasgow's Kelvingrove Art Gallery",
+      "Charles Rennie Mackintosh's architecture",
+      "Loch Lomond's bonnie banks"
+    ],
+    "tip": "Greenock has its own train station a short walk from the berth with frequent, cheap services into central Glasgow — often quicker than an organised coach.",
+    "walk": "Transfer to Glasgow"
+  },
+  "gothenburg": {
+    "blurb": "Gothenburg is Sweden's easy-going second city, built on canals and seafood, with a big amusement park and a fringe of rocky islands. It's friendlier and more relaxed than the capital, and its cafe 'fika' culture is a joy.",
+    "cur": "SEK",
+    "dock": "Docked",
+    "lang": "Swedish",
+    "miss": [
+      "The Liseberg amusement park",
+      "Fish market in the church-like Feskekorka",
+      "A ferry into the southern archipelago"
+    ],
+    "tip": "Take part in a proper fika — coffee and a cinnamon bun — it's a Swedish institution, and Gothenburg's cafes do it better than most.",
+    "walk": "Shuttle then walkable"
+  },
+  "grand_cayman": {
+    "blurb": "George Town is one of the Caribbean's last big tender ports, but the tenders land you straight in the walkable duty-free centre. The island's headline acts — Seven Mile Beach and the Stingray City sandbar — are both short, cheap rides away.",
+    "cur": "KYD / USD",
+    "dock": "Tender",
+    "lang": "English",
+    "miss": [
+      "Stingray City — waist-deep water, wild southern stingrays",
+      "Seven Mile Beach's public access at Governor's Beach",
+      "Cayman Spirits distillery tour near the pier"
+    ],
+    "tip": "Public buses to Seven Mile run constantly from downtown for a couple of dollars — no need for the taxi rank or a ship excursion just to reach the sand.",
+    "walk": "Tender lands downtown"
+  },
+  "grand_turk": {
+    "blurb": "Grand Turk is the rare port where the beach starts literally at the end of the pier — white sand, calm water and the cruise centre's pool all within barefoot distance. Beyond it lies a sleepy island of wild donkeys and one of the world's best walls for diving.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The pier-side beach — no transport needed at all",
+      "Gibbs Cay stingray sandbar trip",
+      "Cockburn Town's weathered colonial waterfront"
+    ],
+    "tip": "You genuinely don't need an excursion here for a great day — the free beach by the ship rivals anything you'd pay to reach.",
+    "walk": "Beach at the pier"
+  },
+  "great_stirrup_cay": {
+    "blurb": "Norwegian's Great Stirrup Cay finally has a pier, ending decades of tender lotteries. The island is a classic Bahamas beach day — included barbecue, clear snorkelling around the rocks, and paid upgrades from cabanas to the Silver Cove lagoon area.",
+    "cur": "Ship account",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Snorkelling around Bertha's Beach rocks",
+      "The lighthouse-end walk away from the crowds",
+      "The underwater sculpture garden just offshore"
+    ],
+    "noviator": true,
+    "tip": "With the new pier, port days here run longer and fuller than they used to — claim loungers early, the island fills fast now.",
+    "walk": "All on foot"
+  },
+  "grenada": {
+    "blurb": "St George's horseshoe harbour is arguably the prettiest port town in the Caribbean, and the whole island smells faintly of its nutmeg crop. Grand Anse beach is ten minutes away; waterfalls and spice estates fill the interior.",
+    "cur": "XCD / USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Grand Anse's two miles of calm, resort-free beach",
+      "The Underwater Sculpture Park by snorkel or boat",
+      "Fort George's harbour panorama at the top of town"
+    ],
+    "tip": "Water taxis shuttle from the port straight across the bay to Grand Anse for a few dollars — quicker and far more scenic than the road.",
+    "walk": "Walkable St George's"
+  },
+  "half_moon_cay": {
+    "blurb": "Half Moon Cay is Holland America and Carnival's shared private island, and its crescent beach is regularly rated the best in the Bahamas — two miles of powder with no buildings behind it. It's a tender port, so the day rewards an early start.",
+    "cur": "Ship account",
+    "dock": "Tender",
+    "lang": "English",
+    "miss": [
+      "The first stretch of the crescent for calm, shallow water",
+      "Horseback riding that ends with a swim in the sea",
+      "The walk to the quiet far end past the cabanas"
+    ],
+    "noviator": true,
+    "tip": "Tender queues stack up after breakfast — be on an early one and you'll have an hour of near-empty beach before the crowd lands.",
+    "walk": "All on foot"
+  },
+  "halifax_nova_scotia_canada": {
+    "blurb": "Halifax pairs one of the world's great natural harbours with an easy waterfront boardwalk that starts at the terminal. The Citadel crowns the town, Peggy's Cove's lighthouse sits an hour away, and the Titanic story runs deep here.",
+    "cur": "CAD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Peggy's Cove's granite-perched lighthouse",
+      "The Citadel's noon gun and kilted sentries",
+      "The Maritime Museum's Titanic gallery"
+    ],
+    "tip": "The Fairview Lawn Cemetery's Titanic graves are moving and rarely crowded — a short, inexpensive taxi detour most tours skip or rush.",
+    "walk": "Boardwalk at the pier"
+  },
+  "hamburg": {
+    "blurb": "Hamburg is Germany's great port city, laced with more canals and bridges than Venice and crowned by the wave-roofed Elbphilharmonie concert hall. The warehouse district and the raucous Reeperbahn are both a short ride from the terminals.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "German",
+    "miss": [
+      "The Elbphilharmonie's public viewing plaza",
+      "The UNESCO Speicherstadt warehouse district",
+      "A harbour boat tour of the working port"
+    ],
+    "tip": "The Elbphilharmonie's Plaza observation level is free but needs a timed ticket — grab one on arrival for a superb 360-degree view over the harbour.",
+    "walk": "Shuttle then walkable"
+  },
+  "helsinki_finland": {
+    "blurb": "Helsinki is a crisp, design-conscious Baltic capital of neoclassical squares and modernist landmarks, ringed by sea and forest. The market square, the rock-hewn Temppeliaukio church and the sea fortress of Suomenlinna are the highlights.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Finnish / Swedish",
+    "miss": [
+      "The rock-carved Temppeliaukio Church",
+      "Senate Square and the white cathedral",
+      "The island sea-fortress of Suomenlinna"
+    ],
+    "tip": "Suomenlinna is a short public ferry from the market square using the same cheap city ticket — a lovely couple of hours and far better value than a tour.",
+    "walk": "Shuttle then walkable"
+  },
+  "heraklion_crete_greece": {
+    "blurb": "Heraklion is Crete's capital and the gateway to Knossos, the labyrinthine palace of the Minoans — Europe's oldest city. The Venetian harbour fort and a superb archaeological museum anchor a walkable centre.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Greek",
+    "miss": [
+      "The Minoan palace of Knossos",
+      "Heraklion Archaeological Museum's frescoes",
+      "The Venetian Koules fortress on the harbour"
+    ],
+    "tip": "See the museum before Knossos if you can — the site's best frescoes are actually in the museum, and the context makes the ruins come alive.",
+    "walk": "Walkable to centre"
+  },
+  "honolulu": {
+    "blurb": "Honolulu calls balance the unmissable weight of Pearl Harbor against Waikiki's surf and Diamond Head's crater rim walk. The Aloha Tower terminal sits between the two — downtown history one way, the beach the other.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The USS Arizona Memorial at Pearl Harbor",
+      "Diamond Head's summit trail at first light",
+      "Waikiki Beach and a first surf lesson"
+    ],
+    "tip": "Arizona Memorial tickets are released online in advance and go fast — reserve the moment your window opens rather than chancing standby.",
+    "walk": "Taxi to Waikiki"
+  },
+  "icy_strait_point_alaska": {
+    "blurb": "Icy Strait Point is a cruise port owned by the Native Huna Tlingit village of Hoonah, built around a restored salmon cannery — with the world's largest zipline dropping 1,300 feet off the mountain above. The whale watching here is the best in Alaska.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Whale watching in Icy Strait — humpbacks all season",
+      "The ZipRider's 90-second mountain drop",
+      "The cannery museum and Tlingit cultural performances"
+    ],
+    "tip": "Whales are so reliable here that operators guarantee sightings — if you're only doing one whale trip on the whole cruise, spend it at this port.",
+    "walk": "All on foot / gondolas"
+  },
+  "invergordon_scotland": {
+    "blurb": "Invergordon is the gateway to the Scottish Highlands, a working port on the Cromarty Firth. Loch Ness, Inverness and a wealth of whisky distilleries lie within reach, along with the standing stones and glens of the far north.",
+    "cur": "GBP",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Loch Ness and Urquhart Castle",
+      "Inverness, the Highland capital",
+      "A Speyside or Glenmorangie distillery tour"
+    ],
+    "tip": "Loch Ness is the classic outing but a fair drive; whisky lovers may prefer nearby Glenmorangie or the Dalmore, practically on the doorstep at Alness.",
+    "walk": "Transfer inland"
+  },
+  "isafjordur_iceland": {
+    "blurb": "Isafjordur is the capital of Iceland's remote, mountainous Westfjords, a tiny town of old timber houses hemmed in by steep cliffs. It's about wild scenery, seabird cliffs and a genuine end-of-the-world feel.",
+    "cur": "ISK",
+    "dock": "Docked",
+    "lang": "Icelandic",
+    "miss": [
+      "The old town's 18th-century timber houses",
+      "The Dynjandi waterfall (by tour)",
+      "Arctic fox spotting and dramatic hiking trails"
+    ],
+    "tip": "This is small and weather-dependent — book any Dynjandi or hiking excursion ahead, as the town's own options are limited and fill quickly on cruise days.",
+    "walk": "Walkable"
+  },
+  "istanbul_turkey": {
+    "blurb": "Istanbul straddles two continents, and the Galataport terminal berths you within walking distance of the old city's grand mosques, palaces and bazaars. Few ports put a city of this magnitude so directly at your feet.",
+    "cur": "TRY",
+    "dock": "Docked",
+    "lang": "Turkish",
+    "miss": [
+      "Hagia Sophia and the Blue Mosque",
+      "Topkapi Palace of the Ottoman sultans",
+      "The Grand Bazaar and Spice Bazaar"
+    ],
+    "tip": "The main sights cluster in Sultanahmet, a tram ride or long walk from Galataport — buy an Istanbulkart for the tram, and dress modestly for the mosques.",
+    "walk": "Walkable"
+  },
+  "izmir": {
+    "blurb": "Izmir is Turkey's relaxed, seafront third city, curving around a bay with a palm-lined promenade and a labyrinthine bazaar. It's an alternative gateway to Ephesus, but the Kordon waterfront and Kemeralti market reward staying local.",
+    "cur": "TRY",
+    "dock": "Docked",
+    "lang": "Turkish",
+    "miss": [
+      "The sprawling Kemeralti bazaar",
+      "The Kordon seafront promenade at dusk",
+      "The Roman Agora ruins in the centre"
+    ],
+    "tip": "Izmir is more laid-back than Istanbul and easy on foot — if you've already seen Ephesus, a day wandering the bazaar and Kordon is a pleasant change of pace.",
+    "walk": "Walkable"
+  },
+  "juneau_alaska": {
+    "blurb": "Alaska's capital has no roads in — only sea and sky — and its cruise dock lands you in a walkable downtown with the Mount Roberts Tramway rising straight from the pier. Mendenhall Glacier and humpback whale watching are the twin headline acts.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Mendenhall Glacier and Nugget Falls",
+      "Whale watching on Auke Bay — humpbacks near-guaranteed in season",
+      "The Mount Roberts Tramway from the dock"
+    ],
+    "tip": "The city 'blue bus' shuttles to Mendenhall for far less than a tour — glacier first, then spend the saving on crab legs at Tracy's shack by the dock.",
+    "walk": "Walkable downtown"
+  },
+  "ketchikan_alaska": {
+    "blurb": "Ketchikan calls itself the Salmon Capital of the World and greets you with Creek Street — a boardwalk of former brothels on stilts over a salmon stream. It also holds the world's largest collection of standing totem poles, minutes from town.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Creek Street's stilted boardwalk (salmon run in late summer)",
+      "Totem Bight or Saxman Village's totem parks",
+      "Misty Fjords by floatplane if the budget stretches"
+    ],
+    "tip": "Rain is the local weather — locals don't use umbrellas and neither should you; a hood and quick-dry layers make the day comfortable regardless.",
+    "walk": "Walkable from dock"
+  },
+  "key_west_florida_usa": {
+    "blurb": "Key West is a perfect walking port — Duval Street, Hemingway's six-toed cats, the Southernmost Point buoy and Mallory Square are all within a flat mile of the pier. It's the Caribbean's atmosphere on American convenience.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The Hemingway Home and its 60-odd cats",
+      "Duval Street end to end, bar by bar",
+      "Key lime pie — the frozen chocolate-dipped kind on a stick"
+    ],
+    "tip": "The Southernmost Point buoy queue is pure photo theatre — go before 10am or accept the wait. The Conch Train covers the same ground your feet can.",
+    "walk": "Everything on foot"
+  },
+  "kiel": {
+    "blurb": "Kiel is a major Baltic ferry and cruise port at the end of the famous Kiel Canal, best known for its sailing regatta. The city itself is modern (rebuilt post-war); many use it as a gateway to Hamburg or Lubeck.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "German",
+    "miss": [
+      "The Kiel Canal locks at Holtenau",
+      "The maritime museum and waterfront",
+      "Lubeck's marzipan and medieval gate by train"
+    ],
+    "tip": "Lubeck, a UNESCO gem, is under an hour by train and arguably more rewarding than Kiel itself — the station is walkable from the berth.",
+    "walk": "Walkable"
+  },
+  "kings_wharf_bermuda": {
+    "blurb": "Bermuda's Royal Naval Dockyard is both the cruise terminal and an attraction in its own right — a Victorian fortress complex of museums, craft markets and the National Museum. Pink-sand Horseshoe Bay and the ferry to Hamilton complete the trio.",
+    "cur": "BMD / USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Horseshoe Bay's pink sand (bus or minibus shuttle)",
+      "The National Museum inside the Keep's ramparts",
+      "The fast ferry across the Great Sound to Hamilton"
+    ],
+    "tip": "Buy a transport pass at the Dockyard ferry terminal — it covers buses and ferries island-wide and pays for itself in one Hamilton round trip.",
+    "walk": "Dockyard at the pier"
+  },
+  "kirkwall_orkney_scotland": {
+    "blurb": "Kirkwall is the capital of Orkney, an archipelago richer in prehistory than almost anywhere in Europe. The red-stone St Magnus Cathedral anchors the town, while Neolithic Skara Brae and the Ring of Brodgar lie a short drive out.",
+    "cur": "GBP",
+    "dock": "Docked or tender",
+    "lang": "English",
+    "miss": [
+      "Skara Brae, a 5,000-year-old stone village",
+      "The Ring of Brodgar stone circle",
+      "St Magnus Cathedral in Kirkwall"
+    ],
+    "tip": "The Neolithic sites predate Stonehenge and the pyramids — book a tour ahead, as Orkney's taxis and buses are limited and cruise days fill them fast.",
+    "walk": "Walkable"
+  },
+  "klaipeda_lithuania": {
+    "blurb": "Klaipeda is Lithuania's only seaport, a former Prussian town (once Memel) with a half-timbered old quarter. Its real treasure is across the lagoon: the Curonian Spit, a UNESCO ribbon of towering sand dunes and pine forest.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Lithuanian",
+    "miss": [
+      "The Curonian Spit's giant sand dunes",
+      "The old town's German-era architecture",
+      "The Lithuanian Sea Museum on the spit"
+    ],
+    "tip": "The Curonian Spit needs a short ferry across the lagoon plus transport — book a tour if you want the dunes, as independent logistics eat into a port day.",
+    "walk": "Walkable"
+  },
+  "kotor_montenegro": {
+    "blurb": "Kotor sits at the head of a fjord-like bay ringed by mountains, its walled medieval town clinging to the base of a cliff. The dramatic sail-in is half the experience; the walls zigzag up the mountain above the old town.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Montenegrin",
+    "miss": [
+      "The city walls' climb to St John's fortress",
+      "The old town's squares and Romanesque cathedral",
+      "A boat trip to Our Lady of the Rocks islet"
+    ],
+    "tip": "The 1,350-step wall climb is steep and shadeless — go early with water, and the reward is a bird's-eye view straight down onto your ship in the bay.",
+    "walk": "Walkable"
+  },
+  "kusadasi_ephesus_turkey": {
+    "blurb": "Kusadasi is the port for Ephesus, one of the best-preserved classical cities anywhere — a marble metropolis of temples, terraced houses and a spectacular library facade. The town itself is a bazaar-heavy resort; Ephesus is the reason to be here.",
+    "cur": "TRY",
+    "dock": "Docked",
+    "lang": "Turkish",
+    "miss": [
+      "The Library of Celsus and Great Theatre at Ephesus",
+      "The Terrace Houses' Roman mosaics",
+      "The House of the Virgin Mary nearby"
+    ],
+    "tip": "Ephesus is 30 minutes inland and shadeless — go early, wear a hat, and enter at the top gate so you walk downhill through the ruins to the library.",
+    "walk": "Transfer to Ephesus"
+  },
+  "la-rochelle": {
+    "blurb": "La Rochelle is one of Atlantic France's loveliest harbours, guarded by medieval towers and lined with arcaded streets. Ships berth at La Pallice port, a short ride from the old harbour and the bridge to the Ile de Re.",
+    "cur": "EUR",
+    "dock": "Shuttle",
+    "lang": "French",
+    "miss": [
+      "The three medieval harbour towers",
+      "Arcaded old-town streets and the market",
+      "Cycling the Ile de Re's salt marshes and beaches"
+    ],
+    "tip": "The Ile de Re is a cyclist's paradise reachable by bus over the bridge, but the compact old port alone is an easy, charming tour-free day.",
+    "walk": "Shuttle then walkable"
+  },
+  "la_coruna_spain": {
+    "blurb": "A Coruna wraps around a headland in Spain's green Galician northwest, with a glass-galleried seafront and the world's oldest working Roman lighthouse. It's also the nearest big port to Santiago de Compostela for those chasing the cathedral.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Spanish / Galician",
+    "miss": [
+      "The Tower of Hercules, a Roman lighthouse still lit",
+      "Glass-fronted galleria houses on Avenida de la Marina",
+      "Santiago de Compostela by coach (about an hour)"
+    ],
+    "tip": "If Santiago is the goal, it's a full excursion; if you'd rather stay local, the whole peninsula walk past the tower is a lovely couple of hours on foot.",
+    "walk": "Walkable"
+  },
+  "la_spezia_italy": {
+    "blurb": "La Spezia is the gateway to the Cinque Terre, the five candy-coloured fishing villages strung along the Ligurian cliffs. The port is walkable to the train station that links all five — this is one of Italy's great day trips.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Italian",
+    "miss": [
+      "The five Cinque Terre villages by train",
+      "The clifftop walking paths between them",
+      "Portovenere's colourful harbour by boat"
+    ],
+    "tip": "Buy the Cinque Terre train card at the station — hop-on-hop-off between villages all day. Go to the far village first and work back toward the ship.",
+    "walk": "Walkable to station"
+  },
+  "labadee_haiti": {
+    "blurb": "Labadee is Royal Caribbean's fenced private peninsula on Haiti's north coast — a mountainous, dramatic setting unlike the flat Bahamas islands. Beaches, the huge Dragon's Breath zip line and an included barbecue fill the day.",
+    "cur": "Ship account / USD",
+    "dock": "Docked",
+    "lang": "English spoken",
+    "miss": [
+      "Dragon's Breath — 2,600ft of zip line over the sea",
+      "Columbus Cove's calm, shaded swimming",
+      "The artisan market for Haitian metalwork (haggle kindly)"
+    ],
+    "noviator": true,
+    "tip": "Nellie's Beach and Columbus Cove are calmer and prettier than the main Adrenaline Beach — turn right off the pier, not left.",
+    "walk": "All on foot, trams"
+  },
+  "lanzarote_arrecife_spain": {
+    "blurb": "Lanzarote is the Canaries' volcanic island, where artist Cesar Manrique turned lava into architecture. Ships dock at Arrecife; the island's surreal Timanfaya fire mountains and Manrique sites need a tour or hire car.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "Timanfaya's volcanic landscape and geyser demos",
+      "Jameos del Agua lava-tube auditorium",
+      "Cesar Manrique Foundation in a lava bubble house"
+    ],
+    "tip": "Timanfaya and the north-island Manrique sites are on opposite ends — pick one direction; trying to do both in a port day means all bus, no island.",
+    "walk": "Shuttle then walkable"
+  },
+  "las_palmas_gran_canaria": {
+    "blurb": "Las Palmas is the Canaries' biggest city, with the golden crescent of Las Canteras beach on one side and the Columbus-era Vegueta old town on the other. The port sits between them, both a short hop away.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "Las Canteras city beach and promenade",
+      "Casa de Colon in the Vegueta quarter",
+      "Colonial squares around Santa Ana Cathedral"
+    ],
+    "tip": "Las Canteras is one of the best city beaches in Europe and walkable from the shuttle drop — bring swimwear rather than booking an excursion.",
+    "walk": "Shuttle then walkable"
+  },
+  "le_havre_paris_france": {
+    "blurb": "Le Havre is the port for Paris, though the capital is over two hours away by road. The town itself is a UNESCO-listed marvel of post-war concrete architecture by Auguste Perret — and Normandy's beaches and Honfleur are closer than Paris.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "French",
+    "miss": [
+      "Perret's reconstructed city centre and St Joseph's Church",
+      "The painterly harbour of Honfleur nearby",
+      "The D-Day landing beaches of Normandy"
+    ],
+    "tip": "Paris is a very long day (2h+ each way). Honfleur, Etretat's cliffs or the D-Day beaches give a fuller day for far less time on a coach.",
+    "walk": "Shuttle then walkable"
+  },
+  "limassol": {
+    "blurb": "Limassol is Cyprus's cosmopolitan second city, with a revamped marina, a medieval castle where Richard the Lionheart married, and the ancient sites of Kourion and Kolossi a short drive west. The port is set back, so shuttle in.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Greek",
+    "miss": [
+      "Kourion's clifftop Greco-Roman theatre",
+      "Limassol Castle and the old town",
+      "The wine villages of the Troodos foothills"
+    ],
+    "tip": "Kourion's theatre and the ruins of ancient Amathus bracket the city — Kourion is the more spectacular if you only have time for one.",
+    "walk": "Shuttle then walkable"
+  },
+  "lisbon_portugal": {
+    "blurb": "Lisbon spills over seven hills above the Tagus, and the cruise terminal sits below the Alfama, its oldest quarter of tiled facades and rattling trams. Belem's monuments and custard tarts are a short ride west along the river.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Portuguese",
+    "miss": [
+      "Tram 28 through Alfama's hills",
+      "Belem Tower and the Jeronimos Monastery",
+      "Original pasteis de nata at Pasteis de Belem"
+    ],
+    "tip": "The 28 tram is famous and lovely but pickpocket-heavy and often mobbed — early morning straight off the ship is your best shot at a seat.",
+    "walk": "Walkable"
+  },
+  "liverpool_uk": {
+    "blurb": "Liverpool berths you right on its UNESCO waterfront, beneath the Three Graces and steps from the Beatles story. The Albert Dock's museums and galleries make this one of the easiest big-city calls in Britain.",
+    "cur": "GBP",
+    "dock": "Docked in city",
+    "lang": "English",
+    "miss": [
+      "The Beatles Story at the Albert Dock",
+      "The Royal Albert Dock museums and Tate",
+      "The Three Graces waterfront buildings"
+    ],
+    "tip": "The berth is central, so skip the tour — the Beatles sights, docks and cathedrals are all walkable, and the Magical Mystery bus tour is easy to grab on the day.",
+    "walk": "Walkable"
+  },
+  "livorno-florence-pisa": {
+    "blurb": "Livorno is Tuscany's port and a likeable canal-laced city in its own right, too often skipped in the dash to Florence and Pisa. If you'd rather not spend the day on a coach, Livorno's own seafood and 'Little Venice' quarter reward staying.",
+    "cur": "EUR",
+    "dock": "Docked at Livorno",
+    "lang": "Italian",
+    "miss": [
+      "Livorno's Venezia Nuova canal district",
+      "A cacciucco seafood stew lunch",
+      "Florence or Pisa inland by train or tour"
+    ],
+    "tip": "The train from Livorno reaches Pisa in about 15 minutes — a far shorter, cheaper hop than Florence if you only want the tower and a Tuscan wander.",
+    "walk": "Transfer inland"
+  },
+  "ljubljana-koper": {
+    "blurb": "Ships dock at Koper, Slovenia's small Venetian-flavoured coastal town, often sold as the gateway to the capital Ljubljana or to Lake Bled. Koper's own compact old town is a pleasant walk-off; the inland gems need a transfer.",
+    "cur": "EUR",
+    "dock": "Docked at Koper",
+    "lang": "Slovenian",
+    "miss": [
+      "Ljubljana's dragon-guarded old town and castle",
+      "Lake Bled's island church and clifftop castle",
+      "Koper's Venetian Praetorian Palace and old square"
+    ],
+    "tip": "Lake Bled is the postcard everyone wants but it's a 1h30 drive each way — Ljubljana is closer and livelier; pick one inland target rather than trying both.",
+    "walk": "Koper walkable; Ljubljana far"
+  },
+  "los-angeles": {
+    "blurb": "The World Cruise Center at San Pedro is LA's cruise door, with the battleship Iowa moored alongside and the rebuilt West Harbor waterfront growing next door. Hollywood and Santa Monica are a committed ride away — plan LA days around traffic, not distance.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The Battleship USS Iowa beside the terminal",
+      "The Korean Bell and Point Fermin's clifftop views nearby",
+      "Santa Monica Pier if you have a full pre-cruise day"
+    ],
+    "tip": "On embarkation day, stay near the port, not in Hollywood — the 110 freeway at the wrong hour has sunk more boarding schedules than weather ever has.",
+    "walk": "Car / rideshare needed"
+  },
+  "lyon": {
+    "blurb": "A river-cruise call rather than an ocean one, Lyon is France's gastronomic capital, set where the Rhone meets the Saone. Its Renaissance old town, hidden passageways and bouchon bistros make it one of the country's most rewarding cities on foot.",
+    "cur": "EUR",
+    "dock": "Docked in city",
+    "lang": "French",
+    "miss": [
+      "Vieux Lyon's traboule passageways",
+      "Fourviere basilica and Roman theatres above the city",
+      "Lunch in a traditional bouchon"
+    ],
+    "tip": "The traboules are covered walkways threaded through buildings between streets — a few are signposted; ducking through them is the classic Lyon experience.",
+    "walk": "Walkable"
+  },
+  "malaga_spain": {
+    "blurb": "Malaga has shrugged off its package-holiday past to become a genuine art city — Picasso was born here — with a Moorish fortress above a palm-lined port you can walk straight into. The centre is compact, sunny and easy.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "The Alcazaba Moorish fortress above the centre",
+      "Picasso Museum in the old town",
+      "Rooftop cathedral and the Muelle Uno port promenade"
+    ],
+    "tip": "Granada and the Alhambra are often sold as a Malaga excursion but it's a 90-minute drive each way — a very long day for a rushed visit. Malaga itself is underrated.",
+    "walk": "Walkable"
+  },
+  "marseille_france": {
+    "blurb": "Marseille is France's gritty, vivid second city, built around the Vieux-Port where fishermen still sell the morning catch. The port is industrial and set apart, so shuttle in to reach the harbour, the basilica and the calanques.",
+    "cur": "EUR",
+    "dock": "Shuttle",
+    "lang": "French",
+    "miss": [
+      "Notre-Dame de la Garde basilica over the city",
+      "The Vieux-Port and its fish market",
+      "Boat trip into the Calanques' limestone inlets"
+    ],
+    "tip": "Marseille is also the main gateway to Aix-en-Provence and Provence's villages — but the city itself has come a long way and rewards staying put.",
+    "walk": "Shuttle then walkable"
+  },
+  "mazatlan_mexico": {
+    "blurb": "Mazatlán's restored Centro Histórico is the Mexican Riviera's cultural sleeper — the Plazuela Machado's cafés, the Angela Peralta theatre and a 13-mile malecón patrolled by open-air pulmonía taxis. Cliff divers perform where the seawall bends.",
+    "cur": "MXN",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "Plazuela Machado and the old town's restored streets",
+      "The cliff divers at El Clavadista",
+      "A pulmonía (open golf-cart taxi) ride along the malecón"
+    ],
+    "tip": "Ride a pulmonía at least once — agree the fare first — and time the cliff divers for when tour groups gather, as they perform when the tips assemble.",
+    "walk": "Shuttle, then walkable centro"
+  },
+  "messina_sicily": {
+    "blurb": "Messina is Sicily's gateway across the strait from the mainland, its cathedral home to an astronomical clock that puts on a show at noon. Most visitors press on to Taormina's clifftop theatre or the slopes of Mount Etna.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Italian",
+    "miss": [
+      "Taormina's Greek theatre and Etna views",
+      "Messina Cathedral's astronomical clock at noon",
+      "A 4x4 trip onto Mount Etna's lava fields"
+    ],
+    "tip": "Time the cathedral square for noon if you stay in town — the mechanical clock's golden lion and figures are a genuine spectacle.",
+    "walk": "Walkable"
+  },
+  "miami_florida_usa": {
+    "blurb": "PortMiami is the world's busiest cruise port, and if you're staying pre- or post-cruise the city rewards it — South Beach's Art Deco district, Little Havana's cafecito windows, and Wynwood's street-art blocks are each a short ride apart.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English / Spanish",
+    "miss": [
+      "The Art Deco district along Ocean Drive",
+      "Little Havana's Calle Ocho and a proper Cuban sandwich",
+      "Wynwood Walls' warehouse-district murals"
+    ],
+    "tip": "If you're flying in for a cruise, come a day early — Miami traffic and flight delays are the classic embarkation-day heartbreakers.",
+    "walk": "Taxi / rideshare city"
+  },
+  "monaco_monte_carlo_monaco": {
+    "blurb": "Monaco packs a casino, a palace and a Grand Prix circuit into two square kilometres of Riviera hillside. Ships tender into the yacht-crammed harbour, from where the old town and the famous casino square are steep but short walks.",
+    "cur": "EUR",
+    "dock": "Tender",
+    "lang": "French",
+    "miss": [
+      "The Casino de Monte-Carlo and its square",
+      "Changing of the guard at the Prince's Palace",
+      "The Oceanographic Museum on the cliff"
+    ],
+    "tip": "The public lifts and escalators threaded through the hillside save your legs on Monaco's slopes — locals use them constantly; look for the discreet doorways.",
+    "walk": "Walkable"
+  },
+  "montego_bay_jamaica": {
+    "blurb": "Montego Bay is Jamaica's second city, and the cruise terminal sits in the industrial freeport — so plan on transport. Doctor's Cave Beach and the Hip Strip are ten minutes away, with rafting, great houses and luminous lagoon trips further out.",
+    "cur": "JMD / USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Doctor's Cave Beach's famously clear water",
+      "Rose Hall Great House and its ghost story",
+      "Rafting the Martha Brae on a bamboo raft"
+    ],
+    "tip": "Agree taxi fares before getting in — rates to Doctor's Cave are posted at the terminal, and returning drivers will find you at the beach gate at pickup time.",
+    "walk": "Taxi to beaches"
+  },
+  "montreal_canada": {
+    "blurb": "Montréal bookends the Canada–New England run, with the Old Port's terminal steps from Old Montreal's cobbles, the Notre-Dame Basilica's blue-lit interior and a food scene that argues loudly with the rest of the continent.",
+    "cur": "CAD",
+    "dock": "Docked",
+    "lang": "French / English",
+    "miss": [
+      "Notre-Dame Basilica's aurora light show",
+      "Bagels vs smoked meat — settle it at St-Viateur and Schwartz's",
+      "Mount Royal's lookout over the city"
+    ],
+    "tip": "If your cruise starts or ends here, add a night — Montréal is a stay-and-eat city, and the Jean-Talon market alone justifies the extra day.",
+    "walk": "Old Montreal at the pier"
+  },
+  "mykonos_greece": {
+    "blurb": "Mykonos is the Cyclades at their most photogenic — whitewashed cubes, blue domes and the windmills above Little Venice. It's chic, busy and pricey; the maze of Chora town is made for wandering and sunset-watching.",
+    "cur": "EUR",
+    "dock": "Docked or tender",
+    "lang": "Greek",
+    "miss": [
+      "The iconic windmills above Little Venice",
+      "Getting lost in Chora's whitewashed lanes",
+      "A boat to the sacred ruins of Delos"
+    ],
+    "tip": "Chora's lanes were deliberately built as a maze to confuse pirates — they'll confuse you too, which is half the charm; just keep the sea downhill to reorient.",
+    "walk": "Shuttle then walkable"
+  },
+  "naples_italy": {
+    "blurb": "Naples is chaotic, magnificent and berths you right in the centre beneath Vesuvius. Pizza was invented here, Pompeii is a short hop away, and the isles of Capri and the Amalfi Coast beckon — few ports offer so much within reach.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Italian",
+    "miss": [
+      "Pompeii or Herculaneum's frozen Roman streets",
+      "Authentic Neapolitan pizza in the centro storico",
+      "Capri or the Amalfi Coast by hydrofoil or tour"
+    ],
+    "tip": "Pompeii is 30 minutes by the Circumvesuviana train from Naples — cheap and easy — but the trains are basic and crowded; go early to beat both heat and queues.",
+    "walk": "Walkable"
+  },
+  "nassau_bahamas": {
+    "blurb": "Nassau is the Caribbean's busiest cruise port, and the rebuilt harbourfront makes it an easy self-guided day. Downtown, the Queen's Staircase and Fort Fincastle are a short walk from the ship, with Junkanoo Beach ten minutes the other way.",
+    "cur": "BSD / USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The Queen's Staircase — 66 steps hand-carved through limestone",
+      "Junkanoo Beach, the free walk-to beach west of the port",
+      "John Watling's Distillery for a shaded rum stop"
+    ],
+    "tip": "Skip the pushy taxi rank quotes — everything listed above is walkable, and Paradise Island water taxis are cheaper than cabs.",
+    "walk": "Walkable downtown"
+  },
+  "new-orleans": {
+    "blurb": "Cruising from New Orleans means the French Quarter is essentially part of the port — the terminal sits at the foot of the CBD, a streetcar or short walk from beignets, brass bands and the Mississippi's crescent. Come early, stay late.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Café du Monde beignets in Jackson Square's shadow",
+      "Frenchmen Street for the locals' live music",
+      "A St Charles streetcar ride under the oaks"
+    ],
+    "tip": "The ship sails down 100 miles of Mississippi River after departure — sail-away here is a slow, fascinating half-day cruise in itself. Stay on deck.",
+    "walk": "French Quarter walkable"
+  },
+  "new_york_new_york_usa": {
+    "blurb": "Sailing from New York — Manhattan's west side or Brooklyn's Red Hook — comes with the greatest sail-away in cruising: down the Hudson, past the Statue of Liberty and under the Verrazzano. The city itself needs no introduction, just extra days.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The Statue of Liberty from your own deck at sail-away",
+      "The High Line to Hudson Yards near the Manhattan terminal",
+      "Times Square once, then never again"
+    ],
+    "tip": "Book the port side of the ship (or just stand there) leaving Manhattan — Lady Liberty passes close on the left and the skyline does the rest.",
+    "walk": "Subway city"
+  },
+  "nice_villefranche_france": {
+    "blurb": "Ships anchor off Villefranche-sur-Mer, one of the Riviera's prettiest bays, with Nice and its Promenade des Anglais a short train ride along the coast. It's the ideal base for the whole Cote d'Azur.",
+    "cur": "EUR",
+    "dock": "Tender",
+    "lang": "French",
+    "miss": [
+      "Nice's old town and the Cours Saleya market",
+      "The pebble beach and Promenade des Anglais",
+      "Eze village and its exotic garden above the sea"
+    ],
+    "tip": "The train station in Villefranche is a walkable climb from the tender pier and links Monaco, Nice and Antibes cheaply — the coast is yours for a few euros.",
+    "walk": "Walkable"
+  },
+  "nuuk_greenland": {
+    "blurb": "Nuuk is the world's smallest capital with a skyline — colourful blocks against raw mountains at the mouth of a vast fjord system. The National Museum's Qilakitsoq mummies and the old colonial harbour anchor a compact, strollable visit.",
+    "cur": "DKK",
+    "dock": "Docked · some calls tender",
+    "lang": "Greenlandic / Danish",
+    "miss": [
+      "The Greenland National Museum's 500-year-old mummies",
+      "The old Colonial Harbour and Hans Egede's church",
+      "A boat trip into the Nuuk fjord if time allows"
+    ],
+    "tip": "Weather rules everything in Greenland — have a flexible plan and treat any sunny hour as the moment to do the outdoor thing immediately.",
+    "walk": "Walkable centre"
+  },
+  "ocean_cay_msc": {
+    "blurb": "Ocean Cay is MSC's converted industrial sand-mining island, now a marine reserve — and it shows in the water clarity. The ship stays docked late into the evening on most calls, with the lighthouse show after dark as the signature moment.",
+    "cur": "Ship account",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The lighthouse light show after sunset",
+      "North Beach for the calmest, clearest swimming",
+      "The evening on-island time most other private islands don't offer"
+    ],
+    "noviator": true,
+    "tip": "This is the rare private island where ships stay until late — plan a shore dinner-and-lightshow evening rather than cramming it all in by 4pm.",
+    "walk": "All on foot"
+  },
+  "ocho_rios_jamaica": {
+    "blurb": "Ocho Rios is Jamaica's original cruise town, with Dunn's River Falls — the island's most famous excursion — just five minutes from the pier. The town itself is walkable, but the day really belongs to the falls, gardens and river adventures around it.",
+    "cur": "JMD / USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Climbing Dunn's River Falls (water shoes essential)",
+      "Mystic Mountain's rainforest bobsled ride",
+      "Konoko Falls for a quieter falls alternative"
+    ],
+    "tip": "Dunn's River is heaving when the ships are in — book the earliest slot you can or flip the day and go after 1pm when the tour groups thin out.",
+    "walk": "Walkable to centre"
+  },
+  "olbia_sardinia": {
+    "blurb": "Olbia is the gateway to Sardinia's glittering Costa Smeralda, the playground of super-yachts and celebrities. The town itself is modest; the appeal lies in the emerald bays and the resort villages a short drive north.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Italian",
+    "miss": [
+      "The beaches of the Costa Smeralda",
+      "Porto Cervo's yacht-set harbour",
+      "Olbia's Romanesque basilica of San Simplicio"
+    ],
+    "tip": "The famous beaches need a car or tour — Olbia town is a quick wander. If you want emerald water, book transport ahead as taxis are scarce and pricey.",
+    "walk": "Shuttle then walkable"
+  },
+  "olden_norway": {
+    "blurb": "Olden lies at the head of the Nordfjord, the jumping-off point for the Briksdal and Kjenndal glacier arms of the mighty Jostedalsbreen ice cap — mainland Europe's largest glacier. It's raw, green, waterfall-laced Norway.",
+    "cur": "NOK",
+    "dock": "Docked",
+    "lang": "Norwegian",
+    "miss": [
+      "Briksdal Glacier and its meltwater lake",
+      "The Loen Skylift cable car to Mount Hoven",
+      "Lake Lovatnet's turquoise waters"
+    ],
+    "tip": "The Loen Skylift whisks you 1,000m up in minutes for a jaw-dropping fjord panorama — a great weather-independent alternative if the glacier hike is off.",
+    "walk": "Shuttle to sights"
+  },
+  "oslo_norway": {
+    "blurb": "Oslo berths you right below the Akershus fortress in the heart of the Norwegian capital, an easy walk to the opera house you can climb and the Munch museum. The Viking and polar-exploration museums lie across the fjord.",
+    "cur": "NOK",
+    "dock": "Docked",
+    "lang": "Norwegian",
+    "miss": [
+      "Walking on the roof of the Oslo Opera House",
+      "The new Munch museum and National Museum",
+      "The Fram polar ship and Viking Ship museums"
+    ],
+    "tip": "The Bygdoy peninsula museums (Fram, Kon-Tiki, Viking ships) are reached by a fun little ferry from the pier — a nicer approach than the bus.",
+    "walk": "Walkable"
+  },
+  "palermo_sicily": {
+    "blurb": "Palermo is Sicily's boisterous capital, a heady mix of Arab-Norman architecture, baroque churches and some of Europe's best street-food markets. The port drops you within walking distance of the chaotic, compelling centre.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Italian",
+    "miss": [
+      "The golden mosaics of the Cappella Palatina",
+      "Ballaro or Vucciria street-food markets",
+      "Monreale Cathedral's mosaics just outside town"
+    ],
+    "tip": "Do the street food properly — arancini, panelle, sfincione — the markets are the real Palermo, and far more memorable than a sit-down lunch.",
+    "walk": "Walkable"
+  },
+  "palma_de_mallorca_spain": {
+    "blurb": "Palma's vast sandstone cathedral, La Seu, dominates the bay and the ship's approach. Beyond it lies a surprisingly elegant old town of courtyards and boutiques — the island capital is far more refined than Mallorca's resort reputation suggests.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Spanish / Catalan",
+    "miss": [
+      "La Seu cathedral, with a Gaudi-reworked interior",
+      "The Arab Baths and old-town patios",
+      "Bellver castle's circular ramparts above the city"
+    ],
+    "tip": "The vintage wooden train to Soller through the mountains is a wonderful half-day, but it leaves from Palma centre — factor in the shuttle time before you commit.",
+    "walk": "Shuttle then walkable"
+  },
+  "panama-city": {
+    "blurb": "Panama City calls (usually at Fuerte Amador) pair the canal's Miraflores locks with a skyline the rest of Central America can't match, plus the colonial Casco Viejo quarter. It's often a partial-transit bookend, so check your ship's timings.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "Miraflores locks visitor centre",
+      "Casco Viejo's plazas and rooftop bars",
+      "The Amador Causeway's skyline view"
+    ],
+    "tip": "Traffic in Panama City is genuinely bad — build slack into any independent plan and treat all-aboard time with more respect than usual.",
+    "walk": "Excursion base"
+  },
+  "port_canaveral_florida_usa": {
+    "blurb": "Port Canaveral is the cruise gateway to Orlando's parks — but its own neighbour is the better story: Kennedy Space Center is twenty minutes away, and rocket launches are now frequent enough that one might share your sail-away.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Kennedy Space Center and the Atlantis shuttle",
+      "Cocoa Beach and its famous pier",
+      "A launch, if the schedule gods smile"
+    ],
+    "tip": "Check the launch schedule for your embarkation or return date — watching a rocket climb out over the Atlantic from a ship's deck is a genuine bucket-list freebie.",
+    "walk": "Taxi / car needed"
+  },
+  "port_everglades_fort_lauderdale_florida_usa": {
+    "blurb": "Port Everglades in Fort Lauderdale is one of cruising's big three Florida homeports, fifteen minutes from its own airport. The city's canals earn the 'Venice of America' tag, and the beach promenade is a fine pre-cruise wind-down.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "A water taxi loop through the canal mansions",
+      "Las Olas Boulevard's restaurant row",
+      "Fort Lauderdale Beach's wave-wall promenade"
+    ],
+    "tip": "FLL airport is so close you can be ship-to-terminal in 15 minutes — but morning-of flights before 11am are still gambling with disembarkation queues.",
+    "walk": "Taxi / rideshare city"
+  },
+  "portland-maine": {
+    "blurb": "Portland lands you straight into the Old Port's cobbled lanes of fish shacks, breweries and boutiques — the best small-city walk-off on the New England circuit. Lighthouses, lobster boats and Casco Bay islands fill anything longer.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Portland Head Light, Maine's postcard lighthouse",
+      "A lobster roll — decide your butter-vs-mayo allegiance",
+      "The Old Port's boutiques and micro-breweries"
+    ],
+    "tip": "Portland Head Light is a short taxi away in Cape Elizabeth and beats every in-town view — go there first, eat lobster after.",
+    "walk": "Old Port at the pier"
+  },
+  "porto": {
+    "blurb": "Porto gave port wine its name, and the city tumbles in tiled tiers down to the Douro, its riverside lodges still ageing barrels across the water in Gaia. Ships berth at Leixoes, a short ride from the atmospheric old centre.",
+    "cur": "EUR",
+    "dock": "Shuttle or transfer",
+    "lang": "Portuguese",
+    "miss": [
+      "Port lodge tastings in Vila Nova de Gaia",
+      "Livraria Lello, the ornate 'Harry Potter' bookshop",
+      "The azulejo-tiled Sao Bento station hall"
+    ],
+    "tip": "Leixoes to the old town is 20-30 minutes — the ship shuttle or a taxi is worth it; the Metro trip involves a change and a walk.",
+    "walk": "Transfer then walkable"
+  },
+  "porto_leixoes_portugal": {
+    "blurb": "Leixoes is Porto's deep-water port, in the seaside suburb of Matosinhos north of the city — known locally for the best grilled seafood in the region. The historic Porto riverfront and port lodges are a short transfer inland.",
+    "cur": "EUR",
+    "dock": "Docked at Leixoes",
+    "lang": "Portuguese",
+    "miss": [
+      "Grilled sardines and seafood in Matosinhos",
+      "Porto's Ribeira riverside (by transfer)",
+      "The striking wave-form cruise terminal itself"
+    ],
+    "tip": "If you love seafood, don't rush straight to the city — the Matosinhos grills right by the terminal are what Porto locals travel out for.",
+    "walk": "Transfer then walkable"
+  },
+  "portsmouth": {
+    "blurb": "Portsmouth is the Royal Navy's historic home, its dockyard packed with legendary warships from Nelson's HMS Victory to the Tudor Mary Rose. The Spinnaker Tower and waterfront are an easy walk from the terminal.",
+    "cur": "GBP",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "HMS Victory and the Historic Dockyard",
+      "The Mary Rose Museum",
+      "The Spinnaker Tower's glass sky-walk"
+    ],
+    "tip": "The Historic Dockyard ticket covers multiple ships and museums and easily fills a day — buy the all-attraction pass rather than paying per ship.",
+    "walk": "Walkable"
+  },
+  "princess_cays": {
+    "blurb": "Princess Cays sits on the southern tip of Eleuthera, a straightforward beach-and-barbecue day split into two halves — the busier main beach by the tender pier and a quieter stretch beyond the water-sports hut. Everything charges to your cruise card.",
+    "cur": "Ship account",
+    "dock": "Tender",
+    "lang": "English",
+    "miss": [
+      "The quieter beach south of the pier",
+      "Snorkelling the rocky points at either end",
+      "The included beach barbecue — go early or late"
+    ],
+    "noviator": true,
+    "tip": "Shade is the scarce resource here, not sand — grab a spot under the trees or book a clamshell as soon as you land.",
+    "walk": "All on foot"
+  },
+  "puerto_vallarta_mexico": {
+    "blurb": "Puerto Vallarta pairs a golden-sand bay with a genuinely charming old town — the Malecón's sculptures, the crowned church of Our Lady of Guadalupe and the Rio Cuale island market. The Zona Romántica's cobbles are the town at its best.",
+    "cur": "MXN",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "The Malecón boardwalk's sculpture parade",
+      "The Zona Romántica and Playa Los Muertos pier",
+      "A panga boat to Yelapa or the southern coves"
+    ],
+    "tip": "Local buses marked 'Centro' run from outside the port for pennies — the old town is fifteen minutes and a world away from the terminal malls.",
+    "walk": "Taxi / bus to centre"
+  },
+  "puntarenas_costa_rica": {
+    "blurb": "Puntarenas is Costa Rica's Pacific cruise door, a long sandspit town that serves as launchpad to the country's real riches — cloud forests, zip lines, volcanoes and wildlife-thick rivers. Pura vida starts about thirty minutes inland.",
+    "cur": "CRC / USD",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "Ziplining or hanging bridges in the rainforest canopy",
+      "A Tárcoles River crocodile safari",
+      "Sarchí's painted oxcarts and coffee country"
+    ],
+    "tip": "Distances deceive here — Monteverde and Arenal are too far for a port day, so aim for Tárcoles, Carara National Park or canopy tours within an hour.",
+    "walk": "Excursion base"
+  },
+  "quebec_city_canada": {
+    "blurb": "Québec City is the closest thing North America has to a walled European town, and ships dock directly beneath it. The funicular links the Petit-Champlain's stone lanes to the Château Frontenac's boardwalk above; Montmorency Falls waits just outside town.",
+    "cur": "CAD",
+    "dock": "Docked",
+    "lang": "French / English",
+    "miss": [
+      "Terrasse Dufferin's boardwalk beside the Château",
+      "Petit-Champlain — the continent's oldest shopping street",
+      "Montmorency Falls, higher than Niagara"
+    ],
+    "tip": "The funicular queue is worth skipping if you can manage the Breakneck Stairs — and October calls come with peak fall colour on the Laurentians.",
+    "walk": "Old town at the pier"
+  },
+  "reykjavik_iceland": {
+    "blurb": "Reykjavik is the world's northernmost capital, a small, colourful city of corrugated houses beneath the soaring Hallgrimskirkja church. It's the launchpad for Iceland's Golden Circle geysers, waterfalls and the Blue Lagoon.",
+    "cur": "ISK",
+    "dock": "Docked",
+    "lang": "Icelandic",
+    "miss": [
+      "The Golden Circle: Geysir, Gullfoss and Thingvellir",
+      "The Blue Lagoon geothermal spa",
+      "Hallgrimskirkja church tower over the city"
+    ],
+    "tip": "The Blue Lagoon needs pre-booking and is nearer the airport than the city — check it fits your port hours, or the closer Sky Lagoon is an easier soak.",
+    "walk": "Shuttle to centre"
+  },
+  "rhodes_greece": {
+    "blurb": "Rhodes has one of Europe's finest medieval walled cities, built by the Knights of St John and still lived-in behind its moat and gates. The port sits right beside it, so the Palace of the Grand Masters is a short walk away.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Greek",
+    "miss": [
+      "The medieval Old Town and Street of the Knights",
+      "The Palace of the Grand Master",
+      "The Acropolis of Lindos down the coast"
+    ],
+    "tip": "The Old Town is walkable from the ship, but Lindos with its clifftop acropolis is the island's other great sight — pick one, as together they're a rush.",
+    "walk": "Walkable"
+  },
+  "riga_latvia": {
+    "blurb": "Riga is the largest of the Baltic capitals, famous for a spectacular concentration of Art Nouveau architecture alongside a cobbled medieval core. The port is close to the old town, all easily explored on foot.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Latvian",
+    "miss": [
+      "The Art Nouveau district on Alberta iela",
+      "The House of the Blackheads on Town Hall Square",
+      "The bustling Central Market in old Zeppelin hangars"
+    ],
+    "tip": "Look up as you walk Alberta and Elizabetes streets — Riga has more Art Nouveau facades than anywhere in Europe, and the detail is in the upper floors.",
+    "walk": "Walkable"
+  },
+  "rio-de-janeiro": {
+    "blurb": "Rio needs no sales pitch — Christ the Redeemer, Sugarloaf's cable car and Copacabana's mosaic promenade deliver exactly what the postcards promise. The Pier Mauá terminal sits by the revitalised port district and its striking Museum of Tomorrow.",
+    "cur": "BRL",
+    "dock": "Docked",
+    "lang": "Portuguese",
+    "miss": [
+      "Christ the Redeemer by cog train",
+      "Sugarloaf's two-stage cable car at golden hour",
+      "Copacabana and Ipanema's beach promenade"
+    ],
+    "tip": "Do Corcovado early — clouds swallow the statue by many afternoons — and use official taxis or apps rather than street hails, keeping valuables minimal.",
+    "walk": "Taxi city"
+  },
+  "roatan_honduras": {
+    "blurb": "Roatán sits on the Mesoamerican reef and delivers the best-value snorkelling and diving in the western Caribbean. Ships dock at Mahogany Bay or Coxen Hole; West Bay's white-sand beach with reef swimming straight off it is the classic day.",
+    "cur": "HNL / USD",
+    "dock": "Docked",
+    "lang": "Spanish / English",
+    "miss": [
+      "West Bay Beach — reef snorkelling from the sand",
+      "Little French Key's island day resort",
+      "The sloth and monkey sanctuaries (with expectations set)"
+    ],
+    "tip": "Mahogany Bay's chairlift to its private beach is fine, but West Bay is the beach the island is famous for — share a taxi and agree the return time.",
+    "walk": "Beach shuttles"
+  },
+  "rome_civitavecchia_italy": {
+    "blurb": "Civitavecchia is the port for Rome, though the Eternal City is over an hour inland by train or coach. It's a full, foot-pounding day to see the Colosseum, Vatican and fountains — pace it, or explore the coast instead.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Italian",
+    "miss": [
+      "The Colosseum and Roman Forum",
+      "St Peter's Basilica and the Vatican Museums",
+      "The Pantheon and Trevi Fountain"
+    ],
+    "tip": "Pre-book Vatican and Colosseum entry before you sail — the on-the-day queues can swallow hours you don't have on a port call.",
+    "walk": "Transfer to Rome"
+  },
+  "rotterdam": {
+    "blurb": "Rotterdam is the Netherlands' bold architectural showcase, rebuilt after wartime devastation into a city of cube houses, daring bridges and Europe's biggest port. It's also a springboard for Delft, The Hague and Kinderdijk's windmills.",
+    "cur": "EUR",
+    "dock": "Docked in city",
+    "lang": "Dutch",
+    "miss": [
+      "The Cube Houses and Markthal food hall",
+      "The Erasmus Bridge and modern skyline",
+      "Kinderdijk's UNESCO windmills nearby"
+    ],
+    "tip": "Amsterdam is doable by train (about an hour) but Rotterdam's own architecture is unique in Europe — and Kinderdijk's windmills are a more restful, iconic day.",
+    "walk": "Walkable"
+  },
+  "saint-john-nb": {
+    "blurb": "Saint John, New Brunswick sits on the Bay of Fundy, home of the world's highest tides — the Reversing Falls rapids literally flow backwards twice a day. The Victorian uptown and the covered City Market start right at the terminal.",
+    "cur": "CAD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Reversing Falls Rapids at the right tide time",
+      "The 1876 City Market's dulse and maple stalls",
+      "Hopewell Rocks' flowerpot formations on longer calls"
+    ],
+    "tip": "Check the tide table first — the Reversing Falls only 'perform' around the turn of the tide, and cruise mornings don't always line up.",
+    "walk": "Walkable uptown"
+  },
+  "san-diego": {
+    "blurb": "San Diego's terminal sits on the downtown Embarcadero beside the USS Midway's flight deck — the Gaslamp Quarter, Little Italy and ferry to Coronado are all walkable. It's the easiest big-city homeport on the West Coast.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The USS Midway museum next to the pier",
+      "Coronado's beach and grand old hotel by ferry",
+      "Balboa Park's museums and gardens"
+    ],
+    "tip": "The Midway is literally beside the cruise terminal — even a two-hour pre-boarding visit works if you check bags at the port first.",
+    "walk": "Walkable Embarcadero"
+  },
+  "san-francisco": {
+    "blurb": "San Francisco's ships berth along the Embarcadero near Fisherman's Wharf, with the sea lions of Pier 39, cable cars climbing from the turnaround and Alcatraz out in the bay. Sailing under the Golden Gate is the harbour's mic-drop.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Alcatraz — book weeks ahead, it sells out",
+      "A cable car over the hills to Union Square",
+      "The Ferry Building's food hall"
+    ],
+    "tip": "Sail-away under the Golden Gate Bridge is the single best deck moment in US cruising — it's usually cold and windy up there, so take a layer, not just a phone.",
+    "walk": "Walkable waterfront"
+  },
+  "san-juan": {
+    "blurb": "Old San Juan is one of cruising's great walk-off ports — five hundred years of blue cobblestones, pastel facades and two vast Spanish fortresses, all starting a few steps from the gangway. No transport, no plan needed; just walk uphill and get lost.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "Spanish / English",
+    "miss": [
+      "El Morro fortress and its kite-flying lawn",
+      "Calle Fortaleza's colour and the old city gates",
+      "A barrachina piña colada at its claimed birthplace"
+    ],
+    "tip": "Do the forts early — the walls give no shade and the trade wind on El Morro's lawn is the town's best free air conditioning.",
+    "walk": "Old town at the pier"
+  },
+  "santa_cruz_de_tenerife_spain": {
+    "blurb": "Santa Cruz is Tenerife's capital, with Calatrava's wave-like concert hall by the water and Spain's tallest peak, Teide, brooding inland. The centre is walkable; the volcano and old town of La Laguna need transport.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Spanish",
+    "miss": [
+      "Auditorio de Tenerife's sail-like concert hall",
+      "Mount Teide National Park by cable car (via tour)",
+      "UNESCO old town of San Cristobal de La Laguna"
+    ],
+    "tip": "Teide is spectacular but a long haul up — if you're prone to altitude queasiness the cable car top station is over 3,500m, so take it gently.",
+    "walk": "Walkable"
+  },
+  "santorini_greece": {
+    "blurb": "Santorini is the drowned volcano everyone pictures when they think of Greece — white villages perched on a caldera cliff above a wine-dark sea. Ships tender to the base of the cliff; a cable car or donkey path climbs to Fira.",
+    "cur": "EUR",
+    "dock": "Tender",
+    "lang": "Greek",
+    "miss": [
+      "The caldera-edge village of Oia",
+      "Fira's clifftop cafes and sunset views",
+      "The Minoan excavations at Akrotiri"
+    ],
+    "tip": "The cable car queue after tendering can be brutal both ways — go up early, and start queuing to come down well before your last tender to avoid missing it.",
+    "walk": "Cable car or transfer"
+  },
+  "santos-sao-paulo": {
+    "blurb": "Santos is São Paulo's seaside and the busiest port in Latin America — but for visitors it means beach gardens that hold a world record, a coffee-boom heritage and Pelé's own museum in the club where he played.",
+    "cur": "BRL",
+    "dock": "Docked",
+    "lang": "Portuguese",
+    "miss": [
+      "The beachfront gardens — the world's longest",
+      "The Coffee Exchange's stained-glass trading hall",
+      "The Pelé Museum near Santos FC's ground"
+    ],
+    "tip": "São Paulo city is 80km and heavy traffic away — unless you have a late departure, Santos itself is the better-value day.",
+    "walk": "Taxi to beach district"
+  },
+  "savona_italy": {
+    "blurb": "Savona is Costa Cruises' Ligurian home port, a workmanlike town with a handsome old core and the Priamar fortress by the sea. It's also a springboard for Genoa and the Riviera villages a short train ride along the coast.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Italian",
+    "miss": [
+      "The Priamar fortress on the waterfront",
+      "The old town and Sistine Chapel of Savona",
+      "Genoa or the Riviera by train"
+    ],
+    "tip": "Savona's own centre is a pleasant walk, but if you've seen it before, the coastal train to Genoa or Noli is quick and scenic.",
+    "walk": "Walkable"
+  },
+  "seattle": {
+    "blurb": "Seattle is the Alaska cruise gateway, and both terminals sit within reach of the essentials — Pike Place Market's fish throwers, the original Starbucks queue you can skip, and the Space Needle. Add a day for the full coffee-and-mountains effect.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Pike Place Market early, before the crowds",
+      "The Chihuly Garden and Glass beside the Space Needle",
+      "The Great Wheel and waterfront oyster bars"
+    ],
+    "tip": "Pier 91 (most big ships) is a ride from downtown while Pier 66 is walkable — check which one you're on before planning embarkation morning.",
+    "walk": "Walkable downtown"
+  },
+  "seville-cadiz": {
+    "blurb": "Some itineraries list this call as Seville, but ships berth at Cadiz on the coast — Seville itself is inland, reached by coach or fast train. The Andalusian capital rewards the trip with its cathedral, Alcazar and flamenco soul.",
+    "cur": "EUR",
+    "dock": "Docked at Cadiz",
+    "lang": "Spanish",
+    "miss": [
+      "Seville Cathedral and the Giralda tower",
+      "The Real Alcazar's Mudejar palaces and gardens",
+      "Plaza de Espana's tiled grandeur"
+    ],
+    "tip": "It's roughly 1h40 each way — a genuine full-day commitment. If time is tight, Cadiz's own old town at the pier is a rewarding alternative.",
+    "walk": "Transfer to Seville"
+  },
+  "seward_alaska": {
+    "blurb": "Seward sits at the head of Resurrection Bay with Kenai Fjords National Park on its doorstep — the tidewater-glacier and whale-watching boat trips from here are among Alaska's best. The Alaska SeaLife Center anchors the compact town.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "A Kenai Fjords cruise to Aialik or Holgate glacier",
+      "The Alaska SeaLife Center's rescued puffins and sea lions",
+      "Exit Glacier's walkable viewing trails"
+    ],
+    "tip": "Turnaround days here are tight for the big boat tours — if Kenai Fjords is the dream, consider staying a night rather than squeezing it into embarkation day.",
+    "walk": "Shuttle to small town"
+  },
+  "sitka_alaska": {
+    "blurb": "Sitka was Russian America's capital, and it remains the most atmospheric town on the Alaska circuit — onion-domed St Michael's Cathedral, totem-lined rainforest trails and a raptor rescue centre, all against a volcano-backed sound.",
+    "cur": "USD",
+    "dock": "Docked · shuttle to town",
+    "lang": "English",
+    "miss": [
+      "Sitka National Historical Park's totem trail",
+      "The Alaska Raptor Center's rehabilitating eagles",
+      "St Michael's Russian Orthodox cathedral"
+    ],
+    "tip": "Most ships dock at Old Sitka Dock with free shuttles the five miles to town — factor the shuttle queue into your all-aboard arithmetic.",
+    "walk": "Shuttle, then walkable"
+  },
+  "skagway_alaska": {
+    "blurb": "Skagway is the gold rush preserved — false-front streets run straight from the dock, and the White Pass & Yukon Route railway climbs 3,000 feet through the mountains the stampeders crossed on foot. Book the train; it's the point of the port.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The White Pass & Yukon Route railroad",
+      "The Klondike Gold Rush historical park's free walking tour",
+      "The Red Onion Saloon's brothel-museum cheek"
+    ],
+    "tip": "White Pass trains sell out weeks ahead in summer — book before the cruise, and sit on the left going up for the drop-away canyon views.",
+    "walk": "Walkable gold-rush town"
+  },
+  "southampton_uk": {
+    "blurb": "Southampton is Britain's great cruise home port, from which the Titanic sailed and much of the UK fleet still departs. As a call it's usually an embarkation day, but the SeaCity Museum and medieval walls make a decent stretch of the legs.",
+    "cur": "GBP",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "SeaCity Museum's Titanic story",
+      "The medieval town walls and Bargate",
+      "Winchester or the New Forest nearby"
+    ],
+    "tip": "As a turnaround port it's mostly logistics, but if you have hours to spare, Winchester's cathedral is a 20-minute train ride and a lovely half-day.",
+    "walk": "Walkable"
+  },
+  "split_croatia": {
+    "blurb": "Split is built inside a Roman emperor's retirement palace — Diocletian's 1,700-year-old walls now shelter a living warren of bars, shops and homes. The ferry port drops you steps from the palace and the palm-lined Riva promenade.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Croatian",
+    "miss": [
+      "Diocletian's Palace and its cellars",
+      "The cathedral in the emperor's mausoleum",
+      "The Riva waterfront and Marjan hill park"
+    ],
+    "tip": "The palace isn't a museum you enter — it's the old town itself, free to wander. The atmospheric substructure cellars are the one paid bit worth doing.",
+    "walk": "Walkable"
+  },
+  "st_kitts": {
+    "blurb": "St Kitts packs a lot into a small island — a UNESCO fortress on Brimstone Hill, the scenic railway built for the sugar crop, and green vervet monkeys that outnumber people. Port Zante lands you straight into compact, walkable Basseterre.",
+    "cur": "XCD / USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Brimstone Hill Fortress, the 'Gibraltar of the West Indies'",
+      "The St Kitts Scenic Railway's coastal loop",
+      "Timothy Hill's two-ocean viewpoint"
+    ],
+    "tip": "Timothy Hill's photo stop looks over Atlantic and Caribbean at once — every island taxi tour includes it, so a shared cab beats a formal excursion on price.",
+    "walk": "Walkable Basseterre"
+  },
+  "st_lucia": {
+    "blurb": "St Lucia is the drama queen of the eastern Caribbean — the twin Piton peaks, a drive-in volcano and rainforest all crowd the south while ships dock in workaday Castries. It's a big island; the best of it needs a committed excursion day.",
+    "cur": "XCD / USD",
+    "dock": "Docked",
+    "lang": "English / Creole",
+    "miss": [
+      "The Pitons from Soufrière — by boat beats by road",
+      "Sulphur Springs' drive-in volcano and mud baths",
+      "Marigot Bay for a shorter, prettier half-day"
+    ],
+    "tip": "Soufrière is 90 winding minutes each way by road — take a catamaran down the coast instead and you get the Pitons from the water plus the drive back skipped.",
+    "walk": "Walkable Castries"
+  },
+  "st_maarten": {
+    "blurb": "Philipsburg gives you two countries in one port day — the Dutch side's beaches and shopping, and the French side's food and style over the open border. The famous jet-blast beach at Maho sits under the airport approach twenty minutes away.",
+    "cur": "USD everywhere",
+    "dock": "Docked",
+    "lang": "Dutch / English / French",
+    "miss": [
+      "Maho Beach's landing jets, close enough to touch",
+      "The water taxi across Great Bay to Front Street",
+      "Lunch in Grand Case on the French side"
+    ],
+    "tip": "Check the arrivals board before committing to Maho — the show is only as good as the flight schedule, and the big jets cluster around midday.",
+    "walk": "Water taxi to town"
+  },
+  "st_thomas_usvi": {
+    "blurb": "Charlotte Amalie combines duty-free shopping (US visitors get a raised allowance here) with one of the Caribbean's prettiest harbours. Magens Bay's postcard beach and the Skyride viewpoint are the classic half-days; St John's national park beaches are the upgrade.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Magens Bay — the beach on all the posters",
+      "The Skyride to Paradise Point above the harbour",
+      "A ferry side-trip to Trunk Bay on St John"
+    ],
+    "tip": "Open-air safari taxis run fixed per-person rates to Magens Bay — cheaper than tours, and the 99 Steps in town fill the gap if you split the day.",
+    "walk": "Short taxi to town"
+  },
+  "stavanger_norway": {
+    "blurb": "Stavanger pairs a charmingly preserved old town of white timber cottages with Norway's oil-boom prosperity. It's the base for Lysefjord and the vertiginous Pulpit Rock, though that's a serious hike rather than a stroll.",
+    "cur": "NOK",
+    "dock": "Docked",
+    "lang": "Norwegian",
+    "miss": [
+      "Gamle Stavanger's white wooden lanes",
+      "A Lysefjord cruise to Pulpit Rock's base",
+      "The Norwegian Petroleum Museum"
+    ],
+    "tip": "Hiking to the top of Pulpit Rock is a demanding 4-5 hour round trip — most cruisers take the fjord sightseeing boat that views it dramatically from below instead.",
+    "walk": "Walkable"
+  },
+  "stockholm_sweden": {
+    "blurb": "Stockholm spreads across fourteen islands where lake meets Baltic, its medieval Gamla Stan old town among the best preserved in Europe. The approach through the archipelago is a highlight in itself.",
+    "cur": "SEK",
+    "dock": "Docked",
+    "lang": "Swedish",
+    "miss": [
+      "Gamla Stan's medieval lanes and royal palace",
+      "The Vasa Museum's salvaged 17th-century warship",
+      "The ABBA Museum for a singalong"
+    ],
+    "tip": "The Vasa — a warship that sank on her maiden voyage and was raised almost intact — is Scandinavia's must-see museum; go early before the coach parties land.",
+    "walk": "Shuttle then walkable"
+  },
+  "stornoway_scotland": {
+    "blurb": "Stornoway is the main town of the Isle of Lewis in the Outer Hebrides, a Gaelic-speaking outpost of peat, tweed and ancient stones. The Callanish standing stones and pristine beaches are the island's treasures.",
+    "cur": "GBP",
+    "dock": "Docked",
+    "lang": "English / Gaelic",
+    "miss": [
+      "The Callanish standing stones",
+      "Lews Castle and its museum",
+      "Harris Tweed weavers and Hebridean beaches"
+    ],
+    "tip": "Callanish is often called Scotland's Stonehenge and is far less crowded — the drive across the peat moor is bleakly beautiful; book transport in advance.",
+    "walk": "Walkable"
+  },
+  "tallinn_estonia": {
+    "blurb": "Tallinn has one of Europe's best-preserved medieval old towns — a fairy-tale of spires, cobbles and merchant houses inside intact city walls. The port is a walkable stroll from the gates, making it one of the Baltic's easiest calls.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Estonian",
+    "miss": [
+      "The medieval Town Hall Square",
+      "Toompea hill and the Orthodox cathedral",
+      "Walking the old town walls and towers"
+    ],
+    "tip": "The old town is genuinely walkable from the ship — save your money for a marzipan treat or a craft-beer stop rather than a tour you don't need.",
+    "walk": "Walkable"
+  },
+  "tampa_florida_usa": {
+    "blurb": "Tampa's cruise terminals sit right in the downtown Channel District, an easy walk or streetcar ride from the aquarium, Sparkman Wharf and the Riverwalk. Historic Ybor City — the cigar quarter with free-roaming chickens — is a streetcar away.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Ybor City's cigar-era streets by free streetcar",
+      "The Florida Aquarium beside the terminals",
+      "The Riverwalk to Armature Works food hall"
+    ],
+    "tip": "The TECO streetcar from the port to Ybor City is free — Tampa is the rare homeport where a car-free pre-cruise day works perfectly.",
+    "walk": "Walkable downtown"
+  },
+  "tortola_bvi": {
+    "blurb": "Road Town is the low-key capital of the British Virgin Islands, and the port is really a springboard — to Cane Garden Bay over the mountain, to the Baths' giant boulders on Virgin Gorda, or just to a beach bar with a painkiller cocktail.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The Baths on Virgin Gorda — worth the ferry",
+      "Cane Garden Bay's beach-bar crescent",
+      "The mountain-road viewpoints en route to either"
+    ],
+    "tip": "If the Baths are the goal, book a tour or early ferry immediately on landing — independent ferry slots on ship days are the island's scarcest commodity.",
+    "walk": "Walkable Road Town"
+  },
+  "toulon_france": {
+    "blurb": "Toulon is France's great naval harbour, less polished than its Riviera neighbours but all the more genuine, with a Provencal old town and a cable car up Mont Faron. It's a quieter, cheaper gateway to Provence.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "French",
+    "miss": [
+      "Cable car up Mont Faron for the harbour panorama",
+      "The Provencal old town and morning market",
+      "A harbour boat tour past the naval fleet"
+    ],
+    "tip": "Toulon is a handy alternative gateway to Aix and the Provence villages, but the local old town and Mont Faron make a relaxed, tour-free day.",
+    "walk": "Walkable"
+  },
+  "trieste": {
+    "blurb": "Trieste is Italy's Habsburg outlier near the Slovenian border, a grand coffee-house city that once served as Vienna's seaport. Its vast seafront square, Piazza Unita, opens right onto the Adriatic beside the ship.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Italian",
+    "miss": [
+      "Piazza Unita d'Italia, Europe's largest sea-facing square",
+      "Miramare Castle on its promontory",
+      "The historic Viennese-style coffee houses"
+    ],
+    "tip": "Trieste takes coffee seriously and has its own vocabulary for it — ask for a 'nero' for an espresso; 'un caffe' may not get you what you expect.",
+    "walk": "Walkable"
+  },
+  "valencia_spain": {
+    "blurb": "Valencia pairs a medieval core with Calatrava's futuristic City of Arts and Sciences, and it's the birthplace of paella. The port is industrial and set back, so you'll shuttle or ride in to reach either the old town or the science city.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Spanish / Valencian",
+    "miss": [
+      "City of Arts and Sciences complex and aquarium",
+      "The Central Market and Silk Exchange",
+      "Authentic paella in the old riverbed gardens"
+    ],
+    "tip": "The old town and the City of Arts are at opposite ends of the drained-river park — the 25 bus links them, or hire a bike along the greenway between.",
+    "walk": "Shuttle or transfer"
+  },
+  "valletta_malta": {
+    "blurb": "Valletta is a fortress-city built by the Knights of St John, its golden bastions rising straight from the Grand Harbour where the ship berths. Compact and packed with baroque splendour, it's one of the Mediterranean's great walled capitals.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Maltese / English",
+    "miss": [
+      "St John's Co-Cathedral and its Caravaggio",
+      "The Upper Barrakka Gardens over the harbour",
+      "The Grand Master's Palace and armoury"
+    ],
+    "tip": "The Barrakka Lift carries you from the waterfront up into the city for a small fare — far kinder than the steep climb, and the garden views at the top are free.",
+    "walk": "Lift or walk up"
+  },
+  "vancouver": {
+    "blurb": "Vancouver's Canada Place terminal is the prettiest embarkation in North America — downtown on one side, seaplanes and mountains on the other, and Stanley Park's seawall starting a short stroll away. Alaska sailings begin with the Lions Gate Bridge overhead.",
+    "cur": "CAD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "Stanley Park's seawall by bike or foot",
+      "Granville Island's public market by mini-ferry",
+      "Gastown's steam clock and brunch scene"
+    ],
+    "tip": "Sail-away under the Lions Gate Bridge is the trip's first highlight — be on deck, because the ship clears it by what looks like inches.",
+    "walk": "Canada Place downtown"
+  },
+  "venice_italy": {
+    "blurb": "Venice needs no introduction — a city of canals, palazzi and bridges with no equal on earth. Large ships now berth away from the historic centre and shuttle you in, but the sail toward the lagoon and the walk into St Mark's remain unforgettable.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Italian",
+    "miss": [
+      "St Mark's Basilica and Square",
+      "The Rialto Bridge and Grand Canal by vaporetto",
+      "The Doge's Palace and Bridge of Sighs"
+    ],
+    "tip": "Skip the pricey gondola if budget matters — the number 1 vaporetto water bus travels the whole Grand Canal for a few euros and is the great Venetian ride.",
+    "walk": "Walkable / water bus"
+  },
+  "verona": {
+    "blurb": "Usually reached as an excursion from the Venetian ports, Verona is Romeo and Juliet's city, built around a remarkably intact Roman arena that still hosts summer opera. Its rose-marble streets and riverside setting are pure romance.",
+    "cur": "EUR",
+    "dock": "Shuttle or transfer",
+    "lang": "Italian",
+    "miss": [
+      "The Roman Arena, still used for opera",
+      "Juliet's balcony on Via Cappello",
+      "Piazza delle Erbe's frescoed market square"
+    ],
+    "tip": "Juliet's balcony is a tourist scrum with no real history — the Arena and the piazzas are the true rewards; don't let the balcony crowds define the day.",
+    "walk": "Transfer then walkable"
+  },
+  "victoria-bc": {
+    "blurb": "Victoria is the classic evening call on Alaska round-trips — a few hours of British-flavoured charm around the Inner Harbour, the illuminated Parliament, and the Empress Hotel's ivy. Butchart Gardens is the excursion if your hours allow.",
+    "cur": "CAD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The Inner Harbour and Parliament lights after dusk",
+      "Butchart Gardens (check timing against your call)",
+      "Fisherman's Wharf's float homes and fish and chips"
+    ],
+    "tip": "Most calls here are short and in the evening — decide in advance between Butchart's gardens and the harbour stroll, because doing both is a squeeze.",
+    "walk": "Shuttle or 25-min walk"
+  },
+  "vienna": {
+    "blurb": "A Danube river-cruise highlight, Vienna is the imperial Habsburg capital of palaces, coffee houses and Klimt. Its ring of grand boulevards, the Hofburg and Schonbrunn palaces, and its musical heritage fill a day effortlessly.",
+    "cur": "EUR",
+    "dock": "Docked in city",
+    "lang": "German",
+    "miss": [
+      "Schonbrunn Palace and its gardens",
+      "St Stephen's Cathedral in the old centre",
+      "Klimt's 'The Kiss' at the Belvedere"
+    ],
+    "tip": "Vienna's coffee houses are UNESCO-listed cultural institutions — lingering over a Melange and a slice of Sachertorte is a legitimate sightseeing activity here.",
+    "walk": "Transfer then walkable"
+  },
+  "vigo_spain": {
+    "blurb": "Vigo is Galicia's fishing powerhouse, tumbling down a hillside to a working port where the oyster stalls of Rua da Pescaderia sell straight off the boats. It's also a launch point for the pristine Cies Islands in season.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Spanish / Galician",
+    "miss": [
+      "Fresh oysters on Rua das Ostras",
+      "The old town Casco Vello lanes",
+      "Cies Islands ferry (summer, weather permitting)"
+    ],
+    "tip": "The Cies Islands are glorious but the ferry needs a permit and decent weather — have the oyster-and-old-town plan ready as the reliable fallback.",
+    "walk": "Walkable"
+  },
+  "whittier": {
+    "blurb": "Whittier is a working port in a spectacular dead-end fjord, reached through a one-lane shared rail-road tunnel — and almost everyone who lives here shares one building. It exists on itineraries as the rail gateway to Anchorage, Denali and the interior.",
+    "cur": "USD",
+    "dock": "Docked",
+    "lang": "English",
+    "miss": [
+      "The 26 Glacier Cruise from the small-boat harbour",
+      "Portage Glacier en route to Anchorage",
+      "Begich Towers — the town that lives in one building"
+    ],
+    "tip": "If you're ending your cruise here, the scenic rail to Anchorage beats the coach — same tunnel, better windows, and glaciers to the door.",
+    "walk": "Tiny — rail/coach out"
+  },
+  "zadar": {
+    "blurb": "Zadar is a quieter Dalmatian gem, a Roman and Venetian old town on a peninsula famous for two modern marvels: a Sea Organ that plays with the waves and a solar 'Greeting to the Sun'. The port is a short walk from it all.",
+    "cur": "EUR",
+    "dock": "Docked",
+    "lang": "Croatian",
+    "miss": [
+      "The wave-powered Sea Organ at sunset",
+      "The circular St Donatus church and Roman forum",
+      "The Greeting to the Sun light installation"
+    ],
+    "tip": "Alfred Hitchcock called Zadar's sunset the world's most beautiful — time your walk to the Sea Organ for dusk and you'll see why.",
+    "walk": "Walkable"
+  }
 }

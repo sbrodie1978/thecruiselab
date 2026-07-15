@@ -1,149 +1,791 @@
 {
- "generated": "2026-07-13T20:11:17Z",
+ "generated": "2026-07-15T08:18:03Z",
  "minMinutes": 8,
  "lines": {
   "Royal Caribbean": {
    "Icon of the Seas": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "4SABYbyofWQ",
+      "title": "Inside the World's Biggest Cruise Ship | Icon of the Seas",
+      "channel": "Supercar Blondie",
+      "views": 6417208,
+      "published": "2024-03-01",
+      "minutes": 17
+     },
+     {
+      "videoId": "lT7igd1x3pU",
+      "title": "80hrs on World's Largest Cruise Ship | Icon of the Seas",
+      "channel": "Trek Trendy",
+      "views": 3825686,
+      "published": "2024-02-25",
+      "minutes": 34
+     },
+     {
+      "videoId": "QrH39uFhjG0",
+      "title": "ICON OF THE SEAS FULL WALKTHROUGH TOUR OF THE WORLDS LARGEST CRUISE SHIP | ROYAL CARIBBEAN",
+      "channel": "The Cruise World",
+      "views": 2869861,
+      "published": "2024-02-04",
+      "minutes": 27
+     }
+    ],
+    "candidates": 22
    },
    "Star of the Seas": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "npQafvgSx7I",
+      "title": "Star of the Seas | First Full Walkthrough Ship Tour & Review | 2 Billion Reasons to watch",
+      "channel": "Cruises It ",
+      "views": 453021,
+      "published": "2025-08-09",
+      "minutes": 25
+     },
+     {
+      "videoId": "SOf67Ysk04U",
+      "title": "Star of the Seas FULL SHIP TOUR 2026",
+      "channel": "Royal Caribbean Blog",
+      "views": 369540,
+      "published": "2025-08-20",
+      "minutes": 89
+     },
+     {
+      "videoId": "t-HcBXA3q_o",
+      "title": "Star of the Seas Ship Tour - The BIGGEST Cruise Ship In The World",
+      "channel": "Cruise With Ben and David",
+      "views": 279491,
+      "published": "2025-08-24",
+      "minutes": 68
+     }
+    ],
+    "candidates": 18
    },
    "Legend of the Seas": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "vKUvP23Wvps",
+      "title": "Legend of the Seas Boarding Day - World's Newest & Largest Cruise Ship",
+      "channel": "Trev and Chels",
+      "views": 215822,
+      "published": "2026-07-05",
+      "minutes": 46
+     },
+     {
+      "videoId": "kg9FJnILQrg",
+      "title": "Legend of the Seas - Full Tour of the World's Largest Cruise Ship",
+      "channel": "Trev and Chels",
+      "views": 110970,
+      "published": "2026-07-07",
+      "minutes": 111
+     },
+     {
+      "videoId": "X9F76VBBCwM",
+      "title": "Our First 24 Hours on Royal Caribbean\u2019s NEW Legend of the Seas",
+      "channel": "Bryan and Jaidyn",
+      "views": 108713,
+      "published": "2026-07-08",
+      "minutes": 15
+     }
+    ],
+    "candidates": 9
    },
    "Utopia of the Seas": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "mcnp0QKFg3Y",
+      "title": "Utopia of the Seas | Full Walkthrough Ship Tour & Review | All Cabin Suites 4k | Royal Caribbean",
+      "channel": "Cruises It ",
+      "views": 554627,
+      "published": "2024-09-29",
+      "minutes": 44
+     },
+     {
+      "videoId": "wAzfjtDYOes",
+      "title": "Utopia of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 550770,
+      "published": "2024-07-19",
+      "minutes": 64
+     },
+     {
+      "videoId": "DVTmnyMTbqg",
+      "title": "Utopia of the Seas Ship Tour: AN INCREDIBLE FUN SHIP!",
+      "channel": "Cruise With Ben and David",
+      "views": 271410,
+      "published": "2025-04-17",
+      "minutes": 38
+     }
+    ],
+    "candidates": 19
    },
    "Wonder of the Seas": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "f0iaQUhhUMo",
+      "title": "Wonder of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 2628344,
+      "published": "2022-03-08",
+      "minutes": 63
+     },
+     {
+      "videoId": "hEQ-gecip5c",
+      "title": "Wonder of the Seas Full Walkthrough Ship Tour & Review 4K | Royal Caribbean Cruise Line",
+      "channel": "Harr Travel",
+      "views": 1265328,
+      "published": "2022-05-13",
+      "minutes": 123
+     },
+     {
+      "videoId": "Y144CGuPaMQ",
+      "title": "Wonder of the Seas | Full Walkthrough Ship Tour & Review | New 2023  | Royal Caribbean Cruises",
+      "channel": "Cruises It ",
+      "views": 1108989,
+      "published": "2023-09-05",
+      "minutes": 21
+     }
+    ],
+    "candidates": 19
    },
    "Odyssey of the Seas": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "W99Kz0pr4u4",
+      "title": "Odyssey of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 1079841,
+      "published": "2021-10-07",
+      "minutes": 57
+     },
+     {
+      "videoId": "UFvX4IDJErg",
+      "title": "Odyssey of the Seas | Full Walkthrough Ship Tour & Review 4K | Royal Caribbean 2021",
+      "channel": "Harr Travel",
+      "views": 398018,
+      "published": "2021-08-15",
+      "minutes": 52
+     },
+     {
+      "videoId": "bmmYE4wX-jE",
+      "title": "Royal Caribbean Odyssey of the Seas | Full Walkthrough Ship Tour",
+      "channel": "Cruise Passion",
+      "views": 284152,
+      "published": "2025-10-26",
+      "minutes": 26
+     }
+    ],
+    "candidates": 20
    },
    "Spectrum of the Seas": {
+    "v": 2,
     "reviews": [
      {
       "videoId": "s6f2hpu-D5s",
       "title": "Tour at the BIGGEST Cruise Ship in Asia - Royal Caribbean Spectrum of the Seas | 4 Days Walk Tour",
       "channel": "Tour From Home TV",
-      "views": 3334464,
+      "views": 3334642,
       "published": "2023-01-06",
       "minutes": 73
+     },
+     {
+      "videoId": "hnIEojY601s",
+      "title": "Spectrum of the Seas - Cruise Ship Tour - Royal Caribbean Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 202280,
+      "published": "2020-07-02",
+      "minutes": 15
+     },
+     {
+      "videoId": "rLjBFD2tPt4",
+      "title": "Royal Caribbean Spectrum of the Seas Cruise Food Review - Windjammer Buffet",
+      "channel": "La Lido Loca",
+      "views": 58783,
+      "published": "2019-10-09",
+      "minutes": 23
      }
     ],
-    "candidates": 1
+    "candidates": 16
    },
    "Symphony of the Seas": {
-    "reviews": [],
-    "candidates": 1
-   },
-   "Harmony of the Seas": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "gaG8FhYf_rc",
-      "title": "CRUISE SHIP Harmony Of The Seas - Leisure fun on the high seas | Full Documentary",
-      "channel": "WELT Documentary",
-      "views": 8851917,
-      "published": "2021-01-17",
-      "minutes": 50
+      "videoId": "Is8UEtforaU",
+      "title": "Symphony of the Seas Cruise Ship Tour and Review: Updated",
+      "channel": "Cruise Fever",
+      "views": 4011372,
+      "published": "2018-11-24",
+      "minutes": 24
+     },
+     {
+      "videoId": "AxfTpObP-XI",
+      "title": "Royal Caribbean Symphony of the Seas | Full Ship Walkthrough Tour & Review | 4K | All Public Spaces",
+      "channel": "Harr Travel",
+      "views": 2823194,
+      "published": "2019-12-23",
+      "minutes": 63
+     },
+     {
+      "videoId": "rFpcDuYKcBk",
+      "title": "Symphony of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 1028224,
+      "published": "2023-02-23",
+      "minutes": 65
      }
     ],
-    "candidates": 1
+    "candidates": 19
    },
-   "Ovation of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Anthem of the Seas": {
-    "reviews": [],
-    "candidates": 1
-   },
-   "Quantum of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Allure of the Seas": {
-    "reviews": [],
-    "candidates": 1
-   },
-   "Oasis of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Independence of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Freedom of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Liberty of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Adventure of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Voyager of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Navigator of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Mariner of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Explorer of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Brilliance of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Radiance of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Jewel of the Seas": {
+   "Harmony of the Seas": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "f8dR9FIE9tw",
-      "title": "Jewel of the Seas Cruise Ship Video Tour - Royal Caribbean - Cruise Fever",
-      "channel": "Cruise Fever",
-      "views": 205329,
-      "published": "2018-05-18",
+      "videoId": "QKChzQgDEyI",
+      "title": "Harmony of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 955600,
+      "published": "2022-02-01",
+      "minutes": 66
+     },
+     {
+      "videoId": "JU-W3phxeGY",
+      "title": "Harmony of the Seas Tour & Harmony of the Seas Review ~ Royal Caribbean International [4K Ultra HD]",
+      "channel": "Jason and Heidi's PopularCruising",
+      "views": 755245,
+      "published": "2016-07-30",
+      "minutes": 26
+     },
+     {
+      "videoId": "yTgVChvo74A",
+      "title": "Harmony of the Seas | Full Walkthrough Ship Tour & Review | Royal Caribbean Cruises",
+      "channel": "Cruises It ",
+      "views": 595441,
+      "published": "2023-11-05",
+      "minutes": 18
+     }
+    ],
+    "candidates": 24
+   },
+   "Ovation of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "dY4oxVX2QIk",
+      "title": "Ovation of the Seas Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 556528,
+      "published": "2021-11-02",
+      "minutes": 51
+     },
+     {
+      "videoId": "ix7fIA6nrQo",
+      "title": "Royal Caribbean Ovation of the Seas FULL Cruise Ship Tour and Review",
+      "channel": "Cruise With Ben and David",
+      "views": 473816,
+      "published": "2016-04-24",
+      "minutes": 15
+     },
+     {
+      "videoId": "hfbdMpzs2rk",
+      "title": "Ovation of the Seas | Full Ship Walkthrough Tour & Review 4K | Royal Caribbean Cruise Line",
+      "channel": "Harr Travel",
+      "views": 165044,
+      "published": "2021-10-23",
+      "minutes": 69
+     }
+    ],
+    "candidates": 21
+   },
+   "Anthem of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "Yox9PM7cCs8",
+      "title": "Anthem of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 538044,
+      "published": "2022-07-19",
+      "minutes": 44
+     },
+     {
+      "videoId": "HaLybhMUNtE",
+      "title": "Royal Caribbean Anthem of the Seas | Full Ship Tour & Review | 4K | All Public Spaces Explained",
+      "channel": "Harr Travel",
+      "views": 435752,
+      "published": "2020-04-04",
+      "minutes": 65
+     },
+     {
+      "videoId": "Dc7PkTueIRo",
+      "title": "Royal Caribbean Anthem of the Seas Ship Tour - It's INCREDIBLE!",
+      "channel": "Cruise With Ben and David",
+      "views": 401601,
+      "published": "2021-07-30",
+      "minutes": 17
+     }
+    ],
+    "candidates": 20
+   },
+   "Quantum of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "IBXPLAYJShc",
+      "title": "Quantum of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 564441,
+      "published": "2023-06-27",
+      "minutes": 48
+     },
+     {
+      "videoId": "xGpEgwdVpAg",
+      "title": "Royal Caribbean Quantum of the Seas Cruise Ship Tour",
+      "channel": "Cruise With Ben and David",
+      "views": 386413,
+      "published": "2020-08-23",
+      "minutes": 14
+     },
+     {
+      "videoId": "AwEtZjHwvwo",
+      "title": "Quantum of the Seas | Full Ship Walkthrough Tour & Review 4K | Royal Caribbean Cruise Line",
+      "channel": "Harr Travel",
+      "views": 253815,
+      "published": "2022-07-16",
+      "minutes": 91
+     }
+    ],
+    "candidates": 19
+   },
+   "Allure of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "SBE5X-7Gp-M",
+      "title": "Allure of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 923340,
+      "published": "2022-10-13",
+      "minutes": 60
+     },
+     {
+      "videoId": "7R05TWb_LcQ",
+      "title": "Allure of the Seas | Full Walkthrough Ship Tour & Review | Ultra HD | 7 Neighborhoods | New 2023",
+      "channel": "Cruises It ",
+      "views": 426907,
+      "published": "2023-09-17",
+      "minutes": 22
+     },
+     {
+      "videoId": "cQqVRqFiNSU",
+      "title": "Allure of the Seas AMPLIFIED Walkthrough Ship Tour 2026",
+      "channel": "Royal Caribbean Blog",
+      "views": 264373,
+      "published": "2025-04-15",
+      "minutes": 64
+     }
+    ],
+    "candidates": 19
+   },
+   "Oasis of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "pyTgthdpUyA",
+      "title": "Oasis of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 1196626,
+      "published": "2022-05-05",
+      "minutes": 61
+     },
+     {
+      "videoId": "sXO-Pl5dkg8",
+      "title": "Oasis of the Seas Ship Tour: An AMAZING $165,000,000 Makeover",
+      "channel": "Cruise With Ben and David",
+      "views": 327294,
+      "published": "2024-04-27",
+      "minutes": 52
+     },
+     {
+      "videoId": "dv9PzYEU5KU",
+      "title": "Things to Know Before Sailing on Oasis of the Seas | Royal Caribbean Cruise Tips",
+      "channel": "Jackson Jetsetting",
+      "views": 175157,
+      "published": "2023-09-08",
+      "minutes": 8
+     }
+    ],
+    "candidates": 20
+   },
+   "Independence of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "H7CmB8ziAXY",
+      "title": "Independence of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 690222,
+      "published": "2022-02-10",
+      "minutes": 45
+     },
+     {
+      "videoId": "6vjHjg1cHzs",
+      "title": "Independence of the Seas | Full Walkthrough Ship Tour & Review | Freedom Class | Royal Caribbean |4K",
+      "channel": "Cruises It ",
+      "views": 444418,
+      "published": "2023-06-14",
+      "minutes": 15
+     },
+     {
+      "videoId": "XHwXwbf3Y7M",
+      "title": "Royal Caribbean Independence of the Seas FULL Cruise Ship Tour",
+      "channel": "Cruise With Ben and David",
+      "views": 400022,
+      "published": "2018-10-14",
       "minutes": 14
      }
     ],
-    "candidates": 1
+    "candidates": 25
    },
-   "Serenade of the Seas": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Enchantment of the Seas": {
+   "Freedom of the Seas": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "NKVVGYC7578",
-      "title": "Enchantment of the Seas - Ultimate Cruise Ship Tour",
-      "channel": "Talking Cruise",
-      "views": 292727,
-      "published": "2017-08-27",
-      "minutes": 17
+      "videoId": "MPT9Su0Xt8g",
+      "title": "Freedom of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 596930,
+      "published": "2022-05-12",
+      "minutes": 46
      },
+     {
+      "videoId": "9do4s-QL9UY",
+      "title": "Freedom of the Seas | Full Walkthrough Ship Tour & Review | Royal Caribbean Cruise Lines | 4K 2023",
+      "channel": "Cruises It ",
+      "views": 445781,
+      "published": "2023-05-17",
+      "minutes": 14
+     },
+     {
+      "videoId": "Sg2NhbnvLKw",
+      "title": "Freedom of the Seas | Full Walkthrough Ship Tour & Review 4K | Royal Caribbean 2021",
+      "channel": "Harr Travel",
+      "views": 219227,
+      "published": "2021-09-04",
+      "minutes": 65
+     }
+    ],
+    "candidates": 17
+   },
+   "Liberty of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "0gwtblcIbes",
+      "title": "Liberty of the Seas Review - Full Walkthrough - Cruise Ship Tour - Royal Caribbean",
+      "channel": "Cruises It ",
+      "views": 571041,
+      "published": "2016-12-28",
+      "minutes": 22
+     },
+     {
+      "videoId": "jWYehmlvNWM",
+      "title": "Liberty of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 508106,
+      "published": "2022-11-17",
+      "minutes": 39
+     },
+     {
+      "videoId": "gMHnvSjfcao",
+      "title": "Liberty of the Seas | Full Walkthrough Ship Tour | Ultra HD 2023 | Royal Caribbean | An amazing Ship",
+      "channel": "Cruises It ",
+      "views": 465627,
+      "published": "2023-05-07",
+      "minutes": 14
+     }
+    ],
+    "candidates": 20
+   },
+   "Adventure of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "bq21ejrk3MY",
+      "title": "Adventure of the Seas | Full Walkthrough Ship Tour & Review 4K | Royal Caribbean 2021",
+      "channel": "Harr Travel",
+      "views": 350813,
+      "published": "2021-09-19",
+      "minutes": 65
+     },
+     {
+      "videoId": "TJGh_JyLZwU",
+      "title": "Adventure of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 312543,
+      "published": "2023-08-22",
+      "minutes": 50
+     },
+     {
+      "videoId": "MmEtsOSotVg",
+      "title": "Adventure of the Seas | Full Walkthrough Ship Tour & Review | 4k Deck by Deck |",
+      "channel": "Cruises It ",
+      "views": 300299,
+      "published": "2024-01-20",
+      "minutes": 14
+     }
+    ],
+    "candidates": 17
+   },
+   "Voyager of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "qmoH5r4iPGs",
+      "title": "Voyager of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 440020,
+      "published": "2023-09-28",
+      "minutes": 49
+     },
+     {
+      "videoId": "2xGTo2l6I84",
+      "title": "5 Days on a Luxury Cruise: Voyager of the Seas",
+      "channel": "Noel Philips",
+      "views": 364277,
+      "published": "2024-01-28",
+      "minutes": 34
+     },
+     {
+      "videoId": "dsxwSt9IBMw",
+      "title": "Voyager of the Seas | Full Walkthrough Ship Tour & Review with Cabins Suites |Royal Caribbean",
+      "channel": "Cruises It ",
+      "views": 121847,
+      "published": "2025-03-30",
+      "minutes": 25
+     }
+    ],
+    "candidates": 20
+   },
+   "Navigator of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "S9f32sctvt0",
+      "title": "Navigator of the Seas Full Cruise Ship Tour (Amplified)",
+      "channel": "Royal Caribbean Blog",
+      "views": 376929,
+      "published": "2021-11-30",
+      "minutes": 44
+     },
+     {
+      "videoId": "oB9BgTlZRXw",
+      "title": "Navigator of the Seas | Full Walkthrough Ship Tour 2022 | Royal Caribbean Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 186075,
+      "published": "2022-06-23",
+      "minutes": 14
+     },
+     {
+      "videoId": "z1OWKQjBVt0",
+      "title": "Royal Caribbean Navigator of the Seas Full Tour & Review 2026 (Top Mexican Riviera Cruise Ship)",
+      "channel": "JJ Cruise",
+      "views": 176345,
+      "published": "2024-10-24",
+      "minutes": 27
+     }
+    ],
+    "candidates": 19
+   },
+   "Mariner of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "znrlWYCKL_8",
+      "title": "Mariner of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 484234,
+      "published": "2021-09-07",
+      "minutes": 43
+     },
+     {
+      "videoId": "haiVuSNQI7Y",
+      "title": "Mariner of the Seas | Full Walkthrough Ship Tour & Review |  4k Ultra HD | Royal Caribbean",
+      "channel": "Cruises It ",
+      "views": 332252,
+      "published": "2023-06-25",
+      "minutes": 15
+     },
+     {
+      "videoId": "uzYE5RY-t14",
+      "title": "Royal Caribbean Mariner of the Seas | Full Ship Walkthrough Tour & Review 4K | All Public Spaces",
+      "channel": "Harr Travel",
+      "views": 229429,
+      "published": "2020-02-15",
+      "minutes": 42
+     }
+    ],
+    "candidates": 20
+   },
+   "Explorer of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "1FC5Bbg03fE",
+      "title": "Royal Caribbean Explorer of the Seas Ship Tour",
+      "channel": "Cruise With Ben and David",
+      "views": 396784,
+      "published": "2023-07-23",
+      "minutes": 23
+     },
+     {
+      "videoId": "cipKcKWn54g",
+      "title": "Explorer of the Seas | Full Walkthrough Ship Tour & Review |  Renovated | Royal Caribbean Cruises",
+      "channel": "Cruises It ",
+      "views": 201154,
+      "published": "2023-07-01",
+      "minutes": 13
+     },
+     {
+      "videoId": "RMYLRCzU7yI",
+      "title": "We Board the Refurbished Explorer of the Seas. A Disappointing Update.",
+      "channel": "Cruise With Ben and David",
+      "views": 197203,
+      "published": "2023-08-06",
+      "minutes": 27
+     }
+    ],
+    "candidates": 21
+   },
+   "Brilliance of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "NHddVTUX9JQ",
+      "title": "Brilliance of the Seas | Full Walkthrough Ship Tour & Review | Royal Caribbean Cruises | 4K Video",
+      "channel": "Cruises It ",
+      "views": 194716,
+      "published": "2023-07-25",
+      "minutes": 13
+     },
+     {
+      "videoId": "veARbTPgGiU",
+      "title": "Brilliance of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 166739,
+      "published": "2024-03-14",
+      "minutes": 41
+     },
+     {
+      "videoId": "9k2vewyg-BU",
+      "title": "Brilliance of The Seas | Full Walkthrough Ship Tour & Review 4K | Royal Caribbean Cruise Line 2022",
+      "channel": "Harr Travel",
+      "views": 140776,
+      "published": "2022-07-02",
+      "minutes": 57
+     }
+    ],
+    "candidates": 19
+   },
+   "Radiance of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "5pihAed2oFw",
+      "title": "Radiance of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 320893,
+      "published": "2022-09-15",
+      "minutes": 38
+     },
+     {
+      "videoId": "Gd9W5HLbxXM",
+      "title": "Radiance of the Seas | Full Walkthrough Ship Tour | 4K Ultra HD | Royal Caribbean Cruises",
+      "channel": "Cruises It ",
+      "views": 125422,
+      "published": "2025-01-22",
+      "minutes": 15
+     },
+     {
+      "videoId": "eHZt0ENER3I",
+      "title": "Radiance of the Seas | Full Walkthrough Ship Tour & Review 4K | Royal Caribbean Cruise Line 2022",
+      "channel": "Harr Travel",
+      "views": 102090,
+      "published": "2022-07-09",
+      "minutes": 48
+     }
+    ],
+    "candidates": 19
+   },
+   "Jewel of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "yiVQjWOyO_c",
+      "title": "Royal Caribbean Jewel of the Seas Full Tour & Review 2026 (Small Caribbean Cruise Ship)",
+      "channel": "JJ Cruise",
+      "views": 160481,
+      "published": "2025-03-19",
+      "minutes": 27
+     },
+     {
+      "videoId": "j04m2F7yKP0",
+      "title": "Jewel of the Seas | Full Walkthrough Tour & Review | Ultra HD Super View | Royal Caribbean Cruises",
+      "channel": "Cruises It ",
+      "views": 158206,
+      "published": "2023-08-02",
+      "minutes": 11
+     },
+     {
+      "videoId": "s6A2bVlnSTk",
+      "title": "The REAL Jewel of the Seas Ship Tour Experience!",
+      "channel": "Never Too Blank",
+      "views": 59122,
+      "published": "2024-12-21",
+      "minutes": 15
+     }
+    ],
+    "candidates": 19
+   },
+   "Serenade of the Seas": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "EN00gLeFXf0",
+      "title": "Serenade of the Seas | Full Ship Walkthrough Tour & Review 4K | Royal Caribbean Cruise Line",
+      "channel": "Harr Travel",
+      "views": 200647,
+      "published": "2021-11-06",
+      "minutes": 48
+     },
+     {
+      "videoId": "Fgu2EXZyMG8",
+      "title": "Serenade of the Seas | Full Walkthrough Tour & Review | Super Video 4k | Royal Caribbean Cruises",
+      "channel": "Cruises It ",
+      "views": 187920,
+      "published": "2023-07-07",
+      "minutes": 14
+     },
+     {
+      "videoId": "NAuIZROqazw",
+      "title": "What We Loved (and Didn't) About Our Serenade of the Seas Cruise | Royal Caribbean Cruise Ep. 5",
+      "channel": "Explorcation",
+      "views": 73378,
+      "published": "2022-01-29",
+      "minutes": 12
+     }
+    ],
+    "candidates": 20
+   },
+   "Enchantment of the Seas": {
+    "v": 2,
+    "reviews": [
      {
       "videoId": "S44ruuUsmpo",
       "title": "Enchantment of the Seas SHIP TOUR - Royal Caribbean Cruise [Full Walkthrough & Review]",
@@ -156,80 +798,211 @@
       "videoId": "QzUmyYAHDGI",
       "title": "Royal Caribbean Enchantment of the Seas Full Tour & Review 2026 (Oldest Cruise Ship Class)",
       "channel": "JJ Cruise",
-      "views": 120327,
+      "views": 120330,
       "published": "2024-04-10",
       "minutes": 26
+     },
+     {
+      "videoId": "s2XWWVgsV8A",
+      "title": "Enchantment of  the Seas | Full Walkthrough Ship Tour and Review",
+      "channel": "Cruises It ",
+      "views": 99106,
+      "published": "2025-07-06",
+      "minutes": 14
      }
     ],
-    "candidates": 9
+    "candidates": 18
    },
    "Grandeur of the Seas": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "Yamx3w7R1LY",
+      "title": "7 Days on Seven Seas Grandeur - the Most EXPENSIVE Ship Ever Built",
+      "channel": "Visit With Us (Rich and Helen)",
+      "views": 200183,
+      "published": "2025-11-07",
+      "minutes": 24
+     },
+     {
+      "videoId": "-NS3BhWqzD4",
+      "title": "Grandeur of the Seas Full Cruise Ship Tour",
+      "channel": "Royal Caribbean Blog",
+      "views": 174674,
+      "published": "2023-11-21",
+      "minutes": 36
+     },
+     {
+      "videoId": "Rfeyoi1uEXM",
+      "title": "Boarding Royal Caribbean's OLDEST/SMALLEST Ship! Grandeur Of The Seas Is BETTER Than We Envisioned",
+      "channel": "Kyle Pallo",
+      "views": 169305,
+      "published": "2023-05-15",
+      "minutes": 29
+     }
+    ],
+    "candidates": 17
    },
    "Vision of the Seas": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "1JaWXG-VBRc",
+      "title": "Vision of the Seas | Full Walkthrough Ship  Tour & Review | 4K Ultra HD | Royal Caribbean",
+      "channel": "Cruises It ",
+      "views": 183197,
+      "published": "2023-07-20",
+      "minutes": 9
+     },
+     {
+      "videoId": "tgV5QXA8RV4",
+      "title": "Vision of the Seas 4k Full Ship Tour | Royal Caribbean",
+      "channel": "The Weekend Cruiser",
+      "views": 97826,
+      "published": "2022-09-14",
+      "minutes": 28
+     },
+     {
+      "videoId": "XQLTUhxZOxc",
+      "title": "Vision of the Seas Ship Review! Explore Cabin Categories, Restaurants, Spa, and SO MUCH MORE!",
+      "channel": "Plum Crazy Adventures",
+      "views": 52437,
+      "published": "2024-06-12",
+      "minutes": 30
+     }
+    ],
+    "candidates": 17
    }
   },
   "Carnival": {
    "Carnival Mardi Gras": {
+    "v": 2,
     "reviews": [
      {
       "videoId": "rTjz76EOn1k",
       "title": "Carnival Mardi Gras | Full Walkthrough Tour & Review | Ultra HD Port Canaveral Orlando | New Ship",
       "channel": "Cruises It ",
-      "views": 1288264,
+      "views": 1288530,
       "published": "2021-09-29",
       "minutes": 29
+     },
+     {
+      "videoId": "aukVBEpaf2U",
+      "title": "Carnival Mardi Gras | Full Walkthrough Ship Tour & Review 4K",
+      "channel": "Harr Travel",
+      "views": 540420,
+      "published": "2021-08-08",
+      "minutes": 65
+     },
+     {
+      "videoId": "dOkFjHky66s",
+      "title": "A Brutally Honest Review of the Carnival Mardi Gras Cruise Ship",
+      "channel": "Cruise With Ben and David",
+      "views": 216558,
+      "published": "2022-10-02",
+      "minutes": 31
      }
     ],
-    "candidates": 1
+    "candidates": 23
    },
    "Carnival Celebration": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "kYY0GK19hgQ",
+      "title": "Carnival Celebration Ship Tour & Review",
+      "channel": "Cruise News Today",
+      "views": 635526,
+      "published": "2022-12-14",
+      "minutes": 26
+     },
+     {
+      "videoId": "0e8-UnY8Pu0",
+      "title": "Carnival Celebration | Full Walkthrough Tour & Review | Brand New Ship | Carnival Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 602450,
+      "published": "2023-01-13",
+      "minutes": 15
+     },
+     {
+      "videoId": "xV6PUTyI-6g",
+      "title": "Carnival Celebration Ship Tour",
+      "channel": "La Lido Loca",
+      "views": 520972,
+      "published": "2022-12-04",
+      "minutes": 89
+     }
+    ],
+    "candidates": 21
    },
    "Carnival Jubilee": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "Zo4GLPy73JE",
+      "title": "Carnival Jubilee | Full Walkthrough Ship Tour & Review | Super New Ship | Only Roller Coaster at Sea",
+      "channel": "Cruises It ",
+      "views": 570633,
+      "published": "2024-06-19",
+      "minutes": 22
+     },
+     {
+      "videoId": "WK7ZsOe0Zig",
+      "title": "Carnival Jubilee Ship Tour | A Guided Tour Around a $1 Billion Cruise Ship",
+      "channel": "La Lido Loca",
+      "views": 191577,
+      "published": "2024-01-27",
+      "minutes": 54
+     },
+     {
+      "videoId": "Vc3wt7JMSiI",
+      "title": "Carnival Jubilee Was Not What We Expected - Our Honest Cruise Review",
+      "channel": "Eat Sleep Cruise",
+      "views": 133215,
+      "published": "2024-03-24",
+      "minutes": 23
+     }
+    ],
+    "candidates": 21
    },
    "Carnival Firenze": {
+    "v": 2,
     "reviews": [
      {
       "videoId": "M51M63KshaE",
       "title": "Carnival Firenze | Full Walkthrough Ship Tour & Review | Italian Flare | Newest addition | 2024 HD",
       "channel": "Cruises It ",
-      "views": 211174,
+      "views": 211460,
       "published": "2024-12-15",
       "minutes": 18
      },
      {
-      "videoId": "M-XKeTxh0Ao",
-      "title": "I Took the $38 \"Cruise from Hell\" (Carnival Firenze)",
-      "channel": "Cassie Aran",
-      "views": 164360,
-      "published": "2026-03-29",
-      "minutes": 41
+      "videoId": "mwjvXvcsNpw",
+      "title": "CARNIVAL FIRENZE FULL SHIP TOUR (Carnival's Newest Ship!!)",
+      "channel": "EECC Travels",
+      "views": 130692,
+      "published": "2024-05-14",
+      "minutes": 21
      },
      {
-      "videoId": "on-zJAG2PAg",
-      "title": "CARNIVAL FIRENZE / COSTA FIRENZE - 2022 Complete Tour -  4K - Costa Crociere",
-      "channel": "Cruise Voyages",
-      "views": 150221,
-      "published": "2022-12-02",
-      "minutes": 12
+      "videoId": "5eyNd5hzxUk",
+      "title": "Carnival Firenze - Full Ship Tour - New Cruise Ship - Review and Tips #cruising #ship #travel",
+      "channel": "Let's All Cruise",
+      "views": 115130,
+      "published": "2024-06-02",
+      "minutes": 21
      }
     ],
-    "candidates": 9
+    "candidates": 17
    },
    "Carnival Venezia": {
+    "v": 2,
     "reviews": [
      {
       "videoId": "TpMk12380lY",
       "title": "Carnival\u2019s Newest Cruise Ship Was NOT What I Expected. Here's Why [Carnival Venezia Review]",
       "channel": "Life Well Cruised",
-      "views": 319843,
+      "views": 319881,
       "published": "2023-07-26",
       "minutes": 24
      },
@@ -237,575 +1010,1533 @@
       "videoId": "7JLLI-KIoKA",
       "title": "Carnival Venezia | Full Walkthrough Ship Tour & Review | Fully Renovated | Carnival Cruise Lines",
       "channel": "Cruises It ",
-      "views": 290136,
+      "views": 290257,
       "published": "2023-09-03",
+      "minutes": 17
+     },
+     {
+      "videoId": "zLdufkG_hZY",
+      "title": "Inside Carnival Venezia | Full Ship Tour 2023",
+      "channel": "Cruise News Today",
+      "views": 196116,
+      "published": "2023-07-03",
+      "minutes": 20
+     }
+    ],
+    "candidates": 19
+   },
+   "Carnival Panorama": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "RVdUULOv27c",
+      "title": "Carnival Panorama | Full Cruise Ship Tour | New Ship ~ Carnival Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 533032,
+      "published": "2020-10-10",
+      "minutes": 16
+     },
+     {
+      "videoId": "7caydq-z6HI",
+      "title": "Carnival Panorama Cruise Ship Tour and Walk Through",
+      "channel": "Cruise News Today",
+      "views": 98944,
+      "published": "2019-12-20",
+      "minutes": 22
+     },
+     {
+      "videoId": "iM4HIA20bYw",
+      "title": "What a CARNIVAL PANORAMA Cruise is Really Like",
+      "channel": "Solo Cruise & Travel",
+      "views": 91588,
+      "published": "2024-07-23",
+      "minutes": 29
+     }
+    ],
+    "candidates": 24
+   },
+   "Carnival Horizon": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "RvFFoxtHpMI",
+      "title": "Carnival Horizon Cruise Ship Tour",
+      "channel": "Cruise News Today",
+      "views": 301144,
+      "published": "2019-04-05",
+      "minutes": 16
+     },
+     {
+      "videoId": "EQK81ZK6xJA",
+      "title": "Carnival Horizon | Full Walkthrough  Ship Tour & Review | Amazing For Kids | Carnival Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 197820,
+      "published": "2023-11-24",
+      "minutes": 15
+     },
+     {
+      "videoId": "_3RuBESg7iM",
+      "title": "Carnival Horizon Review: 20 Things to Know Before you Go",
+      "channel": "Sunshine State Insider",
+      "views": 90525,
+      "published": "2024-09-06",
+      "minutes": 34
+     }
+    ],
+    "candidates": 24
+   },
+   "Carnival Vista": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "scrIoi6yq7Q",
+      "title": "Carnival Vista | Cruise Ship Tour  & Review | Carnival Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 212652,
+      "published": "2020-07-21",
+      "minutes": 13
+     },
+     {
+      "videoId": "F-g_t34IY-E",
+      "title": "Carnival Vista |  Full Walkthrough Ship Tour & Review | Awesome Water Park | Carnival Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 156303,
+      "published": "2023-09-10",
+      "minutes": 19
+     },
+     {
+      "videoId": "aUa0Y3LaRbU",
+      "title": "Carnival Vista Review- Fully Guided Walkthrough Tour - Carnival Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 143218,
+      "published": "2017-08-31",
+      "minutes": 33
+     }
+    ],
+    "candidates": 18
+   },
+   "Carnival Breeze": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "cDD0EjKlHdY",
+      "title": "Carnival Breeze: Ultimate Cruise Ship Tour",
+      "channel": "Talking Cruise",
+      "views": 367537,
+      "published": "2019-08-16",
+      "minutes": 15
+     },
+     {
+      "videoId": "G7z8Fw-haJg",
+      "title": "Carnival Breeze Review - Full Walkthrough - Cruise Ship Tour",
+      "channel": "Cruises It ",
+      "views": 361934,
+      "published": "2015-09-12",
+      "minutes": 17
+     },
+     {
+      "videoId": "L1xTjhtUl4w",
+      "title": "Carnival Breeze | Cruise Ship Tour  & Review | Carnival Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 231205,
+      "published": "2020-07-30",
+      "minutes": 9
+     }
+    ],
+    "candidates": 18
+   },
+   "Carnival Dream": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "sj5nTi8L-bU",
+      "title": "Carnival Dream - Full Walkthrough - Cruise Ship Tour - Carnival Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 462414,
+      "published": "2019-01-26",
+      "minutes": 14
+     },
+     {
+      "videoId": "1_kwuk-rOwY",
+      "title": "Carnival Dream Full Ship Walking Tour",
+      "channel": "Alli and Nate",
+      "views": 94736,
+      "published": "2019-10-10",
+      "minutes": 46
+     },
+     {
+      "videoId": "p1jBZS6uHr0",
+      "title": "Carnival Dream Ship Tour",
+      "channel": "The Narrow Gate",
+      "views": 77533,
+      "published": "2024-04-18",
       "minutes": 17
      }
     ],
-    "candidates": 2
+    "candidates": 17
    },
-   "Carnival Panorama": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Carnival Horizon": {
+   "Carnival Magic": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "iKRfeTFgEh8",
-      "title": "Carnival Horizon - Full Walkthrough - Cruise Ship Tour - Carnval Cruise Lines",
+      "videoId": "gYxJJ7SDn7g",
+      "title": "Carnival Magic | Cruise Ship Tour & Review | Fun Ship | 2020",
       "channel": "Cruises It ",
-      "views": 421118,
-      "published": "2018-11-17",
-      "minutes": 30
-     },
-     {
-      "videoId": "HWJjnAhrjAc",
-      "title": "Carnival Horizon: Virtual Tour (with audio description) | Carnival Cruise Line",
-      "channel": "Carnival Cruise Line",
-      "views": 390275,
-      "published": "2017-10-20",
+      "views": 259253,
+      "published": "2020-08-28",
       "minutes": 8
      },
      {
-      "videoId": "TBsCXGa0bbY",
-      "title": "CARNIVAL HORIZON FULL SHIP TOUR 2022 | ULTIMATE CRUISE SHIP TOUR OF PUBLIC AREAS | THE CRUISE WORLD",
+      "videoId": "cbwd0g60q9M",
+      "title": "Carnival Magic | Full Walkthrough Ship Tour & Review | Ultra Views 4k | Carnival Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 197241,
+      "published": "2023-07-16",
+      "minutes": 15
+     },
+     {
+      "videoId": "GGDCzCfrIyU",
+      "title": "Explore the Carnival Magic! Full Walkthrough Cruise Ship Tour 2024",
       "channel": "The Cruise World",
-      "views": 336363,
-      "published": "2022-05-27",
-      "minutes": 16
+      "views": 132652,
+      "published": "2024-11-06",
+      "minutes": 15
      }
     ],
-    "candidates": 5
-   },
-   "Carnival Vista": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Carnival Breeze": {
-    "reviews": [],
-    "candidates": 1
-   },
-   "Carnival Dream": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Carnival Magic": {
-    "reviews": [],
-    "candidates": 1
+    "candidates": 20
    },
    "Carnival Sunshine": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "zsBbPz7TK7E",
+      "title": "Carnival Sunshine Full Ship Tour - Ultimate Cruise Ship Tour",
+      "channel": "Let's Go See It",
+      "views": 166912,
+      "published": "2024-01-04",
+      "minutes": 29
+     },
+     {
+      "videoId": "3hszWZiRDeQ",
+      "title": "New Carnival Sunshine Full Ship Tour Deck By Deck - Ultimate Cruise Ship Tour 2023\ud83d\udea2 \u2693\ufe0f \ud83d\udef3",
+      "channel": "Gulf Coast Girl",
+      "views": 132672,
+      "published": "2023-01-06",
+      "minutes": 10
+     },
+     {
+      "videoId": "pmCW1PspnPU",
+      "title": "We Went On Carnival Sunshine Again! Here\u2019s Why",
+      "channel": "LifeWithUsTV",
+      "views": 60592,
+      "published": "2026-03-10",
+      "minutes": 46
+     }
+    ],
+    "candidates": 21
    },
    "Carnival Sunrise": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "31TiImqs4Nw",
+      "title": "Carnival Sunrise | Cruise Ship Tour & Review| $200 Million Renovation - Review",
+      "channel": "Cruises It ",
+      "views": 213174,
+      "published": "2020-08-23",
+      "minutes": 9
+     },
+     {
+      "videoId": "Azuu6PQGPfI",
+      "title": "Carnival Sunrise Ship Tour 2024",
+      "channel": "Dreamverse Travel",
+      "views": 49064,
+      "published": "2024-08-15",
+      "minutes": 40
+     },
+     {
+      "videoId": "xHDNGSW7xK0",
+      "title": "Carnival Sunrise | Full Ship Tour",
+      "channel": "Carnival Cruise Addicts",
+      "views": 36237,
+      "published": "2024-11-07",
+      "minutes": 29
+     }
+    ],
+    "candidates": 16
    },
    "Carnival Radiance": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "CsYqmPAM63k",
+      "title": "Carnival Radiance 2023 Deck Tour | Cruise Ship Walkthrough",
+      "channel": "Cruise News Today",
+      "views": 209647,
+      "published": "2022-11-02",
+      "minutes": 13
+     },
+     {
+      "videoId": "3Qv9ic-4RkU",
+      "title": "Carnival Radiance Review | 4-Night Long Beach Sailing to Catalina and Ensenada!",
+      "channel": "Jackson Jetsetting",
+      "views": 185048,
+      "published": "2022-05-17",
+      "minutes": 18
+     },
+     {
+      "videoId": "PHwOP218_F4",
+      "title": "Carnival Radiance Review (2025) | 3-Day Memorial Day Cruise from Long Beach with Kids",
+      "channel": "The Adventure Buddies",
+      "views": 36786,
+      "published": "2025-06-21",
+      "minutes": 11
+     }
+    ],
+    "candidates": 19
    },
    "Carnival Splendor": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "cZlb-jmuqNk",
+      "title": "CARNIVAL SPLENDOR | FULL SHIP TOUR",
+      "channel": "Adrian The Cruise and Travel Guy",
+      "views": 194473,
+      "published": "2020-02-27",
+      "minutes": 25
+     },
+     {
+      "videoId": "mFZpx8O6VaM",
+      "title": "Carnival Splendor Ultimate Tour (2023)",
+      "channel": "Goodship Cruising",
+      "views": 108711,
+      "published": "2023-08-21",
+      "minutes": 14
+     },
+     {
+      "videoId": "G33Qod-l6So",
+      "title": "Carnival Splendor Cruise Review: Our honest opinion on this Aussie Favourite",
+      "channel": "The Bag Drop",
+      "views": 91986,
+      "published": "2024-07-14",
+      "minutes": 28
+     }
+    ],
+    "candidates": 21
    },
    "Carnival Glory": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "tJISFIsJLUQ",
+      "title": "Carnival Glory Cruise Review 2025 | How Did My 3-Night Sailing Go?",
+      "channel": "Jackson Jetsetting",
+      "views": 68761,
+      "published": "2024-12-06",
+      "minutes": 10
+     },
+     {
+      "videoId": "o3CB0YtJGOw",
+      "title": "Carnival Glory 2026 Our Honest Review",
+      "channel": "The Royalty Adventure",
+      "views": 46168,
+      "published": "2025-02-14",
+      "minutes": 25
+     },
+     {
+      "videoId": "ezO115YTRwU",
+      "title": "Carnival Glory Full Ship Tour - Refurbed in 2024! Now Sails from Orlando.",
+      "channel": "Adventures On The Go",
+      "views": 35501,
+      "published": "2025-09-02",
+      "minutes": 17
+     }
+    ],
+    "candidates": 18
    },
    "Carnival Valor": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "BSp9Q0FAzlE",
+      "title": "New Carnival Valor Full Ship Tour Deck by Deck - Ultimate Cruise Ship Tour",
+      "channel": "Gulf Coast Girl",
+      "views": 190310,
+      "published": "2023-02-01",
+      "minutes": 15
+     },
+     {
+      "videoId": "OBPOrUkvPjk",
+      "title": "I tried the CHEAPEST Carnival Cruise I could find (Only $33 per Day) Carnival Valor",
+      "channel": "Midships",
+      "views": 153638,
+      "published": "2025-01-19",
+      "minutes": 18
+     },
+     {
+      "videoId": "YJbbI4qEYbI",
+      "title": "Carnival Valor Cruise Ship Full Tour & Review 2026 (Popular Carnival Cruise Ship)",
+      "channel": "JJ Cruise",
+      "views": 111325,
+      "published": "2023-02-15",
+      "minutes": 28
+     }
+    ],
+    "candidates": 18
    },
    "Carnival Conquest": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "KUl8dmrnAZ8",
+      "title": "New Carnival Conquest Full Ship Tour Deck By Deck - Ultimate Cruise Ship Tour \ud83d\udea2 \u2693\ufe0f \ud83d\udef3",
+      "channel": "Gulf Coast Girl",
+      "views": 253603,
+      "published": "2022-11-21",
+      "minutes": 17
+     },
+     {
+      "videoId": "8PDNP36x4dY",
+      "title": "Carnival Conquest Full Tour 2025 | Weekend Cruises From Miami",
+      "channel": "Jackson Jetsetting",
+      "views": 152184,
+      "published": "2024-02-23",
+      "minutes": 22
+     },
+     {
+      "videoId": "btvtcTNqxvk",
+      "title": "Carnival Conquest Our Honest Review",
+      "channel": "The Royalty Adventure",
+      "views": 30941,
+      "published": "2024-07-17",
+      "minutes": 27
+     }
+    ],
+    "candidates": 20
    },
    "Carnival Freedom": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "hrwCGmLBVF4",
+      "title": "Carnival Freedom Full Ship Tour | Bonus Tips & Secrets",
+      "channel": "Boat Breakers",
+      "views": 244401,
+      "published": "2022-10-06",
+      "minutes": 14
+     },
+     {
+      "videoId": "zhJbe_mlhRE",
+      "title": "Carnival Freedom Ship Tour",
+      "channel": "La Lido Loca",
+      "views": 78645,
+      "published": "2025-09-27",
+      "minutes": 29
+     },
+     {
+      "videoId": "BmKfs-XZN4Q",
+      "title": "Carnival Freedom Is The Best Ship EVER",
+      "channel": "Boat Breakers",
+      "views": 61726,
+      "published": "2024-09-12",
+      "minutes": 10
+     }
+    ],
+    "candidates": 20
    },
    "Carnival Liberty": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "04vN_T8Iv-I",
+      "title": "Carnival Liberty Tour and Review",
+      "channel": "Cruise News Today",
+      "views": 219484,
+      "published": "2018-09-13",
+      "minutes": 22
+     },
+     {
+      "videoId": "diT9w4sGTHI",
+      "title": "Carnival Liberty - Cruise Ship Tour & Review- Carnival Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 160752,
+      "published": "2020-08-18",
+      "minutes": 8
+     },
+     {
+      "videoId": "qTNeHNXHDI4",
+      "title": "Carnival Liberty | Full Walkthrough Ship Tour & Review |",
+      "channel": "Cruises It ",
+      "views": 146857,
+      "published": "2024-02-12",
+      "minutes": 17
+     }
+    ],
+    "candidates": 19
    },
    "Carnival Miracle": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "84Epdsld87w",
+      "title": "Carnival Miracle Full Ship Tour and Walk Through",
+      "channel": "Cruise News Today",
+      "views": 177664,
+      "published": "2019-04-21",
+      "minutes": 16
+     },
+     {
+      "videoId": "_XIQbOqguIQ",
+      "title": "Carnival Miracle Full Tour 2025 | Small But Mighty Cruise Ship!",
+      "channel": "Jackson Jetsetting",
+      "views": 91434,
+      "published": "2024-03-15",
+      "minutes": 27
+     },
+     {
+      "videoId": "vrRSSMXItYw",
+      "title": "I Cruised on Carnival Miracle\u2026 and It Was DISGUSTING!",
+      "channel": "Sail Away Magazine",
+      "views": 72041,
+      "published": "2025-05-25",
+      "minutes": 37
+     }
+    ],
+    "candidates": 21
    },
    "Carnival Pride": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "Xe6RDsbftpM",
+      "title": "Carnival Pride Ship Tour Guide",
+      "channel": "Cruise News Today",
+      "views": 153720,
+      "published": "2020-01-11",
+      "minutes": 15
+     },
+     {
+      "videoId": "Mdr5u6ABto0",
+      "title": "Carnival Pride Ship Tour | $375 Million Cruise Ship",
+      "channel": "La Lido Loca",
+      "views": 102109,
+      "published": "2024-04-21",
+      "minutes": 45
+     },
+     {
+      "videoId": "Agp3h1qBRWs",
+      "title": "Carnival Pride (Newly Renovated) Full Cruise Ship Tour 2023",
+      "channel": "Zach the Traveling Man",
+      "views": 75796,
+      "published": "2023-09-03",
+      "minutes": 33
+     }
+    ],
+    "candidates": 24
    },
    "Carnival Legend": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "joPU5GXRpIQ",
+      "title": "Carnival Legend Full Ship Tour | Bonus Tips & Secrets",
+      "channel": "Boat Breakers",
+      "views": 128978,
+      "published": "2022-07-14",
+      "minutes": 11
+     },
+     {
+      "videoId": "RoOhzyZ7yoM",
+      "title": "CARNIVAL LEGEND ULTIMATE SHIP TOUR 2025 \u201cPOST REFIT\u201d",
+      "channel": "Cruising with the 4bs",
+      "views": 57129,
+      "published": "2024-06-30",
+      "minutes": 22
+     },
+     {
+      "videoId": "_IsAIYxRu5Q",
+      "title": "Ultimate CARNIVAL LEGEND Ship Tour - 4K HD - Newly Remodeled!",
+      "channel": "Embrace Today",
+      "views": 41485,
+      "published": "2025-06-05",
+      "minutes": 59
+     }
+    ],
+    "candidates": 20
    },
    "Carnival Spirit": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "i-4PL_wR_Wo",
+      "title": "Carnival Spirit Full Ship Tour and Walkthrough",
+      "channel": "Cruise News Today",
+      "views": 183147,
+      "published": "2023-03-21",
+      "minutes": 11
+     },
+     {
+      "videoId": "qvY6ZOjsYRk",
+      "title": "Carnival Spirit | Full Walkthrough Ship Tour | 4k 2024 New Video| Fully Renovated",
+      "channel": "Cruises It ",
+      "views": 56344,
+      "published": "2024-06-07",
+      "minutes": 14
+     },
+     {
+      "videoId": "Pwqh8VjKFdU",
+      "title": "Honest Review Of The Carnival Spirit: Worth Your Money?",
+      "channel": "Sea Trippin' w/ Kim and Scott",
+      "views": 33536,
+      "published": "2025-02-16",
+      "minutes": 27
+     }
+    ],
+    "candidates": 12
    },
    "Carnival Luminosa": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "rwV2kkwiEew",
+      "title": "Carnival Luminosa Full Ship Tour: Is Carnival\u2019s Italian Cruise Ship their best?",
+      "channel": "Chris Frame the Maritime Historian",
+      "views": 71601,
+      "published": "2025-01-22",
+      "minutes": 14
+     },
+     {
+      "videoId": "k_28UmFkym0",
+      "title": "LUMINOSA *ULTIMATE* REVIEW: The GOOD and the BAD about Cruising Onboard the Carnival Luminosa",
+      "channel": "Adrian The Cruise and Travel Guy",
+      "views": 65465,
+      "published": "2023-02-09",
+      "minutes": 19
+     },
+     {
+      "videoId": "K6v5bMOukm0",
+      "title": "15 Unique Features of the Carnival Luminosa that Will Make Your Cruise So. Much. BETTER!",
+      "channel": "Embrace Today",
+      "views": 29633,
+      "published": "2025-10-27",
+      "minutes": 21
+     }
+    ],
+    "candidates": 17
    },
    "Carnival Elation": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "f4j40vsPDgc",
+      "title": "Carnival Elation | Ultimate Cruise Ship Tour",
+      "channel": "Talking Cruise",
+      "views": 206065,
+      "published": "2021-04-28",
+      "minutes": 10
+     },
+     {
+      "videoId": "M3NCBgMJpiY",
+      "title": "2026 Carnival Elation Full Ship Tour | Carnival Cruise Line's Smallest Ship",
+      "channel": "Jackson Jetsetting",
+      "views": 45198,
+      "published": "2025-09-25",
+      "minutes": 23
+     },
+     {
+      "videoId": "pJucJonYjFc",
+      "title": "FULL SHIP Walkthrough Tour | Carnival Elation May 2025",
+      "channel": "Sharon at Sea Travel",
+      "views": 42946,
+      "published": "2025-05-09",
+      "minutes": 29
+     }
+    ],
+    "candidates": 17
    },
    "Carnival Paradise": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "yLvk2-rR_Ik",
+      "title": "I tried the CHEAPEST Carnival Cruise I could find: Here's What Happened: Carnival Paradise",
+      "channel": "Midships",
+      "views": 269524,
+      "published": "2024-09-16",
+      "minutes": 20
+     },
+     {
+      "videoId": "dkeos1gMUYs",
+      "title": "Carnival Paradise | Full Walkthrough Ship Tour & Review | New Tour 2023 | Ship Renovated | Tampa",
+      "channel": "Cruises It ",
+      "views": 190771,
+      "published": "2023-05-15",
+      "minutes": 11
+     },
+     {
+      "videoId": "vFmQsy08W1g",
+      "title": "CARNIVAL PARADISE | The Ultimate Cruise Ship Tour",
+      "channel": "Explorcation",
+      "views": 123586,
+      "published": "2024-06-08",
+      "minutes": 21
+     }
+    ],
+    "candidates": 18
    },
    "Carnival Adventure": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "L-dxOe2FpHE",
+      "title": "CARNIVAL ADVENTURE: A Confusing Cruise Experience",
+      "channel": "Adrian The Cruise and Travel Guy",
+      "views": 96847,
+      "published": "2025-04-30",
+      "minutes": 24
+     },
+     {
+      "videoId": "L18Zah6fymY",
+      "title": "CARNIVAL ADVENTURE - Full HD Ship Tour of \u201cNEW\u201d Carnival Cruise Ship",
+      "channel": "Chris Frame the Maritime Historian",
+      "views": 70341,
+      "published": "2025-03-28",
+      "minutes": 17
+     },
+     {
+      "videoId": "c3_VBCjHnYU",
+      "title": "Carnival Adventure Cruise Ship Tour!",
+      "channel": "Cruise Crazed Fam",
+      "views": 52612,
+      "published": "2025-04-06",
+      "minutes": 37
+     }
+    ],
+    "candidates": 19
    },
    "Carnival Encounter": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "P7SWTXu71UU",
+      "title": "CARNIVAL ENCOUNTER - Full HD Ship Tour of LATEST Carnival Cruise Ship",
+      "channel": "Chris Frame the Maritime Historian",
+      "views": 74795,
+      "published": "2025-04-01",
+      "minutes": 9
+     },
+     {
+      "videoId": "NtxxTs5DJYQ",
+      "title": "32 Tips & Things to Know Before a Carnival Encounter Cruise from Brisbane (Previously P&O Pacific)",
+      "channel": "Aquarius Traveller",
+      "views": 64821,
+      "published": "2024-12-28",
+      "minutes": 34
+     },
+     {
+      "videoId": "UYb4xfEc1FQ",
+      "title": "FULL SHIP TOUR | Carnival Encounter",
+      "channel": "The Aussie Globetrotter",
+      "views": 41911,
+      "published": "2025-06-29",
+      "minutes": 15
+     }
+    ],
+    "candidates": 17
    }
   },
   "MSC Cruises": {
    "MSC World America": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "m_kns6syz30",
-      "title": "MSC World America Cruise Ship 2025 | Sailing from Miami to Ocean Cay Island Bahamas (4K Tour & Vlog)",
-      "channel": "ST Travel",
-      "views": 3162501,
-      "published": "2025-05-02",
-      "minutes": 86
+      "videoId": "exmp4eomcdY",
+      "title": "MSC World America FULL Ship Tour 2025 | Complete Walkthrough of the Newest Cruise Mega-Ship!",
+      "channel": "The Cruise World",
+      "views": 316520,
+      "published": "2025-04-19",
+      "minutes": 24
      },
      {
-      "videoId": "5nneoSxAipU",
-      "title": "MSC World America Cruise Ship Full Tour | MSC Cruises' Newest and Largest Ship (4K Video)",
-      "channel": "ST Travel",
-      "views": 2820248,
-      "published": "2025-05-09",
-      "minutes": 82
+      "videoId": "jYhP1Vn1280",
+      "title": "Ship Tour of MSC World America | MSC Cruises",
+      "channel": "MSC Cruises Official",
+      "views": 174552,
+      "published": "2025-06-11",
+      "minutes": 9
      },
      {
-      "videoId": "dfi-3YghqC4",
-      "title": "MSC World America FULL Ship Tour 2025 | Complete Walkthrough of the Newest and Largest Cruise Ship!",
-      "channel": "Cruise Passion",
-      "views": 932653,
-      "published": "2025-05-23",
-      "minutes": 21
+      "videoId": "4dNVYNRA8fs",
+      "title": "Is MSC World America the Best New Cruise Ship for 2025?",
+      "channel": "Life Well Cruised",
+      "views": 138414,
+      "published": "2025-04-30",
+      "minutes": 20
      }
     ],
-    "candidates": 5
+    "candidates": 21
    },
    "MSC World Europa": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "aLSAf3PYfek",
-      "title": "MSC World Europa Cruise Ship Tour in 4K | MSC Cruises' Largest Ship | Travel Vlog",
-      "channel": "ST Travel",
-      "views": 3307305,
-      "published": "2024-12-20",
-      "minutes": 92
+      "videoId": "TCMrp6zp6MM",
+      "title": "MSC WORLD EUROPA - Complete Tour 2024 - 4k - MSC Cruises",
+      "channel": "Cruise Voyages",
+      "views": 435521,
+      "published": "2024-06-08",
+      "minutes": 25
      },
      {
-      "videoId": "AswYFoy1EIk",
-      "title": "MSC World Europa Cruise 2024",
-      "channel": "Cruise Passion",
-      "views": 2433627,
-      "published": "2023-04-28",
-      "minutes": 50
+      "videoId": "z6_KTYQqGv8",
+      "title": "MSC World Europa Full Cruise Ship Tour!",
+      "channel": "Cruise Blog",
+      "views": 167776,
+      "published": "2023-07-08",
+      "minutes": 44
+     },
+     {
+      "videoId": "_5hVJ8irJMM",
+      "title": "Why MSC World Europa Surprised Me! Full Ship Tour & Honest Review",
+      "channel": "Cruising As Crew",
+      "views": 89057,
+      "published": "2024-07-21",
+      "minutes": 19
      }
     ],
-    "candidates": 2
+    "candidates": 17
    },
    "MSC Euribia": {
+    "v": 2,
     "reviews": [
      {
       "videoId": "EYchg1UVdTI",
       "title": "MSC EURIBIA - Ship Visit",
       "channel": "MSC Cruises Official",
-      "views": 425415,
+      "views": 425821,
       "published": "2023-08-07",
       "minutes": 8
+     },
+     {
+      "videoId": "RF6bqeKUZBo",
+      "title": "MSC Euribia - Ship Tour",
+      "channel": "MSC Cruises Official",
+      "views": 151754,
+      "published": "2024-02-14",
+      "minutes": 15
+     },
+     {
+      "videoId": "PNqMtx2HRKg",
+      "title": "MSC Euribia | Middle East 7 Nights Cruise | Dec 2024 | 4K | CC",
+      "channel": "Lili & Geo Travel Diaries",
+      "views": 75916,
+      "published": "2024-12-24",
+      "minutes": 27
      }
     ],
-    "candidates": 1
+    "candidates": 19
    },
    "MSC Seascape": {
+    "v": 2,
     "reviews": [
      {
       "videoId": "jNE6bv-TAEk",
       "title": "MSC Seascape Cruise Ship Tour 4K",
       "channel": "Cruise Passion",
-      "views": 9710963,
+      "views": 9714313,
       "published": "2023-06-02",
       "minutes": 33
      },
      {
-      "videoId": "4E7Nhw_DSlY",
-      "title": "Como \u00e9 fazer um cruzeiro pelo Caribe a bordo do MSC Seascape",
-      "channel": "Melhores Destinos",
-      "views": 1415893,
+      "videoId": "q4Vcsw4m7BA",
+      "title": "MSC Seascape | Full Walkthrough Ship Tour & Review | All Spaces | Galveston,Texas",
+      "channel": "Cruises It ",
+      "views": 316322,
       "published": "2024-09-15",
-      "minutes": 39
+      "minutes": 23
+     },
+     {
+      "videoId": "2hhiatVaXok",
+      "title": "Our First MSC Cruise Was NOT What We Expected. Here's Why [MSC Seascape Review]",
+      "channel": "Life Well Cruised",
+      "views": 304164,
+      "published": "2024-04-21",
+      "minutes": 31
      }
     ],
-    "candidates": 2
+    "candidates": 18
    },
    "MSC Seashore": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "zKdJPG4yjxE",
-      "title": "MSC Seashore Cruise 2021",
-      "channel": "Cruise Passion",
-      "views": 3563694,
-      "published": "2021-08-13",
-      "minutes": 17
+      "videoId": "tYbdjRRiPVM",
+      "title": "MSC SEASHORE | The Ultimate Cruise Ship Tour",
+      "channel": "Explorcation",
+      "views": 327198,
+      "published": "2024-03-16",
+      "minutes": 25
      },
      {
-      "videoId": "ZPrR3UAoOcM",
-      "title": "MSC SEASHORE FULL SHIP TOUR 2022 | ULTIMATE CRUISE SHIP TOUR OF PUBLIC AREAS | THE CRUISE WORLD",
-      "channel": "The Cruise World",
-      "views": 507060,
-      "published": "2022-02-24",
-      "minutes": 20
+      "videoId": "Fr0g2I8Q02M",
+      "title": "MSC Seashore Ship Tour | A Guided Walk Around a $900 Million Cruise Ship",
+      "channel": "La Lido Loca",
+      "views": 129962,
+      "published": "2024-01-09",
+      "minutes": 50
      },
      {
-      "videoId": "21u8pLS8Sco",
-      "title": "MSC Seashore 10 Different Cabins Tour",
-      "channel": "Cruise Passion",
-      "views": 428258,
-      "published": "2021-08-28",
-      "minutes": 8
+      "videoId": "rfJJFJ1_kI8",
+      "title": "Msc Seashore | Full Walkthrough Tour & Review | All Public Areas and Yacht Club | 4K Ultra",
+      "channel": "Cruises It ",
+      "views": 118812,
+      "published": "2025-02-06",
+      "minutes": 16
      }
     ],
-    "candidates": 4
+    "candidates": 22
    },
    "MSC Seaview": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "oA1VrK0UMJg",
-      "title": "MSC Seaview complete cruise ship tour 4K",
+      "videoId": "uqwidWvNxTc",
+      "title": "MSC Seaview - Ship Visit",
+      "channel": "MSC Cruises Official",
+      "views": 1073964,
+      "published": "2018-09-28",
+      "minutes": 8
+     },
+     {
+      "videoId": "duF9ymPZAY4",
+      "title": "MSC Seaview Cruise 2024 Update | Yacht Club Tour",
       "channel": "Cruise Passion",
-      "views": 7264458,
-      "published": "2018-06-24",
-      "minutes": 33
+      "views": 875896,
+      "published": "2024-07-26",
+      "minutes": 39
+     },
+     {
+      "videoId": "pWim-nKXH_g",
+      "title": "MSC Seaview Cruise Ship Tour",
+      "channel": "Cruise With Ben and David",
+      "views": 185372,
+      "published": "2018-11-25",
+      "minutes": 16
      }
     ],
-    "candidates": 1
+    "candidates": 15
    },
    "MSC Seaside": {
+    "v": 2,
     "reviews": [
-     {
-      "videoId": "zGYvcV3rKI4",
-      "title": "MSC Seaside Ship Tour | Honest Review",
-      "channel": "Cruise Passion",
-      "views": 1926738,
-      "published": "2021-05-09",
-      "minutes": 17
-     },
      {
       "videoId": "N7dnxlPXudU",
       "title": "MSC Seaside - Ship Visit",
       "channel": "MSC Cruises Official",
-      "views": 1781186,
+      "views": 1781573,
       "published": "2018-04-20",
       "minutes": 9
-     }
-    ],
-    "candidates": 2
-   },
-   "MSC Virtuosa": {
-    "reviews": [
-     {
-      "videoId": "_G6apNEbO4o",
-      "title": "MSC Virtuosa Cruise Ship Tour 4K",
-      "channel": "Cruise Passion",
-      "views": 495303,
-      "published": "2021-11-05",
-      "minutes": 21
-     }
-    ],
-    "candidates": 1
-   },
-   "MSC Grandiosa": {
-    "reviews": [
-     {
-      "videoId": "RTyG9Qt9BoQ",
-      "title": "MSC Grandiosa Cruise in 2021",
-      "channel": "Cruise Passion",
-      "views": 6429439,
-      "published": "2021-03-19",
-      "minutes": 17
-     }
-    ],
-    "candidates": 1
-   },
-   "MSC Bellissima": {
-    "reviews": [
-     {
-      "videoId": "oL59585aFlM",
-      "title": "6600\u5143\u642d\u90f5\u8f2a\u662f\u4ec0\u9ebc\u9ad4\u9a57\uff1fMSC Bellissima \u69ae\u8000\u865f \u4e94\u5929\u56db\u591c\u6c96\u7e69\u4e4b\u65c5",
-      "channel": "\u5c0f\u5925\u4f34\u65e5\u5e38 Cruise Travel",
-      "views": 668927,
-      "published": "2025-01-16",
-      "minutes": 65
      },
      {
-      "videoId": "yrJDeq2SINA",
-      "title": "7 Day Mediterranean Cruise - FULL EXPERIENCE | MSC Bellissima: Our HONEST REVIEW!",
-      "channel": "Adventures of Matt and Nat",
-      "views": 622584,
-      "published": "2023-05-14",
-      "minutes": 71
+      "videoId": "8HwU8rlkquY",
+      "title": "Msc SeaSide | Full Walkthrough Ship Tour & Review | Ultra HD Video | All Public Areas",
+      "channel": "Cruises It ",
+      "views": 196330,
+      "published": "2024-09-07",
+      "minutes": 17
+     },
+     {
+      "videoId": "rKIhVBqMHoY",
+      "title": "MSC SEASIDE | The Ultimate Cruise Ship Tour",
+      "channel": "Explorcation",
+      "views": 135100,
+      "published": "2023-06-24",
+      "minutes": 31
      }
     ],
-    "candidates": 2
+    "candidates": 19
+   },
+   "MSC Virtuosa": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "1vRmHfjI4Ew",
+      "title": "MSC Cruises | MSC Virtuosa FULL Ship Tour 2023",
+      "channel": "Sail Away Magazine",
+      "views": 300561,
+      "published": "2022-11-20",
+      "minutes": 18
+     },
+     {
+      "videoId": "fwgFtrHPSJc",
+      "title": "MSC Virtuosa Cruise Ship Tour and NEW Boarding Process",
+      "channel": "Cruise With Ben and David",
+      "views": 259307,
+      "published": "2021-05-23",
+      "minutes": 24
+     },
+     {
+      "videoId": "TgZucltf46U",
+      "title": "MSC Cruises | MSC Virtuosa | Full Ship Tour",
+      "channel": "Fraser at Sea",
+      "views": 79228,
+      "published": "2024-05-02",
+      "minutes": 30
+     }
+    ],
+    "candidates": 18
+   },
+   "MSC Grandiosa": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "UsxQk5D89H4",
+      "title": "MSC Grandiosa Full Ship Tour - Complete Cruise Ship Guide! | MSC Cruises \ud83d\udea2",
+      "channel": "The Curious Tourists \ud83c\udf0d",
+      "views": 238273,
+      "published": "2024-08-28",
+      "minutes": 11
+     },
+     {
+      "videoId": "V9D39Vy325o",
+      "title": "MSC Grandiosa Cruise Ship Tour in 4k UHD",
+      "channel": "Cruise With Ben and David",
+      "views": 199734,
+      "published": "2019-11-21",
+      "minutes": 16
+     },
+     {
+      "videoId": "80w1puJYLdA",
+      "title": "7 Night Cruise to Spain, Italy & France! | MSC Grandiosa Full Ship Tour (his first cruise ever!)",
+      "channel": "Our Story to Tell",
+      "views": 198597,
+      "published": "2022-11-06",
+      "minutes": 11
+     }
+    ],
+    "candidates": 18
+   },
+   "MSC Bellissima": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "Uw5ZfaDnnzw",
+      "title": "8 Days on MSC Bellissima, Largest Cruise Ship in Japan | Tokyo - Osaka - Jeju Island Travel Vlog",
+      "channel": "ST Travel",
+      "views": 291771,
+      "published": "2025-11-14",
+      "minutes": 102
+     },
+     {
+      "videoId": "SQpzYjVSwRo",
+      "title": "7 Days on Japan's Most Luxurious Cruise Ship | MSC Bellissima",
+      "channel": "Wanderlust Alley",
+      "views": 215853,
+      "published": "2025-06-23",
+      "minutes": 69
+     },
+     {
+      "videoId": "-eezjm2adfg",
+      "title": "Japan to Taiwan by Luxury Cruise Ship | MSC Bellissima",
+      "channel": "Wanderlust Alley",
+      "views": 77816,
+      "published": "2025-05-31",
+      "minutes": 25
+     }
+    ],
+    "candidates": 17
    },
    "MSC Meraviglia": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "uepuI3ki67k",
-      "title": "MSC Meraviglia Live Tour New Year's Eve Cruise 2018 @CruisesAndTravels",
-      "channel": "Cruises and Travels Blog",
-      "views": 1297507,
-      "published": "2018-01-22",
-      "minutes": 72
+      "videoId": "xTIbY969lW4",
+      "title": "MSC Meraviglia Cruise Ship Tour and review",
+      "channel": "Cruise With Ben and David",
+      "views": 249019,
+      "published": "2018-02-12",
+      "minutes": 18
+     },
+     {
+      "videoId": "LDCHbaE5UX4",
+      "title": "MSC MERAVIGLIA | Ultimate Cruise Ship Tour ( + Bonus Private Island Tour)",
+      "channel": "Explorcation",
+      "views": 206444,
+      "published": "2023-02-25",
+      "minutes": 32
+     },
+     {
+      "videoId": "-2bNT_J4tmE",
+      "title": "Msc Meraviglia | Full Walkthrough Tour & Review | All Public Areas | 4K Ultra",
+      "channel": "Cruises It ",
+      "views": 198848,
+      "published": "2025-02-07",
+      "minutes": 19
      }
     ],
-    "candidates": 1
+    "candidates": 15
    },
    "MSC Preziosa": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "vL-o1_W9Alc",
-      "title": "[ITA] MSC PREZIOSA - Visita dietro le quinte - The Boat Show",
-      "channel": "THE BOAT SHOW",
-      "views": 1714294,
-      "published": "2013-05-23",
+      "videoId": "H-HZK6_i0ww",
+      "title": "Ship Tour of MSC Preziosa | MSC Cruises",
+      "channel": "MSC Cruises Official",
+      "views": 128732,
+      "published": "2024-12-17",
+      "minutes": 8
+     },
+     {
+      "videoId": "vbca1X9Rux0",
+      "title": "1 Week onboard MSC Preziosa Cruising Northern Europe",
+      "channel": "Travel Blog Jamie",
+      "views": 62504,
+      "published": "2024-11-02",
+      "minutes": 46
+     },
+     {
+      "videoId": "wm9w_h_uDOY",
+      "title": "\u00a3100 Cruise?! Southampton to Germany on MSC Preziosa! Budget Luxury Travel Guide",
+      "channel": "Mr Carrington",
+      "views": 57925,
+      "published": "2025-04-02",
+      "minutes": 65
+     }
+    ],
+    "candidates": 18
+   },
+   "MSC Divina": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "3YgYdDb45t4",
+      "title": "Ship Tour of MSC Divina | MSC Cruises",
+      "channel": "MSC Cruises Official",
+      "views": 181055,
+      "published": "2025-01-29",
+      "minutes": 8
+     },
+     {
+      "videoId": "v65tT1WJlhI",
+      "title": "Full Ship Tour of the MSC Divina in 4K! With MSC Divina Cruise Advice You Should Know!",
+      "channel": "The Weekend Cruiser",
+      "views": 96072,
+      "published": "2022-11-03",
+      "minutes": 37
+     },
+     {
+      "videoId": "4KCwvuIZFHE",
+      "title": "I took a 72-hr $250 Budget Cruise | MSC DIVINA HONEST REVIEW ",
+      "channel": "The Shiplife",
+      "views": 63259,
+      "published": "2025-12-04",
+      "minutes": 23
+     }
+    ],
+    "candidates": 21
+   },
+   "MSC Splendida": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "0ZZPMw0kSmc",
+      "title": "Ship Tour of MSC Splendida | MSC Cruises",
+      "channel": "MSC Cruises Official",
+      "views": 95735,
+      "published": "2025-02-12",
+      "minutes": 8
+     },
+     {
+      "videoId": "U7ItaJ3U3hk",
+      "title": "Msc Splendida\u2757 Cruise Ship Tour & Review in 2022",
+      "channel": "Luxury Cruises",
+      "views": 53166,
+      "published": "2021-07-12",
+      "minutes": 9
+     },
+     {
+      "videoId": "88lIB98avBw",
+      "title": "MSC Splendida 2025 Full Ship Tour Plus Tips Tricks & Honest Review of MSC Cruises Port Citiavecchia",
+      "channel": "T5 The Traveler",
+      "views": 20630,
+      "published": "2025-05-31",
+      "minutes": 34
+     }
+    ],
+    "candidates": 16
+   },
+   "MSC Fantasia": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "Y8HDJXFIsu0",
+      "title": "MSC FANTASIA- Complete Tour 2025 - 4k - MSC Cruises",
+      "channel": "Cruise Voyages",
+      "views": 62049,
+      "published": "2025-03-21",
+      "minutes": 21
+     },
+     {
+      "videoId": "TUt2k4qZPWA",
+      "title": "MSC Fantasia Ship Tour | 16 Years Old \u2013 Still Stunning or Showing Its Age?",
+      "channel": "Travel with Jonny and Will",
+      "views": 12792,
+      "published": "2025-02-28",
       "minutes": 13
      },
      {
-      "videoId": "piW2mO0-67Q",
-      "title": "MSC Preziosa - Ship Visit (Full version)",
-      "channel": "MSC Cruises Official",
-      "views": 340200,
-      "published": "2013-07-08",
-      "minutes": 9
-     },
-     {
-      "videoId": "lnmXyHhQ56s",
-      "title": "MSC PREZIOSA - TUDO O QUE VOC\u00ca PRECISA SABER (com pre\u00e7os)",
-      "channel": "Casal Alencar",
-      "views": 273772,
-      "published": "2025-12-11",
-      "minutes": 58
+      "videoId": "rpmoE5cnhqU",
+      "title": "Full Walking Tour of MSC Fantasia Cruiseship | Complete Onboard Experience \ud83d\udea2\u2728",
+      "channel": "DTN: Off the track",
+      "views": 8570,
+      "published": "2025-03-18",
+      "minutes": 30
      }
     ],
-    "candidates": 5
-   },
-   "MSC Divina": {
-    "reviews": [
-     {
-      "videoId": "S88gfJfWEjE",
-      "title": "MSC Divina Cruise Ship Video Tour and Review - Cruise Fever",
-      "channel": "Cruise Fever",
-      "views": 700218,
-      "published": "2013-12-16",
-      "minutes": 12
-     },
-     {
-      "videoId": "FoEcHdfsuRA",
-      "title": "MSC Divina Tour & MSC Divina Review ~ MSC Cruises ~ Cruise Ship Tour & Review",
-      "channel": "Jason and Heidi's PopularCruising",
-      "views": 208949,
-      "published": "2015-03-04",
-      "minutes": 12
-     }
-    ],
-    "candidates": 5
-   },
-   "MSC Splendida": {
-    "reviews": [
-     {
-      "videoId": "rYgX-jkyuGw",
-      "title": "Gigante NAVIO de CRUZEIRO chegando em ITAJA\u00cd - MSC SPLENDIDA",
-      "channel": "LEANDRO LS",
-      "views": 1655436,
-      "published": "2025-01-09",
-      "minutes": 9
-     },
-     {
-      "videoId": "LDv6armDhDM",
-      "title": "MIDDLE EAST CRUISE | MSC SPLENDIDA SHIP TOUR",
-      "channel": "Kara and Nate",
-      "views": 866653,
-      "published": "2018-02-06",
-      "minutes": 10
-     },
-     {
-      "videoId": "M_cwQ-nPCqs",
-      "title": "MSC Splendida Complete Video Tour 2016 (HD) @CruisesandTravelsBlog",
-      "channel": "Cruises and Travels Blog",
-      "views": 493294,
-      "published": "2016-12-05",
-      "minutes": 15
-     }
-    ],
-    "candidates": 3
-   },
-   "MSC Fantasia": {
-    "reviews": [
-     {
-      "videoId": "JGACsXl6vwU",
-      "title": "MSC Fantasia cruise ship 2019 4K",
-      "channel": "Cruise Passion",
-      "views": 561546,
-      "published": "2019-04-23",
-      "minutes": 20
-     },
-     {
-      "videoId": "7z_YpuFZxfc",
-      "title": "MSC Fantasia video Tour 2016 (HD) @CruisesandTravelsBlog",
-      "channel": "Cruises and Travels Blog",
-      "views": 421022,
-      "published": "2016-04-30",
-      "minutes": 15
-     }
-    ],
-    "candidates": 2
+    "candidates": 13
    },
    "MSC Magnifica": {
+    "v": 2,
     "reviews": [
      {
       "videoId": "VAmtB1IMbPI",
       "title": "119 Day Cruise AROUND THE WORLD | MSC Magnifica Full Ship Tour",
       "channel": "Kara and Nate",
-      "views": 1775664,
+      "views": 1775774,
       "published": "2019-02-26",
       "minutes": 8
      },
      {
-      "videoId": "Bm6QlDt2dpk",
-      "title": "MSC Magnifica video tour 2015 (HD)",
-      "channel": "Cruises and Travels Blog",
-      "views": 219503,
-      "published": "2015-08-11",
-      "minutes": 10
+      "videoId": "-8GfadVW4J8",
+      "title": "Msc Magnifica | Full Walkthrough Tour & Review | All Public Areas and Yacht Club | 4k Ultra",
+      "channel": "Cruises It ",
+      "views": 52187,
+      "published": "2025-02-09",
+      "minutes": 15
+     },
+     {
+      "videoId": "nxPnSvzt3Wc",
+      "title": "MSC Magnifica Ship Tour & Review with The Legend",
+      "channel": "In The Loop",
+      "views": 44837,
+      "published": "2024-01-20",
+      "minutes": 37
      }
     ],
-    "candidates": 2
+    "candidates": 17
    },
    "MSC Poesia": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "_oB0YOY6uOM",
-      "title": "\u041a\u0440\u0443\u0438\u0437 \u043d\u0430 \u0410\u043b\u044f\u0441\u043a\u0443 \u043d\u0430 \u0441\u0430\u043c\u043e\u043c \u043a\u0440\u0443\u0442\u043e\u043c \u043a\u0440\u0443\u0438\u0437\u043d\u043e\u043c \u043b\u0430\u0439\u043d\u0435\u0440\u0435 MSC Poesia",
-      "channel": "\u0421\u0432\u043e\u0438\u043c \u0425\u043e\u0434\u043e\u043c - \u0412\u0438\u0442\u0430\u043b\u0438\u043a \u0438 \u041b\u0438\u0437\u0430",
-      "views": 347053,
-      "published": "2026-06-27",
-      "minutes": 85
+      "videoId": "OFo--yTTVIk",
+      "title": "MSC Poesia Ship Tour Video and Review",
+      "channel": "Cruise Fever",
+      "views": 169131,
+      "published": "2011-11-28",
+      "minutes": 10
+     },
+     {
+      "videoId": "5cHm-80H7nM",
+      "title": "Our First Ever ALASKA CRUISE on MSC Poesia! - Was it Worth it??",
+      "channel": "The Endless Adventure",
+      "views": 130013,
+      "published": "2026-06-11",
+      "minutes": 23
+     },
+     {
+      "videoId": "hZFRPayADx4",
+      "title": "Balcony Cabin and Ship Tour on MSC Poesia | You Will Be EXTREMELY SURPRISED by What This Cruise Cost",
+      "channel": "The Seasoned Expats",
+      "views": 53671,
+      "published": "2024-03-16",
+      "minutes": 15
      }
     ],
-    "candidates": 1
+    "candidates": 20
    },
    "MSC Orchestra": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "HQV1P2b71jA",
-      "title": "MSC Orchestra cruise ship tour 4K",
-      "channel": "Cruise Passion",
-      "views": 298932,
-      "published": "2018-10-27",
+      "videoId": "aF5GKwEVW4w",
+      "title": "MSC ORCHESTRA 2025 \u2013 Cruise Ship Tour in 4K After Renovation",
+      "channel": "Cruise Voyages",
+      "views": 49068,
+      "published": "2025-06-06",
+      "minutes": 21
+     },
+     {
+      "videoId": "KoXK6OdN-iw",
+      "title": "8 Days, Spain, France, Italy: Is the MSC Orchestra Mediterranean Cruse Worth It?",
+      "channel": "Sanino Romano",
+      "views": 31602,
+      "published": "2026-02-21",
+      "minutes": 21
+     },
+     {
+      "videoId": "VwPABe9JMP0",
+      "title": "What You Can Eat on a Cruise! - MSC Orchestra - Full Buffet Tour in 4K",
+      "channel": "Cruise Voyages",
+      "views": 29784,
+      "published": "2025-05-02",
+      "minutes": 13
+     }
+    ],
+    "candidates": 13
+   },
+   "MSC Musica": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "F8ccIKyEN2k",
+      "title": "MSC MUSICA Cruise Ship Tour INSIDE & OUTSIDE in 4K UHD ( Ultra HD )",
+      "channel": "Travel millimud",
+      "views": 90347,
+      "published": "2017-08-26",
+      "minutes": 13
+     },
+     {
+      "videoId": "RY0ORMaitRw",
+      "title": "MSC Musica Cruise Ship Tour 2022 | Captain Leo",
+      "channel": "Captain Leo",
+      "views": 52784,
+      "published": "2022-04-23",
+      "minutes": 15
+     },
+     {
+      "videoId": "JBwnSVMCQ40",
+      "title": "4 Day Cruise On Board The MSC Musica From Durban To Portugese Island",
+      "channel": "Clinton Dean Travels",
+      "views": 17223,
+      "published": "2025-01-13",
       "minutes": 10
      }
     ],
-    "candidates": 1
-   },
-   "MSC Musica": {
-    "reviews": [
-     {
-      "videoId": "ZKlq945kasM",
-      "title": "MSC MUSICA  SHIP TOUR   incl cabins",
-      "channel": "BestCruiseTV",
-      "views": 379451,
-      "published": "2016-09-22",
-      "minutes": 17
-     }
-    ],
-    "candidates": 1
+    "candidates": 12
    },
    "MSC Opera": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "MSC Lirica": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "MSC Sinfonia": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "uqiiVWo_8fY",
-      "title": "\u041a\u0420\u0423\u0418\u0417 \u041f\u041e \u0415\u0412\u0420\u041e\u041f\u0415! MSC Sinfonia | \u0418\u0442\u0430\u043b\u0438\u044f, \u0411\u0440\u0438\u043d\u0434\u0438\u0437\u0438 | Cruise Ship Tour, Day 2",
-      "channel": "Liya Odesskaya",
-      "views": 301916,
-      "published": "2023-10-24",
-      "minutes": 22
+      "videoId": "vffkmNQ7lvY",
+      "title": "MSC OPERA - Complete Cruise Ship Tour 2024 - 4K",
+      "channel": "Cruise Voyages",
+      "views": 132156,
+      "published": "2024-01-05",
+      "minutes": 17
+     },
+     {
+      "videoId": "8EALMs_Jo18",
+      "title": "We Found The World\u2019s Most UNDERRATED Cruise! \ud83d\ude0d Exploring The CANARY ISLANDS on MSC Opera!",
+      "channel": "The Endless Adventure",
+      "views": 113569,
+      "published": "2025-01-10",
+      "minutes": 19
+     },
+     {
+      "videoId": "aSyti2poLAc",
+      "title": "MSC Opera Cruise Ship Tour - All You Need To Know",
+      "channel": "Vitalii Grytsenko",
+      "views": 31290,
+      "published": "2024-03-03",
+      "minutes": 19
      }
     ],
-    "candidates": 1
+    "candidates": 13
+   },
+   "MSC Lirica": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "8W8mm7MGIoQ",
+      "title": "MSC Lirica cruise ship tour 2023",
+      "channel": "Cruises and Travels Blog",
+      "views": 125883,
+      "published": "2023-01-20",
+      "minutes": 18
+     },
+     {
+      "videoId": "RgztI5JFj_8",
+      "title": "What\u2019s MSC Lirica Like Inside?\u2693\ufe0f Full Cruise Ship Tour\ud83d\udea2",
+      "channel": "Blue Stars Travel",
+      "views": 12982,
+      "published": "2025-07-19",
+      "minutes": 19
+     },
+     {
+      "videoId": "Wh2z3Co9_ko",
+      "title": "MSC Lirica, is it worth cruising on?!?",
+      "channel": "Passport Planet",
+      "views": 12417,
+      "published": "2025-10-30",
+      "minutes": 16
+     }
+    ],
+    "candidates": 9
+   },
+   "MSC Sinfonia": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "zUf_HE2gD4E",
+      "title": "MSC  SINFONIA  -  Cruise  Ship Tour.",
+      "channel": "Nat Nata",
+      "views": 18854,
+      "published": "2024-11-06",
+      "minutes": 24
+     },
+     {
+      "videoId": "i0SfWj5LLYg",
+      "title": "MSC Sinfonia Cruise Review 2025 | Mediterranean Cruise Ship Tour & Amenities",
+      "channel": "CruiseTalesToday",
+      "views": 5724,
+      "published": "2025-10-15",
+      "minutes": 10
+     },
+     {
+      "videoId": "9TOzELUOf88",
+      "title": "MSC - Sinfonia  . Cruise  Ship  Tour.   An unforgettable atmosphere on a cruise.",
+      "channel": "Nat Nata",
+      "views": 5288,
+      "published": "2025-03-19",
+      "minutes": 21
+     }
+    ],
+    "candidates": 13
    },
    "MSC Armonia": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "CSJyPLdP9sg",
+      "title": "MSC ARMONIA - 2024 Complete Tour - 4K - MSC Cruises",
+      "channel": "Cruise Voyages",
+      "views": 70953,
+      "published": "2024-05-11",
+      "minutes": 18
+     },
+     {
+      "videoId": "Q91t7dQHIaM",
+      "title": "MSC Armonia Cruise Ship Tour & Review with JKwana",
+      "channel": "In The Loop",
+      "views": 66961,
+      "published": "2019-08-20",
+      "minutes": 39
+     },
+     {
+      "videoId": "6WyvmYBzGLs",
+      "title": "MSC Armonia Full Ship Tour - Complete Cruise Ship Guide! | MSC Cruises \ud83d\udea2",
+      "channel": "The Curious Tourists \ud83c\udf0d",
+      "views": 43155,
+      "published": "2025-05-28",
+      "minutes": 10
+     }
+    ],
+    "candidates": 14
    }
   },
   "Norwegian": {
    "Norwegian Luna": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Norwegian Aqua": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "2PF9DvttRnw",
-      "title": "NORWEGIAN AQUA Just SHOCKED the World... But We'll Be HONEST | BRUTAL Review",
-      "channel": "Griff & Alyssa",
-      "views": 210154,
-      "published": "2025-05-04",
-      "minutes": 31
+      "videoId": "2Q2Nhgn0tKw",
+      "title": "We Tried the World\u2019s Newest Mega Ship (Norwegian Luna)",
+      "channel": "2Passports 1Dream",
+      "views": 207823,
+      "published": "2026-04-11",
+      "minutes": 33
+     },
+     {
+      "videoId": "twYDF3MRQoU",
+      "title": "Norwegian Luna Full Ship Tour & Review | Inside NCL's Newest Mega Ship",
+      "channel": "The Vacationeer",
+      "views": 126832,
+      "published": "2026-05-14",
+      "minutes": 36
+     },
+     {
+      "videoId": "lXywUDAfiJA",
+      "title": "I Sailed on the World's NEWEST Cruise Ship - Here's What Nobody Warned Me About (Norwegian Luna)",
+      "channel": "Life Well Cruised",
+      "views": 85136,
+      "published": "2026-04-17",
+      "minutes": 19
      }
     ],
-    "candidates": 1
+    "candidates": 21
    },
-   "Norwegian Viva": {
+   "Norwegian Aqua": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "h4w8xfXlONU",
-      "title": "\u632a\u5a01\u975e\u51e1\u865f Norwegian Viva Ship Tour",
-      "channel": "\u716e\u5bb6\u7537\u4eba Bob's Your Uncle",
-      "views": 778499,
-      "published": "2023-10-19",
-      "minutes": 27
+      "videoId": "NwikDq59Lq0",
+      "title": "Norwegian Aqua In-Depth Overview | Everything You NEED TO KNOW",
+      "channel": "Norwegian Cruise Line",
+      "views": 145798,
+      "published": "2025-06-30",
+      "minutes": 8
      },
+     {
+      "videoId": "b4r8UioRsF4",
+      "title": "Does Norwegian Aqua Live Up to the HYPE?! - My No-Holds-Barred Review",
+      "channel": "Zach the Traveling Man",
+      "views": 109589,
+      "published": "2025-04-06",
+      "minutes": 25
+     },
+     {
+      "videoId": "qq-DC9RcImI",
+      "title": "Norwegian Aqua | Full Ship Walkthrough Tour & Review | 4K",
+      "channel": "Harr Travel",
+      "views": 108076,
+      "published": "2025-04-13",
+      "minutes": 57
+     }
+    ],
+    "candidates": 16
+   },
+   "Norwegian Viva": {
+    "v": 2,
+    "reviews": [
      {
       "videoId": "OY9ai28pUuw",
       "title": "Norwegian Viva Full Walkthrough Tour - A Ship with BIG ISSUES",
       "channel": "Cruise With Ben and David",
-      "views": 670842,
+      "views": 670970,
       "published": "2023-08-16",
       "minutes": 43
+     },
+     {
+      "videoId": "hFVI744-4tM",
+      "title": "Norwegian Viva | Full Walkthrough Cruise Ship Tour | BRAND NEW 2023 | New Race Car Track on Board!",
+      "channel": "Cruises It ",
+      "views": 299545,
+      "published": "2023-12-20",
+      "minutes": 23
+     },
+     {
+      "videoId": "ae0U8Wkx8Jk",
+      "title": "NCL Viva | Full Ship Walkthrough Tour & Review 4K | Norwegian Cruise Line",
+      "channel": "Harr Travel",
+      "views": 196477,
+      "published": "2023-08-18",
+      "minutes": 98
      }
     ],
-    "candidates": 2
+    "candidates": 14
    },
    "Norwegian Prima": {
+    "v": 2,
     "reviews": [
      {
       "videoId": "CF_GGWdELFk",
       "title": "Norwegian Prima | Full Walkthrough Ship Tour & Review | Wonderful New Ship | Full HD",
       "channel": "Cruises It ",
-      "views": 507985,
+      "views": 508279,
       "published": "2023-01-02",
       "minutes": 21
      },
@@ -813,7 +2544,7 @@
       "videoId": "q4nJZVuBm1w",
       "title": "Inside Norwegian Prima - Complete Cruise Ship Tour",
       "channel": "Emma Cruises",
-      "views": 463941,
+      "views": 464010,
       "published": "2023-05-05",
       "minutes": 17
      },
@@ -821,380 +2552,1015 @@
       "videoId": "5pXfkgah-No",
       "title": "NCL Prima | Full Ship Walkthrough Tour & Review 4K | Norwegian Cruise Lines PR1MA",
       "channel": "Harr Travel",
-      "views": 409269,
+      "views": 409438,
       "published": "2022-09-18",
       "minutes": 102
      }
     ],
-    "candidates": 3
+    "candidates": 19
    },
    "Norwegian Encore": {
+    "v": 2,
     "reviews": [
-     {
-      "videoId": "cQ3i-vRppRg",
-      "title": "Norwegian Encore | Full Ship Walkthrough Tour & Review | 4K | All Public Spaces Toured And Explained",
-      "channel": "Harr Travel",
-      "views": 1925106,
-      "published": "2019-11-24",
-      "minutes": 106
-     },
      {
       "videoId": "GwnQ4Y74YkY",
       "title": "Norwegian Encore Cruise Ship Tour and Review",
       "channel": "Cruise With Ben and David",
-      "views": 475834,
+      "views": 475846,
       "published": "2019-11-04",
+      "minutes": 17
+     },
+     {
+      "videoId": "4YGE8Er9hOI",
+      "title": "Norwegian Encore: 7 Things I Loved, 1 Thing I Didn't",
+      "channel": "Emma Cruises",
+      "views": 365824,
+      "published": "2019-11-03",
+      "minutes": 14
+     },
+     {
+      "videoId": "VmcQ7425PBo",
+      "title": "Norwegian Encore | Full Walkthrough Cruise Ship Tour & Review | 4K Ultra HD | Brand New 2023 Tour",
+      "channel": "Cruises It ",
+      "views": 187141,
+      "published": "2023-05-28",
       "minutes": 17
      }
     ],
-    "candidates": 2
+    "candidates": 19
    },
    "Norwegian Bliss": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "dvki7DvEbfk",
-      "title": "\u632a\u5a01\u66a2\u6085\u865f - \u5df4\u62ff\u99ac\u904b\u6cb3\u4e4b\u65c5 Norwegian Bliss Ship Tour - Panama Canal Full Transit",
-      "channel": "\u716e\u5bb6\u7537\u4eba Bob's Your Uncle",
-      "views": 1466653,
-      "published": "2018-12-31",
-      "minutes": 37
+      "videoId": "YKxu7P1aRbU",
+      "title": "Norwegian Bliss | Full Walkthrough Tour & Review | Super HD | Norwegian Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 242470,
+      "published": "2023-07-31",
+      "minutes": 21
      },
      {
-      "videoId": "Eb7p37MflrY",
-      "title": "Norwegian Bliss Cruise Ship Tour",
-      "channel": "Cruise With Ben and David",
-      "views": 410931,
-      "published": "2018-04-22",
-      "minutes": 14
+      "videoId": "wuW0vJEVJ1k",
+      "title": "Norwegian Cruise Line Complimentary (Included) Dining | Norwegian Bliss Food Tour",
+      "channel": "Sujanos Travel",
+      "views": 175295,
+      "published": "2023-01-21",
+      "minutes": 12
+     },
+     {
+      "videoId": "HkzkjpQPzQM",
+      "title": "Norwegian Bliss Alaska Cruise Review",
+      "channel": "Eat Sleep Cruise",
+      "views": 156529,
+      "published": "2019-06-02",
+      "minutes": 9
      }
     ],
-    "candidates": 2
+    "candidates": 18
    },
    "Norwegian Joy": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "MCrQgfSfk5E",
-      "title": "\u8afe\u552f\u771f\u559c\u6085\u865f Norwegian Joy Ship Tour",
-      "channel": "\u716e\u5bb6\u7537\u4eba Bob's Your Uncle",
-      "views": 639597,
-      "published": "2017-09-02",
-      "minutes": 18
+      "videoId": "kDrquQiZxuQ",
+      "title": "Norwegian Joy | Full Cruise Ship Walkthrough Tour & Review | Ultra HD | Norwegian Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 209241,
+      "published": "2023-04-30",
+      "minutes": 15
+     },
+     {
+      "videoId": "JVS5vRM_EqU",
+      "title": "Norwegian Joy Ship Tour - NEW for 2024 + MUST-KNOW tips!",
+      "channel": "CruiseTipsTV",
+      "views": 161286,
+      "published": "2024-04-25",
+      "minutes": 23
+     },
+     {
+      "videoId": "vvMqrFwB10I",
+      "title": "Norwegian Joy | Full Walkthrough Ship Tour & Review |Total Renovation Must See | 4K All Public Areas",
+      "channel": "Cruises It ",
+      "views": 82132,
+      "published": "2024-06-05",
+      "minutes": 23
      }
     ],
-    "candidates": 1
+    "candidates": 19
    },
    "Norwegian Escape": {
+    "v": 2,
     "reviews": [
      {
       "videoId": "4nBirwJyB38",
       "title": "Norwegian Escape Cruise Ship Video Tour and Review",
       "channel": "Cruise Fever",
-      "views": 1445089,
+      "views": 1445131,
       "published": "2015-11-13",
       "minutes": 13
-     },
-     {
-      "videoId": "P7E7H2UPDgk",
-      "title": "I Went To The Pool Naked! | Norwegian Escape Cruise Vlog (Day 9)",
-      "channel": "Eva May",
-      "views": 1214168,
-      "published": "2019-07-15",
-      "minutes": 21
      },
      {
       "videoId": "vkXbjyRFCcA",
       "title": "Norwegian Escape | Full Walkthrough Tour & Review | 4K Ultra HD | Norwegian Cruise Lines",
       "channel": "Cruises It ",
-      "views": 406413,
+      "views": 406750,
       "published": "2023-03-26",
       "minutes": 18
+     },
+     {
+      "videoId": "Qm2_l1pYd2I",
+      "title": "Norwegian Escape | Full Ship Walkthrough Tour & Review 4K | All Public Spaces",
+      "channel": "Harr Travel",
+      "views": 301047,
+      "published": "2020-05-10",
+      "minutes": 51
      }
     ],
-    "candidates": 6
+    "candidates": 17
    },
    "Norwegian Getaway": {
+    "v": 2,
     "reviews": [
-     {
-      "videoId": "Cxe165Bhl8w",
-      "title": "Norwegian Getaway Review - Full Walkthrough - Ship Tour",
-      "channel": "Cruises It ",
-      "views": 453308,
-      "published": "2014-08-19",
-      "minutes": 26
-     },
-     {
-      "videoId": "RO-y_VgLvBg",
-      "title": "Norwegian Getaway - FULL SHIP TOUR - Norwegian Cruise Line",
-      "channel": "Oceanwide Travel, LLC",
-      "views": 399155,
-      "published": "2017-12-05",
-      "minutes": 18
-     },
      {
       "videoId": "GmesqYV-MnQ",
       "title": "Norwegian Getaway | Full Ship Walkthrough Tour & Review | 4K | All Public Spaces | 2020",
       "channel": "Harr Travel",
-      "views": 242674,
+      "views": 242704,
       "published": "2020-04-12",
       "minutes": 52
+     },
+     {
+      "videoId": "lOjXeFtlxd0",
+      "title": "Norwegian Getaway | Full Walkthrough Ship Tour | Take an Exclusive  Peek Inside | Crisp HD 4k 2024",
+      "channel": "Cruises It ",
+      "views": 168750,
+      "published": "2024-05-15",
+      "minutes": 19
+     },
+     {
+      "videoId": "353CVLfMznQ",
+      "title": "Norwegian Getaway | 2023 Ultimate Cruise Ship Tour ( + Bonus Private Island Tour)",
+      "channel": "Explorcation",
+      "views": 138201,
+      "published": "2023-01-21",
+      "minutes": 34
      }
     ],
-    "candidates": 3
+    "candidates": 17
    },
    "Norwegian Breakaway": {
+    "v": 2,
     "reviews": [
-     {
-      "videoId": "z7-A78ezQpA",
-      "title": "Norwegian Breakaway Cruise Ship Video Tour - Cruise Fever",
-      "channel": "Cruise Fever",
-      "views": 359815,
-      "published": "2015-02-05",
-      "minutes": 14
-     },
      {
       "videoId": "ea-jqaIXeuA",
       "title": "Norwegian Breakaway | Full Walkthrough Cruise Ship Tour | Ultra HD - Norwegian Cruise Lines",
       "channel": "Cruises It ",
-      "views": 276279,
+      "views": 276479,
       "published": "2022-08-23",
       "minutes": 24
      },
      {
-      "videoId": "47dj3psed_k",
-      "title": "Norwegian Breakaway Video Tour",
-      "channel": "Cruise Critic",
-      "views": 245586,
-      "published": "2013-05-02",
-      "minutes": 25
+      "videoId": "2GP_kblJ6SQ",
+      "title": "NCL Breakaway | Full Ship Walkthrough Tour & Review 4K | Norwegian Cruise Lines",
+      "channel": "Harr Travel",
+      "views": 192829,
+      "published": "2023-01-28",
+      "minutes": 88
+     },
+     {
+      "videoId": "cofajkc0i1o",
+      "title": "NORWEGIAN BREAKAWAY Full Ship Tour | Deck by Deck tour of NCL Breakaway",
+      "channel": "Sujanos Travel",
+      "views": 97364,
+      "published": "2024-11-23",
+      "minutes": 17
      }
     ],
-    "candidates": 4
+    "candidates": 15
    },
    "Norwegian Epic": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Norwegian Gem": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Norwegian Jade": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Norwegian Pearl": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "NAqi1MXNapI",
-      "title": "Norwegian Pearl Tour ~ Norwegian Cruise Line ~ Cruise Ship Tour",
-      "channel": "Jason and Heidi's PopularCruising",
-      "views": 218493,
-      "published": "2015-08-21",
-      "minutes": 10
+      "videoId": "GreqdHrR7sM",
+      "title": "Norwegian Epic Full Ship Tour",
+      "channel": "Cruise With Ben and David",
+      "views": 173265,
+      "published": "2024-10-13",
+      "minutes": 30
      },
+     {
+      "videoId": "5tQOROFKrac",
+      "title": "Norwegian Epic | Full Walkthrough Ship Tour | Port Canaveral \"Orlando\" | 4K Insider Look | Amazing",
+      "channel": "Cruises It ",
+      "views": 107599,
+      "published": "2023-12-30",
+      "minutes": 19
+     },
+     {
+      "videoId": "3kiO3B0LfQA",
+      "title": "Norwegian Epic Full Ship Tour / Deck by Deck / BEST places / Studio Lounge",
+      "channel": "A Life in the Parks",
+      "views": 98253,
+      "published": "2024-03-01",
+      "minutes": 23
+     }
+    ],
+    "candidates": 13
+   },
+   "Norwegian Gem": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "m6HcmuUZxzY",
+      "title": "Norwegian Gem | Full Walkthrough Ship Tour | Renovated | Travel the Caribbean | Norwegian cruises",
+      "channel": "Cruises It ",
+      "views": 129955,
+      "published": "2023-12-28",
+      "minutes": 16
+     },
+     {
+      "videoId": "qKSSki6Oodg",
+      "title": "NCL Gem | Full Ship Walkthrough Tour & Review 4K | Norwegian Cruise Lines",
+      "channel": "Harr Travel",
+      "views": 125492,
+      "published": "2023-09-23",
+      "minutes": 38
+     },
+     {
+      "videoId": "9jwm4M7ruH0",
+      "title": "Mediterranean Cruise on the Norwegian Gem! Croatia, Greece, Montenegro, and Italy! NCL Balcony Cabin",
+      "channel": "The Seasoned Expats",
+      "views": 73715,
+      "published": "2023-09-03",
+      "minutes": 26
+     }
+    ],
+    "candidates": 21
+   },
+   "Norwegian Jade": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "YXwyzXCOdfg",
+      "title": "Norwegian Jade | Full Walkthrough Ship Tour | 4k Ultra HD | Fully Renovated | Norwegian Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 114179,
+      "published": "2023-12-26",
+      "minutes": 16
+     },
+     {
+      "videoId": "AogaJpFfLvc",
+      "title": "I TRIED THE $47/NIGHT CRUISE (Norwegian Jade)",
+      "channel": "Cassie Aran",
+      "views": 85785,
+      "published": "2025-12-29",
+      "minutes": 20
+     },
+     {
+      "videoId": "SQfi1tzFUS4",
+      "title": "Norwegian Jade Full Ship Tour | NCL Jade Full Ship Walkthrough Deck by Deck | Dining, Menus, Tips",
+      "channel": "Freestyle Travelers",
+      "views": 63179,
+      "published": "2024-12-31",
+      "minutes": 12
+     }
+    ],
+    "candidates": 14
+   },
+   "Norwegian Pearl": {
+    "v": 2,
+    "reviews": [
      {
       "videoId": "miydHRuyGAg",
       "title": "NORWEGIAN PEARL CRUISE SHIP TOUR: Tips, Secrets & Hidden Gems!!",
       "channel": "Life Well Cruised",
-      "views": 191606,
+      "views": 191841,
       "published": "2023-11-03",
       "minutes": 18
-     }
-    ],
-    "candidates": 2
-   },
-   "Norwegian Jewel": {
-    "reviews": [
-     {
-      "videoId": "KNdt4fsZ8x8",
-      "title": "Norwegian Jewel Cruise Embarks from Manila for the First Time: FULL 12 Day Vlog Experience",
-      "channel": "Team AppRon TV",
-      "views": 285434,
-      "published": "2024-02-04",
-      "minutes": 65
      },
      {
-      "videoId": "arTGeOQOLq8",
-      "title": "OUR FIRST CRUISE! 10 DAY ASIA CRUISE with Norwegian Cruise Line (Norwegian Jewel)",
-      "channel": "Twosome Travellers",
-      "views": 214934,
-      "published": "2024-01-20",
-      "minutes": 26
+      "videoId": "HOzdB9MJd0o",
+      "title": "Boarding Norwegian Pearl - FIRST Cruise to BERMUDA & The Oldest/Smallest NCL Ship We Have Sailed On",
+      "channel": "EECC Travels",
+      "views": 105203,
+      "published": "2022-05-22",
+      "minutes": 28
+     },
+     {
+      "videoId": "tYA37x-Lj94",
+      "title": "Norwegian Pearl - Cruise Ship Tour & Review | Norwegian Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 92807,
+      "published": "2020-07-10",
+      "minutes": 12
      }
     ],
-    "candidates": 2
+    "candidates": 17
    },
-   "Norwegian Dawn": {
+   "Norwegian Jewel": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "Htwh1hfNOeQ",
-      "title": "10 Day Solo Cruise Around Europe on the Norwegian Dawn! (Complete Series)",
-      "channel": "Travel with Ben",
-      "views": 161963,
-      "published": "2024-10-02",
-      "minutes": 227
+      "videoId": "4EAseRG2zZs",
+      "title": "Norwegian Jewel - Full Ship Tour (COMPLETELY REFURBISHED SHIP)",
+      "channel": "EECC Travels",
+      "views": 136084,
+      "published": "2023-06-01",
+      "minutes": 16
+     },
+     {
+      "videoId": "CWvCXftCQ1g",
+      "title": "Norwegian Jewel | Full Walkthrough Tour & Review | 4k Ultra HD View | Norwegian Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 134130,
+      "published": "2023-08-20",
+      "minutes": 13
+     },
+     {
+      "videoId": "67lkpTHtAYg",
+      "title": "NCL Jewel | Full Ship Walkthrough Tour & Review 4K | Norwegian Cruise Lines",
+      "channel": "Harr Travel",
+      "views": 116676,
+      "published": "2023-03-18",
+      "minutes": 44
      }
     ],
-    "candidates": 2
+    "candidates": 19
+   },
+   "Norwegian Dawn": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "tYvHdx7-4Yc",
+      "title": "Norwegian Dawn | Full Walkthrough Ship Tour | HD 4K | Norwegian Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 152664,
+      "published": "2023-03-20",
+      "minutes": 12
+     },
+     {
+      "videoId": "fUTQUavotFc",
+      "title": "Norwegian Dawn Ship Tour - Narrated full Walkthrough",
+      "channel": "Cruising Canucks",
+      "views": 83705,
+      "published": "2021-05-16",
+      "minutes": 25
+     },
+     {
+      "videoId": "OLwrbYoK9Ww",
+      "title": "Norwegian Dawn Cruise Ship Review 2018",
+      "channel": "Don's Family Vacations",
+      "views": 63427,
+      "published": "2018-04-25",
+      "minutes": 8
+     }
+    ],
+    "candidates": 17
    },
    "Norwegian Star": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "jF3cE9kYJKI",
+      "title": "Norwegian Star | Full Walkthrough Cruise Ship Tour | New 2023 Fully renovated | Great New H2O Zone",
+      "channel": "Cruises It ",
+      "views": 64093,
+      "published": "2023-12-24",
+      "minutes": 13
+     },
+     {
+      "videoId": "jMAC-6MV_PQ",
+      "title": "Norwegian Star Ship Tour | Deck by Deck Walkthrough, Menus, Restaurants, Tips | NCL Star",
+      "channel": "Freestyle Travelers",
+      "views": 52693,
+      "published": "2024-08-25",
+      "minutes": 11
+     },
+     {
+      "videoId": "HaxEoowfMpY",
+      "title": "Norwegian Star Full Ship Tour | Norwegian Cruise Lines",
+      "channel": "Travels with V and Steve",
+      "views": 14301,
+      "published": "2024-10-04",
+      "minutes": 28
+     }
+    ],
+    "candidates": 14
    },
    "Norwegian Sun": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "M76wPpjrvwI",
+      "title": "Norwegian Sun | Full Walkthrough Ship Tour & Review | Ultra HD View |  Norwegian Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 96799,
+      "published": "2023-10-31",
+      "minutes": 11
+     },
+     {
+      "videoId": "j6wDiupKD5k",
+      "title": "NCL Sun | Full Ship Walkthrough Tour & Review 4K | Norwegian Cruise Lines",
+      "channel": "Harr Travel",
+      "views": 93206,
+      "published": "2022-10-08",
+      "minutes": 39
+     },
+     {
+      "videoId": "7kJpCmQKKaU",
+      "title": "Norwegian Sun Complete Ship Tour",
+      "channel": "Taste 4 Travel",
+      "views": 24760,
+      "published": "2024-07-01",
+      "minutes": 14
+     }
+    ],
+    "candidates": 16
    },
    "Norwegian Sky": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "d2fudjpLeRA",
+      "title": "Norwegian Sky | Full Walkthrough Ship Tour & Review |",
+      "channel": "Cruises It ",
+      "views": 113617,
+      "published": "2023-05-24",
+      "minutes": 10
+     },
+     {
+      "videoId": "U44Yhuu0mr4",
+      "title": "Norwegian Sky | Full Walkthrough Tour & Review 4K | 2024",
+      "channel": "Harr Travel",
+      "views": 69208,
+      "published": "2024-06-22",
+      "minutes": 29
+     },
+     {
+      "videoId": "onUyu-k6FYQ",
+      "title": "Norwegian Sky Ship Tour | Deck by Deck Walkthrough, Menus, Staterooms, Tips | NCL Sky",
+      "channel": "Freestyle Travelers",
+      "views": 46333,
+      "published": "2023-09-19",
+      "minutes": 10
+     }
+    ],
+    "candidates": 15
    },
    "Norwegian Spirit": {
+    "v": 2,
     "reviews": [
      {
       "videoId": "WaIUOi0MFVg",
       "title": "Japan by Sea: I Took a Cruise Like No Other (Norwegian Spirit)",
       "channel": "Emma Cruises",
-      "views": 850334,
+      "views": 850952,
       "published": "2024-12-23",
       "minutes": 32
      },
      {
-      "videoId": "Vmaw9zxXhiM",
-      "title": "I Stayed in The BIGGEST Cabin on a Cruise Ship - Norwegian Spirit",
-      "channel": "Emma Cruises",
-      "views": 367861,
-      "published": "2024-12-30",
-      "minutes": 11
+      "videoId": "zORIENwcHvk",
+      "title": "NCL Spirit | Full Ship Walkthrough Tour & Review 4K | Norwegian Cruise Lines",
+      "channel": "Harr Travel",
+      "views": 76640,
+      "published": "2022-08-20",
+      "minutes": 40
+     },
+     {
+      "videoId": "mcVsH-nUVF8",
+      "title": "Norwegian Spirit | Full walkthrough Ship Tour & Review | 4k Ultra view | 2023 Fully Renovated |",
+      "channel": "Cruises It ",
+      "views": 66992,
+      "published": "2023-10-03",
+      "minutes": 16
      }
     ],
-    "candidates": 2
+    "candidates": 18
    }
   },
   "Princess": {
    "Star Princess": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "AV1rEqCAldg",
-      "title": "The Horrifying Star Princess Fire",
-      "channel": "Oceanliner Designs",
-      "views": 895287,
-      "published": "2026-03-28",
-      "minutes": 34
-     }
-    ],
-    "candidates": 1
-   },
-   "Sky Princess": {
-    "reviews": [
-     {
-      "videoId": "wk-BkiIchuA",
-      "title": "Boarding One of Our Favourite Cruise Ships of ALL TIME: Sky Princess",
-      "channel": "Cruise With Ben and David",
-      "views": 342792,
-      "published": "2021-10-17",
-      "minutes": 41
-     }
-    ],
-    "candidates": 1
-   },
-   "Regal Princess": {
-    "reviews": [
-     {
-      "videoId": "XD7gBXh4nsM",
-      "title": "\u5e1d\u738b\u516c\u4e3b\u865f   Regal Princess Ship Tour",
-      "channel": "\u716e\u5bb6\u7537\u4eba Bob's Your Uncle",
-      "views": 584773,
-      "published": "2014-11-05",
-      "minutes": 14
+      "videoId": "amdSB9XdYD4",
+      "title": "Star Princess Full Ship Tour | Princess Cruises",
+      "channel": "Princess Cruises",
+      "views": 133451,
+      "published": "2025-10-28",
+      "minutes": 10
      },
      {
-      "videoId": "2QKE8QJQ2vI",
-      "title": "Regal Princess Cruise Ship Video Tour and Review with Cruise Fever",
-      "channel": "Cruise Fever",
-      "views": 400065,
-      "published": "2014-11-13",
+      "videoId": "ZQ0w2mW6oIk",
+      "title": "After 14 Princess Cruises, Is Star Princess Really Better? Our Honest Review",
+      "channel": "Life Well Cruised",
+      "views": 128469,
+      "published": "2025-11-14",
+      "minutes": 27
+     },
+     {
+      "videoId": "NKgBpRLCuvw",
+      "title": "We Splurged on Princess Cruises Sanctuary Collection & Here's What Happened [Star Princess Review]",
+      "channel": "Life Well Cruised",
+      "views": 94024,
+      "published": "2026-02-11",
+      "minutes": 29
+     }
+    ],
+    "candidates": 20
+   },
+   "Sky Princess": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "6DIkBuiHcjk",
+      "title": "Sky Princess FULL Cruise Ship Tour and Review",
+      "channel": "Cruise With Ben and David",
+      "views": 228825,
+      "published": "2019-10-22",
+      "minutes": 20
+     },
+     {
+      "videoId": "Hw5eQz3c8bI",
+      "title": "Sky Princess | Full Walkthrough Ship Tour  & Review | Ultra HD | Princess Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 203530,
+      "published": "2023-04-16",
+      "minutes": 15
+     },
+     {
+      "videoId": "xFTgKgu1WLM",
+      "title": "Sky Princess Cruise Ship Tour. And Need-to-Knows Before Cruising",
+      "channel": "Tips For Travellers",
+      "views": 160518,
+      "published": "2019-10-24",
+      "minutes": 12
+     }
+    ],
+    "candidates": 20
+   },
+   "Regal Princess": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "RyDhGVxCpr0",
+      "title": "Regal Princess Review- Full Walkthrough - Cruise Ship Tour - Princess Cruises",
+      "channel": "Cruises It ",
+      "views": 134823,
+      "published": "2016-12-25",
       "minutes": 19
      },
      {
-      "videoId": "KoaAWcZiVMk",
-      "title": "Boarding the Regal Princess Cruise Ship [Vlog episode 1]",
-      "channel": "Sea Cruisers",
-      "views": 188265,
-      "published": "2015-08-05",
-      "minutes": 20
+      "videoId": "LKM6x4BuBO4",
+      "title": "Regal Princess Tour & Review ~ Princess Cruises ~ Cruise Ship Tour & Review [4K Ultra HD]",
+      "channel": "Jason and Heidi's Popular Cruising",
+      "views": 105002,
+      "published": "2019-05-24",
+      "minutes": 22
+     },
+     {
+      "videoId": "sQBhfh4kQe8",
+      "title": "Regal Princess Cruise Ship Tour",
+      "channel": "CruiseTipsTV",
+      "views": 82350,
+      "published": "2024-01-25",
+      "minutes": 25
      }
     ],
-    "candidates": 4
+    "candidates": 24
    },
    "Emerald Princess": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "5brH9qCHM00",
+      "title": "Emerald Princess Ship Tour, Buffet Review & Princess Features Missing on Newer Ships | CRUISE MUSE",
+      "channel": "JENNY SIMON | Art & Ocean | CRUISE MUSE",
+      "views": 119896,
+      "published": "2026-05-17",
+      "minutes": 29
+     },
+     {
+      "videoId": "wlQBAm0EM9A",
+      "title": "Your Guide To The Emerald Princess - Ship Tour And Overview",
+      "channel": "Take2Travel",
+      "views": 76756,
+      "published": "2024-08-23",
+      "minutes": 16
+     },
+     {
+      "videoId": "RJ7FaeB0zoQ",
+      "title": "Emerald Princess Cruise Ship Review, A Full Tour of the Princess Cruise Line's Flagship",
+      "channel": "Multimedia Delivery",
+      "views": 73472,
+      "published": "2023-01-16",
+      "minutes": 12
+     }
+    ],
+    "candidates": 19
    },
    "Caribbean Princess": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "WpZ6L9gEAlY",
-      "title": "TOP 5 BEST NEW CRUISE SHIPS IN 2024! (ft Royal Caribbean, Princess, Disney, MSC, Cunard, Virgin, ..)",
-      "channel": "Cruisedaily",
-      "views": 2335548,
-      "published": "2023-11-29",
-      "minutes": 9
+      "videoId": "exRFL9nfUfg",
+      "title": "Caribbean Princess cruise ship tour",
+      "channel": "Cruise With Ben and David",
+      "views": 92676,
+      "published": "2017-09-23",
+      "minutes": 11
+     },
+     {
+      "videoId": "430rTHRbn7o",
+      "title": "Caribbean Princess Cruise Ship Tour And Review (Princess Cruises)",
+      "channel": "Tips For Travellers",
+      "views": 78251,
+      "published": "2017-05-18",
+      "minutes": 8
+     },
+     {
+      "videoId": "Jrkbpy1jp9M",
+      "title": "Caribbean Princess Full Ship Tour 2025 | Deck by Deck Walkthrough + Stateroom Reviews",
+      "channel": "Take2Travel",
+      "views": 68227,
+      "published": "2025-07-18",
+      "minutes": 18
      }
     ],
-    "candidates": 1
+    "candidates": 19
    },
    "Island Princess": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "dT5_XP9Ez34",
-      "title": "Island Princess: Panama Canal Cruise",
-      "channel": "Hoosier Tim's Travel Videos",
-      "views": 340599,
-      "published": "2011-02-03",
-      "minutes": 63
+      "videoId": "VKPEkRPPwGM",
+      "title": "Complete Island Princess Ship Tour - Fully Narrated",
+      "channel": "A Cruising Good Time",
+      "views": 42685,
+      "published": "2025-03-07",
+      "minutes": 29
+     },
+     {
+      "videoId": "dateTUShB-8",
+      "title": "Our FULL REVIEW of Island Princess! The GOOD, the BAD and the UGLY!",
+      "channel": "Tom and Dom Travel",
+      "views": 36523,
+      "published": "2024-03-16",
+      "minutes": 21
+     },
+     {
+      "videoId": "aNg3dzEm9pM",
+      "title": "Island Princess Panama Canal Cruise",
+      "channel": "Don's Family Vacations",
+      "views": 34334,
+      "published": "2021-03-02",
+      "minutes": 14
      }
     ],
-    "candidates": 1
+    "candidates": 17
    },
    "Diamond Princess": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "CDjM834YWrs",
-      "title": "COVID-19: The Inside Story Of The Diamond Princess Coronavirus Infection | Outbreak Onboard",
-      "channel": "CNA Insider",
-      "views": 2159271,
-      "published": "2020-06-06",
+      "videoId": "7L4caIv8wyE",
+      "title": "My (Very Honest) Review of DIAMOND PRINCESS in Japan",
+      "channel": "Zach the Traveling Man",
+      "views": 93425,
+      "published": "2023-11-05",
+      "minutes": 28
+     },
+     {
+      "videoId": "5ZBtE-QrPTw",
+      "title": "DIAMOND PRINCESS Japan Cruise 2024 In 4K",
+      "channel": "Peter Knego's MidShipCinema",
+      "views": 78775,
+      "published": "2024-07-13",
+      "minutes": 33
+     },
+     {
+      "videoId": "s0CVyyzdVEM",
+      "title": "The Ultimate Diamond Princess Japan Cruise Guide",
+      "channel": "CruiseTipsTV",
+      "views": 61778,
+      "published": "2023-08-31",
+      "minutes": 12
+     }
+    ],
+    "candidates": 21
+   },
+   "Sun Princess": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "ZXCNbllx42M",
+      "title": "Princess Cruises Sun Princess Full Ship Tour",
+      "channel": "Cruise With Ben and David",
+      "views": 167502,
+      "published": "2024-04-07",
+      "minutes": 43
+     },
+     {
+      "videoId": "3qdiakdIIl0",
+      "title": "Sun Princess Full Walkthrough Tour | Princess Cruises | 2025 | 4K",
+      "channel": "Harr Travel",
+      "views": 158980,
+      "published": "2025-02-08",
+      "minutes": 41
+     },
+     {
+      "videoId": "xv57uG5n78M",
+      "title": "Sun Princess Full Tour & Review 2026 (Princess Cruises Largest Cruise Ship)",
+      "channel": "JJ Cruise",
+      "views": 154477,
+      "published": "2024-03-11",
+      "minutes": 44
+     }
+    ],
+    "candidates": 21
+   },
+   "Enchanted Princess": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "YUO3-ju-qPc",
+      "title": "Enchanted Princess | Full Walkthrough Ship Tour & Review 4K | Princess Cruises 2022",
+      "channel": "Harr Travel",
+      "views": 204856,
+      "published": "2022-01-01",
+      "minutes": 66
+     },
+     {
+      "videoId": "WbYgjwMcAvs",
+      "title": "Full Ship tour - Enchanted Princess Cruise Ship",
+      "channel": "Traveling Flamingo",
+      "views": 145600,
+      "published": "2023-06-24",
+      "minutes": 15
+     },
+     {
+      "videoId": "7ws3CJT_Tig",
+      "title": "Enchanted Princess Deck-by-Deck Full Ship Tour",
+      "channel": "Watch Us Wander",
+      "views": 111282,
+      "published": "2021-12-23",
+      "minutes": 17
+     }
+    ],
+    "candidates": 17
+   },
+   "Discovery Princess": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "ccSYOpYcA0U",
+      "title": "Discovery Princess | Full Walkthrough Ship Tour & Review 4K | Princess Cruises 2022",
+      "channel": "Harr Travel",
+      "views": 176426,
+      "published": "2022-04-24",
+      "minutes": 70
+     },
+     {
+      "videoId": "OYIegP3pvhM",
+      "title": "Discovery Princess Ship Tour | Deck Cruise Ship Walk Through 2023",
+      "channel": "Eat Sleep Cruise",
+      "views": 165892,
+      "published": "2022-05-18",
+      "minutes": 39
+     },
+     {
+      "videoId": "SvH0Yjt54Oo",
+      "title": "Discovery Princess: FULL SHIP TOUR (Narrated Walk-Through)",
+      "channel": "Adrian The Cruise and Travel Guy",
+      "views": 90070,
+      "published": "2024-11-23",
+      "minutes": 31
+     }
+    ],
+    "candidates": 17
+   },
+   "Majestic Princess": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "PjYvkh2rrU8",
+      "title": "\ud83d\udea2 Majestic Princess Cruise Ship Tour | Full Walkthrough & What Surprised Me 2026 | CRUISE MUSE",
+      "channel": "JENNY SIMON | Art & Ocean | CRUISE MUSE",
+      "views": 306441,
+      "published": "2026-04-02",
+      "minutes": 31
+     },
+     {
+      "videoId": "FdUHuY6QjCk",
+      "title": "Majestic Princess | Full Walkthrough Ship Tour & Review 4K | Princess Cruises 2021",
+      "channel": "Harr Travel",
+      "views": 136796,
+      "published": "2021-10-16",
+      "minutes": 55
+     },
+     {
+      "videoId": "8Bv_vUwV84c",
+      "title": "Majestic Princess Cruise Ship Tour!",
+      "channel": "The Port Lowdown",
+      "views": 73501,
+      "published": "2024-11-24",
+      "minutes": 38
+     }
+    ],
+    "candidates": 20
+   },
+   "Royal Princess": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "s6UG35wT0Pc",
+      "title": "Royal Princess Full Ship Tour",
+      "channel": "Cruise With Ben and David",
+      "views": 136134,
+      "published": "2018-06-08",
+      "minutes": 12
+     },
+     {
+      "videoId": "AJkEi4hWHfE",
+      "title": "ROYAL PRINCESS - Complete Full HD Tour of Royal Princess Cruise Ship!",
+      "channel": "Chris Frame the Maritime Historian",
+      "views": 123113,
+      "published": "2023-12-08",
+      "minutes": 13
+     },
+     {
+      "videoId": "EJxVWTtO2xY",
+      "title": "Princess Cruises Royal Princess Cruise Ship Tour And Review",
+      "channel": "Tips For Travellers",
+      "views": 85544,
+      "published": "2018-05-24",
+      "minutes": 8
+     }
+    ],
+    "candidates": 22
+   },
+   "Grand Princess": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "TzDsG_yyt8w",
+      "title": "Grand Princess Full Walkthrough Tour & Review | 4K",
+      "channel": "Harr Travel",
+      "views": 92696,
+      "published": "2024-12-22",
+      "minutes": 33
+     },
+     {
+      "videoId": "RlmvdMnM2I0",
+      "title": "Grand Princess Full Tour and Cruise Ship Review | Ship Condition, Food and More on Princess Cruises",
+      "channel": "Multimedia Delivery",
+      "views": 42406,
+      "published": "2025-01-31",
+      "minutes": 12
+     },
+     {
+      "videoId": "mNT9Hns5IEs",
+      "title": "Grand Princess Ship Tour (UPDATED 2025)",
+      "channel": "The Port Lowdown",
+      "views": 33465,
+      "published": "2025-11-23",
+      "minutes": 35
+     }
+    ],
+    "candidates": 17
+   },
+   "Ruby Princess": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "rowkrPJ5Dss",
+      "title": "Ruby Princess Full Ship Tour",
+      "channel": "Adrian The Cruise and Travel Guy",
+      "views": 88177,
+      "published": "2020-01-28",
+      "minutes": 24
+     },
+     {
+      "videoId": "8XIZsjEvroA",
+      "title": "Ruby Princess | Full Ship Walkthrough Tour & Review | 4K",
+      "channel": "Harr Travel",
+      "views": 71235,
+      "published": "2024-12-29",
+      "minutes": 39
+     },
+     {
+      "videoId": "2Od6o0wHD2A",
+      "title": "Ruby Princess Full Ship Tour",
+      "channel": "High Seas Cruising",
+      "views": 71046,
+      "published": "2023-05-12",
+      "minutes": 57
+     }
+    ],
+    "candidates": 21
+   },
+   "Crown Princess": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "d_4wQJZLjn8",
+      "title": "Crown Princess | Full Walkthrough Ship Tour & Review 4K | Princess Cruises 2023",
+      "channel": "Harr Travel",
+      "views": 64429,
+      "published": "2023-10-28",
+      "minutes": 38
+     },
+     {
+      "videoId": "VcmDVCSq8LE",
+      "title": "CROWN PRINCESS: Full Ship Tour, Narrated Walk-through 2025",
+      "channel": "Adrian The Cruise and Travel Guy",
+      "views": 63668,
+      "published": "2025-01-10",
+      "minutes": 21
+     },
+     {
+      "videoId": "UkqHWTRG7C4",
+      "title": "CROWN PRINCESS - Complete Full HD Tour of Crown Princess Cruise Ship",
+      "channel": "Chris Frame the Maritime Historian",
+      "views": 39898,
+      "published": "2025-08-07",
+      "minutes": 12
+     }
+    ],
+    "candidates": 18
+   },
+   "Coral Princess": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "inP8PzaSJcA",
+      "title": "Is Princess Cruises Smallest Ship Worth It? Coral Princess Full Tour",
+      "channel": "Chris Frame the Maritime Historian",
+      "views": 61337,
+      "published": "2025-01-07",
+      "minutes": 8
+     },
+     {
+      "videoId": "DIZz2vUW-5Y",
+      "title": "Coral Princess | Full Ship Walkthrough Tour | Princess Cruises | 2025 | 4K",
+      "channel": "Harr Travel",
+      "views": 48865,
+      "published": "2025-05-31",
+      "minutes": 28
+     },
+     {
+      "videoId": "3rbE6RpEDhE",
+      "title": "CORAL PRINCESS FULL SHIP TOUR | 2022",
+      "channel": "Adrian The Cruise and Travel Guy",
+      "views": 46538,
+      "published": "2022-09-07",
+      "minutes": 19
+     }
+    ],
+    "candidates": 18
+   },
+   "Sapphire Princess": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "f22rxC8jni0",
+      "title": "Sapphire Princess | Full Walkthrough Ship Tour & Review 4K | Princess Cruises 2023",
+      "channel": "Harr Travel",
+      "views": 72901,
+      "published": "2023-11-18",
       "minutes": 48
      },
      {
-      "videoId": "LpUo4zqLGjI",
-      "title": "\u947d\u77f3\u516c\u4e3b\u865f - \u5317\u6d77\u9053\u4e4b\u65c5 Diamond Princess Ship Tour - Round Hokkaido",
-      "channel": "\u716e\u5bb6\u7537\u4eba Bob's Your Uncle",
-      "views": 1128770,
-      "published": "2018-10-14",
-      "minutes": 23
+      "videoId": "G9aIfyOcVwY",
+      "title": "Sapphire Princess Ship Tour",
+      "channel": "Emma Cruises",
+      "views": 66673,
+      "published": "2019-04-22",
+      "minutes": 9
      },
      {
-      "videoId": "UXEtaiAGSF4",
-      "title": "7-Day Cruise to Japan aboard the Diamond Princess, a Luxury Cruise Ship\uff5cPart 1 | Carnival Cruise",
-      "channel": "ITSUKA JAPAN",
-      "views": 903776,
-      "published": "2023-08-06",
-      "minutes": 61
+      "videoId": "HBesV3eeU9s",
+      "title": "Sapphire Princess Cruise Ship Tour (Full Walk Through)",
+      "channel": "Northern Viking Explorer",
+      "views": 66405,
+      "published": "2024-01-05",
+      "minutes": 30
      }
     ],
-    "candidates": 4
+    "candidates": 20
    }
   },
   "Celebrity": {
    "Celebrity Xcel": {
+    "v": 2,
     "reviews": [
      {
       "videoId": "lEsEXT1-1_4",
       "title": "Boarding the Celebrity Xcel - An Incredible New Ship",
       "channel": "Cruise With Ben and David",
-      "views": 142148,
+      "views": 142383,
       "published": "2025-12-21",
       "minutes": 40
      },
@@ -1202,83 +3568,410 @@
       "videoId": "zHUzd_MZumY",
       "title": "Celebrity Xcel Was NOT What We Expected",
       "channel": "Eat Sleep Cruise",
-      "views": 80033,
+      "views": 80094,
       "published": "2025-12-07",
       "minutes": 12
+     },
+     {
+      "videoId": "CSIJkvUGYQM",
+      "title": "Celebrity Xcel | Full Walkthrough Ship Tour & Review | All Cabins 4k ultra New",
+      "channel": "Cruises It ",
+      "views": 68774,
+      "published": "2025-12-06",
+      "minutes": 30
      }
     ],
-    "candidates": 2
+    "candidates": 24
    },
    "Celebrity Apex": {
+    "v": 2,
     "reviews": [
      {
       "videoId": "T80KXmCgeJ4",
       "title": "Celebrity Apex Full Walkthrough Ship Tour & Review 4K | All Spaces Toured & Explained!",
       "channel": "Harr Travel",
-      "views": 269698,
+      "views": 269822,
       "published": "2021-11-27",
       "minutes": 78
+     },
+     {
+      "videoId": "7LzuNpyyJbA",
+      "title": "Celebrity Apex | Full Cruise Ship Tour & Review | 4k Ultra view 2023 | Celebrity Cruise Lines",
+      "channel": "Cruises It ",
+      "views": 226623,
+      "published": "2023-10-11",
+      "minutes": 12
+     },
+     {
+      "videoId": "j-QkgGgLcK8",
+      "title": "Celebrity Apex Ship Tour: Suites, Dining and Onboard Experiences | Celebrity Cruises",
+      "channel": "Celebrity Cruises",
+      "views": 44170,
+      "published": "2024-08-05",
+      "minutes": 12
      }
     ],
-    "candidates": 1
+    "candidates": 19
    },
    "Celebrity Eclipse": {
-    "reviews": [],
-    "candidates": 0
-   },
-   "Celebrity Equinox": {
+    "v": 2,
     "reviews": [
      {
-      "videoId": "8C8P3GS5pK4",
-      "title": "We Tried the Worlds Cheapest Antartica Cruise Ship \ud83e\udd76 (Celebrity Equinox)",
-      "channel": "Cassie Aran",
-      "views": 267642,
-      "published": "2026-01-20",
-      "minutes": 29
+      "videoId": "9ajd5BG1B6g",
+      "title": "Celebrity Eclipse Cruise Ship 2025 | Our Honest Full Review | The Good, Bad & Ugly",
+      "channel": "JJ Cruise",
+      "views": 91302,
+      "published": "2023-02-08",
+      "minutes": 12
      },
      {
-      "videoId": "cYRcEwbEbio",
-      "title": "Celebrity Equinox Tour & Review with The Legend",
-      "channel": "In The Loop",
-      "views": 157567,
-      "published": "2018-01-27",
-      "minutes": 47
+      "videoId": "RvbpzDLYCz0",
+      "title": "Celebrity Eclipse | Full Walkthrough Ship Tour & Review  | Cabins Included | Celebrity Cruises",
+      "channel": "Cruises It ",
+      "views": 72626,
+      "published": "2025-04-06",
+      "minutes": 21
      },
      {
-      "videoId": "p68BS7y8VkQ",
-      "title": "Celebrity Equinox, Tour of the Ship",
-      "channel": "Mogens Hallas",
-      "views": 157027,
-      "published": "2016-03-15",
-      "minutes": 8
+      "videoId": "nrgwUFkwm4o",
+      "title": "Celebrity Eclipse | Full Ship Walkthrough Tour & Review | 4K",
+      "channel": "Harr Travel",
+      "views": 49278,
+      "published": "2025-05-24",
+      "minutes": 43
      }
     ],
-    "candidates": 3
+    "candidates": 19
+   },
+   "Celebrity Equinox": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "NANW3gQsDwY",
+      "title": "Celebrity Equinox | Full Walkthrough Cruise Ship Tour & Review | 4k Ultra Video",
+      "channel": "Cruises It ",
+      "views": 63071,
+      "published": "2025-09-22",
+      "minutes": 21
+     },
+     {
+      "videoId": "-l44g1ij8qg",
+      "title": "My Review of the Celebrity Equinox - NOT What I Expected - Cabin, Entertainment, Ports, Food, etc",
+      "channel": "Very unOfficial Travel Guides",
+      "views": 50789,
+      "published": "2024-01-21",
+      "minutes": 18
+     },
+     {
+      "videoId": "veDn-YCBzTY",
+      "title": "Celebrity Equinox Ship Tour",
+      "channel": "Celebrity Cruises",
+      "views": 47572,
+      "published": "2024-08-05",
+      "minutes": 12
+     }
+    ],
+    "candidates": 20
    },
    "Celebrity Solstice": {
+    "v": 2,
     "reviews": [
      {
       "videoId": "vsoWSMxwxdU",
       "title": "Celebrity Solstice - Almost Great",
       "channel": "Bright Sun Travels",
-      "views": 622315,
+      "views": 622724,
       "published": "2023-05-26",
       "minutes": 21
      },
      {
-      "videoId": "mk_cHMQK27M",
-      "title": "Mighty Cruise Ships: Celebrity Solstice | Season 1 Episode 4 (Full Episode) | MIGHTY",
-      "channel": "Mighty",
-      "views": 297402,
-      "published": "2025-05-16",
-      "minutes": 46
+      "videoId": "vmr5krYk4eE",
+      "title": "My (Very Honest) Review of CELEBRITY SOLSTICE - Not What I Expected",
+      "channel": "Zach the Traveling Man",
+      "views": 111137,
+      "published": "2023-03-19",
+      "minutes": 21
+     },
+     {
+      "videoId": "yt-Oeq4MORo",
+      "title": "Celebrity Solstice 2023 Cruise Ship Tour | Full Ship Walkthrough 4K",
+      "channel": "Zach the Traveling Man",
+      "views": 68345,
+      "published": "2023-05-07",
+      "minutes": 27
      }
     ],
-    "candidates": 2
+    "candidates": 19
    },
    "Celebrity Summit": {
-    "reviews": [],
-    "candidates": 0
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "zKpe8hIcmqQ",
+      "title": "Celebrity Summit | Full Walkthrough Ship Tour & Review 4K | All Public Spaces",
+      "channel": "Harr Travel",
+      "views": 100783,
+      "published": "2022-01-30",
+      "minutes": 35
+     },
+     {
+      "videoId": "La4Fe5v-gx4",
+      "title": "My (Very Honest) Review of CELEBRITY SUMMIT - Is This Ship Too Old?!",
+      "channel": "Zach the Traveling Man",
+      "views": 83913,
+      "published": "2023-04-16",
+      "minutes": 20
+     },
+     {
+      "videoId": "-TCxhIPJTWw",
+      "title": "Celebrity Summit Full Ship Tour. A walking tour of this updated Celebrity cruise ship #cruiseship",
+      "channel": "Let's All Cruise",
+      "views": 76694,
+      "published": "2025-03-30",
+      "minutes": 30
+     }
+    ],
+    "candidates": 18
+   },
+   "Celebrity Ascent": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "m-Y9-YHyR3I",
+      "title": "Celebrity Ascent | Full Walkthrough Ship Tour & Review | Brand New Ship | Take an inside Look!",
+      "channel": "Cruises It ",
+      "views": 186344,
+      "published": "2024-01-16",
+      "minutes": 23
+     },
+     {
+      "videoId": "FKFiZfkBK3Q",
+      "title": "Celebrity Ascent Ship Tour",
+      "channel": "Celebrity Cruises",
+      "views": 129666,
+      "published": "2024-08-05",
+      "minutes": 13
+     },
+     {
+      "videoId": "7LZ1mYhuV3U",
+      "title": "Celebrity Ascent: $1 Billion Mistake or the World's Best Ship?",
+      "channel": "Ritzy Travel Guide",
+      "views": 125563,
+      "published": "2024-03-01",
+      "minutes": 38
+     }
+    ],
+    "candidates": 22
+   },
+   "Celebrity Beyond": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "iQG9dNy8qEM",
+      "title": "Celebrity Beyond HONEST Cruise Review | CruiseReport",
+      "channel": "CruiseReport",
+      "views": 211416,
+      "published": "2023-03-03",
+      "minutes": 25
+     },
+     {
+      "videoId": "bYSph4sKqFw",
+      "title": "Celebrity Beyond | Full Walkthrough Ship Tour & Review | New Ship 2023 | Celebrity Cruises",
+      "channel": "Cruises It ",
+      "views": 158414,
+      "published": "2023-02-12",
+      "minutes": 14
+     },
+     {
+      "videoId": "yteH4Io4-Nk",
+      "title": "Celebrity Beyond Ship Tour: Suites, Dining and Onboard Experiences | Celebrity Cruises",
+      "channel": "Celebrity Cruises",
+      "views": 115691,
+      "published": "2024-08-05",
+      "minutes": 15
+     }
+    ],
+    "candidates": 20
+   },
+   "Celebrity Edge": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "o3WTuKJiKww",
+      "title": "My (Very Honest) Review of The Celebrity Edge in Alaska",
+      "channel": "Bright Sun Travels",
+      "views": 911825,
+      "published": "2024-06-26",
+      "minutes": 26
+     },
+     {
+      "videoId": "2GYphKyoDac",
+      "title": "Celebrity Edge Full Walkthrough Ship Tour & Review 4K | All Spaces Toured & Explained!",
+      "channel": "Harr Travel",
+      "views": 787293,
+      "published": "2021-08-01",
+      "minutes": 94
+     },
+     {
+      "videoId": "nyg6esI4EcQ",
+      "title": "CELEBRITY EDGE REVIEW: In-Depth Review of an All-Included Premium Cruise",
+      "channel": "Adrian The Cruise and Travel Guy",
+      "views": 402663,
+      "published": "2024-03-14",
+      "minutes": 24
+     }
+    ],
+    "candidates": 22
+   },
+   "Celebrity Reflection": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "zb-oPWUwASE",
+      "title": "Celebrity Reflection | Full Walkthrough Ship Tour & Review | $100Million  Renovation | Ultra 4k",
+      "channel": "Cruises It ",
+      "views": 175006,
+      "published": "2024-11-07",
+      "minutes": 16
+     },
+     {
+      "videoId": "D6V8scK9_8w",
+      "title": "CELEBRITY REFLECTION | The Ultimate Cruise Ship Tour & Experience",
+      "channel": "Explorcation",
+      "views": 114819,
+      "published": "2024-07-13",
+      "minutes": 27
+     },
+     {
+      "videoId": "CliAyUiJi5E",
+      "title": "Celebrity Reflection Full Walkthrough Tour & Review 4K | Celebrity Cruises",
+      "channel": "Harr Travel",
+      "views": 105607,
+      "published": "2022-02-26",
+      "minutes": 50
+     }
+    ],
+    "candidates": 23
+   },
+   "Celebrity Silhouette": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "BlDyvHZJvF4",
+      "title": "Celebrity Silhouette - Ship Tour (After Refurbishment)",
+      "channel": "Emma Cruises",
+      "views": 176535,
+      "published": "2021-07-28",
+      "minutes": 17
+     },
+     {
+      "videoId": "KDpiuYtRXpE",
+      "title": "Celebrity Silhouette | Full Walkthrough Ship Tour & Review | 4K HD Full Video | Check it Out!",
+      "channel": "Cruises It ",
+      "views": 97423,
+      "published": "2024-09-01",
+      "minutes": 19
+     },
+     {
+      "videoId": "Angn2aRjibs",
+      "title": "My Complete Review of Celebrity Silhouette (Why It\u2019s My Last)",
+      "channel": "Zach the Traveling Man",
+      "views": 91851,
+      "published": "2025-03-09",
+      "minutes": 14
+     }
+    ],
+    "candidates": 22
+   },
+   "Celebrity Infinity": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "sHQKCjEVF1I",
+      "title": "Celebrity Infinity Cruise Ship 2026 | Our Honest Full Review | The Good, Bad & Ugly",
+      "channel": "JJ Cruise",
+      "views": 104433,
+      "published": "2024-03-06",
+      "minutes": 14
+     },
+     {
+      "videoId": "q-lYsH0ILoE",
+      "title": "Celebrity Infinity Review - Best of Greece and Turkey",
+      "channel": "Irish Wanderer",
+      "views": 65243,
+      "published": "2024-05-10",
+      "minutes": 18
+     },
+     {
+      "videoId": "nGc1NMwtfv4",
+      "title": "Celebrity Cruises | Celebrity Infinity | Full Ship Tour | English",
+      "channel": "Immer Meer - Kreuzfahrtkanal - Christina & Marcel",
+      "views": 55585,
+      "published": "2024-02-17",
+      "minutes": 16
+     }
+    ],
+    "candidates": 18
+   },
+   "Celebrity Constellation": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "YnGJ1i2wJDk",
+      "title": "Celebrity Constellation | Full Walkthrough Ship Tour & Review | 4k Ultra | Port of Tam",
+      "channel": "Cruises It ",
+      "views": 143427,
+      "published": "2023-03-12",
+      "minutes": 14
+     },
+     {
+      "videoId": "UjihyB7glH4",
+      "title": "Celebrity Constellation Cruise Ship Full Tour & Review 2026 (Top Cruise Tips & Best Spots Revealed!)",
+      "channel": "JJ Cruise",
+      "views": 64883,
+      "published": "2022-08-03",
+      "minutes": 25
+     },
+     {
+      "videoId": "IgdAI2Fh6gY",
+      "title": "Celebrity Constellation Cruise Ship Review",
+      "channel": "AIWALKINGTOUR",
+      "views": 56911,
+      "published": "2024-08-10",
+      "minutes": 8
+     }
+    ],
+    "candidates": 18
+   },
+   "Celebrity Millennium": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "XBAQNYcvLn4",
+      "title": "Celebrity Millennium | Full Walkthrough Ship Tour 4K | All Public Spaces | 2021",
+      "channel": "Harr Travel",
+      "views": 132587,
+      "published": "2021-06-27",
+      "minutes": 57
+     },
+     {
+      "videoId": "hS3ggW0wDCU",
+      "title": "Celebrity Millennium Cruise Ship 2026 | Our Honest Full Review | The Good, Bad & Ugly",
+      "channel": "JJ Cruise",
+      "views": 71634,
+      "published": "2024-09-04",
+      "minutes": 15
+     },
+     {
+      "videoId": "7DakAPaoaJI",
+      "title": "Celebrity Millennium Cruise Ship Full Tour & Review 2026 (Popular Far East & Japan Cruise Ship)",
+      "channel": "JJ Cruise",
+      "views": 53056,
+      "published": "2024-08-25",
+      "minutes": 26
+     }
+    ],
+    "candidates": 16
    }
   },
   "Holland America": {
@@ -1287,6 +3980,155 @@
     "candidates": 0
    },
    "Zaandam": {
+    "reviews": [],
+    "candidates": 0
+   },
+   "Rotterdam": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "OMLODQPsDpc",
+      "title": "Our Panama Canal Cruise Wasn't What We Expected. Here's Why [Holland America Rotterdam review]",
+      "channel": "Life Well Cruised",
+      "views": 122354,
+      "published": "2024-01-07",
+      "minutes": 18
+     },
+     {
+      "videoId": "Vlr45mpELt8",
+      "title": "Holland America Line Rotterdam: Full Walkthrough TOUR",
+      "channel": "Cruise With Amber",
+      "views": 93786,
+      "published": "2023-07-29",
+      "minutes": 18
+     },
+     {
+      "videoId": "UEVmyV1GPHs",
+      "title": "Holland America Rotterdam Cruise Review 2022 | See All the HAL Rotterdam Highlights!",
+      "channel": "Eat Sleep Cruise",
+      "views": 83176,
+      "published": "2022-02-06",
+      "minutes": 18
+     }
+    ],
+    "candidates": 19
+   },
+   "Nieuw Statendam": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "_023hOcy-X8",
+      "title": "Holland America Nieuw Statendam Ship Tour And Review. 6 Things You Need To Know",
+      "channel": "Tips For Travellers",
+      "views": 236442,
+      "published": "2018-12-13",
+      "minutes": 11
+     },
+     {
+      "videoId": "YO8A8C1_dJc",
+      "title": "Holland America Nieuw Statendam Veranda Cabin Review, Tour & Tips",
+      "channel": "Life Well Cruised",
+      "views": 91114,
+      "published": "2022-12-14",
+      "minutes": 9
+     },
+     {
+      "videoId": "1IIJ2zuuh_Y",
+      "title": "Holland America Nieuw Statendam Full Ship Tour",
+      "channel": "Sail Away Magazine",
+      "views": 76248,
+      "published": "2023-10-22",
+      "minutes": 11
+     }
+    ],
+    "candidates": 20
+   },
+   "Koningsdam": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "JLsiPHpiRaw",
+      "title": "HAL Koningsdam | Full Ship Tour & Review 4K | All Public Spaces | Holland America Line",
+      "channel": "Harr Travel",
+      "views": 146059,
+      "published": "2022-02-06",
+      "minutes": 59
+     },
+     {
+      "videoId": "YWrA8sh9Ruc",
+      "title": "Holland America Koningsdam Ship Tour - Full Walk-Through \ud83d\udea2",
+      "channel": "Northern Viking Explorer",
+      "views": 104929,
+      "published": "2024-09-27",
+      "minutes": 32
+     },
+     {
+      "videoId": "xmMIRdIH-AU",
+      "title": "Pros and Cons of Holland America Koningsdam | Honest Review",
+      "channel": "Josh and Rachael",
+      "views": 59684,
+      "published": "2025-07-30",
+      "minutes": 24
+     }
+    ],
+    "candidates": 17
+   },
+   "Nieuw Amsterdam": {
+    "v": 2,
+    "reviews": [
+     {
+      "videoId": "_QXl2Kg9Pc0",
+      "title": "HAL Nieuw Amsterdam | Full Ship Tour & Review 4K | All Public Spaces | Holland America Line",
+      "channel": "Harr Travel",
+      "views": 118029,
+      "published": "2022-02-20",
+      "minutes": 44
+     },
+     {
+      "videoId": "d6zXXfumHWc",
+      "title": "Holland America Nieuw Amsterdam Ship Tour (Post refit)",
+      "channel": "Tips For Travellers",
+      "views": 102224,
+      "published": "2018-06-21",
+      "minutes": 8
+     },
+     {
+      "videoId": "P7eyKnXGEGo",
+      "title": "Holland America Nieuw Amsterdam Full Cruise Tour - What To Expect",
+      "channel": "Mathers On The Map",
+      "views": 56895,
+      "published": "2024-11-19",
+      "minutes": 19
+     }
+    ],
+    "candidates": 15
+   },
+   "Noordam": {
+    "reviews": [],
+    "candidates": 0
+   },
+   "Oosterdam": {
+    "reviews": [],
+    "candidates": 0
+   },
+   "Westerdam": {
+    "reviews": [],
+    "candidates": 0
+   },
+   "Zuiderdam": {
+    "reviews": [
+     {
+      "videoId": "CtebkpWMxKI",
+      "title": "KAPAL PESIAR MEWAH BERSANDAR DI PELABUHAN BENOA BALI | ZUIDERDAM | ZUDM | HOLLAND AMERICA LINE",
+      "channel": "Bli Keliling",
+      "views": 179340,
+      "published": "2025-03-04",
+      "minutes": 27
+     }
+    ],
+    "candidates": 1
+   },
+   "Volendam": {
     "reviews": [],
     "candidates": 0
    }
@@ -1320,6 +4162,164 @@
      }
     ],
     "candidates": 4
+   },
+   "Arvia": {
+    "reviews": [
+     {
+      "videoId": "gE4YlgKMPzk",
+      "title": "P&O Arvia worst balcony cabin at sea?",
+      "channel": "Travel Blog Jamie",
+      "views": 397153,
+      "published": "2023-04-15",
+      "minutes": 17
+     },
+     {
+      "videoId": "4v813kq9vCU",
+      "title": "MEDITERRANEAN CRUISE! \ud83c\uddea\ud83c\uddf8 PART 1 \u2022 P&O Cruises Arvia, Embarkation, Cabin Tour & La Coru\u00f1a Tapas \ud83c\udf0a AD",
+      "channel": "Brogan Tate",
+      "views": 232118,
+      "published": "2023-06-29",
+      "minutes": 67
+     },
+     {
+      "videoId": "ePKz2P4uaaU",
+      "title": "P&O Arvia Cruise - 2 weeks onboard (part 1)",
+      "channel": "Travel Blog Jamie",
+      "views": 219176,
+      "published": "2023-04-19",
+      "minutes": 75
+     }
+    ],
+    "candidates": 3
+   },
+   "Iona": {
+    "reviews": [
+     {
+      "videoId": "6mwW00bZilA",
+      "title": "P&O Cruises | Official Iona Virtual Ship Tour",
+      "channel": "P&O Cruises",
+      "views": 455413,
+      "published": "2022-01-20",
+      "minutes": 18
+     },
+     {
+      "videoId": "ebmgf4uwHoo",
+      "title": "P&O Cruises Iona Ship Tour",
+      "channel": "Cruise With Ben and David",
+      "views": 410862,
+      "published": "2021-08-10",
+      "minutes": 36
+     },
+     {
+      "videoId": "Tusk-2lpU58",
+      "title": "1 week Norwegian Fjords Cruise on P&O Iona (Part 1)",
+      "channel": "Travel Blog Jamie",
+      "views": 288870,
+      "published": "2023-06-10",
+      "minutes": 62
+     }
+    ],
+    "candidates": 5
+   },
+   "Azura": {
+    "reviews": [
+     {
+      "videoId": "M0-lRDFlzQE",
+      "title": "321. I tried a cruise ship for the first time! (P&O Azura, Canary Islands, solo cabin)",
+      "channel": "CruisingTheCut",
+      "views": 244466,
+      "published": "2024-01-07",
+      "minutes": 21
+     },
+     {
+      "videoId": "qwjuCTzytEQ",
+      "title": "AZURA Ship Tour",
+      "channel": "Cruise Capital",
+      "views": 200538,
+      "published": "2014-08-07",
+      "minutes": 25
+     },
+     {
+      "videoId": "-VhfdQJaQlg",
+      "title": "A tour of P&O Azura",
+      "channel": "Product Review Help",
+      "views": 122288,
+      "published": "2014-11-03",
+      "minutes": 12
+     }
+    ],
+    "candidates": 6
+   },
+   "Ventura": {
+    "reviews": [
+     {
+      "videoId": "yycg75ic67M",
+      "title": "P&O Ventura FULL Cruise Ship Tour",
+      "channel": "Sail Away Magazine",
+      "views": 124389,
+      "published": "2023-03-12",
+      "minutes": 14
+     },
+     {
+      "videoId": "NbcN9xRZPZE",
+      "title": "P&O Ventura Cruise - 1 week onboard",
+      "channel": "Travel Blog Jamie",
+      "views": 118949,
+      "published": "2022-11-12",
+      "minutes": 72
+     }
+    ],
+    "candidates": 2
+   },
+   "Aurora": {
+    "reviews": [
+     {
+      "videoId": "mhr1m7funso",
+      "title": "A tour around P&O cruise ship Aurora",
+      "channel": "Product Review Help",
+      "views": 153708,
+      "published": "2015-01-11",
+      "minutes": 13
+     },
+     {
+      "videoId": "GxXFr6f4xC8",
+      "title": "P&O Aurora Full HD Tour - First Look Following Major REFIT",
+      "channel": "Chris Frame the Maritime Historian",
+      "views": 135499,
+      "published": "2019-06-29",
+      "minutes": 21
+     }
+    ],
+    "candidates": 2
+   },
+   "Arcadia": {
+    "reviews": [
+     {
+      "videoId": "-aBJk9bryRI",
+      "title": "WORLD CRUISE: 60 DAYS STARTS NOW \ud83c\udf0d Auckland Embarkation \ud83d\udef3\ufe0f P&O Cruises Arcadia Mini-Suite Cabin Tour",
+      "channel": "Brogan Tate",
+      "views": 177013,
+      "published": "2024-02-22",
+      "minutes": 31
+     },
+     {
+      "videoId": "M44yzJua6XE",
+      "title": "P&O ARCADIA - TOUR OF THE SHIP - ACCESS ALL CABINS",
+      "channel": "Mark Richards",
+      "views": 97082,
+      "published": "2017-08-25",
+      "minutes": 9
+     },
+     {
+      "videoId": "0dxr27ywzHE",
+      "title": "P&O Arcadia Ship Tour - A full ship tour of Arcadia",
+      "channel": "Cruise Monkeys",
+      "views": 91217,
+      "published": "2019-09-20",
+      "minutes": 20
+     }
+    ],
+    "candidates": 3
    }
   },
   "Virgin Voyages": {
@@ -1343,6 +4343,68 @@
      }
     ],
     "candidates": 2
+   },
+   "Scarlet Lady": {
+    "reviews": [
+     {
+      "videoId": "Og60WyLIfmY",
+      "title": "First Class on an Ultra Luxury Cruise | Scarlet Lady",
+      "channel": "Trek Trendy",
+      "views": 2941908,
+      "published": "2023-01-29",
+      "minutes": 24
+     },
+     {
+      "videoId": "5snLKPaOhes",
+      "title": "Scarlet Lady FULL Ship and Cabin tour. Virgin Voyages new ship!",
+      "channel": "Cruise With Ben and David",
+      "views": 382904,
+      "published": "2020-02-24",
+      "minutes": 28
+     },
+     {
+      "videoId": "xeT9ANaSy-w",
+      "title": "Virgin Scarlet Lady | Full Walkthrough Ship Tour & Review 4K | Virgin Voyages 2021",
+      "channel": "Harr Travel",
+      "views": 326233,
+      "published": "2021-10-17",
+      "minutes": 54
+     }
+    ],
+    "candidates": 3
+   },
+   "Valiant Lady": {
+    "reviews": [
+     {
+      "videoId": "8ejJcV0Ye0Q",
+      "title": "\u7dad\u73cd\u90f5\u8f2a\u82f1\u52c7\u5973\u58eb\u865f Virgin Voyages Valiant Lady Ship Tour",
+      "channel": "\u716e\u5bb6\u7537\u4eba Bob's Your Uncle",
+      "views": 580467,
+      "published": "2022-10-06",
+      "minutes": 25
+     },
+     {
+      "videoId": "jmfGm4iTi-M",
+      "title": "Boarding The Wildest Uncensored Adult Only Cruise Ship In The WORLD | Virgin Voyages Valiant Lady",
+      "channel": "Kyle Pallo",
+      "views": 477098,
+      "published": "2024-05-26",
+      "minutes": 55
+     },
+     {
+      "videoId": "ijYvHIGNq-I",
+      "title": "The TRUTH About Virgin Voyages from a First Timer (Valiant Lady Review)",
+      "channel": "Zach the Traveling Man",
+      "views": 412493,
+      "published": "2024-02-04",
+      "minutes": 30
+     }
+    ],
+    "candidates": 3
+   },
+   "Resilient Lady": {
+    "reviews": [],
+    "candidates": 0
    }
   },
   "Costa": {
@@ -1374,6 +4436,311 @@
      }
     ],
     "candidates": 4
+   },
+   "Costa Smeralda": {
+    "reviews": [
+     {
+      "videoId": "2njBTh2tbfM",
+      "title": "Best Teppanyaki Cooking Show onboard Costa Smeralda 4K",
+      "channel": "Travel with Victoria",
+      "views": 1296994,
+      "published": "2021-04-03",
+      "minutes": 29
+     },
+     {
+      "videoId": "XEzPjDuj5ZM",
+      "title": "Costa Smeralda Full Video Tour 4K",
+      "channel": "Cruise Passion",
+      "views": 1208953,
+      "published": "2020-11-09",
+      "minutes": 38
+     },
+     {
+      "videoId": "z9Fuq9hAYAs",
+      "title": "Costa Smeralda Video Tour 4K",
+      "channel": "Dream Blog Cruise Magazine - Crociere",
+      "views": 502110,
+      "published": "2019-12-22",
+      "minutes": 18
+     }
+    ],
+    "candidates": 4
+   },
+   "Costa Toscana": {
+    "reviews": [],
+    "candidates": 0
+   },
+   "Costa Deliziosa": {
+    "reviews": [
+     {
+      "videoId": "8TdwiTJfpQ0",
+      "title": "\ud83d\udef3\ufe0f Crucero COSTA DELIZIOSA por las ISLAS GRIEGAS, \u00bfLo recomendamos?",
+      "channel": "Viajando con Tanda",
+      "views": 159338,
+      "published": "2024-08-24",
+      "minutes": 29
+     },
+     {
+      "videoId": "xV_1ZyC9Z6c",
+      "title": "Costa Deliziosa Complete Visit Tour QHD 2017 @CruisesandTravelsBlog",
+      "channel": "Cruises and Travels Blog",
+      "views": 159190,
+      "published": "2017-10-22",
+      "minutes": 26
+     }
+    ],
+    "candidates": 2
+   },
+   "Costa Fascinosa": {
+    "reviews": [
+     {
+      "videoId": "eiyy4AxVNlM",
+      "title": "Cruise Costa Fascinosa HD 1080p Suite cabin Mediterranean sea cruise",
+      "channel": "Cruise Passion",
+      "views": 2118372,
+      "published": "2017-05-25",
+      "minutes": 13
+     },
+     {
+      "videoId": "hj0cknAHYkE",
+      "title": "Costa Fascinosa Complete Video Tour 2017 4k @CruisesandTravelsBlog",
+      "channel": "Cruises and Travels Blog",
+      "views": 344999,
+      "published": "2017-06-01",
+      "minutes": 26
+     },
+     {
+      "videoId": "DN8Y9OTg9JA",
+      "title": "Costa Fascinosa - Ship Tour - September 2013",
+      "channel": "Jumbo JET",
+      "views": 248243,
+      "published": "2013-10-05",
+      "minutes": 17
+     }
+    ],
+    "candidates": 6
+   },
+   "Costa Favolosa": {
+    "reviews": [],
+    "candidates": 0
+   },
+   "Costa Fortuna": {
+    "reviews": [
+     {
+      "videoId": "3CulZX8I0V8",
+      "title": "\u26d4\u200a\u26a0\ufe0f\u00a1\u00a1EL CRUCERO DEL TERROR!!\u26f4MIR\u00c1 TODO LO QUE NOS PAS\u00d3 EN EL COSTA FORTUNA - EPISODIO 82",
+      "channel": "Caro y Marian",
+      "views": 127339,
+      "published": "2022-12-17",
+      "minutes": 28
+     },
+     {
+      "videoId": "FLSH2EMP6Cc",
+      "title": "Costa Fortuna Ship Tour",
+      "channel": "Liveboat Crociere",
+      "views": 96104,
+      "published": "2019-03-26",
+      "minutes": 21
+     },
+     {
+      "videoId": "KZfy8nSVIc8",
+      "title": "COSTA FORTUNA - Cruise ship Tour 4K - 2024 - The Future Ship of Margaritaville at Sea",
+      "channel": "Cruise Voyages",
+      "views": 91223,
+      "published": "2024-09-06",
+      "minutes": 18
+     }
+    ],
+    "candidates": 3
+   },
+   "Costa Pacifica": {
+    "reviews": [
+     {
+      "videoId": "-eLajT_MRw0",
+      "title": "Costa Pacifica Ship Visit",
+      "channel": "Divertirsi \u00e8 una cosa seria",
+      "views": 205660,
+      "published": "2012-11-22",
+      "minutes": 9
+     }
+    ],
+    "candidates": 1
+   },
+   "Costa Serena": {
+    "reviews": [
+     {
+      "videoId": "iwRZzdGO9YU",
+      "title": "Mumbai to Goa Cruise | COSTA SERENA Cruise Ship India Tour",
+      "channel": "200Journeys",
+      "views": 3477824,
+      "published": "2023-11-09",
+      "minutes": 26
+     },
+     {
+      "videoId": "V3J6J-midt8",
+      "title": "Mumbai To Goa By Largest Cruise in India  - Full Details with Budget | Costa Serena",
+      "channel": "Wandering Minds",
+      "views": 767140,
+      "published": "2023-11-13",
+      "minutes": 23
+     },
+     {
+      "videoId": "MOLinSjxwuk",
+      "title": "Mumbai to Goa Cruise Inaugural Journey | India\u2019s Largest & 7 Star Luxurious Costa Serena Cruise\ud83d\ude0d",
+      "channel": "Journeys with AK",
+      "views": 636721,
+      "published": "2023-11-06",
+      "minutes": 27
+     }
+    ],
+    "candidates": 3
+   }
+  },
+  "Cunard": {
+   "Queen Anne": {
+    "reviews": [],
+    "candidates": 0
+   },
+   "Queen Mary 2": {
+    "reviews": [
+     {
+      "videoId": "eKEKn-ilMB4",
+      "title": "London to New York by Cunard's Queen Mary 2",
+      "channel": "The Man in Seat 61",
+      "views": 3604973,
+      "published": "2019-10-03",
+      "minutes": 11
+     },
+     {
+      "videoId": "pTeiw9vYGzg",
+      "title": "London to New York by Luxury Ship | Queen Mary 2",
+      "channel": "Trek Trendy",
+      "views": 3538946,
+      "published": "2022-12-11",
+      "minutes": 24
+     },
+     {
+      "videoId": "PRMvD8b9Ln0",
+      "title": "QUEEN MARY 2 Southampton To New York. All Eight Nights On Board. What It's REALLY Like...",
+      "channel": "SteveMarsh",
+      "views": 2517300,
+      "published": "2025-05-24",
+      "minutes": 87
+     }
+    ],
+    "candidates": 8
+   },
+   "Queen Victoria": {
+    "reviews": [],
+    "candidates": 0
+   },
+   "Queen Elizabeth": {
+    "reviews": [
+     {
+      "videoId": "AaFaxmFpRvE",
+      "title": "Abandoned - RMS Queen Elizabeth",
+      "channel": "Bright Sun Films",
+      "views": 1459403,
+      "published": "2025-06-13",
+      "minutes": 20
+     }
+    ],
+    "candidates": 1
+   }
+  },
+  "Disney": {
+   "Disney Wish": {
+    "reviews": [
+     {
+      "videoId": "4hedoGtWSOw",
+      "title": "CHEF ADLEY feeds NAVEY!!  Niko meets the Real Spiderman & Superhero Dinner! Disney Wish Family Movie",
+      "channel": "Shonduras",
+      "views": 30079442,
+      "published": "2022-08-02",
+      "minutes": 190
+     }
+    ],
+    "candidates": 1
+   },
+   "Disney Treasure": {
+    "reviews": [],
+    "candidates": 0
+   },
+   "Disney Destiny": {
+    "reviews": [],
+    "candidates": 0
+   },
+   "Disney Adventure": {
+    "reviews": [
+     {
+      "videoId": "xdQlJwG_MJM",
+      "title": "Blippi's Magical Walt Disney World Adventure (Supported by Disney!) | Educational Videos for Kids",
+      "channel": "Blippi - Educational Videos for Kids",
+      "views": 14889462,
+      "published": "2025-05-15",
+      "minutes": 47
+     }
+    ],
+    "candidates": 1
+   },
+   "Disney Fantasy": {
+    "reviews": [
+     {
+      "videoId": "YgY1TuOczj4",
+      "title": "Disney Cruise Fantasy Family Fun Vacation Tour with Ryan ToysReview",
+      "channel": "Ryan's World",
+      "views": 32424184,
+      "published": "2016-06-23",
+      "minutes": 11
+     },
+     {
+      "videoId": "YTxbEwsizQM",
+      "title": "Disney Cruise Fantasy Family Fun Vacation Tour with Mickey House",
+      "channel": "Ryan's World",
+      "views": 19848822,
+      "published": "2016-07-20",
+      "minutes": 8
+     },
+     {
+      "videoId": "wi24QJ8cTw0",
+      "title": "DISNEY CRUISE Fantasy Tour Family Fun Vacation!",
+      "channel": "Ryan's World",
+      "views": 6599618,
+      "published": "2017-07-31",
+      "minutes": 58
+     }
+    ],
+    "candidates": 4
+   },
+   "Disney Dream": {
+    "reviews": [
+     {
+      "videoId": "WnQVj7qi_ps",
+      "title": "Swimming Pool on our BOAT!!  What\u2019s inside our Disney Dream Cruise, first family vacation on water!",
+      "channel": "Shonduras",
+      "views": 5814656,
+      "published": "2020-03-03",
+      "minutes": 12
+     }
+    ],
+    "candidates": 1
+   },
+   "Disney Magic": {
+    "reviews": [
+     {
+      "videoId": "kJ0PDkPBjjI",
+      "title": "Merida Coronation at Disney's Magic Kingdom - All 11 Disney Princesses Together During Ceremony",
+      "channel": "MouseSteps / JWL Media",
+      "views": 37550956,
+      "published": "2013-05-11",
+      "minutes": 9
+     }
+    ],
+    "candidates": 1
+   },
+   "Disney Wonder": {
+    "reviews": [],
+    "candidates": 0
    }
   }
  }

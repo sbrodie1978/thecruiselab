@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Ocean View — Ship Reviews harvest (v1, 12 Jul 2026)
+Ocean View — Ship Reviews harvest (v2, 13 Jul 2026)
 
 Finds the top 3 most-viewed, EMBEDDABLE YouTube ship tours/reviews for every
 ship across the 12 leading cruise lines, and writes data/reviews.json for the
@@ -22,7 +22,10 @@ Selection rule (per the 12 Jul design decision):
   - no Shorts, no live streams
   - minimum duration MIN_MINUTES (default 8) to filter clickbait clips
   - ship name must appear in the video title (relevance guard)
-  - top 3 by view count
+  - no disaster-bait or room-only tours (evidence-driven blocklist, see v1 postmortem)
+  - top 3 by view count AMONG RELEVANT results (search is relevance-ordered;
+    v1 ordered the search itself by viewCount and the pool filled with viral
+    Shorts and accident clips — Ryan's World was briefly the Symphony pick)
 """
 
 import json, os, re, sys, time, urllib.parse, urllib.request
@@ -30,8 +33,15 @@ import json, os, re, sys, time, urllib.parse, urllib.request
 API = "https://www.googleapis.com/youtube/v3"
 OUT = os.path.join(os.path.dirname(__file__), "..", "data", "reviews.json")
 MIN_MINUTES = 8
-SEARCH_POOL = 15          # candidates fetched per ship before filtering
+SEARCH_POOL = 25          # candidates fetched per ship before filtering
 SLEEP = 0.25              # politeness pause between API calls
+QUERY_VERSION = 2         # bump to force a full re-harvest under new rules
+
+# Titles containing any of these are never "ship reviews" (v1 evidence:
+# "Water Park Accident" 68M views, "Terror at Sea", kids-channel room tours).
+BLOCK_WORDS = ["accident","terror","nightmare","disaster","storm","sinking",
+    " sinks","crash","fire ","on fire","collision","emergency","evacuat",
+    "rescue","rogue wave","room tour","cabin tour","suite tour","stateroom tour"]
 
 # ---------------------------------------------------------------------------
 # The fleet list — 12 leading lines, ~178 ships, believed current July 2026.
@@ -125,7 +135,8 @@ def api_get(endpoint, params, key):
             return json.load(r), None
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", "replace")
-        if "quotaExceeded" in body or "dailyLimitExceeded" in body:
+        if e.code == 429 or "quotaExceeded" in body or "uota exceeded" in body \
+                or "dailyLimitExceeded" in body or "rateLimitExceeded" in body:
             return None, "QUOTA"
         return None, f"HTTP {e.code}: {body[:300]}"
     except Exception as e:
@@ -150,9 +161,9 @@ def title_matches(ship, title):
 def harvest_ship(line, ship, key):
     prefix = QUERY_PREFIX.get(line)
     qname = f"{prefix} {ship}".strip() if prefix else ship
-    q = f"{qname} cruise ship tour"
+    q = f"{qname} cruise ship tour review"
     search, err = api_get("search", {
-        "part": "id", "q": q, "type": "video", "order": "viewCount",
+        "part": "id", "q": q, "type": "video",
         "videoEmbeddable": "true", "maxResults": SEARCH_POOL,
         "relevanceLanguage": "en", "safeSearch": "none",
     }, key)
@@ -176,7 +187,9 @@ def harvest_ship(line, ship, key):
         if not st.get("embeddable"):                 continue
         if sn.get("liveBroadcastContent") != "none": continue
         if dur < MIN_MINUTES:                        continue
-        if "#short" in title.lower():                continue
+        tl = title.lower()
+        if "#short" in tl:                           continue
+        if any(b in tl for b in BLOCK_WORDS):        continue
         if not title_matches(ship, title):           continue
         passed.append({
             "videoId": v["id"], "title": title,
@@ -185,7 +198,7 @@ def harvest_ship(line, ship, key):
             "minutes": dur,
         })
     passed.sort(key=lambda x: -x["views"])
-    return {"reviews": passed[:3], "candidates": len(passed)}, None
+    return {"v": QUERY_VERSION, "reviews": passed[:3], "candidates": len(passed)}, None
 
 def load_out():
     if os.path.exists(OUT):
@@ -218,7 +231,8 @@ def main():
             continue
         done = data["lines"].get(line, {})
         for ship in ships:
-            if ship not in done:
+            entry = done.get(ship)
+            if not entry or entry.get("v") != QUERY_VERSION:
                 todo.append((line, ship))
 
     total = sum(len(s) for s in FLEET.values())

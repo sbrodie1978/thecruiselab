@@ -89,6 +89,7 @@ nav{position:sticky;top:0;z-index:40;background:linear-gradient(180deg,var(--oce
 .tag.ext{color:var(--gold);background:rgba(217,180,92,.12)}
 .tag.time{color:var(--foam);background:rgba(143,162,189,.14)}
 .tag.night{color:var(--night);background:rgba(91,108,143,.16)}
+.tag.ours{color:var(--ocean-deep);background:var(--gold)}
 .thumb{width:calc(100% + 32px);margin:-16px -16px 12px;border-radius:var(--radius) var(--radius) 0 0;
   aspect-ratio:16/9;object-fit:cover;background:#0a1c38;display:block}
 .meta{display:flex;gap:10px;flex-wrap:wrap;font-size:.72rem;color:var(--mist)}
@@ -107,6 +108,22 @@ nav{position:sticky;top:0;z-index:40;background:linear-gradient(180deg,var(--oce
 .shipcard .thumb{filter:saturate(.92)}
 .empty{border:1px dashed var(--panel-edge);border-radius:var(--radius);color:var(--mist);
   text-align:center;padding:30px 20px;font-weight:300;font-size:.9rem}
+
+/* ---------- our-channel band ---------- */
+.ourband{position:relative;border:1px solid var(--gold-dim);border-radius:var(--radius);
+  background:linear-gradient(180deg,rgba(217,180,92,.10),rgba(13,36,69,.3));
+  padding:18px 18px 16px;margin:4px 0 8px;overflow:hidden}
+.ourband .flask{position:absolute;top:-14px;right:-8px;width:96px;height:96px;opacity:.14;pointer-events:none}
+.ourband h3{font-family:'Cinzel',serif;font-weight:600;font-size:1.05rem;color:var(--gold-bright);letter-spacing:.02em}
+.ourband .handle{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--seaglass);font-weight:600;margin-top:2px}
+.ourband p{color:var(--mist);font-weight:300;font-size:.88rem;max-width:560px;margin:8px 0 12px}
+.ourband .actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn-ghost,.btn-solid{font-family:'Outfit',sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.03em;
+  border-radius:999px;padding:9px 18px;cursor:pointer;border:1px solid var(--gold-dim);text-decoration:none;display:inline-block}
+.btn-solid{background:var(--gold);color:var(--ocean-deep);border-color:var(--gold)}
+.btn-solid:hover{background:var(--gold-bright)}
+.btn-ghost{background:transparent;color:var(--gold)}
+.btn-ghost:hover{border-color:var(--gold)}
 
 /* ---------- tracker ---------- */
 .trackerbox{border:1px solid var(--panel-edge);border-radius:var(--radius);overflow:hidden;background:var(--ocean)}
@@ -220,6 +237,25 @@ footer a{color:var(--gold);text-decoration:none}
    Ocean View v2 — The Cruise Lab
    One FEEDS array + data/reviews.json drive everything.
    ===================================================================== */
+
+/* ---------------------------------------------------------------------
+   OUR CHANNEL — The Cruise Lab's own YouTube.
+   Kept as a single config object (not a FEEDS entry) so it is always
+   rendered in its own labelled band, never mixed into the third-party
+   creator grid. Channel UC id: UC_VM812P4JtvtqZkF3YN9Xg
+   Uploads playlist = same id with UC -> UU (embed/live_stream is DEAD).
+   To hide the band until the channel is fuller, set show:false.
+   --------------------------------------------------------------------- */
+const OUR_CHANNEL = {
+  show: true,
+  name: 'The Cruise Lab on YouTube',
+  handle: '@thecruiselabhq',
+  uploads: 'UU_VM812P4JtvtqZkF3YN9Xg',
+  channelUrl: 'https://www.youtube.com/@thecruiselabhq',
+  subscribeUrl: 'https://www.youtube.com/@thecruiselabhq?sub_confirmation=1',
+  blurb: 'Short, sharp cruise findings from the team behind these tools — cabin verdicts, real bar-tab maths, port intel and connectivity myth-busts. The same numbers, in 30 seconds.'
+};
+
 const FEEDS = [
 
   /* ---------------- LIVE · PORT CAMS ---------------- */
@@ -431,6 +467,42 @@ document.addEventListener('click', e => {
   saveDeck(); render();
 });
 
+/* ---------- our-channel band ---------- */
+function ourFlaskSvg(){
+  return `<svg class="flask" viewBox="0 0 100 100" aria-hidden="true">
+    <defs><clipPath id="obPort"><circle cx="50" cy="50" r="34"/></clipPath></defs>
+    <g clip-path="url(#obPort)">
+      <rect x="10" y="16" width="80" height="40" fill="#0d2445"/>
+      <rect x="10" y="52" width="80" height="34" fill="#122c52"/>
+      <circle cx="63" cy="34" r="5" fill="#f0d087" opacity=".9"/>
+    </g>
+    <circle cx="50" cy="50" r="34" fill="none" stroke="#d9b45c" stroke-width="5"/>
+  </svg>`;
+}
+function ourBand(){
+  if (!OUR_CHANNEL.show) return '';
+  return `<div class="ourband">
+    ${ourFlaskSvg()}
+    <div class="chips"><span class="tag ours">Our channel</span></div>
+    <h3>${esc(OUR_CHANNEL.name)}</h3>
+    <div class="handle">${esc(OUR_CHANNEL.handle)}</div>
+    <p>${esc(OUR_CHANNEL.blurb)}</p>
+    <div class="actions">
+      <button class="btn-solid" data-ourplay>Watch latest</button>
+      <a class="btn-ghost" href="${esc(OUR_CHANNEL.subscribeUrl)}" target="_blank" rel="noopener">Subscribe on YouTube \u2197</a>
+    </div>
+  </div>`;
+}
+function openOurChannel(){
+  const url = 'https://www.youtube.com/embed/videoseries?list=' + esc(OUR_CHANNEL.uploads);
+  openModal(`<div class="bar"><div><h2>${esc(OUR_CHANNEL.name)}</h2>
+    <div class="sub">${esc(OUR_CHANNEL.handle)} \u00b7 latest uploads</div></div>
+    <button class="x" data-close aria-label="Close">\u2715</button></div>
+    <div class="player"><iframe src="${url}" title="${esc(OUR_CHANNEL.name)}"
+      allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+    <p class="credit">Straight from <a href="${esc(OUR_CHANNEL.channelUrl)}" target="_blank" rel="noopener">${esc(OUR_CHANNEL.handle)}</a> on YouTube. If the playlist is quiet, we\u2019re just getting started \u2014 hit subscribe and the new drops land here.</p>`);
+}
+
 /* ---------- card builders ---------- */
 function feedCard(f, opts={}){
   const id = 'feed:' + f.name;
@@ -506,6 +578,7 @@ function viewHarbour(){
     <p class="rule">Fresh reviews</p>
     <p class="blurb">The newest of the top-viewed ship tours in the catalogue.</p>
     ${railOrEmpty(fresh, REVIEWS ? 'Reviews are being gathered \u2014 the fleet fills in over the next day or two.' : 'Reviews are being gathered \u2014 check back soon.')}
+    ${OUR_CHANNEL.show ? `<p class="rule">From The Cruise Lab</p>${ourBand()}` : ''}
     <p class="rule">From the archive</p>
     ${railOrEmpty(films,'')}`;
 }
@@ -544,7 +617,12 @@ function viewWatch(){
   const blurb = s==='creator'
     ? '<p class="blurb">The cruise creators worth your time \u2014 latest uploads play right here.</p>'
     : '<p class="blurb">Ocean liners in their pomp \u2014 films from the Internet Archive.</p>';
-  return `${chips}${blurb}<div class="grid">${FEEDS.filter(f=>f.sec===s).map(f=>feedCard(f)).join('')}</div>`;
+  /* Our own channel gets a dedicated labelled band ABOVE the third-party
+     creator grid on the Reviews & Tips sub-view — visibly ours, never mixed in. */
+  const ours = (s==='creator' && OUR_CHANNEL.show)
+    ? `<p class="rule">From The Cruise Lab</p>${ourBand()}<p class="rule">Cruise creators</p>`
+    : '';
+  return `${chips}${blurb}${ours}<div class="grid">${FEEDS.filter(f=>f.sec===s).map(f=>feedCard(f)).join('')}</div>`;
 }
 let trackerIdx = 0;
 function render(){
@@ -587,6 +665,8 @@ function buildIndex(){
     label: f.name, extra: f.loc||'', act: () => f.kind==='link' ? window.open(f.srcUrl,'_blank','noopener') : openFeed(f),
     hay: (f.name+' '+(f.loc||'')+' '+(f.desc||'')).toLowerCase()});
   ix.push({g:'Cams & Tracker', label:'Ship Tracker', extra:'live map', act: () => {view='live'; sub.live='tracker'; render();}, hay:'ship tracker vesselfinder live map ais'});
+  if (OUR_CHANNEL.show) ix.push({g:'Creators', label:OUR_CHANNEL.name, extra:OUR_CHANNEL.handle,
+    act: () => openOurChannel(), hay:('the cruise lab '+OUR_CHANNEL.handle+' our channel youtube').toLowerCase()});
   for (const s of SHIPS) ix.push({g:'Ships', label:s.ship, extra:s.line,
     act: () => openShip(s.line, s.ship), hay:(s.ship+' '+s.line).toLowerCase()});
   return ix;
@@ -618,6 +698,7 @@ document.addEventListener('click', e => {
   const sc  = e.target.closest('[data-sub]');     if (sc){ const [v,k]=sc.dataset.sub.split(':'); sub[v]=k; render(); return; }
   const lc  = e.target.closest('[data-line]');    if (lc){ curLine = lc.dataset.line; render(); return; }
   const rc  = e.target.closest('[data-region]');  if (rc){ trackerIdx = +rc.dataset.region; render(); return; }
+  if (e.target.closest('[data-ourplay]')) { openOurChannel(); return; }
   const fc  = e.target.closest('button[data-feed]'); if (fc){ const f=FEEDS.find(x=>x.name===fc.dataset.feed); if(f) openFeed(f); return; }
   const shc = e.target.closest('[data-ship]');    if (shc){ const [l,s]=shc.dataset.ship.split('|'); openShip(l,s); return; }
   const vc  = e.target.closest('[data-video]');   if (vc){
@@ -645,6 +726,11 @@ function debugSweep(){
       `<h3 style="font-family:Cinzel,serif;color:var(--gold);margin:14px 0 6px">${esc(f.name)} \u00b7 ${f.kind}</h3>
        <div class="player" style="margin-bottom:10px"><iframe src="${url.replace('?autoplay=1','')}" title="${esc(f.name)}"></iframe></div>`);
   }
+  if (OUR_CHANNEL.show){
+    dbg.insertAdjacentHTML('beforeend',
+      `<h3 style="font-family:Cinzel,serif;color:var(--gold);margin:14px 0 6px">${esc(OUR_CHANNEL.name)} \u00b7 our uploads</h3>
+       <div class="player" style="margin-bottom:10px"><iframe src="https://www.youtube.com/embed/videoseries?list=${esc(OUR_CHANNEL.uploads)}" title="our channel"></iframe></div>`);
+  }
   const [,la,lo,z] = TRACKER_REGIONS[0];
   dbg.insertAdjacentHTML('beforeend',
     `<h3 style="font-family:Cinzel,serif;color:var(--gold);margin:14px 0 6px">VesselFinder tracker</h3>
@@ -654,6 +740,7 @@ function debugSweep(){
 
 /* ---------- boot ---------- */
 window.FEEDS = FEEDS;   // exposed for tests & console tinkering
+window.OUR_CHANNEL = OUR_CHANNEL;
 render();
 if (new URLSearchParams(location.search).get('debug') === '1') debugSweep();
 </script>
