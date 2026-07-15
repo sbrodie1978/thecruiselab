@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Aboard Store — curated cruise gear | The Cruise Lab</title>
+<meta name="description" content="Lab-vetted cruise gear, curated by The Cruise Lab. Cabin comfort, power &amp; tech, packing, port days, formal night and first-timer essentials — plus what's banned on board.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ocean-deep:#081830;  --ocean:#0d2445;
+  --panel:#122c52;       --panel-edge:#1d3d6b;
+  --gold:#d9b45c;        --gold-bright:#f0d087;  --gold-dim:rgba(217,180,92,.35);
+  --foam:#f3efe4;        --mist:#8fa2bd;
+  --seaglass:#46c3a8;    --seaglass-dim:rgba(70,195,168,.18);
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{
+  background:linear-gradient(180deg,var(--ocean-deep) 0%,var(--ocean) 100%);
+  color:var(--foam);
+  font-family:'Outfit',sans-serif;
+  font-weight:300;
+  min-height:100vh;
+}
+a{color:var(--gold);}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold-bright);outline-offset:2px}
+
+/* ---------- header ---------- */
+header{max-width:1060px;margin:0 auto;padding:44px 20px 8px;text-align:center}
+.badge{
+  display:inline-block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--mist);border:1px solid var(--panel-edge);border-radius:999px;
+  padding:5px 14px;margin-bottom:20px;text-decoration:none;
+}
+.badge:hover{color:var(--gold);border-color:var(--gold-dim)}
+h1{
+  font-family:'Cinzel',serif;font-weight:700;font-size:clamp(2rem,5.5vw,3.2rem);line-height:1.12;
+  background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.tagline{color:var(--mist);font-size:1.05rem;margin-top:12px;max-width:620px;margin-left:auto;margin-right:auto}
+.disclosure{
+  font-size:.85rem;color:var(--mist);margin-top:18px;
+}
+.disclosure strong{color:var(--foam);font-weight:500}
+
+/* ---------- category nav ---------- */
+nav.cats{
+  position:sticky;top:0;z-index:20;
+  background:rgba(8,24,48,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--panel-edge);
+  margin-top:26px;
+}
+nav.cats .inner{
+  max-width:1060px;margin:0 auto;padding:10px 16px;
+  display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;
+}
+nav.cats .inner::-webkit-scrollbar{display:none}
+nav.cats a{
+  flex:0 0 auto;text-decoration:none;font-size:.82rem;font-weight:500;letter-spacing:.04em;
+  color:var(--mist);border:1px solid var(--panel-edge);border-radius:999px;padding:7px 15px;
+  transition:color .18s,border-color .18s;
+}
+nav.cats a:hover{color:var(--gold-bright);border-color:var(--gold-dim)}
+
+/* ---------- sections ---------- */
+main{max-width:1060px;margin:0 auto;padding:8px 20px 30px}
+.divider{
+  display:flex;align-items:center;gap:16px;margin:52px 0 8px;scroll-margin-top:70px;
+}
+.divider::before,.divider::after{
+  content:"";flex:1;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold-dim));
+}
+.divider::after{background:linear-gradient(90deg,var(--gold-dim),transparent)}
+.divider h2{
+  font-family:'Cinzel',serif;font-weight:600;font-size:.98rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--gold);white-space:nowrap;
+}
+.cat-blurb{text-align:center;color:var(--mist);font-size:.92rem;margin:6px auto 24px;max-width:560px}
+
+/* ---------- product cards ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.card{
+  position:relative;
+  background:linear-gradient(160deg,var(--panel),var(--ocean));
+  border:1px solid var(--panel-edge);border-radius:var(--radius);
+  padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;
+  transition:transform .18s,border-color .18s;
+}
+.card:hover{transform:translateY(-3px);border-color:var(--gold-dim)}
+.card .icon{
+  width:44px;height:44px;border-radius:12px;flex:0 0 auto;
+  display:flex;align-items:center;justify-content:center;font-size:1.35rem;
+  background:rgba(217,180,92,.08);border:1px solid var(--gold-dim);
+}
+.card .head{display:flex;align-items:center;gap:13px}
+.card h3{font-family:'Outfit',sans-serif;font-weight:600;font-size:1.02rem;color:var(--foam);line-height:1.3}
+.card p{font-size:.88rem;color:var(--mist);line-height:1.55}
+.labnote{
+  background:var(--seaglass-dim);border-left:2px solid var(--seaglass);
+  border-radius:0 8px 8px 0;padding:8px 11px;font-size:.82rem;color:var(--foam);line-height:1.5;
+}
+.labnote b{
+  color:var(--seaglass);font-weight:600;font-size:.68rem;letter-spacing:.14em;
+  text-transform:uppercase;display:block;margin-bottom:2px;
+}
+.card .cta{
+  margin-top:auto;align-self:flex-start;
+  text-decoration:none;font-weight:600;font-size:.85rem;letter-spacing:.03em;
+  color:var(--ocean-deep);background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+  border-radius:9px;padding:9px 16px;
+}
+.card .cta:hover{filter:brightness(1.06)}
+
+/* ---------- leave at home ---------- */
+.contraband{
+  margin:64px 0 10px;background:linear-gradient(160deg,var(--panel),var(--ocean));
+  border:1px dashed var(--panel-edge);border-radius:var(--radius);padding:26px 24px;
+}
+.contraband h2{
+  font-family:'Cinzel',serif;font-weight:600;font-size:.98rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--seaglass);text-align:center;margin-bottom:6px;
+}
+.contraband .sub{text-align:center;color:var(--mist);font-size:.9rem;margin-bottom:18px}
+.contraband ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px 22px;max-width:820px;margin:0 auto}
+.contraband li{font-size:.9rem;color:var(--foam);padding-left:20px;position:relative;line-height:1.5}
+.contraband li::before{content:"✕";position:absolute;left:0;color:var(--seaglass);font-weight:600}
+.contraband li span{color:var(--mist);font-size:.83rem;display:block}
+
+/* ---------- footer ---------- */
+footer{
+  border-top:1px solid var(--panel-edge);margin-top:60px;padding:30px 20px 42px;
+  text-align:center;color:var(--mist);font-size:.8rem;line-height:1.7;
+}
+footer .rule{max-width:1060px;margin:0 auto}
+footer a{color:var(--gold);text-decoration:none}
+footer a:hover{color:var(--gold-bright)}
+footer p+p{margin-top:8px}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="badge" href="https://thecruiselab.com">⚓ Part of The Cruise Lab</a>
+  <h1>All Aboard Store</h1>
+  <p class="tagline">Lab-vetted cruise gear. No filler, no gadgets you'll never unpack — just the kit that earns its suitcase space, and a note on what to leave at home.</p>
+  <p class="disclosure"><strong>As an Amazon Associate, The Cruise Lab earns from qualifying purchases.</strong> Links below go to Amazon (paid links). Prices and availability are shown on Amazon.</p>
+</header>
+
+<nav class="cats" aria-label="Categories"><div class="inner" id="catnav"></div></nav>
+
+<main id="store"></main>
+
+<footer>
+  <div class="rule">
+    <p>As an Amazon Associate, The Cruise Lab earns from qualifying purchases. Commission never changes what we recommend.</p>
+    <p>The Cruise Lab is independent and is not affiliated with, or endorsed by, Amazon, Princess Cruises or any cruise line.</p>
+    <p><a href="https://thecruiselab.com/privacy">Privacy &amp; Cookies</a> · <a href="https://thecruiselab.com">thecruiselab.com</a></p>
+    <p>© 2026 The Cruise Lab</p>
+  </div>
+</footer>
+
+<!-- OneLink: when the US Associates account is linked, paste Amazon's OneLink <script> snippet
+     here (immediately before </body>). It rewrites the amazon.co.uk links for US/international
+     visitors automatically. Until then, UK links work worldwide but only earn on amazon.co.uk. -->
+
+<script>
+/* =====================================================================
+   ALL EDITABLE DATA LIVES HERE (same convention as GetMyCruiseConnection)
+   ---------------------------------------------------------------------
+   AFFILIATE.tag      — Amazon Associates UK tracking ID
+   PRODUCTS[].asin    — paste a real ASIN (from SiteStripe) to deep-link
+                        the product page; leave "" to fall back to a
+                        tag-carrying Amazon search for PRODUCTS[].q.
+   Both link styles carry the tag and earn commission.
+   ===================================================================== */
+const AFFILIATE = {
+  tag:    "thecruiselabh-21",          // UK tracking ID
+  tagUS:  "thecruiselabh-20",                          // US tracking ID (pending — used via OneLink mapping)
+  market: "https://www.amazon.co.uk"
+};
+
+const CATEGORIES = [
+  { id:"power",   name:"Power & Tech",            blurb:"Cabins are famously short on sockets — and the obvious fix is the one item security confiscates. Start here." },
+  { id:"cabin",   name:"Cabin Comfort",           blurb:"Cabin walls are steel and interior cabins are pitch black at 3am. Both problems have cheap fixes." },
+  { id:"packing", name:"Packing & Organisation",  blurb:"Get to the terminal organised: the right tags, the right cubes, and a bag that folds away for port days." },
+  { id:"port",    name:"Port Days",               blurb:"Ashore for eight hours — sun, sea and pickpocket-proofing. The shore-day kit." },
+  { id:"formal",  name:"Formal Night",            blurb:"Irons and steamers are banned on board, so arriving crease-free takes planning." },
+  { id:"first",   name:"First-Timer Essentials",  blurb:"The small stuff seasoned cruisers pack without thinking — and first-timers wish they'd known about." }
+];
+
+const PRODUCTS = [
+  /* ---- Power & Tech ---- */
+  { cat:"power", icon:"🔌", name:"Cruise-approved power strip (non-surge)",
+    blurb:"Multiple USB ports and outlets from a single cabin socket — without the surge protection that gets it confiscated.",
+    note:"Surge-protected strips are prohibited on every major cruise line and are removed at embarkation. Non-surge is the only version that sails.",
+    asin:"", q:"cruise approved power strip non surge usb" },
+  { cat:"power", icon:"⚡", name:"Multi-port USB-C wall charger",
+    blurb:"One compact GaN charger for phone, watch, tablet and camera — one socket, everything charging overnight.",
+    note:"", asin:"", q:"usb c gan wall charger multi port" },
+  { cat:"power", icon:"🌍", name:"UK to US/EU plug adapter",
+    blurb:"Most ships carry American and European sockets, not British ones. A two-pack means one at the desk, one at the bed.",
+    note:"Check your ship — but US/EU sockets are the fleet norm, even on lines sailing from Southampton.",
+    asin:"", q:"uk to usa europe travel plug adapter" },
+  { cat:"power", icon:"🔋", name:"Slim USB-C power bank",
+    blurb:"Port days are long and ship's photo apps are hungry. A pocket power bank keeps the phone alive to the last tender.",
+    note:"Pack power banks in hand luggage — they're not permitted in checked bags on flights or in checked cruise luggage.",
+    asin:"", q:"slim power bank 10000mah usb c" },
+  { cat:"power", icon:"📱", name:"Waterproof phone pouch",
+    blurb:"Beach days, tender rides, snorkel stops — the phone stays dry and still shoots photos through the pouch.",
+    note:"", asin:"", q:"waterproof phone pouch lanyard" },
+  { cat:"power", icon:"🧲", name:"Magnetic phone mount",
+    blurb:"Sticks to the steel cabin wall — instant bedside phone stand, no drilling, no adhesive residue.",
+    note:"", asin:"", q:"magnetic phone holder wall mount" },
+
+  /* ---- Cabin Comfort ---- */
+  { cat:"cabin", icon:"🧲", name:"Heavy-duty magnetic hooks",
+    blurb:"The single most-recommended cruise item on the internet. Walls and ceiling are steel — hang hats, lanyards, bags, wet swimwear.",
+    note:"Buy stronger than you think: 10kg+ rated hooks hold a loaded day bag; the tiny fridge-magnet type won't.",
+    asin:"", q:"heavy duty magnetic hooks" },
+  { cat:"cabin", icon:"💡", name:"Motion-sensor nightlight",
+    blurb:"Interior cabins are the darkest rooms you'll ever sleep in. A battery motion light makes the 3am bathroom run civilised.",
+    note:"", asin:"", q:"motion sensor night light battery" },
+  { cat:"cabin", icon:"🌀", name:"Rechargeable travel fan",
+    blurb:"Cabin air-con is one-temperature-fits-nobody. A small USB fan on the nightstand fixes sleep for light sleepers.",
+    note:"", asin:"", q:"usb rechargeable travel fan quiet" },
+  { cat:"cabin", icon:"🚪", name:"Over-door organiser",
+    blurb:"Cabins are short on flat surfaces. An over-door pocket organiser holds sunscreen, chargers, docs and everyone's small chaos.",
+    note:"", asin:"", q:"over door hanging organiser pockets" },
+  { cat:"cabin", icon:"😴", name:"Soft foam earplugs",
+    blurb:"Cabin doors slam and neighbours exist. A decent set of sleep earplugs costs less than one cocktail.",
+    note:"", asin:"", q:"soft foam earplugs sleep" },
+  { cat:"cabin", icon:"🛏️", name:"Bedside storage caddy",
+    blurb:"Slides under the mattress and gives you the bedside shelf the cabin forgot — glasses, phone, book, remote.",
+    note:"", asin:"", q:"bedside storage caddy pocket" },
+
+  /* ---- Packing & Organisation ---- */
+  { cat:"packing", icon:"🧳", name:"Packing cubes",
+    blurb:"The difference between a wardrobe and a suitcase-floor explosion — unpack in minutes, live organised all week.",
+    note:"", asin:"", q:"packing cubes set travel" },
+  { cat:"packing", icon:"🗜️", name:"Compression bags (no vacuum)",
+    blurb:"Roll-to-compress bags halve the space bulky layers take — no vacuum needed, so they work for the trip home too.",
+    note:"", asin:"", q:"travel compression bags no vacuum" },
+  { cat:"packing", icon:"⚖️", name:"Digital luggage scale",
+    blurb:"Fly-cruises live and die by the baggage allowance. Weigh before you leave the cabin, not at the airport desk.",
+    note:"", asin:"", q:"digital luggage scale" },
+  { cat:"packing", icon:"🏷️", name:"Cruise luggage tag holders",
+    blurb:"Cruise lines email you a paper tag and expect it to survive baggage handling. These laminate it in a stapled-proof holder.",
+    note:"Sizes are line-specific: Princess, Carnival and Holland America use wide tags; Royal Caribbean, Celebrity and NCL use narrow. Check the listing matches your line.",
+    asin:"", q:"cruise luggage tag holders" },
+  { cat:"packing", icon:"🪪", name:"Lanyard with card holder",
+    blurb:"Your cruise card is your room key, wallet and ID all week. A lanyard with a zip pouch ends the constant pocket-patting.",
+    note:"Princess sails on the Medallion rather than a card — a clip accessory or wristband holder is the right pick there.",
+    asin:"", q:"cruise lanyard card holder zip" },
+  { cat:"packing", icon:"👜", name:"Foldable port-day tote",
+    blurb:"Packs flat in the case, then swallows towels, water and market finds ashore. Comes home full of souvenirs.",
+    note:"", asin:"", q:"foldable tote bag travel large" },
+
+  /* ---- Port Days ---- */
+  { cat:"port", icon:"🧴", name:"Reef-safe sunscreen",
+    blurb:"High-factor, mineral-based, and legal everywhere you'll swim.",
+    note:"Not optional everywhere: Hawaii, Bonaire, Aruba and parts of Mexico restrict or ban non-reef-safe formulas.",
+    asin:"", q:"reef safe sunscreen spf 50" },
+  { cat:"port", icon:"🩴", name:"Water shoes",
+    blurb:"Rocky beaches, hot sand and sea urchins don't care about your holiday. Water shoes make every beach walkable.",
+    note:"", asin:"", q:"water shoes adults beach" },
+  { cat:"port", icon:"📎", name:"Beach towel clips",
+    blurb:"Sea breeze on deck 16 is stronger than your towel's willpower. Clips hold it to the sun lounger all afternoon.",
+    note:"", asin:"", q:"beach towel clips sun lounger" },
+  { cat:"port", icon:"🥤", name:"Insulated water bottle",
+    blurb:"Fill it at breakfast and it's still cold at 3pm in a Caribbean port. Pays for itself against bottled-water prices ashore.",
+    note:"", asin:"", q:"insulated water bottle stainless" },
+  { cat:"port", icon:"🎒", name:"Anti-theft crossbody bag",
+    blurb:"Lockable zips and slash-proof strap for busy port markets — carry the essentials, keep both hands for the gelato.",
+    note:"", asin:"", q:"anti theft crossbody bag travel" },
+  { cat:"port", icon:"🔭", name:"Compact binoculars",
+    blurb:"Glacier calving, whales off the bow, fjord waterfalls — the difference between seeing it and squinting at it.",
+    note:"The Alaska and Norway essential most first-timers forget.",
+    asin:"", q:"compact binoculars travel 10x42" },
+
+  /* ---- Formal Night ---- */
+  { cat:"formal", icon:"👔", name:"Wrinkle-release spray",
+    blurb:"Spray, tug, hang, done. The only legal way to de-crease formalwear on board.",
+    note:"Irons and clothes steamers are banned in cabins on every major line — they're a fire risk and get confiscated. This is the workaround.",
+    asin:"", q:"wrinkle release spray clothes" },
+  { cat:"formal", icon:"📁", name:"Garment folder",
+    blurb:"Shirts and dresses arrive flat and fold-line-free instead of scrunched into a cube.",
+    note:"", asin:"", q:"packing garment folder shirts" },
+  { cat:"formal", icon:"💍", name:"Travel jewellery case",
+    blurb:"Necklaces untangled, earrings paired, everything in one padded case instead of loose in a washbag.",
+    note:"", asin:"", q:"travel jewellery case small" },
+  { cat:"formal", icon:"🥻", name:"Folding garment bag",
+    blurb:"A suit or gown travels hung and protected, then the bag folds into the case for the rest of the trip.",
+    note:"", asin:"", q:"folding garment bag travel suit" },
+
+  /* ---- First-Timer Essentials ---- */
+  { cat:"first", icon:"🌊", name:"Travel sickness wristbands",
+    blurb:"Acupressure bands — no drowsiness, no pharmacy, kids' sizes exist. The keep-in-the-daybag insurance policy.",
+    note:"Modern ships are remarkably stable, but the Bay of Biscay and the Drake Passage remain undefeated. Pack them anyway.",
+    asin:"", q:"travel sickness wristbands acupressure" },
+  { cat:"first", icon:"🍬", name:"Ginger chews",
+    blurb:"The gentle backup if the sea gets lively — and a better sweet than most minibars.",
+    note:"", asin:"", q:"ginger chews travel" },
+  { cat:"first", icon:"🚪", name:"Cruise door magnets",
+    blurb:"A thousand identical cabin doors down a corridor that never ends. Decorating yours is cruise culture — and genuinely useful.",
+    note:"Magnets only — sticky tape and hooks on doors can earn a charge for damage. The door is steel; lean into it.",
+    asin:"", q:"cruise door magnets decoration" },
+  { cat:"first", icon:"🛂", name:"Travel document organiser",
+    blurb:"Passports, boarding passes, cruise docs and the paper luggage tags in one wallet — embarkation day, un-flustered.",
+    note:"", asin:"", q:"travel document organiser family passport" },
+  { cat:"first", icon:"📓", name:"Cruise journal",
+    blurb:"Ports, menus, shows, sea days — a week at sea blurs fast. The souvenir you write yourself.",
+    note:"", asin:"", q:"cruise travel journal" },
+  { cat:"first", icon:"🖍️", name:"Highlighter set",
+    blurb:"For the daily programme, obviously. Seasoned cruisers highlight their day over breakfast like it's a race card.",
+    note:"", asin:"", q:"pastel highlighters set" }
+];
+
+const BANNED = [
+  ["Surge-protected extension leads","fire risk — confiscated at security on every line"],
+  ["Irons & clothes steamers","banned in cabins fleet-wide; wrinkle spray is the fix"],
+  ["Candles & incense","open flames are the one thing ships truly fear"],
+  ["Travel kettles & heating coils","not permitted on most lines (UK sailings sometimes excepted)"],
+  ["Drones","almost universally banned on board; many ports ban them too"],
+  ["Alcohol beyond the allowance","most lines allow a bottle of wine per adult — the rest is held until disembarkation"]
+];
+
+/* ---------- render ---------- */
+function productUrl(p){
+  return p.asin
+    ? `${AFFILIATE.market}/dp/${p.asin}?tag=${AFFILIATE.tag}`
+    : `${AFFILIATE.market}/s?k=${encodeURIComponent(p.q)}&tag=${AFFILIATE.tag}`;
+}
+
+const nav = document.getElementById("catnav");
+const main = document.getElementById("store");
+
+CATEGORIES.forEach(c=>{
+  const a=document.createElement("a");
+  a.href=`#${c.id}`; a.textContent=c.name;
+  nav.appendChild(a);
+
+  const div=document.createElement("div");
+  div.className="divider"; div.id=c.id;
+  div.innerHTML=`<h2>${c.name}</h2>`;
+  main.appendChild(div);
+
+  const blurb=document.createElement("p");
+  blurb.className="cat-blurb"; blurb.textContent=c.blurb;
+  main.appendChild(blurb);
+
+  const grid=document.createElement("div");
+  grid.className="grid";
+  PRODUCTS.filter(p=>p.cat===c.id).forEach(p=>{
+    const card=document.createElement("article");
+    card.className="card";
+    card.innerHTML=`
+      <div class="head"><div class="icon">${p.icon}</div><h3>${p.name}</h3></div>
+      <p>${p.blurb}</p>
+      ${p.note?`<div class="labnote"><b>Lab note</b>${p.note}</div>`:""}
+      <a class="cta" href="${productUrl(p)}" target="_blank" rel="sponsored nofollow noopener">View on Amazon ↗</a>`;
+    grid.appendChild(card);
+  });
+  main.appendChild(grid);
+});
+
+/* leave-at-home strip */
+const cb=document.createElement("section");
+cb.className="contraband";
+cb.innerHTML=`<h2>Leave at Home</h2>
+  <p class="sub">The lab's anti-catalogue — commonly packed, confiscated on arrival. Save the suitcase space.</p>
+  <ul>${BANNED.map(([n,d])=>`<li>${n}<span>${d}</span></li>`).join("")}</ul>`;
+main.appendChild(cb);
+</script>
+</body>
+</html>
