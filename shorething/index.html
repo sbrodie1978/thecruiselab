@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="robots" content="noindex,nofollow">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Shore Thing · Port guides for your exact sailing · The Cruise Lab</title>
@@ -778,7 +779,8 @@ $("downloadBtn").addEventListener("click", ()=>{
 function standaloneHtml(){
   // Paper-mode standalone document: cover + ribbon markup, self-contained CSS.
   return `<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8">
+<html lang="en"><head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(coverTitle.textContent)} · Shore Thing guide</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
