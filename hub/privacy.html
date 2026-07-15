@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy &amp; Cookies · The Cruise Lab</title>
+<meta name="description" content="How The Cruise Lab handles data, cookies and affiliate links across its free cruise-planning tools. Plain English, minimal collection, UK GDPR.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://thecruiselab.com/privacy">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ocean-deep:#081830; --ocean:#0d2445;
+    --panel:#122c52; --panel-edge:#1d3d6b;
+    --gold:#d9b45c; --gold-bright:#f0d087; --gold-dim:rgba(217,180,92,.35);
+    --foam:#f3efe4; --mist:#8fa2bd;
+    --seaglass:#46c3a8; --seaglass-dim:rgba(70,195,168,.18);
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:
+      radial-gradient(1200px 700px at 50% -10%, rgba(29,61,107,.55), transparent 60%),
+      linear-gradient(180deg, var(--ocean) 0%, var(--ocean-deep) 100%);
+    background-attachment:fixed;
+    color:var(--foam);
+    font-family:"Outfit",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    font-weight:300;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--gold-bright);text-decoration:none;border-bottom:1px solid var(--gold-dim);transition:border-color .2s,color .2s}
+  a:hover{color:var(--foam);border-color:var(--gold)}
+  a:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:3px}
+
+  .wrap{max-width:800px;margin:0 auto;padding:0 24px}
+
+  /* Masthead */
+  header{padding:56px 0 8px;text-align:center}
+  .flask{
+    width:44px;height:44px;margin:0 auto 20px;display:block;
+  }
+  .backlink{
+    display:inline-flex;align-items:center;gap:7px;
+    font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--mist);border:none;font-weight:500;
+  }
+  .backlink:hover{color:var(--gold-bright)}
+  .backlink span{font-size:1.05em;line-height:0}
+  h1{
+    font-family:"Cinzel",serif;font-weight:700;
+    font-size:clamp(1.9rem,5.5vw,2.9rem);
+    line-height:1.1;margin:22px 0 10px;
+    background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .subtitle{color:var(--mist);font-size:1rem;margin:0 auto;max-width:38ch}
+  .stamp{
+    margin-top:18px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--mist);
+  }
+  .stamp b{color:var(--foam);font-weight:600}
+
+  /* Divider */
+  .divider{
+    display:flex;align-items:center;gap:16px;
+    margin:44px 0 8px;
+  }
+  .divider::before,.divider::after{
+    content:"";flex:1;height:1px;
+    background:linear-gradient(90deg,transparent,var(--gold-dim),transparent);
+  }
+  .divider span{
+    font-family:"Cinzel",serif;font-size:.72rem;font-weight:600;
+    letter-spacing:.28em;text-transform:uppercase;color:var(--gold);
+    white-space:nowrap;
+  }
+
+  /* Summary card */
+  .tldr{
+    background:linear-gradient(160deg,var(--panel),var(--ocean));
+    border:1px solid var(--panel-edge);border-radius:var(--radius);
+    padding:26px 28px;margin:26px 0 10px;
+  }
+  .tldr h2{
+    font-family:"Cinzel",serif;font-weight:600;font-size:1.05rem;
+    color:var(--gold-bright);margin:0 0 14px;letter-spacing:.02em;
+  }
+  .tldr ul{margin:0;padding:0;list-style:none}
+  .tldr li{
+    position:relative;padding-left:26px;margin:10px 0;font-weight:400;
+    color:var(--foam);
+  }
+  .tldr li::before{
+    content:"";position:absolute;left:2px;top:.62em;
+    width:8px;height:8px;border-radius:2px;transform:rotate(45deg);
+    background:var(--seaglass);
+  }
+
+  /* Body sections */
+  main{padding-top:8px}
+  section{margin:38px 0}
+  h2{
+    font-family:"Cinzel",serif;font-weight:600;
+    font-size:clamp(1.15rem,3.5vw,1.45rem);
+    color:var(--foam);margin:0 0 6px;line-height:1.25;
+  }
+  h2 .num{
+    color:var(--gold);font-size:.72em;margin-right:.6em;
+    font-weight:500;letter-spacing:.05em;
+  }
+  section p{margin:12px 0;font-weight:300}
+  section p strong,li strong{font-weight:600;color:var(--foam)}
+  ul.body{margin:12px 0;padding-left:0;list-style:none}
+  ul.body li{
+    position:relative;padding-left:22px;margin:9px 0;font-weight:300;
+  }
+  ul.body li::before{
+    content:"";position:absolute;left:3px;top:.72em;
+    width:6px;height:6px;border-radius:50%;background:var(--gold);
+  }
+  .note{
+    border-left:2px solid var(--gold-dim);padding:2px 0 2px 18px;
+    color:var(--mist);font-size:.95rem;margin:16px 0;
+  }
+
+  /* Footer */
+  footer{
+    margin-top:56px;padding:30px 0 60px;text-align:center;
+    border-top:1px solid var(--panel-edge);
+  }
+  footer p{color:var(--mist);font-size:.86rem;margin:8px 0;font-weight:300}
+  footer .home{
+    display:inline-block;margin-top:8px;font-size:.82rem;
+    letter-spacing:.1em;text-transform:uppercase;font-weight:500;
+    color:var(--gold);border:none;
+  }
+  footer .home:hover{color:var(--gold-bright)}
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none!important}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <a class="backlink" href="https://thecruiselab.com"><span>&larr;</span> The Cruise Lab</a>
+    <!-- Flask mark -->
+    <svg class="flask" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="margin-top:20px">
+      <path d="M19 5h10M21 5v11L11 37a4 4 0 0 0 3.6 6h18.8A4 4 0 0 0 37 37L27 16V5" stroke="#d9b45c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15.5 30h17c2 0 3.3 1.4 3.3 3.3L33.4 43H14.6l-2.4-9.7C12.2 31.4 13.5 30 15.5 30Z" fill="rgba(70,195,168,.28)"/>
+      <circle cx="22" cy="35" r="1.6" fill="#f0d087"/>
+    </svg>
+    <h1>Privacy &amp; Cookies</h1>
+    <p class="subtitle">How The Cruise Lab handles data across its free tools. The short version: we collect almost nothing.</p>
+    <p class="stamp">Effective <b>15 July 2026</b> &middot; Version 1</p>
+  </header>
+
+  <div class="tldr">
+    <h2>The short version</h2>
+    <ul>
+      <li>The Cruise Lab tools are free and work in your browser. There are no accounts and no logins.</li>
+      <li>We don't ask for your name, email or payment details to use any tool.</li>
+      <li>Anything you type into a tool (ports, dates, a package price) stays in your browser on your device &mdash; it isn't sent to us.</li>
+      <li>We use privacy-friendly, anonymous analytics to count visits. Some pages use cookies for this or for embedded content; details below.</li>
+      <li>Some links are affiliate links &mdash; if you buy through them we may earn a small commission, at no extra cost to you.</li>
+      <li>You're in the UK's data-protection regime. Your rights, and how to contact us, are set out below.</li>
+    </ul>
+  </div>
+
+  <div class="divider"><span>The detail</span></div>
+
+  <main>
+
+    <section>
+      <h2><span class="num">1.</span>Who we are</h2>
+      <p>The Cruise Lab is a collection of free web tools for cruise passengers, published at <a href="https://thecruiselab.com">thecruiselab.com</a> and its associated tool sites (together, the &ldquo;Sites&rdquo;). The Sites are built and operated by <strong>Stuart Brodie</strong>, an independent developer based in Dunfermline, Scotland, United Kingdom.</p>
+      <p>For the purposes of UK data-protection law, Stuart Brodie is the data controller for the limited personal data described in this policy. You can reach us at <a href="mailto:hello@thecruiselab.com">hello@thecruiselab.com</a>.</p>
+      <p class="note">The Cruise Lab is independent and is not affiliated with, endorsed by, or sponsored by Princess Cruises, MSC Cruises, or any cruise line.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">2.</span>What this policy covers</h2>
+      <p>This policy applies to the public tool sites in The Cruise Lab estate, including Good Cabin Bad Cabin, Sea You Soon, GetMyCruiseWeather, GetMyBarTab, GetMyCruiseConnection, Shore Thing, Ocean View, the link hub, and the hub landing page.</p>
+      <p>Forever Voyage, our paid made-to-order service, involves a direct arrangement between you and us by email; any personal details you send us for that service are used only to build and host the site you've commissioned, and are covered by section 5 below.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">3.</span>Information we collect</h2>
+      <p>We've designed the tools to collect as little as possible. In practice that means:</p>
+      <ul class="body">
+        <li><strong>No account data.</strong> There is no sign-up, login, profile or password anywhere in the estate.</li>
+        <li><strong>Information you enter into a tool</strong> &mdash; such as your cruise ports, sailing dates, or a drinks-package price &mdash; is processed <em>in your browser</em> to produce your result. It is not transmitted to us or stored on our servers. Where a tool remembers your last entry between visits (for example, Shore Thing remembering your itinerary), it does so using your browser's local storage on your own device, which only you can see and clear.</li>
+        <li><strong>Anonymous usage statistics.</strong> We collect aggregated, non-identifying data about how the Sites are used &mdash; for example, page views and general country-level location &mdash; so we can see which tools are useful. See section 4.</li>
+        <li><strong>Technical data</strong> that any website receives automatically, such as your IP address and browser type, is processed by our hosting and analytics providers to deliver and secure the Sites. We do not use this to identify you personally.</li>
+        <li><strong>Anything you choose to send us</strong> by email &mdash; for instance a Forever Voyage enquiry &mdash; including your email address and whatever you include in your message.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">4.</span>Analytics</h2>
+      <p>We're moving the estate onto <strong>Cloudflare Web Analytics</strong>, a privacy-first analytics service that measures visits <em>without cookies</em> and without collecting personal data or building a profile of you.</p>
+      <p>One tool, GetMyCruiseWeather, currently also uses <strong>Google Analytics</strong>, which does set cookies and processes technical data (such as a truncated IP address) to report aggregated usage. Where Google Analytics is in use, you can opt out using Google's browser add-on or by declining analytics cookies where a control is offered.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">5.</span>Cookies and similar technologies</h2>
+      <p>A cookie is a small file a website can store in your browser. Most of the estate uses <strong>no cookies at all</strong>. Where cookies or similar technologies are used, they fall into these groups:</p>
+      <ul class="body">
+        <li><strong>Analytics cookies</strong> &mdash; only on pages that use Google Analytics (see section 4). Cloudflare Web Analytics does not use cookies.</li>
+        <li><strong>Embedded content</strong> &mdash; some pages (notably Ocean View) embed third-party content such as YouTube videos, Internet Archive players and a ship-tracker map. When that content loads, the provider may set its own cookies. These are governed by the provider's own privacy policy, not ours.</li>
+        <li><strong>Affiliate link tracking</strong> &mdash; when you click an affiliate link, the destination (or its affiliate network) may set a cookie so that a resulting purchase is credited to us. This happens on the destination's site, under its own terms. See section 6.</li>
+        <li><strong>Local storage</strong> &mdash; strictly speaking not a cookie, but worth naming: some tools save your most recent inputs on your device so you don't have to re-enter them. This never leaves your browser and you can clear it at any time via your browser settings.</li>
+      </ul>
+      <p>You can block or delete cookies in your browser settings at any time. Doing so won't stop the tools working, though embedded videos and similar features may behave differently.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">6.</span>Affiliate links</h2>
+      <p>Some of our tools include affiliate links to third-party products and services that are genuinely relevant to cruising &mdash; for example shore excursions, travel eSIMs, and cruise gear. If you click one of these and go on to make a purchase, we may earn a small commission. <strong>This never adds anything to the price you pay.</strong></p>
+      <p>We only ever recommend something because we think it's the honest answer to the question the tool is helping you with; commission does not change what we recommend. Individual tools carry a clear disclosure next to affiliate links. Our current and planned affiliate partners include Viator, eSIM providers (via the Impact network and others), and the Amazon Associates programme.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">7.</span>Third-party services we rely on</h2>
+      <p>To run the Sites we use a small number of reputable third parties, each of which may process technical data on our behalf or under their own terms:</p>
+      <ul class="body">
+        <li><strong>Cloudflare</strong> &mdash; hosting (Cloudflare Pages), content delivery, security and privacy-first analytics.</li>
+        <li><strong>Open-Meteo</strong> &mdash; historical weather data, requested directly by your browser when you look up a port. Only the port location and date you choose are sent; no personal data.</li>
+        <li><strong>Google</strong> &mdash; Google Fonts (typography), YouTube (embedded video on Ocean View), and Google Analytics on GetMyCruiseWeather.</li>
+        <li><strong>Internet Archive</strong> and <strong>VesselFinder</strong> &mdash; embedded video and ship-tracking content on Ocean View.</li>
+        <li><strong>Affiliate networks and partners</strong> &mdash; as described in section 6, when you click an affiliate link.</li>
+      </ul>
+      <p>We do not sell your data, and we do not share personal data with third parties for their own marketing.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">8.</span>Legal basis for processing</h2>
+      <p>Under UK GDPR we rely on the following legal bases:</p>
+      <ul class="body">
+        <li><strong>Legitimate interests</strong> &mdash; for anonymous, privacy-friendly analytics and for keeping the Sites secure and working, where these do not override your rights and freedoms.</li>
+        <li><strong>Consent</strong> &mdash; where a cookie is not strictly necessary (for example analytics cookies or third-party embeds), we rely on your consent, which you can withdraw at any time through your browser settings.</li>
+        <li><strong>Performance of a contract / taking steps at your request</strong> &mdash; when you contact us about Forever Voyage and we use your details to respond and, if you go ahead, to build your site.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">9.</span>How long we keep data</h2>
+      <p>We keep as little as possible, for as short a time as possible. Aggregated analytics are retained only in summary form. Information you enter into a tool lives on your own device and is cleared by you. Emails you send us are kept only as long as needed to deal with your enquiry and any resulting service, after which they are deleted.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">10.</span>International transfers</h2>
+      <p>Some of our providers (such as Cloudflare and Google) operate globally, so limited technical data may be processed on servers outside the UK. Where that happens, those providers operate under recognised safeguards for international data transfers, such as the UK's International Data Transfer Agreement or equivalent standard contractual clauses.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">11.</span>Your rights</h2>
+      <p>Because we hold so little personal data, most of these rights will rarely be needed &mdash; but under UK GDPR you have the right to:</p>
+      <ul class="body">
+        <li>ask what personal data (if any) we hold about you, and get a copy;</li>
+        <li>ask us to correct data that is wrong, or complete data that is incomplete;</li>
+        <li>ask us to delete your data;</li>
+        <li>object to, or ask us to restrict, our processing;</li>
+        <li>ask us to transfer your data to you or another provider, where applicable;</li>
+        <li>withdraw any consent you've given, at any time.</li>
+      </ul>
+      <p>To exercise any of these, email <a href="mailto:hello@thecruiselab.com">hello@thecruiselab.com</a>. You also have the right to complain to the UK's data-protection regulator, the <a href="https://ico.org.uk/make-a-complaint/" rel="noopener">Information Commissioner's Office (ICO)</a>, if you think we've mishandled your data &mdash; though we'd be grateful for the chance to put things right first.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">12.</span>Children</h2>
+      <p>The Sites are aimed at adults planning cruises and are not directed at children. We do not knowingly collect personal data from anyone under 16. If you believe a child has provided us with personal data, please contact us and we will delete it.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">13.</span>Links to other sites</h2>
+      <p>The tools link out to cruise lines, tour operators, connectivity providers and other third parties. Once you follow a link off our Sites, this policy no longer applies &mdash; the site you land on has its own privacy policy and terms, which we'd encourage you to read.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">14.</span>Changes to this policy</h2>
+      <p>As the estate grows, we'll keep this policy up to date and bump the version and effective date at the top of the page. Material changes will be reflected here; please check back from time to time.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">15.</span>Contact</h2>
+      <p>Questions about privacy, cookies or your data? Email <a href="mailto:hello@thecruiselab.com">hello@thecruiselab.com</a> and we'll come back to you.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>The Cruise Lab &mdash; free web tools built by a cruiser, for cruisers.</p>
+    <p>Independent and not affiliated with any cruise line.</p>
+    <a class="home" href="https://thecruiselab.com">Back to The Cruise Lab &rarr;</a>
+  </footer>
+
+</div>
+</body>
+</html>
