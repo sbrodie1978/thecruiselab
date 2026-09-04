@@ -1,0 +1,46 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="72%">
+      <stop offset="0%" stop-color="#0d2445"/>
+      <stop offset="100%" stop-color="#081830"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0d087"/>
+      <stop offset="100%" stop-color="#d9b45c"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5ad3b8"/>
+      <stop offset="100%" stop-color="#37a790"/>
+    </linearGradient>
+    <clipPath id="flaskInner">
+      <path d="M234,226 L150,398 L362,398 L278,226 Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+<g transform="translate(256,256) scale(0.70) translate(-256,-256)">
+
+  <!-- flask group -->
+  <g>
+    <!-- liquid, clipped to flask interior -->
+    <g clip-path="url(#flaskInner)">
+      <path d="M150,398 L362,398 L362,300 C322,282 290,316 256,300 C222,286 188,316 150,300 Z" fill="url(#sea)"/>
+    </g>
+
+    <!-- bubbles -->
+    <circle cx="252" cy="266" r="11" fill="#f0d087"/>
+    <circle cx="278" cy="238" r="6" fill="#f0d087" opacity="0.85"/>
+
+    <!-- flask body outline -->
+    <path d="M234,226 L152,394 Q150,398 156,398 L356,398 Q362,398 360,394 L278,226"
+          fill="none" stroke="url(#gold)" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- neck -->
+    <path d="M234,226 L234,116 M278,226 L278,116"
+          fill="none" stroke="url(#gold)" stroke-width="14" stroke-linecap="round"/>
+    <!-- lip -->
+    <rect x="224" y="98" width="64" height="20" rx="9" fill="url(#gold)"/>
+    <!-- graduation ticks -->
+    <line x1="278" y1="150" x2="298" y2="150" stroke="url(#gold)" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+    <line x1="278" y1="180" x2="292" y2="180" stroke="url(#gold)" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+  </g>
+</g></svg>
