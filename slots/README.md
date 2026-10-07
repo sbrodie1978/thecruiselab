@@ -8,7 +8,7 @@ A free play, cruise themed slot machine from The Cruise Lab. It is for entertain
 - **Custom domain:** slots.thecruiselab.com (attached in the Cloudflare dashboard)
 - **Cloudflare project:** cruiselab-slots
 - **Production branch:** production
-- **Access control:** public, but hidden. The page carries a `noindex` meta tag and an `X-Robots-Tag: noindex` header, and is not linked from the hub until launch.
+- **Access control:** public and launched (7 Oct 2026). Indexable, linked from the hub Fleet. Not on the link hub.
 
 ## What it does
 
@@ -41,6 +41,7 @@ node tools/rtp-sim.js
 
 ## Version history
 
+- v11 (7 Oct 2026). Launched: noindex removed from the page and headers, Privacy & Cookies link added to the footer, Fleet card added on the hub.
 - v10 (7 Oct 2026). Estate icon kit (gold flask) for home screen and favicons, own manifest named Grand Voyage, build copies static/ into dist/.
 - v9 (7 Oct 2026). Jackpot splash banner over the reels for every jackpot: rotating rays in a colour per tier, JACKPOT ribbon, tier icon (door, porthole, balcony, crown), 1 to 4 stars, count up, sparkle bursts, tiered fanfare. Balcony and Suite also shake the frame and shower coins.
 - v8 (7 Oct 2026). Jackpots much more frequent (1 in 50 to 1 in 500) and much smaller (2x to 20x the bet). Line pays trimmed about 13% to keep the return near 93%.

@@ -50,7 +50,7 @@ npx wrangler pages deploy dist --project-name=cruiselab-slots --branch=productio
 
    The two numbers should match. Use the deployment hash URL from the wrangler output if the custom domain lags behind the edge cache.
 3. **Icon.** `curl -sIL https://slots.thecruiselab.com/icons/apple-touch-icon.png | head -1` should be `HTTP/2 200`, and `grep -c apple-touch-icon dist/index.html` should be 1.
-4. **Headers.** `curl -sI "https://cruiselab-slots.pages.dev/?cb=$(date +%s)" | grep -i robots` should show `x-robots-tag: noindex, nofollow`.
+4. **Headers.** `curl -sI "https://slots.thecruiselab.com/?cb=$(date +%s)" | grep -ic robots` should print 0. The game is launched, so there is no noindex.
 
 ## Commit
 
