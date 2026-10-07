@@ -23,21 +23,21 @@ Then in the Cloudflare dashboard, Pages, cruiselab-slots, Custom domains, add `s
 python3 build.py
 ```
 
-Output lands in `dist/`. Only ever deploy `dist/`. It should contain exactly two files: `index.html` and `_headers`.
+Output lands in `dist/`. Only ever deploy `dist/`. It should contain `index.html`, `_headers`, `favicon.ico`, `manifest.webmanifest` and `icons/` (7 PNGs), 11 files in all. The build warns if the icon kit is missing from `static/`.
 
 ## Deploy
 
-Run from inside `dist`:
+Run from the `slots` folder, pointing at `dist`. Deploying from inside `dist` leaves a `.wrangler` cache there, which would then get uploaded:
 
 ```
-cd dist && npx wrangler pages deploy . --project-name=cruiselab-slots --branch=production
+npx wrangler pages deploy dist --project-name=cruiselab-slots --branch=production
 ```
 
 `--branch=production` is required. Without it the deploy lands as a preview and never goes live. If the output shows `Deployment alias URL: main.` it went to preview.
 
 ## Verify
 
-1. **File count.** Wrangler should report 2 files on the first deploy. On later deploys, `Uploaded N files` with N of at least 1 confirms something changed. 0 means nothing changed.
+1. **File count.** Wrangler should report up to 10 files plus `_headers` on a full upload. On later deploys, `Uploaded N files` with N of at least 1 confirms something changed. 0 means nothing changed.
 2. **Bytes, not status codes.** Compare the live size with the local file:
 
    ```
@@ -49,7 +49,8 @@ cd dist && npx wrangler pages deploy . --project-name=cruiselab-slots --branch=p
    ```
 
    The two numbers should match. Use the deployment hash URL from the wrangler output if the custom domain lags behind the edge cache.
-3. **Headers.** `curl -sI "https://cruiselab-slots.pages.dev/?cb=$(date +%s)" | grep -i robots` should show `x-robots-tag: noindex, nofollow`.
+3. **Icon.** `curl -sIL https://slots.thecruiselab.com/icons/apple-touch-icon.png | head -1` should be `HTTP/2 200`, and `grep -c apple-touch-icon dist/index.html` should be 1.
+4. **Headers.** `curl -sI "https://cruiselab-slots.pages.dev/?cb=$(date +%s)" | grep -i robots` should show `x-robots-tag: noindex, nofollow`.
 
 ## Commit
 

@@ -41,6 +41,7 @@ node tools/rtp-sim.js
 
 ## Version history
 
+- v10 (7 Oct 2026). Estate icon kit (gold flask) for home screen and favicons, own manifest named Grand Voyage, build copies static/ into dist/.
 - v9 (7 Oct 2026). Jackpot splash banner over the reels for every jackpot: rotating rays in a colour per tier, JACKPOT ribbon, tier icon (door, porthole, balcony, crown), 1 to 4 stars, count up, sparkle bursts, tiered fanfare. Balcony and Suite also shake the frame and shower coins.
 - v8 (7 Oct 2026). Jackpots much more frequent (1 in 50 to 1 in 500) and much smaller (2x to 20x the bet). Line pays trimmed about 13% to keep the return near 93%.
 - v7 (7 Oct 2026). Wide screens and full screen now fill the full height. Reel rows can stretch up to 1.3x taller than wide, and the layout is centred vertically. Side column widened to 300 pixels.
@@ -55,7 +56,8 @@ node tools/rtp-sim.js
 
 - **Stack:** single file HTML, CSS and vanilla JavaScript. No framework.
 - **Dependencies:** none at runtime apart from Google Fonts (Cinzel and Outfit, the estate fonts). Symbols are inline SVG. Sound is synthesised with the Web Audio API, so there are no audio files.
-- **Build step:** `python3 build.py`. It inlines `src/engine.js` into `src/app.html` and writes `dist/index.html` and `dist/_headers`.
+- **Build step:** `python3 build.py`. It inlines `src/engine.js` into `src/app.html`, writes `dist/index.html` and `dist/_headers`, and copies `static/` into `dist/`. It warns if the icon kit is missing.
+- **Home screen icon:** the estate gold flask kit, copied from `~/cruiselab/hub` into `static/` (icons are identical across the estate; masters in `~/cruiselab/brand/`). Unlike the estate head snippet, this page sets `apple-mobile-web-app-capable` and the manifest uses `display: standalone`, so the game opens without browser bars from the home screen. Manifest name is Grand Voyage.
 - **Source of truth:** `src/app.html` (layout, styling, game flow, the four bonus scenes) and `src/engine.js` (reel strips, paytable, paylines, bonus tables). **Never hand edit `dist/index.html`.** It is a build output and is overwritten every build.
 
 ## Repository layout
@@ -65,9 +67,9 @@ slots/
   src/app.html        page template, styles, game flow and bonus screens
   src/engine.js       maths: reel strips, paytable, paylines, bonus tables
   tools/rtp-sim.js    return to player simulation (Node)
-  build.py            builds dist/ from src/
-  dist/index.html     built artefact, the only thing deployed
-  dist/_headers       Cloudflare Pages headers (noindex)
+  static/             copied into dist/ on build: estate icon kit (icons/, favicon.ico) and manifest.webmanifest
+  build.py            builds dist/ from src/ and static/
+  dist/               built output, the only thing deployed (index.html, _headers, icons/, favicon.ico, manifest.webmanifest)
   README.md           this file
   DEPLOY.md           deployment procedure
   .gitignore
