@@ -1,7 +1,7 @@
 """Build dist/ from src/ and static/.
 
 - Inlines src/engine.js into src/app.html and writes dist/index.html.
-- Writes dist/_headers (noindex while the game is unlaunched).
+- Writes dist/_headers (security headers).
 - Copies everything in static/ into dist/ (estate icon kit + manifest).
 """
 import pathlib, shutil
@@ -13,7 +13,7 @@ assert "/*ENGINE*/" in app
 out = root / "dist"
 out.mkdir(exist_ok=True)
 (out / "index.html").write_text(app.replace("/*ENGINE*/", engine))
-(out / "_headers").write_text("/*\n  X-Robots-Tag: noindex, nofollow\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n")
+(out / "_headers").write_text("/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n")
 static = root / "static"
 if static.is_dir():
     shutil.copytree(static, out, dirs_exist_ok=True)
