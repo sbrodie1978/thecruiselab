@@ -1,0 +1,92 @@
+/* The Cruise Lab — launch batch shared stage styles */
+@font-face{font-family:'Cinzel';src:url('../fonts/Cinzel.ttf');font-weight:400 900;}
+@font-face{font-family:'Outfit';src:url('../fonts/Outfit.ttf');font-weight:100 900;}
+@font-face{font-family:'JBMono';src:url('../fonts/JetBrainsMono.ttf');font-weight:100 800;}
+@font-face{font-family:'Stencil';src:url('../fonts/SairaStencilOne.ttf');font-weight:400;}
+
+:root{
+  --ocean-deep:#081830; --ocean:#0d2445;
+  --panel:#122c52; --panel-edge:#1d3d6b;
+  --gold:#d9b45c; --gold-bright:#f0d087; --gold-dim:rgba(217,180,92,.35);
+  --foam:#f3efe4; --mist:#8fa2bd;
+  --seaglass:#46c3a8; --seaglass-dim:rgba(70,195,168,.18);
+  --bad:#e0524f; --bad-bright:#ff7a6e;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--ocean-deep);}
+body{font-family:'Outfit',sans-serif;color:var(--foam);}
+
+#stage{position:absolute;inset:0;overflow:hidden;
+  background:radial-gradient(140% 90% at 50% 18%, var(--ocean) 0%, var(--ocean-deep) 62%, #050f20 100%);}
+#cam{position:absolute;inset:0;will-change:transform;}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:90;}
+#goldflash{position:absolute;inset:0;background:radial-gradient(90% 70% at 50% 45%, rgba(240,208,135,.9), rgba(217,180,92,0) 70%);opacity:0;pointer-events:none;z-index:89;}
+#vig{position:absolute;inset:0;z-index:80;pointer-events:none;
+  background:radial-gradient(115% 82% at 50% 46%, rgba(0,0,0,0) 58%, rgba(3,9,20,.55) 100%);}
+
+/* ambient texture: fine blueprint grid + drifting glow */
+.grid{position:absolute;inset:-12%;opacity:.10;
+  background-image:linear-gradient(rgba(143,162,189,.5) 1px, transparent 1px),
+                   linear-gradient(90deg, rgba(143,162,189,.5) 1px, transparent 1px);
+  background-size:88px 88px;}
+.sheen{position:absolute;inset:-30%;opacity:.16;
+  background:linear-gradient(115deg, transparent 42%, rgba(240,208,135,.20) 50%, transparent 58%);}
+
+/* type */
+.cz{font-family:'Cinzel',serif;}
+.mono{font-family:'JBMono',monospace;}
+.goldgrad{background:linear-gradient(180deg,var(--gold-bright) 8%,var(--gold) 78%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;}
+.eyebrow{font-family:'JBMono',monospace;letter-spacing:.42em;text-transform:uppercase;
+  color:var(--mist);font-size:34px;font-weight:500;}
+
+.line{position:absolute;left:0;right:0;text-align:center;will-change:transform,opacity;opacity:0;}
+.hookword{display:inline-block;will-change:transform,opacity;opacity:0;}
+
+/* series chip */
+.chip{display:inline-block;font-family:'JBMono',monospace;font-weight:700;font-size:36px;
+  letter-spacing:.34em;color:var(--ocean-deep);background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+  padding:16px 34px 14px 42px;border-radius:10px;}
+.chip.glass{color:var(--seaglass);background:var(--seaglass-dim);border:2px solid rgba(70,195,168,.5);}
+
+/* stat / reason cards */
+.card{position:absolute;left:70px;right:70px;background:linear-gradient(180deg,var(--panel),#0f2547);
+  border:3px solid var(--panel-edge);border-radius:26px;padding:52px 56px;will-change:transform,opacity;opacity:0;
+  box-shadow:0 30px 80px rgba(0,0,0,.5);}
+.card .k{font-family:'JBMono',monospace;font-size:33px;letter-spacing:.30em;color:var(--mist);
+  text-transform:uppercase;font-weight:600;margin-bottom:18px;}
+.card .v{font-family:'Cinzel',serif;font-weight:700;font-size:82px;line-height:1.06;}
+.card .sub{font-size:44px;color:var(--foam);opacity:.92;margin-top:20px;font-weight:400;line-height:1.3;}
+.card.hot{border-color:rgba(224,82,79,.65);}
+.card.goldline{border-color:var(--gold-dim);}
+
+.bignum{font-family:'JBMono',monospace;font-weight:800;letter-spacing:-.02em;}
+
+/* score bar */
+.meter{height:26px;border-radius:13px;background:#0a1c38;border:2px solid var(--panel-edge);
+  overflow:hidden;margin-top:26px;}
+.meter i{display:block;height:100%;width:0%;
+  background:linear-gradient(90deg,var(--bad),var(--bad-bright));border-radius:13px;}
+.meter.gold i{background:linear-gradient(90deg,var(--gold),var(--gold-bright));}
+
+/* stamp */
+.stamp{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  font-family:'Stencil';font-size:150px;letter-spacing:.04em;color:var(--bad-bright);
+  border:14px solid var(--bad-bright);border-radius:22px;padding:8px 48px 0;
+  text-shadow:0 0 60px rgba(224,82,79,.45);box-shadow:0 0 90px rgba(224,82,79,.35), inset 0 0 60px rgba(224,82,79,.14);
+  will-change:transform,opacity;opacity:0;white-space:nowrap;}
+.stamp.good{color:var(--seaglass);border-color:var(--seaglass);
+  text-shadow:0 0 60px rgba(70,195,168,.45);box-shadow:0 0 90px rgba(70,195,168,.3), inset 0 0 60px rgba(70,195,168,.14);}
+
+/* end card */
+#endcard{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:44px;opacity:0;z-index:60;
+  background:radial-gradient(120% 85% at 50% 30%, #10294e 0%, var(--ocean-deep) 68%);}
+#endcard .wordmark{font-family:'Cinzel',serif;font-weight:700;font-size:96px;letter-spacing:.06em;}
+#endcard .url{font-family:'JBMono',monospace;font-size:44px;letter-spacing:.30em;color:var(--mist);}
+#endcard .toolchip{font-family:'Cinzel',serif;font-weight:700;font-size:52px;color:var(--gold-bright);
+  border:3px solid var(--gold-dim);border-radius:16px;padding:22px 52px;letter-spacing:.05em;
+  background:rgba(217,180,92,.07);}
+#endcard .free{font-family:'JBMono',monospace;font-size:36px;letter-spacing:.4em;color:var(--seaglass);}
+
+.kicker{position:absolute;left:0;right:0;text-align:center;}

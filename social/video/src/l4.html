@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+  #warm{position:absolute;inset:0;opacity:0;
+    background:radial-gradient(120% 80% at 50% 26%, rgba(240,178,80,.34), rgba(180,90,30,.10) 55%, transparent 80%);}
+  #sun{position:absolute;left:50%;top:110px;width:280px;height:280px;transform:translateX(-50%);opacity:0;}
+  #wind{position:absolute;inset:0;pointer-events:none;}
+  .streak{position:absolute;height:5px;border-radius:3px;
+    background:linear-gradient(90deg,transparent,rgba(190,214,240,.85),transparent);}
+  .hook1{top:410px;font-family:'JBMono';font-weight:600;font-size:40px;letter-spacing:.2em;color:var(--gold-bright);}
+  .hook2{top:490px;font-family:Cinzel;font-weight:900;font-size:112px;color:var(--foam);}
+  .hook3{top:670px;font-family:Cinzel;font-weight:700;font-size:62px;color:var(--gold-bright);}
+  .hook4{top:790px;font-family:Outfit;font-weight:600;font-size:60px;color:var(--foam);}
+  .turn1{top:640px;font-family:Cinzel;font-weight:800;font-size:96px;line-height:1.22;}
+  .turn2{top:1000px;font-family:'JBMono';font-weight:600;font-size:50px;letter-spacing:.24em;color:var(--seaglass);}
+  .wcard{top:480px;text-align:center;}
+  .wcard .huge{font-family:'JBMono';font-weight:800;font-size:250px;line-height:1.2;margin:34px 0 10px;}
+  .wcard .tag{font-family:'JBMono';font-weight:700;font-size:48px;letter-spacing:.26em;color:var(--bad-bright);margin-top:32px;}
+  .years{position:absolute;left:70px;right:70px;top:560px;opacity:0;}
+  .years .t{font-family:Cinzel;font-weight:800;font-size:80px;text-align:center;line-height:1.2;}
+  .yrow{display:flex;gap:20px;justify-content:center;margin-top:56px;}
+  .ychip{flex:1;max-width:180px;border:3px solid var(--panel-edge);border-radius:18px;padding:28px 6px;text-align:center;
+    background:linear-gradient(180deg,var(--panel),#0f2547);opacity:0;will-change:transform,opacity;}
+  .ychip.gust{border-color:rgba(224,82,79,.7);background:rgba(224,82,79,.10);}
+  .ychip .y{font-family:'JBMono';font-weight:600;font-size:32px;color:var(--mist);}
+  .ychip .k{font-family:'JBMono';font-weight:800;font-size:52px;margin-top:12px;}
+  .ychip.gust .k{color:var(--bad-bright);}
+  .ysub{font-family:Outfit;font-weight:600;font-size:54px;text-align:center;margin-top:52px;color:var(--foam);}
+  .warm2{top:1300px;}
+  .verd1{top:580px;font-family:Cinzel;font-weight:700;font-size:84px;color:var(--mist);line-height:1.25;}
+  .verd2{top:830px;font-family:Cinzel;font-weight:900;font-size:126px;line-height:1.15;}
+  #strike{position:absolute;height:10px;background:var(--bad-bright);top:635px;left:50%;width:0;transform:translateX(-50%);border-radius:5px;}
+</style></head>
+<body>
+<div id="stage"><div id="cam">
+  <div class="grid" id="grid"></div><div class="sheen" id="sheen"></div>
+  <div id="warm"></div>
+  <svg id="sun" viewBox="0 0 200 200">
+    <circle cx="100" cy="100" r="52" fill="none" stroke="#f0d087" stroke-width="7"/>
+    <g stroke="#f0d087" stroke-width="7" stroke-linecap="round" id="rays">
+      <line x1="100" y1="14" x2="100" y2="40"/><line x1="100" y1="160" x2="100" y2="186"/>
+      <line x1="14" y1="100" x2="40" y2="100"/><line x1="160" y1="100" x2="186" y2="100"/>
+      <line x1="39" y1="39" x2="58" y2="58"/><line x1="142" y1="142" x2="161" y2="161"/>
+      <line x1="39" y1="161" x2="58" y2="142"/><line x1="142" y1="58" x2="161" y2="39"/>
+    </g>
+  </svg>
+
+  <div class="line hook1" id="h1">LE HAVRE → PARIS DAY TRIP</div>
+  <div class="line hook2" id="h2">LATE OCTOBER</div>
+  <div class="line hook3" id="h3">Golden. Crisp. Postcard.</div>
+  <div class="line hook4" id="h4">You packed for <b><i>this</i></b>.</div>
+
+  <div class="line turn1" id="t1">We pulled the <span class="goldgrad">LAST 5 YEARS</span><br>for that exact date.</div>
+  <div class="line turn2" id="t2">31 OCTOBER · LE HAVRE</div>
+
+  <div class="card hot wcard" id="w1"><div id="w1i">
+    <div class="k">Wind exposure</div>
+    <div class="huge"><span style="color:var(--bad-bright);" id="wnum">0</span><span style="font-size:110px;color:var(--mist);">%</span></div>
+    <div class="tag">"FREQUENTLY WINDY"</div>
+  </div></div>
+
+  <div class="years" id="yrs">
+    <div class="t"><span class="goldgrad">4 of the last 5 years:</span><br>28–37 km/h gusts</div>
+    <div class="yrow">
+      <div class="ychip gust" id="y0"><div class="y">2021</div><div class="k">37</div></div>
+      <div class="ychip gust" id="y1"><div class="y">2022</div><div class="k">28</div></div>
+      <div class="ychip gust" id="y2"><div class="y">2023</div><div class="k">31</div></div>
+      <div class="ychip" id="y3"><div class="y">2024</div><div class="k" style="color:var(--seaglass);">14</div></div>
+      <div class="ychip gust" id="y4"><div class="y">2025</div><div class="k">29</div></div>
+    </div>
+    <div class="ysub">km/h — off the Channel, straight down the boulevards.</div>
+  </div>
+
+  <div class="card wcard warm2" id="w2" style="padding:40px 56px;">
+    <div class="k">Warmth confidence</div>
+    <div class="huge" style="font-size:150px;"><span class="mono" style="color:var(--gold-bright);" id="wcnum">0</span><span style="font-size:80px;color:var(--mist);">%</span>
+      <span style="font-size:64px;color:var(--mist);font-family:Outfit;font-weight:500;"> · highs 14°C</span></div>
+  </div>
+
+  <div class="line verd1" id="v1">It's not a rain jacket you forgot.</div>
+  <div id="strike"></div>
+  <div class="line verd2 goldgrad" id="v2">IT'S A<br>WINDBREAKER.</div>
+
+  <div id="wind"></div>
+</div>
+<div id="goldflash"></div><div id="flash"></div><div id="vig"></div>
+</div>
+<script src="helpers.js"></script>
+<script>
+buildEndCard('GETMYCRUISEWEATHER','Check <b>your exact port, your exact date</b> — before you pack.');
+
+/* wind streaks */
+const WIND=document.getElementById('wind');const STREAKS=[];
+for(let i=0;i<26;i++){
+  const s=document.createElement('div');s.className='streak';
+  const w=220+Math.random()*420;
+  s.style.width=w+'px'; s.style.top=(Math.random()*1880)+'px';
+  WIND.appendChild(s);
+  STREAKS.push({el:s,w,y:parseFloat(s.style.top),speed:1400+Math.random()*1300,off:Math.random()*4000,tilt:-4-Math.random()*5});
+}
+impact(0.1,0.5,0.05,0.2); impact(0.9,0.6,0.05,0.2); impact(1.7,0.4,0,0.1);
+impact(3.2,1.2,0.12,0.2);
+impact(6.6,1.4,0.12,0.25); impact(9.6,1.0,0.08,0.2); impact(12.6,0.9,0.08,0.2);
+impact(15.7,0.8,0.06,0.1); impact(16.6,1.8,0.2,0.45);
+impact(19.85,0.6,0,0.35);
+
+const DUR=25.0;
+window.seek=function(t){
+  applyCamera(t,1.02);
+  document.getElementById('grid').style.transform=`translate(${(-t*10)%88}px,${(-t*6)%88}px)`;
+  document.getElementById('sheen').style.transform=`translateX(${(t*150)%2600-1300}px)`;
+
+  // warm glow + sun (0–3.2) then cold
+  const warm=byId('warm'), sun=byId('sun');
+  const wIn=ph(t,0,0.6), wOut=1-outCubic(ph(t,3.2,0.8));
+  warm.style.opacity=(Math.min(wIn,wOut)*1).toFixed(3);
+  sun.style.opacity=(Math.min(ph(t,0.1,0.5),wOut)).toFixed(3);
+  byId('rays').setAttribute('transform',`rotate(${(t*14).toFixed(1)} 100 100)`);
+  if(t>=3.2){sun.style.transform=`translateX(-50%) translateY(${-outCubic(ph(t,3.2,0.8))*500}px)`;}
+
+  // wind streaks — start at the turn, intensity grows
+  const wint=t<3.0?0:clamp(ph(t,3.0,1.2),0,1)*(t>15.5?1.25:1);
+  for(const s of STREAKS){
+    if(wint<=0){s.el.style.opacity=0;continue;}
+    const x=((t*s.speed+s.off)%(1080+s.w+700))-s.w-350;
+    s.el.style.opacity=(0.16+0.5*Math.random()*0)*wint+0.14*wint*Math.sin(t*3+s.off);
+    s.el.style.transform=`translateX(${x}px) rotate(${s.tilt}deg)`;
+  }
+
+  // HOOK 0–3.2 (golden)
+  rise (byId('h1'),t,0.1,{d:.35,from:50,hold:2.65,exit:.15});
+  punch(byId('h2'),t,0.35,{d:.4,from:2.8,hold:2.35,exit:.15});
+  rise (byId('h3'),t,0.9,{d:.35,from:60,hold:1.85,exit:.15});
+  rise (byId('h4'),t,1.7,{d:.35,from:60,hold:1.1,exit:.15});
+
+  // TURN 3.2–6.4
+  punch(byId('t1'),t,3.3,{d:.42,from:2.2,hold:2.85,exit:.22});
+  rise (byId('t2'),t,3.9,{d:.35,from:50,hold:2.25,exit:.22});
+
+  // WIND 74% 6.6–9.5
+  const w1=punch(byId('w1'),t,6.6,{d:.42,from:2.0,hold:2.75,exit:.2});
+  if(w1&&t<9.5){counter(byId('wnum'),t,6.85,1.0,0,74,v=>Math.round(v));
+    shakeEl(byId('w1i'),t,6,8);}
+
+  // YEARS 9.6–12.5
+  const yr=byId('yrs');
+  if(t>=9.6&&t<12.55){
+    yr.style.opacity=clamp(ph(t,9.6,0.3)*2,0,1);
+    yr.style.transform=`translateY(${lerp(90,0,outQuint(ph(t,9.6,0.5)))}px)`;
+    for(let i=0;i<5;i++) punch(byId('y'+i),t,9.95+i*0.14,{d:.32,from:1.35});
+  } else yr.style.opacity=0;
+
+  // WARMTH 12.6–15.5 (years leave, warmth card arrives lower)
+  const w2=punch(byId('w2'),t,12.6,{d:.42,from:1.9,hold:2.75,exit:.2});
+  if(w2&&t<15.5) counter(byId('wcnum'),t,12.85,0.9,0,34,v=>Math.round(v));
+  if(t>=12.6&&t<15.5){byId('w2').style.top='700px';}
+
+  // VERDICT 15.7–19.7
+  rise(byId('v1'),t,15.7,{d:.4,from:70,hold:3.75,exit:.25});
+  const st=byId('strike');
+  if(t>=16.25&&t<19.6){st.style.width=(outCubic(ph(t,16.25,0.3))*880)+'px';st.style.opacity=1;}
+  else st.style.opacity=0;
+  punch(byId('v2'),t,16.6,{d:.4,from:3.0,hold:2.85,exit:.25});
+
+  endCard(t,19.85);
+};
+function byId(i){return document.getElementById(i);}
+window.DUR=DUR;
+</script></body></html>

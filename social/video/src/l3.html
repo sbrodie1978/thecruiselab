@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+  .hook1{top:520px;font-family:Cinzel;font-weight:900;font-size:120px;color:var(--foam);}
+  .hook2{top:700px;font-family:'JBMono';font-weight:600;font-size:46px;letter-spacing:.2em;color:var(--mist);}
+  .hook3{top:815px;font-family:Cinzel;font-weight:900;font-size:132px;line-height:1.18;}
+  /* receipt */
+  #receipt{position:absolute;left:110px;right:110px;top:290px;background:#f6f2e6;color:#1b2a44;
+    border-radius:18px;padding:56px 62px 70px;opacity:0;will-change:transform,opacity;
+    box-shadow:0 40px 100px rgba(0,0,0,.55);
+    -webkit-mask-image:linear-gradient(180deg,#000 96%,transparent);}
+  #receipt .rh{font-family:'JBMono';font-weight:700;font-size:40px;letter-spacing:.18em;text-align:center;}
+  #receipt .rs{font-family:'JBMono';font-size:30px;letter-spacing:.10em;text-align:center;color:#5a6a85;margin-top:12px;}
+  #receipt .dash{border-top:4px dashed #b9c0cf;margin:30px 0;}
+  .rl{display:flex;justify-content:space-between;font-family:'JBMono';font-size:40px;font-weight:600;
+    padding:16px 0;opacity:0;}
+  .rl .amt{font-weight:800;}
+  .rl.svc{color:#5a6a85;font-size:36px;}
+  #totrow{display:flex;justify-content:space-between;align-items:baseline;opacity:0;}
+  #totrow .lab{font-family:'JBMono';font-weight:800;font-size:44px;letter-spacing:.14em;}
+  #totrow .amt{font-family:'JBMono';font-weight:800;font-size:104px;color:#b02a2a;}
+  .twist{top:1480px;font-family:Cinzel;font-weight:900;font-size:110px;}
+  /* honest beat */
+  .hb{top:560px;}
+  .hb .k{color:var(--seaglass);}
+  .hb .v{font-size:74px;line-height:1.2;}
+  .hb .sub b{color:var(--gold-bright);}
+  .hbnum{top:1080px;font-size:210px;line-height:1;}
+  .hbsub{top:1330px;font-family:'JBMono';font-size:48px;letter-spacing:.22em;color:var(--mist);}
+  /* sea vs port */
+  .svp{position:absolute;left:80px;right:80px;top:520px;display:flex;gap:36px;}
+  .svp .col{flex:1;border-radius:26px;padding:56px 30px;text-align:center;opacity:0;will-change:transform,opacity;
+    border:3px solid var(--panel-edge);background:linear-gradient(180deg,var(--panel),#0f2547);}
+  .svp .col.hotc{border-color:rgba(224,82,79,.65);}
+  .svp .t{font-family:'JBMono';font-weight:700;font-size:38px;letter-spacing:.24em;color:var(--mist);}
+  .svp .n{font-family:'JBMono';font-weight:800;font-size:128px;margin-top:26px;}
+  .svp .d{font-family:Outfit;font-size:38px;color:var(--mist);margin-top:14px;}
+  .svpsub{top:1160px;font-family:Outfit;font-weight:600;font-size:58px;line-height:1.35;padding:0 100px;}
+</style></head>
+<body>
+<div id="stage"><div id="cam">
+  <div class="grid" id="grid"></div><div class="sheen" id="sheen"></div>
+
+  <div class="line hook1" id="h1">TWO PEOPLE.</div>
+  <div class="line hook2" id="h2">7-NIGHT PRINCESS CRUISE</div>
+  <div class="line hook3 goldgrad" id="h3">YOUR REAL<br>BAR TAB.</div>
+
+  <div id="receipt">
+    <div class="rh">THE CRUISE LAB · THE TAB</div>
+    <div class="rs">7 NIGHTS · 2 GUESTS · MEDIUM BEER &amp; WINE</div>
+    <div class="dash"></div>
+    <div class="rl" id="rl0"><span>BOTTLED WATER</span><span class="amt">£32.44</span></div>
+    <div class="rl" id="rl1"><span>SPECIALTY COFFEE</span><span class="amt">£48.66</span></div>
+    <div class="rl" id="rl2"><span>BEER · CIDER · LAGER</span><span class="amt">£259.52</span></div>
+    <div class="rl" id="rl3"><span>WINE</span><span class="amt">£237.90</span></div>
+    <div class="rl svc" id="rl4"><span>SERVICE CHARGE 18%</span><span class="amt">£88.25</span></div>
+    <div class="dash"></div>
+    <div id="totrow"><span class="lab">TAB TOTAL</span><span class="amt" id="tot">£0</span></div>
+  </div>
+  <div class="line twist" id="tw">That's <span class="mono goldgrad">£41</span> a day. <span class="goldgrad">EACH.</span></div>
+
+  <div class="card goldline hb" id="hb">
+    <div class="k">The honest beat</div>
+    <div class="v">Yes — <span class="goldgrad">Princess&nbsp;Plus</span> includes WiFi&nbsp;+&nbsp;tips too.</div>
+    <div class="sub">So judge it on the <b>drinks alone</b> — for two medium drinkers, that's the bar to beat:</div>
+  </div>
+  <div class="line hbnum mono goldgrad" id="hbnum">£41.32</div>
+  <div class="line hbsub" id="hbsub">PER PERSON · PER DAY — OR IT'S LOSING YOU MONEY</div>
+
+  <div class="svp">
+    <div class="col" id="c1"><div class="t">4 SEA DAYS</div><div class="n goldgrad" id="c1n">£0</div><div class="d">drinking on board</div></div>
+    <div class="col hotc" id="c2"><div class="t">3 PORT DAYS</div><div class="n" style="color:var(--bad-bright);" id="c2n">£0</div><div class="d">barely on the ship</div></div>
+  </div>
+  <div class="line svpsub" id="svpsub">A package charges you <span class="goldgrad" style="font-weight:800;">full whack</span> on the days you're off exploring.</div>
+</div>
+<div id="goldflash"></div><div id="flash"></div><div id="vig"></div>
+</div>
+<script src="helpers.js"></script>
+<script>
+buildEndCard('GETMYBARTAB','Run <b>your</b> real bar tab before you buy the package.');
+
+impact(0.06,0.8,0.08,0.2); impact(0.5,0.6,0.05,0.1); impact(1.3,1.1,0.14,0.3);
+const LINE_TS=[4.4,5.9,7.4,8.9,10.6];
+for(const t0 of LINE_TS) impact(t0,0.35,0,0.06);
+impact(12.75,1.6,0.2,0.5);
+impact(15.25,1.8,0.22,0.45);
+impact(17.35,0.8,0.06,0.2);
+impact(19.1,0.9,0.1,0.3);
+impact(21.6,0.9,0.08,0.2);
+impact(23.2,0.6,0.04,0.1);
+impact(25.7,0.6,0,0.35);
+
+const DUR=29.0;
+window.seek=function(t){
+  applyCamera(t,1.02);
+  document.getElementById('grid').style.transform=`translate(${(-t*10)%88}px,${(-t*7)%88}px)`;
+  document.getElementById('sheen').style.transform=`translateX(${(t*140)%2600-1300}px)`;
+
+  punch(byId('h1'),t,0.06,{d:.36,from:3.0,hold:3.15});
+  rise (byId('h2'),t,0.5,{d:.32,from:60,hold:2.7});
+  punch(byId('h3'),t,1.3,{d:.4,from:3.2,hold:1.9});
+
+  // RECEIPT 3.4–15.0
+  const rc=byId('receipt');
+  if(t>=3.4&&t<17.15){
+    const p=outQuint(ph(t,3.4,0.55));
+    rc.style.opacity=clamp(p*2,0,1);
+    let ry=lerp(160,0,p), rsc=1, rop=clamp(p*2,0,1);
+    if(t>=15.25){const q=outCubic(ph(t,15.25,0.35)); ry-=40*q; rsc=1-0.03*q;}
+    if(t>=16.9){rop*= (1-ph(t,16.9,0.25));}
+    rc.style.opacity=rop;
+    rc.style.transform=`translateY(${ry}px) rotate(${lerp(-2.5,-0.5,p)}deg) scale(${rsc})`;
+    LINE_TS.forEach((t0,i)=>{
+      const el=byId('rl'+i);
+      if(t>=t0){el.style.opacity=1;
+        const dp=Math.exp(-(t-t0)*9);
+        el.style.transform=`translateX(${dp*26}px)`;
+      } else el.style.opacity=0;
+    });
+    const tr=byId('totrow');
+    if(t>=12.1){tr.style.opacity=1;
+      counter(byId('tot'),t,12.15,0.85,0,579,v=>'£'+Math.round(v));
+      if(t>=12.75){const p2=Math.exp(-(t-12.75)*9);byId('tot').style.transform=`scale(${1+0.25*p2})`;byId('tot').style.display='inline-block';}
+    } else tr.style.opacity=0;
+  } else rc.style.opacity=0;
+  punch(byId('tw'),t,15.25,{d:.36,from:2.8,hold:1.9,exit:.2});
+
+  // HONEST BEAT 17.35–21.4
+  punch(byId('hb'),t,17.35,{d:.42,from:1.8,hold:3.85,exit:.22});
+  punch(byId('hbnum'),t,19.1,{d:.38,from:3.0,hold:2.1,exit:.22});
+  rise (byId('hbsub'),t,19.5,{d:.32,from:50,hold:1.7,exit:.22});
+
+  // SEA vs PORT 21.6–25.5
+  if(t>=21.6&&t<25.55){
+    punch(byId('c1'),t,21.6,{d:.4,from:1.9,hold:3.75,exit:.2});
+    punch(byId('c2'),t,21.95,{d:.4,from:1.9,hold:3.4,exit:.2});
+    counter(byId('c1n'),t,21.9,0.7,0,399,v=>'£'+Math.round(v));
+    counter(byId('c2n'),t,22.25,0.7,0,180,v=>'£'+Math.round(v));
+  } else {hide(byId('c1'));hide(byId('c2'));}
+  rise(byId('svpsub'),t,23.2,{d:.4,from:60,hold:2.15,exit:.2});
+
+  endCard(t,25.7);
+};
+function byId(i){return document.getElementById(i);}
+window.DUR=DUR;
+</script></body></html>

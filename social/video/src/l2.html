@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+  .hook1{top:510px;font-family:Cinzel;font-weight:900;font-size:138px;color:var(--foam);}
+  .hook2{top:706px;font-family:Cinzel;font-weight:900;font-size:76px;}
+  .hook3{top:830px;font-family:'JBMono';font-weight:600;font-size:50px;letter-spacing:.24em;color:var(--bad-bright);}
+  .item{top:480px;height:900px;text-align:center;padding-top:70px;}
+  .item .num{position:absolute;top:-58px;left:50%;transform:translateX(-50%);
+    font-family:'JBMono';font-weight:800;font-size:64px;color:var(--ocean-deep);
+    background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+    width:130px;height:130px;line-height:130px;border-radius:50%;box-shadow:0 14px 40px rgba(0,0,0,.5);}
+  .item .icon{margin:40px auto 10px;width:340px;height:340px;}
+  .item .name{font-family:Cinzel;font-weight:900;font-size:104px;line-height:1.05;}
+  .item .why{font-family:Outfit;font-size:52px;color:var(--mist);margin-top:26px;font-weight:500;}
+  .cstamp{font-size:96px;top:29%;border-width:10px;}
+  .v1{top:690px;font-family:Cinzel;font-weight:800;font-size:76px;line-height:1.25;}
+  .v2{top:945px;font-family:'JBMono';font-weight:700;font-size:60px;letter-spacing:.22em;color:var(--seaglass);}
+</style></head>
+<body>
+<div id="stage"><div id="cam">
+  <div class="grid" id="grid"></div><div class="sheen" id="sheen"></div>
+
+  <div class="line hook1" id="h1">PACK THESE…</div>
+  <div class="line hook2 goldgrad" id="h2">SECURITY TAKES THEM</div>
+  <div class="line hook3" id="h3">AT THE GANGWAY</div>
+
+  <div id="items"></div>
+
+  <div class="line v1" id="v1">There's a <span class="goldgrad">RIGHT VERSION</span><br>of half of these.</div>
+  <div class="line v2" id="v2">WE LIST THEM.</div>
+</div>
+<div id="goldflash"></div><div id="flash"></div><div id="vig"></div>
+</div>
+<script src="helpers.js"></script>
+<script>
+const GOLD='#d9b45c', BRIGHT='#f0d087';
+const ICONS={
+  candles:`<svg viewBox="0 0 200 200" fill="none" stroke="${GOLD}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="70" y="90" width="60" height="86" rx="8"/><path d="M100 82 v-14"/>
+    <path d="M100 30 C 84 50, 88 62, 100 68 C 112 62, 116 50, 100 30 Z" fill="${BRIGHT}" stroke="${BRIGHT}"/>
+    <path d="M55 176 h90"/></svg>`,
+  kettle:`<svg viewBox="0 0 200 200" fill="none" stroke="${GOLD}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 80 h80 l10 86 a10 10 0 0 1-10 10 H60 a10 10 0 0 1-10-10 Z"/>
+    <path d="M140 96 l28 -8 v26 l-24 6"/><path d="M74 80 q26 -34 52 0"/>
+    <path d="M92 60 v-16 M108 60 v-16" stroke="${BRIGHT}"/></svg>`,
+  iron:`<svg viewBox="0 0 200 200" fill="none" stroke="${GOLD}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 138 h140 v18 H30 a54 54 0 0 1 0 -18 Z" fill="rgba(217,180,92,.15)"/>
+    <path d="M52 138 v-30 a24 24 0 0 1 24-24 h70 v54"/>
+    <path d="M86 106 h44" stroke="${BRIGHT}"/><path d="M46 176 q10 10 20 0 q10 -10 20 0" stroke="${BRIGHT}"/></svg>`,
+  drone:`<svg viewBox="0 0 200 200" fill="none" stroke="${GOLD}" stroke-width="7" stroke-linecap="round">
+    <rect x="80" y="84" width="40" height="32" rx="8"/>
+    <path d="M84 92 L52 62 M116 92 L148 62 M84 108 L52 138 M116 108 L148 138"/>
+    <circle cx="46" cy="56" r="20" stroke="${BRIGHT}"/><circle cx="154" cy="56" r="20" stroke="${BRIGHT}"/>
+    <circle cx="46" cy="144" r="20" stroke="${BRIGHT}"/><circle cx="154" cy="144" r="20" stroke="${BRIGHT}"/></svg>`,
+  surge:`<svg viewBox="0 0 200 200" fill="none" stroke="${GOLD}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="36" y="64" width="128" height="66" rx="14"/>
+    <circle cx="68" cy="97" r="13" stroke="${BRIGHT}"/><circle cx="100" cy="97" r="13" stroke="${BRIGHT}"/><circle cx="132" cy="97" r="13" stroke="${BRIGHT}"/>
+    <path d="M36 100 h-14 q-10 40 30 58 h60"/>
+    <path d="M118 32 l-14 22 h18 l-14 22" stroke="${BRIGHT}"/></svg>`
+};
+const ITEMS=[
+  {n:5,id:'candles',name:'CANDLES',why:'Open flame at sea. Gone.'},
+  {n:4,id:'kettle',name:'KETTLE',why:'Heating element. Gone.'},
+  {n:3,id:'iron',name:'IRON / STEAMER',why:'Fire risk. Gone.'},
+  {n:2,id:'drone',name:'DRONE',why:'Banned by most lines. Gone.'},
+  {n:1,id:'surge',name:'SURGE PROTECTOR',why:'The one nobody expects.'},
+];
+const wrap=document.getElementById('items');
+ITEMS.forEach((it,i)=>{
+  const d=document.createElement('div');d.className='card item';d.id='it'+i;
+  d.innerHTML=`<div class="num">#${it.n}</div><div class="icon">${ICONS[it.id]}</div>
+    <div class="name goldgrad">${it.name}</div><div class="why">${it.why}</div>
+    <div class="stamp cstamp" id="st${i}">CONFISCATED</div>`;
+  wrap.appendChild(d);
+});
+buildEndCard('ALL ABOARD STORE','The full <b>Leave at Home</b> list — and the right version of half of it.');
+
+impact(0.06,0.9,0.1,0.25); impact(0.5,1.0,0.12,0.3); impact(1.15,0.7,0.06,0.15);
+const ITEM_TS=[2.6,5.2,7.8,10.4,13.0];
+for(const t0 of ITEM_TS){impact(t0,0.9,0.08,0.2); impact(t0+0.55,1.5,0.16,0.35);}
+impact(16.0,1.0,0.1,0.3); impact(17.2,0.7,0.05,0.15); impact(19.35,0.6,0,0.35);
+
+const DUR=24.0;
+window.seek=function(t){
+  applyCamera(t,1.025);
+  document.getElementById('grid').style.transform=`translate(${(-t*12)%88}px,${(t*8)%88}px)`;
+  document.getElementById('sheen').style.transform=`translateX(${(t*150)%2600-1300}px)`;
+
+  punch(byId('h1'),t,0.06,{d:.38,from:3.2,hold:2.0,exit:.15});
+  punch(byId('h2'),t,0.5,{d:.4,from:3.0,hold:1.55,exit:.15});
+  rise (byId('h3'),t,1.15,{d:.32,from:70,hold:0.9,exit:.15});
+
+  ITEM_TS.forEach((t0,i)=>{
+    const hold=(i<4?ITEM_TS[i+1]-t0:2.55)-0.18;
+    punch(byId('it'+i),t,t0,{d:.4,from:1.9,hold:hold,exit:.18});
+    stampIn(byId('st'+i),t,t0+0.55,{rot:-9,hold:hold-0.55});
+    if(t>=t0+0.55&&t<t0+hold){ // icon jolt after the stamp
+      const dt=t-(t0+0.55);const j=Math.exp(-dt*7)*10*Math.sin(dt*46);
+      byId('it'+i).querySelector('.icon').style.transform=`translateX(${j}px) rotate(${j*0.4}deg)`;
+    }
+  });
+
+  rise(byId('v1'),t,16.0,{d:.4,from:80,hold:3.1,exit:.25});
+  punch(byId('v2'),t,17.2,{d:.35,from:2.2,hold:1.9,exit:.25});
+
+  endCard(t,19.35);
+};
+function byId(i){return document.getElementById(i);}
+window.DUR=DUR;
+</script></body></html>

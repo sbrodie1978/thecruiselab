@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+  .hook1{top:530px;font-family:Cinzel;font-weight:900;font-size:150px;line-height:1.05;color:var(--foam);letter-spacing:.02em;}
+  .hook2{top:726px;font-family:Cinzel;font-weight:900;font-size:96px;line-height:1.05;letter-spacing:.01em;}
+  .hook3{top:880px;font-family:'JBMono';font-weight:600;font-size:46px;letter-spacing:.28em;color:var(--mist);}
+  .rank{top:560px;font-size:340px;line-height:1;}
+  .rank .of{font-family:'JBMono';font-weight:600;font-size:110px;letter-spacing:.14em;color:var(--mist);-webkit-text-fill-color:var(--mist);margin-top:26px;}
+  .ranksub{top:1170px;font-family:Cinzel;font-weight:700;font-size:78px;color:var(--bad-bright);letter-spacing:.06em;}
+  #deckwrap{position:absolute;left:140px;top:180px;width:800px;height:1100px;will-change:transform;opacity:0;}
+  #cross{position:absolute;will-change:transform,opacity;opacity:0;}
+  #cabincard{bottom:220px;top:auto;}
+  #cabincard .chips{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;margin-top:26px;}
+  #cabincard .c{font-family:'JBMono';font-size:36px;font-weight:600;letter-spacing:.12em;color:var(--gold-bright);
+    border:2px solid var(--gold-dim);border-radius:12px;padding:12px 24px;background:rgba(217,180,92,.06);}
+  .reason{top:620px;padding-top:76px;}
+  .reason .v{margin-top:36px;}
+  .reason .idx{position:absolute;top:-34px;left:44px;background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+    color:var(--ocean-deep);font-family:'JBMono';font-weight:800;font-size:34px;letter-spacing:.22em;
+    padding:12px 26px;border-radius:12px;}
+  .decks{margin-top:34px;}
+  .deckrow{display:flex;align-items:center;gap:24px;border:3px solid var(--panel-edge);border-radius:16px;
+    padding:26px 30px;margin-top:16px;background:#0e2344;}
+  .deckrow.hot{border-color:rgba(224,82,79,.7);background:rgba(224,82,79,.10);}
+  .deckrow.you{border-color:var(--gold-dim);}
+  .deckrow .dk{font-family:'JBMono';font-weight:700;font-size:34px;color:var(--mist);letter-spacing:.1em;min-width:170px;}
+  .deckrow .dn{font-family:Cinzel;font-weight:700;font-size:52px;}
+  .scoreEyebrow{top:520px;}
+  .scoreNum{top:600px;font-size:340px;line-height:1;}
+  .scoreOf{top:960px;font-family:'JBMono';font-size:56px;letter-spacing:.3em;color:var(--mist);}
+  #vstamp{font-size:148px;top:60.5%;}
+  .stampsub{top:1400px;font-family:'JBMono';font-weight:600;font-size:44px;letter-spacing:.16em;color:var(--bad-bright);}
+</style></head>
+<body>
+<div id="stage"><div id="cam">
+  <div class="grid" id="grid"></div><div class="sheen" id="sheen"></div>
+
+  <!-- HOOK -->
+  <div class="line hook1" id="h1">THE WORST</div>
+  <div class="line hook2 goldgrad" id="h2">OCEANVIEW CABIN</div>
+  <div class="line hook3" id="h3">ON SUN PRINCESS</div>
+  <div class="line rank mono goldgrad" id="rank">#186<div class="of">OF 186</div></div>
+  <div class="line ranksub" id="ranksub">DEAD LAST.</div>
+
+  <!-- DECK PLAN -->
+  <div id="deckwrap"></div>
+  <div id="cross"></div>
+  <div class="card goldline" id="cabincard" style="text-align:center;">
+    <div class="k">Exhibit A</div>
+    <div class="v goldgrad" style="font-size:96px;">CABIN 6202</div>
+    <div class="chips"><span class="c">OCEANVIEW</span><span class="c">212 SQ FT</span><span class="c">DECK 6</span><span class="c">PORT · FORWARD</span></div>
+  </div>
+
+  <!-- REASON 1: above you -->
+  <div class="card reason" id="r1">
+    <div class="idx">CHARGE 01</div>
+    <div class="k">Directly above you</div>
+    <div class="v goldgrad" style="font-size:96px;">PRINCESS ARENA</div>
+    <div class="sub">The ship's main theatre — one deck up.</div>
+    <div class="decks">
+      <div class="deckrow hot"><span class="dk">DECK 7</span><span class="dn" style="color:var(--bad-bright);">PRINCESS ARENA ▲</span></div>
+      <div class="deckrow you"><span class="dk">DECK 6</span><span class="dn goldgrad">CABIN 6202 · YOU</span></div>
+    </div>
+  </div>
+
+  <!-- REASON 2: motion -->
+  <div class="card reason hot" id="r2">
+    <div class="idx" style="background:linear-gradient(180deg,var(--bad-bright),var(--bad));color:#fff;">CHARGE 02</div><div id="r2i">
+    <div class="k">Motion score</div>
+    <div class="v" style="font-size:150px;"><span class="mono" style="color:var(--bad-bright);" id="motnum">0</span><span class="mono" style="font-size:70px;color:var(--mist);">/100</span></div>
+    <div class="meter"><i id="motbar"></i></div>
+    <div class="sub">Right up at the bow. You'll feel <b>every swell</b>.</div>
+  </div></div>
+
+  <!-- REASON 3: space -->
+  <div class="card reason hot" id="r3">
+    <div class="idx" style="background:linear-gradient(180deg,var(--bad-bright),var(--bad));color:#fff;">CHARGE 03</div>
+    <div class="k">Space &amp; comfort</div>
+    <div class="v" style="font-size:150px;"><span class="mono" style="color:var(--bad-bright);" id="spcnum">0</span><span class="mono" style="font-size:70px;color:var(--mist);">/100</span></div>
+    <div class="meter"><i id="spcbar"></i></div>
+    <div class="sub">212 sq ft. Tight for an oceanview.</div>
+  </div>
+
+  <!-- VERDICT -->
+  <div class="line eyebrow scoreEyebrow" id="vE">THE LAB'S SCORE</div>
+  <div class="line scoreNum mono goldgrad" id="vN">0</div>
+  <div class="line scoreOf" id="vOf">OUT OF 100</div>
+  <div class="stamp" id="vstamp">BAD CABIN</div>
+  <div class="line stampsub" id="vsub">#186 OF 186 OCEANVIEW CABINS</div>
+</div>
+<div id="goldflash"></div><div id="flash"></div><div id="vig"></div>
+</div>
+<script src="helpers.js"></script>
+<script>
+/* ---- build deck plan svg ---- */
+(function(){
+  const W=800,H=1100; let rects='';
+  const half=y=>Math.min(330, 40+330*Math.sqrt(Math.max(0,(y-60))/620));
+  for(let i=0;i<13;i++){
+    const y=150+i*68, hw=half(y);
+    if(hw>110){
+      rects+=`<rect x="${400-hw}" y="${y}" width="86" height="56" rx="6" class="cab"/>`;
+      rects+=`<rect x="${400+hw-86}" y="${y}" width="86" height="56" rx="6" class="cab"/>`;
+    }
+    if(hw>240){ // inner cabins
+      rects+=`<rect x="${400-hw+110}" y="${y}" width="80" height="56" rx="6" class="cab dim"/>`;
+      rects+=`<rect x="${400+hw-190}" y="${y}" width="80" height="56" rx="6" class="cab dim"/>`;
+    }
+  }
+  const cabY=150+2*68, cabHW=half(cabY); // row 2, port side (left)
+  window.CAB={x:400-cabHW+43, y:cabY+28}; // centre of 6202 inside svg coords
+  document.getElementById('deckwrap').innerHTML=`
+  <svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+    <style>.cab{fill:#10294e;stroke:#1d3d6b;stroke-width:2.5;} .dim{opacity:.45;}</style>
+    <path d="M400 40 C 250 130, 90 340, 80 700 L80 1060 L720 1060 L720 700 C 710 340, 550 130, 400 40 Z"
+      fill="rgba(13,36,69,.6)" stroke="#2a4d84" stroke-width="5"/>
+    <line x1="400" y1="70" x2="400" y2="1050" stroke="#1d3d6b" stroke-width="3" stroke-dasharray="10 14"/>
+    ${rects}
+    <rect x="${window.CAB.x-43}" y="${window.CAB.y-28}" width="86" height="56" rx="6"
+      fill="rgba(224,82,79,.35)" stroke="#ff7a6e" stroke-width="5"/>
+    <text x="120" y="1030" font-family="JBMono" font-size="34" fill="#8fa2bd" letter-spacing="6">DECK 6 · FWD</text>
+    <text x="150" y="${window.CAB.y-46}" font-family="JBMono" font-weight="700" font-size="44" fill="#f0d087">6202</text>
+    <text x="96" y="${window.CAB.y+14}" font-family="JBMono" font-size="30" fill="#8fa2bd">PORT</text>
+  </svg>`;
+  document.getElementById('cross').innerHTML=`
+   <svg width="260" height="260" viewBox="0 0 260 260">
+     <circle cx="130" cy="130" r="98" fill="none" stroke="#ff7a6e" stroke-width="6"/>
+     <circle cx="130" cy="130" r="120" fill="none" stroke="rgba(255,122,110,.4)" stroke-width="3"/>
+     <line x1="130" y1="0" x2="130" y2="46" stroke="#ff7a6e" stroke-width="6"/>
+     <line x1="130" y1="260" x2="130" y2="214" stroke="#ff7a6e" stroke-width="6"/>
+     <line x1="0" y1="130" x2="46" y2="130" stroke="#ff7a6e" stroke-width="6"/>
+     <line x1="260" y1="130" x2="214" y2="130" stroke="#ff7a6e" stroke-width="6"/>
+   </svg>`;
+})();
+buildEndCard('GOOD CABIN BAD CABIN','Score <b>your exact cabin</b> before you book.');
+
+/* ---- impacts (must match audio_synth l1 hits) ---- */
+impact(0.06,0.9,0.10,0.25); impact(0.42,1.0,0.12,0.3); impact(1.05,0.8,0.08,0.2);
+impact(2.05,1.8,0.22,0.5);
+impact(3.25,0.5,0,0.1);
+impact(6.05,0.9,0.08,0.2); impact(9.05,0.9,0.08,0.2); impact(12.05,0.9,0.08,0.2);
+impact(16.15,2.4,0.30,0.6);
+impact(17.85,0.6,0,0.35);
+
+const DUR=21.0;
+window.seek=function(t){
+  applyCamera(t,1.025);
+  document.getElementById('grid').style.transform=`translate(${(-t*14)%88}px,${(-t*9)%88}px)`;
+  document.getElementById('sheen').style.transform=`translateX(${(t*160)%2600-1300}px)`;
+
+  // HOOK 0–3.1
+  punch(byId('h1'),t,0.06,{d:.38,from:3.2,hold:1.54,exit:.12});
+  punch(byId('h2'),t,0.42,{d:.40,from:3.4,hold:1.16,exit:.12});
+  rise (byId('h3'),t,1.05,{d:.35,from:70,hold:0.58,exit:.12});
+  punch(byId('rank'),t,2.05,{d:.34,from:4.2,hold:1.05,exit:.22});
+  rise (byId('ranksub'),t,2.45,{d:.3,from:60,hold:0.65,exit:.22});
+
+  // DECK ZOOM 3.1–6.0
+  const dw=byId('deckwrap');
+  if(t>=3.1&&t<6.05){
+    dw.style.opacity=clamp(ph(t,3.1,0.25)*2,0,1);
+    const p=outCubic(ph(t,3.3,1.7));
+    const s=lerp(1,2.35,p);
+    dw.style.transformOrigin=`${CAB.x}px ${CAB.y}px`;
+    const tx=(540-140-CAB.x)*p, ty=(760-180-CAB.y)*p;
+    dw.style.transform=`translate(${tx}px,${ty}px) scale(${s})`;
+    const cr=byId('cross');
+    const cp=ph(t,3.7,0.35);
+    cr.style.opacity=cp>0?1:0;
+    cr.style.left=(540-130)+'px'; cr.style.top=(760-130)+'px';
+    const cs=lerp(3.2,1,outCubic(cp));
+    cr.style.transform=`scale(${cs}) rotate(${(1-cp)*140}deg)`;
+    if(cp>=1){cr.style.transform=`scale(${1+0.05*Math.sin(t*6)}) rotate(0deg)`;}
+  } else {dw.style.opacity=0;byId('cross').style.opacity=0;}
+  punch(byId('cabincard'),t,4.15,{d:.4,from:1.7,hold:6.0-4.15,exit:.2});
+
+  // REASONS
+  punch(byId('r1'),t,6.05,{d:.42,from:2.0,hold:2.75,exit:.22});
+  const r2=punch(byId('r2'),t,9.05,{d:.42,from:2.0,hold:2.75,exit:.22});
+  if(r2&&t<12.0){shakeEl(byId('r2i'),t,7,7.5);
+    counter(byId('motnum'),t,9.3,0.9,0,39,v=>Math.round(v));
+    setMeter(byId('motbar'),t,9.3,0.9,39);}
+  punch(byId('r3'),t,12.05,{d:.42,from:2.0,hold:2.55,exit:.22});
+  if(t>=12.05){counter(byId('spcnum'),t,12.3,0.9,0,43,v=>Math.round(v));
+    setMeter(byId('spcbar'),t,12.3,0.9,43);}
+
+  // VERDICT 14.8–17.8
+  rise(byId('vE'),t,14.8,{d:.3,from:50,hold:2.85,exit:.2});
+  const vN=byId('vN');
+  if(t>=14.95&&t<17.85){
+    vN.style.opacity=1;
+    counter(vN,t,14.95,1.15,0,55.8,v=>v.toFixed(1));
+    const wob=t<16.1?1+0.02*Math.sin(t*40):1;
+    vN.style.transform=`scale(${wob})`;
+    if(t>=16.15){const p=Math.exp(-(t-16.15)*10);vN.style.transform=`scale(${1+0.12*p})`;}
+  } else vN.style.opacity=0;
+  rise(byId('vOf'),t,15.1,{d:.3,from:40,hold:0.65,exit:.15});
+  stampIn(byId('vstamp'),t,16.15,{rot:-8,hold:1.7});
+  rise(byId('vsub'),t,16.6,{d:.3,from:50,hold:1.25,exit:.2});
+
+  // END CARD
+  endCard(t,17.85);
+};
+function byId(i){return document.getElementById(i);}
+window.DUR=DUR;
+</script></body></html>
