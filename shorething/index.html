@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Shore Thing · Port guides for your exact sailing · The Cruise Lab</title>
-<meta name="description" content="Shore Thing — build a port-by-port guide for your exact cruise itinerary. Notes, quick facts and tours for every day ashore. Free, from The Cruise Lab.">
+<meta name="description" content="Shore Thing — build a port-by-port guide for your exact cruise itinerary. Notes and quick facts for every day ashore. Free, from The Cruise Lab.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -398,7 +398,6 @@ footer p+p{margin-top:4px}
 
   <footer>
     <p class="foot-mark"><a href="https://thecruiselab.com">THE CRUISE LAB</a></p>
-    <p class="no-print">Tours &amp; excursions links go to Viator; The Cruise Lab may earn a commission on bookings, at no cost to you.</p>
     <p>Independent tools made by a cruiser. Not affiliated with or endorsed by any cruise line.</p>
     <p>&copy; 2026 The Cruise Lab</p>
   </footer>
@@ -695,13 +694,6 @@ const DFMT = new Intl.DateTimeFormat("en-GB",{weekday:"short",day:"numeric",mont
 function fdate(iso){ return DFMT.format(new Date(iso+"T12:00:00")); }
 function dayNum(iso, first){ return Math.round((new Date(iso)-new Date(first))/864e5)+1; }
 
-function viatorUrl(name, iso){
-  const qs = new URLSearchParams();
-  qs.set("text", name.split("(")[0].split(",")[0].trim());
-  qs.set("pid","P00290711"); qs.set("mcid","42383"); qs.set("medium","link");
-  if(iso){ qs.set("startDate", iso); qs.set("endDate", iso); }
-  return "https://www.viator.com/searchResults/all?"+qs.toString();
-}
 function weatherUrl(id, iso){
   return "https://getmycruiseweather.com/results.html?port="+encodeURIComponent(id)+"&date="+encodeURIComponent(iso);
 }
@@ -746,11 +738,9 @@ function dayCard(s, first){
       (c.miss&&c.miss.length?`<div class="miss"><p class="miss-label">Don’t miss</p><ul>${c.miss.map(m=>`<li>${esc(m)}</li>`).join("")}</ul></div>`:``)+
       (c.tip?`<div class="labnote"><strong>Lab note</strong>${esc(c.tip)}</div>`:``);
   }else{
-    body = `<p class="pending">Port notes for ${esc(p.name)} are coming to the Lab — your tours and weather links below work today.</p>`;
+    body = `<p class="pending">Port notes for ${esc(p.name)} are coming to the Lab — your weather link below works today.</p>`;
   }
-  const noviator = c && c.noviator;
   const actions = `<div class="actions">`+
-      (noviator?``:`<a class="btn btn-gold" href="${viatorUrl(p.name, s.date)}" target="_blank" rel="noopener sponsored">Tours &amp; excursions</a>`)+
       (p.gw?`<a class="btn btn-ghost" href="${weatherUrl(s.id, s.date)}" target="_blank" rel="noopener">Weather that day</a>`:``)+
     `</div>`;
   return `<div class="day">
