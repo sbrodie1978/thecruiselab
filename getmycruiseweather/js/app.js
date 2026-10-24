@@ -76,27 +76,6 @@ function handlePortsUnavailable(){
     portSelect.disabled = true;
   }
 }
-function buildViatorUrl(portName){
-  // Viator affiliate tracking (hard-coded from your Partner account)
-  const base = "https://www.viator.com/searchResults/all";
-  const qs = new URLSearchParams();
-  qs.set("text", portName || "Cruise port");
-  qs.set("pid", "P00290711");
-  qs.set("mcid", "42383");
-  qs.set("medium", "link");
-  return `${base}?${qs.toString()}`;
-}
-function updateViatorLink(portName){
-  const name = portName || "this port";
-  const a = document.getElementById("viatorLink");
-  if(a){
-    a.href = buildViatorUrl(name);
-  }
-  const vp = document.getElementById("viatorPortName");
-  if(vp){ vp.textContent = name; }
-  const vc = document.getElementById("viatorPortCta");
-  if(vc){ vc.textContent = name; }
-}
 function $(id){ return document.getElementById(id); }
   function clamp(n,a,b){ return Math.max(a, Math.min(b,n)); }
   function fmt2(n){ return String(n).padStart(2,"0"); }
@@ -380,8 +359,6 @@ function $(id){ return document.getElementById(id); }
     if(!payload) return;
     CURRENT_PAYLOAD = payload;
 
-    updateViatorLink(payload.portName);
-
     $("warmthPct").textContent = payload.scores.warmth;
     $("rainPct").textContent   = payload.scores.rainRisk;
     $("windPct").textContent   = payload.scores.windExpo;
@@ -511,7 +488,6 @@ function $(id){ return document.getElementById(id); }
       // reset port when region changes
       portSelect.value = "";
       populatePorts(portSelect);
-      updateViatorLink(getPortNameById(portSelect.value));
     });
 
     populatePorts(portSelect);
@@ -529,11 +505,9 @@ function $(id){ return document.getElementById(id); }
     portSelect.value = portId;
     dateInput.value = isoDate;
     localStorage.setItem("gmcw:selectedPort", portSelect.value);
-    updateViatorLink(getPortNameById(portSelect.value));
 
     portSelect.addEventListener("change", () => {
       localStorage.setItem("gmcw:selectedPort", portSelect.value);
-      updateViatorLink(getPortNameById(portSelect.value));
     });
 
     btn.addEventListener("click", async () => {
@@ -574,11 +548,6 @@ function $(id){ return document.getElementById(id); }
       $("rainHint").textContent = msg;
       $("windHint").textContent = msg;
     }
-  }
-
-  function getPortNameById(id){
-    const p = PORTS.find(x => x.id === id);
-    return p ? p.name : "";
   }
 
   window.GMCW = { initResultsPage };
