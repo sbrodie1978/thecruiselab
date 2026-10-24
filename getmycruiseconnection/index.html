@@ -462,10 +462,10 @@ footer a{color:var(--mist)}
     </table>
   </div>
   <div class="cmp-ctas">
-    <a id="cmp-gigsky" class="affbtn gold" target="_blank" rel="noopener sponsored">Check GigSky &rarr;</a>
-    <a id="cmp-redbull" class="affbtn gold" target="_blank" rel="noopener sponsored">Check RedBull Mobile &rarr;</a>
+    <a id="cmp-gigsky" class="affbtn gold" target="_blank" rel="noopener">Check GigSky &rarr;</a>
+    <a id="cmp-redbull" class="affbtn gold" target="_blank" rel="noopener">Check RedBull Mobile &rarr;</a>
   </div>
-  <p class="cmp-note">They run on <strong style="color:var(--foam);font-weight:500">different maritime networks</strong>, so which one works depends on your ship — always check compatibility in the provider's app before buying. At-sea speeds are modest (roughly 1–4 Mbps): great for messaging, social and maps, not all-day streaming. <em>Partner links — we may earn a small commission, at no cost to you.</em></p>
+  <p class="cmp-note">They run on <strong style="color:var(--foam);font-weight:500">different maritime networks</strong>, so which one works depends on your ship — always check compatibility in the provider's app before buying. At-sea speeds are modest (roughly 1–4 Mbps): great for messaging, social and maps, not all-day streaming.</p>
 
   <!-- ---------- Explainers ---------- -->
   <p class="rule">The Essentials</p>
@@ -524,7 +524,6 @@ footer a{color:var(--mist)}
   <footer>
     <p class="foot-mark">THE CRUISE LAB</p>
     <p>General guidance only — connectivity, packages and roaming rates change, so always confirm cruise-ship roaming charges with your own carrier, and ship compatibility with your eSIM provider, before you sail.</p>
-    <p id="aff-note">Some links are partner links: if you buy through them we may earn a small commission, at no extra cost to you. We only suggest options we'd recommend anyway.</p>
     <p>Independent tools made by a cruiser. Not affiliated with or endorsed by any cruise line, mobile carrier or eSIM provider.</p>
     <p>&copy; 2026 The Cruise Lab</p>
   </footer>
@@ -658,11 +657,11 @@ $("go").addEventListener("click", () => {
         <div class="name">2 · An eSIM built for sea</div>
         <p>Cheaper for light-to-medium use, no daily fees, and you can hotspot. Two specialists — on <strong>different maritime networks</strong>, so check your ship in each app first:</p>
         <p><strong>GigSky (Cruise + Land)</strong> — the WMS "Cellular at Sea" network, 200+ ships and the major lines, switches to local data in port. Broadest, includes land, pricier.</p>
-        <a class="affbtn gold" href="${LINKS.gigsky}" target="_blank" rel="noopener sponsored">Check GigSky →</a>
+        <a class="affbtn gold" href="${LINKS.gigsky}" target="_blank" rel="noopener">Check GigSky →</a>
         <p style="margin-top:12px"><strong>RedBull Mobile Maritime</strong> — the Telenor Maritime network, around €15/GB with a free 1GB land bonus. Often cheaper; strong on Marella, P&amp;O, Cunard, Costa and Viking Ocean.</p>
-        <a class="affbtn gold" href="${LINKS.redbull}" target="_blank" rel="noopener sponsored">Check RedBull Mobile →</a>
+        <a class="affbtn gold" href="${LINKS.redbull}" target="_blank" rel="noopener">Check RedBull Mobile →</a>
       </div>
-      <p class="disclose">Partner links — we may earn a small commission, at no cost to you.${carrierPass}</p>
+      <p class="disclose">${carrierPass}</p>
     </div>
 
     <div class="block port">
@@ -670,9 +669,8 @@ $("go").addEventListener("click", () => {
       <h3>Cheaper data the moment you dock</h3>
       <p>A standard travel eSIM connects to <strong>land networks</strong>, so it's the cheapest way to get data ashore — but only ashore, not out at open sea. For ${R.label}, get <strong>${R.plan}</strong> and it'll activate automatically at each stop, with no roaming bill.</p>
       <p>${R.note}</p>
-      <a class="affbtn" href="${LINKS[prov]}" target="_blank" rel="noopener sponsored">Browse ${provName} eSIMs →</a>
+      <a class="affbtn" href="${LINKS[prov]}" target="_blank" rel="noopener">Browse ${provName} eSIMs →</a>
       <p style="margin-top:12px">If you picked a GigSky or RedBull plan above, it already switches to local data in port — so you may not need a separate land eSIM at all.</p>
-      <p class="disclose">Partner link — we may earn a small commission, at no cost to you.</p>
     </div>
 
     <div class="block">
@@ -693,8 +691,7 @@ $("go").addEventListener("click", () => {
       <span class="kicker">Security &amp; streaming</span>
       <h3>A VPN, if you want one</h3>
       <p>${vpnLead}${ukTelly}${vpnCaveat}</p>
-      <a class="affbtn gold" href="${LINKS.vpn}" target="_blank" rel="noopener sponsored">See VPN options →</a>
-      <p class="disclose">Partner link — we may earn a small commission, at no cost to you.</p>
+      <a class="affbtn gold" href="${LINKS.vpn}" target="_blank" rel="noopener">See VPN options →</a>
     </div>
 
     <div class="block">
