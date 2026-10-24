@@ -1,6 +1,8 @@
 # The Cruise Lab — Master Context
 
-Last updated: 24 October 2026 (rev 29). This document is the single source of truth for The Cruise Lab initiative: every property, where it lives, how it is built and deployed. All enhancements, new tools, and maintenance work should be consistent with it; update it whenever the estate changes.
+Last updated: 24 October 2026 (rev 30). This document is the single source of truth for The Cruise Lab initiative: every property, where it lives, how it is built and deployed. All enhancements, new tools, and maintenance work should be consistent with it; update it whenever the estate changes.
+
+Changes in rev 30 (**production-branch facts corrected; no estate change**): a GetMyCruiseWeather redeploy during the rev-29 work silently landed as a Preview because this doc wrongly listed its production branch as `main`. It is actually `production`. The live site kept serving the old Viator build until it was redeployed with `--branch=production`, after which the edge cache was purged and both getmycruiseweather.com and weather.thecruiselab.com verified clean. Every project's real production branch was then checked with `npx wrangler pages deployment list`: **`sys-points`, `getmycruiseweather` and `cruiselab-slots` have production branch `production`** (as do the two registries); everything else (`thecruiselab`, `getmybartab`, `getmycruiseconnection`, `shorething`, `oceanview`, `links`) is `main`. The deploy commands and the production-branches lesson below are corrected accordingly. `sys-points` was also mis-documented (its deploy line lacked `--branch=production`) but was not deployed in the rev-29 work, so no live site was affected. Lesson reinforced: a deploy printing no alias-URL line is not sufficient proof it went to production; when in doubt, check `deployment list` for the row marked Production.
 
 Changes in rev 29 (**the estate went fully FREE: all affiliate links and monetisation removed across the whole estate; both income-capable accounts closed**). This is Stuart's decision to take no income at all from The Cruise Lab. No estate tool's core function was harmed; only the money layer was stripped out.
 
@@ -112,12 +114,12 @@ All web properties are Cloudflare Pages projects in Stuart's Cloudflare account 
 
 ### 3. Casino Points (Sea You Soon) — casino comp points
 - URL: https://casinopoints.thecruiselab.com (plus sys-points.pages.dev)
-- Cloudflare Pages project: `sys-points`; Repo path: `~/cruiselab/casinopoints`
+- Cloudflare Pages project: `sys-points` (production branch `production`: deploy with `--branch=production`); Repo path: `~/cruiselab/casinopoints`
 - Structure: root index.html is a cruise-line chooser (Princess live; Carnival, Royal Caribbean, Norwegian coming soon). `/princess/` hosts the Sea You Soon calculator (SYS point system effective 1 Sep 2025).
 
 ### 4. GetMyCruiseWeather — port-by-port cruise weather
 - URLs: https://getmycruiseweather.com (primary) and https://weather.thecruiselab.com (alias)
-- Cloudflare Pages project: `getmycruiseweather`; Repo path: `~/cruiselab/getmycruiseweather`
+- Cloudflare Pages project: `getmycruiseweather` (production branch `production`: deploy with `--branch=production`); Repo path: `~/cruiselab/getmycruiseweather`
 - Structure: multi-file static site — index.html (port picker), results.html, js/app.js, css/styles.css, data/ports.json (265 ports), assets, tools/port-validator.html.
 - Data: Open-Meteo archive API, client-side, no key. Google Analytics installed.
 - **Viator affiliate link-out REMOVED (rev 29):** the "Recommended shore excursions" card in `results.html`, the `buildViatorUrl()` / `updateViatorLink()` / `getPortNameById()` code and its four calls in `js/app.js`, and the `assets/viator-logo.png` + `viator-logo.svg` files are all gone. The old Viator IDs were pid `P00290711`, mcid `42383`. The tool no longer shows or links to excursions. **Orphaned Viator CSS (~lines 1127 to 1456 of `css/styles.css`) was left in place** — dead but harmless; strip in a later pass if wanted.
@@ -234,8 +236,8 @@ Deploys are done from Stuart's MacBook terminal with wrangler:
 
 ```bash
 npx wrangler pages deploy ~/cruiselab/hub --project-name=thecruiselab            # hub + privacy.html
-npx wrangler pages deploy ~/cruiselab/casinopoints --project-name=sys-points
-npx wrangler pages deploy ~/cruiselab/getmycruiseweather --project-name=getmycruiseweather
+npx wrangler pages deploy ~/cruiselab/casinopoints --project-name=sys-points --branch=production
+npx wrangler pages deploy ~/cruiselab/getmycruiseweather --project-name=getmycruiseweather --branch=production
 npx wrangler pages deploy ~/cruiselab/getmybartab --project-name=getmybartab
 npx wrangler pages deploy ~/cruiselab/getmycruiseconnection --project-name=getmycruiseconnection
 npx wrangler pages deploy ~/cruiselab/shorething --project-name=shorething
@@ -260,7 +262,7 @@ Notes and lessons learned:
 - **Edge-cache lag on a fresh deploy is normal.** Trust wrangler's "Uploaded N files" and the `<hash>.pages.dev` deployment URL.
 - **Creating a new Pages project:** `npx wrangler pages project create <name> --production-branch=main`.
 - **Never run `wrangler pages deploy` from `~`.**
-- **Production branches differ per project:** everything uses `main` except `cruiselab-slots` and the two registries (`production`).
+- **Production branches differ per project (corrected rev 30):** `sys-points`, `getmycruiseweather` and `cruiselab-slots` have production branch `production`, as do the two registries; everything else (`thecruiselab`, `getmybartab`, `getmycruiseconnection`, `shorething`, `oceanview`, `links`) uses `main`. Deploying to the wrong branch silently creates a Preview and the live site never updates (a `main` deploy to a `production`-branch project lands as Preview with no obvious error). Verify with `npx wrangler pages deployment list --project-name=X`: the row marked Production shows the live branch.
 - **pages.dev subdomains are a GLOBAL namespace** — read the actual URL from wrangler output.
 - **Local/ISP DNS can lag a fresh custom-domain attach.** Confirm at source with `dig +short <domain> @anuj.ns.cloudflare.com`.
 - **Stale uncommitted edits in a local clone block `git pull`.** Rev-29 hit this on the personal registry: after committing locally, a `git pull --rebase` cleanly placed the commit on top of someone else's Leven Thistle changes; then a redeploy was needed because the first deploy was built from `dist` before the rebase merged their rows in.
